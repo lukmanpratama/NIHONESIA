@@ -1,0 +1,309 @@
+// Kalimat sehari-hari untuk menu Bun.
+// Format:
+//   @Kategori
+//   kalimat Jepang|romaji|arti
+// Romaji ditulis manual (partikel は = wa, を = o, へ = e).
+
+@Salam & Sapaan
+おはようございます。|ohayou gozaimasu.|Selamat pagi.
+こんにちは。|konnichiwa.|Selamat siang.
+こんばんは。|konbanwa.|Selamat malam.
+おやすみなさい。|oyasuminasai.|Selamat tidur.
+さようなら。|sayounara.|Selamat tinggal.
+また明日。|mata ashita.|Sampai besok.
+またね。|mata ne.|Sampai jumpa (santai).
+お元気ですか。|ogenki desu ka.|Apa kabar?
+元気です。ありがとうございます。|genki desu. arigatou gozaimasu.|Baik. Terima kasih.
+お久しぶりです。|ohisashiburi desu.|Lama tidak bertemu.
+いってきます。|ittekimasu.|Saya berangkat.
+いってらっしゃい。|itterasshai.|Hati-hati di jalan.
+ただいま。|tadaima.|Saya pulang.
+おかえりなさい。|okaerinasai.|Selamat datang kembali.
+いただきます。|itadakimasu.|Selamat makan.
+ごちそうさまでした。|gochisousama deshita.|Terima kasih atas makanannya.
+お疲れ様です。|otsukaresama desu.|Terima kasih atas kerja kerasnya.
+お先に失礼します。|osaki ni shitsurei shimasu.|Saya pamit duluan.
+よい週末を。|yoi shuumatsu o.|Selamat berakhir pekan.
+あけましておめでとうございます。|akemashite omedetou gozaimasu.|Selamat tahun baru.
+
+@Ungkapan Sopan
+ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+どういたしまして。|douitashimashite.|Sama-sama.
+すみません。|sumimasen.|Permisi / maaf.
+ごめんなさい。|gomennasai.|Maaf.
+申し訳ありません。|moushiwake arimasen.|Mohon maaf sekali.
+大丈夫です。|daijoubu desu.|Tidak apa-apa.
+お願いします。|onegaishimasu.|Tolong / mohon.
+どうぞ。|douzo.|Silakan.
+失礼します。|shitsurei shimasu.|Permisi.
+よろしくお願いします。|yoroshiku onegaishimasu.|Mohon bantuannya.
+お世話になっております。|osewa ni natte orimasu.|Terima kasih atas bantuan Anda selama ini.
+お邪魔します。|ojama shimasu.|Permisi (masuk rumah orang).
+お大事に。|odaiji ni.|Semoga lekas sembuh.
+おめでとうございます。|omedetou gozaimasu.|Selamat.
+かしこまりました。|kashikomarimashita.|Baik, saya mengerti (sopan).
+少々お待ちください。|shoushou omachi kudasai.|Mohon tunggu sebentar.
+
+@Perkenalan
+はじめまして。|hajimemashite.|Salam kenal.
+私はブディです。|watashi wa budi desu.|Saya Budi.
+インドネシアから来ました。|indoneshia kara kimashita.|Saya datang dari Indonesia.
+二十五歳です。|nijuugo sai desu.|Saya berumur dua puluh lima tahun.
+工場で働いています。|koujou de hataraite imasu.|Saya bekerja di pabrik.
+日本に来て一年です。|nihon ni kite ichinen desu.|Sudah satu tahun saya di Jepang.
+趣味は音楽を聞くことです。|shumi wa ongaku o kiku koto desu.|Hobi saya mendengarkan musik.
+お名前は何ですか。|onamae wa nan desu ka.|Siapa nama Anda?
+どこから来ましたか。|doko kara kimashita ka.|Anda datang dari mana?
+お仕事は何ですか。|oshigoto wa nan desu ka.|Apa pekerjaan Anda?
+日本語を勉強しています。|nihongo o benkyou shite imasu.|Saya sedang belajar bahasa Jepang.
+家族は五人です。|kazoku wa gonin desu.|Keluarga saya lima orang.
+結婚しています。|kekkon shite imasu.|Saya sudah menikah.
+独身です。|dokushin desu.|Saya masih lajang.
+これからよろしくお願いします。|korekara yoroshiku onegaishimasu.|Mohon bantuannya mulai sekarang.
+
+@Pertanyaan Umum
+これは何ですか。|kore wa nan desu ka.|Ini apa?
+トイレはどこですか。|toire wa doko desu ka.|Toilet di mana?
+今、何時ですか。|ima, nanji desu ka.|Sekarang jam berapa?
+いくらですか。|ikura desu ka.|Berapa harganya?
+どうしてですか。|doushite desu ka.|Mengapa?
+誰ですか。|dare desu ka.|Siapa?
+いつですか。|itsu desu ka.|Kapan?
+どうやって行きますか。|douyatte ikimasu ka.|Bagaimana cara pergi ke sana?
+英語を話せますか。|eigo o hanasemasu ka.|Bisa berbicara bahasa Inggris?
+これは日本語で何と言いますか。|kore wa nihongo de nan to iimasu ka.|Ini disebut apa dalam bahasa Jepang?
+もう一度言ってください。|mou ichido itte kudasai.|Tolong katakan sekali lagi.
+ゆっくり話してください。|yukkuri hanashite kudasai.|Tolong bicara pelan-pelan.
+分かりません。|wakarimasen.|Saya tidak mengerti.
+分かりました。|wakarimashita.|Saya mengerti.
+ちょっと待ってください。|chotto matte kudasai.|Tolong tunggu sebentar.
+どういう意味ですか。|dou iu imi desu ka.|Apa artinya?
+手伝ってくれませんか。|tetsudatte kuremasen ka.|Bisakah Anda membantu saya?
+写真を撮ってもいいですか。|shashin o totte mo ii desu ka.|Bolehkah saya memotret?
+
+@Di Tempat Kerja
+今日もよろしくお願いします。|kyou mo yoroshiku onegaishimasu.|Mohon kerja samanya hari ini juga.
+今日の予定を教えてください。|kyou no yotei o oshiete kudasai.|Tolong beri tahu jadwal hari ini.
+これはどうやって使いますか。|kore wa douyatte tsukaimasu ka.|Bagaimana cara memakai ini?
+終わりました。|owarimashita.|Sudah selesai.
+次は何をしますか。|tsugi wa nani o shimasu ka.|Selanjutnya saya mengerjakan apa?
+確認してもいいですか。|kakunin shite mo ii desu ka.|Bolehkah saya memastikan?
+問題があります。|mondai ga arimasu.|Ada masalah.
+この製品は不良品です。|kono seihin wa furyouhin desu.|Produk ini cacat.
+傷があります。|kizu ga arimasu.|Ada goresan.
+汚れがあります。|yogore ga arimasu.|Ada noda.
+縫い目がずれています。|nuime ga zurete imasu.|Jahitannya bergeser.
+機械が止まりました。|kikai ga tomarimashita.|Mesinnya berhenti.
+部品が足りません。|buhin ga tarimasen.|Komponennya kurang.
+すぐに報告します。|sugu ni houkoku shimasu.|Saya segera melapor.
+班長を呼んできます。|hanchou o yonde kimasu.|Saya panggilkan ketua regu.
+休憩は何時からですか。|kyuukei wa nanji kara desu ka.|Istirahat mulai jam berapa?
+今日は残業がありますか。|kyou wa zangyou ga arimasu ka.|Hari ini ada lembur?
+明日は休みます。|ashita wa yasumimasu.|Besok saya libur.
+遅れてすみません。|okurete sumimasen.|Maaf saya terlambat.
+もう一度教えていただけますか。|mou ichido oshiete itadakemasu ka.|Bisakah Anda mengajari saya sekali lagi?
+メモを取ります。|memo o torimasu.|Saya catat.
+安全第一です。|anzen daiichi desu.|Keselamatan nomor satu.
+手袋をしてください。|tebukuro o shite kudasai.|Tolong pakai sarung tangan.
+気をつけてください。|ki o tsukete kudasai.|Tolong hati-hati.
+危ないです！|abunai desu!|Berbahaya!
+ここに置いてもいいですか。|koko ni oite mo ii desu ka.|Bolehkah saya taruh di sini?
+数を数えてください。|kazu o kazoete kudasai.|Tolong hitung jumlahnya.
+左右のサイズを確認しました。|sayuu no saizu o kakunin shimashita.|Saya sudah mengecek ukuran kiri dan kanan.
+今日の目標は千足です。|kyou no mokuhyou wa sensoku desu.|Target hari ini seribu pasang.
+お疲れ様でした。また明日。|otsukaresama deshita. mata ashita.|Terima kasih atas kerja kerasnya. Sampai besok.
+
+@Belanja
+これをください。|kore o kudasai.|Saya mau ini.
+これはいくらですか。|kore wa ikura desu ka.|Ini berapa harganya?
+もう少し安いのはありますか。|mou sukoshi yasui no wa arimasu ka.|Ada yang sedikit lebih murah?
+試着してもいいですか。|shichaku shite mo ii desu ka.|Bolehkah saya mencobanya?
+大きいサイズはありますか。|ookii saizu wa arimasu ka.|Ada ukuran besar?
+ほかの色はありますか。|hoka no iro wa arimasu ka.|Ada warna lain?
+カードで払えますか。|kaado de haraemasu ka.|Bisa bayar pakai kartu?
+袋はいりません。|fukuro wa irimasen.|Tidak perlu kantong.
+袋をください。|fukuro o kudasai.|Minta kantong.
+レシートをください。|reshiito o kudasai.|Minta struknya.
+見ているだけです。|mite iru dake desu.|Saya hanya melihat-lihat.
+これにします。|kore ni shimasu.|Saya pilih ini.
+全部でいくらですか。|zenbu de ikura desu ka.|Semuanya berapa?
+お弁当を温めてください。|obentou o atatamete kudasai.|Tolong hangatkan bentonya.
+売り場はどこですか。|uriba wa doko desu ka.|Di mana bagian penjualannya?
+何時まで開いていますか。|nanji made aite imasu ka.|Buka sampai jam berapa?
+セールはいつまでですか。|seeru wa itsu made desu ka.|Obralnya sampai kapan?
+返品できますか。|henpin dekimasu ka.|Bisa dikembalikan?
+プレゼント用に包んでください。|purezento you ni tsutsunde kudasai.|Tolong bungkus untuk hadiah.
+ポイントカードはありません。|pointo kaado wa arimasen.|Saya tidak punya kartu poin.
+
+@Makan & Minum
+メニューを見せてください。|menyuu o misete kudasai.|Tolong tunjukkan menunya.
+おすすめは何ですか。|osusume wa nan desu ka.|Apa rekomendasinya?
+これは辛いですか。|kore wa karai desu ka.|Ini pedas?
+豚肉が入っていますか。|butaniku ga haitte imasu ka.|Apakah ada daging babinya?
+お酒は飲めません。|osake wa nomemasen.|Saya tidak bisa minum alkohol.
+水をください。|mizu o kudasai.|Minta air.
+お会計をお願いします。|okaikei o onegaishimasu.|Minta tagihannya.
+とてもおいしいです。|totemo oishii desu.|Sangat enak.
+おなかがすきました。|onaka ga sukimashita.|Saya lapar.
+おなかがいっぱいです。|onaka ga ippai desu.|Saya kenyang.
+のどがかわきました。|nodo ga kawakimashita.|Saya haus.
+一緒にご飯を食べませんか。|issho ni gohan o tabemasen ka.|Mau makan bersama?
+何を食べたいですか。|nani o tabetai desu ka.|Mau makan apa?
+二人です。|futari desu.|Dua orang.
+予約しています。|yoyaku shite imasu.|Saya sudah reservasi.
+持ち帰りでお願いします。|mochikaeri de onegaishimasu.|Untuk dibawa pulang.
+ここで食べます。|koko de tabemasu.|Makan di sini.
+コーヒーを一つお願いします。|koohii o hitotsu onegaishimasu.|Kopi satu, ya.
+甘いものが好きです。|amai mono ga suki desu.|Saya suka makanan manis.
+アレルギーがあります。|arerugii ga arimasu.|Saya punya alergi.
+野菜も食べてください。|yasai mo tabete kudasai.|Makan sayurnya juga, ya.
+いい匂いがします。|ii nioi ga shimasu.|Baunya harum.
+
+@Transportasi & Arah
+駅はどこですか。|eki wa doko desu ka.|Stasiun di mana?
+この電車は大阪へ行きますか。|kono densha wa oosaka e ikimasu ka.|Apakah kereta ini ke Osaka?
+次の駅はどこですか。|tsugi no eki wa doko desu ka.|Stasiun berikutnya mana?
+切符はどこで買えますか。|kippu wa doko de kaemasu ka.|Tiket bisa dibeli di mana?
+乗り換えはどこですか。|norikae wa doko desu ka.|Ganti kereta di mana?
+まっすぐ行ってください。|massugu itte kudasai.|Silakan jalan lurus.
+右に曲がってください。|migi ni magatte kudasai.|Silakan belok kanan.
+左に曲がってください。|hidari ni magatte kudasai.|Silakan belok kiri.
+ここで止めてください。|koko de tomete kudasai.|Tolong berhenti di sini.
+この住所まで行ってください。|kono juusho made itte kudasai.|Tolong antar ke alamat ini.
+バス停はどこですか。|basutei wa doko desu ka.|Halte bus di mana?
+歩いて何分ですか。|aruite nanpun desu ka.|Berapa menit jalan kaki?
+道に迷いました。|michi ni mayoimashita.|Saya tersesat.
+地図を書いてもらえますか。|chizu o kaite moraemasu ka.|Bisakah digambarkan petanya?
+電車が遅れています。|densha ga okurete imasu.|Keretanya terlambat.
+終電は何時ですか。|shuuden wa nanji desu ka.|Kereta terakhir jam berapa?
+自転車で行きます。|jitensha de ikimasu.|Saya pergi naik sepeda.
+近いですか。|chikai desu ka.|Apakah dekat?
+遠いですか。|tooi desu ka.|Apakah jauh?
+空港までどのくらいかかりますか。|kuukou made dono kurai kakarimasu ka.|Sampai bandara berapa lama?
+この席は空いていますか。|kono seki wa aite imasu ka.|Kursi ini kosong?
+降ります！|orimasu!|Saya turun!
+
+@Waktu & Cuaca
+今日は何曜日ですか。|kyou wa nan'youbi desu ka.|Hari ini hari apa?
+今日は何日ですか。|kyou wa nannichi desu ka.|Hari ini tanggal berapa?
+明日は休みです。|ashita wa yasumi desu.|Besok libur.
+もう遅いです。|mou osoi desu.|Sudah larut.
+時間がありません。|jikan ga arimasen.|Tidak ada waktu.
+まだ時間があります。|mada jikan ga arimasu.|Masih ada waktu.
+間に合いますか。|ma ni aimasu ka.|Apakah keburu?
+今日は暑いですね。|kyou wa atsui desu ne.|Hari ini panas, ya.
+今日は寒いですね。|kyou wa samui desu ne.|Hari ini dingin, ya.
+雨が降っています。|ame ga futte imasu.|Sedang hujan.
+雪が降りそうです。|yuki ga furisou desu.|Sepertinya akan turun salju.
+いい天気ですね。|ii tenki desu ne.|Cuacanya bagus, ya.
+風が強いです。|kaze ga tsuyoi desu.|Anginnya kencang.
+傘を持っていますか。|kasa o motte imasu ka.|Kamu bawa payung?
+台風が来ます。|taifuu ga kimasu.|Topan akan datang.
+毎朝六時に起きます。|maiasa rokuji ni okimasu.|Setiap pagi saya bangun jam enam.
+週末は何をしますか。|shuumatsu wa nani o shimasu ka.|Akhir pekan mau ngapain?
+来月、国へ帰ります。|raigetsu, kuni e kaerimasu.|Bulan depan saya pulang ke negara asal.
+
+@Kesehatan
+気分が悪いです。|kibun ga warui desu.|Saya merasa tidak enak badan.
+頭が痛いです。|atama ga itai desu.|Kepala saya sakit.
+おなかが痛いです。|onaka ga itai desu.|Perut saya sakit.
+熱があります。|netsu ga arimasu.|Saya demam.
+咳が出ます。|seki ga demasu.|Saya batuk.
+風邪をひきました。|kaze o hikimashita.|Saya masuk angin.
+病院へ行きたいです。|byouin e ikitai desu.|Saya ingin ke rumah sakit.
+薬をください。|kusuri o kudasai.|Minta obat.
+けがをしました。|kega o shimashita.|Saya terluka.
+救急車を呼んでください。|kyuukyuusha o yonde kudasai.|Tolong panggil ambulans.
+少し休みたいです。|sukoshi yasumitai desu.|Saya ingin istirahat sebentar.
+よく眠れません。|yoku nemuremasen.|Saya tidak bisa tidur nyenyak.
+疲れました。|tsukaremashita.|Saya lelah.
+もう大丈夫です。|mou daijoubu desu.|Saya sudah tidak apa-apa.
+アレルギーはありません。|arerugii wa arimasen.|Saya tidak punya alergi.
+一日三回飲んでください。|ichinichi sankai nonde kudasai.|Minumlah tiga kali sehari.
+
+@Perasaan
+うれしいです。|ureshii desu.|Saya senang.
+楽しいです。|tanoshii desu.|Menyenangkan.
+悲しいです。|kanashii desu.|Saya sedih.
+寂しいです。|sabishii desu.|Saya kesepian.
+びっくりしました。|bikkuri shimashita.|Saya kaget.
+心配です。|shinpai desu.|Saya khawatir.
+安心しました。|anshin shimashita.|Saya lega.
+緊張しています。|kinchou shite imasu.|Saya gugup.
+怖いです。|kowai desu.|Saya takut.
+恥ずかしいです。|hazukashii desu.|Saya malu.
+残念です。|zannen desu.|Sayang sekali.
+すごいですね！|sugoi desu ne!|Hebat, ya!
+かわいいですね。|kawaii desu ne.|Lucu, ya.
+頑張ります。|ganbarimasu.|Saya akan berusaha.
+頑張ってください。|ganbatte kudasai.|Semangat, ya.
+退屈です。|taikutsu desu.|Saya bosan.
+国が懐かしいです。|kuni ga natsukashii desu.|Saya rindu kampung halaman.
+本当にありがとう。|hontou ni arigatou.|Terima kasih banyak.
+
+@Rumah & Sehari-hari
+ご飯ができましたよ。|gohan ga dekimashita yo.|Makanan sudah siap.
+お風呂に入ります。|ofuro ni hairimasu.|Saya mandi berendam.
+洗濯をします。|sentaku o shimasu.|Saya mencuci pakaian.
+部屋を掃除します。|heya o souji shimasu.|Saya membersihkan kamar.
+ゴミを出してください。|gomi o dashite kudasai.|Tolong buang sampahnya.
+電気を消してください。|denki o keshite kudasai.|Tolong matikan lampunya.
+窓を開けてもいいですか。|mado o akete mo ii desu ka.|Bolehkah saya buka jendelanya?
+エアコンをつけましょうか。|eakon o tsukemashou ka.|Bagaimana kalau AC-nya dinyalakan?
+鍵を忘れました。|kagi o wasuremashita.|Saya lupa kunci.
+今から寝ます。|ima kara nemasu.|Sekarang saya mau tidur.
+テレビを見ています。|terebi o mite imasu.|Saya sedang menonton TV.
+買い物に行ってきます。|kaimono ni itte kimasu.|Saya pergi belanja dulu.
+すぐ戻ります。|sugu modorimasu.|Saya segera kembali.
+シャワーを浴びます。|shawaa o abimasu.|Saya mandi pancuran.
+朝ご飯を食べましたか。|asagohan o tabemashita ka.|Sudah sarapan?
+家族に電話します。|kazoku ni denwa shimasu.|Saya menelepon keluarga.
+荷物が届きました。|nimotsu ga todokimashita.|Paketnya sudah sampai.
+ネットがつながりません。|netto ga tsunagarimasen.|Internetnya tidak tersambung.
+
+@Telepon
+もしもし。|moshimoshi.|Halo (telepon).
+今、話せますか。|ima, hanasemasu ka.|Sekarang bisa bicara?
+後で電話します。|ato de denwa shimasu.|Nanti saya telepon.
+電話番号を教えてください。|denwa bangou o oshiete kudasai.|Tolong beri tahu nomor telepon Anda.
+少し声が遠いです。|sukoshi koe ga tooi desu.|Suaranya agak kurang jelas.
+メッセージを送ります。|messeeji o okurimasu.|Saya kirim pesan.
+電話に出られませんでした。|denwa ni deraremasen deshita.|Saya tidak bisa mengangkat telepon.
+伝言をお願いできますか。|dengon o onegai dekimasu ka.|Bisa saya titip pesan?
+間違い電話です。|machigai denwa desu.|Salah sambung.
+充電が切れそうです。|juuden ga kiresou desu.|Baterainya hampir habis.
+また連絡します。|mata renraku shimasu.|Nanti saya hubungi lagi.
+
+@Sekolah & Belajar
+質問があります。|shitsumon ga arimasu.|Saya punya pertanyaan.
+宿題を忘れました。|shukudai o wasuremashita.|Saya lupa PR.
+この漢字の読み方を教えてください。|kono kanji no yomikata o oshiete kudasai.|Tolong ajari cara baca kanji ini.
+辞書を使ってもいいですか。|jisho o tsukatte mo ii desu ka.|Bolehkah saya memakai kamus?
+試験はいつですか。|shiken wa itsu desu ka.|Ujiannya kapan?
+毎日一時間勉強します。|mainichi ichijikan benkyou shimasu.|Saya belajar satu jam setiap hari.
+日本語は難しいですが、面白いです。|nihongo wa muzukashii desu ga, omoshiroi desu.|Bahasa Jepang sulit, tetapi menarik.
+もっと練習したいです。|motto renshuu shitai desu.|Saya ingin berlatih lebih banyak.
+試験に合格したいです。|shiken ni goukaku shitai desu.|Saya ingin lulus ujian.
+教科書を忘れました。|kyoukasho o wasuremashita.|Saya lupa membawa buku pelajaran.
+どうやって覚えますか。|douyatte oboemasu ka.|Bagaimana cara menghafalnya?
+発音が難しいです。|hatsuon ga muzukashii desu.|Pengucapannya sulit.
+もう少しゆっくりお願いします。|mou sukoshi yukkuri onegaishimasu.|Tolong sedikit lebih pelan.
+先生、ありがとうございました。|sensei, arigatou gozaimashita.|Terima kasih, Guru.
+
+@Tempat Umum & Darurat
+助けて！|tasukete!|Tolong!
+火事です！|kaji desu!|Kebakaran!
+警察を呼んでください。|keisatsu o yonde kudasai.|Tolong panggil polisi.
+財布をなくしました。|saifu o nakushimashita.|Saya kehilangan dompet.
+パスポートをなくしました。|pasupooto o nakushimashita.|Saya kehilangan paspor.
+地震です。机の下に入ってください。|jishin desu. tsukue no shita ni haitte kudasai.|Gempa. Masuk ke bawah meja.
+非常口はどこですか。|hijouguchi wa doko desu ka.|Pintu darurat di mana?
+ここでたばこを吸ってもいいですか。|koko de tabako o sutte mo ii desu ka.|Bolehkah merokok di sini?
+写真は禁止です。|shashin wa kinshi desu.|Dilarang memotret.
+静かにしてください。|shizuka ni shite kudasai.|Mohon tenang.
+並んでください。|narande kudasai.|Silakan antre.
+この書類に記入してください。|kono shorui ni kinyuu shite kudasai.|Silakan isi dokumen ini.
+在留カードを見せてください。|zairyuu kaado o misete kudasai.|Tolong tunjukkan kartu izin tinggal.
+銀行は何時に開きますか。|ginkou wa nanji ni akimasu ka.|Bank buka jam berapa?
+郵便局はどこですか。|yuubinkyoku wa doko desu ka.|Kantor pos di mana?
+インドネシア大使館に連絡したいです。|indoneshia taishikan ni renraku shitai desu.|Saya ingin menghubungi Kedutaan Indonesia.
