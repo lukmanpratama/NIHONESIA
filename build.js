@@ -162,8 +162,24 @@ function buildBunpo() {
     if (!lv) { bad.push(`bunpo.txt:${ln + 1} di luar level: ${line}`); return; }
     if (line[0] === '#') { sec = [line.slice(1).trim(), []]; lv.s.push(sec); return; }
     if (p[0] === '!contoh') { if (p.length !== 4) bad.push(`bunpo.txt:${ln + 1} format contoh salah`); else lv.ex.push(p.slice(1)); return; }
-    if (!sec || p.length !== 3 || p.some(x => !x)) { bad.push(`bunpo.txt:${ln + 1} format salah: ${line}`); return; }
+    if (!sec || (p.length !== 3 && p.length !== 6) || p.some(x => !x)) { bad.push(`bunpo.txt:${ln + 1} format salah: ${line}`); return; }
+    if (p.length === 6 && !/\{.+?\}/.test(p[3])) { bad.push(`bunpo.txt:${ln + 1} contoh tanpa bagian {…}: ${line}`); return; }
     sec[1].push(p);
+  });
+  return out;
+}
+
+// ===== BUN (src/bun.txt) → [[kategori, jepang, romaji, arti], ...] =====
+function buildBun() {
+  const out = [], seen = new Set(); let cat = 'Lain-lain';
+  fs.readFileSync(path.join(ROOT, 'src', 'bun.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    if (line[0] === '@') { cat = line.slice(1).trim(); return; }
+    const p = line.split('|').map(x => x.trim());
+    if (p.length !== 3 || p.some(x => !x)) { bad.push(`bun.txt:${ln + 1} format salah: ${line}`); return; }
+    if (seen.has(p[0])) { bad.push(`bun.txt:${ln + 1} kalimat ganda: ${p[0]}`); return; }
+    seen.add(p[0]); out.push([cat, ...p]);
   });
   return out;
 }
@@ -190,10 +206,11 @@ async function buildKana() {
   const KW = buildKaiwa();
   const KN = await buildKana();
   const BP = buildBunpo();
+  const BN = buildBun();
   const data = JSON.stringify({ t: types, l: levels, d: rows.join('\n') });
   const kdata = JSON.stringify({ c: K.cats, l: K.klv, d: K.list.map(x => [x.k, x.kun.join(','), x.on.join(','), x.a, x.c, x.l, x.s, x.n]) });
   let tpl = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
-  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP) };
+  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN) };
   for (const [m, v] of Object.entries(inject)) {
     if (!tpl.includes(m)) throw new Error(`Penanda ${m} tidak ditemukan di template`);
     tpl = tpl.split(m).join(v);
@@ -204,6 +221,7 @@ async function buildKana() {
   console.log(`index.html dibuat: ${rows.length} kata`, byLv);
   console.log(`Kanji: ${K.list.length} dalam ${K.cats.length} kategori` + (K.fetched ? ` (${K.fetched} data goresan baru diunduh)` : ''));
   console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori`);
+  console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
   console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
   console.log(`Kana dengan data goresan: ${Object.keys(KN.out).length}` + (KN.fetched ? ` (${KN.fetched} baru diunduh)` : '') + (KN.missing.length ? ` · tidak tersedia: ${KN.missing.join('')}` : ''));
   if (dups.length) console.log(`${dups.length} kata duplikat dilewati` + (process.argv.includes('-v') ? ':\n  ' + dups.join('\n  ') : ' (jalankan dengan -v untuk melihat)'));
