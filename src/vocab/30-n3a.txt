@@ -1,0 +1,872 @@
+// ===== JLPT N3 (perkiraan) — kata benda bagian 1 =====
+@N3
+#Kata benda
+// masyarakat & orang
+相手|あいて|mitra / lawan
+赤ん坊|あかんぼう|bayi (orok)
+悪魔|あくま|setan
+悪口|わるぐち|ejekan / jelekkan orang
+遺族|いぞく|keluarga yang ditinggalkan
+一般|いっぱん|umum
+一生|いっしょう|seumur hidup
+一部|いちぶ|sebagian
+一方|いっぽう|satu sisi / sementara itu
+田舎者|いなかもの|orang kampung
+命令|めいれい|perintah
+印象|いんしょう|kesan
+宇宙|うちゅう|alam semesta / luar angkasa
+腕時計|うでどけい|jam tangan
+裏|うら|bagian belakang / sisi balik
+表|おもて|bagian depan / permukaan
+噂|うわさ|gosip / desas-desus
+運|うん|keberuntungan
+運動|うんどう|olahraga / gerakan
+映像|えいぞう|gambar video
+英雄|えいゆう|pahlawan
+栄養|えいよう|gizi
+笑顔|えがお|wajah tersenyum
+駅前|えきまえ|depan stasiun
+円|えん|lingkaran / yen
+演技|えんぎ|akting
+演説|えんぜつ|pidato
+演奏|えんそう|pertunjukan musik
+王|おう|raja
+王様|おうさま|baginda raja
+応援|おうえん|dukungan / sorakan
+応募|おうぼ|lamaran / pendaftaran
+大雨|おおあめ|hujan lebat
+大勢|おおぜい|banyak orang
+大家|おおや|pemilik kos / rumah sewa
+屋外|おくがい|luar ruangan
+屋内|おくない|dalam ruangan
+お互い|おたがい|satu sama lain
+お年寄り|おとしより|orang lanjut usia
+同い年|おないどし|seumuran
+お腹|おなか|perut (bagian)
+お祭|おまつり|perayaan
+思い出|おもいで|kenangan
+親指|おやゆび|ibu jari
+温度|おんど|suhu
+温泉|おんせん|pemandian air panas
+会員|かいいん|anggota
+海外|かいがい|luar negeri (seberang laut)
+会計|かいけい|pembayaran / akuntansi
+解決|かいけつ|penyelesaian
+外交|がいこう|diplomasi
+改札|かいさつ|gerbang tiket
+会社員|かいしゃいん|pegawai kantoran
+解釈|かいしゃく|penafsiran
+外出|がいしゅつ|keluar rumah
+回数|かいすう|jumlah kali
+快晴|かいせい|cerah sekali
+解説|かいせつ|ulasan / penjelasan
+階段|かいだん|anak tangga
+回答|かいとう|jawaban (resmi)
+解答|かいとう|jawaban soal
+開発|かいはつ|pengembangan
+会費|かいひ|iuran anggota
+価格|かかく|harga (resmi)
+科学者|かがくしゃ|ilmuwan
+係|かかり|petugas yang bertanggung jawab
+家具|かぐ|perabot
+覚悟|かくご|tekad / kesiapan
+学者|がくしゃ|cendekiawan
+学習|がくしゅう|pembelajaran
+学生証|がくせいしょう|kartu pelajar
+拡大|かくだい|perbesaran
+角度|かくど|sudut (derajat)
+学年|がくねん|tingkat kelas
+学費|がくひ|biaya sekolah
+学問|がくもん|ilmu
+学力|がくりょく|kemampuan akademik
+影|かげ|bayangan
+過去|かこ|masa lalu
+傘立て|かさたて|tempat payung
+火山|かざん|gunung berapi
+家事|かじ|pekerjaan rumah tangga
+歌詞|かし|lirik lagu
+菓子|かし|kudapan
+家賃|やちん|uang sewa rumah
+数|すう|bilangan
+課題|かだい|tugas / tantangan
+片道|かたみち|sekali jalan
+価値|かち|nilai
+勝ち|かち|kemenangan
+学科|がっか|jurusan
+学期|がっき|semester
+楽器|がっき|alat musik
+格好|かっこう|penampilan
+活動|かつどう|kegiatan
+家庭|かてい|rumah tangga
+過程|かてい|proses
+課程|かてい|kurikulum
+仮定|かてい|asumsi
+悲しみ|かなしみ|kesedihan
+可能性|かのうせい|kemungkinan
+株|かぶ|saham
+花粉|かふん|serbuk sari
+神|かみ|dewa / Tuhan
+神様|かみさま|Tuhan
+雷|かみなり|petir
+科目|かもく|mata pelajaran
+画面|がめん|layar
+体つき|からだつき|bentuk tubuh
+借り|かり|utang / pinjaman
+環境|かんきょう|lingkungan
+関係|かんけい|hubungan
+観光|かんこう|pariwisata
+観光客|かんこうきゃく|wisatawan
+看護|かんご|perawatan (medis)
+感謝|かんしゃ|rasa terima kasih
+患者|かんじゃ|pasien
+感情|かんじょう|emosi
+勘定|かんじょう|tagihan / perhitungan
+感心|かんしん|kekaguman
+関心|かんしん|ketertarikan
+完成|かんせい|penyelesaian (karya)
+感想|かんそう|kesan / tanggapan
+乾燥|かんそう|kekeringan
+観客|かんきゃく|penonton
+看板|かんばん|papan nama
+完了|かんりょう|selesai / tuntas
+管理|かんり|pengelolaan
+気温|きおん|suhu udara
+機会|きかい|kesempatan
+期間|きかん|periode
+企業|きぎょう|perusahaan (korporasi)
+期限|きげん|batas waktu
+機嫌|きげん|suasana hati (mood)
+気候|きこう|iklim
+記事|きじ|artikel
+技師|ぎし|insinyur / teknisi
+記者|きしゃ|wartawan
+傷口|きずぐち|luka terbuka
+季節|きせつ|musim
+基礎|きそ|dasar / fondasi
+期待|きたい|harapan
+帰宅|きたく|pulang ke rumah
+気付き|きづき|kesadaran / temuan
+切手代|きってだい|biaya perangko
+記入|きにゅう|pengisian (formulir)
+記念|きねん|peringatan / kenang-kenangan
+記念日|きねんび|hari peringatan
+機能|きのう|fungsi
+希望|きぼう|harapan / keinginan
+基本|きほん|dasar
+気味|きみ|kecenderungan / perasaan
+義務|ぎむ|kewajiban
+疑問|ぎもん|keraguan / pertanyaan
+客席|きゃくせき|kursi penonton
+休暇|きゅうか|cuti
+休日|きゅうじつ|hari libur
+救急車|きゅうきゅうしゃ|ambulans
+給食|きゅうしょく|makan siang sekolah
+教育|きょういく|pendidikan
+教員|きょういん|tenaga pengajar
+強化|きょうか|penguatan
+行事|ぎょうじ|acara tahunan
+共通|きょうつう|kesamaan
+協力|きょうりょく|kerja sama
+許可|きょか|izin
+距離|きょり|jarak
+記録|きろく|rekor
+議論|ぎろん|diskusi / debat
+金額|きんがく|jumlah uang
+近代|きんだい|zaman modern
+筋肉|きんにく|otot
+金融|きんゆう|keuangan
+空間|くうかん|ruang
+空席|くうせき|kursi kosong
+区別|くべつ|pembedaan
+工夫|くふう|akal / cara kreatif
+組合|くみあい|serikat
+雲|くも|awan
+暮らし|くらし|kehidupan
+苦労|くろう|kesusahan
+訓練|くんれん|pelatihan
+計算|けいさん|perhitungan
+芸術|げいじゅつ|seni
+携帯|けいたい|ponsel
+契約|けいやく|kontrak
+経由|けいゆ|melalui / transit
+景色|けしき|pemandangan
+化粧|けしょう|riasan wajah
+血液|けつえき|darah (medis)
+結論|けつろん|kesimpulan
+煙|けむり|asap
+原料|げんりょう|bahan baku
+件|けん|perkara / hal
+県庁|けんちょう|kantor prefektur
+見学|けんがく|kunjungan studi
+研修|けんしゅう|pelatihan kerja
+現金|げんきん|uang tunai
+言語|げんご|bahasa (linguistik)
+現在|げんざい|saat ini
+現実|げんじつ|kenyataan
+現代|げんだい|zaman sekarang
+建築|けんちく|arsitektur
+検討|けんとう|pertimbangan
+見当|けんとう|perkiraan
+権利|けんり|hak
+効果|こうか|efek
+硬貨|こうか|uang logam
+公開|こうかい|pembukaan untuk umum
+後悔|こうかい|penyesalan
+合計|ごうけい|total
+広告|こうこく|iklan
+交際|こうさい|pergaulan / pacaran
+工事|こうじ|konstruksi
+公式|こうしき|resmi / rumus
+講師|こうし|dosen / instruktur
+公衆|こうしゅう|publik
+交渉|こうしょう|negosiasi
+行動|こうどう|tindakan
+講堂|こうどう|aula
+後半|こうはん|paruh kedua
+前半|ぜんはん|paruh pertama
+幸福|こうふく|kebahagiaan
+興奮|こうふん|kegembiraan / kegairahan
+公務員|こうむいん|pegawai negeri
+項目|こうもく|butir / item
+紅葉|こうよう|daun musim gugur
+効率|こうりつ|efisiensi
+声援|せいえん|sorakan dukungan
+語学|ごがく|studi bahasa
+国語|こくご|bahasa nasional
+国際|こくさい|internasional
+国籍|こくせき|kewarganegaraan
+国民|こくみん|rakyat
+国立|こくりつ|negeri (milik negara)
+個人|こじん|individu
+小銭|こぜに|uang receh
+国家|こっか|negara (bangsa)
+骨折|こっせつ|patah tulang
+言葉遣い|ことばづかい|cara bertutur
+断り|ことわり|penolakan
+好み|このみ|selera
+小麦|こむぎ|gandum
+小麦粉|こむぎこ|tepung terigu
+今回|こんかい|kali ini
+今後|こんご|ke depannya
+混雑|こんざつ|kepadatan
+献立|こんだて|menu masakan
+差|さ|selisih
+最高|さいこう|tertinggi / terbaik
+最低|さいてい|terendah / terburuk
+最新|さいしん|terbaru
+最終|さいしゅう|final / terakhir
+最中|さいちゅう|di tengah-tengah
+才能|さいのう|bakat
+裁判|さいばん|pengadilan
+材料費|ざいりょうひ|biaya bahan
+坂道|さかみち|jalan menanjak
+作業着|さぎょうぎ|baju kerja
+作者|さくしゃ|pengarang
+作品|さくひん|karya
+桜|さくら|sakura
+酒屋|さかや|toko minuman keras
+差出人|さしだしにん|pengirim
+座席|ざせき|kursi / tempat duduk
+撮影|さつえい|pengambilan gambar
+雑音|ざつおん|suara bising
+砂漠|さばく|gurun
+作法|さほう|tata krama
+左右|さゆう|kiri-kanan
+参加|さんか|partisipasi
+産地|さんち|daerah asal produk
+賛成|さんせい|persetujuan
+反対|はんたい|penentangan / kebalikan
+酸素|さんそ|oksigen
+残高|ざんだか|saldo
+幸せ者|しあわせもの|orang beruntung
+司会|しかい|pembawa acara
+資格|しかく|kualifikasi
+四角|しかく|segi empat
+時期|じき|masa / periode
+支給|しきゅう|pemberian (tunjangan)
+事件|じけん|kasus / insiden
+事故|じこ|kecelakaan
+時刻|じこく|waktu (jam tertentu)
+時刻表|じこくひょう|jadwal waktu
+地獄|じごく|neraka
+仕事場|しごとば|tempat kerja
+指示|しじ|instruksi
+事実|じじつ|fakta
+支出|ししゅつ|pengeluaran
+詩人|しじん|penyair
+自信|じしん|percaya diri
+自然|しぜん|alam
+子孫|しそん|keturunan
+舌|した|lidah
+時代|じだい|zaman
+下書き|したがき|draf
+自宅|じたく|rumah sendiri
+実家|じっか|rumah orang tua
+失業|しつぎょう|pengangguran
+湿気|しっけ|kelembapan
+実験|じっけん|eksperimen
+実際|じっさい|kenyataannya
+実力|じつりょく|kemampuan sebenarnya
+失礼|しつれい|ketidaksopanan
+指定|してい|penetapan
+指定席|していせき|kursi bernomor
+支店|してん|kantor cabang
+自動|じどう|otomatis
+品切れ|しなぎれ|stok habis
+支配|しはい|kekuasaan
+芝居|しばい|sandiwara
+芝生|しばふ|halaman berumput
+支払い|しはらい|pembayaran
+地面|じめん|permukaan tanah
+社会|しゃかい|masyarakat
+車庫|しゃこ|garasi
+車掌|しゃしょう|kondektur
+写真家|しゃしんか|fotografer
+社長室|しゃちょうしつ|ruang direktur
+車道|しゃどう|jalur kendaraan
+歩道|ほどう|trotoar
+邪魔者|じゃまもの|pengganggu
+自由時間|じゆうじかん|waktu bebas
+周囲|しゅうい|sekeliling
+収穫|しゅうかく|panen
+集合|しゅうごう|berkumpul
+住宅|じゅうたく|perumahan
+渋滞|じゅうたい|kemacetan
+集中|しゅうちゅう|konsentrasi
+終点|しゅうてん|pemberhentian akhir
+重要|じゅうよう|kepentingan
+修理代|しゅうりだい|biaya perbaikan
+主義|しゅぎ|paham / prinsip
+宿泊|しゅくはく|penginapan
+手術|しゅじゅつ|operasi (bedah)
+首相|しゅしょう|perdana menteri
+主張|しゅちょう|klaim / pendapat
+出勤|しゅっきん|berangkat kerja
+出身|しゅっしん|asal (daerah)
+出張|しゅっちょう|perjalanan dinas
+出版|しゅっぱん|penerbitan
+首都|しゅと|ibu kota
+主婦|しゅふ|ibu rumah tangga
+種類|しゅるい|jenis
+順番|じゅんばん|urutan
+使用|しよう|penggunaan
+上映|じょうえい|pemutaran film
+障害|しょうがい|hambatan / disabilitas
+奨学金|しょうがくきん|beasiswa
+正月|しょうがつ|tahun baru
+状況|じょうきょう|situasi
+条件|じょうけん|syarat
+正午|しょうご|tengah hari
+上司|じょうし|bos
+常識|じょうしき|akal sehat
+少女|しょうじょ|gadis
+少年|しょうねん|anak laki-laki remaja
+症状|しょうじょう|gejala
+小数|しょうすう|bilangan desimal
+招待状|しょうたいじょう|surat undangan
+状態|じょうたい|kondisi
+冗談|じょうだん|lelucon
+商店|しょうてん|toko
+商人|しょうにん|pedagang
+商売|しょうばい|perdagangan / bisnis
+消費|しょうひ|konsumsi
+商品|しょうひん|barang dagangan
+情報|じょうほう|informasi
+証明|しょうめい|bukti
+正面|しょうめん|bagian depan
+将来性|しょうらいせい|prospek masa depan
+職員|しょくいん|staf
+職業|しょくぎょう|profesi
+食欲|しょくよく|nafsu makan
+女性|じょせい|perempuan (formal)
+男性|だんせい|laki-laki (formal)
+食器|しょっき|peralatan makan
+書店|しょてん|toko buku (formal)
+処理|しょり|penanganan
+資料室|しりょうしつ|ruang arsip
+印|しるし|tanda
+城|しろ|istana / kastil
+進学|しんがく|melanjutkan sekolah
+神経|しんけい|saraf
+信号機|しんごうき|lampu sinyal
+人工|じんこう|buatan manusia
+深刻|しんこく|keseriusan
+診察|しんさつ|pemeriksaan dokter
+人種|じんしゅ|ras
+心身|しんしん|jiwa dan raga
+人生観|じんせいかん|pandangan hidup
+親戚|しんせき|kerabat
+新鮮|しんせん|kesegaran
+心臓|しんぞう|jantung
+身長|しんちょう|tinggi badan
+新品|しんぴん|barang baru
+人物|じんぶつ|tokoh
+新聞社|しんぶんしゃ|perusahaan surat kabar
+進歩|しんぽ|kemajuan
+深夜|しんや|larut malam
+信用|しんよう|kepercayaan
+信頼|しんらい|keyakinan / kepercayaan
+心理|しんり|psikologi
+森林|しんりん|hutan lebat
+人類|じんるい|umat manusia
+水泳|すいえい|renang
+水道|すいどう|saluran air
+水分|すいぶん|kadar air
+睡眠|すいみん|tidur (istirahat)
+数字|すうじ|angka
+姿|すがた|sosok
+好き嫌い|すききらい|suka dan tidak suka
+頭痛|ずつう|sakit kepala
+隅|すみ|pojok
+生活費|せいかつひ|biaya hidup
+世紀|せいき|abad
+請求|せいきゅう|tagihan / klaim
+税込み|ぜいこみ|termasuk pajak
+制限|せいげん|batasan
+性格|せいかく|kepribadian
+正解|せいかい|jawaban benar
+生産者|せいさんしゃ|produsen
+政治家|せいじか|politisi
+精神|せいしん|mental / jiwa
+成人|せいじん|orang dewasa (legal)
+成績|せいせき|nilai / prestasi
+製造|せいぞう|manufaktur
+生存|せいぞん|kelangsungan hidup
+贅沢|ぜいたく|kemewahan
+成長|せいちょう|pertumbuhan
+制度|せいど|sistem (aturan)
+生徒会|せいとかい|OSIS
+青年|せいねん|pemuda
+性能|せいのう|performa
+政府|せいふ|pemerintah
+制服|せいふく|seragam
+生物|せいぶつ|makhluk hidup
+生命|せいめい|kehidupan / nyawa
+西洋|せいよう|Barat (negara)
+整理券|せいりけん|nomor antrean
+世間|せけん|masyarakat umum
+世代|せだい|generasi
+石油|せきゆ|minyak bumi
+責任|せきにん|tanggung jawab
+説得|せっとく|bujukan
+設備|せつび|fasilitas
+節約|せつやく|penghematan
+背中合わせ|せなかあわせ|saling membelakangi
+線路|せんろ|rel kereta
+全員|ぜんいん|semua anggota
+前回|ぜんかい|kali sebelumnya
+選挙|せんきょ|pemilu
+先月末|せんげつまつ|akhir bulan lalu
+専攻|せんこう|jurusan kuliah
+全国|ぜんこく|seluruh negeri
+洗剤|せんざい|deterjen
+先日|せんじつ|beberapa hari lalu
+選手権|せんしゅけん|kejuaraan
+全身|ぜんしん|seluruh tubuh
+扇子|せんす|kipas lipat
+先祖|せんぞ|leluhur
+洗面所|せんめんじょ|wastafel / kamar cuci muka
+専門家|せんもんか|ahli
+全体|ぜんたい|keseluruhan
+選択|せんたく|pilihan
+宣伝|せんでん|promosi
+戦争|せんそう|perang
+平和|へいわ|perdamaian
+騒音|そうおん|kebisingan
+総合|そうごう|menyeluruh / terpadu
+倉庫|そうこ|gudang
+送料|そうりょう|ongkos kirim
+速度|そくど|kecepatan
+速達|そくたつ|kilat khusus (pos)
+組織|そしき|organisasi
+素材|そざい|bahan / material
+卒業式|そつぎょうしき|upacara kelulusan
+祖先|そせん|nenek moyang
+損|そん|kerugian
+得|とく|keuntungan
+存在|そんざい|keberadaan
+尊敬|そんけい|rasa hormat
+体育|たいいく|pendidikan jasmani
+体温|たいおん|suhu tubuh
+大会|たいかい|turnamen / konvensi
+退学|たいがく|keluar dari sekolah
+大気|たいき|atmosfer
+代金|だいきん|harga yang dibayar
+体験|たいけん|pengalaman langsung
+太鼓|たいこ|gendang
+滞在|たいざい|masa tinggal
+大事故|だいじこ|kecelakaan besar
+体重|たいじゅう|berat badan
+大臣|だいじん|menteri
+態度|たいど|sikap
+大統領|だいとうりょう|presiden
+代表|だいひょう|perwakilan
+大部分|だいぶぶん|sebagian besar
+太陽|たいよう|matahari
+体力|たいりょく|stamina
+大陸|たいりく|benua
+高校|こうこう|SMA
+宝|たから|harta karun
+宝くじ|たからくじ|lotre
+立場|たちば|posisi / kedudukan
+谷|たに|lembah
+種|たね|biji / benih
+旅|たび|perjalanan
+団体|だんたい|kelompok / organisasi
+暖房器具|だんぼうきぐ|alat pemanas
+地域|ちいき|wilayah
+知恵|ちえ|kebijaksanaan
+地下|ちか|bawah tanah
+近道|ちかみち|jalan pintas
+地球温暖化|ちきゅうおんだんか|pemanasan global
+知識|ちしき|pengetahuan
+地方|ちほう|daerah
+茶道|さどう|upacara minum teh
+注意書き|ちゅういがき|catatan peringatan
+中央|ちゅうおう|pusat
+中学|ちゅうがく|SMP
+中止|ちゅうし|pembatalan
+駐車|ちゅうしゃ|parkir
+駐車場|ちゅうしゃじょう|tempat parkir
+注射|ちゅうしゃ|suntikan
+昼食代|ちゅうしょくだい|uang makan siang
+中心|ちゅうしん|pusat / inti
+注文|ちゅうもん|pesanan
+調査|ちょうさ|survei / penyelidikan
+調子|ちょうし|kondisi
+長所|ちょうしょ|kelebihan
+短所|たんしょ|kekurangan
+頂上|ちょうじょう|puncak
+朝刊|ちょうかん|koran pagi
+夕刊|ゆうかん|koran sore
+長男|ちょうなん|putra sulung
+長女|ちょうじょ|putri sulung
+貯金箱|ちょきんばこ|celengan
+直接|ちょくせつ|langsung
+著者|ちょしゃ|penulis buku
+通学|つうがく|pergi ke sekolah
+通勤|つうきん|pergi ke kantor
+通行|つうこう|lalu lintas / lewat
+通知|つうち|pemberitahuan
+通訳|つうやく|juru bahasa
+通路|つうろ|lorong
+使い方|つかいかた|cara pakai
+月日|つきひ|waktu (hari dan bulan)
+机上|きじょう|di atas meja / teoretis
+都合上|つごうじょう|karena keadaan
+罪|つみ|dosa / kejahatan
+梅雨|つゆ|musim hujan (Jepang)
+手当|てあて|tunjangan / pertolongan
+定員|ていいん|kapasitas orang
+定期|ていき|berkala
+定期券|ていきけん|tiket langganan
+停車|ていしゃ|berhenti (kendaraan)
+提出|ていしゅつ|penyerahan (tugas)
+停電|ていでん|pemadaman listrik
+程度|ていど|tingkat / kadar
+手書き|てがき|tulisan tangan
+敵|てき|musuh
+出来事|できごと|kejadian
+手首|てくび|pergelangan tangan
+手数料|てすうりょう|biaya administrasi
+鉄|てつ|besi
+鉄道|てつどう|jalur kereta api
+徹夜|てつや|begadang semalaman
+手続き|てつづき|prosedur administrasi
+手前|てまえ|sisi sini / di depan
+天気予報|てんきよほう|prakiraan cuaca
+電球|でんきゅう|bola lampu
+天国|てんごく|surga
+天才|てんさい|jenius
+展示|てんじ|pameran
+電車賃|でんしゃちん|ongkos kereta
+伝統|でんとう|tradisi
+店長|てんちょう|manajer toko
+電波|でんぱ|gelombang radio / sinyal
+添付|てんぷ|lampiran
+展覧会|てんらんかい|pameran
+電力|でんりょく|tenaga listrik
+問い合わせ|といあわせ|pertanyaan / permintaan info
+答案|とうあん|lembar jawaban
+統一|とういつ|penyatuan
+道具箱|どうぐばこ|kotak perkakas
+当時|とうじ|pada waktu itu
+当日|とうじつ|hari H
+同時|どうじ|bersamaan
+登場|とうじょう|kemunculan
+当然|とうぜん|tentu saja / sewajarnya
+到着時刻|とうちゃくじこく|waktu kedatangan
+盗難|とうなん|pencurian
+投票|とうひょう|pemungutan suara
+動物病院|どうぶつびょういん|klinik hewan
+道路工事|どうろこうじ|perbaikan jalan
+同僚|どうりょう|rekan kerja
+特色|とくしょく|ciri khas
+特徴|とくちょう|karakteristik
+読書|どくしょ|membaca buku
+独身|どくしん|lajang
+特急|とっきゅう|kereta ekspres terbatas
+都市|とし|kota
+年上|としうえ|lebih tua
+年下|としした|lebih muda
+図書|としょ|buku-buku
+土地|とち|tanah (lahan)
+特許|とっきょ|paten
+届け|とどけ|laporan resmi
+隣人|りんじん|tetangga (formal)
+努力|どりょく|usaha
+取引|とりひき|transaksi
+内容|ないよう|isi
+仲|なか|hubungan pertemanan
+仲間|なかま|kawan / rekan
+中身|なかみ|isi (dalam)
+長袖|ながそで|lengan panjang
+半袖|はんそで|lengan pendek
+謎|なぞ|teka-teki / misteri
+納得|なっとく|pemahaman / setuju
+鍋|なべ|panci
+涙|なみだ|air mata
+波|なみ|ombak
+悩み|なやみ|kekhawatiran
+苦手意識|にがていしき|rasa minder
+肉体|にくたい|tubuh jasmani
+日常|にちじょう|keseharian
+日時|にちじ|tanggal dan waktu
+日程|にってい|jadwal harian
+入場|にゅうじょう|masuk (gedung/acara)
+入場料|にゅうじょうりょう|tiket masuk
+人気|にんき|popularitas
+人間|にんげん|manusia
+布|ぬの|kain
+値上がり|ねあがり|kenaikan harga
+願い|ねがい|permohonan / keinginan
+猫背|ねこぜ|bungkuk
+値下げ|ねさげ|penurunan harga
+熱中|ねっちゅう|keasyikan
+年金|ねんきん|pensiun / dana pensiun
+年代|ねんだい|era / dekade
+年齢|ねんれい|umur
+能力|のうりょく|kemampuan
+農業|のうぎょう|pertanian
+農家|のうか|petani
+軒|のき|serambi atap
+残り|のこり|sisa
+喉元|のどもと|pangkal tenggorokan
+乗り物|のりもの|kendaraan
+灰|はい|abu
+灰皿|はいざら|asbak
+配達|はいたつ|pengantaran
+売店|ばいてん|kios
+俳優|はいゆう|aktor
+墓|はか|makam
+博士|はかせ|doktor (gelar)
+拍手|はくしゅ|tepuk tangan
+箱入り|はこいり|dalam kotak
+橋渡し|はしわたし|perantara
+場所柄|ばしょがら|karakter tempat
+旗|はた|bendera
+畑|はたけ|ladang
+発見|はっけん|penemuan
+発行|はっこう|penerbitan
+発車|はっしゃ|keberangkatan (kendaraan)
+発表|はっぴょう|presentasi / pengumuman
+発明|はつめい|penemuan (alat)
+花火|はなび|kembang api
+花嫁|はなよめ|pengantin wanita
+幅|はば|lebar
+場面|ばめん|adegan
+早起き|はやおき|bangun pagi
+腹|はら|perut (kasar)
+針金|はりがね|kawat
+範囲|はんい|cakupan
+番組表|ばんぐみひょう|jadwal acara
+判断|はんだん|penilaian / keputusan
+犯人|はんにん|pelaku kejahatan
+販売|はんばい|penjualan
+被害|ひがい|kerugian / kerusakan
+日帰り|ひがえり|pulang hari
+比較|ひかく|perbandingan
+悲劇|ひげき|tragedi
+飛行場|ひこうじょう|lapangan terbang
+膝|ひざ|lutut
+肘|ひじ|siku
+美術|びじゅつ|seni rupa
+秘書|ひしょ|sekretaris
+非常口|ひじょうぐち|pintu darurat
+左側|ひだりがわ|sisi kiri
+右側|みぎがわ|sisi kanan
+日付|ひづけ|tanggal
+引っ越し先|ひっこしさき|tempat tinggal baru
+筆者|ひっしゃ|penulis (artikel)
+必要性|ひつようせい|keperluan
+否定|ひてい|penyangkalan
+人込み|ひとごみ|kerumunan
+一言|ひとこと|sepatah kata
+一人暮らし|ひとりぐらし|hidup sendiri
+皮肉|ひにく|sindiran
+日の出|ひので|matahari terbit
+日の入り|ひのいり|matahari terbenam
+批判|ひはん|kritik
+皮膚|ひふ|kulit (tubuh)
+秘密|ひみつ|rahasia
+紐付け|ひもづけ|pengaitan
+表現|ひょうげん|ekspresi
+表情|ひょうじょう|raut wajah
+評判|ひょうばん|reputasi
+表面|ひょうめん|permukaan
+昼休み|ひるやすみ|istirahat siang
+広場|ひろば|alun-alun
+品質管理|ひんしつかんり|kontrol kualitas
+貧乏|びんぼう|kemiskinan
+不安|ふあん|kecemasan
+風景|ふうけい|panorama
+夫婦|ふうふ|suami istri
+部下|ぶか|bawahan
+服装|ふくそう|cara berpakaian
+不合格|ふごうかく|tidak lulus
+不在|ふざい|tidak ada di tempat
+武士|ぶし|samurai
+部署|ぶしょ|departemen
+不足|ふそく|kekurangan
+舞台|ぶたい|panggung
+普段|ふだん|biasanya / sehari-hari
+物価|ぶっか|harga barang
+仏教|ぶっきょう|agama Buddha
+筆|ふで|kuas tulis
+布団干し|ふとんほし|menjemur kasur
+船便|ふなびん|kiriman laut
+部分|ぶぶん|bagian
+不満|ふまん|ketidakpuasan
+踏切|ふみきり|perlintasan kereta
+冬休み|ふゆやすみ|libur musim dingin
+夏休み|なつやすみ|libur musim panas
+振り込み|ふりこみ|transfer bank
+文|ぶん|kalimat
+文化祭|ぶんかさい|festival budaya sekolah
+文明|ぶんめい|peradaban
+分野|ぶんや|bidang
+平均|へいきん|rata-rata
+平日|へいじつ|hari kerja
+兵隊|へいたい|tentara
+別|べつ|lain / terpisah
+変化|へんか|perubahan
+弁護士|べんごし|pengacara
+返品|へんぴん|pengembalian barang
+法|ほう|hukum / cara
+方向|ほうこう|arah
+方法|ほうほう|metode
+防止|ぼうし|pencegahan
+放送|ほうそう|siaran
+包丁|ほうちょう|pisau dapur
+方面|ほうめん|jurusan / arah
+訪問|ほうもん|kunjungan
+牧場|ぼくじょう|peternakan
+保険|ほけん|asuransi
+保護|ほご|perlindungan
+募集|ぼしゅう|perekrutan
+保存|ほぞん|penyimpanan
+歩行者|ほこうしゃ|pejalan kaki
+星|ほし|bintang
+保証|ほしょう|jaminan
+本気|ほんき|kesungguhan
+本社|ほんしゃ|kantor pusat
+本人|ほんにん|orang yang bersangkutan
+本物|ほんもの|barang asli
+偽物|にせもの|barang palsu
+翻訳家|ほんやくか|penerjemah
+迷子|まいご|anak hilang
+前売り|まえうり|penjualan di muka
+真夏|まなつ|puncak musim panas
+窓口|まどぐち|loket
+真似|まね|tiruan
+豆腐|とうふ|tahu
+満員|まんいん|penuh sesak (orang)
+満足|まんぞく|kepuasan
+真ん中|まんなか|tepat di tengah
+見方|みかた|cara pandang
+味方|みかた|sekutu / pihak kita
+水着|みずぎ|baju renang
+店先|みせさき|depan toko
+見出し|みだし|judul berita
+道順|みちじゅん|rute
+緑|みどり|hijau / tanaman hijau
+港町|みなとまち|kota pelabuhan
+身分|みぶん|status sosial
+未来|みらい|masa depan (jauh)
+魅力|みりょく|daya tarik
+民族|みんぞく|suku bangsa
+無料|むりょう|gratis
+有料|ゆうりょう|berbayar
+名刺|めいし|kartu nama
+迷惑|めいわく|gangguan / merepotkan
+目上|めうえ|orang yang lebih tinggi kedudukannya
+目印|めじるし|penanda
+目覚まし時計|めざましどけい|jam weker
+免許|めんきょ|surat izin
+面接|めんせつ|wawancara
+目的|もくてき|tujuan
+目的地|もくてきち|tempat tujuan
+文字|もじ|huruf / aksara
+物語|ものがたり|kisah
+模様|もよう|motif / pola
+門|もん|gerbang
+夜間|やかん|malam hari (periode)
+役|やく|peran
+役者|やくしゃ|pemain peran
+役所|やくしょ|kantor pemerintahan
+約束事|やくそくごと|kesepakatan
+役目|やくめ|tugas / peran
+野菜炒め|やさいいため|tumis sayur
+家主|やぬし|pemilik rumah
+屋根裏|やねうら|loteng
+勇気|ゆうき|keberanian
+友人|ゆうじん|sahabat (formal)
+優勝|ゆうしょう|juara
+郵便|ゆうびん|pos
+夕日|ゆうひ|matahari senja
+床下|ゆかした|kolong lantai
+輸出|ゆしゅつ|ekspor
+輸入|ゆにゅう|impor
+湯|ゆ|air panas
+夜明け|よあけ|fajar
+用紙|ようし|formulir
+様子|ようす|keadaan / gelagat
+曜日|ようび|hari dalam minggu
+要求|ようきゅう|tuntutan
+幼稚園|ようちえん|taman kanak-kanak
+予算|よさん|anggaran
+予想|よそう|perkiraan
+予報|よほう|prakiraan
+余裕|よゆう|kelonggaran
+世の中|よのなか|dunia / masyarakat
+夜空|よぞら|langit malam
+来客|らいきゃく|tamu yang datang
+落語|らくご|cerita komedi tradisional
+利益|りえき|laba
+理解|りかい|pemahaman
+陸|りく|daratan
+理想|りそう|ideal
+率|りつ|persentase / rasio
+留学|りゅうがく|studi di luar negeri
+流行|りゅうこう|tren
+利用|りよう|pemanfaatan
+両方|りょうほう|kedua belah pihak
+料理人|りょうりにん|juru masak
+旅館|りょかん|penginapan tradisional
+履歴書|りれきしょ|daftar riwayat hidup
+例外|れいがい|pengecualian
+礼儀|れいぎ|sopan santun
+冷凍|れいとう|pembekuan
+列|れつ|barisan
+恋愛|れんあい|percintaan
+連休|れんきゅう|libur panjang berturut-turut
+老人|ろうじん|orang tua (lansia)
+労働|ろうどう|tenaga kerja / buruh
+録音|ろくおん|rekaman suara
+録画|ろくが|rekaman video
+論文|ろんぶん|makalah ilmiah
+若者|わかもの|anak muda
+割合|わりあい|perbandingan
+割引|わりびき|diskon
+湾|わん|teluk
+

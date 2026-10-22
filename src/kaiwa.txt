@@ -1,0 +1,293 @@
+// Dialog untuk menu Kaiwa.
+// Format:
+//   @Kategori
+//   #Judul dialog
+//   Pembicara|kalimat Jepang|romaji|arti
+// Romaji ditulis manual (partikel は = wa, を = o, へ = e).
+
+@Perkenalan
+#Salam kenal di tempat kerja
+A|はじめまして。ブディです。|hajimemashite. budi desu.|Salam kenal. Saya Budi.
+B|はじめまして。田中です。|hajimemashite. tanaka desu.|Salam kenal. Saya Tanaka.
+B|よろしくお願いします。|yoroshiku onegaishimasu.|Mohon bantuannya.
+A|こちらこそ、よろしくお願いします。|kochira koso, yoroshiku onegaishimasu.|Saya juga, mohon bantuannya.
+
+#Asal dan pekerjaan
+A|お国はどちらですか。|okuni wa dochira desu ka.|Anda berasal dari negara mana?
+B|インドネシアです。ジャカルタから来ました。|indoneshia desu. jakaruta kara kimashita.|Dari Indonesia. Saya datang dari Jakarta.
+A|お仕事は何ですか。|oshigoto wa nan desu ka.|Pekerjaan Anda apa?
+B|工場で靴の検査をしています。|koujou de kutsu no kensa o shite imasu.|Saya menginspeksi sepatu di pabrik.
+A|そうですか。日本語が上手ですね。|sou desu ka. nihongo ga jouzu desu ne.|Begitu ya. Bahasa Jepang Anda bagus.
+B|いいえ、まだまだです。|iie, madamada desu.|Ah tidak, saya masih belajar.
+
+#Hobi
+A|趣味は何ですか。|shumi wa nan desu ka.|Hobimu apa?
+B|サッカーです。週末はよく友達とします。|sakkaa desu. shuumatsu wa yoku tomodachi to shimasu.|Sepak bola. Akhir pekan saya sering main dengan teman.
+A|いいですね。私は料理が好きです。|ii desu ne. watashi wa ryouri ga suki desu.|Asyik. Saya suka memasak.
+B|今度、何か作ってください。|kondo, nanika tsukutte kudasai.|Lain kali buatkan sesuatu, ya.
+
+@Telepon
+#Menelepon kantor
+A|もしもし、山田工業でございます。|moshimoshi, yamada kougyou de gozaimasu.|Halo, dengan Yamada Kogyo.
+B|もしもし、ブディと申します。佐藤さんはいらっしゃいますか。|moshimoshi, budi to moushimasu. satou-san wa irasshaimasu ka.|Halo, saya Budi. Apakah Pak Sato ada?
+A|申し訳ありません。佐藤は今、会議中です。|moushiwake arimasen. satou wa ima, kaigichuu desu.|Mohon maaf. Pak Sato sedang rapat.
+B|では、また後でお電話します。|dewa, mata ato de odenwa shimasu.|Kalau begitu, saya akan menelepon lagi nanti.
+A|かしこまりました。失礼いたします。|kashikomarimashita. shitsurei itashimasu.|Baik. Permisi.
+
+#Titip pesan
+A|佐藤さんに伝言をお願いできますか。|satou-san ni dengon o onegai dekimasu ka.|Bisakah saya titip pesan untuk Pak Sato?
+B|はい、どうぞ。|hai, douzo.|Ya, silakan.
+A|明日の会議は十時からだと伝えてください。|ashita no kaigi wa juuji kara da to tsutaete kudasai.|Tolong sampaikan bahwa rapat besok mulai jam sepuluh.
+B|分かりました。お電話番号をお願いします。|wakarimashita. odenwa bangou o onegaishimasu.|Baik. Boleh minta nomor telepon Anda?
+A|090-1234-5678です。|zero kyuu zero, ichi ni san yon, go roku nana hachi desu.|090-1234-5678.
+
+#Mengajak teman lewat telepon
+A|もしもし、リナ？今、話せる？|moshimoshi, rina? ima, hanaseru?|Halo, Rina? Sekarang bisa bicara?
+B|うん、大丈夫。どうしたの？|un, daijoubu. doushita no?|Iya, bisa. Ada apa?
+A|土曜日、一緒に映画を見に行かない？|doyoubi, issho ni eiga o mi ni ikanai?|Hari Sabtu, mau nonton film bareng?
+B|いいね！何時にする？|ii ne! nanji ni suru?|Boleh! Jam berapa?
+A|午後二時に駅の前で会おう。|gogo niji ni eki no mae de aou.|Ketemu di depan stasiun jam dua siang, ya.
+B|分かった。じゃ、またね。|wakatta. ja, mata ne.|Oke. Sampai nanti.
+
+#Izin sakit lewat telepon
+A|おはようございます。ブディです。|ohayou gozaimasu. budi desu.|Selamat pagi. Ini Budi.
+A|すみません、熱があるので、今日は休ませてください。|sumimasen, netsu ga aru node, kyou wa yasumasete kudasai.|Maaf, saya demam, mohon izin libur hari ini.
+B|分かりました。病院に行ってくださいね。|wakarimashita. byouin ni itte kudasai ne.|Baik. Pergilah ke rumah sakit, ya.
+A|はい、ありがとうございます。|hai, arigatou gozaimasu.|Baik, terima kasih.
+B|お大事に。|odaiji ni.|Semoga lekas sembuh.
+
+@Pekerjaan
+#Produk cacat
+A|この靴は不良品ですか。|kono kutsu wa furyouhin desu ka.|Apakah sepatu ini produk cacat?
+B|はい、縫い目に問題があります。|hai, nuime ni mondai ga arimasu.|Ya, jahitannya bermasalah.
+A|分かりました。報告します。|wakarimashita. houkoku shimasu.|Mengerti. Saya akan melapor.
+
+#Melapor ke ketua regu
+A|班長、すみません。ちょっといいですか。|hanchou, sumimasen. chotto ii desu ka.|Ketua regu, permisi. Ada waktu sebentar?
+B|はい、何ですか。|hai, nan desu ka.|Ya, ada apa?
+A|このロットに傷がある靴が五足ありました。|kono rotto ni kizu ga aru kutsu ga gosoku arimashita.|Di lot ini ada lima pasang sepatu yang tergores.
+B|そうですか。別の箱に分けておいてください。|sou desu ka. betsu no hako ni wakete oite kudasai.|Begitu. Tolong pisahkan ke kotak lain.
+A|はい、分かりました。記録もしておきます。|hai, wakarimashita. kiroku mo shite okimasu.|Baik. Saya juga akan mencatatnya.
+
+#Mesin berhenti
+A|すみません、機械が止まってしまいました。|sumimasen, kikai ga tomatte shimaimashita.|Maaf, mesinnya berhenti.
+B|え、本当ですか。触らないでください。|e, hontou desu ka. sawaranaide kudasai.|Eh, benarkah? Tolong jangan disentuh.
+B|すぐに修理の人を呼びます。|sugu ni shuuri no hito o yobimasu.|Saya segera panggil teknisi.
+A|その間、何をしたらいいですか。|sono aida, nani o shitara ii desu ka.|Sementara itu, saya harus melakukan apa?
+B|ラインの掃除をしてください。|rain no souji o shite kudasai.|Tolong bersihkan jalur produksi.
+
+#Instruksi inspeksi
+A|今日はこの靴を千足検査してください。|kyou wa kono kutsu o sensoku kensa shite kudasai.|Hari ini tolong periksa seribu pasang sepatu ini.
+B|はい。何をチェックすればいいですか。|hai. nani o chekku sureba ii desu ka.|Baik. Apa saja yang harus dicek?
+A|傷と汚れと縫い目を見てください。|kizu to yogore to nuime o mite kudasai.|Periksa goresan, noda, dan jahitan.
+B|サイズも確認しますか。|saizu mo kakunin shimasu ka.|Ukurannya juga dicek?
+A|はい、左右のサイズが同じか確認してください。|hai, sayuu no saizu ga onaji ka kakunin shite kudasai.|Ya, pastikan ukuran kiri dan kanan sama.
+
+#Lembur
+A|ブディさん、今日残業できますか。|budi-san, kyou zangyou dekimasu ka.|Budi, hari ini bisa lembur?
+B|何時までですか。|nanji made desu ka.|Sampai jam berapa?
+A|八時までお願いしたいです。|hachiji made onegai shitai desu.|Saya minta sampai jam delapan.
+B|はい、大丈夫です。|hai, daijoubu desu.|Ya, bisa.
+A|助かります。ありがとう。|tasukarimasu. arigatou.|Sangat membantu. Terima kasih.
+
+#Izin pulang awal
+A|班長、すみません。|hanchou, sumimasen.|Ketua regu, permisi.
+A|熱があるので、今日は早く帰ってもいいですか。|netsu ga aru node, kyou wa hayaku kaette mo ii desu ka.|Saya demam, bolehkah hari ini pulang lebih awal?
+B|大丈夫ですか。分かりました。|daijoubu desu ka. wakarimashita.|Kamu tidak apa-apa? Baik, boleh.
+B|お大事に。|odaiji ni.|Semoga lekas sembuh.
+
+#Pulang kerja
+A|お先に失礼します。|osaki ni shitsurei shimasu.|Saya pamit duluan.
+B|お疲れ様でした。|otsukaresama deshita.|Terima kasih atas kerja kerasnya.
+A|明日も八時からですか。|ashita mo hachiji kara desu ka.|Besok juga mulai jam delapan?
+B|いいえ、明日は九時からです。|iie, ashita wa kuji kara desu.|Bukan, besok mulai jam sembilan.
+
+@Sekolah
+#Di kelas
+先生|教科書の二十ページを開いてください。|kyoukasho no nijuu peeji o hiraite kudasai.|Buka buku pelajaran halaman dua puluh.
+学生|先生、すみません。もう一度お願いします。|sensei, sumimasen. mou ichido onegaishimasu.|Guru, maaf. Tolong ulangi sekali lagi.
+先生|二十ページです。|nijuu peeji desu.|Halaman dua puluh.
+学生|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Bertanya arti kata
+学生|先生、この言葉はどういう意味ですか。|sensei, kono kotoba wa dou iu imi desu ka.|Guru, kata ini artinya apa?
+先生|「急ぐ」は「早くする」という意味です。|"isogu" wa "hayaku suru" to iu imi desu.|"Isogu" artinya "melakukan dengan cepat".
+学生|分かりました。例文もありますか。|wakarimashita. reibun mo arimasu ka.|Mengerti. Ada contoh kalimatnya?
+先生|「時間がないから、急ぎましょう」。|"jikan ga nai kara, isogimashou".|"Karena tidak ada waktu, ayo bergegas."
+
+#Persiapan ujian
+A|来週、日本語のテストがありますね。|raishuu, nihongo no tesuto ga arimasu ne.|Minggu depan ada tes bahasa Jepang, ya.
+B|うん、漢字が難しくて心配です。|un, kanji ga muzukashikute shinpai desu.|Iya, kanjinya sulit, jadi khawatir.
+A|一緒に勉強しませんか。|issho ni benkyou shimasen ka.|Mau belajar bersama?
+B|いいですね。図書館で勉強しましょう。|ii desu ne. toshokan de benkyou shimashou.|Ide bagus. Ayo belajar di perpustakaan.
+
+#Terlambat ke kelas
+学生|遅くなってすみません。|osoku natte sumimasen.|Maaf saya terlambat.
+先生|どうしましたか。|dou shimashita ka.|Ada apa?
+学生|電車が遅れました。|densha ga okuremashita.|Keretanya terlambat.
+先生|そうですか。席に座ってください。|sou desu ka. seki ni suwatte kudasai.|Begitu. Silakan duduk.
+
+@Liburan & Wisata
+#Rencana liburan
+A|夏休みはどこへ行きますか。|natsuyasumi wa doko e ikimasu ka.|Libur musim panas mau ke mana?
+B|北海道へ行くつもりです。|hokkaidou e iku tsumori desu.|Saya berencana ke Hokkaido.
+A|いいですね。何をしますか。|ii desu ne. nani o shimasu ka.|Asyik. Mau ngapain di sana?
+B|おいしい魚を食べて、温泉に入りたいです。|oishii sakana o tabete, onsen ni hairitai desu.|Ingin makan ikan enak dan berendam di onsen.
+
+#Cerita liburan
+A|休みはどうでしたか。|yasumi wa dou deshita ka.|Bagaimana liburannya?
+B|とても楽しかったです。京都へ行きました。|totemo tanoshikatta desu. kyouto e ikimashita.|Sangat menyenangkan. Saya ke Kyoto.
+A|お寺を見ましたか。|otera o mimashita ka.|Melihat kuil?
+B|はい、たくさん見ました。写真を見せますね。|hai, takusan mimashita. shashin o misemasu ne.|Ya, banyak. Saya tunjukkan fotonya.
+
+#Di hotel
+客|すみません、予約したブディです。|sumimasen, yoyaku shita budi desu.|Permisi, saya Budi yang sudah reservasi.
+フロント|ブディ様ですね。二泊でございますね。|budi-sama desu ne. nihaku de gozaimasu ne.|Bapak Budi, ya. Dua malam, betul?
+客|はい。朝ご飯は何時からですか。|hai. asagohan wa nanji kara desu ka.|Ya. Sarapan mulai jam berapa?
+フロント|七時から九時までです。|shichiji kara kuji made desu.|Dari jam tujuh sampai jam sembilan.
+フロント|こちらがお部屋の鍵です。|kochira ga oheya no kagi desu.|Ini kunci kamar Anda.
+
+#Membeli tiket kereta
+客|大阪までの切符を一枚ください。|oosaka made no kippu o ichimai kudasai.|Minta satu tiket ke Osaka.
+駅員|片道ですか、往復ですか。|katamichi desu ka, oufuku desu ka.|Sekali jalan atau pulang-pergi?
+客|往復でお願いします。|oufuku de onegaishimasu.|Pulang-pergi.
+駅員|二万八千円です。|niman hassen en desu.|Dua puluh delapan ribu yen.
+
+@Makan & Minum
+#Di restoran ramen
+店員|いらっしゃいませ。何名様ですか。|irasshaimase. nanmei-sama desu ka.|Selamat datang. Berapa orang?
+客|二人です。|futari desu.|Dua orang.
+店員|ご注文はお決まりですか。|gochuumon wa okimari desu ka.|Sudah menentukan pesanan?
+客|ラーメンを二つお願いします。|raamen o futatsu onegaishimasu.|Ramen dua porsi, ya.
+店員|かしこまりました。少々お待ちください。|kashikomarimashita. shoushou omachi kudasai.|Baik. Mohon tunggu sebentar.
+
+#Memesan di kafe
+店員|ご注文はお決まりですか。|gochuumon wa okimari desu ka.|Sudah mau pesan?
+客|コーヒーとケーキをお願いします。|koohii to keeki o onegaishimasu.|Kopi dan kue, ya.
+店員|コーヒーはホットとアイス、どちらにしますか。|koohii wa hotto to aisu, dochira ni shimasu ka.|Kopinya panas atau dingin?
+客|アイスでお願いします。|aisu de onegaishimasu.|Yang dingin.
+店員|かしこまりました。|kashikomarimashita.|Baik.
+
+#Membayar
+客|すみません、お会計をお願いします。|sumimasen, okaikei o onegaishimasu.|Permisi, minta tagihannya.
+店員|全部で千五百円です。|zenbu de sengohyaku en desu.|Semuanya seribu lima ratus yen.
+客|カードで払えますか。|kaado de haraemasu ka.|Bisa bayar pakai kartu?
+店員|はい、大丈夫です。|hai, daijoubu desu.|Ya, bisa.
+客|ごちそうさまでした。|gochisousama deshita.|Terima kasih atas makanannya.
+
+#Makan siang bersama
+A|お昼、一緒に食べませんか。|ohiru, issho ni tabemasen ka.|Makan siang bareng, yuk?
+B|いいですね。何を食べましょうか。|ii desu ne. nani o tabemashou ka.|Boleh. Mau makan apa?
+A|食堂のカレーはどうですか。|shokudou no karee wa dou desu ka.|Bagaimana kalau kari di kantin?
+B|私は辛いのが苦手なので、うどんにします。|watashi wa karai no ga nigate na node, udon ni shimasu.|Saya tidak kuat pedas, jadi pilih udon saja.
+
+#Pantangan makanan
+A|豚肉は食べられますか。|butaniku wa taberaremasu ka.|Kamu bisa makan daging babi?
+B|すみません、豚肉とお酒はだめなんです。|sumimasen, butaniku to osake wa dame nan desu.|Maaf, saya tidak bisa makan babi dan minum alkohol.
+A|分かりました。じゃ、魚の料理にしましょう。|wakarimashita. ja, sakana no ryouri ni shimashou.|Baik. Kalau begitu, pilih masakan ikan saja.
+B|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+@Belanja
+#Menanyakan harga
+店員|いらっしゃいませ。|irasshaimase.|Selamat datang.
+客|これはいくらですか。|kore wa ikura desu ka.|Ini berapa harganya?
+店員|千円です。|sen en desu.|Seribu yen.
+客|じゃ、これをください。|ja, kore o kudasai.|Kalau begitu, saya beli ini.
+
+#Mencoba baju
+客|すみません、これを着てみてもいいですか。|sumimasen, kore o kite mite mo ii desu ka.|Permisi, boleh saya coba ini?
+店員|はい、試着室はあちらです。|hai, shichakushitsu wa achira desu.|Ya, kamar pas di sebelah sana.
+客|ちょっと小さいです。もう少し大きいのはありますか。|chotto chiisai desu. mou sukoshi ookii no wa arimasu ka.|Agak kecil. Ada yang sedikit lebih besar?
+店員|こちらはいかがですか。|kochira wa ikaga desu ka.|Bagaimana dengan yang ini?
+客|ちょうどいいです。これにします。|choudo ii desu. kore ni shimasu.|Pas. Saya ambil yang ini.
+
+#Di minimarket
+店員|袋はご利用ですか。|fukuro wa goriyou desu ka.|Perlu kantong belanja?
+客|はい、お願いします。|hai, onegaishimasu.|Ya, tolong.
+店員|お弁当は温めますか。|obentou wa atatamemasu ka.|Bentonya mau dihangatkan?
+客|いいえ、そのままで大丈夫です。|iie, sono mama de daijoubu desu.|Tidak, begitu saja.
+
+@Tempat Umum
+#Menanyakan jalan
+A|すみません、駅はどこですか。|sumimasen, eki wa doko desu ka.|Permisi, stasiun di mana?
+B|この道をまっすぐ行ってください。|kono michi o massugu itte kudasai.|Silakan jalan lurus di jalan ini.
+B|次の角を右に曲がってください。|tsugi no kado o migi ni magatte kudasai.|Lalu belok kanan di tikungan berikutnya.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Di stasiun
+A|すみません、新宿へ行きたいんですが。|sumimasen, shinjuku e ikitain desu ga.|Permisi, saya mau ke Shinjuku.
+駅員|三番線の電車に乗ってください。|sanbansen no densha ni notte kudasai.|Silakan naik kereta di jalur tiga.
+A|乗り換えはありますか。|norikae wa arimasu ka.|Apakah perlu ganti kereta?
+駅員|いいえ、乗り換えなしで行けます。|iie, norikae nashi de ikemasu.|Tidak, bisa langsung tanpa ganti.
+
+#Di rumah sakit
+受付|今日はどうしましたか。|kyou wa dou shimashita ka.|Ada keluhan apa hari ini?
+患者|昨日から頭が痛くて、熱もあります。|kinou kara atama ga itakute, netsu mo arimasu.|Sejak kemarin kepala saya sakit dan juga demam.
+受付|保険証はありますか。|hokenshou wa arimasu ka.|Ada kartu asuransi?
+患者|はい、これです。|hai, kore desu.|Ya, ini.
+受付|では、あちらでお待ちください。|dewa, achira de omachi kudasai.|Kalau begitu, silakan tunggu di sana.
+
+#Di kantor pos
+客|この荷物をインドネシアに送りたいです。|kono nimotsu o indoneshia ni okuritai desu.|Saya ingin mengirim paket ini ke Indonesia.
+局員|船便と航空便がありますが。|funabin to koukuubin ga arimasu ga.|Ada kiriman laut dan kiriman udara.
+客|航空便だと何日ぐらいかかりますか。|koukuubin da to nannichi gurai kakarimasu ka.|Kalau kiriman udara, kira-kira berapa hari?
+局員|一週間ぐらいです。|isshuukan gurai desu.|Sekitar satu minggu.
+客|じゃ、航空便でお願いします。|ja, koukuubin de onegaishimasu.|Kalau begitu, kiriman udara saja.
+
+#Di bank
+客|すみません、口座を作りたいんですが。|sumimasen, kouza o tsukuritain desu ga.|Permisi, saya ingin membuka rekening.
+行員|在留カードと印鑑をお持ちですか。|zairyuu kaado to inkan o omochi desu ka.|Apakah Anda membawa kartu izin tinggal dan cap?
+客|はい、持っています。|hai, motte imasu.|Ya, saya bawa.
+行員|では、この用紙に記入してください。|dewa, kono youshi ni kinyuu shite kudasai.|Kalau begitu, silakan isi formulir ini.
+
+#Di kantor kota
+A|住所の変更をしたいんですが。|juusho no henkou o shitain desu ga.|Saya ingin mengubah alamat.
+職員|引っ越しされたんですね。新しい住所を書いてください。|hikkoshi saretan desu ne. atarashii juusho o kaite kudasai.|Anda pindah rumah, ya. Silakan tulis alamat barunya.
+A|在留カードも必要ですか。|zairyuu kaado mo hitsuyou desu ka.|Kartu izin tinggal juga diperlukan?
+職員|はい、お願いします。|hai, onegaishimasu.|Ya, tolong.
+
+@Sehari-hari
+#Dengan tetangga
+A|おはようございます。いい天気ですね。|ohayou gozaimasu. ii tenki desu ne.|Selamat pagi. Cuacanya bagus, ya.
+B|おはようございます。本当にいい天気ですね。|ohayou gozaimasu. hontou ni ii tenki desu ne.|Selamat pagi. Benar-benar cerah, ya.
+A|今からお出かけですか。|ima kara odekake desu ka.|Mau pergi sekarang?
+B|ええ、ちょっと買い物に。|ee, chotto kaimono ni.|Iya, mau belanja sebentar.
+A|行ってらっしゃい。|itterasshai.|Hati-hati di jalan.
+
+#Membuang sampah
+A|すみません、ゴミの日は何曜日ですか。|sumimasen, gomi no hi wa nan'youbi desu ka.|Permisi, hari buang sampah hari apa?
+B|燃えるゴミは月曜日と木曜日です。|moeru gomi wa getsuyoubi to mokuyoubi desu.|Sampah yang bisa dibakar hari Senin dan Kamis.
+A|缶とペットボトルは？|kan to petto botoru wa?|Kalau kaleng dan botol plastik?
+B|水曜日です。朝八時までに出してください。|suiyoubi desu. asa hachiji made ni dashite kudasai.|Hari Rabu. Keluarkan sebelum jam delapan pagi.
+
+#Cuaca
+A|明日は雨が降るそうですよ。|ashita wa ame ga furu sou desu yo.|Katanya besok akan hujan.
+B|そうですか。傘を持って行きます。|sou desu ka. kasa o motte ikimasu.|Begitu ya. Saya akan bawa payung.
+A|台風も来るかもしれません。|taifuu mo kuru kamo shiremasen.|Mungkin juga ada topan.
+B|気をつけましょう。|ki o tsukemashou.|Mari berhati-hati.
+
+#Pulang ke rumah
+A|ただいま。|tadaima.|Aku pulang.
+B|お帰りなさい。晩ご飯できてるよ。|okaerinasai. bangohan dekiteru yo.|Selamat datang. Makan malam sudah siap.
+A|ありがとう。おなかがすいた。|arigatou. onaka ga suita.|Terima kasih. Aku lapar.
+B|手を洗ってから食べてね。|te o aratte kara tabete ne.|Cuci tangan dulu baru makan, ya.
+
+@Darurat
+#Kehilangan dompet
+A|すみません、財布をなくしてしまいました。|sumimasen, saifu o nakushite shimaimashita.|Permisi, saya kehilangan dompet.
+警官|どこでなくしましたか。|doko de nakushimashita ka.|Hilang di mana?
+A|たぶん駅のトイレだと思います。|tabun eki no toire da to omoimasu.|Mungkin di toilet stasiun.
+警官|では、この紙に名前と電話番号を書いてください。|dewa, kono kami ni namae to denwa bangou o kaite kudasai.|Kalau begitu, tulis nama dan nomor telepon di kertas ini.
+
+#Memanggil ambulans
+A|もしもし、救急車をお願いします。|moshimoshi, kyuukyuusha o onegaishimasu.|Halo, tolong kirim ambulans.
+B|どうしましたか。|dou shimashita ka.|Ada apa?
+A|同僚が倒れて、意識がありません。|douryou ga taorete, ishiki ga arimasen.|Rekan kerja saya pingsan dan tidak sadar.
+B|住所を教えてください。|juusho o oshiete kudasai.|Tolong beri tahu alamatnya.
+A|山田工業の工場です。|yamada kougyou no koujou desu.|Di pabrik Yamada Kogyo.
+
+#Gempa bumi
+A|地震だ！|jishin da!|Gempa!
+B|机の下に入ってください！|tsukue no shita ni haitte kudasai!|Masuk ke bawah meja!
+A|揺れが止まりました。|yure ga tomarimashita.|Guncangannya sudah berhenti.
+B|エレベーターは使わないで、階段で外に出ましょう。|erebeetaa wa tsukawanaide, kaidan de soto ni demashou.|Jangan pakai lift, ayo keluar lewat tangga.

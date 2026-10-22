@@ -1,0 +1,602 @@
+// Daftar kanji untuk menu Kanji.
+// Format:  kanji|kun'yomi|on'yomi|arti|level
+//   kun'yomi: hiragana, okurigana dipisah titik (た.べる), beberapa bacaan dipisah koma, '-' jika tidak ada
+//   on'yomi : katakana, dipisah koma, '-' jika tidak ada
+//   @Nama kategori  -> kategori untuk baris berikutnya
+// Urutan goresan diambil otomatis dari KanjiVG (CC BY-SA 3.0) saat build.
+
+@Angka & Hitungan
+一|ひと.つ|イチ,イツ|satu|N5
+二|ふた.つ|ニ|dua|N5
+三|みっ.つ|サン|tiga|N5
+四|よ,よっ.つ,よん|シ|empat|N5
+五|いつ.つ|ゴ|lima|N5
+六|むっ.つ|ロク|enam|N5
+七|なな,なな.つ|シチ|tujuh|N5
+八|やっ.つ|ハチ|delapan|N5
+九|ここの.つ|キュウ,ク|sembilan|N5
+十|とお|ジュウ|sepuluh|N5
+百|-|ヒャク|seratus|N5
+千|ち|セン|seribu|N5
+万|-|マン,バン|sepuluh ribu|N5
+円|まる.い|エン|yen / lingkaran|N5
+半|なか.ば|ハン|setengah|N5
+番|-|バン|nomor / giliran|N4
+計|はか.る|ケイ|ukur / hitung|N4
+数|かず,かぞ.える|スウ|angka / menghitung|N3
+倍|-|バイ|kali lipat|N3
+個|-|コ|buah (satuan)|N3
+両|-|リョウ|kedua|N3
+第|-|ダイ|ke- (urutan)|N3
+号|-|ゴウ|nomor (edisi)|N3
+億|-|オク|seratus juta|N3
+
+@Waktu & Kalender
+日|ひ,か|ニチ,ジツ|hari / matahari|N5
+月|つき|ゲツ,ガツ|bulan|N5
+火|ひ|カ|api / Selasa|N5
+水|みず|スイ|air / Rabu|N5
+木|き|モク,ボク|pohon / Kamis|N5
+金|かね|キン,コン|emas / uang / Jumat|N5
+土|つち|ド,ト|tanah / Sabtu|N5
+年|とし|ネン|tahun|N5
+時|とき|ジ|waktu / jam|N5
+分|わ.ける,わ.かる|ブン,フン|bagian / menit|N5
+間|あいだ,ま|カン,ケン|antara / selang|N5
+午|-|ゴ|tengah hari|N5
+前|まえ|ゼン|depan / sebelum|N5
+後|うし.ろ,あと|ゴ,コウ|belakang / sesudah|N5
+今|いま|コン,キン|sekarang|N5
+毎|-|マイ|setiap|N5
+週|-|シュウ|minggu (pekan)|N5
+来|く.る|ライ|datang / berikutnya|N5
+先|さき|セン|dulu / ujung|N5
+曜|-|ヨウ|hari dalam pekan|N4
+朝|あさ|チョウ|pagi|N4
+昼|ひる|チュウ|siang|N4
+夜|よる,よ|ヤ|malam|N4
+夕|ゆう|セキ|sore|N4
+春|はる|シュン|musim semi|N4
+夏|なつ|カ|musim panas|N4
+秋|あき|シュウ|musim gugur|N4
+冬|ふゆ|トウ|musim dingin|N4
+早|はや.い|ソウ|awal / pagi|N4
+去|さ.る|キョ,コ|lalu / pergi|N4
+始|はじ.める,はじ.まる|シ|mulai|N4
+終|お.わる|シュウ|selesai|N4
+急|いそ.ぐ|キュウ|tergesa / mendadak|N4
+晩|-|バン|petang|N3
+昔|むかし|セキ|zaman dulu|N3
+期|-|キ|periode|N3
+末|すえ|マツ|akhir|N3
+初|はじ.め,はつ|ショ|pertama|N3
+最|もっと.も|サイ|paling|N3
+速|はや.い|ソク|cepat (laju)|N3
+遅|おそ.い,おく.れる|チ|lambat / terlambat|N3
+
+@Alam & Cuaca
+山|やま|サン|gunung|N5
+川|かわ|セン|sungai|N5
+天|あめ,あま|テン|langit|N5
+気|-|キ,ケ|semangat / udara|N5
+雨|あめ|ウ|hujan|N5
+空|そら,あ.く,から|クウ|langit / kosong|N4
+花|はな|カ|bunga|N4
+石|いし|セキ|batu|N4
+海|うみ|カイ|laut|N4
+風|かぜ|フウ|angin|N4
+光|ひかり,ひか.る|コウ|cahaya|N4
+池|いけ|チ|kolam|N4
+林|はやし|リン|hutan kecil|N4
+森|もり|シン|hutan|N4
+野|の|ヤ|ladang / liar|N4
+地|-|チ,ジ|tanah / bumi|N4
+世|よ|セ,セイ|dunia / generasi|N4
+界|-|カイ|dunia / batas|N4
+暑|あつ.い|ショ|panas (cuaca)|N4
+寒|さむ.い|カン|dingin (cuaca)|N4
+雪|ゆき|セツ|salju|N3
+雲|くも|ウン|awan|N3
+島|しま|トウ|pulau|N3
+星|ほし|セイ|bintang|N3
+晴|は.れる|セイ|cerah|N3
+湖|みずうみ|コ|danau|N3
+波|なみ|ハ|ombak|N3
+岩|いわ|ガン|batu besar|N3
+温|あたた.かい|オン|hangat|N3
+熱|あつ.い|ネツ|panas / demam|N3
+冷|つめ.たい,ひ.える|レイ|dingin (benda)|N3
+油|あぶら|ユ|minyak|N3
+
+@Tubuh
+目|め|モク|mata|N5
+耳|みみ|ジ|telinga|N5
+口|くち|コウ,ク|mulut|N5
+手|て|シュ|tangan|N5
+足|あし,た.りる|ソク|kaki / cukup|N5
+体|からだ|タイ|tubuh|N4
+頭|あたま|トウ,ズ|kepala|N4
+顔|かお|ガン|wajah|N4
+首|くび|シュ|leher|N4
+心|こころ|シン|hati|N4
+声|こえ|セイ|suara|N4
+力|ちから|リョク,リキ|tenaga|N4
+鼻|はな|ビ|hidung|N3
+歯|は|シ|gigi|N3
+指|ゆび,さ.す|シ|jari / menunjuk|N3
+背|せ|ハイ|punggung / tinggi badan|N3
+血|ち|ケツ|darah|N3
+毛|け|モウ|bulu / rambut halus|N3
+髪|かみ|ハツ|rambut|N3
+腕|うで|ワン|lengan|N3
+骨|ほね|コツ|tulang|N3
+身|み|シン|badan / diri|N3
+皮|かわ|ヒ|kulit|N3
+
+@Orang & Keluarga
+人|ひと|ジン,ニン|orang|N5
+男|おとこ|ダン,ナン|laki-laki|N5
+女|おんな|ジョ,ニョ|perempuan|N5
+子|こ|シ,ス|anak|N5
+父|ちち|フ|ayah|N5
+母|はは|ボ|ibu|N5
+友|とも|ユウ|teman|N5
+生|い.きる,う.まれる,なま|セイ,ショウ|hidup / lahir / mentah|N5
+名|な|メイ,ミョウ|nama|N5
+兄|あに|キョウ,ケイ|kakak laki-laki|N4
+姉|あね|シ|kakak perempuan|N4
+弟|おとうと|ダイ,テイ|adik laki-laki|N4
+妹|いもうと|マイ|adik perempuan|N4
+親|おや,した.しい|シン|orang tua / akrab|N4
+家|いえ,うち|カ,ケ|rumah / keluarga|N4
+族|-|ゾク|suku / keluarga|N4
+主|ぬし,おも|シュ|utama / tuan|N4
+私|わたし|シ|saya / pribadi|N4
+自|みずか.ら|ジ,シ|diri sendiri|N4
+者|もの|シャ|orang (pelaku)|N4
+員|-|イン|anggota|N4
+夫|おっと|フ|suami|N3
+妻|つま|サイ|istri|N3
+客|-|キャク|tamu|N3
+君|きみ|クン|kamu|N3
+彼|かれ|ヒ|dia (laki-laki)|N3
+皆|みな|カイ|semua|N3
+老|お.いる|ロウ|tua|N3
+若|わか.い|ジャク|muda|N3
+婚|-|コン|pernikahan|N3
+
+@Arah & Posisi
+上|うえ,あ.がる|ジョウ|atas|N5
+下|した,さ.がる|カ,ゲ|bawah|N5
+中|なか|チュウ|tengah / dalam|N5
+外|そと,ほか|ガイ,ゲ|luar|N5
+右|みぎ|ウ,ユウ|kanan|N5
+左|ひだり|サ|kiri|N5
+東|ひがし|トウ|timur|N5
+西|にし|セイ,サイ|barat|N5
+南|みなみ|ナン|selatan|N5
+北|きた|ホク|utara|N5
+近|ちか.い|キン|dekat|N4
+遠|とお.い|エン|jauh|N4
+方|かた|ホウ|arah / cara|N4
+所|ところ|ショ|tempat|N4
+場|ば|ジョウ|lokasi|N4
+内|うち|ナイ|dalam|N3
+横|よこ|オウ|samping|N3
+向|む.く,む.こう|コウ|arah / menghadap|N3
+側|がわ|ソク|sisi|N3
+表|おもて,あらわ.す|ヒョウ|permukaan / tabel|N3
+裏|うら|リ|belakang / balik|N3
+央|-|オウ|pusat|N3
+位|くらい|イ|posisi / tingkat|N3
+置|お.く|チ|meletakkan|N3
+
+@Ukuran & Sifat
+大|おお.きい|ダイ,タイ|besar|N5
+小|ちい.さい,こ|ショウ|kecil|N5
+長|なが.い|チョウ|panjang / kepala|N5
+高|たか.い|コウ|tinggi / mahal|N5
+安|やす.い|アン|murah / tenang|N5
+新|あたら.しい|シン|baru|N5
+古|ふる.い|コ|lama|N5
+多|おお.い|タ|banyak|N5
+少|すく.ない,すこ.し|ショウ|sedikit|N5
+低|ひく.い|テイ|rendah|N4
+短|みじか.い|タン|pendek|N4
+広|ひろ.い|コウ|luas|N4
+太|ふと.い|タイ|gemuk / tebal|N4
+強|つよ.い|キョウ|kuat|N4
+弱|よわ.い|ジャク|lemah|N4
+重|おも.い,かさ.なる|ジュウ,チョウ|berat|N4
+軽|かる.い|ケイ|ringan|N4
+明|あか.るい|メイ,ミョウ|terang|N4
+暗|くら.い|アン|gelap|N4
+悪|わる.い|アク|buruk|N4
+良|よ.い|リョウ|baik|N4
+同|おな.じ|ドウ|sama|N4
+正|ただ.しい|セイ,ショウ|benar|N4
+特|-|トク|khusus|N4
+便|たよ.り|ベン,ビン|praktis / pos|N4
+深|ふか.い|シン|dalam|N3
+浅|あさ.い|セン|dangkal|N3
+細|ほそ.い,こま.かい|サイ|ramping / rinci|N3
+美|うつく.しい|ビ|indah|N3
+静|しず.か|セイ|tenang|N3
+難|むずか.しい|ナン|sulit|N3
+易|やさ.しい|エキ,イ|mudah|N3
+利|-|リ|keuntungan|N3
+真|ま|シン|benar / murni|N3
+変|か.わる|ヘン|aneh / berubah|N3
+丸|まる.い|ガン|bulat|N3
+
+@Warna
+白|しろ|ハク|putih|N5
+赤|あか|セキ|merah|N4
+青|あお|セイ|biru|N4
+黒|くろ|コク|hitam|N4
+色|いろ|ショク,シキ|warna|N4
+茶|-|チャ,サ|teh / cokelat|N4
+黄|き|コウ,オウ|kuning|N3
+緑|みどり|リョク|hijau|N3
+銀|-|ギン|perak|N3
+
+@Gerak & Aktivitas
+行|い.く,おこな.う|コウ,ギョウ|pergi / melakukan|N5
+見|み.る|ケン|melihat|N5
+聞|き.く|ブン|mendengar|N5
+読|よ.む|ドク|membaca|N5
+書|か.く|ショ|menulis|N5
+話|はな.す|ワ|berbicara|N5
+食|た.べる|ショク|makan|N5
+飲|の.む|イン|minum|N5
+買|か.う|バイ|membeli|N5
+休|やす.む|キュウ|istirahat|N5
+入|はい.る,い.れる|ニュウ|masuk|N5
+出|で.る,だ.す|シュツ|keluar|N5
+立|た.つ|リツ|berdiri|N5
+言|い.う|ゲン,ゴン|berkata|N5
+会|あ.う|カイ|bertemu|N4
+売|う.る|バイ|menjual|N4
+持|も.つ|ジ|membawa / memegang|N4
+待|ま.つ|タイ|menunggu|N4
+使|つか.う|シ|menggunakan|N4
+作|つく.る|サク|membuat|N4
+送|おく.る|ソウ|mengirim|N4
+開|ひら.く,あ.く|カイ|membuka|N4
+閉|し.める,と.じる|ヘイ|menutup|N4
+歩|ある.く|ホ|berjalan kaki|N4
+走|はし.る|ソウ|berlari|N4
+起|お.きる|キ|bangun|N4
+寝|ね.る|シン|tidur|N4
+着|き.る,つ.く|チャク|memakai / tiba|N4
+帰|かえ.る|キ|pulang|N4
+返|かえ.す|ヘン|mengembalikan|N4
+貸|か.す|タイ|meminjamkan|N4
+借|か.りる|シャク|meminjam|N4
+思|おも.う|シ|berpikir|N4
+知|し.る|チ|mengetahui|N4
+考|かんが.える|コウ|memikirkan|N4
+教|おし.える|キョウ|mengajar|N4
+習|なら.う|シュウ|belajar (dari orang)|N4
+勉|-|ベン|usaha / rajin|N4
+働|はたら.く|ドウ|bekerja|N4
+動|うご.く|ドウ|bergerak|N4
+止|と.まる,と.める|シ|berhenti|N4
+答|こた.える|トウ|menjawab|N4
+問|と.う|モン|bertanya / soal|N4
+洗|あら.う|セン|mencuci|N4
+泳|およ.ぐ|エイ|berenang|N4
+歌|うた|カ|lagu / bernyanyi|N4
+集|あつ.まる,あつ.める|シュウ|berkumpul|N4
+引|ひ.く|イン|menarik|N4
+運|はこ.ぶ|ウン|mengangkut / nasib|N4
+転|ころ.ぶ|テン|berguling / pindah|N4
+乗|の.る|ジョウ|naik (kendaraan)|N4
+死|し.ぬ|シ|mati|N4
+住|す.む|ジュウ|tinggal|N4
+写|うつ.す|シャ|menyalin / memotret|N4
+映|うつ.る|エイ|memantul / film|N4
+切|き.る|セツ|memotong|N4
+遊|あそ.ぶ|ユウ|bermain|N3
+決|き.める|ケツ|memutuskan|N3
+調|しら.べる|チョウ|menyelidiki|N3
+選|えら.ぶ|セン|memilih|N3
+探|さが.す|タン|mencari|N3
+押|お.す|オウ|mendorong / menekan|N3
+打|う.つ|ダ|memukul|N3
+取|と.る|シュ|mengambil|N3
+投|な.げる|トウ|melempar|N3
+落|お.ちる|ラク|jatuh|N3
+降|お.りる,ふ.る|コウ|turun|N3
+通|とお.る,かよ.う|ツウ|lewat / pulang-pergi|N3
+進|すす.む|シン|maju|N3
+戻|もど.る|レイ|kembali|N3
+登|のぼ.る|トウ,ト|mendaki|N3
+渡|わた.る|ト|menyeberang|N3
+助|たす.ける|ジョ|menolong|N3
+守|まも.る|シュ|melindungi|N3
+払|はら.う|フツ|membayar|N3
+届|とど.く|-|sampai (kiriman)|N3
+忘|わす.れる|ボウ|lupa|N3
+覚|おぼ.える|カク|mengingat|N3
+練|ね.る|レン|berlatih|N3
+笑|わら.う|ショウ|tertawa|N3
+泣|な.く|キュウ|menangis|N3
+怒|おこ.る|ド|marah|N3
+
+@Sekolah & Bahasa
+学|まな.ぶ|ガク|belajar|N5
+校|-|コウ|sekolah|N5
+本|もと|ホン|buku / asal|N5
+語|かた.る|ゴ|bahasa / kata|N5
+文|ふみ|ブン,モン|kalimat / tulisan|N4
+字|-|ジ|huruf|N4
+漢|-|カン|Tiongkok (Han)|N4
+英|-|エイ|Inggris|N4
+室|-|シツ|ruangan|N4
+題|-|ダイ|judul / topik|N4
+試|ため.す|シ|mencoba|N4
+験|-|ケン|uji|N4
+研|と.ぐ|ケン|mengasah / meneliti|N4
+究|-|キュウ|mendalami|N4
+質|-|シツ|mutu / pertanyaan|N4
+意|-|イ|maksud|N4
+味|あじ|ミ|rasa|N4
+紙|かみ|シ|kertas|N4
+図|はか.る|ズ,ト|gambar / diagram|N4
+館|-|カン|gedung|N4
+説|と.く|セツ|menjelaskan|N3
+記|しる.す|キ|mencatat|N3
+絵|-|エ,カイ|gambar|N3
+科|-|カ|bidang / jurusan|N3
+級|-|キュウ|tingkat / kelas|N3
+課|-|カ|seksi / pelajaran|N3
+例|たと.える|レイ|contoh|N3
+章|-|ショウ|bab|N3
+辞|や.める|ジ|kata / berhenti|N3
+訳|わけ|ヤク|terjemahan / alasan|N3
+
+@Tempat & Kota
+国|くに|コク|negara|N5
+駅|-|エキ|stasiun|N5
+店|みせ|テン|toko|N5
+道|みち|ドウ|jalan|N5
+社|やしろ|シャ|perusahaan / kuil|N5
+町|まち|チョウ|kota kecil|N4
+村|むら|ソン|desa|N4
+市|いち|シ|kota / pasar|N4
+県|-|ケン|prefektur|N4
+区|-|ク|distrik|N4
+都|みやこ|ト,ツ|ibu kota|N4
+京|-|キョウ|ibu kota (Kyo)|N4
+屋|や|オク|toko / atap|N4
+院|-|イン|lembaga|N4
+工|-|コウ,ク|teknik / kerajinan|N4
+建|た.てる|ケン|membangun|N4
+物|もの|ブツ,モツ|benda|N4
+堂|-|ドウ|aula|N4
+門|かど|モン|gerbang|N4
+園|その|エン|taman|N3
+港|みなと|コウ|pelabuhan|N3
+橋|はし|キョウ|jembatan|N3
+庭|にわ|テイ|halaman|N3
+階|-|カイ|lantai|N3
+部|-|ブ|bagian|N3
+宿|やど|シュク|penginapan|N3
+寺|てら|ジ|kuil Buddha|N3
+神|かみ|シン,ジン|dewa|N3
+
+@Transportasi
+車|くるま|シャ|mobil|N5
+電|-|デン|listrik|N5
+旅|たび|リョ|perjalanan|N4
+発|-|ハツ|berangkat / keluar|N4
+鉄|-|テツ|besi|N4
+船|ふね|セン|kapal|N3
+飛|と.ぶ|ヒ|terbang|N3
+機|はた|キ|mesin / pesawat|N3
+路|みち|ロ|jalan|N3
+線|-|セン|garis / jalur|N3
+信|-|シン|percaya / sinyal|N3
+
+@Makanan & Minuman
+肉|-|ニク|daging|N4
+魚|さかな,うお|ギョ|ikan|N4
+米|こめ|ベイ,マイ|beras / Amerika|N4
+飯|めし|ハン|nasi|N4
+牛|うし|ギュウ|sapi|N4
+鳥|とり|チョウ|burung|N4
+菜|な|サイ|sayuran|N4
+料|-|リョウ|bahan / biaya|N4
+理|-|リ|logika / alasan|N4
+酒|さけ|シュ|minuman keras|N4
+豚|ぶた|トン|babi|N3
+卵|たまご|ラン|telur|N3
+塩|しお|エン|garam|N3
+甘|あま.い|カン|manis|N3
+辛|から.い,つら.い|シン|pedas / berat|N3
+菓|-|カ|kue|N3
+麦|むぎ|バク|gandum|N3
+豆|まめ|トウ|kacang|N3
+皿|さら|-|piring|N3
+果|は.たす|カ|buah / hasil|N3
+
+@Hewan & Tumbuhan
+犬|いぬ|ケン|anjing|N4
+猫|ねこ|ビョウ|kucing|N3
+馬|うま|バ|kuda|N3
+虫|むし|チュウ|serangga|N3
+草|くさ|ソウ|rumput|N3
+竹|たけ|チク|bambu|N3
+葉|は|ヨウ|daun|N3
+根|ね|コン|akar|N3
+種|たね|シュ|biji / jenis|N3
+植|う.える|ショク|menanam|N3
+羽|は,はね|ウ|bulu sayap|N3
+貝|かい|-|kerang|N3
+
+@Kerja & Pabrik
+仕|つか.える|シ|melayani / bekerja|N4
+事|こと|ジ|hal / urusan|N4
+業|-|ギョウ|usaha / industri|N4
+産|う.む|サン|produksi / melahirkan|N4
+品|しな|ヒン|barang|N3
+製|-|セイ|buatan|N3
+造|つく.る|ゾウ|membuat (produksi)|N3
+材|-|ザイ|bahan|N3
+具|-|グ|alat|N3
+械|-|カイ|mesin (alat)|N3
+検|-|ケン|memeriksa|N3
+査|-|サ|menyelidiki|N3
+確|たし.か|カク|pasti|N3
+認|みと.める|ニン|mengakui|N3
+注|そそ.ぐ|チュウ|menuang / perhatian|N3
+危|あぶ.ない|キ|bahaya|N3
+険|けわ.しい|ケン|curam / bahaya|N3
+全|まった.く|ゼン|semua / lengkap|N3
+責|せ.める|セキ|tanggung jawab|N3
+任|まか.せる|ニン|tugas / mempercayakan|N3
+報|-|ホウ|laporan|N3
+告|つ.げる|コク|memberitahukan|N3
+連|つ.れる|レン|membawa / menghubungkan|N3
+不|-|フ,ブ|tidak|N3
+直|なお.す|チョク,ジキ|memperbaiki / langsung|N3
+修|おさ.める|シュウ|memperbaiki / belajar|N3
+交|ま.じる|コウ|bertukar / silang|N3
+残|のこ.る|ザン|sisa|N3
+勤|つと.める|キン|bekerja (dinas)|N3
+務|つと.める|ム|tugas|N3
+係|かかり|ケイ|petugas / hubungan|N3
+糸|いと|シ|benang|N3
+針|はり|シン|jarum|N3
+靴|くつ|カ|sepatu|N3
+底|そこ|テイ|dasar / sol|N3
+規|-|キ|aturan|N3
+準|-|ジュン|standar|N3
+基|もと|キ|dasar|N3
+程|ほど|テイ|tingkat / proses|N3
+改|あらた.める|カイ|memperbaiki|N3
+善|よ.い|ゼン|baik|N3
+整|ととの.える|セイ|menata|N3
+清|きよ.い|セイ|bersih|N3
+掃|は.く|ソウ|menyapu|N3
+絡|から.む|ラク|melilit / kontak|N2
+傷|きず|ショウ|luka / goresan|N2
+換|か.える|カン|menukar|N2
+班|-|ハン|regu|N2
+革|かわ|カク|kulit (bahan)|N2
+縫|ぬ.う|ホウ|menjahit|N2
+寸|-|スン|ukuran|N2
+
+@Uang & Belanja
+代|か.わる,よ|ダイ|ganti / biaya / zaman|N4
+貯|た.める|チョ|menabung|N3
+費|つい.やす|ヒ|biaya|N3
+税|-|ゼイ|pajak|N3
+値|ね|チ|harga / nilai|N3
+価|-|カ|harga|N3
+給|-|キュウ|gaji / memberi|N3
+財|-|ザイ|harta|N3
+得|え.る|トク|memperoleh / untung|N3
+損|そこ.なう|ソン|rugi|N3
+商|あきな.う|ショウ|dagang|N3
+券|-|ケン|tiket / kupon|N3
+
+@Perasaan & Pikiran
+楽|たの.しい|ガク,ラク|menyenangkan / musik|N4
+好|す.き|コウ|suka|N4
+愛|-|アイ|cinta|N3
+悲|かな.しい|ヒ|sedih|N3
+喜|よろこ.ぶ|キ|gembira|N3
+困|こま.る|コン|kesulitan|N3
+疲|つか.れる|ヒ|lelah|N3
+痛|いた.い|ツウ|sakit (nyeri)|N3
+配|くば.る|ハイ|membagikan / cemas|N3
+念|-|ネン|perasaan / pikiran|N3
+情|なさ.け|ジョウ|perasaan|N3
+感|-|カン|perasaan / merasa|N3
+想|-|ソウ|bayangan / ide|N3
+夢|ゆめ|ム|mimpi|N3
+願|ねが.う|ガン|memohon|N3
+幸|しあわ.せ,さいわ.い|コウ|bahagia|N3
+怖|こわ.い|フ|takut|N2
+
+@Masyarakat & Negara
+政|-|セイ|politik|N3
+治|なお.る,おさ.める|ジ,チ|sembuh / memerintah|N3
+法|-|ホウ|hukum / cara|N3
+民|たみ|ミン|rakyat|N3
+公|おおやけ|コウ|umum / publik|N3
+共|とも|キョウ|bersama|N3
+際|-|サイ|saat / antar|N3
+戦|たたか.う|セン|perang|N3
+平|たい.ら|ヘイ,ビョウ|datar / damai|N3
+和|-|ワ|damai / Jepang|N3
+軍|-|グン|tentara|N3
+警|-|ケイ|polisi / waspada|N3
+察|-|サツ|mengamati|N3
+議|-|ギ|musyawarah|N3
+経|へ.る|ケイ|melalui / ekonomi|N3
+済|す.む|サイ|selesai|N3
+化|ば.ける|カ,ケ|berubah|N3
+歴|-|レキ|sejarah|N3
+史|-|シ|sejarah|N3
+組|く.む|ソ|kelompok|N3
+約|-|ヤク|janji / kira-kira|N3
+束|たば|ソク|ikat|N3
+局|-|キョク|kantor / biro|N3
+制|-|セイ|sistem|N3
+活|-|カツ|aktif / hidup|N3
+度|たび|ド|derajat / kali|N4
+
+@Rumah & Benda
+服|-|フク|pakaian|N4
+洋|-|ヨウ|Barat / samudra|N4
+台|-|ダイ,タイ|alas / unit|N4
+用|もち.いる|ヨウ|keperluan|N4
+戸|と|コ|pintu|N3
+窓|まど|ソウ|jendela|N3
+机|つくえ|キ|meja|N3
+箱|はこ|-|kotak|N3
+荷|に|カ|muatan|N3
+布|ぬの|フ|kain|N3
+傘|かさ|サン|payung|N2
+袋|ふくろ|タイ|kantong|N2
+
+@Kesehatan
+病|や.む|ビョウ|sakit|N4
+医|-|イ|dokter / medis|N4
+薬|くすり|ヤク|obat|N3
+健|すこ.やか|ケン|sehat|N3
+康|-|コウ|sehat (sejahtera)|N3
+命|いのち|メイ|nyawa|N3
+息|いき|ソク|napas|N3
+
+@Lain-lain
+何|なに,なん|カ|apa|N5
+以|-|イ|dengan / dari|N4
+回|まわ.る|カイ|putar / kali|N4
+元|もと|ゲン,ガン|asal|N4
+音|おと|オン|bunyi|N4
+画|-|ガ,カク|gambar|N4
+有|あ.る|ユウ|ada / punya|N3
+無|な.い|ム,ブ|tidak ada|N3
+未|-|ミ|belum|N3
+非|-|ヒ|bukan|N3
+的|まと|テキ|sasaran / -is|N3
+性|-|セイ|sifat|N3
+要|い.る|ヨウ|perlu / penting|N3
+必|かなら.ず|ヒツ|pasti|N3
+関|せき|カン|hubungan|N3
+対|-|タイ,ツイ|terhadap / pasangan|N3
+反|そ.る|ハン|anti / balik|N3
+由|よし|ユ,ユウ|alasan|N3
+次|つぎ|ジ|berikut|N3
+点|-|テン|titik / nilai|N3
+形|かたち|ケイ|bentuk|N3
+様|さま|ヨウ|cara / Tuan|N3
+結|むす.ぶ|ケツ|mengikat|N3
+成|な.る|セイ|menjadi|N3
+実|み,みの.る|ジツ|buah / kenyataan|N3
+当|あ.たる|トウ|tepat / kena|N3
+然|-|ゼン,ネン|demikian|N3

@@ -1,0 +1,741 @@
+// ===== JLPT N2 (perkiraan) — kata kerja, sifat, keterangan, katakana =====
+@N2
+#Kata kerja (Godan)
+仰ぐ|あおぐ|mendongak / meminta (petunjuk)
+扇ぐ|あおぐ|mengipasi
+明かす|あかす|mengungkapkan
+欺く|あざむく|menipu
+味わう|あじわう|mencicipi / menikmati
+焦る|あせる|terburu-buru gelisah
+値する|あたいする|layak
+操る|あやつる|mengendalikan
+誤る|あやまる|keliru
+歩む|あゆむ|melangkah
+荒らす|あらす|merusak / mengacak
+改まる|あらたまる|berubah / menjadi resmi
+至る|いたる|mencapai / sampai
+営む|いとなむ|menjalankan (usaha)
+挑む|いどむ|menantang
+癒す|いやす|menyembuhkan
+威張る|いばる|sombong
+受け継ぐ|うけつぐ|mewarisi
+承る|うけたまわる|menerima (merendah)
+動かす|うごかす|menggerakkan
+薄まる|うすまる|menjadi encer
+促す|うながす|mendorong / mendesak
+潤す|うるおす|membasahi / menyejahterakan
+上回る|うわまわる|melampaui
+下回る|したまわる|di bawah (angka)
+補う|おぎなう|melengkapi / menutupi
+贈る|おくる|menghadiahkan
+怠る|おこたる|melalaikan
+襲いかかる|おそいかかる|menerkam
+陥る|おちいる|terjerumus
+脅かす|おびやかす|mengancam (keadaan)
+赴く|おもむく|menuju
+及ぶ|およぶ|mencapai / meluas
+織る|おる|menenun
+卸す|おろす|menjual grosir
+抱え込む|かかえこむ|memikul sendiri
+欠く|かく|kurang / tidak memiliki
+掻く|かく|menggaruk
+嵩む|かさむ|membengkak (biaya)
+傾く|かたむく|miring
+担ぐ|かつぐ|memikul di bahu
+絡む|からむ|terlibat / melilit
+交わす|かわす|saling bertukar
+効かす|きかす|mengefektifkan
+競う|きそう|berlomba
+築く|きずく|membangun (hubungan)
+悔やむ|くやむ|menyesali
+狂う|くるう|menjadi gila / kacau
+汲む|くむ|menimba
+企む|たくらむ|berkomplot
+凝る|こる|tekun / pegal
+拒む|こばむ|menolak
+好む|このむ|menyukai
+転がす|ころがす|menggelindingkan
+遡る|さかのぼる|menelusuri ke belakang
+裂く|さく|merobek
+刺さる|ささる|tertusuk
+指す|さす|menunjuk
+察する|さっする|menduga / memahami
+晒す|さらす|mengekspos
+障る|さわる|mengganggu (kesehatan)
+仕上がる|しあがる|rampung
+仕切る|しきる|memimpin / menyekat
+茂る|しげる|lebat (tumbuhan)
+沈み込む|しずみこむ|tenggelam dalam
+慕う|したう|merindukan / mengagumi
+しゃがむ|berjongkok
+透き通る|すきとおる|tembus pandang
+廃る|すたる|ketinggalan zaman
+澄む|すむ|jernih
+添う|そう|menemani
+損なう|そこなう|merusak
+背く|そむく|melanggar / membelot
+逸らす|そらす|mengalihkan
+耕す|たがやす|membajak (tanah)
+携わる|たずさわる|terlibat (pekerjaan)
+漂う|ただよう|melayang / tercium
+立ち去る|たちさる|pergi meninggalkan
+立ち寄る|たちよる|singgah
+保つ|たもつ|mempertahankan
+弛む|たるむ|kendur
+縮む|ちぢむ|menyusut
+費やす|ついやす|menghabiskan (waktu/uang)
+司る|つかさどる|mengatur / memimpin
+尽くす|つくす|mengabdi / mengerahkan
+償う|つぐなう|menebus
+慎む|つつしむ|berhati-hati / menahan diri
+募る|つのる|menghimpun / memuncak
+貫く|つらぬく|menembus / berpegang teguh
+問い直す|といなおす|mempertanyakan ulang
+遠ざかる|とおざかる|menjauh
+尖る|とがる|runcing
+研ぐ|とぐ|mengasah
+閉ざす|とざす|menutup rapat
+嫁ぐ|とつぐ|menikah (perempuan)
+伴う|ともなう|disertai
+取り戻す|とりもどす|mendapatkan kembali
+取り除く|とりのぞく|menyingkirkan
+取り締まる|とりしまる|menertibkan
+嘆く|なげく|meratap
+和む|なごむ|menjadi santai
+懐く|なつく|menjadi jinak / akrab
+倣う|ならう|meniru / mengikuti
+成り立つ|なりたつ|terbentuk
+滲む|にじむ|merembes
+担う|になう|memikul (tanggung jawab)
+鈍る|にぶる|menumpul
+練る|ねる|mengulen / memoles (rencana)
+臨む|のぞむ|menghadapi
+乗っ取る|のっとる|membajak / mengambil alih
+罵る|ののしる|mencaci
+這う|はう|merangkak
+諮る|はかる|berkonsultasi (resmi)
+図る|はかる|merencanakan
+励む|はげむ|bekerja giat
+弾む|はずむ|memantul / bersemangat
+捗る|はかどる|lancar (pekerjaan)
+阻む|はばむ|menghalangi
+浸す|ひたす|merendam
+引きずる|ひきずる|menyeret
+引っ張る|ひっぱる|menarik kuat
+響く|ひびく|bergema
+吹き飛ぶ|ふきとぶ|terlempar (angin)
+振り返る|ふりかえる|menoleh / mengenang
+振る舞う|ふるまう|berperilaku / menjamu
+隔たる|へだたる|terpisah jauh
+誇る|ほこる|membanggakan
+施す|ほどこす|memberikan / menerapkan
+賄う|まかなう|membiayai / menyediakan
+紛らわす|まぎらわす|mengalihkan (perhatian)
+跨ぐ|またぐ|melangkahi
+見逃す|みのがす|melewatkan
+見下す|みくだす|meremehkan
+見積もる|みつもる|memperkirakan biaya
+見張る|みはる|mengawasi
+群がる|むらがる|berkerumun
+巡る|めぐる|berkeliling
+目立つ|めだつ|mencolok
+儲かる|もうかる|menguntungkan
+潜る|もぐる|menyelam
+養う|やしなう|menafkahi
+和らぐ|やわらぐ|mereda
+譲る|ゆずる|mengalah / menyerahkan
+揺さぶる|ゆさぶる|mengguncang
+要する|ようする|membutuhkan
+装う|よそおう|berpura-pura / berdandan
+蘇る|よみがえる|hidup kembali
+弱まる|よわまる|melemah
+煩う|わずらう|menderita (sakit)
+湧く|わく|memancar / muncul
+
+#Kata kerja (Ichidan)
+呆れる|あきれる|tercengang
+憧れる|あこがれる|mendambakan
+預け入れる|あずけいれる|menyetor
+宛てる|あてる|mengalamatkan
+溢れる|あふれる|meluap
+荒れる|あれる|menjadi kacau / kasar
+言い付ける|いいつける|memerintahkan
+受け止める|うけとめる|menerima (perasaan)
+打ち上げる|うちあげる|meluncurkan
+映える|はえる|tampak indah
+抱きしめる|だきしめる|memeluk erat
+掲げる|かかげる|mengibarkan / mencantumkan
+欠ける|かける|kurang / gompal
+駆ける|かける|berlari kencang
+賭ける|かける|bertaruh
+重ね合わせる|かさねあわせる|menumpangtindihkan
+兼ねる|かねる|merangkap
+着せる|きせる|memakaikan
+切り替える|きりかえる|mengganti / beralih
+極める|きわめる|menguasai sepenuhnya
+食い止める|くいとめる|membendung
+崩れ落ちる|くずれおちる|runtuh berjatuhan
+心掛ける|こころがける|berupaya mengingat
+拵える|こしらえる|membuat / menyiapkan
+堪える|こらえる|menahan (sakit)
+凍える|こごえる|kedinginan
+栄える|さかえる|makmur
+裂ける|さける|robek
+授ける|さずける|menganugerahkan
+錆びる|さびる|berkarat
+仕掛ける|しかける|memasang (jebakan)
+染みる|しみる|meresap / perih
+退ける|しりぞける|menolak / mengusir
+据える|すえる|memasang / menempatkan
+優れる|すぐれる|unggul
+廃れる|すたれる|usang
+備え付ける|そなえつける|memasang (perlengkapan)
+染める|そめる|mewarnai
+逸れる|それる|melenceng
+長ける|たける|mahir
+携える|たずさえる|membawa serta
+企てる|くわだてる|merencanakan (rencana besar)
+垂れる|たれる|menetes / terkulai
+縮れる|ちぢれる|keriting
+尽きる|つきる|habis
+告げる|つげる|memberitahukan
+務める|つとめる|menjabat
+連ねる|つらねる|menjajarkan
+照れる|てれる|malu-malu
+遠ざける|とおざける|menjauhkan
+遂げる|とげる|mencapai / merampungkan
+途切れる|とぎれる|terputus-putus
+捕らえる|とらえる|menangkap
+取り上げる|とりあげる|mengangkat (topik) / menyita
+取り付ける|とりつける|memasang
+述べ立てる|のべたてる|memaparkan panjang lebar
+化ける|ばける|menjelma
+弾ける|はじける|meletup
+恥じる|はじる|merasa malu
+果てる|はてる|berakhir / mati
+腫れる|はれる|bengkak
+秀でる|ひいでる|menonjol
+率いる|ひきいる|memimpin (rombongan)
+引き止める|ひきとめる|menahan (agar tidak pergi)
+老ける|ふける|menua
+更ける|ふける|larut (malam)
+振り向ける|ふりむける|mengarahkan
+経る|へる|melalui (waktu/proses)
+紛れる|まぎれる|berbaur / teralihkan
+混じる|まじる|bercampur
+見極める|みきわめる|memastikan dengan cermat
+見つめる|みつめる|menatap
+見なれる|みなれる|terbiasa melihat
+目覚める|めざめる|terbangun
+恵まれる|めぐまれる|diberkahi
+設ける|もうける|menyediakan
+燃え尽きる|もえつきる|terbakar habis
+寄せる|よせる|mendekatkan
+甦らせる|よみがえらせる|menghidupkan kembali
+弱める|よわめる|melemahkan
+割り切れる|わりきれる|habis dibagi
+
+#Kata kerja (Tidak beraturan)
+愛する|あいする|mencintai
+圧倒する|あっとうする|mengungguli
+維持する|いじする|memelihara
+依存する|いぞんする|bergantung
+一致する|いっちする|cocok / sesuai
+違反する|いはんする|melanggar
+依頼する|いらいする|meminta (tugas)
+引退する|いんたいする|pensiun
+応用する|おうようする|menerapkan
+解消する|かいしょうする|menghilangkan / mengakhiri
+改善する|かいぜんする|memperbaiki
+開発する|かいはつする|mengembangkan
+回収する|かいしゅうする|menarik kembali
+拡大する|かくだいする|memperbesar
+獲得する|かくとくする|memperoleh
+確保する|かくほする|mengamankan (persediaan)
+活躍する|かつやくする|berkiprah
+加工する|かこうする|mengolah
+観察する|かんさつする|mengamati
+監督する|かんとくする|mengawasi
+関連する|かんれんする|terkait
+記憶する|きおくする|mengingat
+企画する|きかくする|merencanakan (proyek)
+寄付する|きふする|menyumbang
+供給する|きょうきゅうする|memasok
+強調する|きょうちょうする|menekankan
+拒否する|きょひする|menolak (formal)
+禁止する|きんしする|melarang
+経営する|けいえいする|mengelola usaha
+継続する|けいぞくする|melanjutkan
+決定する|けっていする|memutuskan (formal)
+建設する|けんせつする|membangun (konstruksi)
+限定する|げんていする|membatasi
+貢献する|こうけんする|berkontribusi
+攻撃する|こうげきする|menyerang
+交渉する|こうしょうする|bernegosiasi
+購入する|こうにゅうする|membeli (formal)
+考慮する|こうりょする|mempertimbangkan
+誤解する|ごかいする|salah paham
+故障する|こしょうする|rusak (mesin)
+混乱する|こんらんする|kacau
+採用する|さいようする|menerima (pegawai/usulan)
+削除する|さくじょする|menghapus (data)
+作成する|さくせいする|membuat (dokumen)
+支援する|しえんする|mendukung
+支持する|しじする|menyokong
+実施する|じっしする|melaksanakan (program)
+指導する|しどうする|membimbing
+修正する|しゅうせいする|merevisi
+収集する|しゅうしゅうする|mengumpulkan (koleksi)
+主張する|しゅちょうする|bersikeras
+出場する|しゅつじょうする|ikut berlaga
+証明する|しょうめいする|membuktikan
+省略する|しょうりゃくする|menyingkat
+上昇する|じょうしょうする|naik
+処分する|しょぶんする|membuang / menghukum
+所有する|しょゆうする|memiliki
+申請する|しんせいする|mengajukan permohonan
+推薦する|すいせんする|merekomendasikan
+推測する|すいそくする|menduga
+制限する|せいげんする|membatasi
+整備する|せいびする|merawat (mesin)
+接続する|せつぞくする|menyambungkan
+設定する|せっていする|mengatur (setelan)
+設立する|せつりつする|mendirikan
+操作する|そうさする|mengoperasikan
+想定する|そうていする|mengasumsikan
+測定する|そくていする|mengukur (formal)
+尊重する|そんちょうする|menghargai
+対応する|たいおうする|menangani / merespons
+達成する|たっせいする|mencapai
+担当する|たんとうする|bertanggung jawab atas
+調整する|ちょうせいする|menyesuaikan
+挑戦する|ちょうせんする|menantang diri
+治療する|ちりょうする|mengobati
+追加する|ついかする|menambahkan (item)
+提案する|ていあんする|mengusulkan
+提供する|ていきょうする|menyediakan
+訂正する|ていせいする|meralat
+適応する|てきおうする|beradaptasi
+点検する|てんけんする|memeriksa berkala
+統一する|とういつする|menyatukan
+導入する|どうにゅうする|memperkenalkan (sistem)
+登録する|とうろくする|mendaftar
+独立する|どくりつする|merdeka / mandiri
+把握する|はあくする|memahami situasi
+廃止する|はいしする|menghapuskan
+配慮する|はいりょする|memperhatikan
+破壊する|はかいする|menghancurkan
+発生する|はっせいする|terjadi / timbul
+発達する|はったつする|berkembang
+反映する|はんえいする|mencerminkan
+反省する|はんせいする|berintrospeksi
+反応する|はんのうする|bereaksi
+避難する|ひなんする|mengungsi
+評価する|ひょうかする|menilai (evaluasi)
+普及する|ふきゅうする|menyebar luas
+分析する|ぶんせきする|menganalisis
+分類する|ぶんるいする|mengklasifikasikan
+変更する|へんこうする|mengubah (rencana)
+返却する|へんきゃくする|mengembalikan (pinjaman)
+保護する|ほごする|melindungi
+補償する|ほしょうする|memberi kompensasi
+募集する|ぼしゅうする|merekrut
+優先する|ゆうせんする|memprioritaskan
+予防する|よぼうする|mencegah
+連携する|れんけいする|bekerja sama erat
+重視する|じゅうしする|mementingkan
+無視する|むしする|mengabaikan
+注目する|ちゅうもくする|memperhatikan / menyoroti
+
+#Kata sifat-i
+浅ましい|あさましい|hina / tercela
+あっけない|terlalu cepat berakhir
+危うい|あやうい|genting
+あくどい|licik / berlebihan
+慌ただしい|あわただしい|sibuk terburu-buru
+潔い|いさぎよい|berjiwa besar / jantan
+痛々しい|いたいたしい|memilukan
+卑しい|いやしい|rendah / tamak
+うっとうしい|menyebalkan / suram
+疎い|うとい|tidak tahu / renggang
+大人げない|おとなげない|kekanak-kanakan (orang dewasa)
+おびただしい|sangat banyak
+思いがけない|おもいがけない|tidak terduga
+愚かしい|おろかしい|konyol
+輝かしい|かがやかしい|cemerlang
+堅苦しい|かたくるしい|kaku / formal
+かったるい|malas / lesu
+気まずい|きまずい|canggung
+くどい|bertele-tele
+けちくさい|pelit
+心地よい|ここちよい|nyaman
+快い|こころよい|menyenangkan
+さりげない|biasa saja / tidak mencolok
+しぶとい|ulet / bandel
+すがすがしい|segar menyenangkan
+すさまじい|dahsyat
+切ない|せつない|pilu
+素っ気ない|そっけない|dingin / ketus
+容易い|たやすい|gampang
+だらしない|ceroboh / jorok
+手厚い|てあつい|penuh perhatian
+手強い|てごわい|tangguh (lawan)
+尊い|とうとい|mulia
+名高い|なだかい|termasyhur
+何気ない|なにげない|biasa saja / tanpa maksud
+生臭い|なまぐさい|amis
+悩ましい|なやましい|membingungkan
+苦々しい|にがにがしい|tidak menyenangkan
+粘り強い|ねばりづよい|tekun / gigih
+望ましい|のぞましい|diharapkan / ideal
+儚い|はかない|fana
+
+久しい|ひさしい|lama sekali
+太々しい|ふてぶてしい|kurang ajar
+細長い|ほそながい|panjang ramping
+真新しい|まあたらしい|baru sekali
+紛らわしい|まぎらわしい|membingungkan (mirip)
+待ち遠しい|まちどおしい|tak sabar menanti
+水臭い|みずくさい|terlalu sungkan
+みっともない|memalukan
+目覚ましい|めざましい|menakjubkan
+目まぐるしい|めまぐるしい|sangat cepat berubah
+申し訳ない|もうしわけない|sangat menyesal (maaf)
+物凄い|ものすごい|luar biasa (dahsyat)
+物珍しい|ものめずらしい|aneh / unik
+やむを得ない|やむをえない|tidak bisa dihindari
+ややこしい|rumit
+緩い|ゆるい|longgar / landai
+欲深い|よくぶかい|serakah
+用心深い|ようじんぶかい|sangat berhati-hati
+よそよそしい|dingin / berjarak
+煩い|うるさい|cerewet
+
+#Kata sifat-na
+鮮やか|あざやか|cerah / jelas
+あやふや|tidak jelas
+哀れ|あわれ|menyedihkan
+安易|あんい|gampangan
+異常|いじょう|abnormal
+偉大|いだい|agung
+一律|いちりつ|seragam
+一方的|いっぽうてき|sepihak
+陰気|いんき|murung
+内気|うちき|pemalu
+円満|えんまん|harmonis
+大げさ|おおげさ|berlebihan
+大幅|おおはば|drastis
+おおまか|garis besar
+臆病|おくびょう|penakut
+おしゃれ|modis
+温和|おんわ|lembut / sejuk
+過剰|かじょう|berlebih
+格別|かくべつ|istimewa
+過激|かげき|ekstrem
+頑固|がんこ|keras kepala
+簡潔|かんけつ|ringkas
+頑丈|がんじょう|kokoh
+肝心|かんじん|terpenting
+寛大|かんだい|murah hati
+貴重|きちょう|berharga
+几帳面|きちょうめん|teliti / rapi
+気長|きなが|sabar
+窮屈|きゅうくつ|sempit / sesak
+強硬|きょうこう|keras (sikap)
+巨大|きょだい|sangat besar
+清らか|きよらか|bersih / murni
+均等|きんとう|merata
+勤勉|きんべん|rajin
+緊急|きんきゅう|darurat
+軽快|けいかい|ringan / lincah
+軽率|けいそつ|gegabah
+劇的|げきてき|dramatis
+結構|けっこう|lumayan
+険悪|けんあく|tegang (suasana)
+厳重|げんじゅう|ketat
+厳密|げんみつ|teliti / ketat
+賢明|けんめい|bijaksana
+懸命|けんめい|sungguh-sungguh
+強引|ごういん|memaksa
+高度|こうど|tingkat tinggi
+好調|こうちょう|kondisi bagus
+巧妙|こうみょう|cerdik
+滑稽|こっけい|menggelikan
+細心|さいしん|sangat teliti
+盛大|せいだい|meriah
+様々|さまざま|bermacam
+爽快|そうかい|segar menyegarkan
+幸い|さいわい|untungnya / bahagia
+雑|ざつ|asal-asalan
+質素|しっそ|sederhana (hidup)
+しなやか|lentur / anggun
+地道|じみち|tekun dan sederhana
+重要|じゅうよう|penting (formal)
+柔和|にゅうわ|lembut hati
+純情|じゅんじょう|lugu
+上等|じょうとう|kelas atas
+迅速|じんそく|cepat (respons)
+健やか|すこやか|sehat bugar
+正当|せいとう|sah / benar
+精密|せいみつ|presisi
+切実|せつじつ|mendesak / sungguh-sungguh
+繊細|せんさい|halus / sensitif
+鮮明|せんめい|tajam / jelas (gambar)
+壮大|そうだい|megah
+粗末|そまつ|sederhana / buruk mutu
+対等|たいとう|sederajat
+怠慢|たいまん|lalai
+巧み|たくみ|terampil
+多彩|たさい|warna-warni / beragam
+妥当|だとう|wajar / layak
+多忙|たぼう|sangat sibuk
+淡白|たんぱく|ringan (rasa) / tidak ngotot
+抽象的|ちゅうしょうてき|abstrak
+忠実|ちゅうじつ|setia
+適度|てきど|secukupnya
+手軽|てがる|praktis / mudah
+透明|とうめい|transparan
+得意げ|とくいげ|bangga diri
+鈍感|どんかん|tidak peka
+敏感|びんかん|peka
+なだらか|landai
+滑らか|なめらか|halus / licin
+のどか|tenteram
+馬鹿|ばか|bodoh
+莫大|ばくだい|sangat besar (jumlah)
+薄弱|はくじゃく|lemah (dasar)
+抜群|ばつぐん|luar biasa unggul
+半端|はんぱ|setengah-setengah
+悲惨|ひさん|tragis
+否定的|ひていてき|negatif
+肯定的|こうていてき|positif
+微妙|びみょう|halus / meragukan
+不安定|ふあんてい|tidak stabil
+不可欠|ふかけつ|tak tergantikan
+不吉|ふきつ|pertanda buruk
+不潔|ふけつ|kotor (tidak higienis)
+不公平|ふこうへい|tidak adil
+不自然|ふしぜん|tidak wajar
+不思議|ふしぎ|ajaib / misterius
+物騒|ぶっそう|rawan
+不当|ふとう|tidak sah / tidak adil
+不得意|ふとくい|tidak mahir
+不慣れ|ふなれ|belum terbiasa
+不愉快|ふゆかい|tidak menyenangkan
+無礼|ぶれい|kurang ajar
+平穏|へいおん|damai tenteram
+朗らか|ほがらか|ceria
+膨大|ぼうだい|sangat besar (volume)
+豊満|ほうまん|montok
+円やか|まろやか|lembut (rasa)
+未熟|みじゅく|belum matang
+身近|みぢか|dekat (keseharian)
+無口|むくち|pendiam
+無邪気|むじゃき|polos
+無責任|むせきにん|tidak bertanggung jawab
+無茶|むちゃ|nekat / tidak masuk akal
+無念|むねん|penyesalan mendalam
+明白|めいはく|terang benderang
+猛烈|もうれつ|dahsyat / hebat
+厄介|やっかい|merepotkan
+優雅|ゆうが|anggun
+有能|ゆうのう|cakap
+有望|ゆうぼう|menjanjikan
+陽気|ようき|periang
+乱暴|らんぼう|kasar
+利口|りこう|cerdas
+良好|りょうこう|baik (kondisi)
+冷淡|れいたん|dingin (sikap)
+露骨|ろこつ|terang-terangan
+わずか|sedikit sekali
+
+#Kata keterangan
+あいにく|sayangnya
+敢えて|あえて|sengaja / berani
+あくまで|sampai akhir
+あたかも|seakan-akan
+あらかじめ|sebelumnya / terlebih dahulu
+改めて|あらためて|sekali lagi (dengan resmi)
+案の定|あんのじょう|sesuai dugaan
+いかにも|benar-benar / tampaknya
+いざ|saat genting
+依然|いぜん|masih tetap
+一斉に|いっせいに|serentak
+一概に|いちがいに|secara umum (tidak bisa)
+一向に|いっこうに|sama sekali (tidak)
+一旦|いったん|sekali / sejenak
+未だ|いまだ|masih belum
+うんと|banyak sekali
+おおむね|pada umumnya
+自ずから|おのずから|dengan sendirinya
+主に|おもに|terutama
+かつて|dahulu kala
+仮に|かりに|seandainya
+辛うじて|かろうじて|nyaris / hampir tidak
+極めて|きわめて|sangat (formal)
+くれぐれも|sungguh-sungguh (berpesan)
+現に|げんに|pada kenyataannya
+ことごとく|seluruhnya
+殊に|ことに|terutama
+さぞ|tentunya
+さほど|tidak terlalu
+しいて|memaksakan diri
+至急|しきゅう|segera
+始終|しじゅう|terus-menerus
+しきりに|berulang kali
+実に|じつに|sungguh
+終始一貫|しゅうしいっかん|konsisten
+すかさず|tanpa jeda
+少なくとも|すくなくとも|setidaknya
+ずばり|tepat sasaran
+すんなり|dengan lancar
+せいぜい|paling banyak
+せっせと|dengan tekun
+総じて|そうじて|secara keseluruhan
+即座に|そくざに|seketika
+そもそも|pada dasarnya
+大概|たいがい|biasanya
+絶えず|たえず|terus-menerus
+直に|じかに|secara langsung
+単に|たんに|hanya
+断然|だんぜん|jauh lebih
+着々|ちゃくちゃく|terus maju
+ちらっと|sekilas
+ついでに|sekalian
+次々|つぎつぎ|silih berganti
+つくづく|benar-benar (merasa)
+努めて|つとめて|dengan berusaha
+到底|とうてい|sama sekali tidak mungkin
+とっくに|sudah lama
+とにかく|pokoknya
+とりあえず|untuk sementara
+なおさら|apalagi
+なにしろ|bagaimanapun
+何分|なにぶん|bagaimanapun juga
+軒並み|のきなみ|semuanya / serentak
+はなはだしく|sangat parah
+ひたすら|semata-mata
+ひとまず|untuk sementara waktu
+ぼつぼつ|sedikit-sedikit
+本来|ほんらい|semestinya
+まさに|tepat sekali
+まして|apalagi
+まんまと|dengan mulus (tertipu)
+見る見る|みるみる|dengan cepat (tampak)
+無論|むろん|tentu saja
+めいめい|masing-masing orang
+もっぱら|terutama / hanya
+もはや|sudah tidak lagi
+やけに|sangat (aneh)
+やたらに|sembarangan / berlebihan
+よほど|sangat / cukup
+より一層|よりいっそう|semakin lebih
+わずかに|sedikit sekali (keterangan)
+わりと|cukup / lumayan
+
+#Kata benda
+// katakana N2
+アクセス|akses
+アピール|daya tarik / imbauan
+アプローチ|pendekatan
+アマチュア|amatir
+アレルギー|alergi
+インフレ|inflasi
+ウエスト|pinggang (ukuran)
+エチケット|etiket
+エリート|kaum elite
+オーナー|pemilik
+カルチャー|budaya (kultur)
+キャリア|karier
+クーラー|pendingin (AC)
+コンテスト|kontes
+コンプレックス|rasa rendah diri
+シェア|pangsa / berbagi
+ジャンル|genre
+ショッピング|berbelanja (shopping)
+シルエット|siluet
+スタイル|gaya
+ストップ|berhenti (stop)
+スペース|ruang kosong
+スムーズ|lancar
+セット|set
+センス|selera / naluri
+ターゲット|target
+タイトル|judul
+タイミング|waktu yang tepat
+ダメージ|kerusakan
+チャレンジ|tantangan
+テクニック|teknik
+デザート|hidangan penutup
+トラブル|masalah
+ノルマ|kuota kerja
+パートナー|mitra
+パンフレット|brosur
+ピーク|puncak (masa)
+ビジネス|bisnis
+ファッション|mode busana
+フォーム|bentuk / formulir
+プラン|rencana
+プライバシー|privasi
+プロ|profesional
+ベスト|terbaik
+マイナス|minus / negatif
+プラス|plus / positif
+マスコミ|media massa
+メリット|keuntungan
+デメリット|kerugian (kelemahan)
+モチベーション|motivasi
+ユーザー|pengguna
+ライバル|saingan
+リスク|risiko
+リズム|ritme
+レンタル|penyewaan
+ローン|pinjaman / kredit
+ワンパターン|monoton
+
+
+#Kata kerja (Ichidan)
+打ち明ける|うちあける|mencurahkan isi hati
+押し寄せる|おしよせる|berdatangan
+帯びる|おびる|membawa (sifat)
+顧みる|かえりみる|merenungkan
+駆けつける|かけつける|bergegas datang
+捧げる|ささげる|mempersembahkan
+妨げる|さまたげる|menghalangi
+強いる|しいる|memaksa
+済ませる|すませる|menyelesaikan (urusan)
+称える|たたえる|memuji
+途絶える|とだえる|terputus
+省みる|かえりみる|introspeksi
+秘める|ひめる|menyimpan rahasia
+踏まえる|ふまえる|berdasarkan
+滅びる|ほろびる|musnah
+免れる|まぬがれる|terhindar
+委ねる|ゆだねる|menyerahkan (wewenang)
+割り当てる|わりあてる|mengalokasikan
+演じる|えんじる|memerankan
+論じる|ろんじる|membahas
+
+#Kata kerja (Godan)
+惜しむ|おしむ|menyayangkan
+恐れ入る|おそれいる|merasa sungkan
+覚え込む|おぼえこむ|menghafal mati
+耐え抜く|たえぬく|bertahan sampai akhir
+投げ出す|なげだす|melemparkan / menyerah
+逃げ出す|にげだす|kabur
+寝転ぶ|ねころぶ|berbaring santai
+寝過ごす|ねすごす|ketiduran
+映り込む|うつりこむ|ikut terpantul
+ひっくり返る|ひっくりかえる|terbalik
+冷え切る|ひえきる|dingin membeku
+感じ取る|かんじとる|merasakan (menangkap)
+
+#Kata sifat-na
+華やか|はなやか|semarak
+明快|めいかい|jelas dan gamblang
+
+
+#Kata kerja (Ichidan)
+褪せる|あせる|pudar
+拾い上げる|ひろいあげる|memungut
+ふざける|bercanda

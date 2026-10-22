@@ -1,0 +1,754 @@
+// ===== JLPT N5 (perkiraan) =====
+@N5
+#Kata ganti
+私|わたし|saya
+僕|ぼく|saya (pria, santai)
+あなた|kamu / Anda
+彼|かれ|dia (laki-laki)
+彼女|かのじょ|dia (perempuan) / pacar
+私たち|わたしたち|kami / kita
+皆さん|みなさん|Anda sekalian
+皆|みんな|semua orang
+自分|じぶん|diri sendiri
+
+#Kata tunjuk
+これ|ini
+それ|itu
+あれ|itu (jauh)
+この|... ini
+その|... itu
+あの|... itu (jauh)
+ここ|sini
+そこ|situ
+あそこ|sana
+こちら|sebelah sini (sopan)
+そちら|sebelah situ (sopan)
+あちら|sebelah sana (sopan)
+こっち|sebelah sini (santai)
+そっち|sebelah situ (santai)
+あっち|sebelah sana (santai)
+こんな|seperti ini
+そんな|seperti itu
+あんな|seperti itu (jauh)
+
+#Kata tanya
+何|なに|apa
+誰|だれ|siapa
+どなた|siapa (sopan)
+どこ|di mana
+いつ|kapan
+どう|bagaimana
+どうして|mengapa
+なぜ|kenapa
+いくら|berapa harga
+いくつ|berapa buah / umur berapa
+どれ|yang mana
+どの|... yang mana
+どちら|yang mana / ke mana (sopan)
+どっち|yang mana (santai)
+どんな|seperti apa
+何時|なんじ|jam berapa
+何曜日|なんようび|hari apa
+何人|なんにん|berapa orang
+いかが|bagaimana (sopan)
+
+#Bilangan
+零|れい|nol
+一|いち|satu
+二|に|dua
+三|さん|tiga
+四|よん|empat
+五|ご|lima
+六|ろく|enam
+七|なな|tujuh
+八|はち|delapan
+九|きゅう|sembilan
+十|じゅう|sepuluh
+百|ひゃく|seratus
+千|せん|seribu
+万|まん|sepuluh ribu
+一つ|ひとつ|satu buah
+二つ|ふたつ|dua buah
+三つ|みっつ|tiga buah
+四つ|よっつ|empat buah
+五つ|いつつ|lima buah
+六つ|むっつ|enam buah
+七つ|ななつ|tujuh buah
+八つ|やっつ|delapan buah
+九つ|ここのつ|sembilan buah
+十|とお|sepuluh buah
+一人|ひとり|satu orang
+二人|ふたり|dua orang
+半分|はんぶん|setengah bagian
+
+#Kata penghitung
+〜人|にん|penghitung orang (3 ke atas)
+〜枚|まい|penghitung benda tipis (lembar)
+〜本|ほん|penghitung benda panjang (batang)
+〜冊|さつ|penghitung buku
+〜台|だい|penghitung mesin / kendaraan
+〜匹|ひき|penghitung hewan kecil
+〜個|こ|penghitung benda kecil
+〜回|かい|... kali (frekuensi)
+〜階|かい|lantai ke-...
+〜歳|さい|... tahun (umur)
+〜円|えん|... yen
+〜時|じ|pukul ...
+〜分|ふん|... menit
+〜杯|はい|... gelas / mangkuk
+〜番|ばん|nomor ...
+〜頃|ごろ|sekitar (waktu)
+〜時間|じかん|... jam (durasi)
+〜週間|しゅうかん|... minggu (durasi)
+〜か月|かげつ|... bulan (durasi)
+〜年|ねん|tahun ...
+〜度|ど|... derajat / kali
+〜語|ご|bahasa ...
+〜人|じん|orang (kebangsaan) ...
+
+#Keterangan waktu
+今|いま|sekarang
+今日|きょう|hari ini
+明日|あした|besok
+昨日|きのう|kemarin
+一昨日|おととい|kemarin lusa
+明後日|あさって|lusa
+毎日|まいにち|setiap hari
+毎朝|まいあさ|setiap pagi
+毎晩|まいばん|setiap malam
+今朝|けさ|tadi pagi
+今晩|こんばん|malam ini
+今夜|こんや|nanti malam
+今週|こんしゅう|minggu ini
+先週|せんしゅう|minggu lalu
+来週|らいしゅう|minggu depan
+毎週|まいしゅう|setiap minggu
+今月|こんげつ|bulan ini
+先月|せんげつ|bulan lalu
+来月|らいげつ|bulan depan
+毎月|まいつき|setiap bulan
+今年|ことし|tahun ini
+去年|きょねん|tahun lalu
+来年|らいねん|tahun depan
+毎年|まいとし|setiap tahun
+朝|あさ|pagi
+昼|ひる|siang
+夕方|ゆうがた|sore
+晩|ばん|petang
+夜|よる|malam hari
+午前|ごぜん|pagi hari (a.m.)
+午後|ごご|siang/sore hari (p.m.)
+月曜日|げつようび|hari Senin
+火曜日|かようび|hari Selasa
+水曜日|すいようび|hari Rabu
+木曜日|もくようび|hari Kamis
+金曜日|きんようび|hari Jumat
+土曜日|どようび|hari Sabtu
+日曜日|にちようび|hari Minggu
+一月|いちがつ|Januari
+二月|にがつ|Februari
+三月|さんがつ|Maret
+四月|しがつ|April
+五月|ごがつ|Mei
+六月|ろくがつ|Juni
+七月|しちがつ|Juli
+八月|はちがつ|Agustus
+九月|くがつ|September
+十月|じゅうがつ|Oktober
+十一月|じゅういちがつ|November
+十二月|じゅうにがつ|Desember
+一日|ついたち|tanggal 1
+二日|ふつか|tanggal 2 / dua hari
+三日|みっか|tanggal 3 / tiga hari
+四日|よっか|tanggal 4 / empat hari
+五日|いつか|tanggal 5 / lima hari
+六日|むいか|tanggal 6 / enam hari
+七日|なのか|tanggal 7 / tujuh hari
+八日|ようか|tanggal 8 / delapan hari
+九日|ここのか|tanggal 9 / sembilan hari
+十日|とおか|tanggal 10 / sepuluh hari
+二十日|はつか|tanggal 20
+一日|いちにち|satu hari
+春|はる|musim semi
+夏|なつ|musim panas
+秋|あき|musim gugur
+冬|ふゆ|musim dingin
+
+#Kata benda
+// orang & keluarga
+人|ひと|orang
+男|おとこ|laki-laki
+女|おんな|perempuan
+男の子|おとこのこ|anak laki-laki
+女の子|おんなのこ|anak perempuan
+男の人|おとこのひと|pria
+女の人|おんなのひと|wanita
+子供|こども|anak-anak
+大人|おとな|orang dewasa
+家族|かぞく|keluarga
+父|ちち|ayah (sendiri)
+母|はは|ibu (sendiri)
+お父さん|おとうさん|ayah
+お母さん|おかあさん|ibu
+兄|あに|kakak laki-laki (sendiri)
+姉|あね|kakak perempuan (sendiri)
+弟|おとうと|adik laki-laki
+妹|いもうと|adik perempuan
+お兄さん|おにいさん|kakak laki-laki
+お姉さん|おねえさん|kakak perempuan
+兄弟|きょうだい|saudara kandung
+両親|りょうしん|orang tua
+祖父|そふ|kakek (sendiri)
+祖母|そぼ|nenek (sendiri)
+おじいさん|kakek
+おばあさん|nenek
+おじさん|paman / om
+おばさん|bibi / tante
+主人|しゅじん|suami (sendiri)
+奥さん|おくさん|istri (orang lain)
+友達|ともだち|teman
+学生|がくせい|pelajar / mahasiswa
+先生|せんせい|guru
+生徒|せいと|murid
+留学生|りゅうがくせい|pelajar asing
+医者|いしゃ|dokter
+警官|けいかん|polisi
+会社員|かいしゃいん|karyawan perusahaan
+外国人|がいこくじん|orang asing
+お巡りさん|おまわりさん|pak polisi
+// tubuh & kesehatan
+体|からだ|tubuh
+頭|あたま|kepala
+顔|かお|wajah
+目|め|mata
+耳|みみ|telinga
+鼻|はな|hidung
+口|くち|mulut
+歯|は|gigi
+手|て|tangan
+足|あし|kaki
+お腹|おなか|perut
+背|せ|tinggi badan / punggung
+声|こえ|suara (makhluk)
+病気|びょうき|penyakit
+薬|くすり|obat
+風邪|かぜ|flu / masuk angin
+// tempat
+家|いえ|rumah
+うち|rumah (milik sendiri)
+学校|がっこう|sekolah
+大学|だいがく|universitas
+会社|かいしゃ|perusahaan
+病院|びょういん|rumah sakit
+銀行|ぎんこう|bank
+郵便局|ゆうびんきょく|kantor pos
+駅|えき|stasiun
+店|みせ|toko
+図書館|としょかん|perpustakaan
+公園|こうえん|taman
+部屋|へや|kamar
+台所|だいどころ|dapur
+食堂|しょくどう|kantin / ruang makan
+喫茶店|きっさてん|kedai kopi
+交番|こうばん|pos polisi
+大使館|たいしかん|kedutaan besar
+教室|きょうしつ|ruang kelas
+道|みち|jalan
+町|まち|kota kecil
+国|くに|negara
+外国|がいこく|luar negeri
+所|ところ|tempat
+庭|にわ|halaman / kebun
+池|いけ|kolam
+川|かわ|sungai
+山|やま|gunung
+海|うみ|laut
+空|そら|langit
+橋|はし|jembatan
+入口|いりぐち|pintu masuk
+出口|でぐち|pintu keluar
+建物|たてもの|gedung / bangunan
+階段|かいだん|tangga
+映画館|えいがかん|bioskop
+本屋|ほんや|toko buku
+八百屋|やおや|toko sayur
+花屋|はなや|toko bunga
+肉屋|にくや|toko daging
+魚屋|さかなや|toko ikan
+隣|となり|sebelah
+近く|ちかく|dekat / sekitar
+前|まえ|depan / sebelum
+後ろ|うしろ|belakang
+上|うえ|atas
+下|した|bawah
+中|なか|dalam
+外|そと|luar
+右|みぎ|kanan
+左|ひだり|kiri
+横|よこ|samping
+東|ひがし|timur
+西|にし|barat
+南|みなみ|selatan
+北|きた|utara
+間|あいだ|antara
+側|そば|dekat / di sisi
+向こう|むこう|seberang / sana
+日本|にほん|Jepang
+インドネシア|Indonesia
+// benda sehari-hari
+本|ほん|buku
+雑誌|ざっし|majalah
+新聞|しんぶん|koran
+辞書|じしょ|kamus
+紙|かみ|kertas
+鉛筆|えんぴつ|pensil
+鞄|かばん|tas
+傘|かさ|payung
+時計|とけい|jam (alat)
+眼鏡|めがね|kacamata
+帽子|ぼうし|topi
+服|ふく|pakaian
+洋服|ようふく|pakaian (gaya barat)
+靴|くつ|sepatu
+靴下|くつした|kaus kaki
+財布|さいふ|dompet
+鍵|かぎ|kunci
+机|つくえ|meja belajar
+椅子|いす|kursi
+窓|まど|jendela
+戸|と|pintu geser
+電気|でんき|listrik / lampu
+電話|でんわ|telepon
+写真|しゃしん|foto
+手紙|てがみ|surat
+切手|きって|perangko
+葉書|はがき|kartu pos
+封筒|ふうとう|amplop
+箱|はこ|kotak
+荷物|にもつ|barang bawaan
+冷蔵庫|れいぞうこ|kulkas
+皿|さら|piring
+茶碗|ちゃわん|mangkuk nasi
+箸|はし|sumpit
+花|はな|bunga
+木|き|pohon
+物|もの|benda / barang
+お金|おかね|uang
+切符|きっぷ|tiket
+地図|ちず|peta
+絵|え|gambar / lukisan
+歌|うた|lagu
+音楽|おんがく|musik
+映画|えいが|film
+言葉|ことば|kata / bahasa
+名前|なまえ|nama
+宿題|しゅくだい|pekerjaan rumah (PR)
+問題|もんだい|soal / masalah
+質問|しつもん|pertanyaan
+授業|じゅぎょう|jam pelajaran
+番号|ばんごう|nomor
+意味|いみ|arti / makna
+話|はなし|cerita / pembicaraan
+仕事|しごと|pekerjaan
+休み|やすみ|libur / istirahat
+旅行|りょこう|perjalanan wisata
+買い物|かいもの|belanja
+料理|りょうり|masakan
+掃除|そうじ|bersih-bersih
+洗濯|せんたく|cucian
+誕生日|たんじょうび|ulang tahun
+天気|てんき|cuaca
+雨|あめ|hujan
+雪|ゆき|salju
+風|かぜ|angin
+色|いろ|warna
+動物|どうぶつ|hewan
+犬|いぬ|anjing
+猫|ねこ|kucing
+鳥|とり|burung
+魚|さかな|ikan
+時間|じかん|waktu
+時|とき|saat / ketika
+半|はん|setengah (jam)
+年|とし|tahun / usia
+月|つき|bulan (langit)
+日|ひ|hari / matahari
+週|しゅう|minggu (pekan)
+// transportasi
+車|くるま|mobil
+自転車|じてんしゃ|sepeda
+自動車|じどうしゃ|kendaraan bermotor
+電車|でんしゃ|kereta listrik
+地下鉄|ちかてつ|kereta bawah tanah
+飛行機|ひこうき|pesawat terbang
+// makanan & minuman
+ご飯|ごはん|nasi
+朝ご飯|あさごはん|sarapan
+昼ご飯|ひるごはん|makan siang
+晩ご飯|ばんごはん|makan malam
+食べ物|たべもの|makanan
+飲み物|のみもの|minuman
+水|みず|air
+お茶|おちゃ|teh hijau
+紅茶|こうちゃ|teh hitam
+牛乳|ぎゅうにゅう|susu
+お酒|おさけ|minuman beralkohol
+肉|にく|daging
+牛肉|ぎゅうにく|daging sapi
+豚肉|ぶたにく|daging babi
+鶏肉|とりにく|daging ayam
+卵|たまご|telur
+野菜|やさい|sayuran
+果物|くだもの|buah-buahan
+塩|しお|garam
+砂糖|さとう|gula
+お菓子|おかし|kue / camilan
+弁当|べんとう|bekal makanan
+// bahasa
+日本語|にほんご|bahasa Jepang
+英語|えいご|bahasa Inggris
+漢字|かんじ|huruf kanji
+平仮名|ひらがな|huruf hiragana
+片仮名|かたかな|huruf katakana
+文章|ぶんしょう|kalimat / tulisan
+作文|さくぶん|karangan
+// katakana
+ホテル|hotel
+レストラン|restoran
+デパート|toserba (department store)
+スーパー|supermarket
+トイレ|toilet
+ノート|buku catatan
+ペン|pena
+ボールペン|pulpen
+シャツ|kemeja
+ズボン|celana panjang
+スカート|rok
+テーブル|meja
+ベッド|tempat tidur
+ドア|pintu
+テレビ|televisi
+ラジオ|radio
+カメラ|kamera
+パソコン|komputer
+コップ|gelas
+バス|bus
+タクシー|taksi
+コーヒー|kopi
+パン|roti
+カレー|kari
+テスト|tes / ujian
+シャワー|pancuran (shower)
+ニュース|berita
+スポーツ|olahraga
+ギター|gitar
+ピアノ|piano
+エレベーター|lift
+ポケット|saku
+ボタン|kancing / tombol
+ネクタイ|dasi
+セーター|sweter
+コート|mantel
+クラス|kelas
+ページ|halaman
+フォーク|garpu
+ナイフ|pisau
+スプーン|sendok
+アパート|apartemen
+ゼロ|nol (angka)
+ビル|gedung bertingkat
+プール|kolam renang
+カップ|cangkir
+グラム|gram
+キロ|kilo
+メートル|meter
+ストーブ|pemanas ruangan
+テープ|pita / selotip
+ハンカチ|sapu tangan
+フィルム|film (rol)
+ラーメン|mi ramen
+
+#Kata kerja (Godan)
+会う|あう|bertemu
+開く|あく|terbuka
+遊ぶ|あそぶ|bermain
+洗う|あらう|mencuci
+ある|ada (benda mati)
+歩く|あるく|berjalan kaki
+言う|いう|berkata
+行く|いく|pergi
+急ぐ|いそぐ|bergegas
+要る|いる|perlu
+歌う|うたう|bernyanyi
+売る|うる|menjual
+置く|おく|meletakkan
+押す|おす|menekan / mendorong
+泳ぐ|およぐ|berenang
+終わる|おわる|selesai
+買う|かう|membeli
+返す|かえす|mengembalikan
+帰る|かえる|pulang
+掛かる|かかる|memakan (waktu/biaya)
+書く|かく|menulis
+貸す|かす|meminjamkan
+被る|かぶる|memakai (topi)
+聞く|きく|mendengar / bertanya
+切る|きる|memotong
+曇る|くもる|mendung
+消す|けす|mematikan / menghapus
+困る|こまる|kesulitan
+咲く|さく|mekar
+差す|さす|membuka (payung)
+死ぬ|しぬ|mati
+閉まる|しまる|tertutup
+知る|しる|mengetahui
+吸う|すう|menghisap
+住む|すむ|tinggal (menetap)
+座る|すわる|duduk
+出す|だす|mengeluarkan / mengirim
+立つ|たつ|berdiri
+頼む|たのむ|meminta / memesan
+違う|ちがう|berbeda / salah
+使う|つかう|menggunakan
+着く|つく|tiba
+作る|つくる|membuat
+手伝う|てつだう|membantu
+飛ぶ|とぶ|terbang
+止まる|とまる|berhenti
+取る|とる|mengambil
+撮る|とる|memotret
+鳴く|なく|berbunyi (hewan)
+無くす|なくす|menghilangkan
+習う|ならう|belajar (dari orang)
+並ぶ|ならぶ|berbaris
+なる|menjadi
+脱ぐ|ぬぐ|melepas (pakaian)
+登る|のぼる|mendaki
+飲む|のむ|minum
+乗る|のる|naik (kendaraan)
+入る|はいる|masuk
+履く|はく|memakai (sepatu/celana)
+始まる|はじまる|dimulai
+走る|はしる|berlari
+働く|はたらく|bekerja
+話す|はなす|berbicara
+貼る|はる|menempel
+弾く|ひく|memainkan (alat musik)
+引く|ひく|menarik
+吹く|ふく|bertiup
+降る|ふる|turun (hujan/salju)
+曲がる|まがる|berbelok
+待つ|まつ|menunggu
+磨く|みがく|menggosok (gigi)
+持つ|もつ|membawa / memegang
+休む|やすむ|beristirahat / libur
+呼ぶ|よぶ|memanggil
+読む|よむ|membaca
+分かる|わかる|mengerti
+渡す|わたす|menyerahkan
+渡る|わたる|menyeberang
+思う|おもう|berpikir / merasa
+頑張る|がんばる|berusaha keras
+
+#Kata kerja (Ichidan)
+開ける|あける|membuka
+上げる|あげる|memberi / menaikkan
+浴びる|あびる|mandi (pancuran)
+いる|ada (makhluk hidup)
+入れる|いれる|memasukkan
+生まれる|うまれる|lahir
+起きる|おきる|bangun
+教える|おしえる|mengajar / memberi tahu
+覚える|おぼえる|mengingat / menghafal
+降りる|おりる|turun (dari kendaraan)
+掛ける|かける|menelepon / menggantung
+借りる|かりる|meminjam
+消える|きえる|padam / hilang
+着る|きる|memakai (baju)
+答える|こたえる|menjawab
+閉める|しめる|menutup
+締める|しめる|mengencangkan (dasi/sabuk)
+食べる|たべる|makan
+疲れる|つかれる|lelah
+付ける|つける|menyalakan / memasang
+勤める|つとめる|bekerja (di suatu tempat)
+出かける|でかける|pergi keluar
+出来る|できる|bisa
+出る|でる|keluar
+並べる|ならべる|menyusun / menjajarkan
+寝る|ねる|tidur
+始める|はじめる|memulai
+晴れる|はれる|cerah
+見せる|みせる|memperlihatkan
+見る|みる|melihat
+忘れる|わすれる|lupa
+止める|やめる|berhenti (kebiasaan)
+
+#Kata kerja (Tidak beraturan)
+来る|くる|datang
+する|melakukan
+勉強する|べんきょうする|belajar
+結婚する|けっこんする|menikah
+散歩する|さんぽする|jalan-jalan santai
+掃除する|そうじする|membersihkan
+洗濯する|せんたくする|mencuci pakaian
+料理する|りょうりする|memasak
+電話する|でんわする|menelepon
+質問する|しつもんする|bertanya
+練習する|れんしゅうする|berlatih
+旅行する|りょこうする|berwisata
+買い物する|かいものする|berbelanja
+持って来る|もってくる|membawa ke sini
+連れて来る|つれてくる|mengajak (orang) ke sini
+
+#Kata sifat-i
+大きい|おおきい|besar
+小さい|ちいさい|kecil
+新しい|あたらしい|baru
+古い|ふるい|lama / kuno
+高い|たかい|mahal / tinggi
+安い|やすい|murah
+低い|ひくい|rendah
+美味しい|おいしい|enak
+不味い|まずい|tidak enak
+良い|いい|bagus / baik
+悪い|わるい|buruk / jelek
+暑い|あつい|panas (cuaca)
+熱い|あつい|panas (benda)
+寒い|さむい|dingin (cuaca)
+冷たい|つめたい|dingin (benda)
+暖かい|あたたかい|hangat
+涼しい|すずしい|sejuk
+長い|ながい|panjang
+短い|みじかい|pendek
+広い|ひろい|luas
+狭い|せまい|sempit
+重い|おもい|berat
+軽い|かるい|ringan
+早い|はやい|awal / pagi-pagi
+速い|はやい|cepat (laju)
+遅い|おそい|lambat / terlambat
+近い|ちかい|dekat
+遠い|とおい|jauh
+多い|おおい|banyak
+少ない|すくない|sedikit
+忙しい|いそがしい|sibuk
+難しい|むずかしい|sulit
+易しい|やさしい|mudah
+楽しい|たのしい|menyenangkan
+面白い|おもしろい|menarik / lucu
+つまらない|membosankan
+強い|つよい|kuat
+弱い|よわい|lemah
+明るい|あかるい|terang / ceria
+暗い|くらい|gelap
+白い|しろい|putih
+黒い|くろい|hitam
+赤い|あかい|merah
+青い|あおい|biru
+黄色い|きいろい|kuning
+茶色い|ちゃいろい|cokelat
+太い|ふとい|tebal / gemuk
+細い|ほそい|ramping
+厚い|あつい|tebal (benda)
+薄い|うすい|tipis
+痛い|いたい|sakit (nyeri)
+欲しい|ほしい|ingin (memiliki)
+若い|わかい|muda
+可愛い|かわいい|imut / lucu
+甘い|あまい|manis
+辛い|からい|pedas
+危ない|あぶない|berbahaya
+汚い|きたない|kotor
+丸い|まるい|bulat
+うるさい|berisik
+温い|ぬるい|suam-suam kuku
+かっこいい|keren
+
+#Kata sifat-na
+静か|しずか|tenang / sepi
+綺麗|きれい|cantik / bersih
+元気|げんき|sehat / semangat
+好き|すき|suka
+大好き|だいすき|sangat suka
+嫌い|きらい|tidak suka
+有名|ゆうめい|terkenal
+上手|じょうず|pandai
+下手|へた|tidak pandai
+便利|べんり|praktis / berguna
+賑やか|にぎやか|ramai
+暇|ひま|senggang
+大丈夫|だいじょうぶ|tidak apa-apa
+大切|たいせつ|penting / berharga
+大変|たいへん|berat / repot
+丈夫|じょうぶ|kuat / awet
+親切|しんせつ|baik hati
+色々|いろいろ|bermacam-macam
+結構|けっこう|cukup / tidak usah
+嫌|いや|tidak mau
+立派|りっぱ|hebat / megah
+同じ|おなじ|sama
+簡単|かんたん|sederhana
+
+#Kata keterangan
+とても|sangat
+もっと|lebih
+ゆっくり|pelan-pelan
+少し|すこし|sedikit (jumlah)
+たくさん|banyak sekali
+ちょっと|sebentar / agak
+よく|sering / dengan baik
+時々|ときどき|kadang-kadang
+いつも|selalu
+全然|ぜんぜん|sama sekali (tidak)
+あまり|tidak terlalu
+多分|たぶん|mungkin
+もう|sudah
+まだ|belum / masih
+すぐ|segera
+一緒に|いっしょに|bersama-sama
+一番|いちばん|paling
+大体|だいたい|kira-kira / umumnya
+本当に|ほんとうに|benar-benar
+初めて|はじめて|pertama kali
+又|また|lagi
+先に|さきに|duluan
+後で|あとで|nanti
+段々|だんだん|lambat laun
+一人で|ひとりで|sendirian
+ちょうど|tepat
+大抵|たいてい|biasanya
+どうぞ|silakan
+どうも|terima kasih / sangat
+本当|ほんとう|sungguh
+大分|だいぶ|cukup banyak
+
+#Kata sambung
+そして|lalu / dan
+でも|tetapi
+それから|setelah itu
+しかし|namun
+だから|oleh karena itu
+じゃあ|kalau begitu
+それでは|baiklah kalau begitu
+
+#Ungkapan
+はい|ya
+いいえ|tidak / bukan
+ありがとう|terima kasih (santai)
+ごめんなさい|maaf
+もしもし|halo (telepon)
+さようなら|selamat tinggal
+お休みなさい|おやすみなさい|selamat tidur
+いらっしゃいませ|selamat datang (toko)
+下さい|ください|tolong berikan
+お元気ですか|おげんきですか|apa kabar?
+初めまして|はじめまして|salam kenal
+宜しく|よろしく|mohon bantuannya
+行ってきます|いってきます|saya berangkat
+行ってらっしゃい|いってらっしゃい|hati-hati di jalan
+ただいま|saya pulang
+お帰りなさい|おかえりなさい|selamat datang kembali
+失礼します|しつれいします|permisi
+おめでとう|selamat (ucapan)
+

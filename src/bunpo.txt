@@ -1,0 +1,323 @@
+// Materi Bunpō untuk menu Bunpo.
+// Format:
+//   @Level|Judul|Fokus belajar
+//   #Nama bagian
+//   pola|romaji|arti / kegunaan
+//   !contoh|kalimat Jepang|romaji|arti
+// Pola yang sama dalam satu level otomatis tidak diulang di kuis.
+
+@N5|Dasar pemula|Menyusun kalimat sederhana, memperkenalkan diri, bertanya, menjelaskan kegiatan, dan memahami perubahan dasar kata kerja.
+#A. Pola kalimat dan partikel
+～です|desu|Adalah; bentuk sopan
+～じゃありません|ja arimasen|Bukan
+～でした|deshita|Dulu/adalah (lampau)
+～じゃありませんでした|ja arimasen deshita|Dulu bukan
+は|wa|Menandai topik
+が|ga|Menandai subjek atau menegaskan informasi
+を|o|Menandai objek
+に|ni|Waktu, tujuan, penerima, lokasi keberadaan
+で|de|Tempat melakukan kegiatan atau alat
+へ|e|Arah menuju tempat
+の|no|Kepemilikan atau penghubung kata benda
+と|to|Dengan; dan
+も|mo|Juga
+から～まで|kara–made|Dari ... sampai ...
+や～など|ya–nado|Seperti A, B, dan lain-lain
+～か|ka|Penanda pertanyaan
+～ね|ne|Meminta persetujuan atau menegaskan
+～よ|yo|Memberi informasi atau penegasan
+#B. Kata kerja dan perubahan bentuk
+～ます|masu|Kata kerja sopan
+～ません|masen|Tidak melakukan (sopan)
+～ました|mashita|Sudah melakukan (sopan)
+～ませんでした|masen deshita|Tidak melakukan pada masa lalu
+Bentuk kamus|jishokei|Bentuk dasar kata kerja
+Bentuk ない|nai-kei|Bentuk negatif kasual
+Bentuk て|te-kei|Menghubungkan tindakan dan membentuk pola lain
+～ています|te imasu|Sedang melakukan atau keadaan yang berlanjut
+～てください|te kudasai|Tolong lakukan
+～てもいいです|te mo ii desu|Boleh melakukan
+～たいです|tai desu|Ingin melakukan
+～ませんか|masen ka|Ajakan atau tawaran sopan
+～ましょう|mashō|Mari melakukan
+～ましょうか|mashō ka|Bagaimana kalau saya bantu/lakukan?
+#C. Kata sifat dan kata benda
+～いです|i desu|Kata sifat-i bentuk sopan
+～くないです|kunai desu|Tidak ... (kata sifat-i)
+～かったです|katta desu|... pada masa lalu
+～くなかったです|kunakatta desu|Tidak ... pada masa lalu
+～な + kata benda|na + noun|Kata sifat-na menerangkan benda
+～になります|ni narimasu|Menjadi
+～が好きです|ga suki desu|Suka
+～が嫌いです|ga kirai desu|Tidak suka
+～が上手です|ga jōzu desu|Pandai
+～が下手です|ga heta desu|Kurang pandai
+～がほしいです|ga hoshii desu|Menginginkan benda
+～があります|ga arimasu|Ada (benda mati)
+～がいます|ga imasu|Ada (orang atau hewan)
+～より～のほうが|yori ... no hō ga|Lebih ... daripada
+～がいちばん|ga ichiban|Paling ...
+#D. Waktu, urutan, dan pertanyaan
+～前に|mae ni|Sebelum
+～後で|ato de|Sesudah
+～から|kara|Karena; dari
+そして|soshite|Kemudian; dan
+でも|demo|Tetapi
+～が (penghubung)|ga|Tetapi (menghubungkan kalimat)
+～てから|te kara|Setelah melakukan
+～たり～たりする|tari–tari suru|Melakukan hal seperti A dan B
+どうして|dōshite|Mengapa
+どうやって|dō yatte|Bagaimana caranya
+どんな|donna|Seperti apa
+どのくらい|dono kurai|Berapa lama / seberapa banyak
+!contoh|毎日、日本語を勉強しています。|Mainichi, nihongo o benkyō shite imasu.|Saya belajar bahasa Jepang setiap hari.
+!contoh|日本に行きたいです。|Nihon ni ikitai desu.|Saya ingin pergi ke Jepang.
+
+@N4|Dasar lanjutan|Pengalaman, kewajiban, kemampuan, alasan, dugaan, syarat, dan kalimat yang lebih panjang.
+#A. Bentuk kata kerja lanjutan
+Bentuk biasa / kasual|futsūkei|Bentuk percakapan akrab dan dasar pola lanjutan
+～ことができる|koto ga dekiru|Bisa melakukan
+～ことがある|koto ga aru|Kadang melakukan; tergantung bentuk sebelumnya
+～たことがある|ta koto ga aru|Pernah melakukan
+～たことがない|ta koto ga nai|Belum pernah melakukan
+～てしまう|te shimau|Terlanjur, selesai sepenuhnya, atau menyesal
+～ておく|te oku|Melakukan sebagai persiapan
+～てみる|te miru|Mencoba melakukan
+～てあげる|te ageru|Melakukan sesuatu untuk orang lain
+～てくれる|te kureru|Orang lain melakukan sesuatu untuk saya/kita
+～てもらう|te morau|Menerima bantuan atau tindakan dari orang lain
+～ながら|nagara|Sambil melakukan
+～やすい|yasui|Mudah dilakukan
+～にくい|nikui|Sulit dilakukan
+～始める|hajimeru|Mulai melakukan
+～終わる|owaru|Selesai melakukan
+～続ける|tsuzukeru|Terus melakukan
+～出す|dasu|Mulai tiba-tiba melakukan
+～方|kata|Cara melakukan
+#B. Syarat dan kewajiban
+～たら|tara|Kalau; setelah
+～ば|ba|Jika; seandainya
+～と (syarat)|to|Jika, dengan hasil yang biasanya terjadi
+～なら|nara|Kalau mengenai ... / jika memang ...
+～なければならない|nakereba naranai|Harus
+～なくてはいけない|nakute wa ikenai|Harus (wajib)
+～なくてもいい|nakute mo ii|Tidak perlu melakukan
+～ても|temo|Walaupun; sekalipun
+～てはいけない|te wa ikenai|Tidak boleh
+～ないで|naide|Tanpa melakukan; jangan ...
+～ようにする|yō ni suru|Berusaha membiasakan diri
+～ようになる|yō ni naru|Menjadi bisa / mulai terbiasa
+#C. Tujuan, alasan, dan dugaan
+～ために|tame ni|Untuk; demi
+～ように|yō ni|Agar; supaya
+～ので|node|Karena; lebih halus atau netral
+～のに|noni|Padahal; meskipun
+～そうです (kelihatan)|sō desu|Tampaknya; kelihatannya
+～そうです (informasi)|sō desu|Katanya; saya dengar
+～かもしれない|kamoshirenai|Mungkin
+～でしょう|deshō|Mungkin; bukan?
+～はずです|hazu desu|Seharusnya; mestinya
+～つもりです|tsumori desu|Berniat
+～予定です|yotei desu|Berencana / dijadwalkan
+～と思います|to omoimasu|Saya pikir
+～と言います|to iimasu|Mengatakan bahwa / disebut
+!contoh|日本に行ったことがあります。|Nihon ni itta koto ga arimasu.|Saya pernah pergi ke Jepang.
+!contoh|日本語が話せるようになりたいです。|Nihongo ga hanaseru yō ni naritai desu.|Saya ingin menjadi bisa berbicara bahasa Jepang.
+!contoh|雨が降ったら、家にいます。|Ame ga futtara, ie ni imasu.|Kalau hujan, saya akan berada di rumah.
+
+@N3|Menengah|Menjelaskan proses, perubahan, alasan yang lebih kompleks, dugaan, perbandingan, dan menyampaikan pendapat secara lebih alami.
+#A. Perubahan, proses, dan kebiasaan
+～ようになる|yō ni naru|Menjadi bisa / mulai melakukan
+～ようにする|yō ni suru|Berusaha agar terbiasa
+～ことになる|koto ni naru|Diputuskan bahwa
+～ことにする|koto ni suru|Memutuskan untuk
+～ことになっている|koto ni natte iru|Sudah menjadi aturan / ketentuan
+～ばかり|bakari|Baru saja; hanya (tergantung konteks)
+～ところ|tokoro|Tahap suatu tindakan
+～たところ|ta tokoro|Baru saja selesai melakukan
+～ているところ|te iru tokoro|Sedang melakukan tepat saat itu
+～ところだった|tokoro datta|Hampir saja melakukan
+～てくる|te kuru|Perubahan yang berlangsung sampai sekarang; datang sambil melakukan
+～ていく|te iku|Perubahan yang berlanjut ke depan; pergi sambil melakukan
+～てしまう|te shimau|Terlanjur atau selesai sepenuhnya
+～ことはない|koto wa nai|Tidak perlu melakukan
+～たびに|tabi ni|Setiap kali
+～最中に|saichū ni|Tepat ketika sedang
+～おかげで|okage de|Berkat
+～せいで|sei de|Gara-gara; akibat negatif
+#B. Alasan, pertentangan, dan hubungan logis
+～ため（に）|tame (ni)|Karena; demi
+～によって|ni yotte|Karena; melalui; bergantung pada
+～のに|noni|Padahal; meskipun
+～くせに|kuse ni|Padahal (dengan nada menyalahkan)
+～にもかかわらず|ni mo kakawarazu|Meskipun demikian
+～一方で|ippō de|Di sisi lain
+～反面|hanmen|Sebaliknya; sisi lain
+～かわりに|kawari ni|Sebagai pengganti; sebagai imbalan
+それなのに|sore na noni|Padahal begitu
+そのため|sono tame|Oleh karena itu
+つまり|tsumari|Dengan kata lain
+たとえば|tatoeba|Sebagai contoh
+～結果|kekka|Hasilnya
+～によると|ni yoru to|Menurut sumber ...
+#C. Dugaan, penjelasan, dan pendapat
+～らしい|rashii|Katanya; tampaknya khas ...
+～ようだ|yō da|Tampaknya; sepertinya
+～みたいだ|mitai da|Sepertinya; seperti
+～はずがない|hazu ga nai|Tidak mungkin
+～に違いない|ni chigai nai|Pasti; tidak diragukan
+～わけだ|wake da|Pantas saja; berarti demikian
+～わけではない|wake de wa nai|Bukan berarti ...
+～ということだ|to iu koto da|Artinya; kabarnya
+～というより|to iu yori|Daripada disebut ..., lebih tepat ...
+～気がする|ki ga suru|Merasa bahwa; punya firasat
+～と思われる|to omowareru|Diperkirakan / dianggap
+～に見える|ni mieru|Terlihat seperti
+#D. Perbandingan, batasan, dan tingkat
+～ほど～ない|hodo ... nai|Tidak se...
+～くらい／ぐらい|kurai / gurai|Sekitar; sampai-sampai
+～ば～ほど|ba ... hodo|Semakin ..., semakin ...
+～に比べて|ni kurabete|Dibandingkan dengan
+～に対して|ni taishite|Terhadap; sedangkan
+～について|ni tsuite|Mengenai
+～に関して|ni kanshite|Berkenaan dengan
+～として|to shite|Sebagai
+～にとって|ni totte|Bagi; menurut sudut pandang
+～しか～ない|shika ... nai|Hanya ... dan tidak lebih
+～さえ|sae|Bahkan
+～こそ|koso|Justru; penegasan
+!contoh|日本語が少しずつ話せるようになりました。|Nihongo ga sukoshi zutsu hanaseru yō ni narimashita.|Saya mulai bisa berbicara bahasa Jepang sedikit demi sedikit.
+!contoh|忙しいにもかかわらず、勉強しています。|Isogashii ni mo kakawarazu, benkyō shite imasu.|Meskipun sibuk, saya tetap belajar.
+!contoh|彼が来ないわけではありません。|Kare ga konai wake de wa arimasen.|Bukan berarti dia tidak datang.
+
+@N2|Menengah atas|Membaca berita, memahami tulisan formal, menyampaikan argumen, dan memahami nuansa yang tidak selalu terlihat dari terjemahan harfiah.
+#A. Hubungan logis dan pertentangan
+～ものの|mono no|Walaupun; tetapi
+～とはいえ|to wa ie|Meskipun dikatakan demikian
+～ながらも|nagara mo|Walaupun
+～一方だ|ippō da|Terus semakin ...
+～反面|hanmen|Di sisi lain
+～どころか|dokoro ka|Bukannya ..., malah ...
+～ばかりか|bakari ka|Bukan hanya ..., tetapi juga ...
+～のみならず|nomi narazu|Tidak hanya ..., tetapi juga ...
+それどころか|sore dokoro ka|Bahkan sebaliknya
+～にもかかわらず|ni mo kakawarazu|Meskipun
+～にしては|ni shite wa|Untuk ukuran ..., ternyata ...
+～わりに|wari ni|Untuk ukuran ..., relatif ...
+～に反して|ni hanshite|Bertentangan dengan
+～に対して|ni taishite|Terhadap; sedangkan
+#B. Alasan, dasar, dan konsekuensi
+～以上（は）|ijō (wa)|Karena sudah ..., maka ...
+～からには|kara ni wa|Kalau sudah ..., tentu ...
+～上で|ue de|Setelah; dalam melakukan ...
+～上は|ue wa|Karena sudah ..., maka ... (formal)
+～だけあって|dake atte|Memang pantas karena ...
+～だけに|dake ni|Justru karena ...
+～ばかりに|bakari ni|Gara-gara hanya ...
+～ことから|koto kara|Berdasarkan fakta bahwa ...
+～結果として|kekka to shite|Sebagai hasil
+～に基づいて|ni motozuite|Berdasarkan
+～を通じて|o tsūjite|Melalui; sepanjang periode
+～を通して|o tōshite|Melalui; selama
+～に伴って|ni tomonatte|Seiring dengan
+～につれて|ni tsurete|Seiring dengan perubahan
+～に応じて|ni ōjite|Sesuai dengan
+#C. Kewajiban, kemungkinan, dan kesimpulan
+～ざるを得ない|zaru o enai|Tidak punya pilihan selain
+～ないわけにはいかない|nai wake ni wa ikanai|Tidak bisa tidak melakukan
+～わけにはいかない|wake ni wa ikanai|Tidak bisa melakukan karena situasi/tanggung jawab
+～に違いない|ni chigai nai|Pasti
+～に決まっている|ni kimatte iru|Sudah pasti
+～にすぎない|ni suginai|Tidak lebih dari; hanya
+～とは限らない|to wa kagiranai|Tidak selalu
+～わけがない|wake ga nai|Tidak mungkin
+～おそれがある|osore ga aru|Ada risiko / kemungkinan buruk
+～かねない|kanenai|Bisa saja terjadi (biasanya hal buruk)
+～かねる|kaneru|Sulit atau tidak dapat dilakukan (sopan)
+～得る／～得ない|eru / enai|Dapat terjadi / tidak dapat terjadi
+～にほかならない|ni hoka naranai|Tidak lain adalah
+～に相違ない|ni sōi nai|Tidak diragukan lagi
+#D. Formal, batas, dan penekanan
+～に関して|ni kanshite|Mengenai
+～において|ni oite|Di; dalam konteks formal
+～にあたって|ni atatte|Pada saat akan memulai
+～に際して|ni saishite|Pada kesempatan / saat
+～をめぐって|o megutte|Mengenai persoalan yang diperdebatkan
+～にわたって|ni watatte|Selama; mencakup rentang
+～限り|kagiri|Selama; sejauh; sebatas
+～に限り|ni kagiri|Khusus untuk; terbatas pada
+～に限らず|ni kagirazu|Tidak terbatas pada
+～上|jō|Dari segi; secara ...
+～にしても|ni shite mo|Sekalipun; bahkan jika
+～にしろ／～にせよ|ni shiro / ni seyo|Entah ... atau ...; sekalipun
+!contoh|約束した以上、最後までやるべきです。|Yakusoku shita ijō, saigo made yaru beki desu.|Karena sudah berjanji, seharusnya saya melakukannya sampai akhir.
+!contoh|この問題は専門家に相談せざるを得ません。|Kono mondai wa senmonka ni sōdan sezaru o emasen.|Saya tidak punya pilihan selain berkonsultasi dengan ahli mengenai masalah ini.
+!contoh|努力したからといって、必ず成功するとは限りません。|Doryoku shita kara to itte, kanarazu seikō suru to wa kagirimasen.|Meskipun sudah berusaha, bukan berarti pasti berhasil.
+
+@N1|Mahir|Memahami tulisan abstrak, artikel, editorial, pidato, ekspresi sastra, dan nuansa bahasa formal. Banyak pola N1 jarang dipakai dalam percakapan kasual, tetapi penting untuk membaca teks tingkat tinggi.
+#A. Penekanan dan ekspresi formal
+～にほかならない|ni hoka naranai|Tidak lain adalah
+～にすぎない|ni suginai|Tidak lebih dari sekadar
+～に至る|ni itaru|Sampai pada; berujung pada
+～をもって|o motte|Dengan; terhitung mulai; melalui
+～をおいてほかにない|o oite hoka ni nai|Tidak ada pilihan lain selain
+～極まりない|kiwamari nai|Sangat; luar biasa (sering bernuansa negatif)
+～の極み|no kiwami|Puncak dari; sangat ...
+～の至り|no itari|Sangat ...; ungkapan formal
+～といったらない|to ittara nai|Luar biasa ...; tidak terkatakan
+～ともなると|tomo naru to|Kalau sudah mencapai posisi/tahap ...
+～にして|ni shite|Baru pada; sekaligus
+～たりとも～ない|tari tomo ... nai|Bahkan satu ... pun tidak
+～だに|dani|Bahkan; sekadar (gaya formal/literer)
+～すら|sura|Bahkan
+～こそすれ|koso sure|Memang melakukan ..., tetapi tidak ...
+～までもない|made mo nai|Tidak perlu sampai ...
+#B. Konsesi, kondisi, dan hubungan rumit
+～といえども|to iedomo|Sekalipun
+～であれ|de are|Entah ... sekalipun
+～であろうと|de arō to|Sekalipun ...
+～ようが～まいが|yō ga ... mai ga|Entah melakukan atau tidak
+～ものを|mono o|Padahal; seandainya ... (nuansa penyesalan)
+～とはいうものの|to wa iu mono no|Walaupun dikatakan demikian
+～ながらに|nagara ni|Sejak lahir; dalam keadaan tetap
+～ともなく|tomo naku|Tanpa sengaja; tanpa tujuan jelas
+～が早いか|ga hayai ka|Begitu ..., langsung ...
+～や否や|ya ina ya|Begitu ..., segera ...
+～なり|nari|Begitu ..., langsung ... (lalu terjadi hal tak terduga)
+～そばから|soba kara|Baru saja ..., sudah ... lagi
+～に先立って|ni sakidatte|Sebelum; mendahului
+～を皮切りに|o kawakiri ni|Dimulai dari ... lalu berlanjut
+～を境に|o sakai ni|Sejak titik perubahan ...
+～に至るまで|ni itaru made|Sampai mencakup ...
+#C. Sikap, penilaian, dan nuansa penulis
+～を余儀なくされる|o yoginaku sareru|Terpaksa harus
+～ずにはおかない|zu ni wa okanai|Pasti menimbulkan / membuat ...
+～ずにはすまない|zu ni wa sumanai|Tidak bisa membiarkan tanpa melakukan
+～ないではいられない|nai de wa irarenai|Tidak bisa menahan diri untuk tidak ...
+～てやまない|te yamanai|Sangat berharap / terus merasakan
+～を禁じ得ない|o kinji enai|Tidak dapat menahan perasaan ...
+～に堪えない|ni taenai|Tidak tertahankan; sangat ...
+～にたえる|ni taeru|Layak untuk; cukup bermutu untuk
+～べからず|bekarazu|Dilarang; jangan
+～べく|beku|Demi; dengan maksud untuk
+～べくもない|beku mo nai|Tidak mungkin dapat ...
+～まじき|majiki|Tidak pantas bagi ...
+～きらいがある|kirai ga aru|Punya kecenderungan negatif
+～んばかりに|n bakari ni|Seolah-olah hampir ...
+#D. Perubahan, hasil, dan cakupan
+～を経て|o hete|Setelah melalui
+～に即して|ni sokushite|Sesuai dengan; berdasarkan keadaan nyata
+～に則って|ni nottotte|Berdasarkan aturan/prinsip
+～に照らして|ni terashite|Ditinjau berdasarkan
+～を踏まえて|o fumaete|Dengan mempertimbangkan
+～にかかわる|ni kakawaru|Berkaitan dengan; menyangkut
+～を問わず|o towazu|Tanpa memandang
+～いかんにかかわらず|ikan ni kakawarazu|Terlepas dari bagaimana ...
+～いかんでは|ikan de wa|Bergantung pada bagaimana ...
+～をものともせず|o mono tomo sezu|Tanpa gentar menghadapi
+～と相まって|to aimatte|Dikombinasikan dengan
+～を機に|o ki ni|Menjadikan ... sebagai kesempatan/titik awal
+～にかたくない|ni kataku nai|Tidak sulit untuk membayangkan/menilai
+!contoh|彼の努力は称賛に値する。|Kare no doryoku wa shōsan ni atai suru.|Usahanya layak mendapat pujian.
+!contoh|周囲の反対をものともせず、彼は夢を追い続けた。|Shūi no hantai o mono tomo sezu, kare wa yume o oi tsuzuketa.|Tanpa gentar menghadapi penentangan orang-orang di sekitarnya, dia terus mengejar mimpinya.
+!contoh|この結果は、長年の努力の賜物にほかならない。|Kono kekka wa, naganen no doryoku no tamamono ni hoka naranai.|Hasil ini tidak lain adalah buah dari usaha bertahun-tahun.

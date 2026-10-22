@@ -1,0 +1,108 @@
+// ===== Kosakata kerja pabrik / inspeksi kualitas =====
+@Kerja
+#Kata benda
+工場|こうじょう|pabrik
+検査|けんさ|inspeksi
+不良品|ふりょうひん|produk cacat
+不良|ふりょう|cacat / tidak lolos
+良品|りょうひん|produk bagus (lolos)
+機械|きかい|mesin
+安全|あんぜん|keselamatan
+品質|ひんしつ|kualitas
+確認|かくにん|pengecekan / konfirmasi
+作業|さぎょう|proses kerja
+作業員|さぎょういん|pekerja / operator
+材料|ざいりょう|bahan
+部品|ぶひん|komponen / suku cadang
+製品|せいひん|produk
+残業|ざんぎょう|kerja lembur
+休憩|きゅうけい|istirahat (jam kerja)
+注意|ちゅうい|perhatian / hati-hati
+危険|きけん|bahaya
+班長|はんちょう|ketua regu
+上司|じょうし|atasan
+報告|ほうこく|laporan
+道具|どうぐ|alat
+傷|きず|goresan / luka
+汚れ|よごれ|noda / kotoran
+縫い目|ぬいめ|jahitan
+寸法|すんぽう|ukuran / dimensi
+数量|すうりょう|jumlah / kuantitas
+合格|ごうかく|lulus / lolos
+交換|こうかん|penggantian / pertukaran
+修理|しゅうり|perbaikan
+手袋|てぶくろ|sarung tangan
+接着剤|せっちゃくざい|lem perekat
+糸|いと|benang
+針|はり|jarum
+革|かわ|kulit (bahan)
+底|そこ|sol / dasar
+靴底|くつぞこ|sol sepatu
+左右|さゆう|kiri dan kanan
+色違い|いろちがい|beda warna
+しわ|kerutan
+剥がれ|はがれ|terkelupas
+ほつれ|jahitan lepas
+基準|きじゅん|standar / acuan
+規格|きかく|spesifikasi standar
+手順|てじゅん|prosedur / langkah kerja
+工程|こうてい|tahap proses
+生産|せいさん|produksi
+出荷|しゅっか|pengiriman barang
+在庫|ざいこ|stok
+目標|もくひょう|target
+記録|きろく|catatan / rekaman
+不具合|ふぐあい|kerusakan / gangguan
+原因|げんいん|penyebab
+対策|たいさく|tindakan penanggulangan
+改善|かいぜん|perbaikan berkelanjutan
+整理|せいり|merapikan (memilah)
+整頓|せいとん|menata rapi
+清掃|せいそう|pembersihan
+清潔|せいけつ|kebersihan
+躾|しつけ|disiplin
+朝礼|ちょうれい|apel pagi
+交代|こうたい|pergantian (shift)
+夜勤|やきん|shift malam
+日勤|にっきん|shift siang
+有給休暇|ゆうきゅうきゅうか|cuti berbayar
+給料|きゅうりょう|gaji
+ライン|jalur produksi
+サンプル|sampel
+チェック|cek / pemeriksaan
+ミス|kesalahan
+マスク|masker
+ヘルメット|helm
+ロット|lot (kelompok produksi)
+クレーム|komplain
+
+#Kata kerja (Tidak beraturan)
+報告する|ほうこくする|melapor
+確認する|かくにんする|memastikan / mengecek
+検査する|けんさする|memeriksa (inspeksi)
+交換する|こうかんする|mengganti / menukar
+修理する|しゅうりする|memperbaiki
+連絡する|れんらくする|menghubungi
+生産する|せいさんする|memproduksi
+注意する|ちゅういする|berhati-hati / menegur
+相談する|そうだんする|berkonsultasi
+残業する|ざんぎょうする|lembur
+チェックする|mengecek
+
+#Kata kerja (Godan)
+直す|なおす|memperbaiki / membetulkan
+測る|はかる|mengukur
+塗る|ぬる|mengoles / mengecat
+縫う|ぬう|menjahit
+剥がす|はがす|mengelupas
+運ぶ|はこぶ|mengangkut
+包む|つつむ|membungkus
+揃う|そろう|lengkap / seragam
+
+#Kata kerja (Ichidan)
+分ける|わける|memisahkan / membagi
+揃える|そろえる|menyamakan / melengkapi
+片付ける|かたづける|membereskan
+確かめる|たしかめる|memastikan
+数える|かぞえる|menghitung
+
