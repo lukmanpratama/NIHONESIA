@@ -134,21 +134,30 @@ async function buildKanji() {
   return { cats, klv, list, fetched };
 }
 
-// ===== KAIWA (src/kaiwa.txt) =====
+// ===== KAIWA (src/kaiwa/*.txt) =====
 function buildKaiwa() {
-  const out = []; let cat = 'Lain-lain', cur = null;
-  fs.readFileSync(path.join(ROOT, 'src', 'kaiwa.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
-    line = line.trim();
-    if (!line || line.startsWith('//')) return;
-    if (line[0] === '@') { cat = line.slice(1).trim(); return; }
-    if (line[0] === '#') { cur = [cat, line.slice(1).trim(), []]; out.push(cur); return; }
-    const p = line.split('|').map(x => x.trim());
-    if (!cur || p.length !== 4 || p.some(x => !x)) { bad.push(`kaiwa.txt:${ln + 1} format salah: ${line}`); return; }
-    if (/[^\x20-\x7e]/.test(p[2])) { bad.push(`kaiwa.txt:${ln + 1} romaji berisi huruf Jepang: ${line}`); return; }
-    cur[2].push(p);
-  });
-  out.filter(d => d[2].length < 2).forEach(d => bad.push(`kaiwa.txt: dialog "${d[1]}" kurang dari 2 kalimat`));
-  return out;
+  const out = [], dir = path.join(ROOT, 'src', 'kaiwa'), titles = new Set();
+  for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.txt')).sort()) {
+    let cat = 'Lain-lain', cur = null;
+    fs.readFileSync(path.join(dir, f), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+      line = line.trim();
+      if (!line || line.startsWith('//')) return;
+      if (line[0] === '@') { cat = line.slice(1).trim(); return; }
+      if (line[0] === '#') {
+        const t = line.slice(1).trim();
+        if (titles.has(cat + '|' + t)) bad.push(`kaiwa/${f}:${ln + 1} judul dialog ganda di ${cat}: ${t}`);
+        titles.add(cat + '|' + t); cur = [cat, t, []]; out.push(cur); return;
+      }
+      const p = line.split('|').map(x => x.trim());
+      if (!cur || p.length !== 4 || p.some(x => !x)) { bad.push(`kaiwa/${f}:${ln + 1} format salah: ${line}`); return; }
+      if (/[^\x20-\x7e]/.test(p[2])) { bad.push(`kaiwa/${f}:${ln + 1} romaji berisi huruf Jepang: ${line}`); return; }
+      cur[2].push(p);
+    });
+  }
+  out.filter(d => d[2].length < 2).forEach(d => bad.push(`kaiwa: dialog "${d[1]}" kurang dari 2 kalimat`));
+  // dialog dikelompokkan per kategori (urutan kategori = kemunculan pertama)
+  const cats = [...new Set(out.map(d => d[0]))];
+  return cats.flatMap(c => out.filter(d => d[0] === c));
 }
 
 // ===== BUNPO (src/bunpo.txt) → [{l, t, f, s:[[bagian, [[pola, romaji, arti]...]]], ex:[[jp, romaji, arti]]}] =====

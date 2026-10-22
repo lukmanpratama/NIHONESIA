@@ -1,0 +1,435 @@
+// Dialog tambahan: Perkenalan, Hubungan & Perasaan, Telepon
+
+@Perkenalan
+#Tetangga baru
+A|はじめまして。隣に引っ越してきたブディです。|hajimemashite. tonari ni hikkoshite kita budi desu.|Salam kenal. Saya Budi, baru pindah ke sebelah.
+B|ああ、はじめまして。山本です。|aa, hajimemashite. yamamoto desu.|Oh, salam kenal. Saya Yamamoto.
+A|これ、つまらないものですが、どうぞ。|kore, tsumaranai mono desu ga, douzo.|Ini sekadar oleh-oleh kecil, silakan.
+B|ご丁寧にありがとうございます。|goteinei ni arigatou gozaimasu.|Terima kasih banyak atas perhatiannya.
+
+#Teman sekamar asrama
+A|今日からこの部屋に住むリナです。|kyou kara kono heya ni sumu rina desu.|Saya Rina, mulai hari ini tinggal di kamar ini.
+B|よろしくね。私はアユ。|yoroshiku ne. watashi wa ayu.|Salam kenal ya. Aku Ayu.
+A|アユさんもインドネシア人ですか。|ayu-san mo indoneshiajin desu ka.|Ayu juga orang Indonesia?
+B|うん、バンドンから来たよ。|un, bandon kara kita yo.|Iya, aku dari Bandung.
+
+#Memperkenalkan teman
+A|田中さん、こちらは友達のデワさんです。|tanaka-san, kochira wa tomodachi no dewa-san desu.|Pak Tanaka, ini teman saya, Dewa.
+B|はじめまして、デワです。|hajimemashite, dewa desu.|Salam kenal, saya Dewa.
+C|田中です。よろしくお願いします。|tanaka desu. yoroshiku onegaishimasu.|Saya Tanaka. Mohon bantuannya.
+
+#Menanyakan umur
+A|失礼ですが、おいくつですか。|shitsurei desu ga, oikutsu desu ka.|Maaf, umur Anda berapa?
+B|二十八歳です。|nijuuhassai desu.|Dua puluh delapan tahun.
+A|私と同い年ですね。|watashi to onaidoshi desu ne.|Seumuran dengan saya, ya.
+
+#Menanyakan keluarga
+A|ご家族は何人ですか。|gokazoku wa nannin desu ka.|Keluarga Anda berapa orang?
+B|五人です。両親と兄と妹がいます。|gonin desu. ryoushin to ani to imouto ga imasu.|Lima orang. Ada orang tua, kakak laki-laki, dan adik perempuan.
+A|みなさん、インドネシアにいますか。|minasan, indoneshia ni imasu ka.|Semuanya ada di Indonesia?
+B|はい、スラバヤに住んでいます。|hai, surabaya ni sunde imasu.|Ya, tinggal di Surabaya.
+
+#Sudah berapa lama di Jepang
+A|日本に来てどのくらいですか。|nihon ni kite dono kurai desu ka.|Sudah berapa lama di Jepang?
+B|もうすぐ二年です。|mou sugu ninen desu.|Sebentar lagi dua tahun.
+A|日本の生活に慣れましたか。|nihon no seikatsu ni naremashita ka.|Sudah terbiasa dengan kehidupan di Jepang?
+B|はい、だいぶ慣れました。|hai, daibu naremashita.|Ya, sudah cukup terbiasa.
+
+#Nama panggilan
+A|お名前は何と呼べばいいですか。|onamae wa nan to yobeba ii desu ka.|Sebaiknya saya memanggil Anda siapa?
+B|スリと呼んでください。|suri to yonde kudasai.|Panggil saja Suri.
+A|分かりました。スリさんですね。|wakarimashita. suri-san desu ne.|Baik. Mbak Suri, ya.
+
+#Asal daerah di Indonesia
+A|インドネシアのどこから来ましたか。|indoneshia no doko kara kimashita ka.|Dari bagian Indonesia mana?
+B|ジョグジャカルタです。|jogujakaruta desu.|Dari Yogyakarta.
+A|有名なお寺がありますね。|yuumei na otera ga arimasu ne.|Di sana ada candi yang terkenal, ya.
+B|はい、ボロブドゥールです。|hai, borobudouru desu.|Ya, Borobudur.
+
+#Bahasa yang dikuasai
+A|何語が話せますか。|nanigo ga hanasemasu ka.|Bisa bahasa apa saja?
+B|インドネシア語とジャワ語と、少し日本語です。|indoneshiago to jawago to, sukoshi nihongo desu.|Bahasa Indonesia, bahasa Jawa, dan sedikit bahasa Jepang.
+A|すごいですね。|sugoi desu ne.|Hebat, ya.
+
+#Perkenalan di kelas bahasa
+先生|では、自己紹介をお願いします。|dewa, jikoshoukai o onegaishimasu.|Baiklah, silakan memperkenalkan diri.
+学生|ハリです。趣味は料理です。|hari desu. shumi wa ryouri desu.|Saya Hari. Hobi saya memasak.
+先生|どんな料理を作りますか。|donna ryouri o tsukurimasu ka.|Masakan apa yang biasa dibuat?
+学生|ナシゴレンをよく作ります。|nashigoren o yoku tsukurimasu.|Saya sering membuat nasi goreng.
+
+#Pertemuan di acara komunitas
+A|このイベントは初めてですか。|kono ibento wa hajimete desu ka.|Pertama kali ikut acara ini?
+B|はい、友達に誘われました。|hai, tomodachi ni sasowaremashita.|Ya, saya diajak teman.
+A|楽しんでくださいね。|tanoshinde kudasai ne.|Selamat menikmati, ya.
+B|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Bertukar kontak
+A|連絡先を交換しませんか。|renrakusaki o koukan shimasen ka.|Mau bertukar kontak?
+B|いいですよ。LINEはやっていますか。|ii desu yo. rain wa yatte imasu ka.|Boleh. Kamu pakai LINE?
+A|はい。QRコードを見せますね。|hai. kyuuaaru koodo o misemasu ne.|Ya. Saya tunjukkan kode QR-nya.
+
+#Rekan kerja baru
+班長|今日から入ったチトラさんです。|kyou kara haitta chitora-san desu.|Ini Citra, mulai bekerja hari ini.
+チトラ|チトラです。一生懸命頑張ります。|chitora desu. isshoukenmei ganbarimasu.|Saya Citra. Saya akan bekerja dengan sungguh-sungguh.
+同僚|分からないことがあったら聞いてね。|wakaranai koto ga attara kiite ne.|Kalau ada yang tidak dimengerti, tanya saja, ya.
+
+#Menanyakan tempat tinggal
+A|どこに住んでいますか。|doko ni sunde imasu ka.|Tinggal di mana?
+B|会社の寮に住んでいます。|kaisha no ryou ni sunde imasu.|Saya tinggal di asrama perusahaan.
+A|会社から近いですか。|kaisha kara chikai desu ka.|Dekat dari kantor?
+B|はい、歩いて五分です。|hai, aruite gofun desu.|Ya, lima menit jalan kaki.
+
+#Menanyakan agama dengan sopan
+A|お祈りの場所が必要ですか。|oinori no basho ga hitsuyou desu ka.|Apakah Anda perlu tempat untuk berdoa?
+B|はい、一日五回お祈りをします。|hai, ichinichi gokai oinori o shimasu.|Ya, saya berdoa lima kali sehari.
+A|休憩室を使ってもいいですよ。|kyuukeishitsu o tsukatte mo ii desu yo.|Silakan pakai ruang istirahat.
+B|ご配慮ありがとうございます。|gohairyo arigatou gozaimasu.|Terima kasih atas perhatiannya.
+
+#Menanyakan pekerjaan sebelumnya
+A|日本に来る前は何をしていましたか。|nihon ni kuru mae wa nani o shite imashita ka.|Sebelum ke Jepang, kamu bekerja apa?
+B|インドネシアで工場の仕事をしていました。|indoneshia de koujou no shigoto o shite imashita.|Saya bekerja di pabrik di Indonesia.
+A|じゃあ、経験がありますね。|jaa, keiken ga arimasu ne.|Kalau begitu sudah berpengalaman, ya.
+
+#Golongan darah dan zodiak
+A|血液型は何型ですか。|ketsuekigata wa nanigata desu ka.|Golongan darahmu apa?
+B|O型です。どうしてですか。|oogata desu. doushite desu ka.|Golongan O. Kenapa?
+A|日本ではよく話題になるんですよ。|nihon de wa yoku wadai ni narun desu yo.|Di Jepang itu sering jadi bahan obrolan.
+
+#Menyapa orang yang lebih senior
+A|はじめまして。今日からお世話になります。|hajimemashite. kyou kara osewa ni narimasu.|Salam kenal. Mulai hari ini mohon bimbingannya.
+B|部長の佐々木です。困ったことがあったら言ってください。|buchou no sasaki desu. komatta koto ga attara itte kudasai.|Saya Sasaki, kepala bagian. Kalau ada kesulitan, bilang saja.
+A|はい、ありがとうございます。|hai, arigatou gozaimasu.|Baik, terima kasih.
+
+#Menjelaskan arti nama
+A|お名前にはどんな意味がありますか。|onamae ni wa donna imi ga arimasu ka.|Nama Anda punya arti apa?
+B|「光」という意味です。|"hikari" to iu imi desu.|Artinya "cahaya".
+A|きれいな名前ですね。|kirei na namae desu ne.|Nama yang indah, ya.
+
+#Pertemuan kembali dengan teman lama
+A|あれ、ワヒュ？久しぶり！|are, wahyu? hisashiburi!|Lho, Wahyu? Lama tak jumpa!
+B|本当に久しぶりだね。元気だった？|hontou ni hisashiburi da ne. genki datta?|Benar-benar lama, ya. Apa kabar?
+A|うん、元気だよ。今、名古屋で働いてるんだ。|un, genki da yo. ima, nagoya de hataraiterun da.|Baik. Sekarang aku kerja di Nagoya.
+
+#Rencana tinggal di Jepang
+A|日本にはいつまでいる予定ですか。|nihon ni wa itsu made iru yotei desu ka.|Rencananya tinggal di Jepang sampai kapan?
+B|あと三年いるつもりです。|ato sannen iru tsumori desu.|Saya berniat tinggal tiga tahun lagi.
+A|その後はどうしますか。|sono ato wa dou shimasu ka.|Setelah itu bagaimana?
+B|国に帰って、店を開きたいです。|kuni ni kaette, mise o hirakitai desu.|Saya ingin pulang dan membuka toko.
+
+#Perkenalan di pesta
+A|乾杯の前に、自己紹介をしましょう。|kanpai no mae ni, jikoshoukai o shimashou.|Sebelum bersulang, mari memperkenalkan diri.
+B|ファジャルです。お酒は飲めませんが、ジュースで乾杯します。|fajaru desu. osake wa nomemasen ga, juusu de kanpai shimasu.|Saya Fajar. Saya tidak minum alkohol, jadi bersulang dengan jus.
+A|もちろん大丈夫ですよ。|mochiron daijoubu desu yo.|Tentu saja tidak apa-apa.
+
+#Status pernikahan
+A|結婚していますか。|kekkon shite imasu ka.|Sudah menikah?
+B|はい、子供が一人います。|hai, kodomo ga hitori imasu.|Sudah, anak saya satu.
+A|お子さんは何歳ですか。|okosan wa nansai desu ka.|Anaknya umur berapa?
+B|三歳です。とてもかわいいです。|sansai desu. totemo kawaii desu.|Tiga tahun. Lucu sekali.
+
+#Belajar bahasa Jepang di mana
+A|日本語はどこで勉強しましたか。|nihongo wa doko de benkyou shimashita ka.|Belajar bahasa Jepang di mana?
+B|インドネシアの日本語学校で半年勉強しました。|indoneshia no nihongo gakkou de hantoshi benkyou shimashita.|Setengah tahun di sekolah bahasa Jepang di Indonesia.
+A|発音がきれいですね。|hatsuon ga kirei desu ne.|Pengucapanmu bagus, ya.
+
+#Hari pertama di asrama
+寮長|ここが食堂です。朝ご飯は六時からです。|koko ga shokudou desu. asagohan wa rokuji kara desu.|Ini ruang makan. Sarapan mulai jam enam.
+A|お風呂は何時まで使えますか。|ofuro wa nanji made tsukaemasu ka.|Kamar mandi bisa dipakai sampai jam berapa?
+寮長|夜十一時までです。|yoru juuichiji made desu.|Sampai jam sebelas malam.
+
+@Hubungan & Perasaan
+#Mengucapkan terima kasih
+A|この前は手伝ってくれてありがとう。|kono mae wa tetsudatte kurete arigatou.|Terima kasih sudah membantu waktu itu.
+B|いえいえ、困ったときはお互い様だよ。|ieie, komatta toki wa otagaisama da yo.|Ah, tidak apa-apa. Kalau susah kita saling bantu.
+A|今度、何かごちそうするね。|kondo, nanika gochisou suru ne.|Lain kali aku traktir sesuatu, ya.
+
+#Meminta maaf karena terlambat
+A|遅れてごめんなさい。|okurete gomennasai.|Maaf aku terlambat.
+B|大丈夫だよ。何かあったの？|daijoubu da yo. nanika atta no?|Tidak apa-apa. Ada apa?
+A|電車が止まってしまったんだ。|densha ga tomatte shimattan da.|Keretanya berhenti.
+B|それは大変だったね。|sore wa taihen datta ne.|Wah, repot sekali, ya.
+
+#Menghibur teman
+A|元気がないね。どうしたの？|genki ga nai ne. doushita no?|Kamu kelihatan lesu. Ada apa?
+B|試験に落ちちゃったんだ。|shiken ni ochichattan da.|Aku gagal ujian.
+A|残念だったね。でも、次は大丈夫だよ。|zannen datta ne. demo, tsugi wa daijoubu da yo.|Sayang sekali. Tapi lain kali pasti bisa.
+B|ありがとう。もう一回頑張る。|arigatou. mou ikkai ganbaru.|Terima kasih. Aku coba sekali lagi.
+
+#Rindu keluarga
+A|最近、家族に会いたくて寂しいです。|saikin, kazoku ni aitakute sabishii desu.|Akhir-akhir ini saya kangen keluarga dan merasa sepi.
+B|ビデオ通話はしていますか。|bideo tsuuwa wa shite imasu ka.|Sudah video call?
+A|はい、毎晩しています。|hai, maiban shite imasu.|Ya, setiap malam.
+B|もうすぐお正月休みですから、頑張りましょう。|mou sugu oshougatsu yasumi desu kara, ganbarimashou.|Sebentar lagi libur tahun baru, ayo semangat.
+
+#Memberi selamat
+A|昇進おめでとうございます。|shoushin omedetou gozaimasu.|Selamat atas kenaikan jabatannya.
+B|ありがとうございます。皆さんのおかげです。|arigatou gozaimasu. minasan no okage desu.|Terima kasih. Ini berkat semuanya.
+A|これからも頑張ってください。|korekara mo ganbatte kudasai.|Semoga terus sukses.
+
+#Selamat ulang tahun
+A|誕生日おめでとう！|tanjoubi omedetou!|Selamat ulang tahun!
+B|わあ、覚えていてくれたの？うれしい！|waa, oboete ite kureta no? ureshii!|Wah, kamu ingat? Senang sekali!
+A|これ、プレゼント。気に入るといいな。|kore, purezento. ki ni iru to ii na.|Ini hadiahnya. Semoga kamu suka.
+B|ありがとう。開けてもいい？|arigatou. akete mo ii?|Terima kasih. Boleh kubuka?
+
+#Menyatakan kekhawatiran
+A|明日の面接、緊張しています。|ashita no mensetsu, kinchou shite imasu.|Saya gugup untuk wawancara besok.
+B|練習したから大丈夫ですよ。|renshuu shita kara daijoubu desu yo.|Sudah latihan, jadi pasti bisa.
+A|そうだといいんですが。|sou da to iin desu ga.|Semoga begitu.
+B|自信を持ってください。|jishin o motte kudasai.|Percaya dirilah.
+
+#Pertengkaran kecil
+A|昨日はきつく言ってごめん。|kinou wa kitsuku itte gomen.|Maaf kemarin aku bicara kasar.
+B|ううん、私も悪かった。|uun, watashi mo warukatta.|Tidak, aku juga salah.
+A|じゃあ、仲直りしよう。|jaa, nakanaori shiyou.|Kalau begitu, ayo berbaikan.
+B|うん。|un.|Iya.
+
+#Mengajak jalan pada hari libur
+A|今度の日曜日、暇？|kondo no nichiyoubi, hima?|Minggu ini kamu senggang?
+B|うん、特に予定はないよ。|un, toku ni yotei wa nai yo.|Iya, tidak ada rencana khusus.
+A|一緒に公園に行かない？|issho ni kouen ni ikanai?|Mau ke taman bareng?
+B|いいね。お弁当を持って行こう。|ii ne. obentou o motte ikou.|Boleh. Ayo bawa bekal.
+
+#Berbagi kabar gembira
+A|聞いて！来月、妻が日本に来るんだ。|kiite! raigetsu, tsuma ga nihon ni kurun da.|Dengar! Bulan depan istriku datang ke Jepang.
+B|本当？よかったね！|hontou? yokatta ne!|Benarkah? Syukurlah!
+A|うん、一年ぶりに会えるよ。|un, ichinen buri ni aeru yo.|Iya, bisa ketemu setelah setahun.
+
+#Kehilangan semangat kerja
+A|最近、仕事が大変で疲れています。|saikin, shigoto ga taihen de tsukarete imasu.|Akhir-akhir ini pekerjaan berat, saya lelah.
+B|無理しないでくださいね。|muri shinaide kudasai ne.|Jangan memaksakan diri, ya.
+A|週末はゆっくり休みます。|shuumatsu wa yukkuri yasumimasu.|Akhir pekan saya akan istirahat.
+B|それがいいですね。|sore ga ii desu ne.|Itu bagus.
+
+#Meminta saran
+A|ちょっと相談したいことがあるんですが。|chotto soudan shitai koto ga arun desu ga.|Ada yang ingin saya konsultasikan.
+B|いいですよ。どうしましたか。|ii desu yo. dou shimashita ka.|Boleh. Ada apa?
+A|日本語の勉強の仕方が分からなくて。|nihongo no benkyou no shikata ga wakaranakute.|Saya bingung cara belajar bahasa Jepang.
+B|毎日少しずつ続けるのが一番ですよ。|mainichi sukoshi zutsu tsuzukeru no ga ichiban desu yo.|Yang terbaik adalah terus belajar sedikit setiap hari.
+
+#Memuji masakan
+A|このカレー、すごくおいしい！|kono karee, sugoku oishii!|Kari ini enak sekali!
+B|本当？初めて作ったんだ。|hontou? hajimete tsukuttan da.|Benarkah? Ini pertama kali aku buat.
+A|作り方を教えて。|tsukurikata o oshiete.|Ajari aku cara membuatnya.
+
+#Merasa malu
+A|さっき、名前を間違えて呼んでしまいました。|sakki, namae o machigaete yonde shimaimashita.|Tadi saya salah memanggil nama.
+B|気にしなくていいですよ。|ki ni shinakute ii desu yo.|Tidak usah dipikirkan.
+A|でも、恥ずかしかったです。|demo, hazukashikatta desu.|Tapi saya malu.
+B|誰でも間違えますよ。|dare demo machigaemasu yo.|Semua orang bisa salah.
+
+#Mengungkapkan rasa terima kasih kepada atasan
+A|班長、いつも丁寧に教えてくださってありがとうございます。|hanchou, itsumo teinei ni oshiete kudasatte arigatou gozaimasu.|Ketua regu, terima kasih selalu mengajari saya dengan teliti.
+B|ブディさんがまじめだからですよ。|budi-san ga majime da kara desu yo.|Itu karena kamu rajin, Budi.
+A|これからもよろしくお願いします。|korekara mo yoroshiku onegaishimasu.|Mohon bimbingannya terus.
+
+#Perpisahan dengan teman
+A|来週、国に帰ることになりました。|raishuu, kuni ni kaeru koto ni narimashita.|Minggu depan saya akan pulang ke negara asal.
+B|えっ、寂しくなりますね。|e', sabishiku narimasu ne.|Eh, pasti jadi sepi.
+A|今まで本当にありがとうございました。|ima made hontou ni arigatou gozaimashita.|Terima kasih banyak atas semuanya selama ini.
+B|元気でね。連絡してね。|genki de ne. renraku shite ne.|Jaga diri, ya. Kabari aku.
+
+#Menanyakan kabar teman yang sakit
+A|風邪はもう治った？|kaze wa mou naotta?|Flumu sudah sembuh?
+B|うん、だいぶよくなったよ。|un, daibu yoku natta yo.|Iya, sudah jauh lebih baik.
+A|よかった。無理しないでね。|yokatta. muri shinaide ne.|Syukurlah. Jangan memaksakan diri, ya.
+
+#Kecewa karena batal
+A|ごめん、明日の約束、行けなくなっちゃった。|gomen, ashita no yakusoku, ikenaku nacchatta.|Maaf, aku tidak bisa datang ke janji besok.
+B|えー、楽しみにしてたのに。|ee, tanoshimi ni shiteta noni.|Yah, padahal aku sudah menantikannya.
+A|本当にごめん。来週はどう？|hontou ni gomen. raishuu wa dou?|Benar-benar maaf. Kalau minggu depan bagaimana?
+B|うん、来週ならいいよ。|un, raishuu nara ii yo.|Iya, kalau minggu depan boleh.
+
+#Menyemangati sebelum ujian
+A|明日はいよいよN4の試験だね。|ashita wa iyoiyo enu yon no shiken da ne.|Besok akhirnya ujian N4, ya.
+B|うん、ちょっと心配。|un, chotto shinpai.|Iya, agak khawatir.
+A|毎日勉強してたから、きっと合格するよ。|mainichi benkyou shiteta kara, kitto goukaku suru yo.|Kamu belajar setiap hari, pasti lulus.
+B|ありがとう。頑張る！|arigatou. ganbaru!|Terima kasih. Aku akan berusaha!
+
+#Merasa senang di Jepang
+A|日本での生活はどうですか。|nihon de no seikatsu wa dou desu ka.|Bagaimana kehidupan di Jepang?
+B|大変なこともありますが、楽しいです。|taihen na koto mo arimasu ga, tanoshii desu.|Ada hal yang berat, tapi menyenangkan.
+A|何が一番楽しいですか。|nani ga ichiban tanoshii desu ka.|Apa yang paling menyenangkan?
+B|休みの日に色々な所へ行くことです。|yasumi no hi ni iroiro na tokoro e iku koto desu.|Pergi ke berbagai tempat saat hari libur.
+
+@Telepon
+#Menelepon untuk reservasi restoran
+店員|お電話ありがとうございます。さくら食堂です。|odenwa arigatou gozaimasu. sakura shokudou desu.|Terima kasih atas teleponnya. Dengan Sakura Shokudo.
+A|今晩七時に四人で予約したいんですが。|konban shichiji ni yonin de yoyaku shitain desu ga.|Saya ingin reservasi untuk empat orang malam ini jam tujuh.
+店員|かしこまりました。お名前をお願いします。|kashikomarimashita. onamae o onegaishimasu.|Baik. Boleh minta namanya?
+A|ブディです。|budi desu.|Budi.
+
+#Membatalkan reservasi
+A|もしもし、明日の予約をキャンセルしたいんですが。|moshimoshi, ashita no yoyaku o kyanseru shitain desu ga.|Halo, saya ingin membatalkan reservasi besok.
+店員|お名前をお願いできますか。|onamae o onegai dekimasu ka.|Boleh minta namanya?
+A|リナです。三時の予約です。|rina desu. sanji no yoyaku desu.|Rina. Reservasi jam tiga.
+店員|はい、キャンセルいたしました。|hai, kyanseru itashimashita.|Baik, sudah dibatalkan.
+
+#Menelepon dokter gigi
+受付|はい、青木歯科です。|hai, aoki shika desu.|Ya, dengan klinik gigi Aoki.
+A|歯が痛いので、診てもらいたいんですが。|ha ga itai node, mite moraitain desu ga.|Gigi saya sakit, saya ingin diperiksa.
+受付|今日の午後四時はいかがですか。|kyou no gogo yoji wa ikaga desu ka.|Bagaimana kalau hari ini jam empat sore?
+A|はい、お願いします。|hai, onegaishimasu.|Ya, tolong.
+
+#Salah sambung
+A|もしもし、田中さんのお宅ですか。|moshimoshi, tanaka-san no otaku desu ka.|Halo, apakah ini rumah keluarga Tanaka?
+B|いいえ、違いますよ。|iie, chigaimasu yo.|Bukan, salah.
+A|あ、すみません。番号を間違えました。|a, sumimasen. bangou o machigaemashita.|Oh, maaf. Saya salah nomor.
+
+#Menelepon pemilik apartemen
+A|もしもし、大家さんですか。部屋のお湯が出ないんです。|moshimoshi, ooya-san desu ka. heya no oyu ga denain desu.|Halo, apakah ini pemilik apartemen? Air panas di kamar saya tidak keluar.
+B|それは困りましたね。明日、業者を呼びます。|sore wa komarimashita ne. ashita, gyousha o yobimasu.|Wah, repot ya. Besok saya panggil tukang.
+A|何時ごろ来ますか。|nanji goro kimasu ka.|Kira-kira datang jam berapa?
+B|午前中に行くと思います。|gozenchuu ni iku to omoimasu.|Mungkin pagi hari.
+
+#Menanyakan jam buka toko
+A|すみません、そちらは何時まで開いていますか。|sumimasen, sochira wa nanji made aite imasu ka.|Permisi, toko Anda buka sampai jam berapa?
+店員|夜九時までです。|yoru kuji made desu.|Sampai jam sembilan malam.
+A|日曜日も開いていますか。|nichiyoubi mo aite imasu ka.|Hari Minggu juga buka?
+店員|はい、毎日営業しています。|hai, mainichi eigyou shite imasu.|Ya, kami buka setiap hari.
+
+#Menelepon untuk mengabari terlambat
+A|もしもし、ブディです。すみません、電車が遅れていて、十分ぐらい遅れます。|moshimoshi, budi desu. sumimasen, densha ga okurete ite, juppun gurai okuremasu.|Halo, ini Budi. Maaf, keretanya terlambat, saya telat sekitar sepuluh menit.
+B|分かりました。気をつけて来てください。|wakarimashita. ki o tsukete kite kudasai.|Baik. Hati-hati di jalan.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Telepon dari kurir
+配達員|もしもし、宅配便です。今、ご在宅ですか。|moshimoshi, takuhaibin desu. ima, gozaitaku desu ka.|Halo, dari jasa kurir. Apakah Anda sedang di rumah?
+A|すみません、今、外にいます。|sumimasen, ima, soto ni imasu.|Maaf, saya sedang di luar.
+配達員|では、何時ごろお戻りですか。|dewa, nanji goro omodori desu ka.|Kalau begitu, kira-kira kembali jam berapa?
+A|六時ごろ帰ります。|rokuji goro kaerimasu.|Saya pulang sekitar jam enam.
+
+#Meminta mengulang nomor telepon
+A|すみません、もう一度番号を言ってもらえますか。|sumimasen, mou ichido bangou o itte moraemasu ka.|Maaf, bisa sebutkan nomornya sekali lagi?
+B|はい、〇三の五五五五の一二三四です。|hai, zero san no go go go go no ichi ni san yon desu.|Ya, 03-5555-1234.
+A|ありがとうございます。メモしました。|arigatou gozaimasu. memo shimashita.|Terima kasih. Sudah saya catat.
+
+#Menelepon kantor imigrasi
+A|在留カードの更新について聞きたいんですが。|zairyuu kaado no koushin ni tsuite kikitain desu ga.|Saya ingin bertanya tentang perpanjangan kartu izin tinggal.
+職員|有効期限の三か月前から申請できます。|yuukou kigen no sankagetsu mae kara shinsei dekimasu.|Bisa mengajukan mulai tiga bulan sebelum masa berlaku habis.
+A|何が必要ですか。|nani ga hitsuyou desu ka.|Apa saja yang diperlukan?
+職員|パスポートと写真と申請書です。|pasupooto to shashin to shinseisho desu.|Paspor, foto, dan formulir permohonan.
+
+#Video call dengan keluarga
+A|もしもし、お母さん、聞こえる？|moshimoshi, okaasan, kikoeru?|Halo, Bu, terdengar?
+B|うん、よく聞こえるよ。元気？|un, yoku kikoeru yo. genki?|Iya, jelas sekali. Sehat?
+A|元気だよ。そっちはどう？|genki da yo. socchi wa dou?|Sehat. Di sana bagaimana?
+B|みんな元気だよ。ちゃんと食べてる？|minna genki da yo. chanto tabeteru?|Semua sehat. Kamu makan dengan benar?
+
+#Menelepon taksi
+A|もしもし、タクシーを一台お願いします。|moshimoshi, takushii o ichidai onegaishimasu.|Halo, saya pesan satu taksi.
+B|どちらまでお迎えに行けばいいですか。|dochira made omukae ni ikeba ii desu ka.|Dijemput di mana?
+A|さくら駅の東口です。|sakura eki no higashiguchi desu.|Di pintu timur Stasiun Sakura.
+B|十分ほどで参ります。|juppun hodo de mairimasu.|Kami tiba sekitar sepuluh menit lagi.
+
+#Sinyal buruk
+A|もしもし？声が途切れています。|moshimoshi? koe ga togirete imasu.|Halo? Suaranya putus-putus.
+B|すみません、今、電車の中なんです。|sumimasen, ima, densha no naka nan desu.|Maaf, sekarang saya di dalam kereta.
+A|じゃあ、後でかけ直しますね。|jaa, ato de kakenaoshimasu ne.|Kalau begitu, nanti saya telepon lagi.
+
+#Menelepon untuk menanyakan lowongan
+A|求人広告を見てお電話しました。|kyuujin koukoku o mite odenwa shimashita.|Saya menelepon setelah melihat iklan lowongan.
+B|ありがとうございます。日本語はどのくらい話せますか。|arigatou gozaimasu. nihongo wa dono kurai hanasemasu ka.|Terima kasih. Seberapa bisa berbahasa Jepang?
+A|日常会話はできます。N3を持っています。|nichijou kaiwa wa dekimasu. enu san o motte imasu.|Saya bisa percakapan sehari-hari. Saya punya sertifikat N3.
+B|では、一度面接に来てください。|dewa, ichido mensetsu ni kite kudasai.|Kalau begitu, silakan datang untuk wawancara.
+
+#Telepon dari sekolah anak
+先生|もしもし、さくら保育園の山田です。|moshimoshi, sakura hoikuen no yamada desu.|Halo, saya Yamada dari penitipan anak Sakura.
+A|はい、いつもお世話になっております。|hai, itsumo osewa ni natte orimasu.|Ya, terima kasih atas bantuannya selama ini.
+先生|お子さんが熱を出しました。迎えに来られますか。|okosan ga netsu o dashimashita. mukae ni koraremasu ka.|Anak Anda demam. Bisa datang menjemput?
+A|はい、すぐに行きます。|hai, sugu ni ikimasu.|Ya, saya segera ke sana.
+
+#Menelepon bank karena kartu hilang
+A|キャッシュカードをなくしてしまいました。|kyasshu kaado o nakushite shimaimashita.|Saya kehilangan kartu ATM.
+銀行員|すぐにカードを止めます。お名前と生年月日をお願いします。|sugu ni kaado o tomemasu. onamae to seinengappi o onegaishimasu.|Kartunya segera kami blokir. Boleh minta nama dan tanggal lahir?
+A|ブディ・サントソ、一九九八年五月三日です。|budi santoso, sen kyuuhyaku kyuujuuhachi nen gogatsu mikka desu.|Budi Santoso, 3 Mei 1998.
+銀行員|ありがとうございます。手続きが完了しました。|arigatou gozaimasu. tetsuzuki ga kanryou shimashita.|Terima kasih. Prosesnya sudah selesai.
+
+#Pesan di mesin penjawab
+A|もしもし、リナです。また後でかけます。|moshimoshi, rina desu. mata ato de kakemasu.|Halo, ini Rina. Nanti saya telepon lagi.
+B|あ、リナさん、今出られました。すみません。|a, rina-san, ima deraremashita. sumimasen.|Oh, Rina, sekarang saya bisa angkat. Maaf.
+A|大丈夫です。今、少しいいですか。|daijoubu desu. ima, sukoshi ii desu ka.|Tidak apa-apa. Sekarang ada waktu sebentar?
+
+#Menanyakan lokasi lewat telepon
+A|今、駅に着いたんですが、お店はどこですか。|ima, eki ni tsuitan desu ga, omise wa doko desu ka.|Saya sudah sampai di stasiun, tokonya di mana?
+B|北口を出て、まっすぐ来てください。|kitaguchi o dete, massugu kite kudasai.|Keluar dari pintu utara, lalu jalan lurus.
+A|コンビニの隣ですか。|konbini no tonari desu ka.|Di sebelah minimarket?
+B|はい、そうです。|hai, sou desu.|Ya, betul.
+
+#Menelepon untuk konfirmasi jadwal
+A|明日の打ち合わせは十時からで間違いないですか。|ashita no uchiawase wa juuji kara de machigai nai desu ka.|Rapat besok benar mulai jam sepuluh?
+B|はい、十時から第二会議室です。|hai, juuji kara daini kaigishitsu desu.|Ya, jam sepuluh di ruang rapat dua.
+A|分かりました。ありがとうございます。|wakarimashita. arigatou gozaimasu.|Baik. Terima kasih.
+
+#Menelepon teman yang sakit
+A|もしもし、体調はどう？|moshimoshi, taichou wa dou?|Halo, bagaimana kondisimu?
+B|まだ少し熱があるけど、大丈夫。|mada sukoshi netsu ga aru kedo, daijoubu.|Masih sedikit demam, tapi tidak apa-apa.
+A|何か買って持って行こうか。|nanika katte motte ikou ka.|Mau aku belikan dan bawakan sesuatu?
+B|ありがとう。スポーツドリンクがほしいな。|arigatou. supootsu dorinku ga hoshii na.|Terima kasih. Aku mau minuman isotonik.
+
+#Telepon penipuan
+A|もしもし、あなたの口座が止められました。|moshimoshi, anata no kouza ga tomeraremashita.|Halo, rekening Anda telah diblokir.
+B|え？どこの銀行ですか。|e? doko no ginkou desu ka.|Hah? Dari bank mana?
+A|暗証番号を教えてください。|anshou bangou o oshiete kudasai.|Tolong beri tahu nomor PIN Anda.
+B|それは教えられません。切ります。|sore wa oshieraremasen. kirimasu.|Itu tidak bisa saya beri tahu. Saya tutup teleponnya.
+
+#Menelepon layanan internet
+A|インターネットがつながらないんですが。|intaanetto ga tsunagaranain desu ga.|Internet saya tidak tersambung.
+担当者|ルーターの電源を一度切ってみてください。|ruutaa no dengen o ichido kitte mite kudasai.|Coba matikan dulu daya router-nya.
+A|切りました。……あ、つながりました。|kirimashita. ...a, tsunagarimashita.|Sudah saya matikan. ...Oh, sudah tersambung.
+担当者|よかったです。|yokatta desu.|Syukurlah.
+
+#Menelepon untuk mengundang
+A|もしもし、今度の土曜日にパーティーをするんだけど、来ない？|moshimoshi, kondo no doyoubi ni paatii o surun dakedo, konai?|Halo, Sabtu ini aku mengadakan pesta, mau datang?
+B|行きたい！何時から？|ikitai! nanji kara?|Mau! Mulai jam berapa?
+A|夕方六時からだよ。|yuugata rokuji kara da yo.|Mulai jam enam sore.
+B|じゃあ、何か飲み物を持って行くね。|jaa, nanika nomimono o motte iku ne.|Kalau begitu, aku bawa minuman.
+
+#Telepon di kantor saat atasan keluar
+A|はい、営業部です。|hai, eigyoubu desu.|Ya, bagian penjualan.
+B|鈴木部長はいらっしゃいますか。|suzuki buchou wa irasshaimasu ka.|Apakah Kepala Bagian Suzuki ada?
+A|鈴木はただいま外出しております。|suzuki wa tadaima gaishutsu shite orimasu.|Pak Suzuki sedang keluar kantor.
+B|では、戻られたらお電話をお願いします。|dewa, modoraretara odenwa o onegaishimasu.|Kalau begitu, tolong telepon saya setelah beliau kembali.
+
+#Menanyakan obat ke apotek
+A|もしもし、この薬は食後に飲めばいいですか。|moshimoshi, kono kusuri wa shokugo ni nomeba ii desu ka.|Halo, apakah obat ini diminum setelah makan?
+薬剤師|はい、一日三回、食後に飲んでください。|hai, ichinichi sankai, shokugo ni nonde kudasai.|Ya, tiga kali sehari setelah makan.
+A|眠くなりますか。|nemuku narimasu ka.|Apakah bikin mengantuk?
+薬剤師|少し眠くなるかもしれません。|sukoshi nemuku naru kamo shiremasen.|Mungkin sedikit mengantuk.
+
+#Telepon dengan suara kecil
+A|すみません、声が小さくて聞こえません。|sumimasen, koe ga chiisakute kikoemasen.|Maaf, suaranya kecil, tidak terdengar.
+B|これで聞こえますか。|kore de kikoemasu ka.|Kalau begini terdengar?
+A|はい、よく聞こえます。|hai, yoku kikoemasu.|Ya, terdengar jelas.
+
+#Menelepon untuk janji servis AC
+A|エアコンが壊れたので、修理をお願いしたいです。|eakon ga kowareta node, shuuri o onegai shitai desu.|AC saya rusak, saya ingin minta diperbaiki.
+担当者|いつがご都合よろしいですか。|itsu ga gotsugou yoroshii desu ka.|Kapan waktu yang cocok untuk Anda?
+A|土曜日の午前中はどうですか。|doyoubi no gozenchuu wa dou desu ka.|Bagaimana kalau Sabtu pagi?
+担当者|はい、十時に伺います。|hai, juuji ni ukagaimasu.|Baik, kami datang jam sepuluh.
+
+#Mengakhiri telepon dengan sopan
+A|では、そろそろ失礼します。|dewa, sorosoro shitsurei shimasu.|Kalau begitu, saya permisi dulu.
+B|お電話ありがとうございました。|odenwa arigatou gozaimashita.|Terima kasih atas teleponnya.
+A|失礼いたします。|shitsurei itashimasu.|Permisi.
+
+#Menelepon hotel untuk check-in terlambat
+A|今日予約しているブディですが、到着が夜十一時になりそうです。|kyou yoyaku shite iru budi desu ga, touchaku ga yoru juuichiji ni narisou desu.|Saya Budi yang reservasi hari ini, sepertinya saya tiba jam sebelas malam.
+フロント|かしこまりました。お待ちしております。|kashikomarimashita. omachi shite orimasu.|Baik. Kami akan menunggu.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Menelepon untuk menanyakan hasil wawancara
+A|先日面接を受けたブディですが、結果はいつ分かりますか。|senjitsu mensetsu o uketa budi desu ga, kekka wa itsu wakarimasu ka.|Saya Budi yang wawancara beberapa hari lalu, kapan hasilnya diketahui?
+担当者|来週の月曜日にご連絡します。|raishuu no getsuyoubi ni gorenraku shimasu.|Kami akan menghubungi Anda Senin depan.
+A|分かりました。よろしくお願いします。|wakarimashita. yoroshiku onegaishimasu.|Baik. Terima kasih.
+
+#Menelepon agen properti
+A|駅の近くで、安いアパートを探しています。|eki no chikaku de, yasui apaato o sagashite imasu.|Saya mencari apartemen murah dekat stasiun.
+不動産屋|ご予算はどのくらいですか。|goyosan wa dono kurai desu ka.|Anggarannya berapa?
+A|家賃は五万円以下がいいです。|yachin wa goman en ika ga ii desu.|Sewa di bawah lima puluh ribu yen.
+不動産屋|いくつかありますので、見に来てください。|ikutsuka arimasu node, mi ni kite kudasai.|Ada beberapa, silakan datang melihat.
+
+#Menelepon untuk konfirmasi pesanan
+店員|ご注文の商品が届きました。|gochuumon no shouhin ga todokimashita.|Barang pesanan Anda sudah datang.
+A|ありがとうございます。今日取りに行ってもいいですか。|arigatou gozaimasu. kyou tori ni itte mo ii desu ka.|Terima kasih. Boleh saya ambil hari ini?
+店員|はい、七時まで大丈夫です。|hai, shichiji made daijoubu desu.|Ya, bisa sampai jam tujuh.

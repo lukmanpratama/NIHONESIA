@@ -1,0 +1,354 @@
+// Dialog tambahan: Tempat Umum, Kesehatan
+
+@Tempat Umum
+#Mengirim uang ke luar negeri
+A|インドネシアに送金したいんですが。|indoneshia ni soukin shitain desu ga.|Saya ingin mengirim uang ke Indonesia.
+行員|送金先の口座番号と銀行名を書いてください。|soukinsaki no kouza bangou to ginkoumei o kaite kudasai.|Tolong tulis nomor rekening dan nama bank tujuan.
+A|手数料はいくらですか。|tesuuryou wa ikura desu ka.|Biaya administrasinya berapa?
+行員|四千円です。|yonsen en desu.|Empat ribu yen.
+
+#Menarik uang di ATM
+A|このATMで外国のカードは使えますか。|kono eetiiemu de gaikoku no kaado wa tsukaemasu ka.|Kartu luar negeri bisa dipakai di ATM ini?
+B|コンビニのATMなら使えますよ。|konbini no eetiiemu nara tsukaemasu yo.|Kalau ATM minimarket bisa.
+A|英語の画面もありますか。|eigo no gamen mo arimasu ka.|Ada tampilan bahasa Inggris juga?
+B|はい、最初に言語を選べます。|hai, saisho ni gengo o erabemasu.|Ya, di awal bisa pilih bahasa.
+
+#Mengirim surat
+A|この手紙を速達で送りたいです。|kono tegami o sokutatsu de okuritai desu.|Saya ingin mengirim surat ini dengan kilat.
+局員|東京までですね。三百六十円です。|toukyou made desu ne. sanbyaku rokujuu en desu.|Ke Tokyo, ya. Tiga ratus enam puluh yen.
+A|明日着きますか。|ashita tsukimasu ka.|Besok sampai?
+局員|はい、明日の午前に届きます。|hai, ashita no gozen ni todokimasu.|Ya, sampai besok pagi.
+
+#Mengambil paket di kantor pos
+A|不在票が入っていたので、荷物を取りに来ました。|fuzaihyou ga haitte ita node, nimotsu o tori ni kimashita.|Ada kartu pemberitahuan tidak di rumah, jadi saya datang mengambil paket.
+局員|身分証明書はありますか。|mibun shoumeisho wa arimasu ka.|Ada kartu identitas?
+A|在留カードでいいですか。|zairyuu kaado de ii desu ka.|Kartu izin tinggal boleh?
+局員|はい、大丈夫です。|hai, daijoubu desu.|Ya, boleh.
+
+#Di perpustakaan umum
+A|図書館のカードを作りたいです。|toshokan no kaado o tsukuritai desu.|Saya ingin membuat kartu perpustakaan.
+司書|住所が分かる物を見せてください。|juusho ga wakaru mono o misete kudasai.|Tolong tunjukkan sesuatu yang memuat alamat Anda.
+A|何冊まで借りられますか。|nansatsu made kariraremasu ka.|Bisa pinjam sampai berapa buku?
+司書|十冊まで、二週間借りられます。|jussatsu made, nishuukan kariraremasu.|Sampai sepuluh buku, selama dua minggu.
+
+#Di salon
+美容師|今日はどうしますか。|kyou wa dou shimasu ka.|Hari ini mau dipotong bagaimana?
+A|短くしてください。横は耳が出るくらいで。|mijikaku shite kudasai. yoko wa mimi ga deru kurai de.|Tolong dipendekkan. Bagian samping sampai telinga terlihat.
+美容師|前髪はどうしますか。|maegami wa dou shimasu ka.|Poninya bagaimana?
+A|少しだけ切ってください。|sukoshi dake kitte kudasai.|Potong sedikit saja.
+
+#Di laundry koin
+A|このコインランドリーの使い方を教えてください。|kono koin randorii no tsukaikata o oshiete kudasai.|Tolong ajari cara memakai laundry koin ini.
+B|服を入れて、お金を入れて、スタートを押すだけです。|fuku o irete, okane o irete, sutaato o osu dake desu.|Masukkan baju, masukkan uang, lalu tekan start.
+A|洗剤は必要ですか。|senzai wa hitsuyou desu ka.|Perlu deterjen?
+B|いいえ、自動で入ります。|iie, jidou de hairimasu.|Tidak, otomatis masuk.
+
+#Di masjid
+A|この近くにモスクはありますか。|kono chikaku ni mosuku wa arimasu ka.|Ada masjid di dekat sini?
+B|電車で二駅のところにあります。|densha de futaeki no tokoro ni arimasu.|Ada di dua stasiun dari sini naik kereta.
+A|金曜日の礼拝は何時からですか。|kin'youbi no reihai wa nanji kara desu ka.|Salat Jumat mulai jam berapa?
+B|十二時半ごろからです。|juuniji han goro kara desu.|Sekitar jam setengah satu siang.
+
+#Di kantor polisi pos
+A|すみません、道を教えてください。|sumimasen, michi o oshiete kudasai.|Permisi, tolong tunjukkan jalannya.
+警官|どこへ行きたいですか。|doko e ikitai desu ka.|Mau ke mana?
+A|市民会館です。|shimin kaikan desu.|Gedung pertemuan warga.
+警官|この地図を見てください。ここから歩いて七分です。|kono chizu o mite kudasai. koko kara aruite nanafun desu.|Lihat peta ini. Tujuh menit jalan kaki dari sini.
+
+#Menemukan dompet orang
+A|これ、道に落ちていました。|kore, michi ni ochite imashita.|Ini jatuh di jalan.
+警官|ありがとうございます。どこで拾いましたか。|arigatou gozaimasu. doko de hiroimashita ka.|Terima kasih. Dipungut di mana?
+A|駅前の横断歩道の近くです。|ekimae no oudan hodou no chikaku desu.|Dekat zebra cross depan stasiun.
+警官|この書類に名前を書いてください。|kono shorui ni namae o kaite kudasai.|Tolong tulis nama di dokumen ini.
+
+#Membuang sampah besar
+A|古い机を捨てたいんですが、どうすればいいですか。|furui tsukue o sutetain desu ga, dou sureba ii desu ka.|Saya ingin membuang meja lama, harus bagaimana?
+職員|粗大ごみですね。電話で申し込んでください。|sodai gomi desu ne. denwa de moushikonde kudasai.|Itu sampah besar. Silakan daftar lewat telepon.
+A|お金はかかりますか。|okane wa kakarimasu ka.|Ada biayanya?
+職員|はい、シールを五百円で買ってください。|hai, shiiru o gohyaku en de katte kudasai.|Ya, belilah stiker seharga lima ratus yen.
+
+#Di bioskop
+A|この映画は何時からですか。|kono eiga wa nanji kara desu ka.|Film ini mulai jam berapa?
+係員|次は六時半からです。|tsugi wa rokuji han kara desu.|Berikutnya mulai jam setengah tujuh.
+A|大人二枚お願いします。|otona nimai onegaishimasu.|Dua tiket dewasa.
+係員|お席はどこにしますか。|oseki wa doko ni shimasu ka.|Mau kursi di mana?
+
+#Di pemandian umum
+A|銭湯は初めてです。|sentou wa hajimete desu.|Ini pertama kali saya ke pemandian umum.
+B|タオルは持っていますか。|taoru wa motte imasu ka.|Kamu bawa handuk?
+A|いいえ、ここで借りられますか。|iie, koko de kariraremasu ka.|Tidak, bisa pinjam di sini?
+B|はい、百円で借りられますよ。|hai, hyaku en de kariraremasu yo.|Ya, bisa pinjam dengan seratus yen.
+
+#Di gym
+A|ジムの会員になりたいです。|jimu no kaiin ni naritai desu.|Saya ingin menjadi anggota gym.
+受付|月会費は七千円です。|tsukikaihi wa nanasen en desu.|Iuran bulanannya tujuh ribu yen.
+A|何時まで開いていますか。|nanji made aite imasu ka.|Buka sampai jam berapa?
+受付|夜十一時までです。|yoru juuichiji made desu.|Sampai jam sebelas malam.
+
+#Kantor balai kota: surat keterangan
+A|住民票を一枚ください。|juuminhyou o ichimai kudasai.|Saya minta satu lembar surat keterangan domisili.
+職員|この申請書に記入してください。|kono shinseisho ni kinyuu shite kudasai.|Silakan isi formulir ini.
+A|手数料はいくらですか。|tesuuryou wa ikura desu ka.|Biayanya berapa?
+職員|三百円です。|sanbyaku en desu.|Tiga ratus yen.
+
+#Konsultasi gratis untuk orang asing
+A|外国人の相談窓口はありますか。|gaikokujin no soudan madoguchi wa arimasu ka.|Apakah ada loket konsultasi untuk orang asing?
+職員|はい、毎週火曜日に開いています。|hai, maishuu kayoubi ni aite imasu.|Ya, buka setiap hari Selasa.
+A|インドネシア語の通訳はいますか。|indoneshiago no tsuuyaku wa imasu ka.|Ada penerjemah bahasa Indonesia?
+職員|予約すれば、通訳を用意できます。|yoyaku sureba, tsuuyaku o youi dekimasu.|Kalau reservasi, kami bisa siapkan penerjemah.
+
+#Di taman
+A|ここでボール遊びをしてもいいですか。|koko de booru asobi o shite mo ii desu ka.|Boleh main bola di sini?
+B|すみません、この公園は禁止なんです。|sumimasen, kono kouen wa kinshi nan desu.|Maaf, di taman ini dilarang.
+B|川の近くの広場なら大丈夫ですよ。|kawa no chikaku no hiroba nara daijoubu desu yo.|Kalau di lapangan dekat sungai boleh.
+
+#Mengurus bantuan bencana
+A|避難所はどこですか。|hinanjo wa doko desu ka.|Tempat pengungsian di mana?
+職員|近くの小学校の体育館です。|chikaku no shougakkou no taiikukan desu.|Di aula olahraga SD terdekat.
+A|食べ物や水はありますか。|tabemono ya mizu wa arimasu ka.|Ada makanan dan air?
+職員|はい、用意してあります。|hai, youi shite arimasu.|Ya, sudah disiapkan.
+
+#Di stasiun pengisian air minum
+A|すみません、この辺に自動販売機はありますか。|sumimasen, kono hen ni jidou hanbaiki wa arimasu ka.|Permisi, ada mesin penjual otomatis di sekitar sini?
+B|あの建物の前にありますよ。|ano tatemono no mae ni arimasu yo.|Ada di depan gedung itu.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Di loket pajak kendaraan
+A|軽自動車の税金を払いに来ました。|keijidousha no zeikin o harai ni kimashita.|Saya datang untuk membayar pajak mobil kecil.
+職員|納付書はお持ちですか。|noufusho wa omochi desu ka.|Anda membawa surat tagihan pembayarannya?
+A|はい、これです。|hai, kore desu.|Ya, ini.
+
+#Di toko fotokopi
+A|この書類を十枚コピーしたいです。|kono shorui o juumai kopii shitai desu.|Saya ingin memfotokopi dokumen ini sepuluh lembar.
+店員|白黒ですか、カラーですか。|shirokuro desu ka, karaa desu ka.|Hitam putih atau berwarna?
+A|白黒でお願いします。|shirokuro de onegaishimasu.|Hitam putih, tolong.
+店員|一枚十円です。|ichimai juu en desu.|Sepuluh yen per lembar.
+
+#Di toko foto
+A|証明写真を撮りたいです。|shoumei shashin o toritai desu.|Saya ingin membuat pasfoto.
+店員|サイズはどれですか。|saizu wa dore desu ka.|Ukurannya yang mana?
+A|パスポート用です。|pasupooto you desu.|Untuk paspor.
+店員|十分でできます。|juppun de dekimasu.|Jadi dalam sepuluh menit.
+
+#Antrean di kantor imigrasi
+A|この番号札は何ですか。|kono bangoufuda wa nan desu ka.|Kartu nomor ini apa?
+職員|呼ばれたら、三番の窓口に来てください。|yobaretara, sanban no madoguchi ni kite kudasai.|Kalau dipanggil, datang ke loket nomor tiga.
+A|どのくらい待ちますか。|dono kurai machimasu ka.|Menunggu berapa lama?
+職員|一時間ぐらいです。|ichijikan gurai desu.|Sekitar satu jam.
+
+#Berenang di kolam umum
+A|プールに入るとき、帽子は必要ですか。|puuru ni hairu toki, boushi wa hitsuyou desu ka.|Masuk kolam renang perlu topi?
+係員|はい、水泳帽をかぶってください。|hai, suieibou o kabutte kudasai.|Ya, pakai topi renang.
+A|ここで買えますか。|koko de kaemasu ka.|Bisa beli di sini?
+係員|はい、受付で売っています。|hai, uketsuke de utte imasu.|Ya, dijual di resepsionis.
+
+#Mendaftar kegiatan relawan
+A|ボランティアに参加したいんですが。|borantia ni sanka shitain desu ga.|Saya ingin ikut kegiatan relawan.
+職員|今度の日曜日に、川の掃除があります。|kondo no nichiyoubi ni, kawa no souji ga arimasu.|Minggu ini ada bersih-bersih sungai.
+A|何を持って行けばいいですか。|nani o motte ikeba ii desu ka.|Harus bawa apa?
+職員|軍手と飲み物をお願いします。|gunte to nomimono o onegaishimasu.|Bawa sarung tangan kerja dan minuman.
+
+#Menanyakan Wi-Fi gratis
+A|この駅に無料のWi-Fiはありますか。|kono eki ni muryou no waifai wa arimasu ka.|Apakah ada Wi-Fi gratis di stasiun ini?
+駅員|はい、あります。パスワードはいりません。|hai, arimasu. pasuwaado wa irimasen.|Ya, ada. Tidak perlu kata sandi.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Loker koin
+A|このロッカーはいくらですか。|kono rokkaa wa ikura desu ka.|Loker ini berapa?
+B|小さいのは三百円、大きいのは六百円です。|chiisai no wa sanbyaku en, ookii no wa roppyaku en desu.|Yang kecil tiga ratus yen, yang besar enam ratus yen.
+A|何時間使えますか。|nanjikan tsukaemasu ka.|Bisa dipakai berapa jam?
+B|その日の夜十二時までです。|sono hi no yoru juuniji made desu.|Sampai jam dua belas malam hari itu.
+
+#Pos kesehatan warga
+A|インフルエンザの予防接種はどこで受けられますか。|infuruenza no yobou sesshu wa doko de ukeraremasu ka.|Vaksin influenza bisa didapat di mana?
+職員|近くのクリニックで受けられます。予約が必要です。|chikaku no kurinikku de ukeraremasu. yoyaku ga hitsuyou desu.|Di klinik terdekat. Perlu reservasi.
+A|値段はいくらですか。|nedan wa ikura desu ka.|Harganya berapa?
+職員|三千円ぐらいです。|sanzen en gurai desu.|Sekitar tiga ribu yen.
+
+#Menanyakan toilet di mall
+A|すみません、お手洗いはどこですか。|sumimasen, otearai wa doko desu ka.|Permisi, toilet di mana?
+店員|エスカレーターの横です。|esukareetaa no yoko desu.|Di samping eskalator.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Di bandara: keberatan bagasi
+係員|お荷物が五キロ重いです。|onimotsu ga go kiro omoi desu.|Bagasi Anda kelebihan lima kilo.
+A|追加料金はいくらですか。|tsuika ryoukin wa ikura desu ka.|Biaya tambahannya berapa?
+係員|五千円です。|gosen en desu.|Lima ribu yen.
+A|じゃあ、少し手荷物に移します。|jaa, sukoshi tenimotsu ni utsushimasu.|Kalau begitu, saya pindahkan sebagian ke bagasi kabin.
+
+#Di kantor pos: kotak pos
+A|ポストはどこにありますか。|posuto wa doko ni arimasu ka.|Kotak pos di mana?
+B|郵便局の前にある赤い箱です。|yuubinkyoku no mae ni aru akai hako desu.|Kotak merah di depan kantor pos.
+A|はがきは右と左、どちらに入れますか。|hagaki wa migi to hidari, dochira ni iremasu ka.|Kartu pos dimasukkan ke kanan atau kiri?
+B|普通の郵便は左です。|futsuu no yuubin wa hidari desu.|Surat biasa di kiri.
+
+@Kesehatan
+#Ke dokter karena flu
+医者|どうしましたか。|dou shimashita ka.|Ada keluhan apa?
+A|昨日から熱があって、のどが痛いです。|kinou kara netsu ga atte, nodo ga itai desu.|Sejak kemarin saya demam dan tenggorokan sakit.
+医者|口を開けてください。……風邪ですね。|kuchi o akete kudasai. ...kaze desu ne.|Tolong buka mulutnya. ...Ini flu, ya.
+医者|薬を出しますから、ゆっくり休んでください。|kusuri o dashimasu kara, yukkuri yasunde kudasai.|Saya beri obat, istirahatlah yang cukup.
+
+#Pendaftaran di klinik
+受付|初めてですか。|hajimete desu ka.|Pertama kali ke sini?
+A|はい、初めてです。|hai, hajimete desu.|Ya, pertama kali.
+受付|保険証とこの問診票をお願いします。|hokenshou to kono monshinhyou o onegaishimasu.|Tolong serahkan kartu asuransi dan kuesioner ini.
+A|分かりました。|wakarimashita.|Baik.
+
+#Sakit perut
+A|おなかがすごく痛いです。|onaka ga sugoku itai desu.|Perut saya sakit sekali.
+医者|いつからですか。|itsu kara desu ka.|Sejak kapan?
+A|今朝からです。下痢もしています。|kesa kara desu. geri mo shite imasu.|Sejak tadi pagi. Saya juga diare.
+医者|何か悪いものを食べましたか。|nanika warui mono o tabemashita ka.|Apakah makan sesuatu yang tidak baik?
+
+#Di apotek
+薬剤師|この薬は一日三回、食後に飲んでください。|kono kusuri wa ichinichi sankai, shokugo ni nonde kudasai.|Obat ini diminum tiga kali sehari setelah makan.
+A|何日分ですか。|nannichibun desu ka.|Untuk berapa hari?
+薬剤師|五日分です。全部飲んでくださいね。|itsukabun desu. zenbu nonde kudasai ne.|Untuk lima hari. Tolong dihabiskan, ya.
+A|はい、分かりました。|hai, wakarimashita.|Baik, mengerti.
+
+#Sakit gigi
+A|奥歯が痛くて、夜も眠れません。|okuba ga itakute, yoru mo nemuremasen.|Geraham saya sakit, malam pun tidak bisa tidur.
+歯医者|虫歯ですね。今日は少し治療しましょう。|mushiba desu ne. kyou wa sukoshi chiryou shimashou.|Ini gigi berlubang. Hari ini kita rawat sedikit.
+A|痛いですか。|itai desu ka.|Sakit?
+歯医者|麻酔をするので大丈夫ですよ。|masui o suru node daijoubu desu yo.|Pakai bius, jadi tidak apa-apa.
+
+#Terkilir saat olahraga
+A|サッカーで足首をひねりました。|sakkaa de ashikubi o hinerimashita.|Pergelangan kaki saya terkilir saat main sepak bola.
+医者|レントゲンを撮りましょう。|rentogen o torimashou.|Mari kita rontgen.
+医者|骨は大丈夫です。湿布を貼って、一週間は運動しないでください。|hone wa daijoubu desu. shippu o hatte, isshuukan wa undou shinaide kudasai.|Tulangnya tidak apa-apa. Pakai koyo, dan jangan berolahraga selama seminggu.
+
+#Alergi serbuk sari
+A|最近、くしゃみと鼻水が止まりません。|saikin, kushami to hanamizu ga tomarimasen.|Akhir-akhir ini bersin dan pilek saya tidak berhenti.
+医者|花粉症かもしれませんね。|kafunshou kamo shiremasen ne.|Mungkin alergi serbuk sari.
+A|どうすればいいですか。|dou sureba ii desu ka.|Harus bagaimana?
+医者|外ではマスクをして、薬を飲んでください。|soto de wa masuku o shite, kusuri o nonde kudasai.|Pakai masker di luar dan minum obat.
+
+#Cek kesehatan tahunan
+看護師|身長と体重を測ります。|shinchou to taijuu o hakarimasu.|Kami ukur tinggi dan berat badan.
+看護師|次は血圧です。腕をまくってください。|tsugi wa ketsuatsu desu. ude o makutte kudasai.|Berikutnya tekanan darah. Tolong gulung lengan bajunya.
+A|はい。|hai.|Baik.
+看護師|正常ですね。|seijou desu ne.|Normal, ya.
+
+#Menjenguk teman di rumah sakit
+A|お見舞いに来ました。具合はどうですか。|omimai ni kimashita. guai wa dou desu ka.|Saya datang menjenguk. Bagaimana kondisinya?
+B|ありがとう。だいぶよくなったよ。|arigatou. daibu yoku natta yo.|Terima kasih. Sudah jauh lebih baik.
+A|いつ退院できますか。|itsu taiin dekimasu ka.|Kapan bisa keluar dari rumah sakit?
+B|来週の月曜日の予定だよ。|raishuu no getsuyoubi no yotei da yo.|Rencananya Senin depan.
+
+#Sakit kepala karena kurang tidur
+A|最近、頭痛がひどいです。|saikin, zutsuu ga hidoi desu.|Akhir-akhir ini sakit kepala saya parah.
+医者|よく眠れていますか。|yoku nemurete imasu ka.|Apakah tidurnya cukup?
+A|夜勤があるので、あまり眠れません。|yakin ga aru node, amari nemuremasen.|Ada shift malam, jadi kurang tidur.
+医者|睡眠をしっかりとることが大切ですよ。|suimin o shikkari toru koto ga taisetsu desu yo.|Tidur yang cukup itu penting.
+
+#Luka bakar ringan
+A|料理中に手をやけどしました。|ryourichuu ni te o yakedo shimashita.|Tangan saya terbakar saat memasak.
+B|すぐに水で冷やしてください。|sugu ni mizu de hiyashite kudasai.|Segera dinginkan dengan air.
+A|どのくらい冷やせばいいですか。|dono kurai hiyaseba ii desu ka.|Didinginkan berapa lama?
+B|十分以上冷やしてください。|juppun ijou hiyashite kudasai.|Lebih dari sepuluh menit.
+
+#Batuk tidak sembuh
+A|二週間も咳が止まりません。|nishuukan mo seki ga tomarimasen.|Batuk saya tidak berhenti selama dua minggu.
+医者|念のため、胸のレントゲンを撮りましょう。|nen no tame, mune no rentogen o torimashou.|Untuk berjaga-jaga, mari rontgen dada.
+A|お願いします。|onegaishimasu.|Tolong.
+
+#Menanyakan obat di toko obat
+A|胃が痛いときの薬はありますか。|i ga itai toki no kusuri wa arimasu ka.|Ada obat untuk sakit lambung?
+店員|こちらの胃薬はいかがですか。|kochira no igusuri wa ikaga desu ka.|Bagaimana dengan obat lambung ini?
+A|食前に飲みますか。|shokuzen ni nomimasu ka.|Diminum sebelum makan?
+店員|食後に飲んでください。|shokugo ni nonde kudasai.|Diminum setelah makan.
+
+#Konsultasi kesehatan mental
+A|最近、元気が出なくて、何もしたくないです。|saikin, genki ga denakute, nani mo shitakunai desu.|Akhir-akhir ini saya tidak bersemangat dan tidak ingin melakukan apa-apa.
+医者|仕事や生活でストレスはありますか。|shigoto ya seikatsu de sutoresu wa arimasu ka.|Ada stres dalam pekerjaan atau kehidupan?
+A|はい、少し疲れています。|hai, sukoshi tsukarete imasu.|Ya, saya agak lelah.
+医者|一人で悩まないで、話しに来てくださいね。|hitori de nayamanaide, hanashi ni kite kudasai ne.|Jangan dipendam sendiri, datanglah untuk bercerita.
+
+#Mata merah
+A|目が赤くて、かゆいです。|me ga akakute, kayui desu.|Mata saya merah dan gatal.
+医者|目薬を出しますね。一日四回さしてください。|megusuri o dashimasu ne. ichinichi yonkai sashite kudasai.|Saya beri obat tetes mata. Teteskan empat kali sehari.
+A|コンタクトはしてもいいですか。|kontakuto wa shite mo ii desu ka.|Boleh pakai lensa kontak?
+医者|治るまでやめてください。|naoru made yamete kudasai.|Jangan dulu sampai sembuh.
+
+#Kehamilan
+A|妻が妊娠しました。どこで検診を受ければいいですか。|tsuma ga ninshin shimashita. doko de kenshin o ukereba ii desu ka.|Istri saya hamil. Di mana sebaiknya periksa kandungan?
+職員|まず市役所で母子手帳をもらってください。|mazu shiyakusho de boshi techou o moratte kudasai.|Pertama, ambil buku kesehatan ibu dan anak di balai kota.
+A|分かりました。ありがとうございます。|wakarimashita. arigatou gozaimasu.|Baik. Terima kasih.
+
+#Demam pada anak
+A|子供が夜中に熱を出しました。|kodomo ga yonaka ni netsu o dashimashita.|Anak saya demam tengah malam.
+B|何度ありますか。|nando arimasu ka.|Berapa derajat?
+A|三十九度です。|sanjuukyuu do desu.|Tiga puluh sembilan derajat.
+B|夜間救急の病院に電話してみてください。|yakan kyuukyuu no byouin ni denwa shite mite kudasai.|Coba telepon rumah sakit gawat darurat malam.
+
+#Kontrol setelah operasi
+医者|傷はもう痛くないですか。|kizu wa mou itakunai desu ka.|Lukanya sudah tidak sakit?
+A|はい、もう大丈夫です。|hai, mou daijoubu desu.|Ya, sudah tidak apa-apa.
+医者|では、来月もう一度来てください。|dewa, raigetsu mou ichido kite kudasai.|Kalau begitu, datang sekali lagi bulan depan.
+
+#Menyampaikan riwayat penyakit
+医者|何か持病はありますか。|nanika jibyou wa arimasu ka.|Ada penyakit kronis?
+A|高血圧の薬を飲んでいます。|kouketsuatsu no kusuri o nonde imasu.|Saya minum obat darah tinggi.
+医者|薬の名前は分かりますか。|kusuri no namae wa wakarimasu ka.|Tahu nama obatnya?
+A|はい、このお薬手帳に書いてあります。|hai, kono okusuri techou ni kaite arimasu.|Ya, tertulis di buku catatan obat ini.
+
+#Terlalu lama di bawah matahari
+A|外で働いていたら、頭がくらくらします。|soto de hataraite itara, atama ga kurakura shimasu.|Setelah bekerja di luar, kepala saya pusing.
+B|熱中症かもしれません。涼しい所で休んでください。|necchuushou kamo shiremasen. suzushii tokoro de yasunde kudasai.|Mungkin sengatan panas. Istirahat di tempat sejuk.
+B|水と塩分をとってくださいね。|mizu to enbun o totte kudasai ne.|Minum air dan konsumsi garam, ya.
+
+#Biaya berobat
+A|今日の診察代はいくらですか。|kyou no shinsatsudai wa ikura desu ka.|Biaya pemeriksaan hari ini berapa?
+受付|保険を使って、千五百円です。|hoken o tsukatte, sen gohyaku en desu.|Dengan asuransi, seribu lima ratus yen.
+A|カードで払えますか。|kaado de haraemasu ka.|Bisa bayar pakai kartu?
+受付|すみません、現金だけです。|sumimasen, genkin dake desu.|Maaf, hanya tunai.
+
+#Memakai masker di kantor
+A|風邪をひいたので、マスクをして来ました。|kaze o hiita node, masuku o shite kimashita.|Saya flu, jadi datang pakai masker.
+B|無理しないで、早く帰ってもいいですよ。|muri shinaide, hayaku kaette mo ii desu yo.|Jangan memaksakan diri, boleh pulang lebih awal.
+A|ありがとうございます。今日は大丈夫です。|arigatou gozaimasu. kyou wa daijoubu desu.|Terima kasih. Hari ini saya masih kuat.
+
+#Olahraga untuk kesehatan
+A|健康のために、何かしていますか。|kenkou no tame ni, nanika shite imasu ka.|Apa yang kamu lakukan untuk kesehatan?
+B|毎朝三十分歩いています。|maiasa sanjuppun aruite imasu.|Saya jalan kaki tiga puluh menit setiap pagi.
+A|私も始めようかな。|watashi mo hajimeyou ka na.|Mungkin saya juga mulai.
+
+#Sakit punggung
+A|重い箱を運んで、腰を痛めました。|omoi hako o hakonde, koshi o itamemashita.|Saya mengangkat kotak berat dan pinggang saya sakit.
+医者|しばらく重い物は持たないでください。|shibaraku omoi mono wa motanaide kudasai.|Untuk sementara jangan angkat barang berat.
+A|仕事はどうしましょう。|shigoto wa dou shimashou.|Pekerjaannya bagaimana?
+医者|診断書を書きますから、会社に見せてください。|shindansho o kakimasu kara, kaisha ni misete kudasai.|Saya buatkan surat keterangan dokter, tunjukkan ke perusahaan.
+
+#Rawat inap
+看護師|今日から入院です。何か質問はありますか。|kyou kara nyuuin desu. nanika shitsumon wa arimasu ka.|Mulai hari ini Anda dirawat inap. Ada pertanyaan?
+A|家族は何時まで面会できますか。|kazoku wa nanji made menkai dekimasu ka.|Keluarga bisa menjenguk sampai jam berapa?
+看護師|夜八時までです。|yoru hachiji made desu.|Sampai jam delapan malam.
+
+#Vaksinasi
+看護師|今日の体温は何度でしたか。|kyou no taion wa nando deshita ka.|Suhu badan hari ini berapa?
+A|三十六度五分です。|sanjuuroku do gobu desu.|Tiga puluh enam koma lima derajat.
+看護師|では、注射をします。少しチクッとしますよ。|dewa, chuusha o shimasu. sukoshi chikutto shimasu yo.|Kalau begitu, kami suntik. Akan terasa sedikit menusuk.
+
+#Memeriksa mata untuk SIM
+係員|この記号の切れ目はどちらですか。|kono kigou no kireme wa dochira desu ka.|Celah simbol ini ke arah mana?
+A|右です。|migi desu.|Kanan.
+係員|これは。|kore wa.|Kalau ini?
+A|上です。|ue desu.|Atas.
+
+#Darah tinggi
+医者|血圧が少し高いですね。|ketsuatsu ga sukoshi takai desu ne.|Tekanan darahnya agak tinggi.
+A|塩辛い物をよく食べます。|shiokarai mono o yoku tabemasu.|Saya sering makan makanan asin.
+医者|塩分を減らして、運動もしてください。|enbun o herashite, undou mo shite kudasai.|Kurangi garam dan berolahragalah.
+
+#Asuransi untuk kunjungan dokter
+A|保険証を忘れてしまいました。|hokenshou o wasurete shimaimashita.|Saya lupa membawa kartu asuransi.
+受付|今日は全額払っていただいて、後で返金します。|kyou wa zengaku haratte itadaite, ato de henkin shimasu.|Hari ini bayar penuh dulu, nanti dikembalikan.
+A|いつまでに持ってくればいいですか。|itsu made ni motte kureba ii desu ka.|Harus dibawa sebelum kapan?
+受付|今月中にお願いします。|kongetsuchuu ni onegaishimasu.|Tolong dalam bulan ini.
+
+#Muntah setelah makan
+A|食べた後、吐いてしまいました。|tabeta ato, haite shimaimashita.|Setelah makan saya muntah.
+医者|ほかに症状はありますか。|hoka ni shoujou wa arimasu ka.|Ada gejala lain?
+A|少し熱があります。|sukoshi netsu ga arimasu.|Sedikit demam.
+医者|胃腸炎ですね。水分をこまめにとってください。|ichouen desu ne. suibun o komame ni totte kudasai.|Ini radang lambung dan usus. Sering-seringlah minum.

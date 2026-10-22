@@ -1,0 +1,305 @@
+// Dialog tambahan: Sekolah, Wawancara & Administrasi
+
+@Sekolah
+#Lupa membawa PR
+先生|宿題を出してください。|shukudai o dashite kudasai.|Tolong kumpulkan PR-nya.
+学生|すみません、家に忘れてしまいました。|sumimasen, ie ni wasurete shimaimashita.|Maaf, saya lupa di rumah.
+先生|明日、必ず持ってきてください。|ashita, kanarazu motte kite kudasai.|Besok pastikan dibawa.
+学生|はい、分かりました。|hai, wakarimashita.|Baik, mengerti.
+
+#Bertanya cara membaca kanji
+学生|先生、この漢字は何と読みますか。|sensei, kono kanji wa nan to yomimasu ka.|Guru, kanji ini dibaca apa?
+先生|「やすむ」と読みます。|"yasumu" to yomimasu.|Dibaca "yasumu".
+学生|どういう意味ですか。|dou iu imi desu ka.|Artinya apa?
+先生|「休憩する」という意味ですよ。|"kyuukei suru" to iu imi desu yo.|Artinya "beristirahat".
+
+#Izin keluar kelas
+学生|先生、トイレに行ってもいいですか。|sensei, toire ni itte mo ii desu ka.|Guru, boleh saya ke toilet?
+先生|はい、どうぞ。|hai, douzo.|Ya, silakan.
+学生|すぐ戻ります。|sugu modorimasu.|Saya segera kembali.
+
+#Tidak mengerti penjelasan
+学生|すみません、今の説明がよく分かりませんでした。|sumimasen, ima no setsumei ga yoku wakarimasen deshita.|Maaf, saya kurang mengerti penjelasan tadi.
+先生|どこが分かりませんでしたか。|doko ga wakarimasen deshita ka.|Bagian mana yang tidak dimengerti?
+学生|「～ている」の使い方です。|"te iru" no tsukaikata desu.|Cara memakai "-te iru".
+先生|じゃあ、例文を使ってもう一度説明しますね。|jaa, reibun o tsukatte mou ichido setsumei shimasu ne.|Kalau begitu, saya jelaskan lagi dengan contoh kalimat.
+
+#Hasil ujian
+A|テスト、何点だった？|tesuto, nanten datta?|Tesnya dapat nilai berapa?
+B|八十五点だったよ。|hachijuugo ten datta yo.|Delapan puluh lima.
+A|すごい！私は七十点だった。|sugoi! watashi wa nanajutten datta.|Hebat! Aku tujuh puluh.
+B|次は一緒に勉強しよう。|tsugi wa issho ni benkyou shiyou.|Lain kali ayo belajar bersama.
+
+#Meminjam buku catatan
+A|昨日休んだので、ノートを見せてもらえますか。|kinou yasunda node, nooto o misete moraemasu ka.|Kemarin saya absen, boleh lihat catatanmu?
+B|いいよ。コピーしてもいいよ。|ii yo. kopii shite mo ii yo.|Boleh. Difotokopi juga boleh.
+A|ありがとう。明日返すね。|arigatou. ashita kaesu ne.|Terima kasih. Besok kukembalikan.
+
+#Kerja kelompok
+A|発表の準備、どうする？|happyou no junbi, dou suru?|Persiapan presentasinya bagaimana?
+B|私が資料を作るから、あなたはスライドをお願い。|watashi ga shiryou o tsukuru kara, anata wa suraido o onegai.|Aku buat materinya, kamu buat slide-nya ya.
+A|分かった。金曜日までに終わらせよう。|wakatta. kin'youbi made ni owaraseyou.|Oke. Ayo selesaikan sebelum Jumat.
+
+#Mendaftar kursus
+A|日本語の授業を受けたいんですが。|nihongo no jugyou o uketain desu ga.|Saya ingin ikut kelas bahasa Jepang.
+受付|初級と中級がありますが、どちらにしますか。|shokyuu to chuukyuu ga arimasu ga, dochira ni shimasu ka.|Ada tingkat dasar dan menengah, mau yang mana?
+A|初級にします。授業は何曜日ですか。|shokyuu ni shimasu. jugyou wa nan'youbi desu ka.|Dasar saja. Kelasnya hari apa?
+受付|毎週土曜日の午前です。|maishuu doyoubi no gozen desu.|Setiap Sabtu pagi.
+
+#Kelas dibatalkan
+A|今日の授業は休みだって。|kyou no jugyou wa yasumi datte.|Katanya kelas hari ini libur.
+B|え、どうして？|e, doushite?|Eh, kenapa?
+A|先生が風邪をひいたそうだよ。|sensei ga kaze o hiita sou da yo.|Katanya gurunya sakit flu.
+B|じゃあ、図書館で勉強しようか。|jaa, toshokan de benkyou shiyou ka.|Kalau begitu, belajar di perpustakaan, yuk.
+
+#Di perpustakaan
+A|この本を借りたいんですが。|kono hon o karitain desu ga.|Saya ingin meminjam buku ini.
+司書|カードを見せてください。|kaado o misete kudasai.|Tolong tunjukkan kartunya.
+司書|返却は二週間後です。|henkyaku wa nishuukan go desu.|Dikembalikan dua minggu lagi.
+A|分かりました。ありがとうございます。|wakarimashita. arigatou gozaimasu.|Baik. Terima kasih.
+
+#Memilih jurusan
+A|専門学校で何を勉強したいですか。|senmon gakkou de nani o benkyou shitai desu ka.|Di sekolah kejuruan ingin belajar apa?
+B|介護を勉強したいです。|kaigo o benkyou shitai desu.|Saya ingin belajar perawatan lansia.
+A|どうしてですか。|doushite desu ka.|Kenapa?
+B|おばあさんの世話をしたことがあるからです。|obaasan no sewa o shita koto ga aru kara desu.|Karena saya pernah merawat nenek.
+
+#Persiapan JLPT
+A|JLPTは何級を受けますか。|jee eru pii tii wa nankyuu o ukemasu ka.|Ikut JLPT tingkat berapa?
+B|今年はN3を受けます。|kotoshi wa enu san o ukemasu.|Tahun ini saya ikut N3.
+A|聴解が難しいですよね。|choukai ga muzukashii desu yo ne.|Bagian mendengarkan sulit, ya.
+B|はい、毎日ニュースを聞いて練習しています。|hai, mainichi nyuusu o kiite renshuu shite imasu.|Ya, saya latihan dengan mendengarkan berita setiap hari.
+
+#Datang terlambat ke kuliah
+学生|すみません、バスが遅れました。|sumimasen, basu ga okuremashita.|Maaf, busnya terlambat.
+先生|分かりました。静かに座ってください。|wakarimashita. shizuka ni suwatte kudasai.|Baik. Silakan duduk dengan tenang.
+学生|はい。|hai.|Baik.
+
+#Menanyakan tugas
+A|レポートの締め切りはいつですか。|repooto no shimekiri wa itsu desu ka.|Tenggat laporannya kapan?
+B|来週の水曜日です。|raishuu no suiyoubi desu.|Rabu minggu depan.
+A|何ページ書けばいいですか。|nan peeji kakeba ii desu ka.|Harus menulis berapa halaman?
+B|三ページ以上です。|san peeji ijou desu.|Minimal tiga halaman.
+
+#Mengucapkan terima kasih kepada guru
+学生|先生、一年間ありがとうございました。|sensei, ichinenkan arigatou gozaimashita.|Guru, terima kasih untuk satu tahun ini.
+先生|よく頑張りましたね。|yoku ganbarimashita ne.|Kamu sudah berusaha dengan baik.
+学生|先生のおかげで、日本語が上手になりました。|sensei no okage de, nihongo ga jouzu ni narimashita.|Berkat Guru, bahasa Jepang saya jadi lebih baik.
+
+#Belajar bersama di kafe
+A|この文法、分かる？|kono bunpou, wakaru?|Tata bahasa ini kamu paham?
+B|うん。「～ばかり」は「～だけ」に似ているよ。|un. "bakari" wa "dake" ni nite iru yo.|Iya. "-bakari" mirip dengan "-dake".
+A|なるほど。例文を作ってみるね。|naruhodo. reibun o tsukutte miru ne.|Oh begitu. Aku coba buat contoh kalimat.
+
+#Menanyakan ruang kelas
+A|すみません、三〇一教室はどこですか。|sumimasen, san maru ichi kyoushitsu wa doko desu ka.|Permisi, ruang kelas 301 di mana?
+B|三階のエレベーターの前です。|sangai no erebeetaa no mae desu.|Di lantai tiga, depan lift.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Ujian lisan
+先生|では、あなたの国について話してください。|dewa, anata no kuni ni tsuite hanashite kudasai.|Silakan ceritakan tentang negaramu.
+学生|インドネシアには島がたくさんあります。|indoneshia ni wa shima ga takusan arimasu.|Di Indonesia ada banyak pulau.
+学生|料理は辛くて、おいしいです。|ryouri wa karakute, oishii desu.|Masakannya pedas dan enak.
+先生|よくできました。|yoku dekimashita.|Bagus sekali.
+
+#Beasiswa
+A|奨学金に申し込みたいんですが。|shougakukin ni moushikomitain desu ga.|Saya ingin mendaftar beasiswa.
+職員|成績証明書と推薦状が必要です。|seiseki shoumeisho to suisenjou ga hitsuyou desu.|Perlu transkrip nilai dan surat rekomendasi.
+A|締め切りはいつですか。|shimekiri wa itsu desu ka.|Batas waktunya kapan?
+職員|今月末です。|kongetsumatsu desu.|Akhir bulan ini.
+
+#Festival budaya sekolah
+A|文化祭で何をしますか。|bunkasai de nani o shimasu ka.|Di festival budaya mau ngapain?
+B|クラスでインドネシア料理の店を出します。|kurasu de indoneshia ryouri no mise o dashimasu.|Kelas kami membuka stan masakan Indonesia.
+A|楽しそうですね。食べに行きます。|tanoshisou desu ne. tabe ni ikimasu.|Kelihatannya seru. Saya akan datang makan.
+
+#Lupa membawa buku
+A|教科書を忘れちゃった。一緒に見てもいい？|kyoukasho o wasurechatta. issho ni mite mo ii?|Aku lupa bawa buku pelajaran. Boleh lihat bareng?
+B|いいよ。机をくっつけよう。|ii yo. tsukue o kuttsukeyou.|Boleh. Ayo dekatkan mejanya.
+A|ありがとう、助かる。|arigatou, tasukaru.|Terima kasih, sangat membantu.
+
+#Membaca dengan suara keras
+先生|次の文を読んでください。|tsugi no bun o yonde kudasai.|Tolong baca kalimat berikutnya.
+学生|「わたしは毎朝、七時に起きます。」|"watashi wa maiasa, shichiji ni okimasu."|"Saya bangun jam tujuh setiap pagi."
+先生|発音がきれいですね。|hatsuon ga kirei desu ne.|Pengucapanmu bagus.
+
+#Menanyakan makna kata baru
+A|「もったいない」ってどういう意味？|"mottainai" tte dou iu imi?|"Mottainai" itu artinya apa?
+B|まだ使えるのに捨てるのは惜しい、という意味だよ。|mada tsukaeru noni suteru no wa oshii, to iu imi da yo.|Artinya sayang kalau dibuang padahal masih bisa dipakai.
+A|いい言葉だね。|ii kotoba da ne.|Kata yang bagus, ya.
+
+#Lulus ujian
+A|N4に合格しました！|enu yon ni goukaku shimashita!|Saya lulus N4!
+B|おめでとう！よく頑張ったね。|omedetou! yoku ganbatta ne.|Selamat! Kamu sudah berusaha keras.
+A|次はN3を目指します。|tsugi wa enu san o mezashimasu.|Berikutnya saya akan mengincar N3.
+
+#Bertanya tentang les privat
+A|個人レッスンはいくらですか。|kojin ressun wa ikura desu ka.|Les privat berapa biayanya?
+B|一時間三千円です。|ichijikan sanzen en desu.|Tiga ribu yen per jam.
+A|オンラインでもできますか。|onrain demo dekimasu ka.|Bisa juga online?
+B|はい、できますよ。|hai, dekimasu yo.|Ya, bisa.
+
+#Berlatih percakapan
+A|会話の練習相手になってもらえませんか。|kaiwa no renshuu aite ni natte moraemasen ka.|Bisakah kamu jadi teman latihan percakapan saya?
+B|いいですよ。毎週水曜日はどうですか。|ii desu yo. maishuu suiyoubi wa dou desu ka.|Boleh. Bagaimana kalau setiap Rabu?
+A|ありがとうございます。お礼にインドネシア語を教えます。|arigatou gozaimasu. orei ni indoneshiago o oshiemasu.|Terima kasih. Sebagai balasan, saya ajari bahasa Indonesia.
+
+#Ruang kelas dingin
+学生|先生、少し寒いです。|sensei, sukoshi samui desu.|Guru, agak dingin.
+先生|エアコンの温度を上げましょうか。|eakon no ondo o agemashou ka.|Suhu AC-nya dinaikkan, ya?
+学生|はい、お願いします。|hai, onegaishimasu.|Ya, tolong.
+
+#Menanyakan hasil nilai
+学生|先生、成績はいつ分かりますか。|sensei, seiseki wa itsu wakarimasu ka.|Guru, kapan nilainya diketahui?
+先生|来週、ホームページに出ます。|raishuu, hoomupeeji ni demasu.|Minggu depan akan muncul di situs web.
+学生|分かりました。|wakarimashita.|Baik.
+
+#Kursus bahasa Jepang di balai kota
+A|市民センターで無料の日本語教室があるそうですよ。|shimin sentaa de muryou no nihongo kyoushitsu ga aru sou desu yo.|Katanya di balai warga ada kelas bahasa Jepang gratis.
+B|本当ですか。いつありますか。|hontou desu ka. itsu arimasu ka.|Benarkah? Kapan diadakan?
+A|毎週日曜日の午後です。|maishuu nichiyoubi no gogo desu.|Setiap Minggu siang.
+B|行ってみたいです。|itte mitai desu.|Saya ingin mencoba datang.
+
+#Kesulitan menghafal kanji
+A|漢字がなかなか覚えられません。|kanji ga nakanaka oboeraremasen.|Saya sulit menghafal kanji.
+B|毎日五つずつ書いて練習するといいですよ。|mainichi itsutsu zutsu kaite renshuu suru to ii desu yo.|Bagus kalau setiap hari berlatih menulis lima kanji.
+A|アプリでも練習できますか。|apuri demo renshuu dekimasu ka.|Bisa latihan pakai aplikasi juga?
+B|もちろん。書き順も見られますよ。|mochiron. kakijun mo miraremasu yo.|Tentu. Urutan goresannya juga bisa dilihat.
+
+#Wisuda
+A|卒業おめでとうございます。|sotsugyou omedetou gozaimasu.|Selamat atas kelulusannya.
+B|ありがとうございます。三年間、あっという間でした。|arigatou gozaimasu. sannenkan, atto iu ma deshita.|Terima kasih. Tiga tahun terasa sekejap.
+A|これからどうしますか。|korekara dou shimasu ka.|Setelah ini mau apa?
+B|日本の会社で働きます。|nihon no kaisha de hatarakimasu.|Saya akan bekerja di perusahaan Jepang.
+
+#Teman sekelas absen
+A|今日、ワヤンさんは来ていませんね。|kyou, wayan-san wa kite imasen ne.|Hari ini Wayan tidak datang, ya.
+B|バイトが忙しいみたいです。|baito ga isogashii mitai desu.|Sepertinya kerja paruh waktunya sibuk.
+A|宿題を伝えておきましょう。|shukudai o tsutaete okimashou.|Mari kita sampaikan PR-nya.
+
+#Memilih buku pelajaran
+A|どの教科書がいいと思いますか。|dono kyoukasho ga ii to omoimasu ka.|Menurutmu buku pelajaran mana yang bagus?
+B|初心者には「みんなの日本語」が人気ですよ。|shoshinsha ni wa "minna no nihongo" ga ninki desu yo.|Untuk pemula, "Minna no Nihongo" populer.
+A|本屋で探してみます。|hon'ya de sagashite mimasu.|Saya akan cari di toko buku.
+
+#Bertanya beda dua kata
+A|「聞く」と「聴く」はどう違いますか。|"kiku" to "kiku" wa dou chigaimasu ka.|Apa beda 聞く dan 聴く?
+先生|「聴く」は、注意して聞くときに使います。|"kiku" wa, chuui shite kiku toki ni tsukaimasu.|聴く dipakai saat mendengarkan dengan saksama.
+A|音楽を聴く、ですね。|ongaku o kiku, desu ne.|Seperti mendengarkan musik, ya.
+先生|そうです。|sou desu.|Betul.
+
+@Wawancara & Administrasi
+#Wawancara kerja: perkenalan diri
+面接官|では、自己紹介をお願いします。|dewa, jikoshoukai o onegaishimasu.|Silakan memperkenalkan diri.
+A|ブディ・サントソと申します。インドネシアから参りました。|budi santoso to moushimasu. indoneshia kara mairimashita.|Nama saya Budi Santoso. Saya berasal dari Indonesia.
+A|前の会社では三年間、品質検査を担当していました。|mae no kaisha de wa sannenkan, hinshitsu kensa o tantou shite imashita.|Di perusahaan sebelumnya saya bertugas inspeksi kualitas selama tiga tahun.
+面接官|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Wawancara: alasan melamar
+面接官|どうして当社を選びましたか。|doushite tousha o erabimashita ka.|Mengapa Anda memilih perusahaan kami?
+A|品質管理の経験を生かしたいと思ったからです。|hinshitsu kanri no keiken o ikashitai to omotta kara desu.|Karena saya ingin memanfaatkan pengalaman di bidang kontrol kualitas.
+面接官|日本で長く働きたいですか。|nihon de nagaku hatarakitai desu ka.|Apakah Anda ingin bekerja lama di Jepang?
+A|はい、五年以上働きたいです。|hai, gonen ijou hatarakitai desu.|Ya, saya ingin bekerja lebih dari lima tahun.
+
+#Wawancara: kelebihan dan kekurangan
+面接官|あなたの長所は何ですか。|anata no chousho wa nan desu ka.|Apa kelebihan Anda?
+A|まじめで、細かい作業が得意なところです。|majime de, komakai sagyou ga tokui na tokoro desu.|Saya rajin dan pandai mengerjakan pekerjaan yang detail.
+面接官|短所は。|tansho wa.|Kekurangannya?
+A|少し心配性なところです。でも、確認を忘れないようにしています。|sukoshi shinpaishou na tokoro desu. demo, kakunin o wasurenai you ni shite imasu.|Saya agak mudah cemas. Tapi saya berusaha tidak lupa mengecek.
+
+#Wawancara: pertanyaan dari pelamar
+面接官|何か質問はありますか。|nanika shitsumon wa arimasu ka.|Ada pertanyaan?
+A|寮はありますか。|ryou wa arimasu ka.|Apakah ada asrama?
+面接官|はい、会社から歩いて十分の所にあります。|hai, kaisha kara aruite juppun no tokoro ni arimasu.|Ya, sepuluh menit jalan kaki dari kantor.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Menulis riwayat hidup
+A|履歴書の書き方を教えてもらえますか。|rirekisho no kakikata o oshiete moraemasu ka.|Bisa ajari cara menulis daftar riwayat hidup?
+B|まず、名前と住所を書きます。|mazu, namae to juusho o kakimasu.|Pertama, tulis nama dan alamat.
+B|それから、学歴と職歴を古い順に書きます。|sorekara, gakureki to shokureki o furui jun ni kakimasu.|Lalu, tulis riwayat pendidikan dan pekerjaan dari yang terlama.
+A|写真も必要ですか。|shashin mo hitsuyou desu ka.|Perlu foto juga?
+
+#Diterima kerja
+担当者|採用が決まりました。おめでとうございます。|saiyou ga kimarimashita. omedetou gozaimasu.|Anda diterima. Selamat.
+A|ありがとうございます！いつから働けますか。|arigatou gozaimasu! itsu kara hatarakemasu ka.|Terima kasih! Mulai kapan saya bisa bekerja?
+担当者|来月一日からです。|raigetsu tsuitachi kara desu.|Mulai tanggal satu bulan depan.
+
+#Membuka rekening untuk gaji
+担当者|給料の振込先の口座を教えてください。|kyuuryou no furikomisaki no kouza o oshiete kudasai.|Tolong beri tahu rekening untuk transfer gaji.
+A|まだ口座がありません。|mada kouza ga arimasen.|Saya belum punya rekening.
+担当者|では、近くの郵便局で作ってください。|dewa, chikaku no yuubinkyoku de tsukutte kudasai.|Kalau begitu, buat di kantor pos terdekat.
+
+#Mendaftarkan alamat
+職員|転入届ですね。在留カードをお願いします。|tennyuu todoke desu ne. zairyuu kaado o onegaishimasu.|Laporan pindah masuk, ya. Boleh kartu izin tinggalnya?
+A|はい、どうぞ。|hai, douzo.|Ya, silakan.
+職員|新しい住所をここに書いてください。|atarashii juusho o koko ni kaite kudasai.|Tulis alamat barunya di sini.
+A|分かりました。|wakarimashita.|Baik.
+
+#Asuransi kesehatan nasional
+A|国民健康保険に入りたいんですが。|kokumin kenkou hoken ni hairitain desu ga.|Saya ingin ikut asuransi kesehatan nasional.
+職員|会社の保険には入っていませんか。|kaisha no hoken ni wa haitte imasen ka.|Anda belum ikut asuransi perusahaan?
+A|はい、まだです。|hai, mada desu.|Ya, belum.
+職員|では、この用紙に記入してください。|dewa, kono youshi ni kinyuu shite kudasai.|Kalau begitu, isi formulir ini.
+
+#Memperpanjang visa
+A|ビザの更新に来ました。|biza no koushin ni kimashita.|Saya datang untuk memperpanjang visa.
+職員|申請書とパスポート、写真はありますか。|shinseisho to pasupooto, shashin wa arimasu ka.|Ada formulir, paspor, dan foto?
+A|はい、全部あります。|hai, zenbu arimasu.|Ya, semuanya ada.
+職員|結果は二週間ぐらいで出ます。|kekka wa nishuukan gurai de demasu.|Hasilnya keluar sekitar dua minggu.
+
+#Nomor My Number
+A|マイナンバーカードはどこで作れますか。|mainanbaa kaado wa doko de tsukuremasu ka.|Kartu My Number bisa dibuat di mana?
+職員|市役所の二階の窓口です。|shiyakusho no nikai no madoguchi desu.|Di loket lantai dua balai kota.
+A|どのくらいかかりますか。|dono kurai kakarimasu ka.|Berapa lama jadinya?
+職員|一か月ぐらいかかります。|ikkagetsu gurai kakarimasu.|Sekitar satu bulan.
+
+#Menanyakan pajak
+A|この税金の手紙は何ですか。|kono zeikin no tegami wa nan desu ka.|Surat pajak ini apa?
+B|住民税のお知らせですね。|juuminzei no oshirase desu ne.|Itu pemberitahuan pajak penduduk.
+A|どうやって払えばいいですか。|dou yatte haraeba ii desu ka.|Bagaimana cara membayarnya?
+B|コンビニで払えますよ。|konbini de haraemasu yo.|Bisa dibayar di minimarket.
+
+#Mengajukan izin kerja paruh waktu
+A|留学生ですが、アルバイトをしたいです。|ryuugakusei desu ga, arubaito o shitai desu.|Saya pelajar asing, ingin kerja paruh waktu.
+職員|資格外活動許可が必要です。|shikakugai katsudou kyoka ga hitsuyou desu.|Diperlukan izin kegiatan di luar status.
+A|一週間に何時間まで働けますか。|isshuukan ni nanjikan made hatarakemasu ka.|Seminggu boleh bekerja sampai berapa jam?
+職員|二十八時間までです。|nijuuhachi jikan made desu.|Sampai dua puluh delapan jam.
+
+#Mengurus surat pindah
+A|来月引っ越すので、転出届を出したいです。|raigetsu hikkosu node, tenshutsu todoke o dashitai desu.|Bulan depan saya pindah, jadi ingin menyerahkan laporan pindah keluar.
+職員|引っ越し先の住所は決まっていますか。|hikkoshisaki no juusho wa kimatte imasu ka.|Alamat tujuan pindahnya sudah pasti?
+A|はい、大阪市です。|hai, oosakashi desu.|Ya, Kota Osaka.
+
+#Pelatihan karyawan baru
+人事|入社おめでとうございます。今日は研修です。|nyuusha omedetou gozaimasu. kyou wa kenshuu desu.|Selamat bergabung. Hari ini pelatihan.
+A|何を勉強しますか。|nani o benkyou shimasu ka.|Belajar apa saja?
+人事|会社のルールと安全について説明します。|kaisha no ruuru to anzen ni tsuite setsumei shimasu.|Kami jelaskan aturan perusahaan dan keselamatan.
+
+#Menyerahkan surat pengunduran diri
+A|部長、少しお時間よろしいですか。|buchou, sukoshi ojikan yoroshii desu ka.|Kepala bagian, boleh minta waktunya sebentar?
+B|はい、どうぞ。|hai, douzo.|Ya, silakan.
+A|三月末で退職させていただきたいと思っています。|sangatsu matsu de taishoku sasete itadakitai to omotte imasu.|Saya ingin mengundurkan diri pada akhir Maret.
+B|そうですか。理由を聞いてもいいですか。|sou desu ka. riyuu o kiite mo ii desu ka.|Begitu. Boleh saya tanya alasannya?
+
+#Menanyakan uang pensiun
+A|国に帰るとき、年金は戻ってきますか。|kuni ni kaeru toki, nenkin wa modotte kimasu ka.|Saat pulang ke negara asal, apakah uang pensiun dikembalikan?
+職員|脱退一時金を申請できます。|dattai ichijikin o shinsei dekimasu.|Anda bisa mengajukan pembayaran sekaligus saat keluar.
+A|どこで申請しますか。|doko de shinsei shimasu ka.|Di mana mengajukannya?
+職員|帰国してから、郵送で申請します。|kikoku shite kara, yuusou de shinsei shimasu.|Diajukan lewat pos setelah pulang ke negara asal.
+
+#Menukar SIM
+A|インドネシアの免許を日本の免許に変えたいです。|indoneshia no menkyo o nihon no menkyo ni kaetai desu.|Saya ingin menukar SIM Indonesia ke SIM Jepang.
+職員|運転免許センターで手続きができます。|unten menkyo sentaa de tetsuzuki ga dekimasu.|Prosesnya bisa di pusat SIM.
+A|試験はありますか。|shiken wa arimasu ka.|Ada ujiannya?
+職員|簡単な筆記と実技があります。|kantan na hikki to jitsugi ga arimasu.|Ada ujian tulis sederhana dan praktik.
+
+#Wawancara online
+面接官|画面と音声は大丈夫ですか。|gamen to onsei wa daijoubu desu ka.|Gambar dan suaranya baik?
+A|はい、よく見えますし、よく聞こえます。|hai, yoku miemasu shi, yoku kikoemasu.|Ya, terlihat jelas dan terdengar jelas.
+面接官|では、始めましょう。|dewa, hajimemashou.|Kalau begitu, mari mulai.
+
+#Menanyakan gaji dan jam kerja
+A|勤務時間を教えていただけますか。|kinmu jikan o oshiete itadakemasu ka.|Bisa diberi tahu jam kerjanya?
+担当者|八時から五時までで、休憩は一時間です。|hachiji kara goji made de, kyuukei wa ichijikan desu.|Jam delapan sampai jam lima, istirahat satu jam.
+A|残業は多いですか。|zangyou wa ooi desu ka.|Apakah sering lembur?
+担当者|月に二十時間ぐらいです。|tsuki ni nijuu jikan gurai desu.|Sekitar dua puluh jam per bulan.
