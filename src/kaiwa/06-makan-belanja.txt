@@ -1,0 +1,383 @@
+// Dialog tambahan: Makan & Minum, Belanja
+
+@Makan & Minum
+#Memesan sushi
+店員|ご注文はお決まりですか。|gochuumon wa okimari desu ka.|Sudah memilih pesanan?
+A|サーモンとマグロを二皿ずつお願いします。|saamon to maguro o futasara zutsu onegaishimasu.|Salmon dan tuna masing-masing dua piring.
+店員|わさびは入れますか。|wasabi wa iremasu ka.|Pakai wasabi?
+A|少なめでお願いします。|sukuname de onegaishimasu.|Sedikit saja, tolong.
+
+#Menanyakan bahan makanan
+A|この料理に豚肉は入っていますか。|kono ryouri ni butaniku wa haitte imasu ka.|Apakah masakan ini mengandung daging babi?
+店員|はい、少し入っています。|hai, sukoshi haitte imasu.|Ya, ada sedikit.
+A|じゃあ、鶏肉の料理はありますか。|jaa, toriniku no ryouri wa arimasu ka.|Kalau begitu, ada masakan daging ayam?
+店員|こちらの親子丼はいかがですか。|kochira no oyakodon wa ikaga desu ka.|Bagaimana dengan oyakodon ini?
+
+#Memesan di restoran cepat saji
+店員|店内でお召し上がりですか。|tennai de omeshiagari desu ka.|Makan di sini?
+A|いいえ、持ち帰りです。|iie, mochikaeri desu.|Tidak, dibawa pulang.
+A|チーズバーガーのセットを一つください。|chiizubaagaa no setto o hitotsu kudasai.|Satu paket cheeseburger.
+店員|お飲み物は何になさいますか。|onomimono wa nan ni nasaimasu ka.|Minumannya apa?
+
+#Makanan terlalu pedas
+A|このカレー、ちょっと辛すぎます。|kono karee, chotto karasugimasu.|Kari ini terlalu pedas.
+B|水を持ってきましょうか。|mizu o motte kimashou ka.|Mau saya ambilkan air?
+A|お願いします。|onegaishimasu.|Tolong.
+B|次は甘口にしたほうがいいですね。|tsugi wa amakuchi ni shita hou ga ii desu ne.|Lain kali lebih baik pilih yang tidak pedas.
+
+#Makan bersama di rumah teman
+A|いただきます。|itadakimasu.|Selamat makan.
+B|どうぞ、たくさん食べてね。|douzo, takusan tabete ne.|Silakan, makan yang banyak ya.
+A|この煮物、とてもおいしいです。|kono nimono, totemo oishii desu.|Masakan rebus ini enak sekali.
+B|よかった。おかわりもあるよ。|yokatta. okawari mo aru yo.|Syukurlah. Masih ada tambahan.
+
+#Memesan minuman di kafe
+店員|サイズはどうしますか。|saizu wa dou shimasu ka.|Ukurannya mau yang mana?
+A|Mサイズでお願いします。|emu saizu de onegaishimasu.|Ukuran M, tolong.
+店員|ホットとアイス、どちらにしますか。|hotto to aisu, dochira ni shimasu ka.|Panas atau dingin?
+A|アイスで、氷は少なめにしてください。|aisu de, koori wa sukuname ni shite kudasai.|Dingin, es-nya sedikit saja.
+
+#Di kedai ramen dengan mesin tiket
+A|このお店は券売機で買うんですか。|kono omise wa kenbaiki de kaun desu ka.|Di kedai ini beli lewat mesin tiket?
+B|はい、先に食券を買って、店員に渡します。|hai, saki ni shokken o katte, ten'in ni watashimasu.|Ya, beli tiket makan dulu, lalu serahkan ke pegawai.
+A|おすすめはどれですか。|osusume wa dore desu ka.|Yang direkomendasikan yang mana?
+B|しょうゆラーメンが一番人気です。|shouyu raamen ga ichiban ninki desu.|Ramen shoyu paling populer.
+
+#Meminta tagihan terpisah
+A|すみません、別々に払えますか。|sumimasen, betsubetsu ni haraemasu ka.|Permisi, bisa bayar masing-masing?
+店員|はい、大丈夫です。|hai, daijoubu desu.|Ya, bisa.
+A|私はうどんとお茶です。|watashi wa udon to ocha desu.|Saya udon dan teh.
+店員|八百五十円です。|happyaku gojuu en desu.|Delapan ratus lima puluh yen.
+
+#Membuat nasi goreng bersama
+A|ナシゴレンを作ってみたいです。|nashigoren o tsukutte mitai desu.|Saya ingin mencoba membuat nasi goreng.
+B|じゃあ、一緒に作ろう。まずニンニクを切って。|jaa, issho ni tsukurou. mazu ninniku o kitte.|Ayo masak bersama. Pertama, iris bawang putihnya.
+A|ご飯は昨日のでもいいですか。|gohan wa kinou no demo ii desu ka.|Nasinya pakai sisa kemarin boleh?
+B|うん、冷たいご飯のほうがおいしくできるよ。|un, tsumetai gohan no hou ga oishiku dekiru yo.|Iya, pakai nasi dingin justru lebih enak.
+
+#Pesta barbekyu
+A|バーベキューの材料を買いに行こう。|baabekyuu no zairyou o kai ni ikou.|Ayo beli bahan barbekyu.
+B|肉と野菜と、飲み物も必要だね。|niku to yasai to, nomimono mo hitsuyou da ne.|Perlu daging, sayur, dan minuman juga.
+A|炭はどうする？|sumi wa dou suru?|Arangnya bagaimana?
+B|ホームセンターで買えるよ。|hoomu sentaa de kaeru yo.|Bisa dibeli di toko perkakas.
+
+#Makan siang di kantin perusahaan
+A|今日の日替わり定食は何ですか。|kyou no higawari teishoku wa nan desu ka.|Menu harian hari ini apa?
+店員|焼き魚定食です。|yakizakana teishoku desu.|Paket ikan bakar.
+A|ご飯は大盛りにできますか。|gohan wa oomori ni dekimasu ka.|Nasinya bisa porsi besar?
+店員|はい、無料です。|hai, muryou desu.|Ya, gratis.
+
+#Alergi makanan
+A|私はえびのアレルギーがあります。|watashi wa ebi no arerugii ga arimasu.|Saya alergi udang.
+店員|この天ぷらにはえびが入っています。|kono tenpura ni wa ebi ga haitte imasu.|Tempura ini ada udangnya.
+A|では、野菜の天ぷらにします。|dewa, yasai no tenpura ni shimasu.|Kalau begitu, saya pilih tempura sayur.
+
+#Memuji makanan Jepang
+A|日本料理で何が一番好きですか。|nihon ryouri de nani ga ichiban suki desu ka.|Masakan Jepang apa yang paling kamu suka?
+B|お好み焼きが好きです。|okonomiyaki ga suki desu.|Saya suka okonomiyaki.
+A|大阪のお好み焼きは特においしいですよ。|oosaka no okonomiyaki wa toku ni oishii desu yo.|Okonomiyaki Osaka sangat enak, lho.
+
+#Membawa bekal
+A|毎日お弁当を作っているんですか。|mainichi obentou o tsukutte irun desu ka.|Kamu membuat bekal setiap hari?
+B|はい、節約のためです。|hai, setsuyaku no tame desu.|Ya, untuk berhemat.
+A|えらいですね。中身は何ですか。|erai desu ne. nakami wa nan desu ka.|Hebat, ya. Isinya apa?
+B|卵焼きと野菜炒めです。|tamagoyaki to yasai itame desu.|Telur dadar gulung dan tumis sayur.
+
+#Makanan basi
+A|このパン、変なにおいがします。|kono pan, hen na nioi ga shimasu.|Roti ini baunya aneh.
+B|賞味期限を見て。|shoumi kigen o mite.|Lihat tanggal kedaluwarsanya.
+A|あ、三日前に切れています。|a, mikka mae ni kirete imasu.|Oh, sudah kedaluwarsa tiga hari lalu.
+B|捨てたほうがいいよ。|suteta hou ga ii yo.|Sebaiknya dibuang.
+
+#Minum bersama setelah kerja
+A|仕事の後、一杯どうですか。|shigoto no ato, ippai dou desu ka.|Setelah kerja, mau minum segelas?
+B|すみません、お酒は飲めないんです。|sumimasen, osake wa nomenain desu.|Maaf, saya tidak minum alkohol.
+A|じゃあ、喫茶店でコーヒーはどうですか。|jaa, kissaten de koohii wa dou desu ka.|Kalau begitu, kopi di kafe bagaimana?
+B|それならぜひ。|sore nara zehi.|Kalau itu, dengan senang hati.
+
+#Mencoba natto
+A|納豆を食べたことがありますか。|nattou o tabeta koto ga arimasu ka.|Pernah makan natto?
+B|一回だけあります。においが苦手でした。|ikkai dake arimasu. nioi ga nigate deshita.|Pernah sekali. Saya tidak tahan baunya.
+A|ご飯と一緒に食べると、おいしいですよ。|gohan to issho ni taberu to, oishii desu yo.|Kalau dimakan dengan nasi, enak lho.
+
+#Restoran penuh
+店員|申し訳ありません、ただいま満席です。|moushiwake arimasen, tadaima manseki desu.|Mohon maaf, saat ini penuh.
+A|どのくらい待ちますか。|dono kurai machimasu ka.|Menunggu berapa lama?
+店員|二十分ほどです。|nijuppun hodo desu.|Sekitar dua puluh menit.
+A|じゃあ、名前を書いて待ちます。|jaa, namae o kaite machimasu.|Kalau begitu, saya tulis nama dan menunggu.
+
+#Makanan halal
+A|ハラールのお肉はどこで買えますか。|haraaru no oniku wa doko de kaemasu ka.|Daging halal bisa dibeli di mana?
+B|駅の近くにハラールショップがありますよ。|eki no chikaku ni haraaru shoppu ga arimasu yo.|Ada toko halal dekat stasiun.
+A|ネットでも注文できますか。|netto demo chuumon dekimasu ka.|Bisa pesan online juga?
+B|はい、届けてくれますよ。|hai, todokete kuremasu yo.|Ya, bisa diantar.
+
+#Memesan pizza antar
+A|ピザの配達をお願いします。|piza no haitatsu o onegaishimasu.|Saya pesan antar pizza.
+店員|ご住所とお電話番号をお願いします。|gojuusho to odenwa bangou o onegaishimasu.|Boleh minta alamat dan nomor teleponnya?
+A|さくら町三の五です。|sakura machi san no go desu.|Sakura-machi 3-5.
+店員|三十分ほどでお届けします。|sanjuppun hodo de otodoke shimasu.|Kami antar dalam sekitar tiga puluh menit.
+
+#Sarapan di hotel
+A|朝ご飯はバイキングですか。|asagohan wa baikingu desu ka.|Sarapannya prasmanan?
+係員|はい、和食と洋食があります。|hai, washoku to youshoku ga arimasu.|Ya, ada masakan Jepang dan Barat.
+A|コーヒーはおかわりできますか。|koohii wa okawari dekimasu ka.|Kopinya bisa tambah?
+係員|はい、ご自由にどうぞ。|hai, gojiyuu ni douzo.|Ya, silakan ambil sendiri.
+
+#Merayakan dengan kue
+A|今日はリナさんの誕生日だから、ケーキを買ってきたよ。|kyou wa rina-san no tanjoubi da kara, keeki o katte kita yo.|Hari ini ulang tahun Rina, jadi aku belikan kue.
+B|わあ、イチゴのケーキだ！|waa, ichigo no keeki da!|Wah, kue stroberi!
+A|ろうそくに火をつけよう。|rousoku ni hi o tsukeyou.|Ayo nyalakan lilinnya.
+
+#Bertanya cara makan
+A|これはどうやって食べるんですか。|kore wa dou yatte taberun desu ka.|Ini dimakan bagaimana caranya?
+B|このたれにつけて食べてください。|kono tare ni tsukete tabete kudasai.|Celupkan ke saus ini lalu makan.
+A|なるほど。いただきます。|naruhodo. itadakimasu.|Begitu. Selamat makan.
+
+#Menu dalam bahasa Inggris
+A|英語のメニューはありますか。|eigo no menyuu wa arimasu ka.|Ada menu bahasa Inggris?
+店員|はい、こちらです。写真もありますよ。|hai, kochira desu. shashin mo arimasu yo.|Ya, ini. Ada fotonya juga.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Memasak bersama teman sekamar
+A|今晩は何を作る？|konban wa nani o tsukuru?|Malam ini masak apa?
+B|冷蔵庫に鶏肉とじゃがいもがあるよ。|reizouko ni toriniku to jagaimo ga aru yo.|Di kulkas ada daging ayam dan kentang.
+A|じゃあ、カレーにしよう。|jaa, karee ni shiyou.|Kalau begitu, bikin kari saja.
+
+#Puasa Ramadan
+A|ラマダン中は昼ご飯を食べないんですか。|ramadanchuu wa hirugohan o tabenain desu ka.|Selama Ramadan tidak makan siang?
+B|はい、日の出から日の入りまで何も食べません。|hai, hinode kara hinoiri made nani mo tabemasen.|Ya, dari matahari terbit sampai terbenam tidak makan apa pun.
+A|大変ですね。仕事は大丈夫ですか。|taihen desu ne. shigoto wa daijoubu desu ka.|Berat, ya. Kerjanya tidak apa-apa?
+B|慣れているので大丈夫です。|narete iru node daijoubu desu.|Sudah terbiasa, jadi tidak apa-apa.
+
+#Makanan tidak sesuai pesanan
+A|すみません、これは注文していません。|sumimasen, kore wa chuumon shite imasen.|Maaf, saya tidak memesan ini.
+店員|大変失礼しました。すぐにお取り替えします。|taihen shitsurei shimashita. sugu ni otorikae shimasu.|Mohon maaf sekali. Segera kami ganti.
+A|お願いします。|onegaishimasu.|Tolong.
+
+#Makan sushi putar
+A|回転寿司は初めてです。|kaiten zushi wa hajimete desu.|Ini pertama kali saya makan di sushi putar.
+B|好きなお皿を取って食べればいいですよ。|suki na osara o totte tabereba ii desu yo.|Ambil saja piring yang disukai lalu makan.
+A|お皿の色で値段が違うんですか。|osara no iro de nedan ga chigaun desu ka.|Harga berbeda tergantung warna piring?
+B|そうです。|sou desu.|Betul.
+
+#Minuman di mesin otomatis
+A|自動販売機で温かいお茶を買いたいです。|jidou hanbaiki de atatakai ocha o kaitai desu.|Saya ingin beli teh hangat di mesin otomatis.
+B|赤い表示のものが温かいですよ。|akai hyouji no mono ga atatakai desu yo.|Yang labelnya merah itu yang hangat.
+A|青いのは冷たいんですね。|aoi no wa tsumetain desu ne.|Yang biru dingin, ya.
+
+#Membuat makanan untuk pesta
+A|パーティーに何か持って行ったほうがいいですか。|paatii ni nanika motte itta hou ga ii desu ka.|Sebaiknya saya bawa sesuatu ke pesta?
+B|じゃあ、インドネシアの料理をお願いします。|jaa, indoneshia no ryouri o onegaishimasu.|Kalau begitu, tolong bawakan masakan Indonesia.
+A|サテを作って持って行きます。|sate o tsukutte motte ikimasu.|Saya buat sate dan bawa.
+
+#Diet
+A|最近、少し太ってしまいました。|saikin, sukoshi futotte shimaimashita.|Akhir-akhir ini saya agak gemuk.
+B|甘い物を控えたらどうですか。|amai mono o hikaetara dou desu ka.|Bagaimana kalau mengurangi makanan manis?
+A|それが難しいんです。|sore ga muzukashiin desu.|Justru itu yang sulit.
+
+#Makan malam bersama atasan
+A|今日はごちそうさまでした。|kyou wa gochisousama deshita.|Terima kasih atas traktirannya hari ini.
+B|いえいえ、また行きましょう。|ieie, mata ikimashou.|Tidak apa-apa, ayo pergi lagi.
+A|はい、ぜひ。|hai, zehi.|Ya, tentu.
+
+#Pesan antar online
+A|アプリで晩ご飯を注文しようか。|apuri de bangohan o chuumon shiyou ka.|Mau pesan makan malam lewat aplikasi?
+B|いいね。何がいい？|ii ne. nani ga ii?|Boleh. Mau apa?
+A|タイ料理はどう？|tai ryouri wa dou?|Bagaimana kalau masakan Thailand?
+B|賛成！|sansei!|Setuju!
+
+#Teh hijau
+A|日本のお茶は苦いですか。|nihon no ocha wa nigai desu ka.|Teh Jepang pahit?
+B|少し苦いですが、さっぱりしていますよ。|sukoshi nigai desu ga, sappari shite imasu yo.|Agak pahit, tapi menyegarkan.
+A|砂糖を入れてもいいですか。|satou o irete mo ii desu ka.|Boleh ditambah gula?
+B|日本ではあまり入れませんね。|nihon de wa amari iremasen ne.|Di Jepang jarang ditambah gula.
+
+#Sisa makanan
+A|食べきれないので、持ち帰ってもいいですか。|tabekirenai node, mochikaette mo ii desu ka.|Saya tidak bisa menghabiskannya, boleh dibawa pulang?
+店員|申し訳ありませんが、持ち帰りはできません。|moushiwake arimasen ga, mochikaeri wa dekimasen.|Mohon maaf, tidak bisa dibawa pulang.
+A|分かりました。|wakarimashita.|Baik.
+
+#Kedai di festival
+A|たこ焼きを一つください。|takoyaki o hitotsu kudasai.|Takoyaki satu porsi.
+店員|八個入りで五百円です。熱いので気をつけて。|hakko iri de gohyaku en desu. atsui node ki o tsukete.|Isi delapan, lima ratus yen. Panas, hati-hati.
+A|ありがとう。|arigatou.|Terima kasih.
+
+#Belajar memakai sumpit
+A|箸の持ち方が難しいです。|hashi no mochikata ga muzukashii desu.|Cara memegang sumpit sulit.
+B|上の箸だけを動かすんですよ。|ue no hashi dake o ugokasun desu yo.|Hanya sumpit bagian atas yang digerakkan.
+A|あ、少しできました。|a, sukoshi dekimashita.|Oh, sudah sedikit bisa.
+
+#Memasak nasi
+A|ご飯の炊き方を教えてください。|gohan no takikata o oshiete kudasai.|Tolong ajari cara memasak nasi.
+B|お米を洗って、線まで水を入れます。|okome o aratte, sen made mizu o iremasu.|Cuci berasnya, lalu isi air sampai garis.
+B|それから炊飯器のボタンを押すだけです。|sorekara suihanki no botan o osu dake desu.|Lalu tinggal tekan tombol penanak nasi.
+
+#Kopi pagi
+A|朝はコーヒーを飲みますか。|asa wa koohii o nomimasu ka.|Pagi minum kopi?
+B|はい、飲まないと目が覚めません。|hai, nomanai to me ga samemasen.|Ya, kalau tidak minum saya tidak bisa melek.
+A|私は紅茶派です。|watashi wa koucha ha desu.|Saya lebih suka teh.
+
+#Rekomendasi masakan Indonesia
+A|インドネシア料理でおすすめは何ですか。|indoneshia ryouri de osusume wa nan desu ka.|Masakan Indonesia apa yang direkomendasikan?
+B|ルンダンです。牛肉をココナッツミルクで煮た料理です。|rundan desu. gyuuniku o kokonattsu miruku de nita ryouri desu.|Rendang. Daging sapi yang dimasak dengan santan.
+A|おいしそう！食べてみたいです。|oishisou! tabete mitai desu.|Kelihatannya enak! Saya ingin mencobanya.
+
+@Belanja
+#Mencari ukuran sepatu
+A|この靴の二十六センチはありますか。|kono kutsu no nijuuroku senchi wa arimasu ka.|Sepatu ini ada ukuran 26 cm?
+店員|少々お待ちください。……はい、ございます。|shoushou omachi kudasai. ...hai, gozaimasu.|Mohon tunggu sebentar. ...Ya, ada.
+A|履いてみてもいいですか。|haite mite mo ii desu ka.|Boleh saya coba pakai?
+店員|どうぞ、こちらにお座りください。|douzo, kochira ni osuwari kudasai.|Silakan, duduk di sini.
+
+#Menawar harga
+A|もう少し安くなりませんか。|mou sukoshi yasuku narimasen ka.|Bisa sedikit lebih murah?
+店員|日本ではあまり値引きはしないんですよ。|nihon de wa amari nebiki wa shinain desu yo.|Di Jepang jarang ada potongan harga.
+店員|でも、今セール中で一割引きです。|demo, ima seeruchuu de ichiwaribiki desu.|Tapi sekarang sedang obral, diskon sepuluh persen.
+A|じゃあ、これをください。|jaa, kore o kudasai.|Kalau begitu, saya beli ini.
+
+#Membeli ponsel
+A|スマホを買いたいんですが、外国人でも契約できますか。|sumaho o kaitain desu ga, gaikokujin demo keiyaku dekimasu ka.|Saya ingin membeli ponsel, apakah orang asing bisa berlangganan?
+店員|在留カードとクレジットカードがあればできます。|zairyuu kaado to kurejitto kaado ga areba dekimasu.|Bisa kalau ada kartu izin tinggal dan kartu kredit.
+A|一番安いプランはいくらですか。|ichiban yasui puran wa ikura desu ka.|Paket termurah berapa?
+店員|月二千円からです。|tsuki nisen en kara desu.|Mulai dua ribu yen per bulan.
+
+#Mengembalikan barang
+A|昨日買ったシャツですが、サイズが合わないので返品したいです。|kinou katta shatsu desu ga, saizu ga awanai node henpin shitai desu.|Kemeja yang saya beli kemarin ukurannya tidak pas, saya ingin mengembalikannya.
+店員|レシートはお持ちですか。|reshiito wa omochi desu ka.|Anda bawa struknya?
+A|はい、これです。|hai, kore desu.|Ya, ini.
+店員|交換と返金、どちらにしますか。|koukan to henkin, dochira ni shimasu ka.|Mau tukar atau uang kembali?
+
+#Belanja di supermarket
+A|すみません、しょうゆはどこにありますか。|sumimasen, shouyu wa doko ni arimasu ka.|Permisi, kecap asin ada di mana?
+店員|三番の棚の右側です。|sanban no tana no migigawa desu.|Di sisi kanan rak nomor tiga.
+A|お米は。|okome wa.|Kalau beras?
+店員|一番奥にあります。|ichiban oku ni arimasu.|Di bagian paling belakang.
+
+#Diskon sore hari
+A|夕方になると、お弁当が安くなるんですね。|yuugata ni naru to, obentou ga yasuku narun desu ne.|Kalau sore, bento jadi murah, ya.
+B|そうです。半額になることもありますよ。|sou desu. hangaku ni naru koto mo arimasu yo.|Betul. Kadang jadi setengah harga.
+A|いいことを聞きました。|ii koto o kikimashita.|Informasi yang bagus.
+
+#Membeli hadiah
+A|母へのプレゼントを探しています。|haha e no purezento o sagashite imasu.|Saya mencari hadiah untuk ibu.
+店員|このハンカチはいかがですか。人気がありますよ。|kono hankachi wa ikaga desu ka. ninki ga arimasu yo.|Bagaimana dengan sapu tangan ini? Populer, lho.
+A|いいですね。プレゼント用に包んでください。|ii desu ne. purezento you ni tsutsunde kudasai.|Bagus. Tolong dibungkus untuk hadiah.
+
+#Toko 100 yen
+A|百円ショップは本当に何でも百円ですか。|hyaku en shoppu wa hontou ni nandemo hyaku en desu ka.|Di toko seratus yen benar semuanya seratus yen?
+B|ほとんどそうですが、税金がかかります。|hotondo sou desu ga, zeikin ga kakarimasu.|Hampir semua, tapi ada pajaknya.
+B|それに、三百円の物もありますよ。|soreni, sanbyaku en no mono mo arimasu yo.|Selain itu, ada juga barang tiga ratus yen.
+
+#Membeli baju musim dingin
+A|暖かいコートがほしいです。|atatakai kooto ga hoshii desu.|Saya ingin mantel yang hangat.
+店員|こちらのダウンコートは軽くて暖かいですよ。|kochira no daun kooto wa karukute atatakai desu yo.|Mantel bulu angsa ini ringan dan hangat.
+A|黒はありますか。|kuro wa arimasu ka.|Ada warna hitam?
+店員|はい、黒と紺があります。|hai, kuro to kon ga arimasu.|Ya, ada hitam dan biru tua.
+
+#Bayar dengan aplikasi
+A|スマホで払えますか。|sumaho de haraemasu ka.|Bisa bayar pakai ponsel?
+店員|はい、QRコード決済が使えます。|hai, kyuuaaru koodo kessai ga tsukaemasu.|Ya, bisa bayar dengan kode QR.
+A|じゃあ、それでお願いします。|jaa, sore de onegaishimasu.|Kalau begitu, pakai itu saja.
+
+#Kartu poin
+店員|ポイントカードはお持ちですか。|pointo kaado wa omochi desu ka.|Anda punya kartu poin?
+A|いいえ、持っていません。|iie, motte imasen.|Tidak, saya tidak punya.
+店員|お作りしましょうか。無料です。|otsukuri shimashou ka. muryou desu.|Mau dibuatkan? Gratis.
+A|じゃあ、お願いします。|jaa, onegaishimasu.|Kalau begitu, tolong.
+
+#Barang rusak
+A|この電子レンジ、もう動かなくなりました。|kono denshi renji, mou ugokanaku narimashita.|Microwave ini sudah tidak berfungsi.
+店員|保証書はありますか。|hoshousho wa arimasu ka.|Ada kartu garansinya?
+A|はい、去年の十月に買いました。|hai, kyonen no juugatsu ni kaimashita.|Ya, saya beli Oktober tahun lalu.
+店員|保証期間内なので、無料で修理します。|hoshou kikannai na node, muryou de shuuri shimasu.|Masih dalam masa garansi, jadi diperbaiki gratis.
+
+#Belanja online
+A|ネットで買った物がまだ届きません。|netto de katta mono ga mada todokimasen.|Barang yang saya beli online belum sampai.
+B|追跡番号で調べてみた？|tsuiseki bangou de shirabete mita?|Sudah cek dengan nomor resi?
+A|はい、まだ倉庫にあるみたいです。|hai, mada souko ni aru mitai desu.|Ya, sepertinya masih di gudang.
+B|お店に問い合わせたほうがいいよ。|omise ni toiawaseta hou ga ii yo.|Sebaiknya tanyakan ke tokonya.
+
+#Membeli sayuran
+A|このキャベツ、半分でも買えますか。|kono kyabetsu, hanbun demo kaemasu ka.|Kubis ini bisa dibeli setengah?
+店員|はい、半分は百円です。|hai, hanbun wa hyaku en desu.|Ya, setengahnya seratus yen.
+A|じゃあ、半分ください。|jaa, hanbun kudasai.|Kalau begitu, setengah saja.
+
+#Toko obat
+A|風邪薬はどれがいいですか。|kazegusuri wa dore ga ii desu ka.|Obat flu yang bagus yang mana?
+店員|熱と喉の痛みがあるなら、これがいいですよ。|netsu to nodo no itami ga aru nara, kore ga ii desu yo.|Kalau demam dan sakit tenggorokan, ini bagus.
+A|眠くなりますか。|nemuku narimasu ka.|Bikin mengantuk?
+店員|少しなるかもしれません。|sukoshi naru kamo shiremasen.|Mungkin sedikit.
+
+#Membeli perabot
+A|小さい机を探しているんですが。|chiisai tsukue o sagashite irun desu ga.|Saya mencari meja kecil.
+店員|こちらは組み立て式で、三千九百八十円です。|kochira wa kumitateshiki de, sanzen kyuuhyaku hachijuu en desu.|Yang ini harus dirakit, tiga ribu sembilan ratus delapan puluh yen.
+A|配達してもらえますか。|haitatsu shite moraemasu ka.|Bisa diantar?
+店員|はい、五百円で配達できます。|hai, gohyaku en de haitatsu dekimasu.|Ya, bisa diantar dengan lima ratus yen.
+
+#Membeli tiket konser
+A|コンサートのチケットはまだありますか。|konsaato no chiketto wa mada arimasu ka.|Tiket konsernya masih ada?
+係員|立ち見なら残っています。|tachimi nara nokotte imasu.|Kalau tiket berdiri masih ada.
+A|じゃあ、二枚お願いします。|jaa, nimai onegaishimasu.|Kalau begitu, dua lembar.
+
+#Barang tidak ada stok
+A|このシャンプーはもうないんですか。|kono shanpuu wa mou nain desu ka.|Sampo ini sudah tidak ada?
+店員|すみません、売り切れです。来週入荷します。|sumimasen, urikire desu. raishuu nyuuka shimasu.|Maaf, sudah habis. Minggu depan ada stok lagi.
+A|取り置きできますか。|torioki dekimasu ka.|Bisa disisihkan untuk saya?
+店員|はい、お名前をお願いします。|hai, onamae o onegaishimasu.|Ya, boleh minta namanya.
+
+#Belanja kebutuhan bulanan
+A|今月の買い物リストを作ろう。|kongetsu no kaimono risuto o tsukurou.|Ayo buat daftar belanja bulan ini.
+B|お米、洗剤、トイレットペーパー……。|okome, senzai, toiretto peepaa...|Beras, deterjen, tisu toilet...
+A|しょうゆもなくなりそうだよ。|shouyu mo nakunarisou da yo.|Kecap asin juga hampir habis.
+
+#Membeli payung
+A|急に雨が降ってきた。傘を買わなきゃ。|kyuu ni ame ga futte kita. kasa o kawanakya.|Tiba-tiba hujan. Harus beli payung.
+B|コンビニで五百円で売ってるよ。|konbini de gohyaku en de utteru yo.|Di minimarket dijual lima ratus yen.
+A|じゃあ、そこで買おう。|jaa, soko de kaou.|Kalau begitu, beli di sana.
+
+#Mencoba kacamata
+A|眼鏡を作りたいんですが。|megane o tsukuritain desu ga.|Saya ingin membuat kacamata.
+店員|まず、視力を測りましょう。|mazu, shiryoku o hakarimashou.|Pertama, mari ukur penglihatan Anda.
+A|どのくらいでできますか。|dono kurai de dekimasu ka.|Berapa lama jadinya?
+店員|一時間ぐらいでお渡しできます。|ichijikan gurai de owatashi dekimasu.|Bisa diserahkan dalam sekitar satu jam.
+
+#Belanja di pasar
+A|このりんご、一つ見てもいいですか。|kono ringo, hitotsu mite mo ii desu ka.|Boleh lihat satu apel ini?
+店員|どうぞ。今朝とれたばかりですよ。|douzo. kesa toreta bakari desu yo.|Silakan. Baru dipetik tadi pagi.
+A|五つください。|itsutsu kudasai.|Minta lima.
+店員|おまけで一つ入れておきますね。|omake de hitotsu irete okimasu ne.|Saya tambahkan satu sebagai bonus.
+
+#Mencari elektronik
+A|炊飯器を探しています。一人暮らし用です。|suihanki o sagashite imasu. hitorigurashi you desu.|Saya mencari penanak nasi untuk hidup sendiri.
+店員|三合炊きのものがおすすめです。|sangou daki no mono ga osusume desu.|Saya sarankan yang kapasitas tiga gelas.
+A|一番安いのはどれですか。|ichiban yasui no wa dore desu ka.|Yang paling murah yang mana?
+店員|こちらで四千円です。|kochira de yonsen en desu.|Yang ini, empat ribu yen.
+
+#Tas belanja sendiri
+店員|レジ袋はご利用ですか。三円です。|rejibukuro wa goriyou desu ka. san en desu.|Perlu kantong belanja? Tiga yen.
+A|いいえ、自分の袋があります。|iie, jibun no fukuro ga arimasu.|Tidak, saya bawa kantong sendiri.
+店員|ご協力ありがとうございます。|gokyouryoku arigatou gozaimasu.|Terima kasih atas kerja samanya.
+
+#Membeli kartu SIM
+A|プリペイドのSIMカードはありますか。|puripeido no shimu kaado wa arimasu ka.|Ada kartu SIM prabayar?
+店員|はい、データだけのものがあります。|hai, deeta dake no mono ga arimasu.|Ya, ada yang khusus data.
+A|十ギガでいくらですか。|juu giga de ikura desu ka.|Sepuluh giga berapa?
+店員|三千円です。|sanzen en desu.|Tiga ribu yen.
+
+#Antre di kasir
+A|すみません、最後尾はここですか。|sumimasen, saikoubi wa koko desu ka.|Permisi, antrean paling belakang di sini?
+B|はい、そうです。|hai, sou desu.|Ya, betul.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Membeli bunga
+A|お見舞い用の花をください。|omimai you no hana o kudasai.|Saya minta bunga untuk menjenguk orang sakit.
+店員|ご予算はいくらぐらいですか。|goyosan wa ikura gurai desu ka.|Anggarannya kira-kira berapa?
+A|二千円ぐらいでお願いします。|nisen en gurai de onegaishimasu.|Sekitar dua ribu yen.
+店員|明るい色でお作りしますね。|akarui iro de otsukuri shimasu ne.|Saya buatkan dengan warna cerah, ya.
+
+#Jam buka toko
+A|このお店は何時に閉まりますか。|kono omise wa nanji ni shimarimasu ka.|Toko ini tutup jam berapa?
+店員|夜十時です。|yoru juuji desu.|Jam sepuluh malam.
+A|日曜日も同じですか。|nichiyoubi mo onaji desu ka.|Hari Minggu juga sama?
+店員|日曜日は八時までです。|nichiyoubi wa hachiji made desu.|Hari Minggu sampai jam delapan.

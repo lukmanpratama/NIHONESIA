@@ -17,8 +17,8 @@ Aplikasi ini dibuat terutama untuk pekerja dan pelajar Indonesia di Jepang. Sela
 | **活 Katsuyō** | **500 kata kerja** dengan **15 bentuk perubahan** (ます, ません, ました, ない, た, なかった, て, たい, potensial, ajakan, ば, perintah, pasif, kausatif), masing-masing lengkap dengan kanji, kana, romaji, dan **arti**. Ada juga penjelasan Katsuyō vs Bunpō dan aturan per kelompok (Godan, Ichidan, tidak beraturan). | Ubah bentuk, arti bentuk, kelompok kata kerja |
 | **法 Bunpo** | **273 pola tata bahasa N5–N1**, masing-masing dengan **contoh kalimat** (kanji, romaji, arti). Ada juga perbandingan pola yang mirip dan panduan urutan belajar. | Pola → arti, arti → pola, **isi kalimat** (isi bagian yang kosong ala Duolingo), isi partikel |
 | **文 Bun** | **274 kalimat sehari-hari** dalam 15 kategori: salam, perkenalan, tempat kerja, belanja, makan, transportasi, kesehatan, telepon, darurat, dan lain-lain. | Jepang → arti, **arti → Jepang**, 🧩 susun kalimat |
-| **話 Kaiwa** | **43 dialog** dalam 10 kategori: perkenalan, telepon, pekerjaan, sekolah, liburan, makan, belanja, tempat umum, sehari-hari, dan darurat. | Arti kalimat, kalimat berikutnya |
-| **🧩 Teka-teki** | **Susun ala Duolingo**: susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. Ada juga tebak teka-teki Jepang. | Semua mode susun |
+| **話 Kaiwa** | **500 dialog** (1.801 kalimat) dalam 16 kategori: perkenalan, hubungan & perasaan, telepon, pekerjaan, sekolah, wawancara & administrasi, liburan & wisata, transportasi, makan & minum, belanja, tempat umum, kesehatan, sehari-hari, cuaca & musim, hobi, dan darurat. | Arti kalimat, arti → Jepang, kalimat berikutnya (arti soal & jawaban ditampilkan), lengkapi kalimat, 🎧 dengarkan, 🧩 susun |
+| **🧩 Teka-teki** | **Susun ala Duolingo**: susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. | Semua mode susun |
 
 ### Fitur di semua menu
 
@@ -58,7 +58,7 @@ node build.js
 | `src/kanji.txt` | Kanji. `@Kategori` = kategori. | `漢\|kun.yomi\|ON,YOMI\|arti\|N5` |
 | `src/bunpo.txt` | Pola tata bahasa. `@N5\|judul\|fokus`, `#Bagian`. Bagian pola dalam contoh ditandai `{…}`. | `pola\|romaji\|arti\|contoh {pola}。\|romaji\|arti` |
 | `src/bun.txt` | Kalimat sehari-hari. `@Kategori`. | `日本語。\|romaji\|arti` |
-| `src/kaiwa.txt` | Dialog. `@Kategori`, `#Judul dialog`. | `Pembicara\|日本語。\|romaji\|arti` |
+| `src/kaiwa/*.txt` | Dialog, dibagi per file. `@Kategori`, `#Judul dialog`. | `Pembicara\|日本語。\|romaji\|arti` |
 | `src/template.html` | Tampilan dan logika aplikasi. | — |
 
 Catatan:
@@ -80,7 +80,7 @@ src/
   kanji.txt         ← daftar kanji per kategori
   bunpo.txt         ← pola tata bahasa N5–N1 + contoh
   bun.txt           ← kalimat sehari-hari
-  kaiwa.txt         ← dialog percakapan
+  kaiwa/*.txt       ← 500 dialog percakapan per kategori
   kanjivg/          ← cache data urutan goresan (KanjiVG)
 ```
 

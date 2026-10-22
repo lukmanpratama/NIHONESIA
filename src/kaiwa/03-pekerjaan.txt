@@ -1,0 +1,297 @@
+// Dialog tambahan: Pekerjaan (pabrik, inspeksi, kantor)
+
+@Pekerjaan
+#Apel pagi
+班長|おはようございます。今日の目標は千二百足です。|ohayou gozaimasu. kyou no mokuhyou wa sen nihyaku soku desu.|Selamat pagi. Target hari ini seribu dua ratus pasang.
+全員|おはようございます！|ohayou gozaimasu!|Selamat pagi!
+班長|安全第一で、よろしくお願いします。|anzen daiichi de, yoroshiku onegaishimasu.|Utamakan keselamatan, mohon kerja samanya.
+
+#Menanyakan cara kerja mesin
+A|すみません、この機械の使い方を教えてください。|sumimasen, kono kikai no tsukaikata o oshiete kudasai.|Permisi, tolong ajari cara memakai mesin ini.
+B|まず、この緑のボタンを押します。|mazu, kono midori no botan o oshimasu.|Pertama, tekan tombol hijau ini.
+B|止めるときは、赤いボタンです。|tomeru toki wa, akai botan desu.|Kalau mau menghentikan, tombol merah.
+A|分かりました。やってみます。|wakarimashita. yatte mimasu.|Mengerti. Saya coba.
+
+#Menemukan noda
+A|班長、この靴に汚れがあります。|hanchou, kono kutsu ni yogore ga arimasu.|Ketua regu, sepatu ini ada nodanya.
+B|どこですか。|doko desu ka.|Di mana?
+A|ここ、つま先のところです。|koko, tsumasaki no tokoro desu.|Di sini, di bagian ujung jari.
+B|拭いて取れなかったら、不良品の箱に入れてください。|fuite torenakattara, furyouhin no hako ni irete kudasai.|Kalau tidak hilang setelah dilap, masukkan ke kotak produk cacat.
+
+#Jahitan lepas
+A|縫い目がほつれています。|nuime ga hotsurete imasu.|Jahitannya terlepas.
+B|何足ありましたか。|nansoku arimashita ka.|Ada berapa pasang?
+A|三足です。|sanzoku desu.|Tiga pasang.
+B|縫製のラインに報告します。|housei no rain ni houkoku shimasu.|Saya akan melapor ke jalur jahit.
+
+#Ukuran kiri kanan berbeda
+A|この靴、左右のサイズが違います。|kono kutsu, sayuu no saizu ga chigaimasu.|Sepatu ini ukuran kiri dan kanannya berbeda.
+B|本当ですね。左が二十五、右が二十六です。|hontou desu ne. hidari ga nijuugo, migi ga nijuuroku desu.|Benar. Kiri 25, kanan 26.
+A|どうしましょうか。|dou shimashou ka.|Harus bagaimana?
+B|ロット番号を記録して、別に置いてください。|rotto bangou o kiroku shite, betsu ni oite kudasai.|Catat nomor lotnya, lalu taruh terpisah.
+
+#Lem terkelupas
+A|ソールが剥がれそうです。|sooru ga hagaresou desu.|Solnya hampir terkelupas.
+B|接着が弱いですね。|secchaku ga yowai desu ne.|Lemnya lemah, ya.
+A|ほかの靴も確認しましょうか。|hoka no kutsu mo kakunin shimashou ka.|Perlu saya cek sepatu yang lain juga?
+B|はい、同じロットを全部見てください。|hai, onaji rotto o zenbu mite kudasai.|Ya, periksa semua di lot yang sama.
+
+#Bahan habis
+A|すみません、箱がなくなりました。|sumimasen, hako ga nakunarimashita.|Maaf, kotaknya habis.
+B|倉庫から持ってきてください。|souko kara motte kite kudasai.|Tolong ambil dari gudang.
+A|何個持ってきますか。|nanko motte kimasu ka.|Ambil berapa?
+B|五十個お願いします。|gojukko onegaishimasu.|Lima puluh buah.
+
+#Istirahat siang
+A|もう十二時ですね。お昼にしましょう。|mou juuniji desu ne. ohiru ni shimashou.|Sudah jam dua belas. Ayo makan siang.
+B|今日は何を食べますか。|kyou wa nani o tabemasu ka.|Hari ini makan apa?
+A|食堂の定食にします。|shokudou no teishoku ni shimasu.|Saya pilih paket makan di kantin.
+B|じゃあ、一緒に行きましょう。|jaa, issho ni ikimashou.|Kalau begitu, ayo bersama.
+
+#Minta izin ke toilet
+A|すみません、トイレに行ってもいいですか。|sumimasen, toire ni itte mo ii desu ka.|Permisi, boleh saya ke toilet?
+B|いいですよ。早く戻ってきてくださいね。|ii desu yo. hayaku modotte kite kudasai ne.|Boleh. Cepat kembali, ya.
+A|はい、すぐ戻ります。|hai, sugu modorimasu.|Ya, segera kembali.
+
+#Salah memasukkan produk
+A|すみません、良品を不良品の箱に入れてしまいました。|sumimasen, ryouhin o furyouhin no hako ni irete shimaimashita.|Maaf, saya memasukkan produk bagus ke kotak cacat.
+B|大丈夫です。すぐに戻してください。|daijoubu desu. sugu ni modoshite kudasai.|Tidak apa-apa. Segera kembalikan.
+A|はい。これから気をつけます。|hai. korekara ki o tsukemasu.|Baik. Ke depannya saya akan hati-hati.
+
+#Cuti berbayar
+A|来月、有給休暇を取りたいんですが。|raigetsu, yuukyuu kyuuka o toritain desu ga.|Bulan depan saya ingin mengambil cuti berbayar.
+B|何日ですか。|nannichi desu ka.|Berapa hari?
+A|十日から十四日までの五日間です。|tooka kara juuyokka made no itsukakan desu.|Lima hari, dari tanggal 10 sampai 14.
+B|分かりました。申請書を出してください。|wakarimashita. shinseisho o dashite kudasai.|Baik. Tolong serahkan formulir pengajuannya.
+
+#Pergantian shift
+A|夜勤の人に引き継ぎをお願いします。|yakin no hito ni hikitsugi o onegaishimasu.|Tolong serahterimakan ke orang shift malam.
+B|今日は何かありましたか。|kyou wa nanika arimashita ka.|Hari ini ada kejadian apa?
+A|三号機の調子が少し悪かったです。|sangouki no choushi ga sukoshi warukatta desu.|Mesin nomor tiga kondisinya agak kurang baik.
+B|分かりました。注意して見ます。|wakarimashita. chuui shite mimasu.|Baik. Akan saya awasi.
+
+#Sarung tangan robek
+A|手袋が破れてしまいました。|tebukuro ga yaburete shimaimashita.|Sarung tangan saya robek.
+B|新しいのはロッカーの横にあります。|atarashii no wa rokkaa no yoko ni arimasu.|Yang baru ada di samping loker.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Bekerja lebih cepat
+B|もう少し速くできますか。|mou sukoshi hayaku dekimasu ka.|Bisa sedikit lebih cepat?
+A|はい、頑張ります。|hai, ganbarimasu.|Ya, akan saya usahakan.
+B|でも、品質は落とさないでくださいね。|demo, hinshitsu wa otosanaide kudasai ne.|Tapi jangan sampai kualitasnya turun, ya.
+A|はい、気をつけます。|hai, ki o tsukemasu.|Baik, saya akan hati-hati.
+
+#Mesin mengeluarkan bunyi aneh
+A|この機械から変な音がします。|kono kikai kara hen na oto ga shimasu.|Mesin ini mengeluarkan bunyi aneh.
+B|すぐに止めてください。|sugu ni tomete kudasai.|Segera hentikan.
+A|止めました。|tomemashita.|Sudah saya hentikan.
+B|整備の人を呼びます。|seibi no hito o yobimasu.|Saya panggil teknisi perawatan.
+
+#Pindah ke jalur lain
+B|今日はBラインを手伝ってもらえますか。|kyou wa bii rain o tetsudatte moraemasu ka.|Hari ini bisa bantu di jalur B?
+A|はい。何をすればいいですか。|hai. nani o sureba ii desu ka.|Ya. Apa yang harus saya kerjakan?
+B|靴ひもを通す作業です。|kutsuhimo o toosu sagyou desu.|Pekerjaan memasang tali sepatu.
+
+#Mengukur dimensi
+A|寸法はどうやって測りますか。|sunpou wa dou yatte hakarimasu ka.|Bagaimana cara mengukur dimensinya?
+B|このゲージを使います。|kono geeji o tsukaimasu.|Pakai alat ukur ini.
+B|赤い線より長かったら不合格です。|akai sen yori nagakattara fugoukaku desu.|Kalau lebih panjang dari garis merah, tidak lolos.
+A|分かりました。|wakarimashita.|Mengerti.
+
+#Sakit saat bekerja
+A|すみません、気分が悪いです。|sumimasen, kibun ga warui desu.|Maaf, saya merasa tidak enak badan.
+B|大丈夫ですか。休憩室で少し休んでください。|daijoubu desu ka. kyuukeishitsu de sukoshi yasunde kudasai.|Tidak apa-apa? Istirahat sebentar di ruang istirahat.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+B|よくならなかったら、早退してもいいですよ。|yoku naranakattara, soutai shite mo ii desu yo.|Kalau tidak membaik, boleh pulang lebih awal.
+
+#Laporan akhir hari
+A|今日の検査数は九百五十足でした。|kyou no kensasuu wa kyuuhyaku gojussoku deshita.|Jumlah yang diperiksa hari ini sembilan ratus lima puluh pasang.
+B|不良はいくつでしたか。|furyou wa ikutsu deshita ka.|Yang cacat berapa?
+A|十二足です。主に傷でした。|juunisoku desu. omo ni kizu deshita.|Dua belas pasang. Kebanyakan goresan.
+B|お疲れ様でした。|otsukaresama deshita.|Terima kasih atas kerja kerasnya.
+
+#Kebersihan area kerja
+B|帰る前に、自分の場所を掃除してください。|kaeru mae ni, jibun no basho o souji shite kudasai.|Sebelum pulang, bersihkan tempat masing-masing.
+A|ゴミはどこに捨てますか。|gomi wa doko ni sutemasu ka.|Sampahnya dibuang di mana?
+B|燃えるゴミは青い箱、プラスチックは黄色い箱です。|moeru gomi wa aoi hako, purasuchikku wa kiiroi hako desu.|Sampah yang bisa dibakar di kotak biru, plastik di kotak kuning.
+
+#Mengecek slip gaji
+A|給料明細の見方が分からないんですが。|kyuuryou meisai no mikata ga wakaranain desu ga.|Saya tidak mengerti cara membaca slip gaji.
+B|これが基本給で、これが残業代です。|kore ga kihonkyuu de, kore ga zangyoudai desu.|Ini gaji pokok, dan ini uang lembur.
+A|この引かれているお金は何ですか。|kono hikarete iru okane wa nan desu ka.|Uang yang dipotong ini apa?
+B|税金と保険料です。|zeikin to hokenryou desu.|Pajak dan iuran asuransi.
+
+#Rapat kecil
+B|最近、傷の不良が増えています。|saikin, kizu no furyou ga fuete imasu.|Akhir-akhir ini produk cacat karena goresan bertambah.
+A|運ぶときにぶつかっているかもしれません。|hakobu toki ni butsukatte iru kamo shiremasen.|Mungkin terbentur saat diangkut.
+B|いい意見ですね。箱の入れ方を変えましょう。|ii iken desu ne. hako no irekata o kaemashou.|Pendapat bagus. Mari ubah cara memasukkan ke kotak.
+
+#Datang terlambat ke kerja
+A|すみません、寝坊して遅れました。|sumimasen, nebou shite okuremashita.|Maaf, saya kesiangan dan terlambat.
+B|次から気をつけてください。|tsugi kara ki o tsukete kudasai.|Lain kali hati-hati.
+A|はい、申し訳ありません。|hai, moushiwake arimasen.|Baik, mohon maaf.
+
+#Menanyakan instruksi yang tidak dimengerti
+A|すみません、「検品」とは何ですか。|sumimasen, "kenpin" to wa nan desu ka.|Permisi, "kenpin" itu apa?
+B|商品をチェックすることです。|shouhin o chekku suru koto desu.|Memeriksa barang.
+A|ああ、検査と同じですね。|aa, kensa to onaji desu ne.|Oh, sama dengan inspeksi, ya.
+
+#Menolak lembur dengan sopan
+B|今日、二時間残業できますか。|kyou, nijikan zangyou dekimasu ka.|Hari ini bisa lembur dua jam?
+A|すみません、今日は病院の予約があって……。|sumimasen, kyou wa byouin no yoyaku ga atte...|Maaf, hari ini saya ada janji di rumah sakit...
+B|そうですか。じゃあ、明日はどうですか。|sou desu ka. jaa, ashita wa dou desu ka.|Begitu. Kalau besok bagaimana?
+A|明日なら大丈夫です。|ashita nara daijoubu desu.|Kalau besok bisa.
+
+#Pelatihan keselamatan
+講師|機械を掃除するときは、必ず電源を切ってください。|kikai o souji suru toki wa, kanarazu dengen o kitte kudasai.|Saat membersihkan mesin, pastikan dayanya dimatikan.
+A|手袋もしますか。|tebukuro mo shimasu ka.|Pakai sarung tangan juga?
+講師|はい、それから保護メガネもかけてください。|hai, sorekara hogo megane mo kakete kudasai.|Ya, lalu pakai juga kacamata pelindung.
+
+#Menanyakan lokasi gudang
+A|倉庫はどこですか。|souko wa doko desu ka.|Gudangnya di mana?
+B|この建物の裏です。|kono tatemono no ura desu.|Di belakang gedung ini.
+A|鍵は必要ですか。|kagi wa hitsuyou desu ka.|Perlu kunci?
+B|事務所で借りてください。|jimusho de karite kudasai.|Pinjam di kantor.
+
+#Melaporkan kecelakaan kecil
+A|指を少し切ってしまいました。|yubi o sukoshi kitte shimaimashita.|Jari saya sedikit teriris.
+B|救急箱を持ってきます。座ってください。|kyuukyuubako o motte kimasu. suwatte kudasai.|Saya ambilkan kotak P3K. Silakan duduk.
+B|あとで事故報告書を書きましょう。|ato de jiko houkokusho o kakimashou.|Nanti kita tulis laporan kecelakaannya.
+
+#Pujian dari atasan
+B|最近、仕事が丁寧になりましたね。|saikin, shigoto ga teinei ni narimashita ne.|Akhir-akhir ini pekerjaanmu jadi lebih rapi.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+B|この調子で頑張ってください。|kono choushi de ganbatte kudasai.|Pertahankan, ya.
+
+#Target tidak tercapai
+B|今日は目標に届きませんでしたね。|kyou wa mokuhyou ni todokimasen deshita ne.|Hari ini target tidak tercapai, ya.
+A|機械が一時間止まっていたからです。|kikai ga ichijikan tomatte ita kara desu.|Karena mesinnya berhenti satu jam.
+B|そうですか。明日は取り戻しましょう。|sou desu ka. ashita wa torimodoshimashou.|Begitu. Besok mari kita kejar.
+
+#Memakai helm
+B|ここではヘルメットをかぶってください。|koko de wa herumetto o kabutte kudasai.|Di sini tolong pakai helm.
+A|すみません、忘れていました。|sumimasen, wasurete imashita.|Maaf, saya lupa.
+B|危ないですから、必ずかぶってくださいね。|abunai desu kara, kanarazu kabutte kudasai ne.|Karena berbahaya, wajib dipakai, ya.
+
+#Menanyakan jadwal minggu depan
+A|来週のシフトはもう出ていますか。|raishuu no shifuto wa mou dete imasu ka.|Jadwal shift minggu depan sudah keluar?
+B|掲示板に貼ってありますよ。|keijiban ni hatte arimasu yo.|Sudah ditempel di papan pengumuman.
+A|ありがとうございます。見てきます。|arigatou gozaimasu. mite kimasu.|Terima kasih. Saya lihat dulu.
+
+#Menghitung stok
+B|在庫を数えてもらえますか。|zaiko o kazoete moraemasu ka.|Bisa tolong hitung stoknya?
+A|はい。全部で何種類ありますか。|hai. zenbu de nanshurui arimasu ka.|Ya. Semuanya ada berapa jenis?
+B|五種類です。数をこの紙に書いてください。|goshurui desu. kazu o kono kami ni kaite kudasai.|Lima jenis. Tulis jumlahnya di kertas ini.
+
+#Kemasan produk
+A|箱に何足入れますか。|hako ni nansoku iremasu ka.|Satu kotak diisi berapa pasang?
+B|十足です。紙で包んでから入れてください。|jussoku desu. kami de tsutsunde kara irete kudasai.|Sepuluh pasang. Bungkus dengan kertas dulu baru dimasukkan.
+A|ラベルはどこに貼りますか。|raberu wa doko ni harimasu ka.|Labelnya ditempel di mana?
+B|箱の右上です。|hako no migiue desu.|Di kanan atas kotak.
+
+#Pengiriman mendesak
+B|このロットは今日中に出荷しなければなりません。|kono rotto wa kyoujuu ni shukka shinakereba narimasen.|Lot ini harus dikirim hari ini juga.
+A|あと何足残っていますか。|ato nansoku nokotte imasu ka.|Masih tersisa berapa pasang?
+B|三百足です。みんなで頑張りましょう。|sanbyakusoku desu. minna de ganbarimashou.|Tiga ratus pasang. Ayo kita kerjakan bersama.
+
+#Komplain dari pelanggan
+B|お客様から、色が違うというクレームがありました。|okyakusama kara, iro ga chigau to iu kureemu ga arimashita.|Ada komplain dari pelanggan bahwa warnanya berbeda.
+A|どのロットですか。|dono rotto desu ka.|Lot yang mana?
+B|先週の黒の二十六センチです。|senshuu no kuro no nijuuroku senchi desu.|Yang hitam ukuran 26 cm minggu lalu.
+A|記録を確認してみます。|kiroku o kakunin shite mimasu.|Akan saya cek catatannya.
+
+#Perbaikan 5S
+B|道具は使ったら元の場所に戻してください。|dougu wa tsukattara moto no basho ni modoshite kudasai.|Setelah dipakai, kembalikan alat ke tempat semula.
+A|はい。場所に名前を書いておくと分かりやすいですね。|hai. basho ni namae o kaite oku to wakariyasui desu ne.|Ya. Kalau tempatnya diberi nama, jadi mudah dimengerti.
+B|いいアイデアですね。やってみましょう。|ii aidea desu ne. yatte mimashou.|Ide bagus. Ayo kita coba.
+
+#Bertanya pada senior
+A|先輩、このシミは不良ですか。|senpai, kono shimi wa furyou desu ka.|Senior, noda ini termasuk cacat?
+B|一センチより小さかったら大丈夫です。|issenchi yori chiisakattara daijoubu desu.|Kalau lebih kecil dari satu senti, tidak apa-apa.
+A|これは五ミリぐらいなので、合格ですね。|kore wa gomiri gurai na node, goukaku desu ne.|Ini sekitar lima mili, jadi lolos, ya.
+
+#Lantai licin
+A|床が濡れていて、滑りやすいです。|yuka ga nurete ite, suberiyasui desu.|Lantainya basah dan licin.
+B|すぐにモップで拭きます。|sugu ni moppu de fukimasu.|Saya segera mengepelnya.
+B|「注意」の看板も置いておきましょう。|"chuui" no kanban mo oite okimashou.|Mari pasang juga papan "awas".
+
+#Kunjungan pelanggan ke pabrik
+B|明日、お客様が工場を見学に来ます。|ashita, okyakusama ga koujou o kengaku ni kimasu.|Besok pelanggan akan datang meninjau pabrik.
+A|何か準備することはありますか。|nanika junbi suru koto wa arimasu ka.|Ada yang perlu disiapkan?
+B|作業場をきれいにして、制服をきちんと着てください。|sagyouba o kirei ni shite, seifuku o kichinto kite kudasai.|Bersihkan area kerja dan pakai seragam dengan rapi.
+
+#Kenaikan gaji
+A|来月から給料が上がるそうですね。|raigetsu kara kyuuryou ga agaru sou desu ne.|Katanya mulai bulan depan gaji naik, ya.
+B|はい、少しだけですが。|hai, sukoshi dake desu ga.|Ya, meski hanya sedikit.
+A|うれしいですね。もっと頑張ります。|ureshii desu ne. motto ganbarimasu.|Senang, ya. Saya akan lebih giat.
+
+#Menyerahkan dokumen
+A|この書類、どこに出せばいいですか。|kono shorui, doko ni daseba ii desu ka.|Dokumen ini diserahkan ke mana?
+B|事務所の田村さんに渡してください。|jimusho no tamura-san ni watashite kudasai.|Serahkan ke Bu Tamura di kantor.
+A|分かりました。|wakarimashita.|Baik.
+
+#Menanyakan cara membaca label
+A|このラベルの記号は何ですか。|kono raberu no kigou wa nan desu ka.|Simbol di label ini apa?
+B|Aは良品、Bは手直し、Cは廃棄です。|ee wa ryouhin, bii wa tenaoshi, shii wa haiki desu.|A berarti bagus, B diperbaiki, C dibuang.
+A|なるほど。覚えます。|naruhodo. oboemasu.|Begitu. Akan saya ingat.
+
+#Menegur rekan dengan sopan
+A|すみません、ここは禁煙ですよ。|sumimasen, koko wa kin'en desu yo.|Maaf, di sini dilarang merokok.
+B|あ、知りませんでした。すみません。|a, shirimasen deshita. sumimasen.|Oh, saya tidak tahu. Maaf.
+A|喫煙所は外にあります。|kitsuenjo wa soto ni arimasu.|Tempat merokok ada di luar.
+
+#Selesai lebih cepat
+A|頼まれた作業が終わりました。|tanomareta sagyou ga owarimashita.|Pekerjaan yang diminta sudah selesai.
+B|早いですね。じゃあ、箱詰めを手伝ってください。|hayai desu ne. jaa, hakozume o tetsudatte kudasai.|Cepat sekali. Kalau begitu, bantu mengemas ke kotak.
+A|はい、分かりました。|hai, wakarimashita.|Baik.
+
+#Mengecek warna produk
+A|この色、見本と少し違う気がします。|kono iro, mihon to sukoshi chigau ki ga shimasu.|Warna ini rasanya sedikit beda dengan contoh.
+B|明るいところで比べてみましょう。|akarui tokoro de kurabete mimashou.|Mari bandingkan di tempat terang.
+B|確かに少し薄いですね。班長に見せましょう。|tashika ni sukoshi usui desu ne. hanchou ni misemashou.|Memang sedikit lebih pucat. Ayo tunjukkan ke ketua regu.
+
+#Mengisi daftar hadir
+B|来たら、タイムカードを押してください。|kitara, taimu kaado o oshite kudasai.|Setelah datang, tekan kartu absen.
+A|忘れたらどうなりますか。|wasuretara dou narimasu ka.|Kalau lupa bagaimana?
+B|事務所に言って、手で書いてもらいます。|jimusho ni itte, te de kaite moraimasu.|Bilang ke kantor, nanti ditulis manual.
+
+#Menyambut karyawan baru
+A|今日から入ったアグスさんに仕事を教えてあげてください。|kyou kara haitta agusu-san ni shigoto o oshiete agete kudasai.|Tolong ajari pekerjaan kepada Agus yang mulai hari ini.
+B|はい。アグスさん、まずは見ていてください。|hai. agusu-san, mazu wa mite ite kudasai.|Baik. Agus, perhatikan dulu, ya.
+C|はい、よろしくお願いします。|hai, yoroshiku onegaishimasu.|Baik, mohon bimbingannya.
+
+#Pemeriksaan kesehatan perusahaan
+B|来週、健康診断があります。|raishuu, kenkou shindan ga arimasu.|Minggu depan ada pemeriksaan kesehatan.
+A|朝ご飯は食べてもいいですか。|asagohan wa tabete mo ii desu ka.|Boleh sarapan?
+B|いいえ、前の晩九時から何も食べないでください。|iie, mae no ban kuji kara nani mo tabenaide kudasai.|Tidak, jangan makan apa pun sejak jam sembilan malam sebelumnya.
+
+#Tidak bisa masuk kerja karena urusan
+A|来週の金曜日、役所に行かなければならないので休みたいです。|raishuu no kin'youbi, yakusho ni ikanakereba naranai node yasumitai desu.|Jumat depan saya harus ke kantor pemerintah, jadi ingin libur.
+B|午前だけでも来られませんか。|gozen dake demo koraremasen ka.|Tidak bisa datang setidaknya pagi saja?
+A|午後から来られます。|gogo kara koraremasu.|Saya bisa datang mulai siang.
+B|じゃあ、半休にしましょう。|jaa, hankyuu ni shimashou.|Kalau begitu, ambil cuti setengah hari.
+
+#Mengoperasikan forklift
+A|フォークリフトの免許は持っていますか。|fookurifuto no menkyo wa motte imasu ka.|Kamu punya izin mengemudi forklift?
+B|いいえ、持っていません。|iie, motte imasen.|Tidak, saya tidak punya.
+A|じゃあ、運転はしないでください。会社で講習を受けられますよ。|jaa, unten wa shinaide kudasai. kaisha de koushuu o ukeraremasu yo.|Kalau begitu jangan mengemudikannya. Bisa ikut kursus di perusahaan, lho.
+
+#Musim panas di pabrik
+A|工場の中、暑いですね。|koujou no naka, atsui desu ne.|Di dalam pabrik panas, ya.
+B|こまめに水を飲んでください。熱中症に気をつけて。|komame ni mizu o nonde kudasai. necchuushou ni ki o tsukete.|Sering-seringlah minum air. Hati-hati sengatan panas.
+A|はい、ありがとうございます。|hai, arigatou gozaimasu.|Baik, terima kasih.
+
+#Akhir tahun
+B|今年もお疲れ様でした。|kotoshi mo otsukaresama deshita.|Terima kasih atas kerja kerasnya tahun ini.
+A|お世話になりました。来年もよろしくお願いします。|osewa ni narimashita. rainen mo yoroshiku onegaishimasu.|Terima kasih atas bimbingannya. Mohon kerja samanya tahun depan.
+B|よいお年を。|yoi otoshi o.|Selamat menyambut tahun baru.
+
+#Kontrak diperpanjang
+B|ブディさん、契約を一年延長したいと思っています。|budi-san, keiyaku o ichinen enchou shitai to omotte imasu.|Budi, kami ingin memperpanjang kontrakmu satu tahun.
+A|本当ですか。ありがとうございます！|hontou desu ka. arigatou gozaimasu!|Benarkah? Terima kasih banyak!
+B|これからもよろしくお願いします。|korekara mo yoroshiku onegaishimasu.|Mohon kerja samanya ke depan.
+
+#Rekan tidak masuk
+A|今日、ドニさんは休みですか。|kyou, doni-san wa yasumi desu ka.|Hari ini Doni libur?
+B|はい、熱があるそうです。|hai, netsu ga aru sou desu.|Ya, katanya demam.
+B|だから、今日は二人でこのラインをお願いします。|dakara, kyou wa futari de kono rain o onegaishimasu.|Jadi, hari ini tolong jalankan jalur ini berdua.

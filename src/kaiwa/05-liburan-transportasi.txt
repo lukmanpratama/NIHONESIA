@@ -1,0 +1,357 @@
+// Dialog tambahan: Liburan & Wisata, Transportasi
+
+@Liburan & Wisata
+#Rencana ke Tokyo
+A|週末、東京へ遊びに行きます。|shuumatsu, toukyou e asobi ni ikimasu.|Akhir pekan saya mau jalan-jalan ke Tokyo.
+B|どこへ行く予定ですか。|doko e iku yotei desu ka.|Rencananya ke mana?
+A|浅草とスカイツリーに行きたいです。|asakusa to sukaitsurii ni ikitai desu.|Saya ingin ke Asakusa dan Skytree.
+B|浅草のお寺はきれいですよ。|asakusa no otera wa kirei desu yo.|Kuil di Asakusa indah, lho.
+
+#Melihat bunga sakura
+A|もうすぐお花見の季節ですね。|mou sugu ohanami no kisetsu desu ne.|Sebentar lagi musim melihat bunga sakura, ya.
+B|一緒に公園でお花見をしませんか。|issho ni kouen de ohanami o shimasen ka.|Mau melihat sakura bersama di taman?
+A|いいですね。お弁当を作って行きましょう。|ii desu ne. obentou o tsukutte ikimashou.|Boleh. Ayo buat bekal dan pergi.
+
+#Di tempat wisata: meminta difoto
+A|すみません、写真を撮っていただけませんか。|sumimasen, shashin o totte itadakemasen ka.|Permisi, bisakah Anda memotret kami?
+B|いいですよ。はい、チーズ。|ii desu yo. hai, chiizu.|Boleh. Siap, cheese.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+B|もう一枚撮りましょうか。|mou ichimai torimashou ka.|Mau saya foto sekali lagi?
+
+#Membeli oleh-oleh
+A|会社の人にお土産を買いたいんですが。|kaisha no hito ni omiyage o kaitain desu ga.|Saya ingin membeli oleh-oleh untuk orang kantor.
+店員|このお菓子はいかがですか。個包装で配りやすいですよ。|kono okashi wa ikaga desu ka. kohousou de kubariyasui desu yo.|Bagaimana dengan kue ini? Dikemas satuan, jadi mudah dibagikan.
+A|何個入っていますか。|nanko haitte imasu ka.|Isinya berapa buah?
+店員|二十個入りです。|nijukko iri desu.|Isi dua puluh buah.
+
+#Di penginapan tradisional
+仲居|お部屋はこちらです。夕食は六時にお持ちします。|oheya wa kochira desu. yuushoku wa rokuji ni omochi shimasu.|Kamarnya di sini. Makan malam kami antar jam enam.
+A|温泉は何時まで入れますか。|onsen wa nanji made hairemasu ka.|Onsen bisa dipakai sampai jam berapa?
+仲居|夜十二時までです。朝は五時からです。|yoru juuniji made desu. asa wa goji kara desu.|Sampai jam dua belas malam. Pagi mulai jam lima.
+
+#Aturan onsen
+A|温泉に入るとき、何か注意することはありますか。|onsen ni hairu toki, nanika chuui suru koto wa arimasu ka.|Apa yang perlu diperhatikan saat masuk onsen?
+B|入る前に体を洗ってください。|hairu mae ni karada o aratte kudasai.|Cuci badan sebelum masuk.
+B|タオルはお湯に入れないでくださいね。|taoru wa oyu ni irenaide kudasai ne.|Jangan masukkan handuk ke dalam air, ya.
+
+#Cerita perjalanan ke Kyoto
+A|京都はどうでしたか。|kyouto wa dou deshita ka.|Bagaimana Kyoto?
+B|紅葉がとてもきれいでした。|kouyou ga totemo kirei deshita.|Daun musim gugurnya sangat indah.
+A|人は多かったですか。|hito wa ookatta desu ka.|Apakah ramai?
+B|はい、すごく込んでいました。|hai, sugoku konde imashita.|Ya, sangat ramai.
+
+#Mendaki Gunung Fuji
+A|夏に富士山に登りたいです。|natsu ni fujisan ni noboritai desu.|Saya ingin mendaki Gunung Fuji di musim panas.
+B|頂上はとても寒いですよ。|choujou wa totemo samui desu yo.|Di puncak sangat dingin, lho.
+A|何を持って行けばいいですか。|nani o motte ikeba ii desu ka.|Sebaiknya bawa apa?
+B|上着と水と懐中電灯を持って行ってください。|uwagi to mizu to kaichuu dentou o motte itte kudasai.|Bawalah jaket, air, dan senter.
+
+#Kehilangan arah di kota wisata
+A|すみません、金閣寺はどちらですか。|sumimasen, kinkakuji wa dochira desu ka.|Permisi, Kinkakuji ke arah mana?
+B|あのバスに乗って、三つ目で降りてください。|ano basu ni notte, mittsume de orite kudasai.|Naik bus itu, turun di halte ketiga.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Pantai di musim panas
+A|今度の休み、海に行かない？|kondo no yasumi, umi ni ikanai?|Libur nanti mau ke pantai?
+B|いいね！泳げるかな。|ii ne! oyogeru ka na.|Boleh! Bisa berenang tidak, ya?
+A|八月なら水も温かいよ。|hachigatsu nara mizu mo atatakai yo.|Kalau Agustus airnya juga hangat.
+
+#Pulang kampung saat libur
+A|お正月は国に帰りますか。|oshougatsu wa kuni ni kaerimasu ka.|Tahun baru pulang ke negara asal?
+B|はい、二週間帰ります。|hai, nishuukan kaerimasu.|Ya, pulang dua minggu.
+A|飛行機のチケットはもう取りましたか。|hikouki no chiketto wa mou torimashita ka.|Tiket pesawatnya sudah dipesan?
+B|はい、先月予約しました。|hai, sengetsu yoyaku shimashita.|Ya, sudah saya pesan bulan lalu.
+
+#Di museum
+A|入場料はいくらですか。|nyuujouryou wa ikura desu ka.|Tiket masuknya berapa?
+受付|大人一人千二百円です。|otona hitori sen nihyaku en desu.|Dewasa seribu dua ratus yen per orang.
+A|中で写真を撮ってもいいですか。|naka de shashin o totte mo ii desu ka.|Boleh memotret di dalam?
+受付|フラッシュを使わなければ大丈夫です。|furasshu o tsukawanakereba daijoubu desu.|Boleh asal tidak memakai lampu kilat.
+
+#Di kebun binatang
+A|パンダはどこにいますか。|panda wa doko ni imasu ka.|Pandanya ada di mana?
+B|東のエリアです。今は寝ているかもしれません。|higashi no eria desu. ima wa nete iru kamo shiremasen.|Di area timur. Sekarang mungkin sedang tidur.
+A|残念。でも、見に行ってみます。|zannen. demo, mi ni itte mimasu.|Sayang. Tapi saya coba melihat.
+
+#Taman hiburan
+A|ジェットコースターに乗る？|jetto koosutaa ni noru?|Mau naik roller coaster?
+B|怖いからやめておく。|kowai kara yamete oku.|Takut, aku tidak ikut.
+A|じゃあ、観覧車に乗ろう。|jaa, kanransha ni norou.|Kalau begitu, ayo naik bianglala.
+B|それならいいよ。|sore nara ii yo.|Kalau itu boleh.
+
+#Festival musim panas
+A|今夜、花火大会があるよ。|kon'ya, hanabi taikai ga aru yo.|Malam ini ada festival kembang api.
+B|浴衣を着て行こうか。|yukata o kite ikou ka.|Pakai yukata, yuk?
+A|いいね。屋台で何か食べよう。|ii ne. yatai de nanika tabeyou.|Boleh. Ayo makan sesuatu di kedai.
+
+#Merencanakan anggaran perjalanan
+A|大阪旅行、全部でいくらぐらいかかるかな。|oosaka ryokou, zenbu de ikura gurai kakaru ka na.|Jalan-jalan ke Osaka, total kira-kira habis berapa ya?
+B|新幹線とホテルで三万円ぐらいだと思う。|shinkansen to hoteru de sanman en gurai da to omou.|Shinkansen dan hotel kira-kira tiga puluh ribu yen.
+A|夜行バスなら安くなるね。|yakou basu nara yasuku naru ne.|Kalau naik bus malam jadi lebih murah, ya.
+
+#Memesan hotel
+A|二月十日から二泊、シングルルームは空いていますか。|nigatsu tooka kara nihaku, shinguru ruumu wa aite imasu ka.|Apakah ada kamar single kosong dua malam mulai 10 Februari?
+フロント|はい、ございます。朝食付きにしますか。|hai, gozaimasu. choushoku tsuki ni shimasu ka.|Ya, ada. Mau termasuk sarapan?
+A|はい、お願いします。|hai, onegaishimasu.|Ya, tolong.
+
+#Check-out hotel
+A|チェックアウトをお願いします。|chekkuauto o onegaishimasu.|Saya mau check-out.
+フロント|お部屋の冷蔵庫はご利用になりましたか。|oheya no reizouko wa goriyou ni narimashita ka.|Apakah Anda memakai kulkas di kamar?
+A|いいえ、使っていません。|iie, tsukatte imasen.|Tidak, saya tidak memakainya.
+フロント|ありがとうございました。またお越しください。|arigatou gozaimashita. mata okoshi kudasai.|Terima kasih. Silakan datang kembali.
+
+#Menitipkan koper
+A|チェックアウトの後、荷物を預かってもらえますか。|chekkuauto no ato, nimotsu o azukatte moraemasu ka.|Setelah check-out, bisa saya titip barang?
+フロント|はい、何時ごろ取りに来られますか。|hai, nanji goro tori ni koraremasu ka.|Ya, kira-kira jam berapa akan diambil?
+A|四時ごろです。|yoji goro desu.|Sekitar jam empat.
+
+#Bertanya tempat makan enak
+A|この辺でおいしい店を知っていますか。|kono hen de oishii mise o shitte imasu ka.|Tahu toko makanan enak di sekitar sini?
+B|駅前のラーメン屋が有名ですよ。|ekimae no raamen'ya ga yuumei desu yo.|Kedai ramen depan stasiun terkenal.
+A|ハラールの店はありますか。|haraaru no mise wa arimasu ka.|Ada toko halal?
+B|あの角を曲がった所にトルコ料理の店があります。|ano kado o magatta tokoro ni toruko ryouri no mise ga arimasu.|Setelah belok di sudut itu ada restoran Turki.
+
+#Musim salju di Hokkaido
+A|雪祭りに行ったことがありますか。|yuki matsuri ni itta koto ga arimasu ka.|Pernah ke festival salju?
+B|はい、去年行きました。大きな雪の像がありました。|hai, kyonen ikimashita. ookina yuki no zou ga arimashita.|Ya, tahun lalu. Ada patung salju besar.
+A|寒くなかったですか。|samuku nakatta desu ka.|Tidak dingin?
+B|とても寒かったですが、楽しかったです。|totemo samukatta desu ga, tanoshikatta desu.|Dingin sekali, tapi menyenangkan.
+
+#Memakai pemandu wisata
+A|ガイドツアーはありますか。|gaido tsuaa wa arimasu ka.|Ada tur dengan pemandu?
+受付|はい、一日二回、十時と二時です。|hai, ichinichi nikai, juuji to niji desu.|Ya, dua kali sehari, jam sepuluh dan jam dua.
+A|英語のガイドもいますか。|eigo no gaido mo imasu ka.|Ada pemandu berbahasa Inggris juga?
+受付|午後の回だけです。|gogo no kai dake desu.|Hanya untuk sesi siang.
+
+#Memberi oleh-oleh ke rekan
+A|旅行のお土産です。皆さんでどうぞ。|ryokou no omiyage desu. minasan de douzo.|Ini oleh-oleh perjalanan. Silakan untuk semuanya.
+B|わあ、ありがとう。どこへ行ったの？|waa, arigatou. doko e itta no?|Wah, terima kasih. Kamu pergi ke mana?
+A|広島です。もみじまんじゅうです。|hiroshima desu. momiji manjuu desu.|Hiroshima. Ini kue momiji manju.
+
+#Cuaca buruk saat liburan
+A|明日、台風が来るそうです。|ashita, taifuu ga kuru sou desu.|Katanya besok topan datang.
+B|旅行は延期したほうがいいですね。|ryokou wa enki shita hou ga ii desu ne.|Sebaiknya perjalanannya ditunda, ya.
+A|そうですね。ホテルに電話します。|sou desu ne. hoteru ni denwa shimasu.|Betul. Saya telepon hotelnya.
+
+#Wisata kuil
+A|お参りの仕方を教えてください。|omairi no shikata o oshiete kudasai.|Tolong ajari cara berdoa di kuil.
+B|まず、お賽銭を入れて、鈴を鳴らします。|mazu, osaisen o irete, suzu o narashimasu.|Pertama, masukkan uang persembahan, lalu bunyikan lonceng.
+B|それから、二回お辞儀をして、二回手をたたきます。|sorekara, nikai ojigi o shite, nikai te o tatakimasu.|Lalu membungkuk dua kali dan bertepuk tangan dua kali.
+
+#Kamera hilang di tempat wisata
+A|すみません、カメラを忘れてしまったんですが。|sumimasen, kamera o wasurete shimattan desu ga.|Permisi, kamera saya tertinggal.
+係員|どこに置きましたか。|doko ni okimashita ka.|Ditaruh di mana?
+A|あそこのベンチです。黒いカメラです。|asoko no benchi desu. kuroi kamera desu.|Di bangku sana. Kamera hitam.
+係員|落とし物センターに届いているか確認します。|otoshimono sentaa ni todoite iru ka kakunin shimasu.|Akan saya cek apakah sudah ada di pusat barang hilang.
+
+#Bersepeda di Nara
+A|奈良で自転車を借りられますか。|nara de jitensha o kariraremasu ka.|Bisa sewa sepeda di Nara?
+B|駅の前にレンタサイクルがありますよ。|eki no mae ni rentasaikuru ga arimasu yo.|Ada penyewaan sepeda di depan stasiun.
+A|鹿にもえさをあげたいです。|shika ni mo esa o agetai desu.|Saya juga ingin memberi makan rusa.
+
+#Ingin ke Disney
+A|ディズニーランドに行ったことある？|dizuniirando ni itta koto aru?|Pernah ke Disneyland?
+B|まだないよ。行ってみたいな。|mada nai yo. itte mitai na.|Belum. Ingin coba ke sana.
+A|来月、一緒に行こうよ。|raigetsu, issho ni ikou yo.|Bulan depan pergi bareng, yuk.
+B|うん、チケットを調べてみる。|un, chiketto o shirabete miru.|Iya, aku cari tiketnya.
+
+#Liburan Golden Week
+A|ゴールデンウィークはどうでしたか。|goorudenwiiku wa dou deshita ka.|Bagaimana libur Golden Week?
+B|どこも込んでいたので、家でゆっくりしました。|doko mo konde ita node, ie de yukkuri shimashita.|Di mana-mana ramai, jadi saya bersantai di rumah.
+A|それもいいですね。|sore mo ii desu ne.|Itu juga bagus.
+
+#Ikut tur bus
+A|日帰りのバスツアーに申し込みたいです。|higaeri no basu tsuaa ni moushikomitai desu.|Saya ingin mendaftar tur bus pulang hari.
+係員|いちご狩りのツアーが人気ですよ。|ichigo gari no tsuaa ga ninki desu yo.|Tur petik stroberi populer.
+A|それにします。二人分お願いします。|sore ni shimasu. futaribun onegaishimasu.|Saya pilih itu. Untuk dua orang.
+
+#Mencari tempat salat di bandara
+A|空港に祈祷室はありますか。|kuukou ni kitoushitsu wa arimasu ka.|Apakah di bandara ada ruang salat?
+係員|三階の出発ロビーにあります。|sangai no shuppatsu robii ni arimasu.|Ada di lobi keberangkatan lantai tiga.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Memotret pemandangan
+A|ここから見る景色はきれいですね。|koko kara miru keshiki wa kirei desu ne.|Pemandangan dari sini indah, ya.
+B|晴れていると、富士山も見えますよ。|harete iru to, fujisan mo miemasu yo.|Kalau cerah, Gunung Fuji juga terlihat.
+A|今日は雲が多くて残念です。|kyou wa kumo ga ookute zannen desu.|Hari ini banyak awan, sayang sekali.
+
+#Mencoba kimono
+A|着物をレンタルしてみたいです。|kimono o rentaru shite mitai desu.|Saya ingin mencoba menyewa kimono.
+店員|着付けも含めて四千円です。|kitsuke mo fukumete yonsen en desu.|Termasuk dipakaikan, empat ribu yen.
+A|何時までに返せばいいですか。|nanji made ni kaeseba ii desu ka.|Harus dikembalikan sebelum jam berapa?
+店員|夕方五時までです。|yuugata goji made desu.|Sebelum jam lima sore.
+
+#Liburan di rumah teman
+A|今度、私の実家に遊びに来ませんか。|kondo, watashi no jikka ni asobi ni kimasen ka.|Lain kali mau main ke rumah orang tua saya?
+B|いいんですか。ぜひ行きたいです。|iin desu ka. zehi ikitai desu.|Boleh? Saya ingin sekali.
+A|母が料理を作って待っていますよ。|haha ga ryouri o tsukutte matte imasu yo.|Ibu saya akan memasak dan menunggu.
+
+@Transportasi
+#Membeli tiket di mesin
+A|すみません、この機械の使い方が分かりません。|sumimasen, kono kikai no tsukaikata ga wakarimasen.|Permisi, saya tidak tahu cara memakai mesin ini.
+駅員|行き先の金額を押して、お金を入れてください。|ikisaki no kingaku o oshite, okane o irete kudasai.|Tekan nominal tujuan, lalu masukkan uang.
+A|どこまでいくらか分かりません。|doko made ikura ka wakarimasen.|Saya tidak tahu tarif sampai ke mana.
+駅員|上の地図に書いてありますよ。|ue no chizu ni kaite arimasu yo.|Tertulis di peta di atas.
+
+#Mengisi kartu IC
+A|ICカードにチャージしたいんですが。|aishii kaado ni chaaji shitain desu ga.|Saya ingin mengisi saldo kartu IC.
+駅員|この機械にカードを入れて、「チャージ」を押してください。|kono kikai ni kaado o irete, "chaaji" o oshite kudasai.|Masukkan kartu ke mesin ini, lalu tekan "Charge".
+A|千円入れます。|sen en iremasu.|Saya masukkan seribu yen.
+
+#Salah naik kereta
+A|すみません、この電車は名古屋に行きますか。|sumimasen, kono densha wa nagoya ni ikimasu ka.|Permisi, apakah kereta ini ke Nagoya?
+B|いいえ、反対ですよ。|iie, hantai desu yo.|Bukan, arahnya berlawanan.
+A|え、どうしよう。|e, dou shiyou.|Eh, bagaimana ini.
+B|次の駅で降りて、向かいのホームに行ってください。|tsugi no eki de orite, mukai no hoomu ni itte kudasai.|Turun di stasiun berikutnya, lalu pindah ke peron seberang.
+
+#Kereta cepat Shinkansen
+A|新幹線の指定席を一枚お願いします。|shinkansen no shiteiseki o ichimai onegaishimasu.|Saya minta satu tiket kursi bernomor Shinkansen.
+駅員|窓側と通路側、どちらがいいですか。|madogawa to tsuurogawa, dochira ga ii desu ka.|Mau sisi jendela atau sisi lorong?
+A|窓側でお願いします。|madogawa de onegaishimasu.|Sisi jendela, tolong.
+
+#Naik bus pertama kali
+A|このバスはどうやって乗りますか。|kono basu wa dou yatte norimasu ka.|Bagaimana cara naik bus ini?
+B|後ろのドアから乗って、整理券を取ってください。|ushiro no doa kara notte, seiriken o totte kudasai.|Naik dari pintu belakang, lalu ambil tiket nomor.
+B|降りるときに前で払います。|oriru toki ni mae de haraimasu.|Bayar di depan saat turun.
+
+#Menekan bel di bus
+A|次で降りたいんですが、どうすればいいですか。|tsugi de oritain desu ga, dou sureba ii desu ka.|Saya mau turun di halte berikutnya, harus bagaimana?
+B|そのボタンを押してください。|sono botan o oshite kudasai.|Tekan tombol itu.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Kereta berhenti
+アナウンス|ただいま、人身事故のため運転を見合わせています。|tadaima, jinshin jiko no tame unten o miawasete imasu.|Saat ini perjalanan dihentikan sementara karena kecelakaan.
+A|どのくらい待ちますか。|dono kurai machimasu ka.|Kira-kira menunggu berapa lama?
+B|一時間ぐらいかかるかもしれません。|ichijikan gurai kakaru kamo shiremasen.|Mungkin sekitar satu jam.
+A|じゃあ、バスで行きます。|jaa, basu de ikimasu.|Kalau begitu, saya naik bus.
+
+#Bertanya peron
+A|大阪行きは何番線ですか。|oosaka iki wa nanbansen desu ka.|Kereta ke Osaka di jalur berapa?
+駅員|五番線です。|gobansen desu.|Jalur lima.
+A|次は何時に来ますか。|tsugi wa nanji ni kimasu ka.|Berikutnya datang jam berapa?
+駅員|十時十五分です。|juuji juugofun desu.|Jam sepuluh lewat lima belas.
+
+#Naik taksi
+運転手|どちらまでですか。|dochira made desu ka.|Mau ke mana?
+A|市民病院までお願いします。|shimin byouin made onegaishimasu.|Ke Rumah Sakit Kota, tolong.
+運転手|はい、十五分ぐらいかかります。|hai, juugofun gurai kakarimasu.|Baik, sekitar lima belas menit.
+A|急いでいるので、お願いします。|isoide iru node, onegaishimasu.|Saya buru-buru, tolong ya.
+
+#Membayar taksi
+運転手|千八百円です。|sen happyaku en desu.|Seribu delapan ratus yen.
+A|カードは使えますか。|kaado wa tsukaemasu ka.|Bisa pakai kartu?
+運転手|はい、使えます。|hai, tsukaemasu.|Ya, bisa.
+A|領収書をください。|ryoushuusho o kudasai.|Minta kuitansinya.
+
+#Meninggalkan barang di kereta
+A|電車の中に傘を忘れてしまいました。|densha no naka ni kasa o wasurete shimaimashita.|Payung saya tertinggal di dalam kereta.
+駅員|何時ごろの電車ですか。|nanji goro no densha desu ka.|Kereta sekitar jam berapa?
+A|八時半ごろです。三両目に乗っていました。|hachiji han goro desu. sanryoume ni notte imashita.|Sekitar jam setengah sembilan. Saya di gerbong ketiga.
+駅員|探してみます。少々お待ちください。|sagashite mimasu. shoushou omachi kudasai.|Akan kami cari. Mohon tunggu sebentar.
+
+#Menawarkan kursi
+A|どうぞ、座ってください。|douzo, suwatte kudasai.|Silakan duduk.
+B|ありがとうございます。助かります。|arigatou gozaimasu. tasukarimasu.|Terima kasih. Sangat membantu.
+A|いいえ、次で降りますから。|iie, tsugi de orimasu kara.|Tidak apa-apa, saya turun di stasiun berikutnya.
+
+#Bersepeda ke kantor
+A|自転車で通勤していますか。|jitensha de tsuukin shite imasu ka.|Kamu pergi kerja naik sepeda?
+B|はい、二十分ぐらいです。|hai, nijuppun gurai desu.|Ya, sekitar dua puluh menit.
+A|雨の日はどうしますか。|ame no hi wa dou shimasu ka.|Kalau hari hujan bagaimana?
+B|バスに乗ります。|basu ni norimasu.|Saya naik bus.
+
+#Parkir sepeda
+A|ここに自転車を止めてもいいですか。|koko ni jitensha o tomete mo ii desu ka.|Boleh parkir sepeda di sini?
+B|ここは駐輪禁止です。|koko wa chuurin kinshi desu.|Di sini dilarang parkir sepeda.
+B|あそこの駐輪場を使ってください。|asoko no chuurinjou o tsukatte kudasai.|Pakai tempat parkir sepeda di sana.
+
+#Membeli sepeda
+A|通勤用の自転車がほしいんですが。|tsuukin'you no jitensha ga hoshiin desu ga.|Saya ingin sepeda untuk pergi kerja.
+店員|こちらは軽くて、二万円です。|kochira wa karukute, niman en desu.|Yang ini ringan, harganya dua puluh ribu yen.
+A|防犯登録もできますか。|bouhan touroku mo dekimasu ka.|Bisa sekalian registrasi anti-pencurian?
+店員|はい、五百円でできます。|hai, gohyaku en de dekimasu.|Ya, bisa dengan lima ratus yen.
+
+#Bus bandara
+A|空港行きのバスはどこから出ますか。|kuukou iki no basu wa doko kara demasu ka.|Bus ke bandara berangkat dari mana?
+B|駅の西口の三番乗り場です。|eki no nishiguchi no sanban noriba desu.|Dari tempat naik nomor tiga di pintu barat stasiun.
+A|どのくらいかかりますか。|dono kurai kakarimasu ka.|Berapa lama perjalanannya?
+B|一時間ぐらいです。|ichijikan gurai desu.|Sekitar satu jam.
+
+#Kereta penuh
+A|すごく込んでいますね。|sugoku konde imasu ne.|Ramai sekali, ya.
+B|朝のラッシュは毎日こうですよ。|asa no rasshu wa mainichi kou desu yo.|Jam sibuk pagi selalu begini setiap hari.
+A|次の電車を待ちましょうか。|tsugi no densha o machimashou ka.|Kita tunggu kereta berikutnya?
+B|そうですね。三分後に来ます。|sou desu ne. sanpungo ni kimasu.|Iya. Datang tiga menit lagi.
+
+#Bertanya stasiun terdekat
+A|この近くに駅はありますか。|kono chikaku ni eki wa arimasu ka.|Ada stasiun dekat sini?
+B|歩いて十分の所に地下鉄の駅があります。|aruite juppun no tokoro ni chikatetsu no eki ga arimasu.|Sepuluh menit jalan kaki ada stasiun kereta bawah tanah.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Transit di bandara
+A|乗り継ぎのカウンターはどこですか。|noritsugi no kauntaa wa doko desu ka.|Konter transit di mana?
+係員|この通路をまっすぐ行って、左です。|kono tsuuro o massugu itte, hidari desu.|Lurus lewat lorong ini, lalu ke kiri.
+A|搭乗まで時間がないんです。|toujou made jikan ga nain desu.|Waktu sampai naik pesawat sudah mepet.
+係員|では、ご案内します。|dewa, goannai shimasu.|Kalau begitu, saya antar.
+
+#Check-in di bandara
+係員|パスポートをお願いします。お荷物はいくつですか。|pasupooto o onegaishimasu. onimotsu wa ikutsu desu ka.|Paspornya, tolong. Bagasinya berapa?
+A|スーツケースが一つです。|suutsukeesu ga hitotsu desu.|Satu koper.
+係員|二十三キロです。大丈夫ですよ。|nijuusan kiro desu. daijoubu desu yo.|Dua puluh tiga kilo. Tidak masalah.
+係員|搭乗口は十二番です。|toujouguchi wa juuniban desu.|Gerbang keberangkatannya nomor dua belas.
+
+#Pesawat ditunda
+A|この便は遅れていますか。|kono bin wa okurete imasu ka.|Apakah penerbangan ini tertunda?
+係員|はい、天気が悪いため、一時間遅れます。|hai, tenki ga warui tame, ichijikan okuremasu.|Ya, karena cuaca buruk, tertunda satu jam.
+A|乗り継ぎに間に合いますか。|noritsugi ni ma ni aimasu ka.|Apakah keburu untuk transit?
+係員|確認しますので、少々お待ちください。|kakunin shimasu node, shoushou omachi kudasai.|Akan saya cek, mohon tunggu sebentar.
+
+#Kartu kereta bulanan
+A|定期券を作りたいんですが。|teikiken o tsukuritain desu ga.|Saya ingin membuat tiket langganan.
+駅員|どこからどこまでですか。|doko kara doko made desu ka.|Dari mana sampai mana?
+A|さくら駅から中央駅までです。|sakura eki kara chuuou eki made desu.|Dari Stasiun Sakura sampai Stasiun Chuo.
+駅員|一か月で八千円です。|ikkagetsu de hassen en desu.|Satu bulan delapan ribu yen.
+
+#Kereta terakhir
+A|終電は何時ですか。|shuuden wa nanji desu ka.|Kereta terakhir jam berapa?
+B|十二時五分です。|juuniji gofun desu.|Jam dua belas lewat lima.
+A|もうすぐですね。急ぎましょう。|mou sugu desu ne. isogimashou.|Sebentar lagi, ya. Ayo bergegas.
+
+#Tersesat di stasiun besar
+A|すみません、迷ってしまいました。南口はどこですか。|sumimasen, mayotte shimaimashita. minamiguchi wa doko desu ka.|Permisi, saya tersesat. Pintu selatan di mana?
+駅員|この階段を上がって、右に進んでください。|kono kaidan o agatte, migi ni susunde kudasai.|Naik tangga ini, lalu ke kanan.
+A|ありがとうございます。|arigatou gozaimasu.|Terima kasih.
+
+#Menyewa mobil
+A|車を一日借りたいんですが。|kuruma o ichinichi karitain desu ga.|Saya ingin menyewa mobil satu hari.
+店員|国際免許証はお持ちですか。|kokusai menkyoshou wa omochi desu ka.|Anda punya SIM internasional?
+A|はい、持っています。|hai, motte imasu.|Ya, punya.
+店員|小型車で一日六千円です。|kogatasha de ichinichi rokusen en desu.|Mobil kecil enam ribu yen per hari.
+
+#Mengisi bensin
+A|すみません、セルフのガソリンスタンドの使い方を教えてください。|sumimasen, serufu no gasorin sutando no tsukaikata o oshiete kudasai.|Permisi, tolong ajari cara memakai pom bensin swalayan.
+店員|まず、ガソリンの種類を選んでください。|mazu, gasorin no shurui o erande kudasai.|Pertama, pilih jenis bensinnya.
+店員|レギュラーは赤いノズルです。|regyuraa wa akai nozuru desu.|Yang reguler nozel merah.
+
+#Aturan lalu lintas
+A|日本では車は左側ですね。|nihon de wa kuruma wa hidarigawa desu ne.|Di Jepang mobil di sebelah kiri, ya.
+B|そうです。インドネシアと同じですね。|sou desu. indoneshia to onaji desu ne.|Betul. Sama dengan Indonesia.
+A|でも、自転車も左を走るんですか。|demo, jitensha mo hidari o hashirun desu ka.|Tapi sepeda juga berjalan di kiri?
+B|はい、自転車も車道の左側です。|hai, jitensha mo shadou no hidarigawa desu.|Ya, sepeda juga di sisi kiri jalan.
+
+#Bus malam
+A|夜行バスで東京へ行きます。|yakou basu de toukyou e ikimasu.|Saya ke Tokyo naik bus malam.
+B|疲れませんか。|tsukaremasen ka.|Tidak capek?
+A|少し疲れますが、安いですから。|sukoshi tsukaremasu ga, yasui desu kara.|Agak capek, tapi murah.
+
+#Kartu kereta untuk anak
+A|子供の切符はいくらですか。|kodomo no kippu wa ikura desu ka.|Tiket anak berapa?
+駅員|大人の半額です。|otona no hangaku desu.|Setengah harga tiket dewasa.
+A|三歳の子供もいりますか。|sansai no kodomo mo irimasu ka.|Anak umur tiga tahun juga perlu?
+駅員|小学生になるまでは無料です。|shougakusei ni naru made wa muryou desu.|Gratis sampai masuk SD.
+
+#Kecelakaan sepeda kecil
+A|すみません！大丈夫ですか。|sumimasen! daijoubu desu ka.|Maaf! Anda tidak apa-apa?
+B|ちょっと足を打ちましたが、大丈夫です。|chotto ashi o uchimashita ga, daijoubu desu.|Kaki saya terbentur sedikit, tapi tidak apa-apa.
+A|本当に申し訳ありません。|hontou ni moushiwake arimasen.|Saya benar-benar minta maaf.
+B|次から気をつけてくださいね。|tsugi kara ki o tsukete kudasai ne.|Lain kali hati-hati, ya.

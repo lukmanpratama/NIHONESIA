@@ -1,0 +1,416 @@
+// Dialog tambahan: Sehari-hari, Cuaca & Musim, Hobi & Waktu Luang, Darurat
+
+@Sehari-hari
+#Bangun pagi
+A|もう七時だよ。起きて！|mou shichiji da yo. okite!|Sudah jam tujuh. Bangun!
+B|あと五分だけ……。|ato gofun dake...|Lima menit lagi saja...
+A|遅刻するよ。|chikoku suru yo.|Nanti terlambat, lho.
+B|分かった、起きる。|wakatta, okiru.|Iya, iya, aku bangun.
+
+#Mencuci baju
+A|洗濯物、外に干してもいいかな。|sentakumono, soto ni hoshite mo ii ka na.|Cucian boleh dijemur di luar, ya?
+B|午後から雨が降るらしいよ。|gogo kara ame ga furu rashii yo.|Katanya mulai siang akan hujan.
+A|じゃあ、部屋の中に干そう。|jaa, heya no naka ni hosou.|Kalau begitu, jemur di dalam kamar saja.
+
+#Suara berisik tetangga
+A|すみません、夜遅くまで音が聞こえるんですが。|sumimasen, yoru osoku made oto ga kikoerun desu ga.|Maaf, suara terdengar sampai larut malam.
+B|あ、すみません。気をつけます。|a, sumimasen. ki o tsukemasu.|Oh, maaf. Saya akan hati-hati.
+A|よろしくお願いします。|yoroshiku onegaishimasu.|Terima kasih atas pengertiannya.
+
+#Membersihkan kamar
+A|週末は部屋の大掃除をしよう。|shuumatsu wa heya no oosouji o shiyou.|Akhir pekan ayo bersih-bersih besar di kamar.
+B|私は台所を掃除するね。|watashi wa daidokoro o souji suru ne.|Aku bersihkan dapurnya, ya.
+A|じゃあ、私はお風呂とトイレをやるよ。|jaa, watashi wa ofuro to toire o yaru yo.|Kalau begitu, aku kamar mandi dan toilet.
+
+#Air mati
+A|水が出ないんですけど。|mizu ga denain desu kedo.|Airnya tidak keluar.
+B|今日は工事で、三時まで断水だそうです。|kyou wa kouji de, sanji made dansui da sou desu.|Katanya hari ini ada perbaikan, air mati sampai jam tiga.
+A|知りませんでした。|shirimasen deshita.|Saya tidak tahu.
+
+#Listrik padam
+A|あれ、電気が消えた。|are, denki ga kieta.|Lho, listriknya mati.
+B|ブレーカーが落ちたのかも。|bureekaa ga ochita no kamo.|Mungkin pemutus arusnya turun.
+A|電子レンジとエアコンを同時に使ったからだね。|denshi renji to eakon o douji ni tsukatta kara da ne.|Karena microwave dan AC dipakai bersamaan, ya.
+
+#Menerima paket
+配達員|お荷物です。ここにサインをお願いします。|onimotsu desu. koko ni sain o onegaishimasu.|Ada paket. Tolong tanda tangan di sini.
+A|はんこでもいいですか。|hanko demo ii desu ka.|Pakai cap boleh?
+配達員|はい、大丈夫です。|hai, daijoubu desu.|Ya, boleh.
+
+#Lupa mengunci pintu
+A|あ、鍵をかけたかな。|a, kagi o kaketa ka na.|Oh, aku sudah kunci pintu belum, ya.
+B|心配なら戻って確認したら？|shinpai nara modotte kakunin shitara?|Kalau khawatir, kembali dan cek saja.
+A|そうする。先に行ってて。|sou suru. saki ni ittete.|Iya, aku cek. Kamu duluan saja.
+
+#Rencana akhir pekan
+A|土曜日は何をする予定？|doyoubi wa nani o suru yotei?|Sabtu rencananya mau apa?
+B|午前中は買い物で、午後は寝る。|gozenchuu wa kaimono de, gogo wa neru.|Pagi belanja, siang tidur.
+A|いいね、ゆっくりできるね。|ii ne, yukkuri dekiru ne.|Enak, bisa santai, ya.
+
+#Memasak makan malam
+A|今日の晩ご飯、何がいい？|kyou no bangohan, nani ga ii?|Makan malam hari ini mau apa?
+B|簡単なものでいいよ。|kantan na mono de ii yo.|Yang sederhana saja.
+A|じゃあ、うどんにしよう。|jaa, udon ni shiyou.|Kalau begitu, udon saja.
+
+#Mengecek uang belanja
+A|今月、お金を使いすぎたかも。|kongetsu, okane o tsukaisugita kamo.|Bulan ini mungkin uangku terlalu banyak terpakai.
+B|家計簿をつけてみたら？|kakeibo o tsukete mitara?|Coba catat pengeluaran di buku keuangan?
+A|そうだね。アプリでやってみる。|sou da ne. apuri de yatte miru.|Betul juga. Aku coba pakai aplikasi.
+
+#Tetangga meminjam barang
+A|すみません、はさみを貸していただけませんか。|sumimasen, hasami o kashite itadakemasen ka.|Permisi, bisakah saya meminjam gunting?
+B|いいですよ。どうぞ。|ii desu yo. douzo.|Boleh. Silakan.
+A|すぐに返します。|sugu ni kaeshimasu.|Segera saya kembalikan.
+
+#Mati air panas di musim dingin
+A|お湯が出なくて、シャワーが浴びられない。|oyu ga denakute, shawaa ga abirarenai.|Air panasnya tidak keluar, aku tidak bisa mandi.
+B|ガスの元栓を確認した？|gasu no motosen o kakunin shita?|Sudah cek katup utama gasnya?
+A|あ、閉まってた！|a, shimatteta!|Oh, ternyata tertutup!
+
+#Membeli barang kebutuhan
+A|トイレットペーパーがもうないよ。|toiretto peepaa ga mou nai yo.|Tisu toiletnya sudah habis.
+B|帰りにドラッグストアで買ってくるね。|kaeri ni doraggu sutoa de katte kuru ne.|Nanti pulang aku beli di toko obat.
+A|ありがとう。洗剤もお願い。|arigatou. senzai mo onegai.|Terima kasih. Deterjen juga, ya.
+
+#Menyapa di lift
+A|おはようございます。何階ですか。|ohayou gozaimasu. nankai desu ka.|Selamat pagi. Lantai berapa?
+B|五階をお願いします。|gokai o onegaishimasu.|Lantai lima, tolong.
+A|はい。|hai.|Baik.
+
+#Memberi oleh-oleh ke tetangga
+A|国から送ってきたお菓子です。よかったらどうぞ。|kuni kara okutte kita okashi desu. yokattara douzo.|Ini kue kiriman dari negara asal saya. Silakan kalau berkenan.
+B|まあ、ありがとうございます。|maa, arigatou gozaimasu.|Wah, terima kasih.
+A|少し甘いですが、おいしいですよ。|sukoshi amai desu ga, oishii desu yo.|Agak manis, tapi enak.
+
+#Ponsel rusak
+A|スマホの画面が割れちゃった。|sumaho no gamen ga warechatta.|Layar ponselku pecah.
+B|修理に出したほうがいいよ。|shuuri ni dashita hou ga ii yo.|Sebaiknya diservis.
+A|いくらかかるかな。|ikura kakaru ka na.|Kira-kira habis berapa, ya.
+B|お店で見積もりをしてもらおう。|omise de mitsumori o shite moraou.|Ayo minta perkiraan biaya di toko.
+
+#Mengajak jalan pagi
+A|明日の朝、一緒に散歩しない？|ashita no asa, issho ni sanpo shinai?|Besok pagi mau jalan-jalan bareng?
+B|何時に起きる？|nanji ni okiru?|Bangun jam berapa?
+A|六時はどう？|rokuji wa dou?|Jam enam bagaimana?
+B|ちょっと早いけど、頑張る。|chotto hayai kedo, ganbaru.|Agak pagi, tapi aku usahakan.
+
+#Membuang sampah salah hari
+B|今日は燃えないゴミの日じゃないですよ。|kyou wa moenai gomi no hi ja nai desu yo.|Hari ini bukan hari sampah yang tidak bisa dibakar.
+A|あ、すみません。間違えました。|a, sumimasen. machigaemashita.|Oh, maaf. Saya salah.
+B|カレンダーを見ると分かりやすいですよ。|karendaa o miru to wakariyasui desu yo.|Kalau lihat kalender jadi mudah dimengerti.
+
+#Mengingatkan janji
+A|明日、歯医者の予約があるんじゃない？|ashita, haisha no yoyaku ga arun ja nai?|Besok kamu ada janji dokter gigi, kan?
+B|あ、忘れてた。ありがとう。|a, wasureteta. arigatou.|Oh, aku lupa. Terima kasih.
+A|何時から？|nanji kara?|Mulai jam berapa?
+B|十時からだよ。|juuji kara da yo.|Mulai jam sepuluh.
+
+#Menonton berita
+A|今日のニュース見た？|kyou no nyuusu mita?|Sudah lihat berita hari ini?
+B|ううん、何かあったの？|uun, nanika atta no?|Belum, ada apa?
+A|来月から電気代が上がるんだって。|raigetsu kara denkidai ga agarun datte.|Katanya mulai bulan depan tarif listrik naik.
+B|それは困るね。|sore wa komaru ne.|Wah, repot juga.
+
+#Menghemat listrik
+A|使っていない部屋の電気は消そうね。|tsukatte inai heya no denki wa kesou ne.|Lampu kamar yang tidak dipakai dimatikan, ya.
+B|うん。エアコンも二十八度にしよう。|un. eakon mo nijuuhachi do ni shiyou.|Iya. AC juga diatur dua puluh delapan derajat.
+A|節約、頑張ろう。|setsuyaku, ganbarou.|Ayo semangat berhemat.
+
+#Mencari kunci
+A|鍵が見つからない。|kagi ga mitsukaranai.|Kuncinya tidak ketemu.
+B|かばんの中は見た？|kaban no naka wa mita?|Sudah lihat di dalam tas?
+A|あ、ポケットにあった。|a, poketto ni atta.|Oh, ada di saku.
+
+#Mengundang ke rumah
+A|今度、うちでご飯を食べませんか。|kondo, uchi de gohan o tabemasen ka.|Lain kali mau makan di rumah saya?
+B|いいんですか。うれしいです。|iin desu ka. ureshii desu.|Boleh? Senang sekali.
+A|土曜日の夜はどうですか。|doyoubi no yoru wa dou desu ka.|Bagaimana kalau Sabtu malam?
+B|大丈夫です。何か持って行きますね。|daijoubu desu. nanika motte ikimasu ne.|Bisa. Saya bawakan sesuatu, ya.
+
+#Berkunjung ke rumah orang Jepang
+A|お邪魔します。|ojama shimasu.|Permisi, saya masuk.
+B|どうぞ、上がってください。|douzo, agatte kudasai.|Silakan, masuk.
+A|靴はここで脱げばいいですか。|kutsu wa koko de nugeba ii desu ka.|Sepatunya dilepas di sini?
+B|はい、スリッパをどうぞ。|hai, surippa o douzo.|Ya, silakan pakai sandal rumah.
+
+#Pamit pulang dari rumah orang
+A|今日はありがとうございました。そろそろ失礼します。|kyou wa arigatou gozaimashita. sorosoro shitsurei shimasu.|Terima kasih untuk hari ini. Saya pamit.
+B|また遊びに来てくださいね。|mata asobi ni kite kudasai ne.|Datang main lagi, ya.
+A|はい、ごちそうさまでした。|hai, gochisousama deshita.|Ya, terima kasih atas hidangannya.
+
+#Bercerita tentang hari ini
+A|今日はどうだった？|kyou wa dou datta?|Hari ini bagaimana?
+B|忙しかったけど、仕事が早く終わったよ。|isogashikatta kedo, shigoto ga hayaku owatta yo.|Sibuk, tapi pekerjaannya selesai cepat.
+A|よかったね。ゆっくり休んで。|yokatta ne. yukkuri yasunde.|Syukurlah. Istirahatlah yang cukup.
+
+#Menelepon ke rumah
+A|今から帰るね。何か買って帰ろうか。|ima kara kaeru ne. nanika katte kaerou ka.|Aku pulang sekarang. Mau kubelikan sesuatu?
+B|牛乳を買ってきてくれる？|gyuunyuu o katte kite kureru?|Bisa belikan susu?
+A|分かった。|wakatta.|Oke.
+
+#Mengurus tanaman
+A|この花、元気がないね。|kono hana, genki ga nai ne.|Bunga ini layu, ya.
+B|水をあげすぎたのかも。|mizu o agesugita no kamo.|Mungkin terlalu banyak disiram.
+A|じゃあ、しばらく様子を見よう。|jaa, shibaraku yousu o miyou.|Kalau begitu, kita lihat dulu keadaannya.
+
+#Lupa mematikan kompor
+A|大変！ガスの火を消し忘れた！|taihen! gasu no hi o keshiwasureta!|Gawat! Aku lupa mematikan kompor!
+B|すぐに戻ろう。|sugu ni modorou.|Ayo segera kembali.
+A|……よかった、大丈夫だった。|...yokatta, daijoubu datta.|...Syukurlah, tidak apa-apa.
+
+@Cuaca & Musim
+#Hari yang sangat panas
+A|今日は三十五度もあるそうですよ。|kyou wa sanjuugo do mo aru sou desu yo.|Katanya hari ini sampai tiga puluh lima derajat.
+B|暑すぎますね。外に出たくないです。|atsusugimasu ne. soto ni detakunai desu.|Terlalu panas. Saya tidak ingin keluar.
+A|水をたくさん飲んでくださいね。|mizu o takusan nonde kudasai ne.|Minumlah air yang banyak, ya.
+
+#Musim hujan
+A|梅雨に入りましたね。|tsuyu ni hairimashita ne.|Sudah masuk musim hujan, ya.
+B|毎日雨で、洗濯物が乾きません。|mainichi ame de, sentakumono ga kawakimasen.|Setiap hari hujan, cucian tidak kering.
+A|乾燥機を使ったらどうですか。|kansouki o tsukattara dou desu ka.|Bagaimana kalau pakai mesin pengering?
+
+#Salju pertama
+A|見て！雪が降ってるよ。|mite! yuki ga futteru yo.|Lihat! Salju turun.
+B|わあ、初めて見た！|waa, hajimete mita!|Wah, baru pertama kali lihat!
+A|インドネシアには雪がないもんね。|indoneshia ni wa yuki ga nai mon ne.|Di Indonesia memang tidak ada salju, ya.
+B|うん。写真を撮って家族に送ろう。|un. shashin o totte kazoku ni okurou.|Iya. Aku foto dan kirim ke keluarga.
+
+#Persiapan musim dingin
+A|冬は何を着ればいいですか。|fuyu wa nani o kireba ii desu ka.|Musim dingin sebaiknya pakai apa?
+B|厚いコートと手袋とマフラーが必要ですよ。|atsui kooto to tebukuro to mafuraa ga hitsuyou desu yo.|Perlu mantel tebal, sarung tangan, dan syal.
+A|暖房も買ったほうがいいですか。|danbou mo katta hou ga ii desu ka.|Sebaiknya beli pemanas juga?
+B|部屋が寒いなら、あったほうがいいですね。|heya ga samui nara, atta hou ga ii desu ne.|Kalau kamarnya dingin, sebaiknya ada.
+
+#Peringatan topan
+A|台風が近づいているそうです。|taifuu ga chikazuite iru sou desu.|Katanya topan sedang mendekat.
+B|窓を閉めて、外の物を片付けましょう。|mado o shimete, soto no mono o katazukemashou.|Tutup jendela dan bereskan barang di luar.
+A|水と食べ物も準備しておきます。|mizu to tabemono mo junbi shite okimasu.|Saya siapkan juga air dan makanan.
+
+#Musim gugur yang nyaman
+A|秋は涼しくて気持ちがいいですね。|aki wa suzushikute kimochi ga ii desu ne.|Musim gugur sejuk dan nyaman, ya.
+B|そうですね。食べ物もおいしいです。|sou desu ne. tabemono mo oishii desu.|Betul. Makanannya juga enak.
+A|さつまいもが好きです。|satsumaimo ga suki desu.|Saya suka ubi jalar.
+
+#Bertanya prakiraan cuaca
+A|明日の天気はどうですか。|ashita no tenki wa dou desu ka.|Cuaca besok bagaimana?
+B|晴れのち曇りです。|hare nochi kumori desu.|Cerah lalu berawan.
+A|傘はいりませんね。|kasa wa irimasen ne.|Tidak perlu payung, ya.
+
+#Angin kencang
+A|風が強くて、自転車が倒れました。|kaze ga tsuyokute, jitensha ga taoremashita.|Anginnya kencang, sepeda saya roboh.
+B|今日は歩いて行ったほうがいいですよ。|kyou wa aruite itta hou ga ii desu yo.|Hari ini sebaiknya jalan kaki saja.
+A|そうします。|sou shimasu.|Iya, saya lakukan begitu.
+
+#Kulit kering di musim dingin
+A|冬になって、手がガサガサです。|fuyu ni natte, te ga gasagasa desu.|Sejak musim dingin, tangan saya kering kasar.
+B|ハンドクリームを塗るといいですよ。|hando kuriimu o nuru to ii desu yo.|Bagus kalau dioles krim tangan.
+A|ドラッグストアで買ってみます。|doraggu sutoa de katte mimasu.|Saya coba beli di toko obat.
+
+#Musim semi
+A|暖かくなってきましたね。|atatakaku natte kimashita ne.|Mulai hangat, ya.
+B|はい、もう春ですね。|hai, mou haru desu ne.|Ya, sudah musim semi.
+A|桜が咲くのが楽しみです。|sakura ga saku no ga tanoshimi desu.|Saya tidak sabar menanti sakura mekar.
+
+#Musim panas di Jepang vs Indonesia
+A|日本の夏とインドネシアの暑さ、どちらが大変ですか。|nihon no natsu to indoneshia no atsusa, dochira ga taihen desu ka.|Musim panas Jepang dan panasnya Indonesia, mana yang lebih berat?
+B|日本の夏のほうが蒸し暑いと思います。|nihon no natsu no hou ga mushiatsui to omoimasu.|Saya rasa musim panas Jepang lebih gerah.
+A|意外ですね。|igai desu ne.|Tak terduga, ya.
+
+#Hujan tiba-tiba
+A|急に雨が降ってきましたね。|kyuu ni ame ga futte kimashita ne.|Tiba-tiba hujan, ya.
+B|傘を持っていないんです。|kasa o motte inain desu.|Saya tidak bawa payung.
+A|私の傘に入ってください。駅まで一緒に行きましょう。|watashi no kasa ni haitte kudasai. eki made issho ni ikimashou.|Silakan berteduh di payung saya. Ayo bersama sampai stasiun.
+
+#Pakaian untuk cuaca dingin pagi
+A|朝と夜は寒いですね。|asa to yoru wa samui desu ne.|Pagi dan malam dingin, ya.
+B|昼は暖かいので、服の調節が難しいです。|hiru wa atatakai node, fuku no chousetsu ga muzukashii desu.|Siang hangat, jadi sulit menyesuaikan pakaian.
+A|薄い上着を持って行くといいですよ。|usui uwagi o motte iku to ii desu yo.|Bagus kalau membawa jaket tipis.
+
+#Gempa kecil
+A|今、揺れましたね。|ima, yuremashita ne.|Barusan ada guncangan, ya.
+B|小さい地震でしたね。|chiisai jishin deshita ne.|Gempa kecil, ya.
+A|最初はびっくりしました。|saisho wa bikkuri shimashita.|Awalnya saya kaget.
+B|日本ではよくありますよ。|nihon de wa yoku arimasu yo.|Di Jepang sering terjadi.
+
+#Membicarakan musim favorit
+A|一番好きな季節はいつですか。|ichiban suki na kisetsu wa itsu desu ka.|Musim yang paling disukai apa?
+B|秋です。紅葉がきれいですから。|aki desu. kouyou ga kirei desu kara.|Musim gugur. Karena daun-daunnya indah.
+A|私は冬が好きです。雪が珍しいので。|watashi wa fuyu ga suki desu. yuki ga mezurashii node.|Saya suka musim dingin. Karena salju jarang buat saya.
+
+#Kabut asap dan masker
+A|今日は黄砂が多いそうです。|kyou wa kousa ga ooi sou desu.|Katanya hari ini banyak debu kuning.
+B|マスクをして出かけたほうがいいですね。|masuku o shite dekaketa hou ga ii desu ne.|Sebaiknya keluar pakai masker, ya.
+A|洗濯物も外に干さないでおきます。|sentakumono mo soto ni hosanaide okimasu.|Cucian juga tidak saya jemur di luar.
+
+@Hobi & Waktu Luang
+#Bermain game
+A|最近、何のゲームをしてる？|saikin, nan no geemu o shiteru?|Akhir-akhir ini main game apa?
+B|サッカーのゲームだよ。オンラインで一緒にやらない？|sakkaa no geemu da yo. onrain de issho ni yaranai?|Game sepak bola. Mau main bareng online?
+A|いいね。今夜やろう。|ii ne. kon'ya yarou.|Boleh. Malam ini, yuk.
+
+#Menonton anime
+A|日本のアニメは好きですか。|nihon no anime wa suki desu ka.|Suka anime Jepang?
+B|はい、アニメで日本語を勉強しました。|hai, anime de nihongo o benkyou shimashita.|Ya, saya belajar bahasa Jepang lewat anime.
+A|何が一番好きですか。|nani ga ichiban suki desu ka.|Yang paling disukai apa?
+B|冒険のアニメが好きです。|bouken no anime ga suki desu.|Saya suka anime petualangan.
+
+#Bermain gitar
+A|ギターが弾けるんですか。|gitaa ga hikerun desu ka.|Kamu bisa main gitar?
+B|はい、高校生のときから弾いています。|hai, koukousei no toki kara hiite imasu.|Ya, saya main sejak SMA.
+A|今度、聞かせてください。|kondo, kikasete kudasai.|Lain kali perdengarkan, ya.
+
+#Memancing
+A|週末、釣りに行きませんか。|shuumatsu, tsuri ni ikimasen ka.|Akhir pekan mau memancing?
+B|釣りは初めてですが、大丈夫ですか。|tsuri wa hajimete desu ga, daijoubu desu ka.|Saya belum pernah memancing, tidak apa-apa?
+A|道具は貸しますから、大丈夫ですよ。|dougu wa kashimasu kara, daijoubu desu yo.|Alatnya saya pinjamkan, jadi tidak apa-apa.
+
+#Bermain futsal
+A|毎週日曜日にフットサルをしています。一緒にどうですか。|maishuu nichiyoubi ni futtosaru o shite imasu. issho ni dou desu ka.|Setiap Minggu saya main futsal. Mau ikut?
+B|ぜひ参加したいです。どこでやりますか。|zehi sanka shitai desu. doko de yarimasu ka.|Saya ingin sekali ikut. Main di mana?
+A|駅の近くの体育館です。|eki no chikaku no taiikukan desu.|Di gedung olahraga dekat stasiun.
+
+#Karaoke
+A|カラオケに行こうよ。|karaoke ni ikou yo.|Ayo ke karaoke.
+B|日本語の歌、あまり知らないんだ。|nihongo no uta, amari shiranain da.|Aku tidak banyak tahu lagu Jepang.
+A|インドネシアの歌もあるかもしれないよ。|indoneshia no uta mo aru kamo shirenai yo.|Mungkin ada lagu Indonesia juga.
+B|じゃあ、行ってみよう。|jaa, itte miyou.|Kalau begitu, ayo coba.
+
+#Membaca manga
+A|何を読んでいるんですか。|nani o yonde irun desu ka.|Sedang baca apa?
+B|漫画です。漢字にふりがながあるので読みやすいです。|manga desu. kanji ni furigana ga aru node yomiyasui desu.|Manga. Kanjinya ada furigana, jadi mudah dibaca.
+A|日本語の勉強にもなりますね。|nihongo no benkyou ni mo narimasu ne.|Jadi belajar bahasa Jepang juga, ya.
+
+#Fotografi
+A|いいカメラですね。写真が趣味ですか。|ii kamera desu ne. shashin ga shumi desu ka.|Kameranya bagus. Hobimu fotografi?
+B|はい、休みの日は景色を撮りに行きます。|hai, yasumi no hi wa keshiki o tori ni ikimasu.|Ya, saat libur saya pergi memotret pemandangan.
+A|今度、撮った写真を見せてください。|kondo, totta shashin o misete kudasai.|Lain kali tunjukkan foto-fotonya, ya.
+
+#Belajar memasak
+A|料理教室に通い始めました。|ryouri kyoushitsu ni kayoi hajimemashita.|Saya mulai ikut kelas memasak.
+B|どんな料理を習っていますか。|donna ryouri o naratte imasu ka.|Belajar masakan apa?
+A|和食です。昨日は肉じゃがを作りました。|washoku desu. kinou wa nikujaga o tsukurimashita.|Masakan Jepang. Kemarin saya membuat nikujaga.
+
+#Jogging
+A|毎朝走っているんですか。|maiasa hashitte irun desu ka.|Kamu lari setiap pagi?
+B|はい、五キロ走っています。|hai, go kiro hashitte imasu.|Ya, lari lima kilometer.
+A|すごいですね。私は一キロでも疲れます。|sugoi desu ne. watashi wa ichi kiro demo tsukaremasu.|Hebat. Saya satu kilo saja sudah lelah.
+
+#Mendaki gunung
+A|山登りが好きなんです。|yamanobori ga suki nan desu.|Saya suka mendaki gunung.
+B|日本の山はどこに登りましたか。|nihon no yama wa doko ni noborimashita ka.|Gunung di Jepang mana saja yang sudah didaki?
+A|高尾山と富士山に登りました。|takaosan to fujisan ni noborimashita.|Gunung Takao dan Gunung Fuji.
+
+#Menonton film
+A|最近見た映画で、おもしろかったものはありますか。|saikin mita eiga de, omoshirokatta mono wa arimasu ka.|Film yang akhir-akhir ini ditonton, ada yang seru?
+B|日本のアニメ映画がよかったです。泣きました。|nihon no anime eiga ga yokatta desu. nakimashita.|Film anime Jepang bagus. Saya sampai menangis.
+A|私も見てみたいです。|watashi mo mite mitai desu.|Saya juga ingin menontonnya.
+
+#Belajar menari
+A|インドネシアの踊りができますか。|indoneshia no odori ga dekimasu ka.|Kamu bisa tarian Indonesia?
+B|少しだけできます。子供のときに習いました。|sukoshi dake dekimasu. kodomo no toki ni naraimashita.|Bisa sedikit. Saya belajar waktu kecil.
+A|文化祭で見せてくれませんか。|bunkasai de misete kuremasen ka.|Bisa tampilkan di festival budaya?
+
+#Main bulu tangkis
+A|バドミントンをしたことがありますか。|badominton o shita koto ga arimasu ka.|Pernah main bulu tangkis?
+B|はい、インドネシアではとても人気があります。|hai, indoneshia de wa totemo ninki ga arimasu.|Ya, di Indonesia sangat populer.
+A|じゃあ、今度教えてください。|jaa, kondo oshiete kudasai.|Kalau begitu, lain kali ajari saya.
+
+#Mengoleksi barang
+A|何か集めている物はありますか。|nanika atsumete iru mono wa arimasu ka.|Ada barang yang kamu koleksi?
+B|各地の御朱印を集めています。|kakuchi no goshuin o atsumete imasu.|Saya mengoleksi cap kuil dari berbagai daerah.
+A|おもしろい趣味ですね。|omoshiroi shumi desu ne.|Hobi yang menarik.
+
+#Berkebun
+A|ベランダで野菜を育てています。|beranda de yasai o sodatete imasu.|Saya menanam sayuran di balkon.
+B|何を育てていますか。|nani o sodatete imasu ka.|Menanam apa?
+A|トマトと唐辛子です。|tomato to tougarashi desu.|Tomat dan cabai.
+B|唐辛子はインドネシア料理に使えますね。|tougarashi wa indoneshia ryouri ni tsukaemasu ne.|Cabainya bisa dipakai untuk masakan Indonesia, ya.
+
+#Menggambar
+A|上手な絵ですね。誰が描いたんですか。|jouzu na e desu ne. dare ga kaitan desu ka.|Gambarnya bagus. Siapa yang menggambar?
+B|私です。休みの日によく描きます。|watashi desu. yasumi no hi ni yoku kakimasu.|Saya. Saya sering menggambar saat libur.
+A|才能がありますね。|sainou ga arimasu ne.|Kamu berbakat.
+
+#Ikut klub di komunitas
+A|地域のサークルに入りたいんですが。|chiiki no saakuru ni hairitain desu ga.|Saya ingin ikut klub di lingkungan sekitar.
+職員|卓球のサークルはいかがですか。初心者も歓迎です。|takkyuu no saakuru wa ikaga desu ka. shoshinsha mo kangei desu.|Bagaimana dengan klub tenis meja? Pemula juga disambut.
+A|楽しそうですね。見学できますか。|tanoshisou desu ne. kengaku dekimasu ka.|Kelihatannya seru. Boleh lihat-lihat dulu?
+
+#Menonton pertandingan baseball
+A|野球を見に行ったことがありますか。|yakyuu o mi ni itta koto ga arimasu ka.|Pernah menonton baseball?
+B|まだないです。ルールがよく分からなくて。|mada nai desu. ruuru ga yoku wakaranakute.|Belum. Saya kurang paham aturannya.
+A|一緒に行けば、説明しますよ。|issho ni ikeba, setsumei shimasu yo.|Kalau pergi bersama, nanti saya jelaskan.
+
+#Bersepeda keliling
+A|週末にサイクリングをしませんか。|shuumatsu ni saikuringu o shimasen ka.|Akhir pekan mau bersepeda?
+B|いいですね。どこまで行きますか。|ii desu ne. doko made ikimasu ka.|Boleh. Sampai ke mana?
+A|川沿いを走って、隣の町まで行きましょう。|kawazoi o hashitte, tonari no machi made ikimashou.|Menyusuri sungai sampai kota sebelah.
+
+@Darurat
+#Kebakaran di gedung
+A|火事だ！逃げて！|kaji da! nigete!|Kebakaran! Lari!
+B|非常口はどっち？|hijouguchi wa docchi?|Pintu daruratnya di mana?
+A|あの緑のマークの方だよ。|ano midori no maaku no hou da yo.|Ke arah tanda hijau itu.
+B|エレベーターは使わないで！|erebeetaa wa tsukawanaide!|Jangan pakai lift!
+
+#Menelepon pemadam kebakaran
+係員|火事ですか、救急ですか。|kaji desu ka, kyuukyuu desu ka.|Kebakaran atau gawat darurat medis?
+A|火事です。アパートの二階から煙が出ています。|kaji desu. apaato no nikai kara kemuri ga dete imasu.|Kebakaran. Ada asap keluar dari lantai dua apartemen.
+係員|住所を教えてください。|juusho o oshiete kudasai.|Tolong sebutkan alamatnya.
+
+#Pencurian sepeda
+A|自転車が盗まれました。|jitensha ga nusumaremashita.|Sepeda saya dicuri.
+警官|防犯登録の番号は分かりますか。|bouhan touroku no bangou wa wakarimasu ka.|Tahu nomor registrasi anti-pencuriannya?
+A|はい、この紙に書いてあります。|hai, kono kami ni kaite arimasu.|Ya, tertulis di kertas ini.
+警官|見つかったら連絡します。|mitsukattara renraku shimasu.|Kalau ketemu, kami hubungi.
+
+#Orang pingsan di jalan
+A|大丈夫ですか！聞こえますか！|daijoubu desu ka! kikoemasu ka!|Anda tidak apa-apa? Bisa dengar saya?
+B|……。|...|...
+A|誰か、救急車を呼んでください！|dareka, kyuukyuusha o yonde kudasai!|Siapa saja, tolong panggil ambulans!
+C|今、電話しています！|ima, denwa shite imasu!|Saya sedang menelepon!
+
+#Terjebak di lift
+A|エレベーターが止まってしまいました。|erebeetaa ga tomatte shimaimashita.|Liftnya berhenti.
+係員|非常ボタンを押しましたね。今、係の者が向かっています。|hijou botan o oshimashita ne. ima, kakari no mono ga mukatte imasu.|Anda sudah menekan tombol darurat. Petugas sedang menuju ke sana.
+A|どのくらいかかりますか。|dono kurai kakarimasu ka.|Berapa lama?
+係員|十分ほどです。落ち着いて待ってください。|juppun hodo desu. ochitsuite matte kudasai.|Sekitar sepuluh menit. Mohon tunggu dengan tenang.
+
+#Peringatan tsunami
+アナウンス|津波警報が出ました。高い所へ避難してください。|tsunami keihou ga demashita. takai tokoro e hinan shite kudasai.|Peringatan tsunami telah dikeluarkan. Segera mengungsi ke tempat tinggi.
+A|どこへ逃げればいいですか。|doko e nigereba ii desu ka.|Harus lari ke mana?
+B|あの山の上の学校です。急ぎましょう！|ano yama no ue no gakkou desu. isogimashou!|Sekolah di atas bukit itu. Ayo cepat!
+
+#Ditipu saat belanja online
+A|ネットでお金を払ったのに、商品が届きません。|netto de okane o haratta noni, shouhin ga todokimasen.|Saya sudah bayar online, tapi barangnya tidak datang.
+B|お店と連絡は取れますか。|omise to renraku wa toremasu ka.|Bisa menghubungi tokonya?
+A|いいえ、電話がつながりません。|iie, denwa ga tsunagarimasen.|Tidak, teleponnya tidak tersambung.
+B|警察と消費者センターに相談したほうがいいですよ。|keisatsu to shouhisha sentaa ni soudan shita hou ga ii desu yo.|Sebaiknya laporkan ke polisi dan pusat konsumen.
+
+#Tersesat di gunung
+A|道が分からなくなりました。|michi ga wakaranaku narimashita.|Saya tidak tahu jalannya lagi.
+B|動かないで、ここで助けを待ちましょう。|ugokanaide, koko de tasuke o machimashou.|Jangan bergerak, mari tunggu bantuan di sini.
+A|電話は通じますか。|denwa wa tsuujimasu ka.|Teleponnya ada sinyal?
+B|少しだけ電波があります。一一〇番にかけます。|sukoshi dake denpa ga arimasu. hyakutoouban ni kakemasu.|Ada sedikit sinyal. Saya telepon 110.
+
+#Kecelakaan mobil
+A|事故です！車がぶつかりました。|jiko desu! kuruma ga butsukarimashita.|Kecelakaan! Ada mobil yang bertabrakan.
+係員|けが人はいますか。|keganin wa imasu ka.|Ada yang terluka?
+A|運転手が頭から血を出しています。|untenshu ga atama kara chi o dashite imasu.|Sopirnya berdarah di kepala.
+係員|すぐに救急車を送ります。|sugu ni kyuukyuusha o okurimasu.|Kami segera mengirim ambulans.
+
+#Kebocoran gas
+A|ガスのにおいがします。|gasu no nioi ga shimasu.|Tercium bau gas.
+B|火を使わないで、窓を開けてください。|hi o tsukawanaide, mado o akete kudasai.|Jangan pakai api, buka jendelanya.
+B|ガス会社に電話しましょう。|gasu gaisha ni denwa shimashou.|Ayo telepon perusahaan gas.
+
+#Anak hilang di mall
+A|子供がいなくなりました！|kodomo ga inaku narimashita!|Anak saya hilang!
+店員|お子さんの名前と服の色を教えてください。|okosan no namae to fuku no iro o oshiete kudasai.|Tolong sebutkan nama anak dan warna bajunya.
+A|アリです。五歳で、赤いシャツを着ています。|ari desu. gosai de, akai shatsu o kite imasu.|Ari. Umur lima tahun, memakai kemeja merah.
+店員|すぐに館内放送をします。|sugu ni kannai housou o shimasu.|Kami segera umumkan lewat pengeras suara.
+
+#Banjir
+A|大雨で川の水が増えています。|ooame de kawa no mizu ga fuete imasu.|Karena hujan lebat, air sungai naik.
+B|避難指示が出ました。すぐに避難所へ行きましょう。|hinan shiji ga demashita. sugu ni hinanjo e ikimashou.|Perintah evakuasi sudah keluar. Ayo segera ke tempat pengungsian.
+A|大事な物だけ持って行きます。|daiji na mono dake motte ikimasu.|Saya bawa barang penting saja.

@@ -76,6 +76,7 @@ details.card summary{cursor:pointer}
 .sbank{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px}
 .stk{font:inherit;font-size:18px;padding:8px 13px;border-radius:12px;border:1px solid var(--bd);border-bottom-width:3px;background:var(--card);color:var(--fg);cursor:pointer;line-height:1.3}.stk small{display:block;font-size:11px;color:var(--mut)}.stk.used{visibility:hidden}
 .fbx{border-radius:14px;padding:12px 14px;margin:6px 0}.fbx.ok{background:color-mix(in srgb,var(--ok) 20%,var(--card))}.fbx.no{background:color-mix(in srgb,var(--no) 20%,var(--card))}
+details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margin-bottom:6px}
 </style></head><body><div id="app"></div>
 <script>
 const $=s=>document.querySelector(s),app=$('#app');
@@ -276,14 +277,16 @@ function quiz(title,items,back,n){
    $('#again').onclick=()=>quiz(title,items,back,n);$('#sc').onclick=prog;return}
   const it=q[i],ops=shuf([it.a,...shuf([...new Set(it.d||pool)].filter(x=>x!==it.a)).slice(0,3)]);
   view(`${hdr(title)}<div class="meta">Soal ${i+1}/${q.length} · Skor ${s} · Streak ${st}</div><div class="card"><div class="qq">${it.q}</div>${qRom(it)?`<div class="ro qr">${qRom(it)}</div>`:''}${it.say?'<div style="text-align:center"><button class="sp" id="sp">🔊</button></div>':''}</div><div class="opts">${ops.map((o,k)=>`<button class="opt" data-k="${k}">${optHtml(o,it)}</button>`).join('')}</div><div id="fb"></div>`,back);
-  if(it.say){$('#sp').onclick=()=>speak(it.say);if(auto)speak(it.say)}
+  if(it.say){$('#sp').onclick=()=>speak(it.say);if(auto||it.listen)speak(it.say)}
   document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
-   const ok=ops[b.dataset.k]===it.a;
+   const pick=ops[b.dataset.k],ok=pick===it.a;
    document.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(ops[x.dataset.k]===it.a)x.classList.add('ok')});
    if(!ok)b.classList.add('no');
    if(ok){s++;st++;bs=Math.max(bs,st)}else st=0;
    track(ok,it,ops);
-   $('#fb').innerHTML=`<p>${ok?'✅ Benar':'❌ Jawaban: '+optHtml(it.a,it)}${it.e?'<br><span class="rj">'+it.e+'</span>':''}</p><button class="pb" id="nx">Lanjut</button>`;
+   // it.qa: arti kalimat soal · it.om: peta pilihan → artinya (arti pilihan yang salah ditampilkan saat keliru)
+   const am=it.om&&it.om[it.a]&&it.om[it.a]!==strip(it.q)?it.om[it.a]:'';
+   $('#fb').innerHTML=`<p>${ok?'✅ Benar':'❌ Jawaban: '+optHtml(it.a,it)}${it.qa?`<br><span class="rj">Arti kalimat soal: ${it.qa}</span>`:''}${am?`<br><span class="rj">Arti jawaban: ${am}</span>`:''}${!ok&&it.om&&it.om[pick]?`<br><span class="rj" style="color:var(--no)">Pilihanmu artinya: ${it.om[pick]}</span>`:''}${it.e?'<br><span class="rj">'+it.e+'</span>':''}</p><button class="pb" id="nx">Lanjut</button>`;
    $('#nx').onclick=()=>{i++;next()}})};
  next()}
 
@@ -631,25 +634,44 @@ function susun(title,items,back,n){
   draw()};
  next()}
 
-/* ----- KAIWA: dialog per kategori + kuis arti kalimat & kalimat berikutnya ----- */
+/* ----- KAIWA: dialog per kategori + 6 mode kuis ----- */
 const KWC=[...new Set(KW.map(d=>d[0]))];
 let kwC=ST.get('kwC','');
 function kaiwa(){
- const D=KW.filter(d=>!kwC||d[0]==kwC);
- view(`${hdr('Kaiwa · Percakapan')}<select id="kwc"><option value="">Semua kategori (${KW.length} dialog)</option>${KWC.map(c=>`<option ${c==kwC?'selected':''} value="${c}">${c} (${KW.filter(d=>d[0]==c).length})</option>`).join('')}</select>
- ${D.map(d=>`<h3>${d[1]}${kwC?'':` <span class="rj">· ${d[0]}</span>`}</h3><div class="card">${d[2].map(l=>`<div class="bub"><b>${l[0]}</b>: ${l[1]} <button class="sp" data-s="${l[1]}">🔊</button><div class="rj ro">${l[2]}</div>${l[3]}</div>`).join('')}</div>`).join('')}${qbar('<button class="pb" id="q1">Arti kalimat</button><button class="pb" id="q2">Kalimat berikutnya</button>')}`);
+ if(kwC&&!KWC.includes(kwC))kwC='';
+ const D=KW.filter(d=>!kwC||d[0]==kwC),nLine=D.reduce((s,d)=>s+d[2].length,0);
+ const dlg=d=>`<details class="card dlg"><summary><b>${d[1]}</b> <span class="rj">· ${d[2].length} kalimat${kwC?'':' · '+d[0]}</span></summary>${d[2].map(l=>`<div class="bub"><b>${l[0]}</b>: ${l[1]} <button class="sp" data-s="${l[1]}">🔊</button><div class="rj ro">${l[2]}</div>${l[3]}</div>`).join('')}</details>`;
+ const body=kwC?`<button class="tg" id="kwall" style="margin:0 0 10px">← Semua kategori</button><p class="sub">${D.length} dialog · ${nLine} kalimat. Ketuk judul untuk membuka dialog.</p>${D.map(dlg).join('')}`
+  :`<p class="sub">${KW.length} dialog · ${nLine} kalimat dalam ${KWC.length} kategori. Pilih kategori untuk membaca dialog, atau langsung mulai kuis dari semua dialog.</p><div class="grid">${KWC.map(c=>`<button class="mc" data-kwc="${c}"><b style="margin-top:0">${c}</b><small>${KW.filter(d=>d[0]==c).length} dialog</small></button>`).join('')}</div>`;
+ view(`${hdr(kwC?`Kaiwa · ${kwC}`:'Kaiwa · Percakapan')}${body}
+ ${qbar('<button class="pb" id="q1">Arti kalimat</button><button class="pb" id="q2">Arti → Jepang</button><button class="pb" id="q3">Kalimat berikutnya</button><button class="pb" id="q4">Lengkapi kalimat</button><button class="pb" id="q5">🎧 Dengarkan</button><button class="pb" id="q6">🧩 Susun</button>')}`);
  onSpeak(app);
- $('#kwc').onchange=e=>{kwC=e.target.value;ST.set('kwC',kwC);kaiwa()};
+ if(kwC)$('#kwall').onclick=()=>{kwC='';ST.set('kwC','');kaiwa()};
+ app.querySelectorAll('[data-kwc]').forEach(b=>b.onclick=()=>{kwC=b.dataset.kwc;ST.set('kwC',kwC);kaiwa()});
  const ln=D.flatMap((d,di)=>d[2].map((l,li)=>({di,li,t:d[1],sp:l[0],j:l[1],r:l[2],a:l[3]})));
  const all=KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3]})));
  const opt=l=>`${l.j}<small class="ro">${l.r}</small>`;
- const nm=m=>`Kaiwa${kwC?' '+kwC:''}: ${m}`;
+ const nm=m=>`Kaiwa${kwC?' '+kwC:''}: ${m}`,pick=L=>shuf(L).slice(0,QN());
  // pengecoh diambil dari semua dialog supaya pilihan tetap cukup walau kategori kecil
- $('#q1').onclick=()=>quiz(nm('arti kalimat'),()=>ln.map(l=>({q:l.j,qr:l.r,say:l.j,a:l.a,d:shuf(all.filter(x=>x.a!=l.a)).slice(0,6).map(x=>x.a)})),kaiwa);
- $('#q2').onclick=()=>quiz(nm('kalimat berikutnya'),()=>ln.filter(l=>D[l.di][2][l.li+1]).map(l=>{const n=ln.find(x=>x.di==l.di&&x.li==l.li+1);
-  return{q:`<small class="rj">${l.t}</small><br><b>${l.sp}:</b> ${l.j}<br><small class="rj">Apa kalimat berikutnya?</small>`,qr:l.r,say:l.j,a:opt(n),d:shuf(all.filter(x=>x.j!=n.j&&x.j!=l.j)).slice(0,6).map(opt),nr:true,e:`${n.sp}: ${n.a}`}}),kaiwa)}
+ const oth=(l,n=6)=>shuf(all.filter(x=>x.a!=l.a&&x.j!=l.j)).slice(0,n);
+ const omap=L=>Object.fromEntries(L.map(x=>[opt(x),x.a]));
+ // 1. Jepang → arti
+ $('#q1').onclick=()=>quiz(nm('arti kalimat'),()=>pick(ln).map(l=>({q:l.j,qr:l.r,say:l.j,a:l.a,d:oth(l).map(x=>x.a),e:`${l.t} · ${l.sp}`})),kaiwa);
+ // 2. arti → Jepang
+ $('#q2').onclick=()=>quiz(nm('arti → Jepang'),()=>pick(ln).map(l=>{const o=oth(l);return{q:l.a,qr:'',a:opt(l),d:o.map(opt),nr:true,om:omap([l,...o]),e:`${l.t} · ${l.sp}`}}),kaiwa);
+ // 3. pilih kalimat berikutnya dalam dialog
+ $('#q3').onclick=()=>quiz(nm('kalimat berikutnya'),()=>pick(ln.filter(l=>D[l.di][2][l.li+1])).map(l=>{const n=ln.find(x=>x.di==l.di&&x.li==l.li+1),o=oth(n).filter(x=>x.j!=l.j);
+  return{q:`<small class="rj">${l.t}</small><br><b>${l.sp}:</b> ${l.j}<br><small class="rj">Apa kalimat berikutnya?</small>`,qr:l.r,say:l.j,a:opt(n),d:o.map(opt),nr:true,om:omap([n,...o]),qa:l.a,e:`Jawaban diucapkan oleh: ${n.sp}`}}),kaiwa);
+ // 4. lengkapi kalimat: satu kata dikosongkan
+ $('#q4').onclick=()=>quiz(nm('lengkapi kalimat'),()=>pick(ln.filter(l=>sentTok(l.j).length>=3)).map(l=>{const tk=sentTok(l.j),k=Math.floor(Math.random()*tk.length),ans=tk[k];
+  const d=[];for(const x of shuf(all)){if(d.length>=6)break;const t=shuf(sentTok(x.j))[0];if(t&&t!==ans&&!tk.includes(t)&&!d.includes(t))d.push(t)}
+  return{q:`<span style="font-size:20px">${tk.map((t,j)=>j==k?'<span class="blank">＿＿</span>':t).join('')}</span><br><small class="rj" style="font-weight:400">${l.a}</small>`,qr:'',a:ans,d,e:`${l.j} <span class="ro">(${l.r})</span>`}}),kaiwa);
+ // 5. dengarkan: suara diputar otomatis, pilih artinya
+ $('#q5').onclick=()=>quiz(nm('dengarkan'),()=>pick(ln).map(l=>({q:'🎧 Dengarkan, lalu pilih artinya',qr:'',say:l.j,listen:true,a:l.a,d:oth(l).map(x=>x.a),e:`${l.j} <span class="ro">(${l.r})</span>`})),kaiwa);
+ // 6. susun kalimat
+ $('#q6').onclick=()=>susun(nm('susun kalimat'),()=>sentItems(shuf(ln).slice(0,QN()+5).map(l=>({j:l.j,r:l.r,a:l.a,sub:`${l.t} · ${l.sp}`})),all.map(x=>x.j)),kaiwa)}
 
-/* ----- TEKA-TEKI: semua mode susun + tebak teka-teki ----- */
+/* ----- TEKA-TEKI: semua mode susun ala Duolingo ----- */
 let pzL=ST.get('pzL','');
 const PZ=[
  ['hira','あ','Susun Hiragana','Susun huruf hiragana menjadi kata'],
@@ -658,8 +680,7 @@ const PZ=[
  ['katsu','活','Susun Katsuyō','Susun bentuk perubahan kata kerja'],
  ['bunpo','法','Susun Bunpo','Susun contoh kalimat tata bahasa'],
  ['kaiwa','話','Susun Kaiwa','Susun kalimat percakapan'],
- ['bun','文','Susun Bun','Susun kalimat sehari-hari'],
- ['tebak','💡','Tebak teka-teki','Teka-teki Jepang klasik']];
+ ['bun','文','Susun Bun','Susun kalimat sehari-hari']];
 function puzzle(){
  view(`${hdr('Teka-teki · Susun')}<p class="sub">Susun ubin menjadi jawaban yang benar, seperti di Duolingo. Ketuk ubin untuk memindahkannya, ketuk lagi untuk mengembalikan.</p>
  <div class="row2"><select id="pzl"><option value="">Semua level</option>${['N5','N4','N3','N2','N1','Kerja'].map(x=>`<option ${x==pzL?'selected':''}>${x}</option>`).join('')}</select><div class="qcfg" style="justify-content:flex-end">Jumlah soal <select class="qn">${QOPTS.map(x=>`<option ${x==qn?'selected':''}>${x}</option>`).join('')}</select></div></div>
@@ -681,10 +702,7 @@ function pzStart(m){
  if(m=='kaiwa'){const ln=KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3],sub:`${d[1]} · ${l[0]}`})));
   return susun('Susun Kaiwa',()=>sentItems(shuf(ln).slice(0,N()+5),ln.map(x=>x.j)),puzzle)}
  if(m=='bun')return susun('Susun Bun',()=>sentItems(shuf(BUN).slice(0,N()+5).map(b=>({j:b[1],r:b[2],a:b[3],sub:b[0]})),BUN.map(b=>b[1])),puzzle);
- quiz('Tebak teka-teki',[
- {q:'朝は4本足、昼は2本足、夜は3本足。なあに？',qr:'asa wa yon-hon ashi, hiru wa ni-hon ashi, yoru wa san-bon ashi. naa ni?',a:'にんげん',d:['いぬ','とり','くるま'],e:'Manusia (bayi merangkak, dewasa berjalan, tua bertongkat)'},
- {q:'パンはパンでも、食べられないパンは？',qr:'pan wa pan demo, taberarenai pan wa?',a:'フライパン',d:['あんパン','しょくパン','カレーパン'],e:'Wajan penggorengan'},
- {q:'上は大火事、下は大水。なあに？',qr:'ue wa ookaji, shita wa oomizu. naa ni?',a:'おふろ',d:['やま','うみ','がっこう'],e:'Bak mandi air panas'}],puzzle,3)}
+}
 
 /* ----- KATSUYŌ: penjelasan, aturan, daftar 500 kata kerja + kuis ----- */
 let ktTab=ST.get('ktTab','Daftar'),ktG=ST.get('ktG',''),ktL=ST.get('ktL',''),ktQ='',ktF=ST.get('ktF',['masu','nai','te','ta']);
@@ -700,18 +718,38 @@ const KT_EXPL=`<div class="card"><b>Katsuyō (活用) vs Bunpō (文法)</b><p s
 <h3>4. Mana yang dipelajari lebih dahulu?</h3>
 <div class="card wrap"><table><tr><th>Urutan</th><th>Materi</th><th>Yang dipelajari</th></tr><tr><td>1</td><td>Kotoba (言葉)</td><td>Kosakata: nomu, taberu, iku</td></tr><tr><td>2</td><td>Katsuyō (活用)</td><td>Perubahan kata: nomu → nonde</td></tr><tr><td>3</td><td>Bunpō (文法)</td><td>Pola kalimat: ～ている, ～たい</td></tr><tr><td>4</td><td>Kaiwa (会話)</td><td>Praktik percakapan sehari-hari</td></tr></table></div>
 <div class="card"><b>Kesimpulan</b><ul style="margin:6px 0 0;padding-left:20px;line-height:1.8"><li><b>Kotoba</b> = kata atau kosakata yang kamu pelajari.</li><li><b>Katsuyō</b> = bagaimana bentuk kata itu berubah.</li><li><b>Bunpō</b> = bagaimana kata dan bentuknya dipakai sesuai aturan kalimat.</li><li><b>Kaiwa</b> = bagaimana kamu memakai semuanya dalam percakapan.</li></ul><p class="rj" style="margin:8px 0 0">Dari N5 sampai N1, pelajari Katsuyō dan Bunpō bersamaan: saat mempelajari satu pola Bunpō, pelajari juga perubahan kata yang dibutuhkan untuk membentuk pola tersebut.</p></div>`;
+// romaji nama tiap bentuk (untuk tabel 15 bentuk)
+const KFR={kamus:'jishokei',masu:'masu',masen:'masen',mashita:'mashita',nai:'nai',ta:'ta',nakatta:'nakatta',te:'te',tai:'tai',kanou:'kanoukei',ikou:'ikoukei',ba:'ba (jōkenkei)',meirei:'meireikei',ukemi:'ukemi',shieki:'shiekikei'};
+// [kelompok, keterangan, [[bentuk, aturan, contoh, romaji bentuk, romaji aturan, romaji contoh], ...]]
 const KT_RULE=[
- ['Kelompok 1: Godan (u-verb)','Akhiran berpindah baris vokal (a-i-u-e-o).',[['ます / たい','u → i + ます','書く → 書きます'],['ない','u → a + ない (う → わ)','書く → 書かない · 買う → 買わない'],['て / た','く→いて · ぐ→いで · す→して · う/つ/る→って · ぬ/ぶ/む→んで','書く → 書いて · 飲む → 飲んで · 行く → 行って (pengecualian)'],['Potensial','u → e + る','書く → 書ける'],['Ajakan','u → o + う','書く → 書こう'],['ば','u → e + ば','書く → 書けば'],['Perintah','u → e','書く → 書け'],['Pasif','u → a + れる','書く → 書かれる'],['Kausatif','u → a + せる','書く → 書かせる']]],
- ['Kelompok 2: Ichidan (ru-verb)','Berakhiran る dengan bunyi i/e sebelumnya. Cukup buang る.',[['ます / ない / て / た / たい','る → ます · ない · て · た · たい','食べる → 食べます · 食べない · 食べて'],['Potensial / Pasif','る → られる','食べる → 食べられる'],['Ajakan','る → よう','食べる → 食べよう'],['ば','る → れば','食べる → 食べれば'],['Perintah','る → ろ','食べる → 食べろ'],['Kausatif','る → させる','食べる → 食べさせる']]],
- ['Kelompok 3: Tidak beraturan','Hanya する dan 来る (くる), termasuk kata benda + する (勉強する). Dihafalkan.',[['する','します · しない · して · した · できる · しよう · すれば · しろ · される · させる','勉強する → 勉強します'],['来る','きます · こない · きて · きた · こられる · こよう · くれば · こい · こさせる','来る → 来ます (きます)']]]];
+ ['Kelompok 1: Godan (u-verb)','Akhiran berpindah baris vokal (a-i-u-e-o).',[
+  ['ます / たい','u → i + ます','書く → 書きます','masu / tai','u → i + masu','kaku → kakimasu'],
+  ['ない','u → a + ない (う → わ)','書く → 書かない · 買う → 買わない','nai','u → a + nai (u → wa)','kaku → kakanai · kau → kawanai'],
+  ['て / た','く→いて · ぐ→いで · す→して · う/つ/る→って · ぬ/ぶ/む→んで','書く → 書いて · 飲む → 飲んで · 行く → 行って (pengecualian)','te / ta','ku→ite · gu→ide · su→shite · u/tsu/ru→tte · nu/bu/mu→nde','kaku → kaite · nomu → nonde · iku → itte'],
+  ['Potensial','u → e + る','書く → 書ける','kanoukei','u → e + ru','kaku → kakeru'],
+  ['Ajakan','u → o + う','書く → 書こう','ikoukei','u → o + u','kaku → kakou'],
+  ['ば','u → e + ば','書く → 書けば','ba','u → e + ba','kaku → kakeba'],
+  ['Perintah','u → e','書く → 書け','meireikei','u → e','kaku → kake'],
+  ['Pasif','u → a + れる','書く → 書かれる','ukemi','u → a + reru','kaku → kakareru'],
+  ['Kausatif','u → a + せる','書く → 書かせる','shiekikei','u → a + seru','kaku → kakaseru']]],
+ ['Kelompok 2: Ichidan (ru-verb)','Berakhiran る <span class="ro">(ru)</span> dengan bunyi i/e sebelumnya. Cukup buang る <span class="ro">(ru)</span>.',[
+  ['ます / ない / て / た / たい','る → ます · ない · て · た · たい','食べる → 食べます · 食べない · 食べて','masu / nai / te / ta / tai','ru → masu · nai · te · ta · tai','taberu → tabemasu · tabenai · tabete'],
+  ['Potensial / Pasif','る → られる','食べる → 食べられる','kanoukei / ukemi','ru → rareru','taberu → taberareru'],
+  ['Ajakan','る → よう','食べる → 食べよう','ikoukei','ru → you','taberu → tabeyou'],
+  ['ば','る → れば','食べる → 食べれば','ba','ru → reba','taberu → tabereba'],
+  ['Perintah','る → ろ','食べる → 食べろ','meireikei','ru → ro','taberu → tabero'],
+  ['Kausatif','る → させる','食べる → 食べさせる','shiekikei','ru → saseru','taberu → tabesaseru']]],
+ ['Kelompok 3: Tidak beraturan','Hanya する <span class="ro">(suru)</span> dan 来る <span class="ro">(kuru)</span>, termasuk kata benda + する seperti 勉強する <span class="ro">(benkyou suru)</span>. Dihafalkan.',[
+  ['する','します · しない · して · した · できる · しよう · すれば · しろ · される · させる','勉強する → 勉強します','suru','shimasu · shinai · shite · shita · dekiru · shiyou · sureba · shiro · sareru · saseru','benkyou suru → benkyou shimasu'],
+  ['来る','きます · こない · きて · きた · こられる · こよう · くれば · こい · こさせる','来る → 来ます (きます)','kuru','kimasu · konai · kite · kita · korareru · koyou · kureba · koi · kosaseru','kuru → kimasu']]]];
 function katsuyo(){
  const tabs=['Penjelasan','Aturan','Daftar'];if(!tabs.includes(ktTab))ktTab='Daftar';
  const P=KV.filter(v=>(!ktG||kgroup(v)==ktG)&&(!ktL||v.l==ktL)&&(!ktQ||(v.j+' '+v.k+' '+v.r+' '+v.a).toLowerCase().includes(ktQ)));
  let body='';
  if(ktTab=='Penjelasan')body=KT_EXPL;
  else if(ktTab=='Aturan'){const ex=['飲む','食べる','する','来る'].map(j=>V.find(v=>v.j==j)).filter(Boolean);
-  body=KT_RULE.map(([t,d,r])=>`<h3>${t}</h3><div class="card"><p class="rj" style="margin:0 0 6px">${d}</p>${r.map(x=>`<div class="gp"><div><b>${x[0]}</b></div><div>${x[1]}<div class="rj">${x[2]}</div></div></div>`).join('')}</div>`).join('')
-  +`<h3>Tabel 15 bentuk</h3><div class="card wrap"><table><tr><th>Bentuk</th>${ex.map(v=>`<th>${v.j}</th>`).join('')}</tr>${KF.map(f=>`<tr><td>${f[1]}<small>${f[2]}</small></td>${ex.map(v=>{const x=vForms(v).find(y=>y.id==f[0]);return`<td>${x?x.jj:'—'}${x&&x.jj!=x.kana?`<small>${x.kana}</small>`:''}${x?`<small class="ro">${rom(x.kana)}</small>`:''}</td>`}).join('')}</tr>`).join('')}</table></div>`}
+  body=KT_RULE.map(([t,d,r])=>`<h3>${t}</h3><div class="card"><p class="rj" style="margin:0 0 6px">${d}</p>${r.map(x=>`<div class="gp"><div><b>${x[0]}</b><span class="ro">${x[3]}</span></div><div>${x[1]}<div class="ro" style="font-size:13px">${x[4]}</div><div class="rj" style="margin-top:4px">${x[2]}</div><div class="ro" style="font-size:13px">${x[5]}</div></div></div>`).join('')}</div>`).join('')
+  +`<h3>Tabel 15 bentuk</h3><div class="card wrap"><table><tr><th>Bentuk</th>${ex.map(v=>`<th>${v.j}</th>`).join('')}</tr>${KF.map(f=>`<tr><td>${f[1]}<small class="ro">${KFR[f[0]]}</small><small>${f[2]}</small></td>${ex.map(v=>{const x=vForms(v).find(y=>y.id==f[0]);return`<td>${x?x.jj:'—'}${x&&x.jj!=x.kana?`<small>${x.kana}</small>`:''}${x?`<small class="ro">${rom(x.kana)}</small>`:''}</td>`}).join('')}</tr>`).join('')}</table></div>`}
  else body=`<input type="search" id="kts" placeholder="Cari kata kerja (kanji, kana, romaji, arti)..." value="${ktQ.replace(/"/g,'&quot;')}"><div class="row2"><select id="ktg"><option value="">Semua kelompok</option>${[1,2,3].map(g=>`<option value="${g}" ${g==ktG?'selected':''}>${GNAME[g]}</option>`).join('')}</select><select id="ktl"><option value="">Semua level</option>${['N5','Kerja','N4','N3','N2'].map(x=>`<option ${x==ktL?'selected':''}>${x}</option>`).join('')}</select></div>
   <div class="meta">${P.length} dari ${KV.length} kata kerja · ketuk untuk melihat 15 bentuknya</div><div class="card" id="ktlist">${P.slice(0,200).map(v=>`<button class="kvr" data-j="${v.j}"><span><b>${v.j}</b>${v.j!=v.k?` <span class="rj">${v.k}</span>`:''} <span class="ro rj">${v.r}</span><br><small>${v.a}</small></span><span class="rj" style="font-size:12px;text-align:right">${GNAME[kgroup(v)].split(' (')[0]}<br>${v.l}</span></button>`).join('')}${P.length>200?`<p class="rj">Menampilkan 200 pertama. Gunakan pencarian atau filter.</p>`:''}</div>
   <div class="kset"><span class="rj">Bentuk untuk kuis:</span>${KF.slice(1).map(f=>`<button class="tg${ktF.includes(f[0])?' on':''}" data-kf="${f[0]}">${f[1].replace('Bentuk ','')}</button>`).join('')}</div>`;
