@@ -1,0 +1,16 @@
+{
+  "name": "Nehonesia — Belajar Bahasa Jepang",
+  "short_name": "Nehonesia",
+  "description": "Belajar bahasa Jepang dari N5 sampai N1: kana, kanji, kosakata, tata bahasa, dan percakapan.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c8102e",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

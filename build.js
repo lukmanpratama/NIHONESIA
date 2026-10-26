@@ -105,7 +105,42 @@ function kvgParse(svg) {
   strokes.sort((a, b) => a[0] - b[0]);
   const nums = [...svg.matchAll(/<text transform="matrix\(1 0 0 1 ([\d.]+) ([\d.]+)\)">(\d+)<\/text>/g)]
     .sort((a, b) => a[3] - b[3]).map(m => [+(+m[1]).toFixed(1), +(+m[2]).toFixed(1)]);
-  return { s: strokes.map(x => x[1]), n: nums };
+  return { s: strokes.map(x => x[1]), n: nums, p: kvgParts(svg, strokes.length) };
+}
+// Komponen kanji dari pengelompokan KanjiVG (kvg:element, kvg:position, kvg:radical, kvg:phon).
+// Hasil: [[elemen, bentuk asli, posisi, tanda (r = radikal/bushu, p = petunjuk bunyi), [nomor goresan 0-based...], sub-komponen], ...]
+// Bagian yang terpisah (kvg:part="1"/"2", mis. 囗 pada 回) digabung menjadi satu komponen.
+function kvgParts(svg, total) {
+  const root = { kids: [], own: [] }, st = [];
+  for (const m of svg.matchAll(/<g\b([^>]*)>|<\/g>|<path\b([^>]*?)\/?>/g)) {
+    if (m[0] === '</g>') { st.pop(); continue; }
+    if (m[1] !== undefined) {
+      const a = m[1], at = n => (a.match(new RegExp(`kvg:${n}="([^"]*)"`)) || [])[1] || '';
+      const isRoot = /id="kvg:[0-9a-f]+"/.test(a), node = { e: at('element'), o: at('original'), pos: at('position'), rad: at('radical'), phon: at('phon'), part: at('part'), kids: [], own: [] };
+      const top = st[st.length - 1];
+      if (isRoot) st.push(root); else { if (top) top.kids.push(node); st.push(top ? node : { kids: [], own: [] }); }
+      continue;
+    }
+    const id = m[2].match(/id="kvg:[0-9a-f]+-s(\d+)"/);
+    if (id && st.length) st[st.length - 1].own.push(+id[1] - 1);
+  }
+  const all = n => [...n.own, ...n.kids.flatMap(all)].sort((a, b) => a - b);
+  const conv = list => {
+    const out = [];
+    for (const n of list) {
+      const s = all(n);
+      if (!s.length) continue;
+      const prev = n.part && out.find(x => x[0] === n.e && x[0]);
+      if (prev) { prev[4] = [...prev[4], ...s].sort((a, b) => a - b); prev[5].push(...conv(n.kids)); continue; }
+      out.push([n.e || '?', n.o, n.pos, (/general|tradit/.test(n.rad) ? 'r' : '') + (n.phon ? 'p' : ''), s, conv(n.kids)]);
+    }
+    return out;
+  };
+  let top = root;
+  while (top.kids.length === 1 && !top.own.length && all(top.kids[0]).length === total) top = top.kids[0];
+  const parts = conv(top.kids);
+  if (top.own.length) parts.push(['?', '', '', '', top.own, []]);
+  return parts.length > 1 ? parts : [];
 }
 
 async function buildKanji() {
@@ -128,7 +163,10 @@ async function buildKanji() {
     await Promise.all(list.slice(i, i + 16).map(async it => {
       const cached = fs.existsSync(path.join(KVG_DIR, kvgName(it.k)));
       try { Object.assign(it, kvgParse(await kvgSvg(it.k))); if (!cached) fetched++; }
-      catch (e) { bad.push(`kanji ${it.k}: data goresan tidak tersedia (${e.message})`); it.s = []; it.n = []; }
+      catch (e) { bad.push(`kanji ${it.k}: data goresan tidak tersedia (${e.message})`); it.s = []; it.n = []; it.p = []; }
+      // validasi: komponen harus mencakup setiap goresan tepat satu kali
+      const cov = (it.p || []).flatMap(x => x[4]).sort((a, b) => a - b);
+      if (cov.length && cov.join() !== it.s.map((_, j) => j).join()) bad.push(`kanji ${it.k}: komponen KanjiVG tidak mencakup semua goresan`);
     }));
   }
   return { cats, klv, list, fetched };
@@ -210,16 +248,34 @@ async function buildKana() {
   return { out, missing, fetched };
 }
 
+// ===== ISTILAH (src/istilah.txt) → [[kategori, kanji, hiragana, romaji, arti], ...] =====
+function buildIstilah() {
+  const out = []; let cat = 'Istilah';
+  fs.readFileSync(path.join(ROOT, 'src', 'istilah.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    if (line[0] === '@') { cat = line.slice(1).trim(); return; }
+    const p = line.split('|').map(x => x.trim());
+    if (p.length !== 4 || p.some(x => !x) || !/^[ぁ-ゖー]+$/.test(p[1])) { bad.push(`istilah.txt:${ln + 1} format salah: ${line}`); return; }
+    out.push([cat, ...p]);
+  });
+  return out;
+}
+// ikon aplikasi dimasukkan sebagai data URI supaya index.html tetap bisa dipakai sebagai satu file
+const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 'assets', f)).toString('base64');
+
 (async () => {
   const K = await buildKanji();
+  const IS = buildIstilah();
   const KW = buildKaiwa();
   const KN = await buildKana();
   const BP = buildBunpo();
   const BN = buildBun();
   const data = JSON.stringify({ t: types, l: levels, d: rows.join('\n') });
-  const kdata = JSON.stringify({ c: K.cats, l: K.klv, d: K.list.map(x => [x.k, x.kun.join(','), x.on.join(','), x.a, x.c, x.l, x.s, x.n]) });
+  const kdata = JSON.stringify({ c: K.cats, l: K.klv, d: K.list.map(x => [x.k, x.kun.join(','), x.on.join(','), x.a, x.c, x.l, x.s, x.n, x.p]) });
   let tpl = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
-  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN) };
+  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*ISTILAH*/null': JSON.stringify(IS),
+    '__FAVICON__': dataUri('favicon-64.png'), '__LOGO__': dataUri('apple-touch-icon.png') };
   for (const [m, v] of Object.entries(inject)) {
     if (!tpl.includes(m)) throw new Error(`Penanda ${m} tidak ditemukan di template`);
     tpl = tpl.split(m).join(v);
@@ -230,6 +286,7 @@ async function buildKana() {
   console.log(`index.html dibuat: ${rows.length} kata`, byLv);
   console.log(`Kanji: ${K.list.length} dalam ${K.cats.length} kategori` + (K.fetched ? ` (${K.fetched} data goresan baru diunduh)` : ''));
   console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori`);
+  console.log(`Istilah: ${IS.length} istilah`);
   console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
   console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
   console.log(`Kana dengan data goresan: ${Object.keys(KN.out).length}` + (KN.fetched ? ` (${KN.fetched} baru diunduh)` : '') + (KN.missing.length ? ` · tidak tersedia: ${KN.missing.join('')}` : ''));
