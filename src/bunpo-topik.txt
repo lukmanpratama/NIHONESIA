@@ -1,0 +1,134 @@
+// Materi submodul Bunpō per topik.
+// Format:
+//   @id|Judul|ringkasan
+//   - penjelasan singkat (boleh beberapa baris)
+//   pola|romaji|arti / fungsi|contoh kalimat|romaji contoh|arti contoh
+// Romaji ditulis manual (partikel は = wa, を = o, へ = e).
+
+@struktur|Struktur kalimat|Cara menyusun kata menjadi kalimat bahasa Jepang.
+- Urutan dasar: subjek – objek – predikat (S–O–P). Kata kerja atau predikat selalu di akhir kalimat.
+- Partikel (は, を, に, …) menandai fungsi kata, jadi urutan kata selain predikat cukup fleksibel.
+- Kata atau kalimat penjelas selalu diletakkan di depan kata benda yang dijelaskan.
+- Subjek sering tidak disebut kalau sudah jelas dari konteks.
+- Kalimat tanya cukup ditambah か di akhir, tanpa mengubah urutan kata.
+S は O を V|S wa O o V|Pola dasar: subjek – objek – kata kerja|私はパンを食べます。|watashi wa pan o tabemasu.|Saya makan roti.
+S は N です|S wa N desu|Menyatakan A adalah B|田中さんは先生です。|tanaka-san wa sensei desu.|Pak Tanaka adalah guru.
+S は Adj です|S wa Adj desu|Menyatakan sifat|この部屋は広いです。|kono heya wa hiroi desu.|Kamar ini luas.
+Waktu → tempat → kegiatan|toki → basho → V|Urutan keterangan yang umum: waktu dulu, lalu tempat|明日、駅で友達に会います。|ashita, eki de tomodachi ni aimasu.|Besok saya bertemu teman di stasiun.
+Penjelas + kata benda|shūshokugo + meishi|Kalimat penjelas diletakkan di depan kata benda|これは母が作ったケーキです。|kore wa haha ga tsukutta keeki desu.|Ini kue yang dibuat ibu saya.
+(Subjek) dihilangkan|shugo no shōryaku|Subjek tidak disebut jika sudah jelas|毎日、会社に行きます。|mainichi, kaisha ni ikimasu.|(Saya) pergi ke kantor setiap hari.
+Kalimat + か|bun + ka|Menjadikan kalimat tanya|これは何ですか。|kore wa nan desu ka.|Ini apa?
+Kalimat 1 て、kalimat 2|bun 1 te, bun 2|Menyambung kegiatan yang berurutan|朝起きて、顔を洗います。|asa okite, kao o araimasu.|Pagi bangun, lalu cuci muka.
+Kalimat 1 が、kalimat 2|bun 1 ga, bun 2|Menyambung dua kalimat yang bertentangan|日本語は難しいですが、面白いです。|nihongo wa muzukashii desu ga, omoshiroi desu.|Bahasa Jepang sulit, tetapi menarik.
+Kalimat + と思います|bun + to omoimasu|Kalimat di dalam kalimat (menyatakan pendapat)|明日は雨が降ると思います。|ashita wa ame ga furu to omoimasu.|Saya rasa besok akan hujan.
+
+@partikel|Partikel|助詞 — kata kecil penanda fungsi kata dalam kalimat.
+- Partikel diletakkan setelah kata yang ditandainya, mis. 私は (saya + penanda topik).
+- は dibaca "wa", を dibaca "o", dan へ dibaca "e" saat menjadi partikel.
+- Satu partikel bisa punya beberapa fungsi, mis. に untuk waktu, tujuan, dan tempat keberadaan.
+は|wa|Topik kalimat|私は学生です。|watashi wa gakusei desu.|Saya pelajar.
+が|ga|Subjek; informasi baru|あそこに猫がいます。|asoko ni neko ga imasu.|Di sana ada kucing.
+を|o|Objek tindakan|水を飲みます。|mizu o nomimasu.|Minum air.
+を (tempat dilalui)|o|Tempat yang dilewati|公園を散歩します。|kouen o sanpo shimasu.|Berjalan-jalan di taman.
+に (waktu)|ni|Waktu tertentu|七時に起きます。|shichiji ni okimasu.|Bangun jam tujuh.
+に (tujuan / penerima)|ni|Tujuan atau penerima tindakan|友達に手紙を書きます。|tomodachi ni tegami o kakimasu.|Menulis surat kepada teman.
+に (keberadaan)|ni|Tempat sesuatu berada|机の上に本があります。|tsukue no ue ni hon ga arimasu.|Ada buku di atas meja.
+で (tempat kegiatan)|de|Tempat terjadinya kegiatan|工場で働きます。|koujou de hatarakimasu.|Bekerja di pabrik.
+で (alat / cara)|de|Alat atau cara|バスで行きます。|basu de ikimasu.|Pergi naik bus.
+へ|e|Arah tujuan|日本へ行きます。|nihon e ikimasu.|Pergi ke Jepang.
+と|to|Bersama; dan (menyebut lengkap)|友達と映画を見ます。|tomodachi to eiga o mimasu.|Menonton film bersama teman.
+や|ya|Dan (menyebut sebagian contoh)|りんごやバナナを買いました。|ringo ya banana o kaimashita.|Membeli apel, pisang, dan lain-lain.
+も|mo|Juga|私も行きます。|watashi mo ikimasu.|Saya juga pergi.
+の|no|Kepemilikan; penghubung kata benda|これは私の傘です。|kore wa watashi no kasa desu.|Ini payung saya.
+から|kara|Dari (titik awal); karena|会社は九時からです。|kaisha wa kuji kara desu.|Kantor mulai dari jam sembilan.
+まで|made|Sampai|五時まで働きます。|goji made hatarakimasu.|Bekerja sampai jam lima.
+より|yori|Daripada (perbandingan)|電車はバスより速いです。|densha wa basu yori hayai desu.|Kereta lebih cepat daripada bus.
+か|ka|Penanda tanya; atau|コーヒーか紅茶はいかがですか。|koohii ka koucha wa ikaga desu ka.|Mau kopi atau teh?
+ね|ne|Meminta persetujuan|いい天気ですね。|ii tenki desu ne.|Cuacanya bagus, ya.
+よ|yo|Memberi tahu; menegaskan|この店は安いですよ。|kono mise wa yasui desu yo.|Toko ini murah, lho.
+だけ|dake|Hanya|一つだけください。|hitotsu dake kudasai.|Tolong satu saja.
+しか～ない|shika ~ nai|Hanya (bernuansa kurang)|百円しかありません。|hyakuen shika arimasen.|Hanya ada seratus yen.
+
+@pola|Pola kalimat dasar|文型 — pola kalimat yang paling sering dipakai sehari-hari.
+- Pola dasar ini adalah fondasi semua pola lanjutan di N4 sampai N1.
+- Akhiran です dan ます membuat kalimat menjadi sopan.
+N は N です|N wa N desu|A adalah B|私はインドネシア人です。|watashi wa indoneshiajin desu.|Saya orang Indonesia.
+N は N じゃありません|N wa N ja arimasen|A bukan B|これは私の本じゃありません。|kore wa watashi no hon ja arimasen.|Ini bukan buku saya.
+N でした|N deshita|Dulu adalah|昨日は休みでした。|kinou wa yasumi deshita.|Kemarin hari libur.
+N が あります|N ga arimasu|Ada (benda mati)|近くにコンビニがあります。|chikaku ni konbini ga arimasu.|Di dekat sini ada minimarket.
+N が います|N ga imasu|Ada (orang / hewan)|教室に先生がいます。|kyoushitsu ni sensei ga imasu.|Di kelas ada guru.
+N は Adj-i です|N wa Adj-i desu|Sifat dengan kata sifat-i|この料理はおいしいです。|kono ryouri wa oishii desu.|Masakan ini enak.
+N は Adj-na です|N wa Adj-na desu|Sifat dengan kata sifat-na|この町は静かです。|kono machi wa shizuka desu.|Kota ini tenang.
+V ます / V ません|V masu / V masen|Melakukan / tidak melakukan|毎朝コーヒーを飲みます。|maiasa koohii o nomimasu.|Setiap pagi minum kopi.
+V たいです|V tai desu|Ingin melakukan|日本に行きたいです。|nihon ni ikitai desu.|Saya ingin pergi ke Jepang.
+N が ほしいです|N ga hoshii desu|Ingin memiliki|新しい靴がほしいです。|atarashii kutsu ga hoshii desu.|Saya ingin sepatu baru.
+N が 好きです|N ga suki desu|Suka|私は音楽が好きです。|watashi wa ongaku ga suki desu.|Saya suka musik.
+N が できます|N ga dekimasu|Bisa|私は日本語ができます。|watashi wa nihongo ga dekimasu.|Saya bisa bahasa Jepang.
+N を ください|N o kudasai|Minta, tolong berikan|水をください。|mizu o kudasai.|Tolong minta air.
+V てください|V te kudasai|Tolong lakukan|ゆっくり話してください。|yukkuri hanashite kudasai.|Tolong bicara pelan-pelan.
+V てもいいです|V te mo ii desu|Boleh melakukan|ここに座ってもいいです。|koko ni suwatte mo ii desu.|Boleh duduk di sini.
+V てはいけません|V te wa ikemasen|Tidak boleh|ここで写真を撮ってはいけません。|koko de shashin o totte wa ikemasen.|Tidak boleh memotret di sini.
+N より N のほうが Adj|N yori N no hō ga Adj|Lebih ... daripada|バスより電車のほうが速いです。|basu yori densha no hou ga hayai desu.|Kereta lebih cepat daripada bus.
+N で N がいちばん Adj|N de N ga ichiban Adj|Paling ...|果物でりんごがいちばん好きです。|kudamono de ringo ga ichiban suki desu.|Di antara buah, saya paling suka apel.
+
+@waktu|Bentuk waktu dan aspek|時制・アスペクト — kapan tindakan terjadi dan bagaimana keadaannya.
+- Bahasa Jepang hanya membedakan bentuk lampau (～た／～ました) dan bukan lampau (～る／～ます).
+- Bentuk bukan lampau bisa berarti kebiasaan atau masa depan.
+- Aspek (sedang, sudah, baru saja, terlanjur) dinyatakan dengan pola seperti ～ている, ～てしまう, dan ～たところ.
+V ます|V masu|Kebiasaan atau masa depan|毎日日本語を勉強します。|mainichi nihongo o benkyou shimasu.|Setiap hari saya belajar bahasa Jepang.
+V ました|V mashita|Lampau (sopan)|昨日映画を見ました。|kinou eiga o mimashita.|Kemarin saya menonton film.
+V た|V ta|Lampau (biasa)|もう食べた。|mou tabeta.|Sudah makan.
+V ている (sedang)|V te iru|Tindakan sedang berlangsung|今、雨が降っています。|ima, ame ga futte imasu.|Sekarang sedang hujan.
+V ている (keadaan)|V te iru|Keadaan hasil suatu tindakan|窓が開いています。|mado ga aite imasu.|Jendelanya terbuka.
+V ている (kebiasaan / status)|V te iru|Kebiasaan, pekerjaan, atau status|兄は工場で働いています。|ani wa koujou de hataraite imasu.|Kakak saya bekerja di pabrik.
+V てある|V te aru|Keadaan hasil tindakan yang disengaja|壁に地図が貼ってあります。|kabe ni chizu ga hatte arimasu.|Di dinding tertempel peta.
+V てしまう|V te shimau|Selesai tuntas; terlanjur|財布をなくしてしまいました。|saifu o nakushite shimaimashita.|Dompet saya terlanjur hilang.
+V ておく|V te oku|Melakukan sebagai persiapan|会議の前に資料を読んでおきます。|kaigi no mae ni shiryou o yonde okimasu.|Sebelum rapat saya membaca materinya dulu.
+V たところ|V ta tokoro|Baru saja selesai|今、仕事が終わったところです。|ima, shigoto ga owatta tokoro desu.|Pekerjaan baru saja selesai.
+V ているところ|V te iru tokoro|Sedang melakukan tepat saat itu|今、ご飯を食べているところです。|ima, gohan o tabete iru tokoro desu.|Saya sedang makan sekarang.
+V るところ|V ru tokoro|Akan segera melakukan|今から出かけるところです。|ima kara dekakeru tokoro desu.|Saya baru akan berangkat.
+V たばかり|V ta bakari|Baru saja (terasa belum lama)|日本に来たばかりです。|nihon ni kita bakari desu.|Saya baru saja datang ke Jepang.
+もう V ました|mō V mashita|Sudah melakukan|もう宿題をしました。|mou shukudai o shimashita.|Saya sudah mengerjakan PR.
+まだ V ていません|mada V te imasen|Belum melakukan|まだ昼ご飯を食べていません。|mada hirugohan o tabete imasen.|Saya belum makan siang.
+V てくる|V te kuru|Perubahan yang berlangsung sampai sekarang|だんだん寒くなってきました。|dandan samuku natte kimashita.|Lambat laun mulai dingin.
+V ていく|V te iku|Perubahan yang berlanjut ke depan|これから人口が減っていきます。|korekara jinkou ga hette ikimasu.|Mulai sekarang jumlah penduduk akan terus berkurang.
+
+@tanya|Kalimat tanya, perintah, ajakan|疑問・命令・勧誘 — bertanya, meminta, melarang, dan mengajak.
+- Kalimat tanya cukup ditambah か di akhir. Dalam bahasa santai, か sering diganti intonasi naik.
+- Permintaan sopan memakai ～てください. Bentuk perintah langsung (命令形) terdengar kasar dan biasanya dipakai di rambu atau keadaan darurat.
+- Ajakan sopan memakai ～ませんか atau ～ましょう.
+～か|ka|Kalimat tanya|お名前は何ですか。|onamae wa nan desu ka.|Siapa nama Anda?
+Kata tanya (何・誰・どこ・いつ)|nani / dare / doko / itsu|Pertanyaan terbuka|トイレはどこですか。|toire wa doko desu ka.|Toilet di mana?
+～かどうか|ka dō ka|Pertanyaan ya/tidak di dalam kalimat|彼が来るかどうか分かりません。|kare ga kuru ka dou ka wakarimasen.|Saya tidak tahu dia datang atau tidak.
+～ませんか|masen ka|Mengajak dengan sopan|一緒に昼ご飯を食べませんか。|issho ni hirugohan o tabemasen ka.|Maukah makan siang bersama?
+～ましょう|mashō|Ayo (ajakan)|休憩しましょう。|kyuukei shimashou.|Ayo istirahat.
+～ましょうか|mashō ka|Menawarkan bantuan|荷物を持ちましょうか。|nimotsu o mochimashou ka.|Mau saya bawakan barangnya?
+～（よ）う|(y)ō|Ajakan santai|一緒に行こう。|issho ni ikou.|Ayo pergi bareng.
+～てください|te kudasai|Permintaan sopan|ここに名前を書いてください。|koko ni namae o kaite kudasai.|Tolong tulis nama di sini.
+～てくださいませんか|te kudasaimasen ka|Permintaan sangat sopan|もう一度説明してくださいませんか。|mou ichido setsumei shite kudasaimasen ka.|Maukah Anda menjelaskan sekali lagi?
+～ないでください|naide kudasai|Larangan sopan|ここでたばこを吸わないでください。|koko de tabako o suwanaide kudasai.|Tolong jangan merokok di sini.
+～てもいいですか|te mo ii desu ka|Meminta izin|写真を撮ってもいいですか。|shashin o totte mo ii desu ka.|Bolehkah saya memotret?
+～たらどうですか|tara dō desu ka|Memberi saran|病院に行ったらどうですか。|byouin ni ittara dou desu ka.|Bagaimana kalau pergi ke rumah sakit?
+～なさい|nasai|Perintah (orang tua / guru kepada anak)|早く寝なさい。|hayaku nenasai.|Cepat tidur!
+Bentuk perintah (命令形)|meireikei|Perintah tegas|止まれ！|tomare!|Berhenti!
+～な (larangan)|na|Larangan tegas|触るな！|sawaru na!|Jangan sentuh!
+
+@sebab|Sebab-akibat dan pengandaian|原因・理由・条件 — karena, sehingga, kalau, dan walaupun.
+- ～から dan ～ので sama-sama berarti "karena". ～ので terdengar lebih halus dan objektif, cocok untuk minta izin atau alasan di tempat kerja.
+- Pengandaian punya empat bentuk utama: ～たら, ～ば, ～と, dan ～なら, masing-masing dengan nuansa berbeda.
+- ～おかげで untuk hasil yang baik, sedangkan ～せいで untuk hasil yang buruk.
+～から|kara|Karena (alasan pribadi)|雨だから、行きません。|ame da kara, ikimasen.|Karena hujan, saya tidak pergi.
+～ので|node|Karena (halus, objektif)|熱があるので、休みます。|netsu ga aru node, yasumimasu.|Karena demam, saya izin libur.
+～て (sebab)|te|Karena (penyebab perasaan / keadaan)|ニュースを聞いて、驚きました。|nyuusu o kiite, odorokimashita.|Saya kaget mendengar berita itu.
+～ために (sebab)|tame ni|Karena (formal, tertulis)|事故のために電車が遅れました。|jiko no tame ni densha ga okuremashita.|Karena ada kecelakaan, kereta terlambat.
+～ために (tujuan)|tame ni|Untuk; demi|家族のために働いています。|kazoku no tame ni hataraite imasu.|Saya bekerja demi keluarga.
+～おかげで|okage de|Berkat (hasil baik)|先生のおかげで合格しました。|sensei no okage de goukaku shimashita.|Berkat guru, saya lulus.
+～せいで|sei de|Gara-gara (hasil buruk)|雨のせいで試合が中止になった。|ame no sei de shiai ga chuushi ni natta.|Gara-gara hujan, pertandingan dibatalkan.
+だから|dakara|Oleh karena itu|寝坊しました。だから遅刻しました。|nebou shimashita. dakara chikoku shimashita.|Saya bangun kesiangan. Karena itu saya terlambat.
+～たら|tara|Kalau; setelah|日本に行ったら、富士山に登りたいです。|nihon ni ittara, fujisan ni noboritai desu.|Kalau ke Jepang, saya ingin mendaki Gunung Fuji.
+～ば|ba|Jika (syarat umum)|練習すれば、上手になります。|renshuu sureba, jouzu ni narimasu.|Jika berlatih, kamu akan menjadi pandai.
+～と|to|Jika (hasilnya pasti terjadi)|このボタンを押すと、機械が止まります。|kono botan o osu to, kikai ga tomarimasu.|Jika tombol ini ditekan, mesin berhenti.
+～なら|nara|Kalau memang; kalau mengenai|日本語を勉強するなら、この本がいいです。|nihongo o benkyou suru nara, kono hon ga ii desu.|Kalau mau belajar bahasa Jepang, buku ini bagus.
+もし～たら|moshi ~ tara|Seandainya|もし宝くじが当たったら、家を買います。|moshi takarakuji ga atattara, ie o kaimasu.|Seandainya menang lotre, saya akan membeli rumah.
+～ても|temo|Walaupun|雨が降っても、行きます。|ame ga futte mo, ikimasu.|Walaupun hujan, saya tetap pergi.
+～のに|noni|Padahal|勉強したのに、試験に落ちた。|benkyou shita noni, shiken ni ochita.|Padahal sudah belajar, tapi gagal ujian.

@@ -15,12 +15,29 @@ Aplikasi punya **navigasi bawah** dengan lima tab:
 | Tab | Isi |
 |---|---|
 | 🏠 **Beranda** | **Jalur belajar ala Duolingo** dari materi paling mudah sampai sulit, per level **N5 → N4 → N3 → N2 → N1** (plus Kerja pabrik). Total **849 pelajaran**: N5 142, N4 152, N3 268, N2 262, N1 12, Kerja 13. Setiap unit berisi 6 pelajaran (kosakata 語, kanji 漢, bunpo 法, kalimat 文), 🎁 peti hadiah (+20 XP), dan 🏆 ulangan unit. Pelajaran terbuka berurutan; lulus jika benar minimal 60% (★ 60%, ★★ 80%, ★★★ 100%). Ada balon **MULAI**, animasi tombol 3D, maskot, dan 📖 panduan unit berisi semua materi unit beserta suaranya. |
-| 📚 **Materi** | Semua menu belajar (tabel di bawah). |
-| ⚔️ **Quiz** | Kuis cepat per level: Kosakata, Kanji, Bunpo, Kalimat, Istilah, atau Campuran, dengan pilihan jumlah soal dan tingkat. |
+| 📚 **Materi** | **日本語学習 (Nihongo Gakushū)**: kartu menu **Kotoba** dan **Bunpō** (masing-masing membuka 8 kartu sub materi), ditambah kartu Hiragana, Katakana, Bilangan, Bun, Kaiwa, dan Teka-teki (lihat di bawah). |
+| ⚔️ **Quiz** | Kuis cepat per level: Kosakata, Kanji, Bunpo, Kalimat, atau Campuran, dengan pilihan jumlah soal dan tingkat. |
 | 🔁 **Review** | Ulangi soal yang pernah salah, dan ulas materi dari pelajaran Beranda yang sudah selesai. |
 | 📈 **Progres** | Streak, XP, akurasi, kemajuan jalur per level, riwayat kuis, pengaturan suara, dan hapus progres. |
 
-## Fitur utama (tab Materi)
+## Struktur materi: 日本語学習
+
+| A. Kotoba 言葉 — belajar kosakata | B. Bunpō 文法 — belajar tata bahasa |
+|---|---|
+| 1. Kosakata berdasarkan tema (24 tema, ditentukan otomatis dari kanji pada kata) | 1. Struktur kalimat (urutan S–O–P, kata penjelas, kalimat majemuk) |
+| 2. Kosakata berdasarkan jenis kata (15 jenis) | 2. Partikel (22 fungsi partikel + kuis isi partikel) |
+| 3. Kanji dan kosakata kanji (554 kanji, cara menulis, family tree) | 3. Katsuyō / perubahan kata (500 kata kerja, 15 bentuk) |
+| 4. Onomatope (53: perasaan, keadaan, suara, kerja) | 4. Pola kalimat dasar (18 pola) |
+| 5. Idiom dan peribahasa (20 慣用句 + 20 ことわざ) | 5. Bentuk waktu dan aspek (17 pola: ている, てしまう, たところ, …) |
+| 6. Sinonim dan antonim (20 + 35 pasangan) | 6. Kalimat tanya, perintah, ajakan (15 pola) |
+| 7. Kosakata formal dan slang (27 pasangan keigo + 20 bahasa gaul) | 7. Sebab-akibat dan pengandaian (15 pola: から, ので, たら, ば, と, なら, …) |
+| 8. Kosakata JLPT N5–N1 (5.083 kata per level) | 8. Bunpō JLPT N5–N1 (273 pola per level) |
+
+Setiap submodul punya kuisnya sendiri. Submodul Bunpō 1, 2, dan 4–7 berisi penjelasan dan contoh kalimat untuk setiap pola, dengan mode kuis *Pola → arti*, *Arti → pola*, *Arti contoh kalimat*, *Susun kalimat*, dan *Mendengar*.
+
+**Dasar & Latihan:** Hiragana, Katakana, Bilangan, Bun (ungkapan sehari-hari), Kaiwa (percakapan), dan Teka-teki.
+
+## Fitur utama per menu
 
 | Menu | Isi | Kuis |
 |---|---|---|
@@ -32,7 +49,6 @@ Aplikasi punya **navigasi bawah** dengan lima tab:
 | **法 Bunpo** | **273 pola tata bahasa N5–N1**, masing-masing dengan **contoh kalimat** (kanji, romaji, arti). Ada juga perbandingan pola yang mirip dan panduan urutan belajar. | Pola → arti, arti → pola, **isi kalimat** (isi bagian yang kosong ala Duolingo), isi partikel |
 | **文 Bun** | **274 kalimat sehari-hari** dalam 15 kategori: salam, perkenalan, tempat kerja, belanja, makan, transportasi, kesehatan, telepon, darurat, dan lain-lain. | Jepang → arti, **arti → Jepang**, 🧩 susun kalimat (ada romaji di setiap ubin) |
 | **話 Kaiwa** | **500 dialog** (1.801 kalimat) dalam 16 kategori: perkenalan, hubungan & perasaan, telepon, pekerjaan, sekolah, wawancara & administrasi, liburan & wisata, transportasi, makan & minum, belanja, tempat umum, kesehatan, sehari-hari, cuaca & musim, hobi, dan darurat. | Arti kalimat, arti → Jepang, kalimat berikutnya (arti soal & jawaban ditampilkan), lengkapi kalimat, 🎧 dengarkan, 🧩 susun |
-| **用 Istilah** | **36 istilah**: istilah belajar bahasa Jepang (聴解, 読解, 語彙, 敬語, …) dan istilah tata bahasa (名詞, 動詞, 助詞, 受身形, …) dengan kanji, hiragana, romaji, dan arti. | Istilah → arti, arti → istilah, susun bacaan, ketik, bicara, mendengar, ✍️ menulis |
 | **数 Bilangan** | Angka Jepang dari 0 sampai jutaan: dasar 0–10, **belasan**, **puluhan**, **ratusan**, **ribuan**, puluhan & ratusan ribu (satuan 万), dan **jutaan** (百万, 千万, 億). Bunyi khusus (さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん) ditandai. Ada **pengubah angka**: ketik angka apa saja untuk melihat kanji, kana, romaji, dan uraiannya. | Jepang → angka, angka → Jepang, susun bacaan, ketik angka, ketik bacaan, bicara, mendengar, ✍️ menulis kanji angka |
 | **🧩 Teka-teki** | **Susun ala Duolingo**: susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. | Semua mode susun |
 
@@ -81,7 +97,8 @@ node build.js
 | `src/kanji.txt` | Kanji. `@Kategori` = kategori. Urutan goresan dan komponen diambil otomatis dari KanjiVG. | `漢\|kun.yomi\|ON,YOMI\|arti\|N5` |
 | `src/bunpo.txt` | Pola tata bahasa. `@N5\|judul\|fokus`, `#Bagian`. Bagian pola dalam contoh ditandai `{…}`. | `pola\|romaji\|arti\|contoh {pola}。\|romaji\|arti` |
 | `src/bun.txt` | Kalimat sehari-hari. `@Kategori`. | `日本語。\|romaji\|arti` |
-| `src/istilah.txt` | Istilah belajar & tata bahasa. `@Kategori`. | `漢字\|かな\|Romaji\|arti` |
+| `src/kotoba-plus.txt` | Submodul Kotoba 4–7. `@id\|judul\|keterangan`, `#Kategori` (akhiri dengan ⇔ untuk pasangan kata). | entri `jepang\|kana\|romaji\|arti` (boleh ditambah contoh), pasangan `jp1\|kana1\|arti1\|jp2\|kana2\|arti2` |
+| `src/bunpo-topik.txt` | Submodul Bunpō 1, 2, 4–7. `@id\|judul\|ringkasan`, baris `- penjelasan`. | `pola\|romaji\|arti\|contoh\|romaji contoh\|arti contoh` |
 | `src/kaiwa/*.txt` | Dialog, dibagi per file. `@Kategori`, `#Judul dialog`. | `Pembicara\|日本語。\|romaji\|arti` |
 | `src/template.html` | Tampilan dan logika aplikasi. | — |
 
@@ -117,7 +134,8 @@ src/
   kanji.txt         ← daftar kanji per kategori
   bunpo.txt         ← pola tata bahasa N5–N1 + contoh
   bun.txt           ← kalimat sehari-hari
-  istilah.txt       ← istilah belajar & tata bahasa
+  kotoba-plus.txt   ← onomatope, idiom & peribahasa, sinonim & antonim, formal & slang
+  bunpo-topik.txt   ← topik bunpō: struktur, partikel, pola dasar, waktu, tanya, sebab-akibat
   kaiwa/*.txt       ← 500 dialog percakapan per kategori
   kanjivg/          ← cache data urutan goresan (KanjiVG)
 ```
