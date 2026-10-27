@@ -418,6 +418,8 @@ const BP=/*BUNPO*/null;
 const KP=/*KPLUS*/null;
 /* Submodul Bunpō per topik (struktur kalimat, partikel, pola dasar, waktu & aspek, tanya/perintah/ajakan, sebab-akibat) dari src/bunpo-topik.txt */
 const BT=/*BTOPIK*/null;
+/* Kalimat dasar pendek (N5) dari src/kalimat-dasar.txt: [kategori, jepang, romaji, arti] — dipakai paling awal di Beranda */
+const KD=/*KDASAR*/null;
 /* Goresan hiragana & katakana (KanjiVG) untuk kuis menulis */
 const KANA=/*KANA*/null;
 const STK=Object.assign({},KANA,Object.fromEntries(KJ.map(k=>[k.k,k.s])));
@@ -1849,19 +1851,32 @@ const MEM=()=>ST.get('mem',{});
 function memUpd(key,ok){const m=MEM();m[key]=Math.max(0,Math.min(6,(m[key]||0)+(ok?1:-2)));ST.set('mem',m)}
 const memOf=(M,en)=>M[memKey(en)];
 // kumpulan kalimat contoh untuk soal "lengkapi kalimat" dan "susun kalimat"
+// p = prioritas sumber (kecil = lebih sederhana): kalimat dasar → Bun → contoh bunpō/onomatope → dialog Kaiwa
 let SIDX=null;
 function sentIdx(){if(SIDX)return SIDX;
- SIDX=[...BUN.map(b=>({j:b[1],r:b[2],a:b[3]})),...KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3]}))),
-  ...BT.flatMap(t=>t.rows.map(r=>({j:r[3],r:r[4],a:r[5]}))),
-  ...KP.flatMap(m=>m.cats.flatMap(c=>c.pair?[]:c.rows.filter(r=>r[4]).map(r=>({j:r[4],r:r[5],a:r[6]})))),
-  ...BP.flatMap(l=>bpRows(l).filter(r=>r[3]).map(r=>({j:r[3].replace(/[{}]/g,''),r:r[4],a:r[5]})))].filter(s=>s.j&&s.j.length<=34);
+ SIDX=[...KD.map(b=>({j:b[1],r:b[2],a:b[3],p:0})),...BUN.map(b=>({j:b[1],r:b[2],a:b[3],p:1})),
+  ...BT.flatMap(t=>t.rows.map(r=>({j:r[3],r:r[4],a:r[5],p:2}))),
+  ...KP.flatMap(m=>m.cats.flatMap(c=>c.pair?[]:c.rows.filter(r=>r[4]).map(r=>({j:r[4],r:r[5],a:r[6],p:2})))),
+  ...BP.flatMap(l=>bpRows(l).filter(r=>r[3]).map(r=>({j:r[3].replace(/[{}]/g,''),r:r[4],a:r[5],p:3}))),
+  ...KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3],p:4})))].filter(s=>s.j&&s.j.length<=34);
  return SIDX}
+// panjang kalimat maksimum per level: pemula memakai kalimat pendek dulu
+const SMAX={N5:14,N4:20,Kerja:20};
+// kalimat pendek otomatis untuk kata benda konkret: これは本です。 / ここは駅です。 / あの人は先生です。
+const TPL_THING=['Rumah & Benda','Makanan & Minuman','Hewan & Tumbuhan','Transportasi','Uang & Belanja','Sekolah & Bahasa','Kerja & Pabrik','Kata serapan (katakana)'];
+const PERSON=/\b(guru|dokter|pelajar|mahasiswa|murid|siswa|karyawan|pegawai|orang|teman|sahabat|ayah|ibu|kakak|adik|anak|bayi|polisi|perawat|sopir|direktur|atasan|bawahan|rekan|suami|istri|kakek|nenek|paman|bibi|tamu|pelanggan|atlet|penyanyi|wartawan|pekerja|operator|ketua|kepala|petugas|pemilik|pacar|tetangga|pria|wanita|laki-laki|perempuan)\b/i;
+function tplSent(v){if(v.t!='Kata benda')return null;const a1=v.a.split(/[\/;(]/)[0].trim(),th=PERSON.test(a1)?'Orang & Keluarga':vTheme(v),w=v.j;
+ const T=TPL_THING.includes(th)?[[`これは${w}です。`,`kore wa ${v.r} desu.`,`Ini adalah ${a1}.`],[`それは${w}です。`,`sore wa ${v.r} desu.`,`Itu adalah ${a1}.`],[`あれは${w}ですか。`,`are wa ${v.r} desu ka.`,`Apakah itu (yang jauh) ${a1}?`],[`これは${w}じゃありません。`,`kore wa ${v.r} ja arimasen.`,`Ini bukan ${a1}.`]]
+  :th=='Tempat & Kota'?[[`ここは${w}です。`,`koko wa ${v.r} desu.`,`Di sini adalah ${a1}.`],[`そこは${w}です。`,`soko wa ${v.r} desu.`,`Di situ adalah ${a1}.`],[`${w}はどこですか。`,`${v.r} wa doko desu ka.`,`${a1[0].toUpperCase()+a1.slice(1)} di mana?`]]
+  :th=='Orang & Keluarga'?[[`あの人は${w}です。`,`ano hito wa ${v.r} desu.`,`Orang itu adalah ${a1}.`],[`この人は${w}です。`,`kono hito wa ${v.r} desu.`,`Orang ini adalah ${a1}.`]]:null;
+ if(!T)return null;const s=T[Math.floor(Math.random()*T.length)];return{s:{j:s[0],r:s[1],a:s[2]},nd:w}}
 const SCACHE={};
-// kalimat yang memuat kata v (kata minimal 2 huruf atau berkanji, supaya tidak cocok dengan potongan kata lain)
-function findSent(v){const key=v.j+'|'+v.k;if(key in SCACHE)return SCACHE[key];
- const nd=[v.j,v.k].find(x=>x&&x[0]!='〜'&&([...x].length>=2||/[一-龯]/.test(x)));
- const L=nd?sentIdx().filter(s=>s.j.includes(nd)):[];
- return SCACHE[key]=L.length?{s:L.sort((a,b)=>a.j.length-b.j.length)[Math.floor(Math.random()*Math.min(3,L.length))],nd}:null}
+// kalimat yang memuat kata v: kalimat otomatis untuk kata benda, atau kalimat nyata yang pendek dan sederhana
+// (kata minimal 2 huruf atau berkanji, supaya tidak cocok dengan potongan kata lain)
+function findSent(v){const t=tplSent(v);if(t&&Math.random()<.75)return t;
+ const key=v.j+'|'+v.k;if(!(key in SCACHE)){const nd=[v.j,v.k].find(x=>x&&x[0]!='〜'&&([...x].length>=2||/[一-龯]/.test(x))),mx=SMAX[v.l]||34;
+  SCACHE[key]=nd?{L:sentIdx().filter(s=>s.j.length<=mx&&s.j.includes(nd)).sort((a,b)=>a.p-b.p||a.j.length-b.j.length).slice(0,3),nd}:{L:[]}}
+ const c=SCACHE[key];return c.L.length?{s:c.L[Math.floor(Math.random()*c.L.length)],nd:c.nd}:t}
 // romaji kalimat dengan bagian jawaban dikosongkan; romaji manual boleh memakai ō/ū atau ou/uu. Kosong jika tidak ketemu (supaya jawaban tidak bocor).
 function romBlank(sr,wr){if(!sr||!wr)return'';
  const pat=wr.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/ou|oo/g,'(?:ou|oo|ō)').replace(/uu/g,'(?:uu|ū)').replace(/aa/g,'(?:aa|ā)').replace(/ii/g,'(?:ii|ī)').replace(/ee/g,'(?:ee|ē)').replace(/n'/g,"n'?").replace(/ /g,' ?');
@@ -1872,7 +1887,7 @@ const LGEN={
  W:{rec:v=>GEN.W[0](v),
   prod:[v=>GEN.W[1](v),v=>GEN.W[2](v),v=>GEN.W[3](v),
    v=>{const f=findSent(v);if(!f)return null;const o=oW(v);return{kind:'choice',lbl:'Lengkapi kalimatnya',q:blankQ(f.s.j,f.nd,f.s.a),qr:romBlank(f.s.r,f.nd==v.j||f.nd==v.k?v.r:rom(f.nd)),a:wOpt(v),d:o.map(wOpt),nr:true,sayAfter:f.s.j,e:`${f.s.j} <span class="ro">(${f.s.r})</span>`}},
-   v=>{const f=findSent(v);if(!f)return null;const it=sentItems([{j:f.s.j,r:f.s.r,a:f.s.a,sub:`memakai kata: ${v.j}`}],sentIdx())[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}],
+   v=>{const f=findSent(v);if(!f)return null;const it=sentItems([{j:f.s.j,r:f.s.r,a:f.s.a,sub:`memakai kata: ${v.j}`}],sentIdx().filter(s=>s.p==0))[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}],
   pair:v=>({l:`${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}<small class="ro">${v.r}</small>`,r:v.a,say:v.k})},
  K:{rec:k=>GEN.K[0](k),prod:[k=>GEN.K[1](k),k=>GEN.K[2](k)],pair:k=>({l:`<span style="font-size:24px">${k.k}</span><small class="ro">${kjYR(k)}</small>`,r:k.a,say:k.kun.length?k.kun[0].replace('.',''):k.on[0]})},
  G:{rec:(r,L)=>GEN.G[0](r,L),

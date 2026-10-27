@@ -1,0 +1,78 @@
+// Kalimat dasar yang pendek dan sederhana (N5), dipakai paling awal untuk soal
+// "lengkapi kalimat" dan "susun kalimat" di Beranda.
+// Format: kalimat Jepang|romaji|arti   (romaji manual: は = wa, を = o, へ = e)
+
+@Ini, itu, apa
+これは何ですか。|kore wa nan desu ka.|Ini apa?
+それは何ですか。|sore wa nan desu ka.|Itu apa?
+あれは何ですか。|are wa nan desu ka.|Itu (yang jauh) apa?
+これは本です。|kore wa hon desu.|Ini adalah buku.
+それは鉛筆です。|sore wa enpitsu desu.|Itu adalah pensil.
+あれは学校です。|are wa gakkou desu.|Itu (yang jauh) adalah sekolah.
+これはペンですか。|kore wa pen desu ka.|Apakah ini pena?
+はい、そうです。|hai, sou desu.|Ya, benar.
+いいえ、違います。|iie, chigaimasu.|Bukan, salah.
+これは私の傘です。|kore wa watashi no kasa desu.|Ini payung saya.
+それは誰のですか。|sore wa dare no desu ka.|Itu milik siapa?
+この本は私のです。|kono hon wa watashi no desu.|Buku ini milik saya.
+その鞄は先生のです。|sono kaban wa sensei no desu.|Tas itu milik guru.
+あの人は誰ですか。|ano hito wa dare desu ka.|Orang itu siapa?
+あの人は先生です。|ano hito wa sensei desu.|Orang itu adalah guru.
+どれですか。|dore desu ka.|Yang mana?
+これです。|kore desu.|Yang ini.
+
+@Tempat
+ここは駅です。|koko wa eki desu.|Di sini adalah stasiun.
+そこは食堂です。|soko wa shokudou desu.|Di situ adalah kantin.
+あそこは銀行です。|asoko wa ginkou desu.|Di sana adalah bank.
+トイレはどこですか。|toire wa doko desu ka.|Toilet di mana?
+駅はあそこです。|eki wa asoko desu.|Stasiunnya di sana.
+ここはどこですか。|koko wa doko desu ka.|Di sini di mana?
+会社はこちらです。|kaisha wa kochira desu.|Kantornya di sebelah sini.
+
+@Saya & orang
+私は学生です。|watashi wa gakusei desu.|Saya adalah pelajar.
+あなたは学生ですか。|anata wa gakusei desu ka.|Apakah kamu pelajar?
+私は会社員です。|watashi wa kaishain desu.|Saya adalah karyawan.
+彼は先生です。|kare wa sensei desu.|Dia (laki-laki) adalah guru.
+彼女は医者です。|kanojo wa isha desu.|Dia (perempuan) adalah dokter.
+私も学生です。|watashi mo gakusei desu.|Saya juga pelajar.
+私は学生じゃありません。|watashi wa gakusei ja arimasen.|Saya bukan pelajar.
+私たちは友達です。|watashitachi wa tomodachi desu.|Kami adalah teman.
+お名前は何ですか。|onamae wa nan desu ka.|Siapa nama Anda?
+
+@Waktu & angka
+今、何時ですか。|ima, nanji desu ka.|Sekarang jam berapa?
+今、三時です。|ima, sanji desu.|Sekarang jam tiga.
+今日は月曜日です。|kyou wa getsuyoubi desu.|Hari ini hari Senin.
+明日は休みです。|ashita wa yasumi desu.|Besok libur.
+誕生日はいつですか。|tanjoubi wa itsu desu ka.|Ulang tahunmu kapan?
+これはいくらですか。|kore wa ikura desu ka.|Ini berapa harganya?
+百円です。|hyakuen desu.|Seratus yen.
+りんごを一つください。|ringo o hitotsu kudasai.|Tolong apelnya satu.
+二人です。|futari desu.|Dua orang.
+
+@Sifat & keadaan
+お元気ですか。|ogenki desu ka.|Apa kabar?
+元気です。|genki desu.|Saya baik / sehat.
+これは大きいです。|kore wa ookii desu.|Ini besar.
+それは小さいです。|sore wa chiisai desu.|Itu kecil.
+この本は高いです。|kono hon wa takai desu.|Buku ini mahal.
+あの店は安いです。|ano mise wa yasui desu.|Toko itu murah.
+今日は暑いです。|kyou wa atsui desu.|Hari ini panas.
+この部屋は静かです。|kono heya wa shizuka desu.|Kamar ini tenang.
+とてもおいしいです。|totemo oishii desu.|Sangat enak.
+どうしてですか。|doushite desu ka.|Mengapa?
+どんな人ですか。|donna hito desu ka.|Orangnya seperti apa?
+
+@Kegiatan
+水を飲みます。|mizu o nomimasu.|Saya minum air.
+パンを食べます。|pan o tabemasu.|Saya makan roti.
+本を読みます。|hon o yomimasu.|Saya membaca buku.
+学校へ行きます。|gakkou e ikimasu.|Saya pergi ke sekolah.
+家に帰ります。|ie ni kaerimasu.|Saya pulang ke rumah.
+テレビを見ます。|terebi o mimasu.|Saya menonton televisi.
+日本語を勉強します。|nihongo o benkyou shimasu.|Saya belajar bahasa Jepang.
+工場で働きます。|koujou de hatarakimasu.|Saya bekerja di pabrik.
+七時に起きます。|shichiji ni okimasu.|Saya bangun jam tujuh.
+友達に会います。|tomodachi ni aimasu.|Saya bertemu teman.

@@ -287,6 +287,19 @@ function buildBunpoTopik() {
   });
   return out;
 }
+// ===== KALIMAT DASAR (src/kalimat-dasar.txt) → [[kategori, jepang, romaji, arti], ...] =====
+function buildKalimatDasar() {
+  const out = []; let cat = 'Dasar';
+  fs.readFileSync(path.join(ROOT, 'src', 'kalimat-dasar.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    if (line[0] === '@') { cat = line.slice(1).trim(); return; }
+    const p = line.split('|').map(x => x.trim());
+    if (p.length !== 3 || p.some(x => !x)) { bad.push('kalimat-dasar.txt:' + (ln + 1) + ' format salah: ' + line); return; }
+    out.push([cat, ...p]);
+  });
+  return out;
+}
 // ikon aplikasi dimasukkan sebagai data URI supaya index.html tetap bisa dipakai sebagai satu file
 const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 'assets', f)).toString('base64');
 
@@ -297,11 +310,12 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   const BP = buildBunpo();
   const KP = buildKotobaPlus();
   const BT = buildBunpoTopik();
+  const KD = buildKalimatDasar();
   const BN = buildBun();
   const data = JSON.stringify({ t: types, l: levels, d: rows.join('\n') });
   const kdata = JSON.stringify({ c: K.cats, l: K.klv, d: K.list.map(x => [x.k, x.kun.join(','), x.on.join(','), x.a, x.c, x.l, x.s, x.n, x.p]) });
   let tpl = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
-  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*KPLUS*/null': JSON.stringify(KP), '/*BTOPIK*/null': JSON.stringify(BT),
+  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*KPLUS*/null': JSON.stringify(KP), '/*BTOPIK*/null': JSON.stringify(BT), '/*KDASAR*/null': JSON.stringify(KD),
     '__FAVICON__': dataUri('favicon-64.png'), '__LOGO__': dataUri('apple-touch-icon.png') };
   for (const [m, v] of Object.entries(inject)) {
     if (!tpl.includes(m)) throw new Error(`Penanda ${m} tidak ditemukan di template`);
@@ -314,6 +328,7 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   console.log(`Kanji: ${K.list.length} dalam ${K.cats.length} kategori` + (K.fetched ? ` (${K.fetched} data goresan baru diunduh)` : ''));
   console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori`);
   console.log(`Kotoba plus: ${KP.map(m => `${m.t}=${m.cats.reduce((s, c) => s + c.rows.length, 0)}`).join(', ')}`);
+  console.log(`Kalimat dasar: ${KD.length} kalimat`);
   console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')}`);
   console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
   console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
