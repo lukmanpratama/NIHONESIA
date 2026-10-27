@@ -1862,20 +1862,24 @@ function findSent(v){const key=v.j+'|'+v.k;if(key in SCACHE)return SCACHE[key];
  const nd=[v.j,v.k].find(x=>x&&x[0]!='〜'&&([...x].length>=2||/[一-龯]/.test(x)));
  const L=nd?sentIdx().filter(s=>s.j.includes(nd)):[];
  return SCACHE[key]=L.length?{s:L.sort((a,b)=>a.j.length-b.j.length)[Math.floor(Math.random()*Math.min(3,L.length))],nd}:null}
+// romaji kalimat dengan bagian jawaban dikosongkan; romaji manual boleh memakai ō/ū atau ou/uu. Kosong jika tidak ketemu (supaya jawaban tidak bocor).
+function romBlank(sr,wr){if(!sr||!wr)return'';
+ const pat=wr.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/ou|oo/g,'(?:ou|oo|ō)').replace(/uu/g,'(?:uu|ū)').replace(/aa/g,'(?:aa|ā)').replace(/ii/g,'(?:ii|ī)').replace(/ee/g,'(?:ee|ē)').replace(/n'/g,"n'?").replace(/ /g,' ?');
+ const re=new RegExp(pat,'i');return re.test(sr)?sr.replace(re,'＿＿＿'):''}
 const blankQ=(j,nd,a)=>`<span style="font-size:20px;line-height:1.7">${j.replace(nd,'<span class="blank">＿＿＿</span>')}</span><br><small class="rj" style="font-weight:400">${a}</small>`;
 // generator soal per jenis materi: rec = mengenali (dipakai saat materi baru), prod = memakai/mengingat
 const LGEN={
  W:{rec:v=>GEN.W[0](v),
   prod:[v=>GEN.W[1](v),v=>GEN.W[2](v),v=>GEN.W[3](v),
-   v=>{const f=findSent(v);if(!f)return null;const o=oW(v);return{kind:'choice',lbl:'Lengkapi kalimatnya',q:blankQ(f.s.j,f.nd,f.s.a),qr:'',a:wOpt(v),d:o.map(wOpt),nr:true,sayAfter:f.s.j,e:`${f.s.j} <span class="ro">(${f.s.r})</span>`}},
+   v=>{const f=findSent(v);if(!f)return null;const o=oW(v);return{kind:'choice',lbl:'Lengkapi kalimatnya',q:blankQ(f.s.j,f.nd,f.s.a),qr:romBlank(f.s.r,f.nd==v.j||f.nd==v.k?v.r:rom(f.nd)),a:wOpt(v),d:o.map(wOpt),nr:true,sayAfter:f.s.j,e:`${f.s.j} <span class="ro">(${f.s.r})</span>`}},
    v=>{const f=findSent(v);if(!f)return null;const it=sentItems([{j:f.s.j,r:f.s.r,a:f.s.a,sub:`memakai kata: ${v.j}`}],sentIdx())[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}],
-  pair:v=>({l:`${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}`,r:v.a,say:v.k})},
- K:{rec:k=>GEN.K[0](k),prod:[k=>GEN.K[1](k),k=>GEN.K[2](k)],pair:k=>({l:`<span style="font-size:24px">${k.k}</span>`,r:k.a,say:k.kun.length?k.kun[0].replace('.',''):k.on[0]})},
+  pair:v=>({l:`${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}<small class="ro">${v.r}</small>`,r:v.a,say:v.k})},
+ K:{rec:k=>GEN.K[0](k),prod:[k=>GEN.K[1](k),k=>GEN.K[2](k)],pair:k=>({l:`<span style="font-size:24px">${k.k}</span><small class="ro">${kjYR(k)}</small>`,r:k.a,say:k.kun.length?k.kun[0].replace('.',''):k.on[0]})},
  G:{rec:(r,L)=>GEN.G[0](r,L),
   prod:[(r,L)=>GEN.G[1](r,L),
    (r,L)=>{const m=r[3]&&r[3].match(/\{(.+?)\}/);if(!m)return null;const o=oG(r,L).filter(x=>x[3]&&/\{.+?\}/.test(x[3])).map(x=>x[3].match(/\{(.+?)\}/)[1]).filter(x=>x!=m[1]);if(o.length<2)return null;
-    return{kind:'choice',lbl:'Lengkapi kalimatnya',q:`<span style="font-size:20px;line-height:1.7">${r[3].replace(/\{.+?\}/,'<span class="blank">＿＿＿</span>')}</span><br><small class="rj" style="font-weight:400">${r[5]}</small>`,qr:'',a:m[1],d:o,mean:`${r[0]} — ${r[2]}`,sayAfter:r[3].replace(/[{}]/g,'')}}],
-  pair:r=>({l:r[0],r:r[2]})},
+    return{kind:'choice',lbl:'Lengkapi kalimatnya',q:`<span style="font-size:20px;line-height:1.7">${r[3].replace(/\{.+?\}/,'<span class="blank">＿＿＿</span>')}</span><br><small class="rj" style="font-weight:400">${r[5]}</small>`,qr:/\{.+?\}/.test(r[4])?r[4].replace(/\{.+?\}/,'＿＿＿'):romBlank(r[4],r[1]),a:m[1],orom:{[m[1]]:r[1]},d:o,mean:`${r[0]} — ${r[2]}`,sayAfter:r[3].replace(/[{}]/g,'')}}],
+  pair:r=>({l:`${r[0]}<small class="ro">${r[1]}</small>`,r:r[2]})},
  S:{rec:b=>GEN.S[0](b),prod:[b=>GEN.S[1](b)],pair:null}};
 const tag=(it,en)=>{if(!it)return null;it.onRes=ok=>memUpd(memKey(en),ok);return it};
 const genRec=en=>tag(LGEN[en.t].rec(en.x,en.l),en);
