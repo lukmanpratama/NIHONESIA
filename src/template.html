@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nehonesia — Belajar Bahasa Jepang</title>
-<meta name="description" content="Nehonesia: belajar bahasa Jepang dari N5 sampai N1 — kana, kanji, kosakata, tata bahasa, dan percakapan.">
-<meta name="theme-color" content="#c8102e">
+<title>Nihonesia — Belajar Bahasa Jepang</title>
+<meta name="description" content="Nihonesia: belajar bahasa Jepang dari N5 sampai N1 — kana, kanji, kosakata, tata bahasa, dan percakapan.">
+<meta name="theme-color" content="#e20613">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Nehonesia">
+<meta name="apple-mobile-web-app-title" content="Nihonesia">
 <link rel="icon" type="image/png" href="__FAVICON__">
 <link rel="apple-touch-icon" href="__LOGO__">
 <link rel="manifest" href="manifest.webmanifest">
 <style>
-:root{--bg:#f6f3ee;--fg:#1d1d1f;--card:#fff;--mut:#6b6b70;--ac:#c8102e;--bd:#e3ded5;--ok:#1a7f4b;--no:#c0392b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17171a;--fg:#f0eee9;--card:#232327;--mut:#9a9aa2;--ac:#ff5a6e;--bd:#35353b;--ok:#4cc38a;--no:#ff7a6b;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#17171a;--fg:#f0eee9;--card:#232327;--mut:#9a9aa2;--ac:#ff5a6e;--bd:#35353b;--ok:#4cc38a;--no:#ff7a6b;color-scheme:dark}
+:root{--bg:#f4f7fb;--fg:#002855;--card:#ffffff;--mut:#64748b;--ac:#e20613;--navy:#002855;--navy-dark:#001a38;--bd:#e2e8f0;--ok:#10b981;--no:#ef4444;--gold:#f59e0b;--blue:#2563eb;--orange:#f97316;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1329;--fg:#f1f5f9;--card:#121f3f;--mut:#94a3b8;--ac:#ff3b4e;--navy:#38bdf8;--navy-dark:#070d1e;--bd:#1c315e;--ok:#34d399;--no:#f87171;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1329;--fg:#f1f5f9;--card:#121f3f;--mut:#94a3b8;--ac:#ff3b4e;--navy:#38bdf8;--navy-dark:#070d1e;--bd:#1c315e;--ok:#34d399;--no:#f87171;color-scheme:dark}
 *{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Noto Sans JP",sans-serif}
 #app{max-width:720px;margin:0 auto;padding:14px 14px 40px}
 h1{font-size:22px;margin:6px 0 2px}h2{font-size:18px;margin:0}h3{margin:18px 0 6px;font-size:16px}
@@ -237,35 +237,70 @@ body.hasnav #app{padding-bottom:100px}
 .pst{font-weight:800;font-size:15px;color:var(--orange);white-space:nowrap}.pst.xp{color:var(--blue)}
 .pprog{display:grid;gap:6px;margin-bottom:6px}.pprog>div:first-child{display:flex;justify-content:space-between;align-items:baseline}
 .pbar{height:12px;background:var(--bd);border-radius:99px;overflow:hidden}.pbar i{display:block;height:100%;background:var(--ok);border-radius:99px;transition:width .8s cubic-bezier(.3,1.4,.6,1)}
-.unit{margin-top:18px}
-.uban{position:sticky;top:var(--hh,58px);z-index:5;display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--c);color:#fff;border-radius:16px;padding:12px 12px 12px 16px;box-shadow:0 4px 0 color-mix(in srgb,var(--c) 70%,#000)}
-.uban small{display:block;font-weight:800;letter-spacing:.6px;opacity:.85;font-size:12px}.uban b{font-size:18px;line-height:1.25}
-.uguide{flex:none;width:46px;height:46px;border-radius:12px;border:2px solid color-mix(in srgb,#fff 35%,transparent);background:color-mix(in srgb,#000 12%,transparent);color:#fff;font-size:20px;cursor:pointer}
-.ppath{position:relative;display:flex;flex-direction:column;align-items:center;padding:70px 0 10px}
-.pn{transform:translateX(var(--x));margin:9px 0}
-.pnode{position:relative;width:74px;height:68px;border-radius:50%;border:0;cursor:pointer;color:#fff;font:inherit;background:var(--c);box-shadow:0 8px 0 color-mix(in srgb,var(--c) 62%,#000);transition:transform .1s,box-shadow .1s}
-.pnode:active{transform:translateY(6px);box-shadow:0 2px 0 color-mix(in srgb,var(--c) 62%,#000)}
-.pnode .pic{font-size:28px;font-weight:800;line-height:68px;text-shadow:0 2px 0 rgba(0,0,0,.18)}
-.pnode.lock{background:var(--bd);box-shadow:0 8px 0 color-mix(in srgb,var(--bd) 70%,#000);color:var(--mut)}.pnode.lock .pic{text-shadow:none;opacity:.7}
-.pnode.cur{outline:8px solid color-mix(in srgb,var(--c) 22%,transparent);outline-offset:6px}
-.pnode.C .pic,.pnode.T .pic{font-size:34px}.pnode.C.open{animation:wiggle 1.6s ease-in-out infinite}
-.pnode.done{background:color-mix(in srgb,var(--c) 85%,#fff)}
-.pnode.just{animation:pop .7s cubic-bezier(.2,1.6,.4,1)}
-.pstar{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);font-size:11px;color:var(--gold);background:var(--bg);border-radius:99px;padding:0 6px;letter-spacing:1px;white-space:nowrap;border:1px solid var(--bd)}
-.pbub{position:absolute;left:50%;bottom:calc(100% + 14px);transform:translateX(-50%);background:var(--card);color:var(--c);border:2px solid var(--bd);font-weight:800;font-size:15px;letter-spacing:.5px;padding:8px 14px;border-radius:12px;white-space:nowrap;animation:bob 1.4s ease-in-out infinite}
-.pbub::after{content:'';position:absolute;left:50%;top:100%;transform:translateX(-50%);border:8px solid transparent;border-top-color:var(--bd)}
-@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-6px)}}
-@keyframes wiggle{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}95%{transform:rotate(-4deg)}}
-.ppop{width:min(320px,100%);margin:10px 0 6px;background:var(--c);color:#fff;border-radius:16px;padding:14px 16px;animation:popIn .25s ease both;box-shadow:0 4px 0 color-mix(in srgb,var(--c) 65%,#000)}
-.ppop.lock{background:var(--card);color:var(--fg);border:2px solid var(--bd);box-shadow:none}
-.ppop b{font-size:18px}.ppop p{margin:4px 0 0;font-size:14px;opacity:.95}.ppop .rj{color:inherit;opacity:.8}
-.ppop .pb{background:#fff;color:var(--c);border-color:#fff;box-shadow:0 4px 0 color-mix(in srgb,#fff 60%,#000)}
-.pn{position:relative}.pmasc{position:absolute;top:50%;transform:translateY(-55%);width:104px;pointer-events:none}.pmasc.toL{right:calc(100% + 22px)}.pmasc.toR{left:calc(100% + 22px)}
-.masc{width:100%;height:auto}.masc .mb{animation:mbob 2.6s ease-in-out infinite;transform-origin:60px 80px}
+.unit{margin-top:20px}
+.uban{position:sticky;top:var(--hh,58px);z-index:10;display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(135deg,var(--navy) 0%,#001a38 100%);color:#fff;border-radius:18px;padding:12px 14px 12px 18px;box-shadow:0 6px 16px rgba(0,40,85,0.22);border:1px solid rgba(255,255,255,0.12)}
+.uban small{display:block;font-weight:800;letter-spacing:.8px;color:#ff4d6d;font-size:11px;text-transform:uppercase}
+.uban b{font-size:17px;line-height:1.25;color:#fff}
+.uguide{flex:none;width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.uguide:hover{background:rgba(255,255,255,.22)}
+
+/* Trail path container */
+.ppath{position:relative;width:100%;max-width:440px;margin:0 auto;box-sizing:border-box}
+.trail-svg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.trail-path{fill:none;stroke:#cbd5e1;stroke-width:4.5px;stroke-dasharray:8 8;stroke-linecap:round}
+:root[data-theme="dark"] .trail-path{stroke:#2a3b5c}
+
+/* Trail node & floating card */
+.trail-node-wrap{position:absolute;transform:translate(-50%,-32px);z-index:3;display:flex;flex-direction:column;align-items:center;width:140px}
+.trail-node{width:64px;height:64px;border-radius:50%;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s cubic-bezier(.2,1.4,.4,1),box-shadow .15s;background:#edf2f7;color:var(--fg);position:relative}
+.trail-node:hover{transform:scale(1.08)}
+.trail-node:active{transform:scale(0.92)}
+.trail-node.done{background:#10b981;box-shadow:0 4px 14px rgba(16,185,129,.4)}
+.trail-node.cur{background:var(--ac);box-shadow:0 0 0 10px rgba(226,6,19,.18),0 6px 18px rgba(226,6,19,.38);animation:pulseHalo 1.8s ease-in-out infinite}
+.trail-node.lock{background:#e2e8f0;box-shadow:0 2px 6px rgba(0,0,0,.04);color:#64748b}
+:root[data-theme="dark"] .trail-node.lock{background:#1e293b;color:#94a3b8}
+@keyframes pulseHalo{0%,100%{box-shadow:0 0 0 8px rgba(226,6,19,.16),0 4px 14px rgba(226,6,19,.35)}50%{box-shadow:0 0 0 14px rgba(226,6,19,.28),0 8px 22px rgba(226,6,19,.45)}}
+
+.pico{width:28px;height:28px}
+.plock-ic{font-size:22px;opacity:.7}
+.pico-emoji{font-size:30px;line-height:1}
+
+/* Floating card pill */
+.trail-card{margin-top:8px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:6px 12px;box-shadow:0 4px 12px rgba(15,23,42,.07);display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;white-space:nowrap;max-width:138px;box-sizing:border-box;transition:transform .15s,box-shadow .15s}
+.trail-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(15,23,42,.12)}
+.trail-card-title{font-size:12px;font-weight:700;color:var(--navy);line-height:1.25;overflow:hidden;text-overflow:ellipsis;max-width:124px;display:block}
+:root[data-theme="dark"] .trail-card-title{color:#f1f5f9}
+.trail-card-status{font-size:11px;font-weight:800;margin-top:2px;display:block}
+.trail-card.done{border-color:#a7f3d0}
+.trail-card.done .trail-card-status{color:#10b981}
+.trail-card.cur{border-color:#fecaca;box-shadow:0 4px 14px rgba(226,6,19,.15)}
+.trail-card.cur .trail-card-status{color:var(--ac)}
+.trail-card.lock .trail-card-title{color:var(--mut)}
+.trail-card.lock .trail-card-status{color:var(--mut);font-weight:600}
+
+/* Landmark */
+.plandmark{position:absolute;transform:translate(-50%,-32px);z-index:2;display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.plandmark-box{width:64px;height:64px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 4px 12px rgba(0,0,0,.06);border:2px solid rgba(255,255,255,.7)}
+:root[data-theme="dark"] .plandmark-box{border-color:rgba(255,255,255,.1)}
+.plandmark-name{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--mut);margin-top:6px;white-space:nowrap;text-align:center}
+
+/* Mascot slot along path */
+.pmasc-slot{position:absolute;transform:translate(-50%,-40px);z-index:2;pointer-events:none;width:80px}
+.masc{width:100%;height:auto}
+.masc .mb{animation:mbob 2.6s ease-in-out infinite;transform-origin:60px 80px}
 .masc .eye{animation:blink 4.5s infinite;transform-origin:60px 47px}
-@keyframes mbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-@keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
-@media (max-width:420px){.pmasc{width:84px}}
+
+/* Popup modal on tap node (terpusat & ber-overlay) */
+.ppop-ov{position:fixed;inset:0;z-index:90;background:rgba(0,10,25,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;transition:opacity .2s ease;pointer-events:auto}
+.ppop-ov.show{opacity:1}
+.ppop-box{background:var(--card);color:var(--fg);border-radius:24px;padding:22px 20px 20px;border:2px solid var(--bd);box-shadow:0 20px 50px rgba(0,24,60,.35);width:min(380px,calc(100vw - 32px));box-sizing:border-box;position:relative;animation:popIn .25s cubic-bezier(.2,1.2,.4,1) both}
+.ppop-box b{font-size:18px;color:var(--navy);display:block;padding-right:28px;line-height:1.3}
+:root[data-theme="dark"] .ppop-box b{color:#f1f5f9}
+.ppop-box p{margin:8px 0 16px;font-size:14px;line-height:1.45}
+.ppop-box .pb{margin-top:0;width:100%}
+.ppop-close{position:absolute;top:14px;right:14px;background:none;border:0;color:var(--mut);font-size:18px;cursor:pointer;padding:6px;line-height:1;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background .15s,color .15s}
+.ppop-close:hover{background:rgba(0,0,0,.06);color:var(--fg)}
+:root[data-theme="dark"] .ppop-close:hover{background:rgba(255,255,255,.08)}
 
 /* ===== Quiz & Review ===== */
 .qhub{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0}
@@ -327,7 +362,7 @@ let qn=ST.get('qn',10);const QN=()=>qn;
 // bar tombol kuis yang mengambang (bawah, atau atas jika up=true) + pilihan jumlah soal
 const qbar=(b,up)=>{const n=(b.match(/<button/g)||[]).length;
  return`<div class="qbar${up?' up':''}"><div class="qcfg">Jumlah soal <select class="qn" aria-label="Jumlah soal">${QOPTS.map(x=>`<option ${x==qn?'selected':''}>${x}</option>`).join('')}</select>Tingkat <select class="qd" aria-label="Tingkat kesulitan">${Object.entries(QDIFF).map(([k,v])=>`<option value="${k}" ${k==qd?'selected':''}>${v.lab}</option>`).join('')}</select></div><div class="qbtns" style="grid-template-columns:repeat(${n==4?2:Math.min(n,3)},1fr)">${b}</div></div>`};
-function view(h,back){window.onkeydown=null;clearTimeout(QT);document.querySelectorAll('.qsov').forEach(x=>x.remove());app.innerHTML=h;const b=$('.bk');if(b)b.onclick=back||home;document.querySelectorAll('.rt').forEach(x=>x.onclick=()=>setR(!showR));
+function view(h,back){window.onkeydown=null;clearTimeout(QT);document.querySelectorAll('.qsov, .ppop, .ppop-ov').forEach(x=>x.remove());app.innerHTML=h;const b=$('.bk');if(b)b.onclick=back||home;document.querySelectorAll('.rt').forEach(x=>x.onclick=()=>setR(!showR));
  document.querySelectorAll('.qn').forEach(s=>s.onchange=()=>{qn=+s.value;ST.set('qn',qn)});document.querySelectorAll('.qd').forEach(s=>s.onchange=()=>{qd=s.value;ST.set('qd',qd)});const tp=$('.top');document.documentElement.style.setProperty('--hh',(tp?tp.offsetHeight:0)+'px');wireNav();scrollTo(0,0)}
 const onSpeak=el=>{el.onclick=e=>{const b=e.target.closest('[data-s]');if(b)speak(b.dataset.s)}};
 
@@ -1626,7 +1661,6 @@ function materi(){lastSub=null;
   ['法','Bunpō',`${MOD_B.length} sub materi · tata bahasa`,()=>modSub('b')],['話','Kaiwa',`${KW.length} dialog percakapan`,kaiwa],
   ['文','Bun',`${BUN.length} kalimat sehari-hari`,bun],['数','Bilangan','Belasan · ratusan · jutaan',angka]];
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>📚 Materi</h2>${rtBtn()}</div>
- <div class="mhead"><b>日本語学習</b><span class="ro">Nihongo Gakushū</span><small>Sistem pembelajaran bahasa Jepang · semua kuis ada di tab <b>Quiz</b></small></div>
  <div class="grid">${L.map((m,i)=>mCard(m[0],m[1],m[2],'x'+i)).join('')}</div>
  ${navHtml('materi')}`);
  app.querySelectorAll('.mc[data-m]').forEach(b=>b.onclick=()=>{sfx.tap();L[+b.dataset.m.slice(1)][3]()})}
@@ -1826,48 +1860,172 @@ function pathState(PL){const P=PG(),st={};let blocked=false,cur=null;
  return{st,cur}}
 const lessonEnts=ls=>ls.e;
 let pLv=ST.get('pLv','N5');
-// maskot orisinal Nehonesia: matahari (hinomaru) duduk di atas buku terbuka
+// maskot orisinal Nihonesia: matahari (hinomaru) merah duduk di atas buku terbuka navy
 const MASCOT=`<svg class="masc" viewBox="0 0 120 124" aria-hidden="true"><ellipse cx="60" cy="118" rx="36" ry="5" fill="rgba(0,0,0,.14)"/>
-<g class="mb"><circle cx="60" cy="50" r="31" fill="#e60f1e"/><ellipse cx="49" cy="46" rx="6" ry="7.5" fill="#fff"/><ellipse cx="71" cy="46" rx="6" ry="7.5" fill="#fff"/>
-<g class="eye"><circle cx="50" cy="47.5" r="3.4" fill="#1d1d1f"/><circle cx="72" cy="47.5" r="3.4" fill="#1d1d1f"/></g><ellipse cx="42" cy="58" rx="5" ry="3" fill="#ff8a8a"/><ellipse cx="78" cy="58" rx="5" ry="3" fill="#ff8a8a"/>
+<g class="mb"><circle cx="60" cy="50" r="31" fill="#e20613"/><ellipse cx="49" cy="46" rx="6" ry="7.5" fill="#fff"/><ellipse cx="71" cy="46" rx="6" ry="7.5" fill="#fff"/>
+<g class="eye"><circle cx="50" cy="47.5" r="3.4" fill="#002855"/><circle cx="72" cy="47.5" r="3.4" fill="#002855"/></g><ellipse cx="42" cy="58" rx="5" ry="3" fill="#ff8a8a"/><ellipse cx="78" cy="58" rx="5" ry="3" fill="#ff8a8a"/>
 <path d="M53 60q7 7 14 0" fill="none" stroke="#7a0b12" stroke-width="3" stroke-linecap="round"/></g>
-<g fill="none" stroke="#0a3370" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="M18 80v26q24-1 42 10q18-11 42-10V80"/><path d="M18 82q16 0 26 10M102 82q-16 0-26 10"/><path d="M60 92v22" stroke-width="5"/></g></svg>`;
+<g fill="none" stroke="#002855" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="M18 80v26q24-1 42 10q18-11 42-10V80"/><path d="M18 82q16 0 26 10M102 82q-16 0-26 10"/><path d="M60 92v22" stroke-width="5"/></g></svg>`;
+
+const LANDMARKS=[
+ {name:'GERBANG TOKYO',ic:'⛩️',bg:'#fee2e2'},
+ {name:'GUNUNG FUJI',ic:'🗻',bg:'#e0f2fe'},
+ {name:'KUIL KYOTO',ic:'🏯',bg:'#fef3c7'},
+ {name:'PASAR TSUKIJI',ic:'🍣',bg:'#ffedd5'},
+ {name:'SHINKANSEN',ic:'🚅',bg:'#e0e7ff'},
+ {name:'TAMAN UENO',ic:'🌸',bg:'#fce7f3'},
+ {name:'MENARA TOKYO',ic:'🗼',bg:'#fee2e2'},
+ {name:'PANTAI OKINAWA',ic:'🌊',bg:'#ccfbf1'}
+];
+
+function lessonLabel(ls, seqIndex) {
+ const num = String(seqIndex + 1).padStart(2, '0');
+ if (ls.t === 'W') {
+  if (seqIndex === 0) return `${num}. Vokal Hiragana`;
+  if (seqIndex === 1) return `${num}. Salam & Aisatsu`;
+  const types = ls.e.map(e => e.x.t);
+  const t = types.find(x => x) || '';
+  if (t.includes('ganti')) return `${num}. Kata Ganti`;
+  if (t.includes('tunjuk')) return `${num}. Kata Tunjuk`;
+  if (t.includes('tanya')) return `${num}. Kata Tanya`;
+  if (t.includes('Bilangan') || t.includes('hitung')) return `${num}. Angka & Hitungan`;
+  if (t.includes('waktu')) return `${num}. Waktu & Hari`;
+  if (t.includes('sifat')) return `${num}. Kata Sifat`;
+  if (t.includes('kerja')) return `${num}. Kata Kerja`;
+  return `${num}. Kosakata Dasar`;
+ }
+ if (ls.t === 'K') {
+  const c = ls.e[0]?.x?.c;
+  return `${num}. Kanji ${c ? c.split(' & ')[0] : 'Dasar'}`;
+ }
+ if (ls.t === 'G') return `${num}. Pola Kalimat`;
+ if (ls.t === 'S') {
+  const c = ls.e[0]?.x[0];
+  return `${num}. Kalimat ${c ? c.split(' ')[0] : 'Dasar'}`;
+ }
+ return `${num}. Pelajaran ${ls.no}`;
+}
+
 function beranda(){
  const PL=pathLevel(pLv),P=PG(),{st,cur}=pathState(PL),s=ST.get('stats',{ans:0,ok:0,last:'',streak:0});
  const done=PL.seq.filter(l=>pDone(P,l.id)).length,jd=ST.get('justDone','');
  let gi=0;
- const nodeHtml=(n,u)=>{const S=st[n.id],off=Math.round(Math.sin(gi*0.85)*72);gi++;
-  const lab=n.k=='L'?`${PT_LAB[n.ls.t]} ${n.ls.no}`:n.k=='C'?'Peti hadiah':'Ulangan unit';
-  const ic=n.k=='L'?(S=='done'?'✓':PT_IC[n.ls.t]):n.k=='C'?(S=='done'?'📭':'🎁'):'🏆';
-  const stars=n.k!='C'&&S=='done'?`<span class="pstar">${'★'.repeat(P[n.id]||1)}</span>`:'';
-  const mas=n._m?`<div class="pmasc ${off>0?'toL':'toR'}">${MASCOT}</div>`:'';return`<div class="pn" style="--x:${off}px">${mas}<button class="pnode ${n.k} ${S}${n.id==jd?' just':''}" data-id="${n.id}" style="--c:${u.col}" aria-label="${lab}${S=='lock'?' (terkunci)':S=='done'?' (selesai)':''}">${S=='cur'?'<span class="pbub">MULAI</span>':''}<span class="pic">${ic}</span>${stars}</button></div>`};
- const units=PL.units.map((u,ui)=>{const body=u.nodes.map((n,j)=>nodeHtml(j==1?{...n,_m:1}:n,u)).join('');
-  return`<section class="unit" style="--c:${u.col}"><div class="uban"><div><small>${pLv} · UNIT ${ui+1}</small><b>${u.title}</b></div><button class="uguide" data-u="${ui}" aria-label="Panduan unit">📖</button></div><div class="ppath">${body}</div></section>`}).join('');
- view(`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nehonesia"><select id="plv" class="plv" aria-label="Pilih level">${PLV.filter(([l])=>pathLevel(l).count).map(([l,t])=>`<option value="${l}" ${l==pLv?'selected':''}>${l} · ${t}</option>`).join('')}</select><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>
+
+ const units=PL.units.map((u,ui)=>{
+  const nodes=u.nodes,N=nodes.length,stepY=160,lm=LANDMARKS[ui%LANDMARKS.length];
+  const totalH=(N-1)*stepY+130;
+  
+  const pts=nodes.map((n,j)=>{
+   const curX=(j===N-1)?160:(j%2===0?85:235);
+   const curY=65+j*stepY;
+   return {n,j,x:curX,y:curY};
+  });
+
+  let dPath=`M ${pts[0].x} ${pts[0].y}`;
+  for(let j=1;j<N;j++){
+   const p0=pts[j-1],p1=pts[j],midY=(p0.y+p1.y)/2;
+   dPath+=` C ${p0.x} ${midY}, ${p1.x} ${midY}, ${p1.x} ${p1.y}`;
+  }
+
+  const lmHtml=`<div class="plandmark" style="left:73.5%;top:65px">
+   <div class="plandmark-box" style="background:${lm.bg}">${lm.ic}</div>
+   <div class="plandmark-name">${lm.name}</div>
+  </div>`;
+
+  const masHtml=N>3?`<div class="pmasc-slot" style="left:26.5%;top:${65+3*stepY}px"><div class="masc">${MASCOT}</div></div>`:'';
+
+  const nodesHtml=pts.map(({n,j,x,y})=>{
+   const S=st[n.id];
+   const isCur=S==='cur'||(n.k==='C'&&S==='open');
+   const isDone=S==='done';
+   const xPct=(x/320*100).toFixed(1);
+
+   let title='',status='';
+   if(n.k==='L'){
+    title=lessonLabel(n.ls,gi);
+    status=isDone?'Selesai':isCur?'Mulai Kuis':'Terkunci';
+    gi++;
+   }else if(n.k==='C'){
+    title='Peti Hadiah';
+    status=isDone?'Dibuka':isCur?'Buka Peti':'Terkunci';
+   }else{
+    title=`Ulangan Unit ${ui+1}`;
+    status=isDone?'Selesai':isCur?'Mulai Ulangan':'Terkunci';
+   }
+
+   let icHtml='';
+   if(n.k==='L'){
+    if(isDone)icHtml=`<svg viewBox="0 0 24 24" class="pico"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    else if(isCur)icHtml=`<svg viewBox="0 0 24 24" class="pico"><polygon points="9,6 19,12 9,18" fill="#fff"/></svg>`;
+    else icHtml=`<span class="plock-ic">${PT_IC[n.ls.t]||'🔒'}</span>`;
+   }else if(n.k==='C'){
+    icHtml=`<span class="pico-emoji">${isDone?'📭':'🎁'}</span>`;
+   }else{
+    icHtml=`<span class="pico-emoji">🏆</span>`;
+   }
+
+   return `<div class="trail-node-wrap ${S}" style="left:${xPct}%;top:${y}px">
+    <button class="trail-node ${n.k} ${S}${n.id==jd?' just':''}" data-id="${n.id}" aria-label="${title} (${status})">
+     ${icHtml}
+    </button>
+    <div class="trail-card ${S}" data-id="${n.id}">
+     <span class="trail-card-title">${title}</span>
+     <span class="trail-card-status">${status}</span>
+    </div>
+   </div>`;
+  }).join('');
+
+  return `<section class="unit">
+   <div class="uban">
+    <div>
+     <small>${pLv} · UNIT ${ui+1}</small>
+     <b>${u.title}</b>
+    </div>
+    <button class="uguide" data-u="${ui}" aria-label="Panduan unit">📖</button>
+   </div>
+   <div class="ppath" style="height:${totalH}px">
+    <svg class="trail-svg" viewBox="0 0 320 ${totalH}" preserveAspectRatio="none">
+     <path d="${dPath}" class="trail-path"/>
+    </svg>
+    ${lmHtml}
+    ${masHtml}
+    ${nodesHtml}
+   </div>
+  </section>`;
+ }).join('');
+
+ view(`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nihonesia"><select id="plv" class="plv" aria-label="Pilih level">${PLV.filter(([l])=>pathLevel(l).count).map(([l,t])=>`<option value="${l}" ${l==pLv?'selected':''}>${l} · ${t}</option>`).join('')}</select><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>
  <div class="pprog"><div><b>${pLv} · ${PLV.find(x=>x[0]==pLv)[1]}</b><span class="rj">${done} / ${PL.count} pelajaran</span></div><div class="pbar"><i style="width:${PL.count?done/PL.count*100:0}%"></i></div></div>
  <div id="path">${units}</div>${navHtml('beranda')}`);
  ST.del('justDone');
  $('#plv').onchange=e=>{pLv=e.target.value;ST.set('pLv',pLv);beranda()};
- app.querySelectorAll('.pnode').forEach(b=>b.onclick=()=>nodePop(b,PL,st));
+ app.querySelectorAll('.trail-node, .trail-card').forEach(b=>b.onclick=()=>nodePop(b,PL,st));
  app.querySelectorAll('.uguide').forEach(b=>b.onclick=()=>unitGuide(PL.units[+b.dataset.u]));
- const c=app.querySelector('.pnode.just')||app.querySelector('.pnode.cur');if(c)setTimeout(()=>{const r=c.getBoundingClientRect();if(r.top>innerHeight*.55)scrollTo({top:scrollY+r.top-innerHeight*.45,behavior:'smooth'})},450);
- if(app.querySelector('.pnode.just')){sfx.ok()}}
-// kartu kecil di bawah simpul: info pelajaran + tombol MULAI
+ const c=app.querySelector('.trail-node.just')||app.querySelector('.trail-node.cur');
+ if(c)setTimeout(()=>{const r=c.getBoundingClientRect();if(r.top>innerHeight*.55)scrollTo({top:scrollY+r.top-innerHeight*.45,behavior:'smooth'})},450);
+ if(app.querySelector('.trail-node.just')){sfx.ok()}
+}
+
 function nodePop(btn,PL,st){
- const old=app.querySelector('.ppop');const same=old&&old.dataset.id==btn.dataset.id;if(old)old.remove();if(same)return;
+ const old=document.querySelector('.ppop-ov');const same=old&&old.dataset.id==btn.dataset.id;if(old)old.remove();if(same)return;
  const id=btn.dataset.id,S=st[id],node=PL.units.flatMap(u=>u.nodes.map(n=>({...n,u}))).find(n=>n.id==id),P=PG();sfx.tap();
- const pop=document.createElement('div');pop.className='ppop '+S;pop.dataset.id=id;pop.style.setProperty('--c',node.u.col);
+ const ov=document.createElement('div');ov.className='qsov ppop-ov';ov.dataset.id=id;
  const preview=es=>es.slice(0,6).map(e=>e.t=='W'?e.x.j:e.t=='K'?e.x.k:e.t=='G'?e.x[0]:e.t=='S'?cut(e.x[1],10):e.x[1]).join('、 ');
  let h='';
- if(node.k=='L'){const ls=node.ls;h=`<b>${PT_LAB[ls.t]} ${ls.no}</b><p>${ls.e.length} ${ls.t=='W'?'kata':ls.t=='K'?'kanji':ls.t=='G'?'pola':'kalimat'}: ${preview(ls.e)}${ls.e.length>6?'…':''}</p>
-  ${S=='lock'?'<p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka.</p>':`<button class="pb" id="pgo">${S=='done'?`ULANGI · ${'★'.repeat(P[id]||1)}`:`MULAI +${QDf().xp*Math.min(12,Math.max(8,ls.e.length+4))} XP`}</button>`}`}
- else if(node.k=='C')h=S=='lock'?'<b>Peti hadiah</b><p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka peti ini.</p>':S=='done'?'<b>Peti sudah dibuka</b><p class="rj">Kamu sudah mendapat +20 XP dari peti ini.</p>':'<b>Peti hadiah siap!</b><button class="pb" id="pgo">BUKA PETI +20 XP</button>';
- else h=`<b>Ulangan unit</b><p>${node.ents.length} materi dari seluruh unit ini.</p>${S=='lock'?'<p class="rj">🔒 Selesaikan semua pelajaran di unit ini dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI ULANGAN':'MULAI ULANGAN'}</button>`}`;
- pop.innerHTML=h;btn.closest('.pn').after(pop);
- const g=pop.querySelector('#pgo');if(!g)return;
- g.onclick=()=>{if(node.k=='C'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(20);confetti();sfx.done();ST.set('justDone',id);beranda();return}
+ if(node.k=='L'){const ls=node.ls;h=`<b>${lessonLabel(ls,ls.no-1)}</b><p>${ls.e.length} ${ls.t=='W'?'kosakata':ls.t=='K'?'kanji':ls.t=='G'?'pola kalimat':'kalimat'}: ${preview(ls.e)}${ls.e.length>6?'…':''}</p>
+  ${S=='lock'?'<p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka.</p>':`<button class="pb" id="pgo">${S=='done'?`ULANGI KUIS · ${'★'.repeat(P[id]||1)}`:`MULAI KUIS +${QDf().xp*Math.min(12,Math.max(8,ls.e.length+4))} XP`}</button>`}`}
+ else if(node.k=='C')h=S=='lock'?'<b>Peti Hadiah</b><p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka peti ini.</p>':S=='done'?'<b>Peti sudah dibuka</b><p class="rj">Kamu sudah mendapat +20 XP dari peti ini.</p>':'<b>Peti hadiah siap!</b><button class="pb" id="pgo">BUKA PETI +20 XP</button>';
+ else h=`<b>Ulangan Unit ${node.u.u+1}</b><p>${node.ents.length} materi dari seluruh unit ini.</p>${S=='lock'?'<p class="rj">🔒 Selesaikan semua pelajaran di unit ini dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI ULANGAN':'MULAI ULANGAN'}</button>`}`;
+ ov.innerHTML=`<div class="ppop-box ${S}" role="dialog" aria-modal="true"><button class="ppop-close" aria-label="Tutup">✕</button>${h}</div>`;
+ document.body.appendChild(ov);
+ setTimeout(()=>ov.classList.add('show'),15);
+ const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),200)};
+ ov.onclick=e=>{if(e.target===ov)close()};
+ ov.querySelector('.ppop-close').onclick=close;
+ const g=ov.querySelector('#pgo');if(!g)return;
+ g.onclick=()=>{ov.remove();if(node.k=='C'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(20);confetti();sfx.done();ST.set('justDone',id);beranda();return}
   const ents=node.k=='L'?node.ls.e:node.ents,n=node.k=='L'?Math.min(12,Math.max(8,ents.length+4)):15;
-  const title=`${PL.L} · ${node.k=='L'?PT_LAB[node.ls.t]+' '+node.ls.no:'Ulangan unit '+(node.u.u+1)}`;
+  const title=`${PL.L} · ${node.k=='L'?lessonLabel(node.ls,node.ls.no-1):'Ulangan unit '+(node.u.u+1)}`;
   runQuiz(title,()=>mixItems(ents,n),beranda,r=>{const acc=r.s/r.n;if(acc>=.6){const P2=PG(),stars=acc==1?3:acc>=.8?2:1;P2[id]=Math.max(P2[id]||0,stars);ST.set('path',P2);ST.set('justDone',id)}})}}
 // panduan unit: daftar materi yang dipelajari
 function unitGuide(u){
@@ -1880,43 +2038,111 @@ function unitGuide(u){
  document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);onSpeak(ov);
  const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.qx').onclick=close}
 
-/* ===== QUIZ: semua kuis materi + kuis cepat per level ===== */
-let qzL=ST.get('qzL','N5');
+/* ===== QUIZ: semua kuis materi + kuis per level N5–N1 ===== */
+let qzL=ST.get('qzL','N5'),qzTab=ST.get('qzTab','materi');
+const LV_INFO={
+ N5:{
+  title:'N5 — Fondasi',tag:'Level awal',
+  desc:'Karakter dasar, kosakata sehari-hari, dan kalimat sederhana.',
+  tahap:[
+   {n:'Tahap 1 — Fondasi tulisan',m:'Hiragana · Katakana · Kanji',d:'Mengenali karakter, membaca kata, memahami arti dan bacaan kanji dasar.'},
+   {n:'Tahap 2 — Pengetahuan bahasa',m:'Kotoba/Goi · Bunpō · Katsuyō',d:'Menguasai kosakata, membentuk kalimat, dan mengubah kata sesuai fungsi.'},
+   {n:'Tahap 3 — Pemakaian bahasa',m:'Kaiwa · Chōkai · Dokkai · Sakubun',d:'Menggunakan bahasa dalam percakapan, audio, bacaan, dan tulisan sederhana.'}
+  ]
+ },
+ N4:{
+  title:'N4 — Dasar Lanjutan',tag:'Berikutnya',
+  desc:'Pola kalimat yang lebih beragam dan teks pendek.',
+  tahap:[
+   {n:'Tahap 1 — Penguatan tulisan dan kosakata',m:'Hiragana · Katakana · Kanji · Kotoba/Goi',d:'Membaca lebih lancar, memperluas kosakata, dan memahami kanji dalam kata majemuk.'},
+   {n:'Tahap 2 — Pengembangan tata bahasa',m:'Bunpō · Katsuyō',d:'Memahami bentuk て, bentuk biasa, alasan, pengalaman, kewajiban, kemungkinan, dan hubungan antarkalimat.'},
+   {n:'Tahap 3 — Pemahaman dan komunikasi',m:'Kaiwa · Chōkai · Dokkai · Sakubun',d:'Mengikuti percakapan yang lebih panjang, memahami teks praktis, dan menyampaikan pengalaman atau pendapat sederhana.'}
+  ]
+ },
+ N3:{
+  title:'N3 — Menengah',tag:'Tahap menengah',
+  desc:'Memahami konteks, paragraf, dan percakapan sehari-hari.',
+  tahap:[
+   {n:'Tahap 1 — Kosakata & Kanji Menengah',m:'Kanji N3 · Goi · Kata Majemuk',d:'Memperkaya kosakata abstrak dan membaca kanji dalam berbagai konteks umum.'},
+   {n:'Tahap 2 — Tata Bahasa & Kalimat Kompleks',m:'Bunpō menengah · Pola pengandaian',d:'Menguasai ragam pola kalimat majemuk, nuansa sebab-akibat, dan konjugasi lanjutan.'},
+   {n:'Tahap 3 — Pemahaman Konteks & Wacana',m:'Dokkai · Chōkai · Percakapan alami',d:'Memahami artikel opini, pengumuman, dan percakapan sehari-hari berkecepatan normal.'}
+  ]
+ },
+ N2:{
+  title:'N2 — Menengah Atas',tag:'Tahap lanjutan',
+  desc:'Bacaan kompleks, bahasa formal, dan nuansa makna.',
+  tahap:[
+   {n:'Tahap 1 — Kosakata Tingkat Lanjut & Kanji',m:'Goi tingkat lanjut · Kanji N2',d:'Memahami istilah bisnis, berita, dan idiom serta kanji bacaan khusus.'},
+   {n:'Tahap 2 — Bahasa Formal & Keigo',m:'Keigo (Sonkeigo, Kenjōgo) · Tata bahasa formal',d:'Menerapkan tata bahasa formal, pola penegasan, serta ekspresi sopan profesional.'},
+   {n:'Tahap 3 — Teks Panjang & Analisis Berita',m:'Teks panjang · Dokkai kritis · Chōkai berita',d:'Menganalisis artikel surat kabar, editorial, dan dialog kerja yang kompleks.'}
+  ]
+ },
+ N1:{
+  title:'N1 — Lanjutan',tag:'Tahap mahir',
+  desc:'Memahami teks kompleks, argumen, dan ekspresi bernuansa.',
+  tahap:[
+   {n:'Tahap 1 — Ekspresi Bernuansa & Sastra',m:'Kanji N1 · Nuansa bahasa · Ungkapan klasik',d:'Memahami kanji langka, ungkapan sastra, dan diksi bernuansa halus.'},
+   {n:'Tahap 2 — Argumen & Pola Tingkat Mahir',m:'Bunpō N1 · Retorika & Debat',d:'Menguasai pola kalimat abstrak, wacana argumentatif, dan ragam bahasa resmi.'},
+   {n:'Tahap 3 — Dokkai & Chōkai Mahir',m:'Dokkai lanjutan · Chōkai komprehensif',d:'Mencerna kuliah ilmiah, debat abstrak, kritik, dan teks sastra/opini berbobot tinggi.'}
+  ]
+ }
+};
 function quizHub(){
+ if(!LV_INFO[qzL])qzL='N5';
+ const cur=LV_INFO[qzL];
  const W=V.filter(v=>v.l==qzL&&v.j[0]!='〜').map(x=>({t:'W',x,l:qzL})),K=KJ.filter(k=>k.l==qzL).map(x=>({t:'K',x,l:qzL})),G=bpLvRows(qzL).map(x=>({t:'G',x,l:qzL}));
  const S=['N5','N4'].includes(qzL)?pathLevel(qzL).seq.filter(l=>l.t=='S').flatMap(l=>l.e):[];
- const C=[['W','語','Kosakata',W,'kata'],['K','漢','Kanji',K,'kanji'],['G','法','Bunpo',G,'pola'],['S','文','Kalimat',S,'kalimat'],['M','⭐','Campuran',[...W,...K,...G,...S],'materi']];
- // [ikon, judul, keterangan, buka kuis]
+ const C=[['W','語','Kosakata',W,'kata'],['K','漢','Kanji',K,'kanji'],['G','法','Bunpō',G,'pola'],['S','文','Kalimat',S,'kalimat'],['M','⭐','Campuran',[...W,...K,...G,...S],'materi']];
  const MQ=[
   ['あ','Hiragana','Huruf, menulis, susun',()=>modQuiz(()=>chart('Hiragana',false),'あ Kuis Hiragana')],
   ['ア','Katakana','Huruf, menulis, susun',()=>modQuiz(()=>chart('Katakana',true),'ア Kuis Katakana')],
   ['漢','Kanji',`${KJ.length} kanji · arti, bacaan, menulis`,()=>{kQ='';modQuiz(kanji,'漢 Kuis Kanji')}],
   ['語','Kotoba',`${V.length} kata · semua level`,()=>{dT=dF=dL=dQ='';modQuiz(kotoba,'語 Kuis Kotoba')}],
-  ['法','Bunpō',`${BP.reduce((s,l)=>s+bpRows(l).length,0)} pola · pilih level di bawah`,()=>{if(!BP.some(l=>l.l==bpL))bpL='N5';modQuiz(bunpo,'法 Kuis Bunpō')}],
+  ['法','Bunpō',`${BP.reduce((s,l)=>s+bpRows(l).length,0)} pola · pilih level`,()=>{if(!BP.some(l=>l.l==bpL))bpL='N5';modQuiz(bunpo,'法 Kuis Bunpō')}],
   ['話','Kaiwa',`${KW.length} dialog`,()=>modQuiz(kaiwa,'話 Kuis Kaiwa')],
   ['文','Bun',`${BUN.length} kalimat sehari-hari`,()=>modQuiz(bun,'文 Kuis Bun')],
   ['数','Bilangan','Angka Jepang',()=>modQuiz(angka,'数 Kuis Bilangan')],
   ['活','Katsuyō',`${KV.length} kata kerja · 15 bentuk`,()=>modQuiz(katsuyo,'活 Kuis Katsuyō')],
   ['🧩','Teka-teki','Susun ala Duolingo',puzzle]];
- const KQ=[
-  ['🗂️','Per tema','Pilih tema',()=>kPick('tema',1)],
-  ['🔤','Per jenis kata','Pilih jenis',()=>kPick('jenis',1)],
-  ['🏅','Per level JLPT','Pilih level',()=>kPick('jlpt',1)],
-  ...KP.map(m=>[{ono:'💥',idiom:'🎎',sinonim:'⇄',formal:'🎩'}[m.id]||'⭐',m.t,`${kpN(m.id)} ${m.cats.some(c=>c.pair)?'kata & pasangan':'kata'}`,()=>{kpCat[m.id]='';modQuiz(()=>phraseMod(m.id),m.t)}])];
- const BQ=[...BT.map(t=>[{struktur:'🧱',partikel:'は',pola:'📐',waktu:'⏳',tanya:'❓',sebab:'🔗'}[t.id]||'⭐',t.t,`${t.rows.length} pola`,()=>modQuiz(()=>btopic(t.id),t.t)]),
-  ...BP.map(l=>['🏅',`Bunpō ${l.l}`,`${bpRows(l).length} pola`,()=>{bpL=l.l;ST.set('bpL',bpL);modQuiz(bunpo,`法 Kuis Bunpō ${l.l}`)}])];
  const grid=(L,k)=>`<div class="grid">${L.map((m,i)=>`<button class="mc" data-q="${k}${i}"><span class="ic">${m[0]}</span><b>${m[1]}</b><small>${m[2]}</small></button>`).join('')}</div>`;
- view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>⚔️ Quiz</h2>${rtBtn()}</div>
- <p class="sub">Semua kuis ada di sini. Pilih materi, lalu atur mode, tingkat, dan jumlah soal.</p>
- <h3>Kuis per materi</h3>${grid(MQ,'m')}
- <h3>Kuis sub materi Kotoba</h3>${grid(KQ,'k')}
- <h3>Kuis sub materi Bunpō</h3>${grid(BQ,'b')}
- <h3>Kuis cepat per level</h3><div class="tabs">${PLV.map(([l])=>`<button class="tg${l==qzL?' on':''}" data-l="${l}">${l}</button>`).join('')}</div>
+
+ const bodyMat=`<p class="sub">Pilih materi kuis. Mode, tingkat kesulitan, dan jumlah soal dapat diatur sebelum mulai.</p>
+ <h3>Kuis per materi</h3>${grid(MQ,'m')}`;
+
+ const bodyLvl=`<p class="sub">Uji kemampuan per level JLPT N5 sampai N1 sesuai standar kurikulum.</p>
+ <div class="tabs">${['N5','N4','N3','N2','N1'].map(l=>`<button class="tg${l==qzL?' on':''}" data-l="${l}" style="font-weight:700;padding:8px 14px">${l}</button>`).join('')}</div>
+ <div class="card" style="border-left:4px solid var(--ac)">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+   <b style="font-size:18px">${cur.title}</b>
+   <span class="chip" style="font-size:12px;padding:3px 9px;border-radius:99px;background:var(--bg);font-weight:700;color:var(--ac);min-width:0">${cur.tag}</span>
+  </div>
+  <p style="margin:4px 0 10px;font-size:14px;color:var(--fg);line-height:1.4">${cur.desc}</p>
+  <div style="display:grid;gap:8px">
+   ${cur.tahap.map(th=>`<div style="background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px 12px">
+    <div style="font-size:12px;font-weight:800;color:var(--ac);margin-bottom:2px">${th.n}</div>
+    <div style="font-size:13px;font-weight:700;color:var(--fg);margin-bottom:3px">${th.m}</div>
+    <div style="font-size:12px;color:var(--mut);line-height:1.4">${th.d}</div>
+   </div>`).join('')}
+  </div>
+ </div>
+ <h3>Kuis ${qzL}</h3>
  <div class="qhub">${C.map(([t,ic,lab,E,u])=>`<button class="mc qhc" data-t="${t}" ${E.length<4?'disabled':''}><span class="ic">${ic}</span><b>${lab}</b><small>${E.length?`${E.length} ${u}`:'belum ada untuk level ini'}</small></button>`).join('')}</div>
  <div class="card"><div class="qs-l" style="margin-top:0">Jumlah soal</div><div class="chips">${QOPTS.map(x=>`<button class="chip2 n${x==qn?' on':''}" data-n="${x}">${x}</button>`).join('')}</div>
- <div class="qs-l">Tingkat</div><div class="chips">${Object.entries(QDIFF).map(([k,v])=>`<button class="chip2${k==qd?' on':''}" data-d="${k}">${v.lab}</button>`).join('')}</div></div>
+ <div class="qs-l">Tingkat kesulitan</div><div class="chips">${Object.entries(QDIFF).map(([k,v])=>`<button class="chip2${k==qd?' on':''}" data-d="${k}">${v.lab}</button>`).join('')}</div></div>
+ <h3>Jelajahi level lainnya</h3>
+ <div class="opts">${['N5','N4','N3','N2','N1'].filter(l=>l!=qzL).map(l=>{const info=LV_INFO[l];return`<button class="opt" data-l="${l}" style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px"><div><b style="font-size:15px">${info.title}</b><small style="color:var(--mut);margin-top:2px">${info.desc}</small></div><span class="chip" style="font-size:11px;padding:2px 8px;border-radius:99px;white-space:nowrap;margin-left:8px;min-width:0;flex:none">${info.tag}</span></button>`}).join('')}</div>`;
+
+ view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>⚔️ Quiz</h2>${rtBtn()}</div>
+ <div class="row2" style="margin-bottom:12px">
+  <button class="tg${qzTab=='materi'?' on':''}" id="qzt-mat" style="margin:0;padding:10px 6px;font-weight:700;text-align:center">📚 Berdasarkan Materi</button>
+  <button class="tg${qzTab=='level'?' on':''}" id="qzt-lvl" style="margin:0;padding:10px 6px;font-weight:700;text-align:center">🏅 Level N5–N1</button>
+ </div>
+ ${qzTab=='materi'?bodyMat:bodyLvl}
  ${navHtml('quiz')}`);
- app.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{sfx.tap();const L={m:MQ,k:KQ,b:BQ}[b.dataset.q[0]];L[+b.dataset.q.slice(1)][3]()});
+
+ $('#qzt-mat').onclick=()=>{qzTab='materi';ST.set('qzTab','materi');quizHub()};
+ $('#qzt-lvl').onclick=()=>{qzTab='level';ST.set('qzTab','level');quizHub()};
+ app.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{sfx.tap();MQ[+b.dataset.q.slice(1)][3]()});
  app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{qzL=b.dataset.l;ST.set('qzL',qzL);quizHub()});
  app.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>{qn=+b.dataset.n;ST.set('qn',qn);app.querySelectorAll('[data-n]').forEach(x=>x.classList.toggle('on',+x.dataset.n==qn));sfx.tap()});
  app.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{qd=b.dataset.d;ST.set('qd',qd);app.querySelectorAll('[data-d]').forEach(x=>x.classList.toggle('on',x.dataset.d==qd));sfx.tap()});
@@ -1945,7 +2171,7 @@ const NAVI={beranda:'<path d="M3 11 12 4l9 7v8a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 
 const TABS=[['beranda','Beranda',beranda],['materi','Materi',materi],['quiz','Quiz',quizHub],['review','Review',review],['progres','Progres',prog]];
 let curTab=ST.get('tab','beranda');
 const navHtml=t=>{curTab=t;ST.set('tab',t);return`<nav class="bnav" aria-label="Navigasi utama">${TABS.map(([id,lab])=>`<button class="bn${id==t?' on':''}" data-tab="${id}" aria-current="${id==t?'page':'false'}"><svg viewBox="0 0 24 24" aria-hidden="true">${NAVI[id]}</svg><span>${lab}</span></button>`).join('')}</nav>`};
-function wireNav(){document.body.classList.toggle('hasnav',!!app.querySelector('.bnav'));app.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{sfx.tap();TABS.find(x=>x[0]==b.dataset.tab)[2]()})}
+function wireNav(){document.body.classList.toggle('hasnav',!!app.querySelector('.bnav'));app.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{sfx.tap();document.querySelectorAll('.qsov, .ppop, .ppop-ov').forEach(x=>x.remove());TABS.find(x=>x[0]==b.dataset.tab)[2]()})}
 // tombol kembali di layar materi kembali ke tab terakhir
 function home(){if(curTab=='materi'&&lastSub)return modSub(lastSub);(TABS.find(x=>x[0]==curTab)||TABS[0])[2]()}
 
