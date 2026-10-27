@@ -341,6 +341,12 @@ body.hasnav #app{padding-bottom:100px}
 /* topik bunpō */
 .btul{margin:6px 0 0;padding-left:20px}.btul li{margin:4px 0}
 .btc .gp{border:0;padding:0 0 6px}.btc .bub{margin-top:4px}
+.mtc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}.mtcol{display:grid;gap:8px;align-content:start}
+.mtb{font:inherit;font-size:16px;min-height:54px;padding:8px 10px;border:2px solid var(--bd);border-bottom-width:4px;border-radius:14px;background:var(--card);color:var(--fg);cursor:pointer;line-height:1.3;transition:transform .08s,border-color .15s,background .15s,opacity .3s}
+.mtb small{display:block;font-size:12px;color:var(--mut)}.mtj{font-size:19px}
+.mtb.sel{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 14%,var(--card))}
+.mtb.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 16%,var(--card));opacity:.55;animation:bounce .4s}.mtb.no{border-color:var(--no);animation:shake .4s}
+.blank{display:inline-block;min-width:3em;border-bottom:3px solid var(--blue);color:var(--blue);text-align:center}
 </style></head><body><div id="app"></div>
 <script>
 const $=s=>document.querySelector(s),app=$('#app');
@@ -601,7 +607,7 @@ function runQuiz(title,makeItems,back,onDone){
   const it=q[i],R=RENDER[it.kind];it._redo=show;
   view(qShell({title,i,n:q.length,st},R.body(it),it.kind!='write'),back);
   if(it.say&&$('#sp')){$('#sp').onclick=()=>speak(it.say);if((auto||it.listen)&&it.kind!='speak')speak(it.say)}
-  const fin=(ok,head,det,opt={})=>{qStop();
+  const fin=(ok,head,det,opt={})=>{qStop();if(it.onRes)it.onRes(ok);
    if(ok){s++;st++;bs=Math.max(bs,st);xp+=D.xp;sfx.ok()}else{st=0;sfx.no()}
    if(!opt.tracked)trackStat(ok);
    const pb=$('.qprog i');if(pb)pb.style.width=(i+1)/q.length*100+'%';const sk=$('.qstreak');if(sk){sk.textContent='🔥'+st;sk.classList.toggle('hot',st>=3)}
@@ -672,6 +678,20 @@ const RENDER={
      rec.start()}catch(e){$('#mst').textContent='Pengenalan suara tidak tersedia di browser ini.'}};
    $('#qpass').onclick=()=>end(false,'',true)}},
  // ----- menulis (kanvas) -----
+ // ----- cocokkan arti: ketuk kata di kiri lalu artinya di kanan -----
+ match:{body:it=>{it._L=shuf(it.pairs.map((p,i)=>({...p,i})));it._R=shuf(it.pairs.map((p,i)=>({...p,i})));
+   return`<div class="qlbl">${it.lbl||'Cocokkan pasangan yang benar'}</div><div class="mtc"><div class="mtcol">${it._L.map(p=>`<button class="mtb mtj" data-side="L" data-i="${p.i}">${p.l}</button>`).join('')}</div><div class="mtcol">${it._R.map(p=>`<button class="mtb" data-side="R" data-i="${p.i}">${p.r}</button>`).join('')}</div></div>`},
+  wire:(it,fin)=>{$('#qchk').style.display='none';const B=[...document.querySelectorAll('.mtb')],bad=new Set();let sl=null,sr=null,left=it.pairs.length,miss=0,done=false;
+   const list=()=>it.pairs.map(p=>`<div class="dl">${p.l} = ${p.r}</div>`).join('');
+   const btn=(s,i)=>B.find(b=>b.dataset.side==s&&+b.dataset.i==i);
+   const tryPair=()=>{if(sl==null||sr==null)return;const bl=btn('L',sl),br=btn('R',sr);
+    if(sl==sr){bl.classList.add('ok');br.classList.add('ok');bl.disabled=br.disabled=true;const p=it.pairs[sl];if(p.say)speak(p.say);if(it.onPair)it.onPair(p,!bad.has(sl));left--;
+     if(!left){done=true;const ok=miss<=1;fin(ok,ok?(miss?'Bagus, hampir sempurna!':pickPraise()):'Masih ada yang tertukar',list())}}
+    else{miss++;bad.add(sl);bad.add(sr);sfx.no();[bl,br].forEach(b=>{b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450)})}
+    B.forEach(b=>b.classList.remove('sel'));sl=sr=null};
+   B.forEach(b=>b.onclick=()=>{if(done||b.disabled)return;sfx.tap();const s=b.dataset.side;B.filter(x=>x.dataset.side==s).forEach(x=>x.classList.toggle('sel',x===b));if(s=='L')sl=+b.dataset.i;else sr=+b.dataset.i;tryPair()});
+   $('#qpass').onclick=()=>{if(done)return;done=true;it.pairs.forEach((p,i)=>{if(!btn('L',i).disabled&&it.onPair)it.onPair(p,false)});fin(false,'Dilewati',list())};
+   it._to=()=>$('#qpass').click()}},
  write:{body:it=>`<div class="wtop"><span class="qlbl" style="margin:0">✍️ Tulis jawabannya</span><button class="tg" id="wm">Mode: ${wmode=='bebas'?'Bebas':'Cek otomatis'} ⇄</button></div>
   <div class="card qcard"><div class="qq">${it.q}</div>${it.qr?`<div class="ro qr">${it.qr}</div>`:''}${it.say?'<div style="text-align:center"><button class="sp sp2" id="sp" aria-label="Putar suara">🔊</button></div>':''}</div><div id="warea"></div>`,
   wire:(it,fin)=>{$('#wm').onclick=()=>{wmode=wmode=='bebas'?'ketat':'bebas';ST.set('wmode',wmode);it._redo()};
@@ -1818,6 +1838,68 @@ const GEN={
 function genItem(en,first){const g=GEN[en.t];if(first)return g[0](en.x,en.l);for(const f of shuf(g)){const it=f(en.x,en.l);if(it)return it}return g[0](en.x,en.l)}
 function mixItems(ents,n){const E=shuf(ents),out=[];for(let i=0;out.length<n&&i<E.length*3;i++){const it=genItem(E[i%E.length],i<Math.min(4,E.length));if(it)out.push(it)}return out}
 
+/* ===== PEMBELAJARAN BERTAHAP (Beranda) =====
+   - Setiap materi (kata, kanji, pola, kalimat) punya tingkat hafalan 0–6 yang disimpan di perangkat (nh_mem).
+     Benar +1, salah −2. Dianggap HAFAL jika tingkatnya ≥ 4.
+   - Setiap pelajaran memperkenalkan materi baru, lalu mengulang materi dari pelajaran sebelumnya yang belum hafal.
+   - Jenis soal: arti (pilih arti / pilih bahasa Jepang / dengar), lengkapi kalimat, susun kata & kalimat, cocokkan arti. */
+const HAFAL=4;
+const memKey=en=>en.t+':'+(en.t=='W'?en.x.j+'|'+en.x.k:en.t=='K'?en.x.k:en.t=='G'?en.x[0]:en.x[1]);
+const MEM=()=>ST.get('mem',{});
+function memUpd(key,ok){const m=MEM();m[key]=Math.max(0,Math.min(6,(m[key]||0)+(ok?1:-2)));ST.set('mem',m)}
+const memOf=(M,en)=>M[memKey(en)];
+// kumpulan kalimat contoh untuk soal "lengkapi kalimat" dan "susun kalimat"
+let SIDX=null;
+function sentIdx(){if(SIDX)return SIDX;
+ SIDX=[...BUN.map(b=>({j:b[1],r:b[2],a:b[3]})),...KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3]}))),
+  ...BT.flatMap(t=>t.rows.map(r=>({j:r[3],r:r[4],a:r[5]}))),
+  ...KP.flatMap(m=>m.cats.flatMap(c=>c.pair?[]:c.rows.filter(r=>r[4]).map(r=>({j:r[4],r:r[5],a:r[6]})))),
+  ...BP.flatMap(l=>bpRows(l).filter(r=>r[3]).map(r=>({j:r[3].replace(/[{}]/g,''),r:r[4],a:r[5]})))].filter(s=>s.j&&s.j.length<=34);
+ return SIDX}
+const SCACHE={};
+// kalimat yang memuat kata v (kata minimal 2 huruf atau berkanji, supaya tidak cocok dengan potongan kata lain)
+function findSent(v){const key=v.j+'|'+v.k;if(key in SCACHE)return SCACHE[key];
+ const nd=[v.j,v.k].find(x=>x&&x[0]!='〜'&&([...x].length>=2||/[一-龯]/.test(x)));
+ const L=nd?sentIdx().filter(s=>s.j.includes(nd)):[];
+ return SCACHE[key]=L.length?{s:L.sort((a,b)=>a.j.length-b.j.length)[Math.floor(Math.random()*Math.min(3,L.length))],nd}:null}
+const blankQ=(j,nd,a)=>`<span style="font-size:20px;line-height:1.7">${j.replace(nd,'<span class="blank">＿＿＿</span>')}</span><br><small class="rj" style="font-weight:400">${a}</small>`;
+// generator soal per jenis materi: rec = mengenali (dipakai saat materi baru), prod = memakai/mengingat
+const LGEN={
+ W:{rec:v=>GEN.W[0](v),
+  prod:[v=>GEN.W[1](v),v=>GEN.W[2](v),v=>GEN.W[3](v),
+   v=>{const f=findSent(v);if(!f)return null;const o=oW(v);return{kind:'choice',lbl:'Lengkapi kalimatnya',q:blankQ(f.s.j,f.nd,f.s.a),qr:'',a:wOpt(v),d:o.map(wOpt),nr:true,sayAfter:f.s.j,e:`${f.s.j} <span class="ro">(${f.s.r})</span>`}},
+   v=>{const f=findSent(v);if(!f)return null;const it=sentItems([{j:f.s.j,r:f.s.r,a:f.s.a,sub:`memakai kata: ${v.j}`}],sentIdx())[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}],
+  pair:v=>({l:`${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}`,r:v.a,say:v.k})},
+ K:{rec:k=>GEN.K[0](k),prod:[k=>GEN.K[1](k),k=>GEN.K[2](k)],pair:k=>({l:`<span style="font-size:24px">${k.k}</span>`,r:k.a,say:k.kun.length?k.kun[0].replace('.',''):k.on[0]})},
+ G:{rec:(r,L)=>GEN.G[0](r,L),
+  prod:[(r,L)=>GEN.G[1](r,L),
+   (r,L)=>{const m=r[3]&&r[3].match(/\{(.+?)\}/);if(!m)return null;const o=oG(r,L).filter(x=>x[3]&&/\{.+?\}/.test(x[3])).map(x=>x[3].match(/\{(.+?)\}/)[1]).filter(x=>x!=m[1]);if(o.length<2)return null;
+    return{kind:'choice',lbl:'Lengkapi kalimatnya',q:`<span style="font-size:20px;line-height:1.7">${r[3].replace(/\{.+?\}/,'<span class="blank">＿＿＿</span>')}</span><br><small class="rj" style="font-weight:400">${r[5]}</small>`,qr:'',a:m[1],d:o,mean:`${r[0]} — ${r[2]}`,sayAfter:r[3].replace(/[{}]/g,'')}}],
+  pair:r=>({l:r[0],r:r[2]})},
+ S:{rec:b=>GEN.S[0](b),prod:[b=>GEN.S[1](b)],pair:null}};
+const tag=(it,en)=>{if(!it)return null;it.onRes=ok=>memUpd(memKey(en),ok);return it};
+const genRec=en=>tag(LGEN[en.t].rec(en.x,en.l),en);
+const genProd=en=>{for(const f of shuf(LGEN[en.t].prod)){const it=f(en.x,en.l);if(it)return tag(it,en)}return genRec(en)};
+// soal cocokkan arti dari 3–5 materi sejenis
+function genMatch(ents){const E=ents.filter(e=>LGEN[e.t].pair);if(E.length<3)return null;const t=E[0].t,S=shuf(E.filter(e=>e.t==t));
+ const seen=new Set(),pick=S.filter(e=>{const r=LGEN[t].pair(e.x).r;if(seen.has(r))return false;seen.add(r);return true}).slice(0,5);if(pick.length<3)return null;
+ return{kind:'match',lbl:'Cocokkan dengan artinya',pairs:pick.map(e=>({...LGEN[t].pair(e.x),key:memKey(e)})),onPair:(p,ok)=>memUpd(p.key,ok)}}
+// materi dari pelajaran sebelumnya (level yang sama) yang belum hafal, yang paling lemah dulu
+function reviewEnts(PL,beforeIdx,n){const M=MEM();
+ return shuf(PL.seq.slice(0,beforeIdx).flatMap(l=>l.e).filter(e=>memOf(M,e)!==undefined&&memOf(M,e)<HAFAL))
+  .sort((a,b)=>memOf(M,a)-memOf(M,b)).slice(0,n)}
+// susunan soal satu pelajaran: kenali materi baru → cocokkan → pakai materi baru + ulang materi lama
+function lessonItems(node,PL){
+ if(node.k=='T'){const ents=node.ents,out=[];const m=genMatch(shuf(ents));if(m)out.push(m);shuf(ents).slice(0,12).forEach(e=>{const it=genProd(e);if(it)out.push(it)});
+  const m2=genMatch(shuf(ents));if(m2)out.push(m2);return shuf(out).slice(0,15)}
+ const news=shuf(node.ls.e),idx=PL.seq.indexOf(node.ls),rev=reviewEnts(PL,idx,6),M=MEM();
+ const rec=news.map(genRec).filter(Boolean);
+ const mt=genMatch(news),prod=news.slice(0,Math.max(3,Math.ceil(news.length*.6))).map(genProd).filter(Boolean);
+ const recR=e=>e.t=='W'&&Math.random()<.5?tag(GEN.W[2](e.x),e):genRec(e);
+ const rv=rev.map(e=>memOf(M,e)<=1?recR(e):genProd(e)).filter(Boolean),rm=rev.length>=3?genMatch(rev):null;
+ return[...rec,...(mt?[mt]:[]),...shuf([...prod,...rv,...(rm?[rm]:[])])].slice(0,20)}
+const starTxt=v=>{const n=Math.floor(v||0);return n?'★'.repeat(n):'✓ selesai'};
+
 /* ===== BERANDA: JALUR BELAJAR ala Duolingo, N5 → N1 =====
    Setiap level dibagi menjadi unit berisi 6 pelajaran (kosakata, kanji, bunpo, kalimat) + peti hadiah + trofi ulangan unit.
    Pelajaran terbuka berurutan dalam satu level; level lain bisa dipilih kapan saja. */
@@ -1995,7 +2077,7 @@ function beranda(){
  }).join('');
 
  view(`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nihonesia"><select id="plv" class="plv" aria-label="Pilih level">${PLV.filter(([l])=>pathLevel(l).count).map(([l,t])=>`<option value="${l}" ${l==pLv?'selected':''}>${l} · ${t}</option>`).join('')}</select><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>
- <div class="pprog"><div><b>${pLv} · ${PLV.find(x=>x[0]==pLv)[1]}</b><span class="rj">${done} / ${PL.count} pelajaran</span></div><div class="pbar"><i style="width:${PL.count?done/PL.count*100:0}%"></i></div></div>
+ <div class="pprog"><div><b>${pLv} · ${PLV.find(x=>x[0]==pLv)[1]}</b><span class="rj">${done} / ${PL.count} pelajaran · 🧠 ${(()=>{const M=MEM();return PL.seq.flatMap(l=>l.e).filter(e=>(memOf(M,e)||0)>=HAFAL).length})()} hafal</span></div><div class="pbar"><i style="width:${PL.count?done/PL.count*100:0}%"></i></div></div>
  <div id="path">${units}</div>${navHtml('beranda')}`);
  ST.del('justDone');
  $('#plv').onchange=e=>{pLv=e.target.value;ST.set('pLv',pLv);beranda()};
@@ -2013,7 +2095,7 @@ function nodePop(btn,PL,st){
  const preview=es=>es.slice(0,6).map(e=>e.t=='W'?e.x.j:e.t=='K'?e.x.k:e.t=='G'?e.x[0]:e.t=='S'?cut(e.x[1],10):e.x[1]).join('、 ');
  let h='';
  if(node.k=='L'){const ls=node.ls;h=`<b>${lessonLabel(ls,ls.no-1)}</b><p>${ls.e.length} ${ls.t=='W'?'kosakata':ls.t=='K'?'kanji':ls.t=='G'?'pola kalimat':'kalimat'}: ${preview(ls.e)}${ls.e.length>6?'…':''}</p>
-  ${S=='lock'?'<p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka.</p>':`<button class="pb" id="pgo">${S=='done'?`ULANGI KUIS · ${'★'.repeat(P[id]||1)}`:`MULAI KUIS +${QDf().xp*Math.min(12,Math.max(8,ls.e.length+4))} XP`}</button>`}`}
+  ${S!='lock'?(()=>{const M=MEM(),rv=reviewEnts(PL,PL.seq.indexOf(ls),6).length,hf=ls.e.filter(e=>(memOf(M,e)||0)>=HAFAL).length;return`<p class="rj">✨ ${ls.e.length} materi baru${rv?` · 🔁 ${rv} materi lama diulang`:''}${hf?` · 🧠 ${hf} sudah hafal`:''}</p>`})():''}${S=='lock'?'<p class="rj">🔒 Kerjakan kuis sebelumnya untuk membuka. Nilainya tidak harus sempurna.</p>':`<button class="pb" id="pgo">${S=='done'?`ULANGI KUIS · ${starTxt(P[id])}`:`MULAI KUIS +${QDf().xp*Math.min(12,Math.max(8,ls.e.length+4))} XP`}</button>`}`}
  else if(node.k=='C')h=S=='lock'?'<b>Peti Hadiah</b><p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka peti ini.</p>':S=='done'?'<b>Peti sudah dibuka</b><p class="rj">Kamu sudah mendapat +20 XP dari peti ini.</p>':'<b>Peti hadiah siap!</b><button class="pb" id="pgo">BUKA PETI +20 XP</button>';
  else h=`<b>Ulangan Unit ${node.u.u+1}</b><p>${node.ents.length} materi dari seluruh unit ini.</p>${S=='lock'?'<p class="rj">🔒 Selesaikan semua pelajaran di unit ini dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI ULANGAN':'MULAI ULANGAN'}</button>`}`;
  ov.innerHTML=`<div class="ppop-box ${S}" role="dialog" aria-modal="true"><button class="ppop-close" aria-label="Tutup">✕</button>${h}</div>`;
@@ -2026,7 +2108,7 @@ function nodePop(btn,PL,st){
  g.onclick=()=>{ov.remove();if(node.k=='C'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(20);confetti();sfx.done();ST.set('justDone',id);beranda();return}
   const ents=node.k=='L'?node.ls.e:node.ents,n=node.k=='L'?Math.min(12,Math.max(8,ents.length+4)):15;
   const title=`${PL.L} · ${node.k=='L'?lessonLabel(node.ls,node.ls.no-1):'Ulangan unit '+(node.u.u+1)}`;
-  runQuiz(title,()=>mixItems(ents,n),beranda,r=>{const acc=r.s/r.n;if(acc>=.6){const P2=PG(),stars=acc==1?3:acc>=.8?2:1;P2[id]=Math.max(P2[id]||0,stars);ST.set('path',P2);ST.set('justDone',id)}})}}
+  runQuiz(title,()=>lessonItems(node,PL),beranda,r=>{const acc=r.s/r.n,P2=PG(),stars=acc==1?3:acc>=.8?2:acc>=.6?1:.1;P2[id]=Math.max(P2[id]||0,stars);ST.set('path',P2);ST.set('justDone',id)})}}
 // panduan unit: daftar materi yang dipelajari
 function unitGuide(u){
  const row=e=>e.t=='W'?`<div class="exw"><span class="j">${e.x.j}</span><span class="m">${e.x.k}<span class="ro"> · ${e.x.r}</span><br><small class="rj">${e.x.a}</small></span><button class="sp" data-s="${e.x.k}">🔊</button></div>`
