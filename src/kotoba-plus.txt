@@ -1,0 +1,221 @@
+// Materi tambahan modul Kotoba: onomatope, idiom & peribahasa, sinonim & antonim, formal & slang.
+// Format:
+//   @id|Judul submodul|keterangan singkat
+//   #Kategori            → baris berikutnya berupa entri
+//   #Kategori ⇔          → baris berikutnya berupa pasangan kata
+// Entri    : jepang|kana|romaji|arti                         (romaji "-" = dibuat otomatis dari kana)
+//            jepang|kana|romaji|arti|contoh|romaji contoh|arti contoh
+// Pasangan : jepang 1|kana 1|arti 1|jepang 2|kana 2|arti 2
+
+@ono|Onomatope|擬音語・擬態語 — kata tiruan bunyi dan keadaan
+#Perasaan
+わくわく|わくわく|-|berdebar senang, tidak sabar menanti|明日の旅行にわくわくしています。|ashita no ryokou ni wakuwaku shite imasu.|Saya tidak sabar dengan perjalanan besok.
+どきどき|どきどき|-|deg-degan, gugup|面接の前はどきどきします。|mensetsu no mae wa dokidoki shimasu.|Sebelum wawancara saya deg-degan.
+いらいら|いらいら|-|kesal, jengkel|電車が遅れていらいらする。|densha ga okurete iraira suru.|Kesal karena keretanya terlambat.
+はらはら|はらはら|-|cemas melihat sesuatu|子どもが木に登っていて、はらはらした。|kodomo ga ki ni nobotte ite, harahara shita.|Saya cemas melihat anak memanjat pohon.
+びくびく|びくびく|-|takut-takut, ketakutan|犬が怖くて、びくびくしている。|inu ga kowakute, bikubiku shite iru.|Dia ketakutan karena anjingnya seram.
+うきうき|うきうき|-|riang gembira|週末なので、うきうきしている。|shuumatsu na node, ukiuki shite iru.|Hatinya riang karena akhir pekan.
+がっかり|がっかり|-|kecewa|試験に落ちて、がっかりした。|shiken ni ochite, gakkari shita.|Saya kecewa karena gagal ujian.
+ほっと|ほっと|-|lega|仕事が終わって、ほっとした。|shigoto ga owatte, hotto shita.|Lega karena pekerjaan selesai.
+むかむか|むかむか|-|mual; kesal memuncak|食べすぎて、胸がむかむかする。|tabesugite, mune ga mukamuka suru.|Perut mual karena makan berlebihan.
+しくしく|しくしく|-|menangis terisak pelan|女の子がしくしく泣いている。|onna no ko ga shikushiku naite iru.|Anak perempuan itu menangis terisak.
+#Keadaan & gerakan
+にこにこ|にこにこ|-|tersenyum-senyum|彼女はいつもにこにこしている。|kanojo wa itsumo nikoniko shite iru.|Dia selalu tersenyum.
+にやにや|にやにや|-|senyum-senyum sendiri, menyeringai|何をにやにやしているの？|nani o niyaniya shite iru no?|Kenapa senyum-senyum sendiri?
+ぺこぺこ|ぺこぺこ|-|lapar sekali; membungkuk-bungkuk|おなかがぺこぺこです。|onaka ga pekopeko desu.|Perut saya lapar sekali.
+ぐっすり|ぐっすり|-|(tidur) nyenyak|昨日はぐっすり寝ました。|kinou wa gussuri nemashita.|Kemarin saya tidur nyenyak.
+のんびり|のんびり|-|santai, bersantai|休みの日はのんびりします。|yasumi no hi wa nonbiri shimasu.|Hari libur saya bersantai.
+ぼんやり|ぼんやり|-|melamun; samar-samar|ぼんやりしていて、駅を過ぎてしまった。|bon'yari shite ite, eki o sugite shimatta.|Saya melamun sampai kelewatan stasiun.
+きらきら|きらきら|-|berkilauan|星がきらきら光っている。|hoshi ga kirakira hikatte iru.|Bintang berkilauan.
+ぴかぴか|ぴかぴか|-|mengilap, bersih kinclong|床をぴかぴかに磨いた。|yuka o pikapika ni migaita.|Saya menggosok lantai sampai mengilap.
+ふわふわ|ふわふわ|-|lembut empuk; melayang|このパンはふわふわです。|kono pan wa fuwafuwa desu.|Roti ini lembut empuk.
+さらさら|さらさら|-|halus kering; mengalir lancar|さらさらした髪がきれいですね。|sarasara shita kami ga kirei desu ne.|Rambut yang halus itu indah, ya.
+べたべた|べたべた|-|lengket|ジュースで手がべたべたする。|juusu de te ga betabeta suru.|Tangan lengket karena jus.
+ぬるぬる|ぬるぬる|-|licin berlendir|床がぬるぬるしていて危ない。|yuka ga nurunuru shite ite abunai.|Lantainya licin, berbahaya.
+ぼろぼろ|ぼろぼろ|-|compang-camping, rusak parah|靴がぼろぼろになった。|kutsu ga boroboro ni natta.|Sepatunya jadi rusak parah.
+ぐちゃぐちゃ|ぐちゃぐちゃ|-|berantakan, kacau|部屋がぐちゃぐちゃだ。|heya ga guchagucha da.|Kamarnya berantakan.
+ぎりぎり|ぎりぎり|-|mepet, nyaris|ぎりぎり間に合った。|girigiri ma ni atta.|Nyaris terlambat, tapi masih sempat.
+ばらばら|ばらばら|-|berserakan, tercerai-berai|紙がばらばらに落ちた。|kami ga barabara ni ochita.|Kertasnya jatuh berserakan.
+そっくり|そっくり|-|mirip sekali|彼はお父さんにそっくりだ。|kare wa otousan ni sokkuri da.|Dia mirip sekali dengan ayahnya.
+ぴったり|ぴったり|-|pas sekali|この靴はぴったりです。|kono kutsu wa pittari desu.|Sepatu ini pas sekali.
+すっきり|すっきり|-|segar, lega, rapi|部屋を片付けて、すっきりした。|heya o katazukete, sukkiri shita.|Lega setelah merapikan kamar.
+うろうろ|うろうろ|-|mondar-mandir|駅の前をうろうろしている。|eki no mae o urouro shite iru.|Dia mondar-mandir di depan stasiun.
+ころころ|ころころ|-|menggelinding; berubah-ubah|ボールがころころ転がった。|booru ga korokoro korogatta.|Bolanya menggelinding.
+#Suara
+わんわん|わんわん|-|guk-guk (anjing)|犬がわんわんほえている。|inu ga wanwan hoete iru.|Anjing menggonggong guk-guk.
+にゃあ|にゃあ|-|meong (kucing)|猫がにゃあと鳴いた。|neko ga nyaa to naita.|Kucing mengeong.
+コケコッコー|コケコッコー|-|kukuruyuk (ayam)|朝、鶏がコケコッコーと鳴く。|asa, niwatori ga kokekokkoo to naku.|Pagi hari ayam berkokok kukuruyuk.
+ざあざあ|ざあざあ|-|(hujan) deras|雨がざあざあ降っている。|ame ga zaazaa futte iru.|Hujan turun deras.
+しとしと|しとしと|-|(hujan) rintik-rintik|雨がしとしと降っている。|ame ga shitoshito futte iru.|Hujan turun rintik-rintik.
+ごろごろ|ごろごろ|-|bergemuruh (petir); bermalas-malasan|雷がごろごろ鳴っている。|kaminari ga gorogoro natte iru.|Petir bergemuruh.
+どんどん|どんどん|-|dok-dok (ketukan keras); terus-menerus|ドアをどんどんたたく。|doa o dondon tataku.|Mengetuk pintu dok-dok.
+とんとん|とんとん|-|tok-tok (ketukan pelan)|肩をとんとんたたく。|kata o tonton tataku.|Menepuk bahu pelan.
+がちゃん|がちゃん|-|prang (benda pecah)|お皿ががちゃんと割れた。|osara ga gachan to wareta.|Piringnya pecah, prang.
+ばたばた|ばたばた|-|grasak-grusuk, sibuk|朝はいつもばたばたしている。|asa wa itsumo batabata shite iru.|Pagi hari selalu grasak-grusuk.
+ぺらぺら|ぺらぺら|-|lancar (berbicara bahasa asing)|彼は英語がぺらぺらだ。|kare wa eigo ga perapera da.|Dia lancar berbahasa Inggris.
+ぶつぶつ|ぶつぶつ|-|menggerutu|彼はぶつぶつ文句を言っている。|kare wa butsubutsu monku o itte iru.|Dia menggerutu mengeluh.
+ひそひそ|ひそひそ|-|berbisik-bisik|二人がひそひそ話している。|futari ga hisohiso hanashite iru.|Dua orang itu berbisik-bisik.
+げらげら|げらげら|-|tertawa terbahak-bahak|みんなでげらげら笑った。|minna de geragera waratta.|Semua tertawa terbahak-bahak.
+ごくごく|ごくごく|-|glek-glek (minum)|水をごくごく飲んだ。|mizu o gokugoku nonda.|Minum air glek-glek.
+もぐもぐ|もぐもぐ|-|mengunyah-ngunyah|口をもぐもぐさせている。|kuchi o mogumogu sasete iru.|Mulutnya sedang mengunyah.
+#Kerja & pabrik
+がたがた|がたがた|-|berderak, goyah|機械ががたがた音を立てている。|kikai ga gatagata oto o tatete iru.|Mesinnya berbunyi berderak.
+ぴりぴり|ぴりぴり|-|tegang; perih|締め切りの前で、職場がぴりぴりしている。|shimekiri no mae de, shokuba ga piripiri shite iru.|Menjelang tenggat, suasana kerja tegang.
+てきぱき|てきぱき|-|cekatan|彼はてきぱき仕事をする。|kare wa tekipaki shigoto o suru.|Dia bekerja dengan cekatan.
+こつこつ|こつこつ|-|tekun sedikit demi sedikit|毎日こつこつ勉強する。|mainichi kotsukotsu benkyou suru.|Setiap hari belajar dengan tekun.
+へとへと|へとへと|-|lelah sekali|残業でへとへとだ。|zangyou de hetoheto da.|Capek sekali karena lembur.
+ちくちく|ちくちく|-|menusuk-nusuk (gatal/perih)|このセーターはちくちくする。|kono seetaa wa chikuchiku suru.|Sweter ini terasa gatal menusuk.
+
+@idiom|Idiom & peribahasa|慣用句・ことわざ — ungkapan dengan makna kiasan
+#Idiom (慣用句)
+顔が広い|かおがひろい|kao ga hiroi|punya banyak kenalan (harfiah: wajahnya luas)
+頭にくる|あたまにくる|atama ni kuru|marah, kesal
+手が足りない|てがたりない|te ga tarinai|kekurangan tenaga / orang
+猫の手も借りたい|ねこのてもかりたい|neko no te mo karitai|sangat sibuk (sampai ingin meminjam tangan kucing)
+口が軽い|くちがかるい|kuchi ga karui|tidak bisa menjaga rahasia
+口が堅い|くちがかたい|kuchi ga katai|pandai menjaga rahasia
+耳が痛い|みみがいたい|mimi ga itai|tersindir karena teguran itu benar
+目がない|めがない|me ga nai|sangat suka (pada sesuatu)
+気が長い|きがながい|ki ga nagai|sabar
+気が短い|きがみじかい|ki ga mijikai|tidak sabaran, mudah marah
+腹が立つ|はらがたつ|hara ga tatsu|marah
+骨を折る|ほねをおる|hone o oru|bersusah payah, bekerja keras
+足を洗う|あしをあらう|ashi o arau|berhenti dari pekerjaan buruk, insaf
+手を貸す|てをかす|te o kasu|membantu, mengulurkan tangan
+首になる|くびになる|kubi ni naru|dipecat
+油を売る|あぶらをうる|abura o uru|membuang waktu, bermalas-malasan saat kerja
+鼻が高い|はながたかい|hana ga takai|bangga
+胸を張る|むねをはる|mune o haru|membusungkan dada, percaya diri
+腕が上がる|うでがあがる|ude ga agaru|keterampilan meningkat
+息が合う|いきがあう|iki ga au|kompak, serasi
+#Peribahasa (ことわざ)
+猿も木から落ちる|さるもきからおちる|saru mo ki kara ochiru|Monyet pun bisa jatuh dari pohon: orang ahli pun bisa salah
+石の上にも三年|いしのうえにもさんねん|ishi no ue ni mo sannen|Duduk di atas batu pun tiga tahun: kesabaran akan membuahkan hasil
+七転び八起き|ななころびやおき|nanakorobi yaoki|Jatuh tujuh kali, bangkit delapan kali: pantang menyerah
+花より団子|はなよりだんご|hana yori dango|Kue dango daripada bunga: lebih mementingkan hal yang praktis
+急がば回れ|いそがばまわれ|isogaba maware|Kalau terburu-buru, ambil jalan memutar: biar lambat asal selamat
+塵も積もれば山となる|ちりもつもればやまとなる|chiri mo tsumoreba yama to naru|Debu pun bila menumpuk menjadi gunung: sedikit demi sedikit, lama-lama menjadi bukit
+猫に小判|ねこにこばん|neko ni koban|Koin emas untuk kucing: memberi barang berharga kepada yang tidak menghargainya
+百聞は一見に如かず|ひゃくぶんはいっけんにしかず|hyakubun wa ikken ni shikazu|Mendengar seratus kali tidak sebanding dengan melihat sekali
+井の中の蛙|いのなかのかわず|i no naka no kawazu|Katak di dalam sumur: seperti katak dalam tempurung
+口は災いの元|くちはわざわいのもと|kuchi wa wazawai no moto|Mulut adalah sumber bencana: mulutmu harimaumu
+時は金なり|ときはかねなり|toki wa kane nari|Waktu adalah uang
+雨降って地固まる|あめふってじかたまる|ame futte ji katamaru|Setelah hujan, tanah menjadi padat: setelah masalah, hubungan menjadi lebih kuat
+習うより慣れよ|ならうよりなれよ|narau yori nare yo|Lebih baik membiasakan diri daripada sekadar belajar: alah bisa karena biasa
+二兎を追う者は一兎をも得ず|にとをおうものはいっとをもえず|nito o ou mono wa itto o mo ezu|Mengejar dua kelinci, tidak mendapat satu pun
+一石二鳥|いっせきにちょう|isseki nichou|Satu batu dua burung: sekali dayung, dua tiga pulau terlampaui
+十人十色|じゅうにんといろ|juunin toiro|Sepuluh orang sepuluh warna: lain orang lain pendapat
+笑う門には福来る|わらうかどにはふくきたる|warau kado ni wa fuku kitaru|Kebahagiaan datang ke rumah yang penuh tawa
+覆水盆に返らず|ふくすいぼんにかえらず|fukusui bon ni kaerazu|Air yang tumpah tidak kembali ke nampan: nasi sudah menjadi bubur
+案ずるより産むが易し|あんずるよりうむがやすし|anzuru yori umu ga yasushi|Melakukan lebih mudah daripada mengkhawatirkannya
+千里の道も一歩から|せんりのみちもいっぽから|senri no michi mo ippo kara|Perjalanan seribu mil dimulai dari satu langkah
+
+@sinonim|Sinonim & antonim|類義語・対義語 — persamaan kata dan lawan kata
+#Sinonim ⇔
+美しい|うつくしい|indah (formal)|綺麗|きれい|cantik, bersih
+始める|はじめる|memulai|開始する|かいしする|memulai (formal)
+上手|じょうず|pandai|得意|とくい|mahir, jagoan
+休み|やすみ|libur|休日|きゅうじつ|hari libur (formal)
+速い|はやい|cepat|素早い|すばやい|gesit, sigap
+怖い|こわい|takut, seram|恐ろしい|おそろしい|mengerikan
+友達|ともだち|teman|友人|ゆうじん|sahabat (formal)
+仕事|しごと|pekerjaan|職業|しょくぎょう|profesi
+使う|つかう|menggunakan|利用する|りようする|memanfaatkan
+見る|みる|melihat|眺める|ながめる|memandang
+すぐ|すぐ|segera|直ちに|ただちに|seketika (formal)
+とても|とても|sangat|非常に|ひじょうに|amat sangat (formal)
+確認する|かくにんする|memastikan|チェックする|チェックする|mengecek
+直す|なおす|memperbaiki|修理する|しゅうりする|mereparasi
+集める|あつめる|mengumpulkan|収集する|しゅうしゅうする|mengoleksi
+準備する|じゅんびする|mempersiapkan|用意する|よういする|menyiapkan (barang)
+値段|ねだん|harga|価格|かかく|harga (formal)
+理由|りゆう|alasan|訳|わけ|alasan, sebab
+病気|びょうき|sakit, penyakit|具合が悪い|ぐあいがわるい|tidak enak badan
+手伝う|てつだう|membantu|助ける|たすける|menolong
+#Antonim ⇔
+大きい|おおきい|besar|小さい|ちいさい|kecil
+高い|たかい|mahal|安い|やすい|murah
+高い|たかい|tinggi|低い|ひくい|rendah
+長い|ながい|panjang|短い|みじかい|pendek
+新しい|あたらしい|baru|古い|ふるい|lama
+暑い|あつい|panas (cuaca)|寒い|さむい|dingin (cuaca)
+熱い|あつい|panas (benda)|冷たい|つめたい|dingin (benda)
+重い|おもい|berat|軽い|かるい|ringan
+早い|はやい|awal, pagi|遅い|おそい|terlambat
+多い|おおい|banyak|少ない|すくない|sedikit
+明るい|あかるい|terang|暗い|くらい|gelap
+広い|ひろい|luas|狭い|せまい|sempit
+強い|つよい|kuat|弱い|よわい|lemah
+近い|ちかい|dekat|遠い|とおい|jauh
+易しい|やさしい|mudah|難しい|むずかしい|sulit
+好き|すき|suka|嫌い|きらい|tidak suka
+上手|じょうず|pandai|下手|へた|tidak pandai
+開ける|あける|membuka|閉める|しめる|menutup
+入る|はいる|masuk|出る|でる|keluar
+行く|いく|pergi|来る|くる|datang
+始まる|はじまる|dimulai|終わる|おわる|selesai
+貸す|かす|meminjamkan|借りる|かりる|meminjam
+売る|うる|menjual|買う|かう|membeli
+勝つ|かつ|menang|負ける|まける|kalah
+増える|ふえる|bertambah|減る|へる|berkurang
+上がる|あがる|naik|下がる|さがる|turun
+押す|おす|mendorong, menekan|引く|ひく|menarik
+覚える|おぼえる|mengingat|忘れる|わすれる|lupa
+安全|あんぜん|aman|危険|きけん|berbahaya
+賛成|さんせい|setuju|反対|はんたい|menentang
+成功|せいこう|berhasil|失敗|しっぱい|gagal
+入口|いりぐち|pintu masuk|出口|でぐち|pintu keluar
+合格|ごうかく|lulus, lolos|不合格|ふごうかく|tidak lulus
+良品|りょうひん|produk bagus|不良品|ふりょうひん|produk cacat
+朝|あさ|pagi|夜|よる|malam
+
+@formal|Kosakata formal & slang|敬語・俗語 — bahasa sopan dan bahasa gaul
+#Biasa ⇔ Sopan (keigo) ⇔
+行く|いく|pergi|いらっしゃる|いらっしゃる|pergi / datang (hormat, sonkeigo)
+行く|いく|pergi|参る|まいる|pergi (merendah, kenjōgo)
+来る|くる|datang|お越しになる|おこしになる|datang (hormat, sonkeigo)
+言う|いう|berkata|おっしゃる|おっしゃる|berkata (hormat, sonkeigo)
+言う|いう|berkata|申す|もうす|berkata (merendah, kenjōgo)
+見る|みる|melihat|ご覧になる|ごらんになる|melihat (hormat, sonkeigo)
+見る|みる|melihat|拝見する|はいけんする|melihat (merendah, kenjōgo)
+食べる|たべる|makan|召し上がる|めしあがる|makan (hormat, sonkeigo)
+食べる|たべる|makan|いただく|いただく|makan (merendah, kenjōgo)
+する|する|melakukan|なさる|なさる|melakukan (hormat, sonkeigo)
+する|する|melakukan|いたす|いたす|melakukan (merendah, kenjōgo)
+いる|いる|ada (orang)|いらっしゃる|いらっしゃる|ada (hormat, sonkeigo)
+いる|いる|ada (orang)|おる|おる|ada (merendah, kenjōgo)
+知っている|しっている|tahu|ご存じ|ごぞんじ|tahu (hormat, sonkeigo)
+聞く|きく|bertanya|伺う|うかがう|bertanya / berkunjung (merendah, kenjōgo)
+会う|あう|bertemu|お目にかかる|おめにかかる|bertemu (merendah, kenjōgo)
+あげる|あげる|memberi|差し上げる|さしあげる|memberi (merendah, kenjōgo)
+くれる|くれる|memberi (kepada saya)|くださる|くださる|memberi (hormat, sonkeigo)
+もらう|もらう|menerima|いただく|いただく|menerima (merendah, kenjōgo)
+すみません|すみません|maaf|申し訳ございません|もうしわけございません|mohon maaf (sangat sopan)
+分かった|わかった|mengerti|かしこまりました|かしこまりました|baik, saya mengerti (sangat sopan)
+今日|きょう|hari ini|本日|ほんじつ|hari ini (formal)
+さっき|さっき|tadi|先ほど|さきほど|tadi (formal)
+あとで|あとで|nanti|後ほど|のちほど|nanti (formal)
+誰|だれ|siapa|どなた|どなた|siapa (sopan)
+どこ|どこ|di mana|どちら|どちら|di mana (sopan)
+ある|ある|ada (benda)|ござる|ござる|ada (sangat sopan, mis. ございます)
+#Slang & bahasa gaul
+やばい|やばい|-|gawat; keren banget (tergantung konteks)
+マジ|マジ|-|serius? / beneran
+めっちゃ|めっちゃ|-|banget, sangat (dialek Kansai)
+超|ちょう|-|super, sangat
+ウケる|ウケる|-|lucu banget, bikin ngakak
+ムカつく|ムカつく|-|bikin kesal
+うざい|うざい|-|menyebalkan, mengganggu
+ダサい|ダサい|-|norak, kampungan
+キモい|キモい|-|menjijikkan (kasar)
+イケメン|イケメン|-|cowok ganteng
+ドタキャン|ドタキャン|-|membatalkan janji di saat terakhir
+バイト|バイト|-|kerja sambilan (singkatan アルバイト)
+スマホ|スマホ|-|ponsel pintar (singkatan)
+ググる|ググる|-|mencari di Google
+ガチ|ガチ|-|serius, sungguhan
+ぶっちゃけ|ぶっちゃけ|-|terus terang saja
+あざっす|あざっす|-|makasih (dari ありがとうございます)
+ワンチャン|ワンチャン|-|ada kesempatan, mungkin saja bisa
+推し|おし|-|idola favorit
+タメ口|ためぐち|-|bicara santai seperti ke teman sebaya

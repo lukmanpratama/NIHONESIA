@@ -248,15 +248,54 @@ async function buildKana() {
   return { out, missing, fetched };
 }
 
-// ===== ISTILAH (src/istilah.txt) → [[kategori, kanji, hiragana, romaji, arti], ...] =====
-function buildIstilah() {
-  const out = []; let cat = 'Istilah';
-  fs.readFileSync(path.join(ROOT, 'src', 'istilah.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+// ===== KOTOBA PLUS (src/kotoba-plus.txt): onomatope, idiom & peribahasa, sinonim & antonim, formal & slang =====
+// → [{id, t, d, cats:[{c, pair, rows}]}]; entri: [jp, kana, romaji, arti, contoh, romaji contoh, arti contoh]
+//   pasangan: [jp1, kana1, romaji1, arti1, jp2, kana2, romaji2, arti2]
+function buildKotobaPlus() {
+  const out = [], KANA = /^[぀-ヿー〜・ ]+$/; let mod = null, cat = null;
+  fs.readFileSync(path.join(ROOT, 'src', 'kotoba-plus.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    const p = line.split('|').map(x => x.trim()), at = `kotoba-plus.txt:${ln + 1}`;
+    if (line[0] === '@') { mod = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', cats: [] }; out.push(mod); cat = null; return; }
+    if (!mod) { bad.push(`${at} di luar submodul`); return; }
+    if (line[0] === '#') { const pair = /⇔$/.test(line); cat = { c: line.slice(1).replace(/⇔$/, '').trim(), pair, rows: [] }; mod.cats.push(cat); return; }
+    if (!cat) { bad.push(`${at} di luar kategori`); return; }
+    if (cat.pair) {
+      if (p.length !== 6 || p.some(x => !x) || !KANA.test(p[1]) || !KANA.test(p[4])) { bad.push(`${at} format pasangan salah: ${line}`); return; }
+      cat.rows.push([p[0], p[1], romWord(p[1]), p[2], p[3], p[4], romWord(p[4]), p[5]]);
+    } else {
+      if ((p.length !== 4 && p.length !== 7) || p.some(x => !x) || !KANA.test(p[1])) { bad.push(`${at} format entri salah: ${line}`); return; }
+      if (p[2] === '-') p[2] = romWord(p[1]);
+      cat.rows.push(p);
+    }
+  });
+  return out;
+}
+// ===== BUNPO TOPIK (src/bunpo-topik.txt) → [{id, t, d, ex:[penjelasan], rows:[[pola, romaji, arti, contoh, romaji contoh, arti contoh]]}] =====
+function buildBunpoTopik() {
+  const out = []; let tp = null;
+  fs.readFileSync(path.join(ROOT, 'src', 'bunpo-topik.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    const p = line.split('|').map(x => x.trim());
+    if (line[0] === '@') { tp = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', ex: [], rows: [] }; out.push(tp); return; }
+    if (!tp) { bad.push(`bunpo-topik.txt:${ln + 1} di luar topik`); return; }
+    if (line.startsWith('- ')) { tp.ex.push(line.slice(2)); return; }
+    if (p.length !== 6 || p.some(x => !x)) { bad.push(`bunpo-topik.txt:${ln + 1} format salah: ${line}`); return; }
+    tp.rows.push(p);
+  });
+  return out;
+}
+// ===== KALIMAT DASAR (src/kalimat-dasar.txt) → [[kategori, jepang, romaji, arti], ...] =====
+function buildKalimatDasar() {
+  const out = []; let cat = 'Dasar';
+  fs.readFileSync(path.join(ROOT, 'src', 'kalimat-dasar.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
     line = line.trim();
     if (!line || line.startsWith('//')) return;
     if (line[0] === '@') { cat = line.slice(1).trim(); return; }
     const p = line.split('|').map(x => x.trim());
-    if (p.length !== 4 || p.some(x => !x) || !/^[ぁ-ゖー]+$/.test(p[1])) { bad.push(`istilah.txt:${ln + 1} format salah: ${line}`); return; }
+    if (p.length !== 3 || p.some(x => !x)) { bad.push('kalimat-dasar.txt:' + (ln + 1) + ' format salah: ' + line); return; }
     out.push([cat, ...p]);
   });
   return out;
@@ -266,15 +305,17 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
 
 (async () => {
   const K = await buildKanji();
-  const IS = buildIstilah();
   const KW = buildKaiwa();
   const KN = await buildKana();
   const BP = buildBunpo();
+  const KP = buildKotobaPlus();
+  const BT = buildBunpoTopik();
+  const KD = buildKalimatDasar();
   const BN = buildBun();
   const data = JSON.stringify({ t: types, l: levels, d: rows.join('\n') });
   const kdata = JSON.stringify({ c: K.cats, l: K.klv, d: K.list.map(x => [x.k, x.kun.join(','), x.on.join(','), x.a, x.c, x.l, x.s, x.n, x.p]) });
   let tpl = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
-  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*ISTILAH*/null': JSON.stringify(IS),
+  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*KPLUS*/null': JSON.stringify(KP), '/*BTOPIK*/null': JSON.stringify(BT), '/*KDASAR*/null': JSON.stringify(KD),
     '__FAVICON__': dataUri('favicon-64.png'), '__LOGO__': dataUri('apple-touch-icon.png') };
   for (const [m, v] of Object.entries(inject)) {
     if (!tpl.includes(m)) throw new Error(`Penanda ${m} tidak ditemukan di template`);
@@ -286,7 +327,9 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   console.log(`index.html dibuat: ${rows.length} kata`, byLv);
   console.log(`Kanji: ${K.list.length} dalam ${K.cats.length} kategori` + (K.fetched ? ` (${K.fetched} data goresan baru diunduh)` : ''));
   console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori`);
-  console.log(`Istilah: ${IS.length} istilah`);
+  console.log(`Kotoba plus: ${KP.map(m => `${m.t}=${m.cats.reduce((s, c) => s + c.rows.length, 0)}`).join(', ')}`);
+  console.log(`Kalimat dasar: ${KD.length} kalimat`);
+  console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')}`);
   console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
   console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
   console.log(`Kana dengan data goresan: ${Object.keys(KN.out).length}` + (KN.fetched ? ` (${KN.fetched} baru diunduh)` : '') + (KN.missing.length ? ` · tidak tersedia: ${KN.missing.join('')}` : ''));

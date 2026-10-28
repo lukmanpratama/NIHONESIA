@@ -361,7 +361,6 @@
 雨|あめ|hujan
 雪|ゆき|salju
 風|かぜ|angin
-色|いろ|warna
 動物|どうぶつ|hewan
 犬|いぬ|anjing
 猫|ねこ|kucing
@@ -648,6 +647,17 @@
 青い|あおい|biru
 黄色い|きいろい|kuning
 茶色い|ちゃいろい|cokelat
+灰色|はいいろ|abu-abu
+緑色|みどりいろ|hijau (warna)
+紫色|むらさきいろ|ungu
+橙色|だいだいいろ|oranye
+ピンク|ぴんく|merah muda / pink
+金色|きんいろ|warna emas
+銀色|ぎんいろ|warna perak
+水色|みずいろ|biru muda / biru langit
+紺色|こんいろ|biru tua / navy
+桃色|ももいろ|warna merah muda (peach)
+色|いろ|warna
 太い|ふとい|tebal / gemuk
 細い|ほそい|ramping
 厚い|あつい|tebal (benda)
