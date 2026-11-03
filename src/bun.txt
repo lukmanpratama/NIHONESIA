@@ -307,3 +307,167 @@
 銀行は何時に開きますか。|ginkou wa nanji ni akimasu ka.|Bank buka jam berapa?
 郵便局はどこですか。|yuubinkyoku wa doko desu ka.|Kantor pos di mana?
 インドネシア大使館に連絡したいです。|indoneshia taishikan ni renraku shitai desu.|Saya ingin menghubungi Kedutaan Indonesia.
+
+@Kata Tunjuk Benda (これ・それ・あれ・どれ)
+これは本です。|kore wa hon desu.|Ini adalah buku.
+これは私のペンです。|kore wa watashi no pen desu.|Ini pulpen saya.
+これは新しいスマホです。|kore wa atarashii sumaho desu.|Ini HP baru.
+これは日本語の辞書です。|kore wa nihongo no jisho desu.|Ini kamus bahasa Jepang.
+これはとてもおいしいです。|kore wa totemo oishii desu.|Ini sangat enak.
+これは誰のかばんですか。|kore wa dare no kaban desu ka.|Ini tas siapa?
+これは私が買いました。|kore wa watashi ga kaimashita.|Ini saya yang membelinya.
+これは大切な写真です。|kore wa taisetsu na shashin desu.|Ini foto yang penting.
+それは何ですか。|sore wa nan desu ka.|Itu apa?
+それは私の本です。|sore wa watashi no hon desu.|Itu buku saya.
+それをください。|sore o kudasai.|Tolong berikan itu.
+それは高いですね。|sore wa takai desu ne.|Itu mahal, ya.
+それは誰のペンですか。|sore wa dare no pen desu ka.|Itu pulpen siapa?
+それはとても便利です。|sore wa totemo benri desu.|Itu sangat praktis.
+それを見せてください。|sore o misete kudasai.|Tolong perlihatkan itu.
+それは昨日買いました。|sore wa kinou kaimashita.|Itu saya beli kemarin.
+それが欲しいです。|sore ga hoshii desu.|Saya menginginkan itu.
+それは本当ですか。|sore wa hontou desu ka.|Apakah itu benar?
+あれは山です。|are wa yama desu.|Itu adalah gunung.
+あれは私の家です。|are wa watashi no ie desu.|Itu rumah saya.
+あれは何ですか。|are wa nan desu ka.|Itu apa? (jauh)
+あれは学校です。|are wa gakkou desu.|Itu sekolah.
+あれは飛行機です。|are wa hikouki desu.|Itu pesawat.
+あれは大きい建物です。|are wa ookii tatemono desu.|Itu bangunan besar.
+あれは私の会社です。|are wa watashi no kaisha desu.|Itu perusahaan saya.
+あれはきれいですね。|are wa kirei desu ne.|Itu indah, ya.
+あれを見てください。|are o mite kudasai.|Tolong lihat itu.
+あれは有名なレストランです。|are wa yuumei na resutoran desu.|Itu restoran terkenal.
+あなたの本はどれですか。|anata no hon wa dore desu ka.|Buku kamu yang mana?
+どれが好きですか。|dore ga suki desu ka.|Kamu suka yang mana?
+どれを買いますか。|dore o kaimasu ka.|Kamu akan membeli yang mana?
+どれが一番安いですか。|dore ga ichiban yasui desu ka.|Yang mana paling murah?
+どれを食べたいですか。|dore o tabetai desu ka.|Kamu ingin makan yang mana?
+どれが私のペンですか。|dore ga watashi no pen desu ka.|Yang mana pulpen saya?
+どれにしますか。|dore ni shimasu ka.|Kamu pilih yang mana?
+どれが新しいですか。|dore ga atarashii desu ka.|Yang mana yang baru?
+どれを使いますか。|dore o tsukaimasu ka.|Kamu akan menggunakan yang mana?
+どれでもいいです。|dore demo ii desu.|Yang mana saja tidak masalah.
+
+@Kata Tunjuk + Kata Benda (この・その・あの・どの)
+この本は面白いです。|kono hon wa omoshiroi desu.|Buku ini menarik.
+この車は新しいです。|kono kuruma wa atarashii desu.|Mobil ini baru.
+この人は私の友達です。|kono hito wa watashi no tomodachi desu.|Orang ini teman saya.
+この食べ物はおいしいです。|kono tabemono wa oishii desu.|Makanan ini enak.
+このペンをください。|kono pen o kudasai.|Tolong berikan pulpen ini.
+このかばんは高いです。|kono kaban wa takai desu.|Tas ini mahal.
+この映画を見たいです。|kono eiga o mitai desu.|Saya ingin menonton film ini.
+この店は有名です。|kono mise wa yuumei desu.|Toko ini terkenal.
+この部屋は広いです。|kono heya wa hiroi desu.|Kamar ini luas.
+この時計は私のです。|kono tokei wa watashi no desu.|Jam tangan ini milik saya.
+その本は誰のですか。|sono hon wa dare no desu ka.|Buku itu milik siapa?
+そのペンを貸してください。|sono pen o kashite kudasai.|Tolong pinjamkan pulpen itu.
+その車は高いですか。|sono kuruma wa takai desu ka.|Apakah mobil itu mahal?
+その人は誰ですか。|sono hito wa dare desu ka.|Siapa orang itu?
+その料理はおいしそうです。|sono ryouri wa oishisou desu.|Masakan itu kelihatannya enak.
+そのかばんが欲しいです。|sono kaban ga hoshii desu.|Saya ingin tas itu.
+その映画は面白いですか。|sono eiga wa omoshiroi desu ka.|Apakah film itu menarik?
+その店で買いました。|sono mise de kaimashita.|Saya membelinya di toko itu.
+その時計は新しいですね。|sono tokei wa atarashii desu ne.|Jam tangan itu baru, ya.
+その写真を見せてください。|sono shashin o misete kudasai.|Tolong perlihatkan foto itu.
+あの山は高いです。|ano yama wa takai desu.|Gunung itu tinggi.
+あの人は先生です。|ano hito wa sensei desu.|Orang itu adalah guru.
+あの建物は大きいです。|ano tatemono wa ookii desu.|Bangunan itu besar.
+あの車は私のです。|ano kuruma wa watashi no desu.|Mobil itu milik saya.
+あの店は安いです。|ano mise wa yasui desu.|Toko itu murah.
+あの学校は有名です。|ano gakkou wa yuumei desu.|Sekolah itu terkenal.
+あの女性は誰ですか。|ano josei wa dare desu ka.|Siapa wanita itu?
+あの犬はかわいいです。|ano inu wa kawaii desu.|Anjing itu lucu.
+あの駅で降ります。|ano eki de orimasu.|Saya turun di stasiun itu.
+あのレストランで食べましょう。|ano resutoran de tabemashou.|Mari makan di restoran itu.
+どの本が好きですか。|dono hon ga suki desu ka.|Buku yang mana yang kamu suka?
+どの車があなたのですか。|dono kuruma ga anata no desu ka.|Mobil yang mana milik kamu?
+どの人が先生ですか。|dono hito ga sensei desu ka.|Orang yang mana yang merupakan guru?
+どの店で買いましたか。|dono mise de kaimashita ka.|Kamu membeli di toko yang mana?
+どの映画を見たいですか。|dono eiga o mitai desu ka.|Kamu ingin menonton film yang mana?
+どの色が好きですか。|dono iro ga suki desu ka.|Warna yang mana yang kamu suka?
+どの料理を食べますか。|dono ryouri o tabemasu ka.|Kamu akan makan masakan yang mana?
+どの駅で降りますか。|dono eki de orimasu ka.|Kamu turun di stasiun yang mana?
+どの会社で働いていますか。|dono kaisha de hataraite imasu ka.|Kamu bekerja di perusahaan yang mana?
+どの服を買いますか。|dono fuku o kaimasu ka.|Kamu akan membeli pakaian yang mana?
+
+@Kata Tunjuk Tempat (ここ・そこ・あそこ・どこ)
+ここは私の家です。|koko wa watashi no ie desu.|Di sini adalah rumah saya.
+ここは学校です。|koko wa gakkou desu.|Di sini adalah sekolah.
+ここに座ってください。|koko ni suwatte kudasai.|Silakan duduk di sini.
+ここで勉強します。|koko de benkyou shimasu.|Saya belajar di sini.
+ここはとても静かです。|koko wa totemo shizuka desu.|Di sini sangat tenang.
+ここに名前を書いてください。|koko ni namae o kaite kudasai.|Tolong tulis nama di sini.
+ここで写真を撮りましょう。|koko de shashin o torimashou.|Mari mengambil foto di sini.
+ここから駅まで近いです。|koko kara eki made chikai desu.|Dari sini sampai stasiun dekat.
+ここで待っています。|koko de matte imasu.|Saya sedang menunggu di sini.
+ここに来てください。|koko ni kite kudasai.|Tolong datang ke sini.
+そこはどこですか。|soko wa doko desu ka.|Di situ tempat apa?
+そこに座ってください。|soko ni suwatte kudasai.|Silakan duduk di situ.
+そこに私のかばんがあります。|soko ni watashi no kaban ga arimasu.|Di situ ada tas saya.
+そこで何をしていますか。|soko de nani o shite imasu ka.|Kamu sedang melakukan apa di situ?
+そこは危ないです。|soko wa abunai desu.|Tempat itu berbahaya.
+そこに置いてください。|soko ni oite kudasai.|Tolong letakkan di situ.
+そこから駅まで遠いですか。|soko kara eki made tooi desu ka.|Apakah dari situ ke stasiun jauh?
+そこにコンビニがあります。|soko ni konbini ga arimasu.|Di situ ada minimarket.
+そこで友達に会いました。|soko de tomodachi ni aimashita.|Saya bertemu teman di situ.
+そこをまっすぐ行ってください。|soko o massugu itte kudasai.|Silakan terus lurus melewati situ.
+あそこは学校です。|asoko wa gakkou desu.|Di sana adalah sekolah.
+あそこに駅があります。|asoko ni eki ga arimasu.|Di sana ada stasiun.
+あそこに行きたいです。|asoko ni ikitai desu.|Saya ingin pergi ke sana.
+あそこは私の会社です。|asoko wa watashi no kaisha desu.|Di sana adalah perusahaan saya.
+あそこで友達が待っています。|asoko de tomodachi ga matte imasu.|Teman saya sedang menunggu di sana.
+あそこに大きな公園があります。|asoko ni ookina kouen ga arimasu.|Di sana ada taman yang besar.
+あそこは有名なレストランです。|asoko wa yuumei na resutoran desu.|Di sana ada restoran terkenal.
+あそこから海が見えます。|asoko kara umi ga miemasu.|Dari sana laut terlihat.
+あそこに車を止めてください。|asoko ni kuruma o tomete kudasai.|Tolong parkirkan mobil di sana.
+あそこまで歩きましょう。|asoko made arukimashou.|Mari berjalan sampai ke sana.
+あなたの家はどこですか。|anata no ie wa doko desu ka.|Rumah kamu di mana?
+学校はどこにありますか。|gakkou wa doko ni arimasu ka.|Sekolah berada di mana?
+どこに行きますか。|doko ni ikimasu ka.|Kamu akan pergi ke mana?
+どこで働いていますか。|doko de hataraite imasu ka.|Kamu bekerja di mana?
+どこで昼ご飯を食べますか。|doko de hirugohan o tabemasu ka.|Kamu makan siang di mana?
+どこで日本語を勉強していますか。|doko de nihongo o benkyou shite imasu ka.|Kamu belajar bahasa Jepang di mana?
+駅はどこにありますか。|eki wa doko ni arimasu ka.|Stasiun ada di mana?
+昨日どこへ行きましたか。|kinou doko e ikimashita ka.|Kemarin kamu pergi ke mana?
+
+@Kata Tunjuk Arah Sopan (こちら・そちら・あちら・どちら)
+こちらへ来てください。|kochira e kite kudasai.|Silakan datang ke sebelah sini.
+こちらは私の先生です。|kochira wa watashi no sensei desu.|Ini adalah guru saya.
+こちらに座ってください。|kochira ni suwatte kudasai.|Silakan duduk di sebelah sini.
+こちらが入口です。|kochira ga iriguchi desu.|Sebelah sini adalah pintu masuk.
+こちらでお待ちください。|kochira de omachi kudasai.|Silakan menunggu di sini.
+こちらへどうぞ。|kochira e douzo.|Silakan lewat sini.
+こちらは日本語の教室です。|kochira wa nihongo no kyoushitsu desu.|Ini adalah ruang kelas bahasa Jepang.
+私はこちらに住んでいます。|watashi wa kochira ni sunde imasu.|Saya tinggal di daerah sini.
+こちらの席を使ってください。|kochira no seki o tsukatte kudasai.|Silakan gunakan tempat duduk sebelah sini.
+こちらからお入りください。|kochira kara ohairi kudasai.|Silakan masuk melalui sebelah sini.
+そちらへ行きます。|sochira e ikimasu.|Saya akan pergi ke sebelah situ.
+そちらは会社ですか。|sochira wa kaisha desu ka.|Apakah di sebelah situ perusahaan?
+そちらに座ってください。|sochira ni suwatte kudasai.|Silakan duduk di sebelah situ.
+そちらの天気はどうですか。|sochira no tenki wa dou desu ka.|Bagaimana cuaca di tempat Anda?
+そちらに問題がありますか。|sochira ni mondai ga arimasu ka.|Apakah ada masalah di pihak Anda?
+そちらへ送ります。|sochira e okurimasu.|Saya akan mengirimkannya ke tempat Anda.
+そちらの名前を教えてください。|sochira no namae o oshiete kudasai.|Tolong beritahukan nama Anda.
+そちらで確認してください。|sochira de kakunin shite kudasai.|Silakan periksa di tempat Anda.
+そちらの会社は大きいですか。|sochira no kaisha wa ookii desu ka.|Apakah perusahaan Anda besar?
+そちらに行ってもいいですか。|sochira ni itte mo ii desu ka.|Bolehkah saya pergi ke tempat Anda?
+あちらは駅です。|achira wa eki desu.|Di sebelah sana adalah stasiun.
+あちらへ行ってください。|achira e itte kudasai.|Silakan pergi ke sebelah sana.
+あちらにトイレがあります。|achira ni toire ga arimasu.|Di sebelah sana ada toilet.
+あちらが入口です。|achira ga iriguchi desu.|Sebelah sana adalah pintu masuk.
+あちらに見えるのは学校です。|achira ni mieru no wa gakkou desu.|Yang terlihat di sebelah sana adalah sekolah.
+あちらの建物は病院です。|achira no tatemono wa byouin desu.|Bangunan di sebelah sana adalah rumah sakit.
+あちらでお待ちください。|achira de omachi kudasai.|Silakan menunggu di sebelah sana.
+あちらから入ってください。|achira kara haitte kudasai.|Silakan masuk dari arah sana.
+あちらの店は有名です。|achira no mise wa yuumei desu.|Toko di sebelah sana terkenal.
+あちらに私の友達がいます。|achira ni watashi no tomodachi ga imasu.|Teman saya ada di sebelah sana.
+入口はどちらですか。|iriguchi wa dochira desu ka.|Pintu masuk sebelah mana?
+トイレはどちらですか。|toire wa dochira desu ka.|Toilet sebelah mana?
+駅はどちらですか。|eki wa dochira desu ka.|Stasiun arah mana?
+どちらへ行きますか。|dochira e ikimasu ka.|Anda akan pergi ke arah mana?
+どちらが好きですか。|dochira ga suki desu ka.|Anda lebih suka yang mana?
+どちらの料理がいいですか。|dochira no ryouri ga ii desu ka.|Masakan yang mana yang lebih baik?
+どちらがあなたの車ですか。|dochira ga anata no kuruma desu ka.|Yang mana mobil Anda?
+どちらから来ましたか。|dochira kara kimashita ka.|Anda datang dari arah mana?
+お手洗いはどちらにありますか。|otearai wa dochira ni arimasu ka.|Toilet berada di sebelah mana?
+コーヒーとお茶、どちらにしますか。|koohii to ocha, dochira ni shimasu ka.|Kopi atau teh, Anda pilih yang mana?
