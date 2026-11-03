@@ -347,8 +347,20 @@ body.hasnav #app{padding-bottom:100px}
 .mtb.sel{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 14%,var(--card))}
 .mtb.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 16%,var(--card));opacity:.55;animation:bounce .4s}.mtb.no{border-color:var(--no);animation:shake .4s}
 .blank{display:inline-block;min-width:3em;border-bottom:3px solid var(--blue);color:var(--blue);text-align:center}
+#askd{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;background:color-mix(in srgb,#000 45%,transparent)}
+#askd>div{width:min(340px,100%);background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:16px;padding:18px;display:grid;gap:14px}
+#askd p{margin:0;font-size:16px}#askd .row{display:flex;gap:8px;justify-content:flex-end}
+#askd button{font:inherit;font-weight:700;border-radius:12px;padding:9px 16px;cursor:pointer;border:1px solid var(--bd);background:var(--bg);color:var(--fg)}
+#askd button.y{background:var(--ac);border-color:var(--ac);color:#fff}#askd button:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
 </style></head><body><div id="app"></div>
 <script>
+/* dialog di dalam halaman: ask(pesan) = info, ask(pesan, aksi, label) = konfirmasi */
+function ask(msg,yes,lab){const d=document.createElement('div');d.id='askd';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
+ d.innerHTML='<div><p></p><div class="row">'+(yes?'<button class="n">Batal</button>':'')+'<button class="y"></button></div></div>';
+ d.querySelector('p').textContent=msg;d.querySelector('.y').textContent=yes?(lab||'Ya'):'OK';
+ const close=()=>d.remove();d.querySelector('.y').onclick=()=>{close();if(yes)yes()};
+ if(yes)d.querySelector('.n').onclick=close;d.onclick=e=>{if(e.target==d)close()};
+ document.body.appendChild(d);d.querySelector('.y').focus()}
 const $=s=>document.querySelector(s),app=$('#app');
 /* ===== PENYIMPANAN (localStorage di perangkat ini) ===== */
 const ST={get(k,d){try{const v=localStorage.getItem('nh_'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('nh_'+k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem('nh_'+k)}catch(e){}}};
@@ -531,7 +543,7 @@ function prog(){
  <p class="rj">Progres disimpan di browser perangkat ini.</p><button class="pb alt" id="rs">Hapus semua progres</button>${navHtml('progres')}`);
  $('#psfx').onclick=()=>{sfxOn=!sfxOn;ST.set('sfx',sfxOn);prog()};$('#pauto').onclick=()=>{auto=!auto;ST.set('auto',auto);prog()};
  if(mk.length)$('#rv').onclick=()=>quiz('Ulangi yang salah',()=>{const c=ST.get('miss',{});return Object.values(c).map(x=>x.it)},prog);
- $('#rs').onclick=()=>{if(confirm('Hapus semua skor, riwayat, daftar soal salah, dan kemajuan jalur belajar?')){['stats','scores','miss','path'].forEach(ST.del);prog()}}}
+ $('#rs').onclick=()=>{ask('Hapus semua skor, riwayat, daftar soal salah, dan kemajuan jalur belajar?',()=>{['stats','scores','miss','path'].forEach(ST.del);prog()},'Hapus')}}
 
 
 
@@ -566,7 +578,7 @@ function qShell(o,body,foot=true){
  ${foot?`<div class="qfoot"><div class="in"><button class="pb alt pass" id="qpass">Lewati</button><button class="pb" id="qchk" disabled>Periksa</button></div></div>`:''}<div class="sheet" id="sheet" role="status" aria-live="polite"></div></div>`}
 // pasang tombol keluar & suara; jalankan timer tingkat Sulit
 function qWire(back,sec,onTime){
- $('.qx').onclick=()=>{if(confirm('Keluar dari kuis? Hasil kuis ini tidak disimpan.'))back()};
+ $('.qx').onclick=()=>{ask('Keluar dari kuis? Hasil kuis ini tidak disimpan.',back,'Keluar')};
  $('.qsnd').onclick=e=>{sfxOn=!sfxOn;ST.set('sfx',sfxOn);e.target.textContent=sfxOn?'🔔':'🔕'};
  if(sec&&$('.qtimer i')){const b=$('.qtimer i');b.style.transition='none';b.style.width='100%';b.getBoundingClientRect();b.style.transition=`width ${sec}s linear`;b.style.width='0%';
   clearTimeout(QT);QT=setTimeout(onTime,sec*1000)}}
@@ -749,7 +761,7 @@ function modQuiz(fn,label){
 function quizSheet(o,back,label){
  const ids=Object.keys(o.modes),ok=id=>o.modes[id]&&!o.modes[id].off;
  let sel=(ST.get('qm_'+o.key,null)||[]).filter(ok);if(!sel.length)sel=[ids.find(ok)];
- const go=()=>{const ents=o.pool();if(!ents.length){alert('Tidak ada data untuk filter ini.');return}const ms=sel.map(x=>o.modes[x]);
+ const go=()=>{const ents=o.pool();if(!ents.length){ask('Tidak ada data untuk filter ini.');return}const ms=sel.map(x=>o.modes[x]);
   runQuiz(`${o.title}: ${sel.length==1?ms[0].lab:'campuran'}`,()=>buildItems(ents,ms,QN()),back)};
  document.querySelectorAll('.qsov').forEach(x=>x.remove());
  const ov=document.createElement('div');ov.className='qsov';
