@@ -240,6 +240,7 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 .simp{display:flex;align-items:center;gap:10px}.simp>div{display:flex;flex-direction:column;align-items:center;gap:6px}.neq{font-size:22px;color:var(--mut)}.chk{display:flex;gap:8px;align-items:center;padding:6px 0;cursor:pointer}
 .kscr,.kn2{margin-bottom:8px}.kn2{overflow-x:auto;flex-wrap:nowrap}.kn2 .tg{flex:none;white-space:nowrap}.kmx{display:grid;grid-template-columns:30px repeat(5,1fr);gap:6px 4px;align-items:center}.kmx.y3{grid-template-columns:30px repeat(3,1fr)}.kmx .rl{color:var(--mut);font-size:13px;text-align:center}.kmx .kb{width:100%;min-width:0;padding:3px 0;line-height:1.15;box-shadow:0 2px 0 var(--bd);border-width:1px}.kmx .kb b{font-size:22px}.kmx .kb small{font-size:11px}
 .lvg{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:10px}.lvg .mc{padding:8px 2px;text-align:center}.lvg .mc b{font-size:18px;margin:0}.lvg .mc small{font-size:11px}.kfc1{font-size:18px}.kt.sel{border-color:var(--ac)}
+.kjlv{overflow-x:auto;flex-wrap:nowrap;margin-bottom:8px}.kjlv .tg{flex:none}
 #shd{position:sticky;top:0;z-index:42;margin:0 auto;max-width:720px;width:100%;padding:12px 14px 10px;padding-top:calc(12px + env(safe-area-inset-top,0px))}
 #shd .tlogo{display:block}#shd .bk{display:flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;flex:none}#shd .bk svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}#shd.sub .tlogo{display:none}#shd:not(.sub) .bk{display:none}
 #shM{flex:1;min-width:0;display:flex;align-items:center;gap:8px}#shM h2{flex:1;min-width:0;margin:0;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -957,7 +958,7 @@ function chart(name,kata){
 /* ----- KANJI: daftar per kategori, detail + urutan goresan, latihan menulis ----- */
 const kjOpt=k=>`<b style="font-size:24px">${k.k}</b><small>${kjY(k)}</small><small class="ro">${kjYR(k)}</small>`;
 const kjRead=k=>`${kjY(k)}<small class="ro">${kjYR(k)}</small>`;
-let kC=ST.get('kjC',''),kL=ST.get('kjL',''),kQ='';
+let kC=ST.get('kjC',''),kL=ST.get('kjL','N5'),kQ='';
 // pencarian kanji: huruf kanji (boleh satu kata, mis. 日本), komponen (氵), arti, bacaan kana/romaji, atau jumlah goresan (angka)
 function kjSearch(L,q){q=q.trim();if(!q)return L;
  const KJS=/[一-龯々〆ヵヶ⺀-⿕㐀-䶿⻌⺍]/u,cs=[...q].filter(c=>KJS.test(c));
@@ -975,11 +976,11 @@ function kanji(){
  const body=()=>!P.length?'<p class="rj" style="text-align:center;margin:20px 0">Tidak ada kanji yang cocok. Coba kata lain, mis. <b>air</b>, <b>みず</b>, <b>mizu</b>, atau <b>氵</b>.</p>'
   :kC||kQ.trim()?tiles(P):KDATA.c.map(c=>{const L=P.filter(k=>k.c==c);return L.length?`<h3>${c} <span class="rj">(${L.length})</span></h3>${tiles(L)}`:''}).join('');
  const info=()=>`${P.length} kanji${kQ.trim()?` cocok dengan "${esc(kQ.trim())}"`:''}. Ketuk kanji untuk melihat cara menulis (urutan goresan), komponen, bacaan, dan contoh kata.`;
- view(`${hdr('Kanji')}<button class="pb alt ktreeb" id="ktree">🌳 Kanji Family Tree</button>
+ view(`${hdr('Kanji')}${kjTabs('list')}<button class="pb alt ktreeb" id="ktree">🌳 Kanji Family Tree</button>
  <input type="search" id="ks" placeholder="Cari kanji, arti, bacaan (みず / mizu), komponen (氵), atau jumlah goresan…" value="${esc(kQ)}" aria-label="Cari kanji" autocomplete="off">
- <div class="row2"><select id="kc"><option value="">Semua kategori</option>${KDATA.c.map(x=>`<option ${x==kC?'selected':''}>${x}</option>`).join('')}</select><select id="kl"><option value="">Semua level</option>${[...KDATA.l].sort().reverse().map(x=>`<option ${x==kL?'selected':''}>${x}</option>`).join('')}</select></div>
+ <div class="tabs kjlv">${['','N5','N4','N3','N2','N1'].map(l=>`<button class="tg${l==kL?' on':''}" data-kl="${l}">${l||'Semua'}</button>`).join('')}</div><select id="kc"><option value="">Semua kategori</option>${KDATA.c.map(x=>`<option ${x==kC?'selected':''}>${x}</option>`).join('')}</select>
  <p class="sub" id="kinfo">${info()}</p><div id="klist">${body()}</div>${startBar()}`);
- $('#ktree').onclick=()=>kanjiTree();$('#kc').onchange=e=>{kC=e.target.value;ST.set('kjC',kC);kanji()};$('#kl').onchange=e=>{kL=e.target.value;ST.set('kjL',kL);kanji()};
+ $('#ktree').onclick=()=>kanjiTree();$('#kc').onchange=e=>{kC=e.target.value;ST.set('kjC',kC);kanji()};app.querySelectorAll('[data-kl]').forEach(b=>b.onclick=()=>{kL=b.dataset.kl;ST.set('kjL',kL);kanji()});kjTabWire();
  const wire=()=>$('#klist').querySelectorAll('.kt').forEach(b=>b.onclick=()=>kanjiDetail(KJM[b.dataset.k],P));wire();
  // daftar diperbarui saat mengetik tanpa membangun ulang halaman (fokus kotak pencarian tetap)
  $('#ks').oninput=e=>{kQ=e.target.value;P=kjSearch(F,kQ);$('#kinfo').textContent=info();$('#klist').innerHTML=body();wire()};
@@ -1817,62 +1818,24 @@ function kjBaca(){
 function kjMirip(){
  view(`${hdr('Kanji yang Mirip')}<p class="sub">Delapan pasangan yang paling sering tertukar. Ketuk kanji untuk melihat goresannya.</p>${KJ_SIM.map(p=>`<div class="card kfc"><div class="simp">${[p[0],p[1]].map(c=>`<div>${miniStroke(c,72)}<button class="tg" data-k="${c}">${c}</button></div>`).join('<span class="neq">≠</span>')}</div><div class="kfb"><div class="rj">${p[2]}</div></div></div>`).join('')}<div class="card info"><b>Cara membedakan</b><ul><li>Lihat radikal dulu: radikal menunjukkan kategori makna.</li><li>Tulis dengan tangan: perbedaan panjang goresan terasa saat menulis.</li><li>Pakai konteks kalimat: 「犬がいます」 masuk akal, 「大がいます」 tidak.</li></ul></div>`,materiKanji);
  msLoop(app);kjWireTiles(app,null,kjMirip)}
-function kjTema(){
- view(`${hdr('Kanji per Tema')}<p class="sub">Pilih tema untuk melihat kanji terkait.</p><div class="grid">${KDATA.c.map(c=>`<button class="mc" data-c="${esc(c)}"><b>${c}</b><small>${KJ.filter(k=>k.c==c).length} kanji</small></button>`).join('')}</div>`,materiKanji);
- app.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{kC=b.dataset.c;kL='';kQ='';ST.set('kjC',kC);ST.set('kjL','');kanji()})}
+/* ===== KANJI: buka langsung daftar kanji; "Tata cara" = satu halaman berisi ringkasan + pintasan ===== */
+const materiKanji=()=>kanjiGuide();
+const kjTabs=cur=>`<div class="tabs kjtabs"><button class="tg${cur=='list'?' on':''}" data-kjt="list">Daftar kanji</button><button class="tg${cur=='guide'?' on':''}" data-kjt="guide">Tata cara kanji</button></div>`;
+const kjTabWire=()=>app.querySelectorAll('[data-kjt]').forEach(b=>b.onclick=()=>b.dataset.kjt=='list'?kanji():kanjiGuide());
+function kanjiGuide(){
+ const chip=(t,fn)=>`<button class="tg" data-f="${fn}">${t}</button>`;
+ const F={radikal:kjRadikal,posisi:kjPosisi,jumlah:kjJumlah,goresan:kjGoresan,mirip:kjMirip,baca:kjBaca,okuri:kjOkuri,nanori:kjNanori,jukuji:kjJukuji,rikusho:kjStruktur,makna:kjMakna,jukugo:kjJukugo,antonim:kjAntonim,homofon:kjHomofon,pakai:kjPakai,family:kfList,formal:kjFormal};
+ const sec=(n,t,jp,body,chips)=>`<details class="card dlg"${n==1?' open':''}><summary><b>${n}. ${t}</b> <span class="rj">${jp}</span></summary><div class="info">${body}<div class="kfa">${chips}</div></div></details>`;
+ view(`${hdr('Kanji · 漢字')}${kjTabs('guide')}<p class="sub">Ringkasan tata cara kanji. Buka bagian yang kamu butuhkan, lalu ketuk tombol untuk contoh dan animasi.</p>
+ ${sec(1,'Struktur kanji','漢字の構造',`<p>Kanji tersusun dari <b>komponen</b>. Satu komponen biasanya menjadi <b>radikal (bushu)</b> yang memberi petunjuk makna, misalnya 氵 untuk air. Setiap kanji punya jumlah dan <b>urutan goresan</b> tetap: atas ke bawah, kiri ke kanan, garis datar sebelum tegak.</p>`,[['Radikal dan komponen','radikal'],['Posisi komponen','posisi'],['Jumlah goresan','jumlah'],['Urutan goresan (animasi)','goresan'],['Kanji yang mirip','mirip']].map(x=>chip(x[0],x[1])).join(''))}
+ ${sec(2,'Cara membaca','漢字の読み方',`<p><b>On\'yomi</b> (音読み) adalah bunyi Cina, dipakai di kata gabungan: 学校 GAKKŌ. <b>Kun\'yomi</b> (訓読み) adalah bacaan Jepang asli, dipakai pada kanji tunggal dan kata kerja atau sifat: 食べる taberu. <b>Okurigana</b> adalah ekor hiragana, <b>furigana</b> adalah cara baca kecil di atas kanji.</p><p class="rj">Aturan cepat: kanji + hiragana di ekor biasanya kun; dua kanji bersambung biasanya on.</p>`,[['On dan kun','baca'],['Okurigana dan furigana','okuri'],['Nanori (nama)','nanori'],['Jukujikun dan ateji','jukuji']].map(x=>chip(x[0],x[1])).join(''))}
+ ${sec(3,'Asal-usul kanji','六書',`<p>Kanji terbentuk dengan enam cara: <b>shōkei</b> (gambar benda), <b>shiji</b> (simbol ide), <b>kaii</b> (gabungan makna), <b>keisei</b> (makna dan bunyi, sekitar 80%), <b>tenchū</b> (perluasan makna), dan <b>kasha</b> (pinjam bunyi).</p>`,chip('Contoh enam jenis','rikusho'))}
+ ${sec(4,'Makna dan kosakata','意味と語彙',`<p>Satu kanji punya <b>makna dasar</b> yang berkembang menjadi makna turunan. Kanji bergabung menjadi <b>jukugo</b> (熟語), dan sering berpasangan sebagai lawan kata. Waspadai homofon (橋 箸 端) dan kanji yang bacaannya berganti.</p>`,[['Makna dasar dan turunan','makna'],['Jukugo','jukugo'],['Sinonim dan antonim','antonim'],['Homofon dan homograf','homofon']].map(x=>chip(x[0],x[1])).join(''))}
+ ${sec(5,'Penggunaan kanji','漢字の使い方',`<p>Kanji dipakai pada <b>kata benda</b> (tanpa ekor), <b>kata kerja</b> dan <b>kata sifat-i</b> (dengan okurigana). Pilih kata santai, sopan, atau tulis sesuai konteks.</p>`,[['Kata benda, kerja, sifat','pakai'],['Kanji dalam kalimat (Family)','family'],['Nuansa formal','formal']].map(x=>chip(x[0],x[1])).join(''))}
+ <button class="pb" id="kgl">Buka daftar kanji</button>`,materi);
+ kjTabWire();$('#kgl').onclick=kanji;
+ app.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>F[b.dataset.f]())}
 
-/* ===== KANJI: pusat materi (hub) dan lima kelompok konsep sesuai MD ===== */
-let kjCur=null;                       // kelompok yang sedang dibuka (untuk tombol kembali)
-const materiKanji=()=>kjCur===null?kanjiHub():kjGroup(kjCur);
-const KJ_GROUPS=[
- ['Struktur kanji','漢字の構造','Radikal dan komponen · posisi · jumlah dan urutan goresan',[
-  ['部','Radikal dan komponen','bushu: bagian pembentuk dan petunjuk makna',()=>kjRadikal()],
-  ['位','Posisi komponen','kiri, kanan, atas, bawah, kurung',()=>kjPosisi()],
-  ['数','Jumlah goresan','kelompokkan kanji dari 1 sampai 25 goresan',()=>kjJumlah()],
-  ['筆','Urutan goresan','8 aturan dengan animasi',()=>kjGoresan()],
-  ['似','Kanji yang mirip','8 pasangan yang sering tertukar',()=>kjMirip()]]],
- ['Cara membaca kanji','漢字の読み方','On dan kun · okurigana · furigana · nanori · jukujikun',[
-  ['音','On\'yomi dan Kun\'yomi','dua bacaan, aturan memilih, keluarga bunyi',()=>kjBaca()],
-  ['送','Okurigana dan furigana','ekor hiragana dan cara baca kecil',()=>kjOkuri()],
-  ['名','Nanori','bacaan khusus untuk nama orang',()=>kjNanori()],
-  ['熟','Jukujikun dan ateji','bacaan satu kata dan kanji pinjam bunyi',()=>kjJukuji()]]],
- ['Asal-usul kanji','六書','Enam cara kanji terbentuk',[
-  ['形','Enam jenis kanji (rikusho)','piktograf, simbol, gabungan, makna+bunyi, perluasan, pinjam bunyi',()=>kjStruktur()]]],
- ['Makna dan kosakata','意味と語彙','Makna dasar dan turunan · jukugo · lawan kata · homofon',[
-  ['意','Makna dasar dan turunan','satu kanji, banyak makna',()=>kjMakna()],
-  ['熟','Kanji tunggal dan jukugo','pilih kanji, lihat kata gabungannya',()=>kjJukugo()],
-  ['反','Sinonim dan antonim','pasangan kanji berlawanan dan berdekatan',()=>kjAntonim()],
-  ['音','Homofon dan homograf','bunyi sama, tulisan beda, dan sebaliknya',()=>kjHomofon()]]],
- ['Penggunaan kanji','漢字の使い方','Kata benda, kerja, sifat · kalimat · formal dan informal',[
-  ['語','Kanji dalam kata benda, kerja, sifat','daftar kata menurut jenis dan level',()=>kjPakai()],
-  ['文','Kanji dalam kalimat','Kanji Family: 121 kanji dengan kata dan kalimat',()=>kfList()],
-  ['丁','Konteks dan nuansa formal','kata santai, sopan, dan tulis',()=>kjFormal()]]]];
-function kanjiHub(){
- lastSub='j';kjCur=null;
- const lv=['N5','N4','N3','N2','N1'];
- view(`${hdr('Kanji · 漢字')}<p class="sub">${KJ.length} kanji dari N5 sampai N1, lengkap dengan animasi goresan, komponen, dan contoh kata.</p>
- <h3>Mulai belajar</h3>
- <div class="card"><p class="rj" style="margin:0 0 10px">Pilih level. Ketuk kanji untuk melihat cara menulis, bacaan, dan kata.</p>
- <div class="lvg">${lv.map(l=>{const n=KJ.filter(k=>k.l==l).length;return`<button class="mc" data-l="${l}" ${n?'':'disabled'}><b>${l}</b><small>${n} kanji</small></button>`}).join('')}</div>
- <div class="row2"><button class="pb alt" id="kjt">Per tema</button><button class="pb alt" id="kja">Cari semua kanji</button></div></div>
- <div class="card kfl" id="kjd" role="button" tabindex="0"><span class="kfn">?</span><span class="kfm"><b>Baru mulai? Apa itu kanji</b><small class="rj">kanji, kana, on dan kun dalam satu halaman</small></span></div>
- <h3>Pelajari konsep kanji</h3>
- ${KJ_GROUPS.map((g,i)=>`<button class="card kfl" data-g="${i}"><span class="kfn">${i+1}</span><span class="kfm"><b>${g[0]} <span class="rj">${g[1]}</span></b><small class="rj">${g[2]}</small></span></button>`).join('')}`,materi);
- app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{kL=b.dataset.l;kC='';kQ='';ST.set('kjL',kL);ST.set('kjC','');kanji()});
- $('#kjt').onclick=()=>{kjCur=null;kjTema()};$('#kja').onclick=()=>{kL='';kC='';kQ='';ST.set('kjL','');ST.set('kjC','');kanji()};
- $('#kjd').onclick=()=>{kjCur=null;kjFoundation()};
- app.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>kjGroup(+b.dataset.g))}
-function kjGroup(i){
- kjCur=i;const g=KJ_GROUPS[i];
- view(`${hdr(g[0])}<p class="sub">${g[1]} · ${g[2]}</p>${g[3].map((t,j)=>`<button class="card kfl" data-t="${j}"><span class="kfn kfc1">${t[0]}</span><span class="kfm"><b>${t[1]}</b><small class="rj">${t[2]}</small></span></button>`).join('')}`,kanjiHub);
- app.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>g[3][+b.dataset.t][3]())}
-
-function kjFoundation(){infoPage('Apa itu Kanji · 漢字',[
- ['Kanji',`<p>Kanji adalah aksara dari Cina yang dipakai di Jepang. Satu kanji membawa <b>makna</b> dan biasanya punya lebih dari satu bacaan. Belajarlah lewat bentuk, komponen, urutan goresan, bacaan, kata, dan kalimat, bukan sebagai huruf lepas.</p>`],
- ['Kanji, hiragana, dan katakana',`${tbl(['Aksara','Dipakai untuk','Contoh'],[['Kanji','inti makna: kata benda, akar kata kerja dan kata sifat','水, 食, 高'],['Hiragana','partikel, akhiran, kata tanpa kanji','を, べる, い'],['Katakana','kata serapan, nama asing','コーヒー, インドネシア']])}`],
- ['Dua bacaan',`<p><b>On\'yomi</b> (音読み) adalah bunyi Cina, ditulis KAPITAL di materi ini. <b>Kun\'yomi</b> (訓読み) adalah kata Jepang asli, huruf kecil. Contoh <b>山</b>: kun <b>yama</b>, on <b>SAN</b> seperti 富士山 Fujisan.</p>`],
- ['Urutan belajar yang disarankan',`<ol><li>Mulai dari <b>Kanji N5</b> dan ketuk tiap kanji untuk melihat goresannya.</li><li>Pelajari <b>Radikal dan komponen</b> agar bentuk lebih mudah diingat.</li><li>Pelajari <b>On\'yomi dan Kun\'yomi</b> serta okurigana.</li><li>Baca <b>Kanji Family</b> untuk melihat kanji dalam kata dan kalimat.</li></ol>`]
- ],kanjiHub)}
 function kjRadikal(){
  const E=Object.entries(RADN);
  view(`${hdr('Radikal dan komponen · 部首')}<p class="sub">Radikal (bushu) adalah komponen yang memberi petunjuk makna. Komponen adalah bagian pembentuk kanji. Ketuk untuk melihat kanji yang memakainya.</p><div class="grid">${E.map(([e,[n,m]])=>`<button class="mc" data-r="${e}"><span class="ic">${e}</span><b>${n}</b><small>${m}</small></button>`).join('')}</div>`,materiKanji);
@@ -2018,7 +1981,7 @@ const MODS={k:['語','Kotoba','言葉 · belajar kosakata',MOD_K],b:['法','Bunp
 let lastSub=null;
 function materi(){lastSub=null;
  const L=[['あ','Hiragana','Tabel · sokuon · contoh kata',()=>chart('Hiragana',false)],['ア','Katakana','Tabel · kata serapan',()=>chart('Katakana',true)],
-  ['漢','Kanji',`${KJ.length} kanji · N5–N1 · 5 kelompok konsep`,kanjiHub],['語','Kotoba',`${MOD_K.length} sub materi · kosakata`,()=>modSub('k')],
+  ['漢','Kanji',`${KJ.length} kanji · N5–N1 · tata cara`,kanji],['語','Kotoba',`${MOD_K.length} sub materi · kosakata`,()=>modSub('k')],
   ['法','Bunpō',`${MOD_B.length} sub materi · tata bahasa`,()=>modSub('b')],['話','Kaiwa',`${KU.u.length} unit · ${KW.length} dialog`,()=>modSub('w')],
   ['文','Bun',`${MOD_N.length} sub materi · ${BUN.length} kalimat`,()=>modSub('n')],['数','Bilangan','Belasan · ratusan · jutaan',angka]];
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Materi</h2>${rtBtn()}</div>
@@ -2026,7 +1989,7 @@ function materi(){lastSub=null;
  ${navHtml('materi')}`);
  app.querySelectorAll('.mc[data-m]').forEach(b=>b.onclick=()=>{sfx.tap();L[+b.dataset.m.slice(1)][3]()})}
 // sub materi: kartu untuk setiap submodul Kotoba / Bunpō
-function modSub(k){if(k=='j')return kanjiHub();lastSub=k;const m=MODS[k];
+function modSub(k){if(k=='j')return kanji();lastSub=k;const m=MODS[k];
  view(`${hdr(`${m[1]} · ${m[2].split(' · ')[0]}`)}<p class="sub">${m[2].split(' · ')[1].replace(/^./,c=>c.toUpperCase())}. Pilih sub materi.</p>
  <div class="grid">${m[3].map((s,i)=>mCard(s[0],`${i+1}. ${s[1]}`,s[2](),k+i)).join('')}</div>`,materi);
  app.querySelectorAll('.mc[data-m]').forEach(b=>b.onclick=()=>{sfx.tap();m[3][+b.dataset.m.slice(1)][3]()})}
