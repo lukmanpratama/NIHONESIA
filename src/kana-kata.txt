@@ -1,0 +1,216 @@
+// Contoh kata untuk menu Hiragana dan Katakana (banyak yang memakai っ / ッ).
+// Format:
+//   @Hiragana  atau  @Katakana
+//   kata|romaji|arti
+// Romaji ditulis manual, tanpa tanda makron (ō = oo, ē = ee).
+
+@Hiragana
+あっというま|attoiuma|Dalam sekejap
+あっさり|assari|Ringan / sederhana
+あっち|acchi|Sebelah sana
+あっちこっち|acchikocchi|Ke sana kemari
+あっぷ|appu|Naik / peningkatan
+いっかい|ikkai|Satu kali / lantai satu
+いっかげつ|ikkagetsu|Satu bulan
+いっこ|ikko|Satu buah
+いっさい|issai|Sama sekali / usia satu tahun
+いっしゅうかん|isshuukan|Satu minggu
+いっしょ|issho|Bersama
+いっぱい|ippai|Banyak / penuh
+いっぽ|ippo|Satu langkah
+いっぽん|ippon|Satu batang
+いっぺん|ippen|Sekali / satu kali
+うっかり|ukkari|Ceroboh / tidak sengaja
+うっすら|ussura|Samar-samar
+うっとり|uttori|Terpesona
+うっとうしい|uttoushii|Menjengkelkan
+えっ|e|Hah?
+おっと|otto|Wah / awas
+おっしゃる|ossharu|Mengatakan (hormat)
+おっとり|ottori|Tenang / lembut
+かっこ|kakko|Tanda kurung
+かっこいい|kakkoii|Keren
+かっこわるい|kakkowarui|Tidak keren
+がっこう|gakkou|Sekolah
+がっき|gakki|Alat musik
+がっかり|gakkari|Kecewa
+がっしょう|gasshou|Paduan suara
+きって|kitte|Perangko
+きっぷ|kippu|Tiket
+きっかけ|kikkake|Pemicu / awal mula
+きっちり|kicchiri|Tepat / rapi
+きっと|kitto|Pasti
+きっさ|kissa|Kedai kopi
+きっさてん|kissaten|Kedai kopi
+けっこん|kekkon|Pernikahan
+けっか|kekka|Hasil
+けっきょく|kekkyoku|Pada akhirnya
+けっこう|kekkou|Cukup / lumayan
+けっして|kesshite|Sama sekali tidak
+けっせき|kesseki|Tidak hadir
+けっしょう|kesshou|Final / kristalisasi
+こっち|kocchi|Sebelah sini
+こっそり|kossori|Diam-diam
+こっちがわ|kocchigawa|Sisi sini
+さっき|sakki|Tadi
+さっそく|sassoku|Segera
+さっぱり|sappari|Segar / tidak sama sekali
+さっち|sacchi|Intuisi
+しっかり|shikkari|Dengan kuat / mantap
+しっぽ|shippo|Ekor
+しっぱい|shippai|Kegagalan
+しつれい|shitsurei|Tidak sopan
+しっせき|shisseki|Teguran
+しっそう|shissou|Menghilang
+しっぷう|shippuu|Angin kencang
+しっと|shitto|Iri hati
+すっかり|sukkari|Sepenuhnya
+すっきり|sukkiri|Lega / segar
+すっごい|suggoi|Hebat sekali
+すっと|sutto|Dengan lancar
+すっぽり|suppori|Sepenuhnya masuk / tertutup
+ずっと|zutto|Terus-menerus
+ずっしり|zusshiri|Berat / berbobot
+ずっこける|zukkokeru|Terjatuh / terpeleset
+そっくり|sokkuri|Sangat mirip
+そっと|sotto|Dengan perlahan
+そっち|socchi|Sebelah sana
+そっぽ|soppo|Arah lain
+たっぷり|tappuri|Berlimpah
+たった|tatta|Hanya / cuma
+たっせい|tassei|Pencapaian
+ちょっと|chotto|Sebentar / sedikit
+ちっちゃい|chicchai|Kecil
+ちっとも|chittomo|Sama sekali tidak
+つっぱる|tsupparu|Menegang / bersikeras
+つっこむ|tsukkomu|Menyela / memasukkan
+つっこみ|tsukkomi|Sanggahan / komentar
+つっぱり|tsuppari|Sikap keras kepala
+とっくに|tokkuni|Sudah lama
+とって|totte|Ambil (bentuk te)
+とっても|tottemo|Sangat
+とっさ|tossa|Seketika
+なっとう|nattou|Natto
+にっき|nikki|Buku harian
+にっこり|nikkori|Tersenyum manis
+はっきり|hakkiri|Dengan jelas
+はっぱ|happa|Daun
+はっけん|hakken|Penemuan
+はっぴょう|happyou|Pengumuman / presentasi
+ひっこし|hikkoshi|Pindah rumah
+ひっし|hisshi|Mati-matian
+ひっぱる|hipparu|Menarik
+びっくり|bikkuri|Terkejut
+まっすぐ|massugu|Lurus
+もっと|motto|Lebih banyak
+
+@Katakana
+アップ|appu|Naik / peningkatan
+アップデート|appudeeto|Pembaruan
+アップロード|appuroodo|Unggah
+アウトレット|autoretto|Toko barang diskon
+アタック|atakku|Serangan
+アクセント|akusento|Aksen
+アットホーム|attohoomu|Suasana kekeluargaan
+イラッ|ira|Kesal sesaat
+エッセイ|essei|Esai
+エッジ|ejji|Tepi / ujung
+オッズ|ozzu|Peluang / odds
+オフセット|ofusetto|Offset
+カップ|kappu|Cangkir
+カップル|kappuru|Pasangan
+カット|katto|Potongan / memotong
+カッター|kattaa|Pisau cutter
+カッティング|kattingu|Pemotongan
+カッパ|kappa|Jas hujan
+キャッチ|kyacchi|Menangkap
+キャッチコピー|kyacchi kopii|Slogan
+キャッチャー|kyacchaa|Penangkap
+キック|kikku|Tendangan
+キッチン|kicchin|Dapur
+キット|kitto|Perangkat / kit
+キッチリ|kicchiri|Tepat / rapi
+クッキー|kukkii|Kue kering
+クッション|kusshon|Bantal
+クッキング|kukkingu|Memasak
+クラッカー|kurakkaa|Kerupuk / cracker
+クラッチ|kuracchi|Kopling
+クリップ|kurippu|Klip
+グッズ|guzzu|Barang merchandise
+グッド|guddo|Bagus
+グリッド|guriddo|Kisi / grid
+コップ|koppu|Gelas
+コミット|komitto|Komitmen / commit
+コレクション|korekushon|Koleksi
+コンタクト|kontakuto|Kontak
+サッカー|sakkaa|Sepak bola
+サックス|sakkusu|Saksofon
+サポート|sapooto|Dukungan
+サプリメント|sapurimento|Suplemen
+シック|shikku|Elegan / sederhana
+ショック|shokku|Terkejut / guncangan
+ショッピング|shoppingu|Berbelanja
+システムチェック|shisutemu chekku|Pemeriksaan sistem
+スタッフ|sutaffu|Staf
+ストップ|sutoppu|Berhenti
+ステップ|suteppu|Langkah
+スイッチ|suicchi|Sakelar
+スケッチ|sukecchi|Sketsa
+スタッキング|sutakkingu|Penumpukan
+スッキリ|sukkiri|Segar / lega
+セット|setto|Set
+セッティング|settingu|Pengaturan
+セッション|sesshon|Sesi
+ソックス|sokkusu|Kaus kaki
+ソフトウェアアップデート|sofutowea appudeeto|Pembaruan perangkat lunak
+タッチ|tacchi|Sentuhan
+タッチパネル|tacchi paneru|Layar sentuh
+タップ|tappu|Ketukan
+タッピング|tappingu|Proses tapping
+チェック|chekku|Pemeriksaan
+チェックリスト|chekkurisuto|Daftar pemeriksaan
+チケット|chiketto|Tiket
+チップ|chippu|Chip / tip
+チャット|chatto|Obrolan
+チャンネル|channeru|Saluran
+チョップ|choppu|Potongan / chop
+ツールキット|tsuurukitto|Perangkat alat
+テック|tekku|Teknologi
+テックサポート|tekku sapooto|Dukungan teknis
+テスト|tesuto|Tes
+トップ|toppu|Puncak / atas
+トッピング|toppingu|Topping
+トラック|torakku|Truk / trek
+トラックパッド|torakku paddo|Trackpad
+トリック|torikku|Trik
+ニックネーム|nikkuneemu|Nama panggilan
+ネット|netto|Internet / jaring
+ネットワーク|nettowaaku|Jaringan
+ノック|nokku|Ketukan
+バック|bakku|Belakang
+バッグ|baggu|Tas
+バックアップ|bakkuappu|Cadangan data
+バッテリー|batterii|Baterai
+バッジ|bajji|Lencana
+バッティング|battingu|Memukul / batting
+バット|batto|Tongkat pemukul
+バックパック|bakkupakku|Ransel
+パック|pakku|Paket
+パッケージ|pakkeeji|Kemasan
+パッキング|pakkingu|Pengepakan
+パッと|patto|Seketika
+パッチ|pacchi|Tambalan
+パフォーマンスアップ|pafoomansu appu|Peningkatan performa
+ピッキング|pikkingu|Pengambilan barang
+ピッチ|picchi|Pitch / kecepatan
+ピッタリ|pittari|Pas / tepat
+プッシュ|pusshu|Dorongan / tekan
+プッシュアップ|pusshuappu|Push-up
+プロジェクト|purojekuto|Proyek
+プラットフォーム|purattofoomu|Platform
+ペット|petto|Hewan peliharaan
+ペッパー|peppaa|Lada
+ポケット|poketto|Saku
+ポップ|poppu|Pop
+ポップアップ|poppuappu|Jendela pop-up
+ロケット|roketto|Roket

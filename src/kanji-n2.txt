@@ -1,0 +1,186 @@
+// Kanji tingkat N2 (perkiraan; JLPT tidak menerbitkan daftar resmi). Format sama dengan kanji.txt.
+@Masyarakat & Negara
+党|-|トウ|partai|N2
+協|-|キョウ|bekerja sama|N2
+総|-|ソウ|seluruh|N2
+団|-|ダン,トン|kelompok|N2
+副|-|フク|wakil|N2
+領|-|リョウ|wilayah|N2
+増|ま.す,ふ.える|ゾウ|bertambah|N2
+減|へ.る,へ.らす|ゲン|berkurang|N2
+況|-|キョウ|keadaan|N2
+採|と.る|サイ|memilih / mengambil|N2
+企|くわだ.てる|キ|merencanakan|N2
+類|たぐ.い|ルイ|jenis|N2
+属|-|ゾク|tergolong|N2
+象|-|ショウ,ゾウ|gajah / gambaran|N2
+影|かげ|エイ|bayangan / pengaruh|N2
+響|ひび.く|キョウ|bergema|N2
+訴|うった.える|ソ|menggugat / mengadu|N2
+裁|さば.く,た.つ|サイ|mengadili / memotong|N2
+判|はん|ハン,バン|menilai / cap|N2
+罪|つみ|ザイ|dosa / kejahatan|N2
+刑|-|ケイ|hukuman|N2
+被|こうむ.る|ヒ|menderita / di-|N2
+害|-|ガイ|kerugian|N2
+犯|おか.す|ハン|melanggar|N2
+違|ちが.う|イ|berbeda / salah|N2
+賛|-|サン|menyetujui|N2
+否|いな|ヒ|menolak / tidak|N2
+則|-|ソク|kaidah|N2
+令|-|レイ|perintah|N2
+統|す.べる|トウ|menyatukan|N2
+僚|-|リョウ|rekan / pejabat|N2
+施|ほどこ.す|シ,セ|melaksanakan|N2
+設|もう.ける|セツ|mendirikan|N2
+備|そな.える|ビ|menyiapkan|N2
+複|-|フク|ganda|N2
+@Uang & Belanja
+貨|-|カ|barang / mata uang|N2
+輸|-|ユ|mengangkut / ekspor|N2
+額|ひたい|ガク|jumlah / dahi|N2
+益|-|エキ|untung|N2
+儲|もう.ける|チョ|memperoleh laba|N2
+@Kerja & Pabrik
+職|-|ショク|pekerjaan|N2
+労|-|ロウ|kerja keras|N2
+績|-|セキ|prestasi|N2
+導|みちび.く|ドウ|memandu|N2
+営|いとな.む|エイ|mengelola|N2
+器|うつわ|キ|alat / wadah|N2
+殺|ころ.す|サツ,サイ|membunuh|N2
+講|-|コウ|kuliah|N2
+師|-|シ|guru / ahli|N2
+演|-|エン|pertunjukan|N2
+募|つの.る|ボ|merekrut|N2
+停|-|テイ|berhenti|N2
+輪|わ|リン|roda / lingkaran|N2
+@Perasaan & Pikiran
+態|-|タイ|sikap / keadaan|N2
+慣|な.れる|カン|terbiasa|N2
+惜|お.しい|セキ|disayangkan|N2
+恐|おそ.れる,こわ.い|キョウ|takut|N2
+憎|にく.む,にく.い|ゾウ|membenci|N2
+疑|うたが.う|ギ|meragukan|N2
+迷|まよ.う|メイ|tersesat / bimbang|N2
+悩|なや.む|ノウ|bergumul / cemas|N2
+慎|つつし.む|シン|berhati-hati|N2
+誇|ほこ.る|コ|bangga|N2
+苦|くる.しい,にが.い|ク|sulit / pahit|N2
+福|-|フク|keberuntungan|N2
+快|こころよ.い|カイ|nyaman|N2
+緊|-|キン|tegang|N2
+張|は.る|チョウ|merentang|N2
+興|おこ.る|コウ,キョウ|bangkit / minat|N2
+@Sekolah & Bahasa
+論|-|ロン|teori / debat|N2
+述|の.べる|ジュツ|menguraikan|N2
+詳|くわ.しい|ショウ|terperinci|N2
+諸|もろ|ショ|berbagai|N2
+義|-|ギ|makna / keadilan|N2
+識|-|シキ|mengenali|N2
+術|すべ|ジュツ|teknik|N2
+批|-|ヒ|mengkritik|N2
+評|-|ヒョウ|menilai|N2
+略|-|リャク|singkatan|N2
+展|-|テン|membentang|N2
+容|-|ヨウ|isi / mengizinkan|N2
+@Alam & Cuaca
+環|-|カン|lingkaran|N2
+境|さかい|キョウ,ケイ|batas / lingkungan|N2
+候|そうろう|コウ|cuaca / menunggu|N2
+燃|も.える,も.やす|ネン|terbakar|N2
+灯|ひ|トウ|lampu|N2
+暖|あたた.かい|ダン|hangat|N2
+涼|すず.しい|リョウ|sejuk|N2
+湿|しめ.る|シツ|lembap|N2
+乾|かわ.く|カン|kering|N2
+氷|こおり|ヒョウ|es|N2
+砂|すな|サ,シャ|pasir|N2
+岸|きし|ガン|pantai|N2
+陽|-|ヨウ|matahari|N2
+露|つゆ|ロ|embun|N2
+@Hewan & Tumbuhan
+穀|-|コク|biji-bijian|N2
+稲|いね|トウ|padi|N2
+芽|め|ガ|tunas|N2
+枝|えだ|シ|ranting|N2
+@Tubuh
+胸|むね|キョウ|dada|N2
+腹|はら|フク|perut|N2
+脳|-|ノウ|otak|N2
+肩|かた|ケン|bahu|N2
+肌|はだ|キ|kulit tubuh|N2
+@Kesehatan
+療|-|リョウ|merawat|N2
+症|-|ショウ|gejala|N2
+咳|せき|ガイ|batuk|N2
+菌|-|キン|kuman|N2
+@Rumah & Benda
+壁|かべ|ヘキ|dinding|N2
+扉|とびら|ヒ|pintu|N2
+鏡|かがみ|キョウ|cermin|N2
+鍋|なべ|カ|panci|N2
+瓶|びん|ヘイ|botol|N2
+縄|なわ|ジョウ|tali|N2
+鉛|なまり|エン|timah hitam|N2
+@Gerak & Aktivitas
+超|こ.える|チョウ|melampaui|N2
+越|こ.える,こ.す|エツ|melewati|N2
+捨|す.てる|シャ|membuang|N2
+拾|ひろ.う|シュウ,ジュウ|memungut|N2
+抜|ぬ.く,ぬ.ける|バツ|mencabut|N2
+抱|だ.く,かか.える|ホウ|memeluk|N2
+掛|か.ける,か.かる|カ|menggantung|N2
+掘|ほ.る|クツ|menggali|N2
+折|お.る,おり|セツ|melipat / mematahkan|N2
+割|わ.る,わり|カツ|membelah|N2
+包|つつ.む|ホウ|membungkus|N2
+詰|つ.める,つ.まる|キツ|menjejalkan|N2
+縮|ちぢ.む,ちぢ.める|シュク|mengerut|N2
+伸|の.びる,の.ばす|シン|memanjang|N2
+曲|ま.がる,ま.げる|キョク|membelok / lagu|N2
+泊|と.まる|ハク|menginap|N2
+訪|おとず.れる,たず.ねる|ホウ|berkunjung|N2
+招|まね.く|ショウ|mengundang|N2
+迎|むか.える|ゲイ|menjemput|N2
+追|お.う|ツイ|mengejar|N2
+逃|に.げる,のが.れる|トウ|melarikan diri|N2
+隠|かく.す,かく.れる|イン|menyembunyikan|N2
+救|すく.う|キュウ|menyelamatkan|N2
+譲|ゆず.る|ジョウ|menyerahkan|N2
+奪|うば.う|ダツ|merampas|N2
+争|あらそ.う|ソウ|bersaing|N2
+勝|か.つ|ショウ|menang|N2
+負|ま.ける,お.う|フ|kalah / menanggung|N2
+祈|いの.る|キ|berdoa|N2
+祝|いわ.う|シュク|merayakan|N2
+@Waktu & Kalender
+昨|-|サク|kemarin|N2
+旬|-|ジュン|musim / sepuluh hari|N2
+暮|く.れる,く.らす|ボ|senja / hidup|N2
+即|すなわ.ち|ソク|segera|N2
+@Ukuran & Sifat
+兆|きざ.し|チョウ|triliun / pertanda|N2
+幅|はば|フク|lebar|N2
+厚|あつ.い|コウ|tebal|N2
+薄|うす.い|ハク|tipis|N2
+濃|こ.い|ノウ|pekat|N2
+鋭|するど.い|エイ|tajam|N2
+鈍|にぶ.い|ドン|tumpul|N2
+貧|まず.しい|ヒン|miskin|N2
+豊|ゆた.か|ホウ|melimpah|N2
+単|-|タン|tunggal|N2
+純|-|ジュン|murni|N2
+独|ひと.り|ドク|sendiri|N2
+汚|きたな.い,よご.す|オ|kotor|N2
+@Lain-lain
+応|こた.える|オウ|menanggapi|N2
+各|おのおの|カク|masing-masing|N2
+過|す.ぎる,す.ごす|カ|melewati|N2
+絶|た.える|ゼツ|memutus|N2
+状|-|ジョウ|keadaan / surat|N2
+比|くら.べる|ヒ|membandingkan|N2
+求|もと.める|キュウ|meminta|N2
+示|しめ.す|ジ,シ|menunjukkan|N2
+接|つ.ぐ|セツ|menyambung|N2

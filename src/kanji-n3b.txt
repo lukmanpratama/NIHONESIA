@@ -1,0 +1,19 @@
+// Tambahan kanji N3 (format sama dengan kanji.txt). Kanji yang sudah ada di kanji.txt diabaikan saat build lewat pemeriksaan ganda.
+@Masyarakat & Negara
+合|あ.う,あ.わせる|ゴウ,ガッ|cocok / menyatukan|N3
+相|あい|ソウ,ショウ|saling / bentuk|N3
+定|さだ.める,さだ.まる|テイ,ジョウ|menetapkan|N3
+現|あらわ.れる|ゲン|tampak / sekarang|N3
+加|くわ.える,くわ.わる|カ|menambah|N3
+受|う.ける|ジュ|menerima|N3
+続|つづ.く,つづ.ける|ゾク|berlanjut|N3
+権|-|ケン,ゴン|hak / kekuasaan|N3
+支|ささ.える|シ|menopang / cabang|N3
+原|はら|ゲン|asal / dataran|N3
+解|と.く,と.ける|カイ,ゲ|menjelaskan / melepas|N3
+資|-|シ|modal / bahan|N3
+予|あらかじ.め|ヨ|sebelumnya|N3
+勢|いきお.い|セイ|kekuatan / semangat|N3
+望|のぞ.む|ボウ|mengharap|N3
+@Gerak & Aktivitas
+等|ひと.しい|トウ|sama / dsb.|N3
