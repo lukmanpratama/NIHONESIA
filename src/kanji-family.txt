@@ -1,0 +1,393 @@
+// Kanji Family — dari Kanji_Dasar_Kanji_Family_Jilid2.pdf dan Jilid3.pdf (metode keluarga kanji, N5)
+// @Jilid|Judul   #Keluarga|Deskripsi|Info   K|kanji|arti|on|kun|asal-bentuk   W|kata|romaji|arti   S|kalimat|romaji|arti   N|catatan
+
+@J2|Jilid 2|Kanji Dasar · Level N5 lanjutan · 8 keluarga · 58 kanji
+
+#Keluarga dan Sekolah|Kanji tentang manusia, keluarga, dan belajar. Banyak muncul di perkenalan diri.|9 kanji · induk: 女 dan 子
+K|女|wanita|JO, NYO|onna|sosok wanita bersimpuh
+K|男|pria|DAN, NAN|otoko|田 + 力 : orang bertenaga di sawah
+K|子|anak|SHI, SU|ko|bayi dengan tangan terentang
+K|母|ibu|BO|haha|女 dengan dua titik (menyusui)
+K|父|ayah|FU|chichi|tangan memegang kapak
+K|友|teman|YŪ|tomo|dua tangan saling berjabat
+K|先|lebih dulu|SEN|saki|kaki melangkah di depan
+K|生|hidup, lahir|SEI, SHŌ|i(kiru), u(mareru)|tunas tumbuh dari tanah
+K|学|belajar|GAKU|mana(bu)|anak di bawah atap sekolah
+W|男の人|otoko no hito|pria
+W|女の人|onna no hito|wanita
+W|子ども|kodomo|anak-anak
+W|お母さん|okāsan|ibu (sopan)
+W|お父さん|otōsan|ayah (sopan)
+W|友達|tomodachi|teman
+W|先生|sensei|guru (secara harfiah: yang lahir lebih dulu)
+W|学生|gakusei|pelajar, mahasiswa
+S|あの男の人は先生です。|Ano otoko no hito wa sensei desu.|Pria itu guru.
+S|女の人が二人います。|Onna no hito ga futari imasu.|Ada dua wanita.
+S|子どもが三人います。|Kodomo ga sannin imasu.|Saya punya tiga anak.
+S|母は先生です。|Haha wa sensei desu.|Ibu saya guru.
+S|父は日本人です。|Chichi wa Nihonjin desu.|Ayah saya orang Jepang.
+S|友達と学校へ行きます。|Tomodachi to gakkō e ikimasu.|Pergi ke sekolah dengan teman.
+S|私は学生です。|Watashi wa gakusei desu.|Saya pelajar.
+N|Untuk keluarga sendiri pakai 母 haha dan 父 chichi. Untuk keluarga orang lain pakai お母さん okāsan dan お父さん otōsan.
+
+#Bahasa dan Indra|Induk: 言 (ucapan). Kanji 語, 話, 読 memakai radikal 言 di kiri, maknanya selalu berkaitan dengan kata.|9 kanji · induk: 言
+K|言|berkata|GEN, GON|i(u)|mulut mengeluarkan kata
+K|語|bahasa|GO|kata(ru)|言 + 吾 (bunyi GO)
+K|話|bicara|WA|hana(su)|言 + 舌 (lidah)
+K|読|membaca|DOKU|yo(mu)|言 + 売
+K|書|menulis|SHO|ka(ku)|tangan memegang kuas
+K|聞|mendengar|BUN, MON|ki(ku)|telinga di dekat gerbang
+K|見|melihat|KEN|mi(ru)|mata di atas kaki yang berjalan
+K|国|negara|KOKU|kuni|batas wilayah berisi permata
+K|字|huruf|JI|-|anak di bawah atap, 'anak' dari kata
+W|日本語|Nihongo|bahasa Jepang
+W|言葉|kotoba|kata
+W|話す|hanasu|berbicara
+W|読む|yomu|membaca
+W|書く|kaku|menulis
+W|聞く|kiku|mendengar, bertanya
+W|見る|miru|melihat
+W|漢字|kanji|huruf kanji (漢 belum dipelajari)
+S|日本語を話します。|Nihongo o hanashimasu.|Saya berbicara bahasa Jepang.
+S|日本語の本を読みます。|Nihongo no hon o yomimasu.|Membaca buku berbahasa Jepang.
+S|字を書きます。|Ji o kakimasu.|Menulis huruf.
+S|先生の話を聞きます。|Sensei no hanashi o kikimasu.|Mendengarkan cerita guru.
+S|テレビを見ます。|Terebi o mimasu.|Menonton TV.
+S|あなたの国はどこですか。|Anata no kuni wa doko desu ka.|Negaramu di mana?
+N|Pola kanji kerja: kanji + hiragana di akhir (okurigana). 話す hana-su, 読む yo-mu, 書く ka-ku. Bagian kanji tidak berubah, ekor hiragana yang berubah.
+
+#Makanan dan Minuman|Induk: 食 (makan). Radikal ⻟ muncul di kanji tentang makanan.|6 kanji · induk: 食
+K|食|makan|SHOKU|ta(beru)|mangkuk bertutup berisi nasi
+K|飲|minum|IN|no(mu)|食 + 欠 (mulut menganga)
+K|米|beras|BEI, MAI|kome|butir padi di tangkainya
+K|肉|daging|NIKU|-|potongan daging berserat
+K|魚|ikan|GYO|sakana|kepala, badan, dan ekor ikan
+K|茶|teh|CHA, SA|-|⺾ daun teh di atas 木
+W|食べる|taberu|makan
+W|飲む|nomu|minum
+W|ご飯|gohan|nasi, makan (飯 belum dipelajari)
+W|お茶|ocha|teh
+W|魚|sakana|ikan
+W|米|kome|beras
+S|朝ご飯を食べます。|Asa gohan o tabemasu.|Saya sarapan.
+S|お茶を飲みます。|Ocha o nomimasu.|Saya minum teh.
+S|水を飲んでください。|Mizu o nonde kudasai.|Tolong minum air.
+S|魚が好きです。|Sakana ga suki desu.|Saya suka ikan.
+S|肉を食べません。|Niku o tabemasen.|Saya tidak makan daging.
+S|日本の米はおいしいです。|Nihon no kome wa oishii desu.|Beras Jepang enak.
+N|Bentuk negatif: 食べます (makan) menjadi 食べません (tidak makan). Kanji 食 tetap, ekor hiragana yang berubah.
+
+#Kendaraan dan Perjalanan|Kanji untuk bepergian. Kamu akan menemuinya di stasiun, papan jalan, dan jadwal kereta.|6 kanji
+K|車|mobil, kendaraan|SHA|kuruma|roda mobil dilihat dari atas
+K|電|listrik|DEN|-|雨 (awan) + kilat
+K|駅|stasiun|EKI|-|馬 (kuda pos) + 尺
+K|道|jalan|DŌ|michi|⻍ (berjalan) + 首
+K|行|pergi|KŌ, GYŌ|i(ku)|persimpangan jalan
+K|来|datang|RAI|ku(ru)|dulu gambar gandum, dipinjam untuk 'datang'
+W|電車|densha|kereta listrik
+W|電話|denwa|telepon
+W|駅|eki|stasiun
+W|車|kuruma|mobil
+W|道|michi|jalan
+W|行く|iku|pergi
+W|来る|kuru|datang
+S|電車で学校へ行きます。|Densha de gakkō e ikimasu.|Pergi ke sekolah naik kereta.
+S|駅はどこですか。|Eki wa doko desu ka.|Di mana stasiunnya?
+S|車で来ました。|Kuruma de kimashita.|Saya datang naik mobil.
+S|友達に電話します。|Tomodachi ni denwa shimasu.|Saya menelepon teman.
+S|この道をまっすぐ行ってください。|Kono michi o massugu itte kudasai.|Silakan lurus terus di jalan ini.
+S|先生が来ました。|Sensei ga kimashita.|Guru sudah datang.
+N|来る kuru berubah tidak beraturan: 来ます kimasu, 来ない konai. Hafalkan sebagai satu paket.
+
+#Warna|Empat warna dasar berakhiran い (kata sifat) plus kata umum untuk warna.|5 kanji
+K|白|putih|HAKU, BYAKU|shiro(i)|日 dengan berkas cahaya
+K|赤|merah|SEKI, SHAKU|aka(i)|大 di atas 火 : api besar
+K|青|biru, hijau|SEI, SHŌ|ao(i)|tunas muda yang segar
+K|黒|hitam|KOKU|kuro(i)|jelaga dari api
+K|色|warna|SHOKU, SHIKI|iro|hafalkan sebagai satu bentuk
+W|白い|shiroi|putih
+W|赤い|akai|merah
+W|青い|aoi|biru
+W|黒い|kuroi|hitam
+W|青空|aozora|langit biru
+W|赤ちゃん|akachan|bayi
+W|何色|nani iro|warna apa
+S|花は赤いです。|Hana wa akai desu.|Bunganya merah.
+S|青空がきれいです。|Aozora ga kirei desu.|Langit birunya cantik.
+S|黒いかばんがあります。|Kuroi kaban ga arimasu.|Ada tas hitam.
+S|何色が好きですか。|Nani iro ga suki desu ka.|Kamu suka warna apa?
+S|白い花と赤い花があります。|Shiroi hana to akai hana ga arimasu.|Ada bunga putih dan bunga merah.
+N|青 dalam bahasa Jepang mencakup biru dan hijau. Lampu hijau lalu lintas disebut 青信号 (aoshingō).
+
+#Arah dan Posisi|Mata angin dan posisi relatif. Urutan Jepang: 東西南北 (timur, barat, selatan, utara). kanan|9 kanji
+K|右|kanan|U, YŪ|migi|tangan kanan + mulut
+K|左|kiri|SA|hidari|tangan kiri + alat (工)
+K|東|timur|TŌ|higashi|matahari terbit di balik pohon
+K|西|barat|SEI, SAI|nishi|burung di sarang saat senja
+K|南|selatan|NAN|minami|hafalkan sebagai satu bentuk
+K|北|utara|HOKU|kita|dua orang saling membelakangi
+K|前|depan|ZEN|mae|bergerak maju
+K|後|belakang|GO, KŌ|ushi(ro), ato|bergerak mundur
+K|外|luar|GAI, GE|soto|di luar rumah
+W|右|migi|kanan
+W|左|hidari|kiri
+W|東京|Tōkyō|Tokyo (ibu kota timur)
+W|東西南北|tōzainanboku|timur barat selatan utara
+W|前|mae|depan, sebelum
+W|後ろ|ushiro|belakang
+W|外|soto|luar
+S|右に曲がってください。|Migi ni magatte kudasai.|Tolong belok kanan.
+S|駅は左です。|Eki wa hidari desu.|Stasiun ada di kiri.
+S|東京は日本の東にあります。|Tōkyō wa Nihon no higashi ni arimasu.|Tokyo ada di timur Jepang.
+S|学校の前に駅があります。|Gakkō no mae ni eki ga arimasu.|Di depan sekolah ada stasiun.
+S|家の外に車があります。|Ie no soto ni kuruma ga arimasu.|Di luar rumah ada mobil.
+S|後ろを見てください。|Ushiro o mite kudasai.|Tolong lihat ke belakang.
+N|右 dan 左 mirip. Cara ingat: 右 punya 口 (mulut) di bawah, dan makan memakai tangan kanan. 左 punya 工 (alat) di bawah.
+
+#Waktu dan Uang|Kanji penunjuk waktu dan satuan uang. Dipakai tiap hari di jadwal dan harga.|7 kanji
+K|年|tahun|NEN|toshi|padi yang matang setahun sekali
+K|週|minggu|SHŪ|-|⻍ + 周 : berputar satu pekan
+K|分|menit, bagian|BUN, FUN, PUN|wa(keru)|pisau membelah menjadi dua
+K|半|setengah|HAN|naka(ba)|dua bagian yang dibagi tengah
+K|毎|setiap|MAI|-|mirip 母 bertopi: dipakai untuk 'setiap'
+K|円|yen|EN|maru(i)|uang bulat
+K|午|tengah hari|GO|-|penanda tengah hari (matahari di puncak)
+W|今年|kotoshi|tahun ini
+W|来年|rainen|tahun depan
+W|毎日|mainichi|setiap hari
+W|今週|konshū|minggu ini
+W|五分|gofun|5 menit
+W|七時半|shichiji han|jam 7.30
+W|午前|gozen|pagi (AM)
+W|午後|gogo|siang, sore (PM)
+S|毎日、日本語を勉強します。|Mainichi, Nihongo o benkyō shimasu.|Setiap hari saya belajar bahasa Jepang.
+S|来年、日本へ行きます。|Rainen, Nihon e ikimasu.|Tahun depan saya pergi ke Jepang.
+S|今、九時半です。|Ima, kuji han desu.|Sekarang jam 9.30.
+S|午前七時に起きます。|Gozen shichiji ni okimasu.|Saya bangun jam 7 pagi.
+S|駅まで十分です。|Eki made juppun desu.|Ke stasiun 10 menit.
+S|これは千円です。|Kore wa sen'en desu.|Ini 1.000 yen.
+N|分 (menit) berubah bunyi: 一分 ippun, 二分 nifun, 三分 sanpun, 四分 yonpun, 五分 gofun, 六分 roppun, 十分 juppun.
+
+#Sifat Dasar|Kata sifat berakhiran い yang paling sering dipakai. Hafalkan berpasangan dengan lawannya.|7 kanji · enam pasangan lawan kata
+K|高|tinggi, mahal|KŌ|taka(i)|gedung bertingkat
+K|安|murah, aman|AN|yasu(i)|女 di bawah atap: tenang
+K|長|panjang|CHŌ|naga(i)|rambut panjang tergerai
+K|新|baru|SHIN|atara(shii)|kapak memotong kayu segar
+K|古|lama|KO|furu(i)|十 + 口 : cerita turun-temurun
+K|多|banyak|TA|ō(i)|dua 夕 bertumpuk
+K|少|sedikit|SHŌ|suko(shi)|小 dikurangi sedikit
+W|高い|takai|tinggi, mahal
+W|安い|yasui|murah
+W|長い|nagai|panjang
+W|新しい|atarashii|baru
+W|古い|furui|lama
+W|多い|ōi|banyak
+W|少ない|sukunai|sedikit
+W|新聞|shinbun|koran
+S|この本は高いです。|Kono hon wa takai desu.|Buku ini mahal.
+S|あの店は安いです。|Ano mise wa yasui desu.|Toko itu murah.
+S|長い川です。|Nagai kawa desu.|Sungai yang panjang.
+S|新しい車です。|Atarashii kuruma desu.|Mobil baru.
+S|古い本を読みます。|Furui hon o yomimasu.|Membaca buku lama.
+S|日本には山が多いです。|Nihon ni wa yama ga ōi desu.|Di Jepang banyak gunung.
+S|水を少しください。|Mizu o sukoshi kudasai.|Tolong air sedikit.
+N|Pasangan lawan kata: 高い ↔ 安い (harga), 新しい ↔ 古い, 多い ↔ 少ない. 高い juga berarti tinggi dan 安い juga berarti aman.
+
+@J3|Jilid 3|Kanji Dasar · Kata kerja dan kehidupan sehari-hari · 8 keluarga · 63 kanji
+
+#Gerak dan Aktivitas Harian|Kata kerja yang dipakai setiap hari. Perhatikan: bagian kanji tetap, ekor hiragana yang berubah (lihat Bab 1).|7 kanji
+K|会|bertemu|KAI, E|a(u)|orang berkumpul di satu tempat
+K|立|berdiri|RITSU, RYŪ|ta(tsu)|orang berdiri di atas tanah
+K|起|bangun|KI|o(kiru)|走 + 己 : bangkit dari tidur
+K|走|berlari|SŌ|hashi(ru)|土 di atas 止 : kaki bergerak
+K|待|menunggu|TAI|ma(tsu)|彳 (jalan) + 寺 : berdiam di jalan
+K|使|memakai|SHI|tsuka(u)|⺅ + 吏 : orang memakai alat
+K|歩|berjalan|HO, BU|aru(ku)|止 + 少 : langkah demi langkah
+W|会う|au|bertemu
+W|立つ|tatsu|berdiri
+W|起きる|okiru|bangun
+W|走る|hashiru|berlari
+W|待つ|matsu|menunggu
+W|使う|tsukau|memakai
+W|歩く|aruku|berjalan
+S|駅で友達に会います。|Eki de tomodachi ni aimasu.|Saya bertemu teman di stasiun.
+S|七時に起きます。|Shichiji ni okimasu.|Saya bangun jam 7.
+S|ここで待ってください。|Koko de matte kudasai.|Tolong tunggu di sini.
+S|毎日、学校まで歩きます。|Mainichi, gakkō made arukimasu.|Setiap hari saya jalan kaki ke sekolah.
+S|電話を使ってもいいですか。|Denwa o tsukatte mo ii desu ka.|Bolehkah saya pakai telepon?
+S|立ってください。|Tatte kudasai.|Silakan berdiri.
+S|毎朝、走ります。|Maiasa, hashirimasu.|Setiap pagi saya berlari.
+N|Perhatikan bentuk て : 会って atte, 待って matte, 使って tsukatte. Tiga kata kerja ini semuanya berakhir って.
+
+#Belanja dan Kota|Kanji tempat dan jual beli. Kamu akan menjumpainya di papan toko dan nama daerah.|9 kanji
+K|店|toko|TEN|mise|atap + tempat memajang barang
+K|町|kota kecil|CHŌ|machi|田 (petak) + 丁 (jalan)
+K|市|pasar, kota|SHI|ichi|tanda tempat pasar
+K|場|tempat|JŌ|ba|土 + 昜 : tanah lapang
+K|家|rumah|KA, KE|ie, uchi|atap di atas hewan ternak
+K|屋|toko, atap|OKU|ya|atap di atas ruang
+K|室|ruangan|SHITSU|-|atap + 至 : ujung ruang
+K|買|membeli|BAI|ka(u)|jaring + kerang (uang kuno)
+K|売|menjual|BAI|u(ru)|mirip 買, tetapi 'jaring' diganti 士 : lawan katanya
+W|お店|omise|toko
+W|本屋|hon'ya|toko buku
+W|市場|ichiba|pasar
+W|教室|kyōshitsu|ruang kelas (教 di keluarga 3)
+W|買う|kau|membeli
+W|売る|uru|menjual
+W|家|ie|rumah
+S|あの店で本を買います。|Ano mise de hon o kaimasu.|Saya membeli buku di toko itu.
+S|本屋は駅の前にあります。|Hon'ya wa eki no mae ni arimasu.|Toko buku ada di depan stasiun.
+S|小さい町に住んでいます。|Chiisai machi ni sunde imasu.|Saya tinggal di kota kecil.
+S|家は駅から十分です。|Ie wa eki kara juppun desu.|Rumah saya 10 menit dari stasiun.
+S|車を売ります。|Kuruma o urimasu.|Saya menjual mobil.
+S|市場で魚を買います。|Ichiba de sakana o kaimasu.|Saya membeli ikan di pasar.
+S|ここは私の家です。|Koko wa watashi no ie desu.|Ini rumah saya.
+N|屋 sebagai akhiran berarti toko: 本屋 hon'ya (toko buku), 花屋 hanaya (toko bunga), 魚屋 sakanaya (toko ikan).
+
+#Sekolah dan Pekerjaan|Kanji tentang belajar dan bekerja. 勉強 dan 仕事 adalah dua kata yang paling sering kamu pakai.|8 kanji
+K|勉|berusaha|BEN|-|bekerja keras
+K|強|kuat|KYŌ|tsuyo(i)|busur yang kuat
+K|教|mengajar|KYŌ|oshi(eru)|guru dan murid
+K|習|berlatih|SHŪ|nara(u)|sayap yang berlatih terbang
+K|仕|melayani|SHI|-|⺅ + 士 : orang yang mengabdi
+K|事|urusan, hal|JI|koto|tangan memegang alat
+K|働|bekerja|DŌ|hatara(ku)|⺅ + 動 : orang bergerak
+K|社|perusahaan|SHA|yashiro|altar tempat berkumpul
+W|勉強|benkyō|belajar
+W|教える|oshieru|mengajar
+W|習う|narau|belajar (dari guru)
+W|仕事|shigoto|pekerjaan
+W|働く|hataraku|bekerja
+W|会社|kaisha|perusahaan
+W|強い|tsuyoi|kuat
+S|先生が日本語を教えます。|Sensei ga Nihongo o oshiemasu.|Guru mengajar bahasa Jepang.
+S|日本語を習っています。|Nihongo o naratte imasu.|Saya sedang belajar bahasa Jepang.
+S|父は会社で働いています。|Chichi wa kaisha de hataraite imasu.|Ayah saya bekerja di perusahaan.
+S|仕事は九時から五時までです。|Shigoto wa kuji kara goji made desu.|Kerja dari jam 9 sampai jam 5.
+S|母は強いです。|Haha wa tsuyoi desu.|Ibu saya kuat.
+S|友達と勉強します。|Tomodachi to benkyō shimasu.|Saya belajar bersama teman.
+N|勉強する benkyō suru artinya belajar. 習う narau dipakai untuk belajar dari seseorang, misalnya les atau kursus.
+
+#Waktu Harian dan Musim|Bagian hari dan empat musim. Musim disebut 四季 (shiki) dan urutannya 春夏秋冬.|9 kanji
+K|朝|pagi|CHŌ|asa|matahari terbit, bulan masih tampak
+K|昼|siang|CHŪ|hiru|matahari di tengah hari
+K|夜|malam|YA|yoru|orang di bawah bulan sabit
+K|夕|senja|SEKI|yū|bulan sabit menjelang malam
+K|間|antara|KAN, KEN|aida, ma|cahaya lewat celah gerbang
+K|春|musim semi|SHUN|haru|tumbuhan tumbuh di bawah matahari
+K|夏|musim panas|KA|natsu|musim matahari terik
+K|秋|musim gugur|SHŪ|aki|padi (禾) dan api (火): masa panen
+K|冬|musim dingin|TŌ|fuyu|es di ujung tahun
+W|朝ご飯|asagohan|sarapan
+W|昼ご飯|hirugohan|makan siang
+W|今夜|kon'ya|malam ini
+W|夕方|yūgata|sore
+W|時間|jikan|waktu
+W|夏休み|natsuyasumi|libur musim panas
+W|春夏秋冬|shunkashūtō|empat musim
+S|朝六時に起きます。|Asa rokuji ni okimasu.|Saya bangun jam 6 pagi.
+S|昼ご飯は十二時です。|Hirugohan wa jūniji desu.|Makan siang jam 12.
+S|夜は家にいます。|Yoru wa ie ni imasu.|Malam hari saya di rumah.
+S|夕方、友達に会います。|Yūgata, tomodachi ni aimasu.|Sore nanti saya bertemu teman.
+S|日本の春は花がきれいです。|Nihon no haru wa hana ga kirei desu.|Musim semi di Jepang bunganya indah.
+S|夏休みに日本へ行きます。|Natsuyasumi ni Nihon e ikimasu.|Saya ke Jepang saat libur musim panas.
+S|一週間は七日です。|Isshūkan wa nanoka desu.|Seminggu itu tujuh hari.
+N|間 dibaca kan dalam kata gabungan (時間 jikan, 一週間 isshūkan) dan aida atau ma dalam kata tunggal (間 aida, 居間 ima).
+
+#Kesehatan dan Perasaan|Kanji untuk tubuh, penyakit, dan pikiran. Penting untuk situasi darurat dan ke dokter.|8 kanji
+K|病|sakit|BYŌ|ya(mu), yamai|疒 (sakit) + 丙
+K|院|lembaga, rumah sakit|IN|-|⻖ + 完 : bangunan lengkap
+K|医|dokter, medis|I|-|kotak berisi alat pengobatan
+K|薬|obat|YAKU|kusuri|⺾ (tumbuhan) + 楽 : yang menenangkan
+K|頭|kepala|TŌ, ZU|atama|bagian atas tubuh
+K|顔|wajah|GAN|kao|wajah dengan ekspresi
+K|心|hati|SHIN|kokoro|gambar jantung ?
+K|思|berpikir|SHI|omo(u)|田 + 心 : isi pikiran di hati
+W|病気|byōki|sakit
+W|病院|byōin|rumah sakit
+W|医者|isha|dokter (者 belum dipelajari)
+W|薬|kusuri|obat
+W|頭|atama|kepala
+W|顔|kao|wajah
+W|思う|omou|berpikir
+S|病気です。頭が痛いです。|Byōki desu.|Atama ga itai desu. Saya sakit. Kepala saya sakit.
+S|病院に行きます。|Byōin ni ikimasu.|Saya pergi ke rumah sakit.
+S|薬を飲みます。|Kusuri o nomimasu.|Saya minum obat.
+S|医者は男の人です。|Isha wa otoko no hito desu.|Dokternya laki-laki.
+S|顔を洗います。|Kao o araimasu.|Saya mencuci muka.
+S|そう思います。|Sō omoimasu.|Saya pikir begitu.
+N|病気 byōki (sakit) dan 元気 genki (sehat) sama-sama memakai 気 yang berarti semangat atau kondisi.
+
+#Hewan dan Langit|Hewan umumnya berasal dari gambar langsung (shōkei). Disertai tiga fenomena langit.|8 kanji
+K|犬|anjing|KEN|inu|大 dengan titik telinga
+K|猫|kucing|BYŌ|neko|⺨ (hewan) + 苗
+K|鳥|burung|CHŌ|tori|gambar burung berdiri
+K|牛|sapi|GYŪ|ushi|kepala sapi bertanduk
+K|馬|kuda|BA|uma|kuda dengan surai dan kaki
+K|雪|salju|SETSU|yuki|雨 + 彐 : hujan yang membeku
+K|風|angin|FŪ|kaze|angin yang meniup
+K|星|bintang|SEI|hoshi|日 + 生 : cahaya yang lahir
+W|犬|inu|anjing
+W|猫|neko|kucing
+W|小鳥|kotori|burung kecil
+W|牛肉|gyūniku|daging sapi
+W|馬|uma|kuda
+W|雪|yuki|salju
+W|風|kaze|angin
+W|星|hoshi|bintang
+S|犬と猫がいます。|Inu to neko ga imasu.|Ada anjing dan kucing.
+S|鳥が木にいます。|Tori ga ki ni imasu.|Burung ada di pohon.
+S|牛肉を食べます。|Gyūniku o tabemasu.|Saya makan daging sapi.
+S|冬は雪が多いです。|Fuyu wa yuki ga ōi desu.|Musim dingin banyak salju.
+S|今日は風が強いです。|Kyō wa kaze ga tsuyoi desu.|Hari ini angin kencang.
+S|夜、星がきれいです。|Yoru, hoshi ga kirei desu.|Malam hari bintangnya indah.
+S|馬が走ります。|Uma ga hashirimasu.|Kuda berlari.
+N|犬 (anjing) dan 大 (besar) mirip. 犬 punya titik di kanan atas, seperti telinga anjing yang terangkat.
+
+#Keluarga ⺡ (Air)|Radikal ⺡ adalah bentuk 水 di sisi kiri kanji. Kalau kamu melihat ⺡, maknanya hampir selalu berkaitan dengan air atau cairan.|7 kanji · radikal sanzui
+K|海|laut|KAI|umi|⺡ + 毎 : air yang melimpah
+K|池|kolam|CHI|ike|⺡ + 也
+K|泳|berenang|EI|oyo(gu)|⺡ + 永 : lama di air
+K|洋|samudra, Barat|YŌ|-|⺡ + 羊
+K|洗|mencuci|SEN|ara(u)|⺡ + 先 : air untuk membersihkan
+K|酒|minuman keras|SHU|sake|⺡ + 酉 (guci)
+K|活|hidup, aktif|KATSU|-|⺡ + 舌 : bergerak hidup
+W|海|umi|laut
+W|池|ike|kolam
+W|泳ぐ|oyogu|berenang
+W|洋服|yōfuku|pakaian gaya Barat
+W|洗う|arau|mencuci
+W|お酒|osake|minuman keras
+W|生活|seikatsu|kehidupan sehari-hari
+W|北海道|Hokkaidō|Hokkaido
+S|夏、海で泳ぎます。|Natsu, umi de oyogimasu.|Musim panas saya berenang di laut.
+S|池に魚がいます。|Ike ni sakana ga imasu.|Ada ikan di kolam.
+S|手を洗ってください。|Te o aratte kudasai.|Tolong cuci tangan.
+S|お酒は飲みません。|Osake wa nomimasen.|Saya tidak minum minuman keras.
+S|日本の生活は高いです。|Nihon no seikatsu wa takai desu.|Hidup di Jepang mahal.
+S|洋服を買います。|Yōfuku o kaimasu.|Saya membeli pakaian.
+N|洋 dalam 洋服 berarti Barat (lawan 和服 wafuku, pakaian Jepang). 海 memakai 毎 (MAI) sebagai komponen, jadi bunyinya mirip: KAI.
+
+#Keluarga ⺘ dan ⻍|⺘ (tehen) berarti tangan atau aksi tangan. ⻍ (shinnyō) berarti jalan atau gerak. Keduanya radikal yang sangat produktif.|7 kanji · tangan dan gerak
+K|持|memegang|JI|mo(tsu)|⺘ + 寺 (bunyi JI)
+K|打|memukul|DA|u(tsu)|⺘ + 丁
+K|押|mendorong|Ō|o(su)|⺘ + 甲
+K|送|mengirim|SŌ|oku(ru)|⻍ + 关
+K|近|dekat|KIN|chika(i)|⻍ + 斤
+K|遠|jauh|EN|tō(i)|⻍ + 袁
+K|速|cepat|SOKU|haya(i)|⻍ + 束
+W|持つ|motsu|memegang, membawa
+W|打つ|utsu|memukul, mengetik
+W|押す|osu|mendorong, menekan
+W|送る|okuru|mengirim
+W|近い|chikai|dekat
+W|遠い|tōi|jauh
+W|速い|hayai|cepat
+S|かばんを持ちます。|Kaban o mochimasu.|Saya membawa tas.
+S|ボタンを押してください。|Botan o oshite kudasai.|Tolong tekan tombolnya.
+S|友達に本を送ります。|Tomodachi ni hon o okurimasu.|Saya mengirim buku ke teman.
+S|駅は近いです。|Eki wa chikai desu.|Stasiun dekat.
+S|日本は遠いです。|Nihon wa tōi desu.|Jepang jauh.
+S|電車は速いです。|Densha wa hayai desu.|Kereta cepat.
+N|速い hayai (cepat dalam kecepatan) dan 早い hayai (awal, pagi) bunyinya sama. Konteksnya yang membedakan: 電車は速い, 朝は早い.

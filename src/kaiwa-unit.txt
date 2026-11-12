@@ -1,0 +1,1133 @@
+// Unit Kaiwa (100 unit, N5-N1) — dari Materi_Kaiwa_Nihonesia_N5-N1_100_Halaman.pdf
+// @Level|Nama|Target   lalu  E|ungkapan jepang|romaji|arti  (ungkapan inti, berlaku untuk seluruh level)
+// #No|Judul   G|tujuan   V|kanji|kana|romaji|arti   P|pola|rumus|keterangan   D|A/B|jepang|romaji|arti   R|tantangan roleplay
+
+@N5|Pemula|Salam, perkenalan, kebutuhan dasar, dan percakapan singkat.
+E|そうですね。|Sō desu ne.|Begitu ya / benar juga.
+E|もう一度お願いします。|Mō ichido onegaishimasu.|Tolong sekali lagi.
+E|どういう意味ですか。|Dō iu imi desu ka.|Apa maksudnya?
+E|少し考えさせてください。|Sukoshi kangaesasete kudasai.|Izinkan saya berpikir sebentar.
+
+#001|Salam dan sapaan
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～は～です|A は B です。|Dipakai untuk menyatakan identitas atau informasi dasar.
+D|A|こんにちは。今日はいい天気ですね。|Konnichiwa. Kyō wa ii tenki desu ne.|Halo. Cuacanya bagus hari ini, ya.
+D|B|こんにちは。本当に気持ちがいいですね。|Konnichiwa. Hontō ni kimochi ga ii desu ne.|Halo. Benar, terasa menyenangkan.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#002|Perkenalan diri
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～が好きです|N が好きです。|Dipakai untuk menyatakan kesukaan.
+D|A|はじめまして。ルクマンです。インドネシアから来ました。|Hajimemashite. Rukuman desu. Indoneshia kara kimashita.|Salam kenal. Saya Lukman. Saya berasal dari Indonesia.
+D|B|はじめまして。田中です。よろしくお願いします。|Hajimemashite. Tanaka desu. Yoroshiku onegaishimasu.|Salam kenal. Saya Tanaka. Senang berkenalan dengan Anda.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#003|Berkenalan dengan orang baru
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～てもいいですか|Vて-form + もいいですか。|Meminta izin dengan sopan.
+D|A|お名前を聞いてもいいですか。|Onamae o kiite mo ii desu ka.|Boleh saya tahu nama Anda?
+D|B|はい、アリです。あなたは？|Hai, Ari desu. Anata wa?|Ya, saya Ari. Kalau Anda?
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#004|Asal dan tempat tinggal
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～ませんか|Vます-stem + ませんか。|Mengajak seseorang melakukan sesuatu.
+D|A|どこに住んでいますか。|Doko ni sunde imasu ka.|Anda tinggal di mana?
+D|B|ジャカルタの近くに住んでいます。|Jakaruta no chikaku ni sunde imasu.|Saya tinggal dekat Jakarta.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#005|Keluarga
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～は～です|A は B です。|Dipakai untuk menyatakan identitas atau informasi dasar.
+D|A|ご家族は何人ですか。|Gokazoku wa nan-nin desu ka.|Keluarga Anda berapa orang?
+D|B|四人です。両親と弟がいます。|Yonin desu. Ryōshin to otōto ga imasu.|Empat orang. Ada orang tua dan adik laki-laki.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#006|Hobi dan kesukaan
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～が好きです|N が好きです。|Dipakai untuk menyatakan kesukaan.
+D|A|休みの日は何をしますか。|Yasumi no hi wa nani o shimasu ka.|Apa yang Anda lakukan saat libur?
+D|B|日本語を勉強したり、映画を見たりします。|Nihongo o benkyō shitari, eiga o mitari shimasu.|Saya belajar bahasa Jepang, menonton film, dan sebagainya.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#007|Makanan favorit
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～てもいいですか|Vて-form + もいいですか。|Meminta izin dengan sopan.
+D|A|こんにちは。今日はいい天気ですね。|Konnichiwa. Kyō wa ii tenki desu ne.|Halo. Cuacanya bagus hari ini, ya.
+D|B|こんにちは。本当に気持ちがいいですね。|Konnichiwa. Hontō ni kimochi ga ii desu ne.|Halo. Benar, terasa menyenangkan.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#008|Memesan di restoran
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～ませんか|Vます-stem + ませんか。|Mengajak seseorang melakukan sesuatu.
+D|A|はじめまして。ルクマンです。インドネシアから来ました。|Hajimemashite. Rukuman desu. Indoneshia kara kimashita.|Salam kenal. Saya Lukman. Saya berasal dari Indonesia.
+D|B|はじめまして。田中です。よろしくお願いします。|Hajimemashite. Tanaka desu. Yoroshiku onegaishimasu.|Salam kenal. Saya Tanaka. Senang berkenalan dengan Anda.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#009|Berbelanja
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～は～です|A は B です。|Dipakai untuk menyatakan identitas atau informasi dasar.
+D|A|お名前を聞いてもいいですか。|Onamae o kiite mo ii desu ka.|Boleh saya tahu nama Anda?
+D|B|はい、アリです。あなたは？|Hai, Ari desu. Anata wa?|Ya, saya Ari. Kalau Anda?
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#010|Harga dan pembayaran
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～が好きです|N が好きです。|Dipakai untuk menyatakan kesukaan.
+D|A|どこに住んでいますか。|Doko ni sunde imasu ka.|Anda tinggal di mana?
+D|B|ジャカルタの近くに住んでいます。|Jakaruta no chikaku ni sunde imasu.|Saya tinggal dekat Jakarta.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#011|Waktu dan jadwal
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～てもいいですか|Vて-form + もいいですか。|Meminta izin dengan sopan.
+D|A|ご家族は何人ですか。|Gokazoku wa nan-nin desu ka.|Keluarga Anda berapa orang?
+D|B|四人です。両親と弟がいます。|Yonin desu. Ryōshin to otōto ga imasu.|Empat orang. Ada orang tua dan adik laki-laki.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#012|Rutinitas harian
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～ませんか|Vます-stem + ませんか。|Mengajak seseorang melakukan sesuatu.
+D|A|休みの日は何をしますか。|Yasumi no hi wa nani o shimasu ka.|Apa yang Anda lakukan saat libur?
+D|B|日本語を勉強したり、映画を見たりします。|Nihongo o benkyō shitari, eiga o mitari shimasu.|Saya belajar bahasa Jepang, menonton film, dan sebagainya.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#013|Cuaca dan musim
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～は～です|A は B です。|Dipakai untuk menyatakan identitas atau informasi dasar.
+D|A|こんにちは。今日はいい天気ですね。|Konnichiwa. Kyō wa ii tenki desu ne.|Halo. Cuacanya bagus hari ini, ya.
+D|B|こんにちは。本当に気持ちがいいですね。|Konnichiwa. Hontō ni kimochi ga ii desu ne.|Halo. Benar, terasa menyenangkan.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#014|Menanyakan arah
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～が好きです|N が好きです。|Dipakai untuk menyatakan kesukaan.
+D|A|はじめまして。ルクマンです。インドネシアから来ました。|Hajimemashite. Rukuman desu. Indoneshia kara kimashita.|Salam kenal. Saya Lukman. Saya berasal dari Indonesia.
+D|B|はじめまして。田中です。よろしくお願いします。|Hajimemashite. Tanaka desu. Yoroshiku onegaishimasu.|Salam kenal. Saya Tanaka. Senang berkenalan dengan Anda.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#015|Transportasi umum
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～てもいいですか|Vて-form + もいいですか。|Meminta izin dengan sopan.
+D|A|お名前を聞いてもいいですか。|Onamae o kiite mo ii desu ka.|Boleh saya tahu nama Anda?
+D|B|はい、アリです。あなたは？|Hai, Ari desu. Anata wa?|Ya, saya Ari. Kalau Anda?
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#016|Sekolah dan belajar
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～ませんか|Vます-stem + ませんか。|Mengajak seseorang melakukan sesuatu.
+D|A|どこに住んでいますか。|Doko ni sunde imasu ka.|Anda tinggal di mana?
+D|B|ジャカルタの近くに住んでいます。|Jakaruta no chikaku ni sunde imasu.|Saya tinggal dekat Jakarta.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#017|Pekerjaan dan profesi
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～は～です|A は B です。|Dipakai untuk menyatakan identitas atau informasi dasar.
+D|A|ご家族は何人ですか。|Gokazoku wa nan-nin desu ka.|Keluarga Anda berapa orang?
+D|B|四人です。両親と弟がいます。|Yonin desu. Ryōshin to otōto ga imasu.|Empat orang. Ada orang tua dan adik laki-laki.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#018|Meminta bantuan
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～が好きです|N が好きです。|Dipakai untuk menyatakan kesukaan.
+D|A|休みの日は何をしますか。|Yasumi no hi wa nani o shimasu ka.|Apa yang Anda lakukan saat libur?
+D|B|日本語を勉強したり、映画を見たりします。|Nihongo o benkyō shitari, eiga o mitari shimasu.|Saya belajar bahasa Jepang, menonton film, dan sebagainya.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#019|Meminta izin
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～てもいいですか|Vて-form + もいいですか。|Meminta izin dengan sopan.
+D|A|こんにちは。今日はいい天気ですね。|Konnichiwa. Kyō wa ii tenki desu ne.|Halo. Cuacanya bagus hari ini, ya.
+D|B|こんにちは。本当に気持ちがいいですね。|Konnichiwa. Hontō ni kimochi ga ii desu ne.|Halo. Benar, terasa menyenangkan.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+#020|Percakapan bebas pemula
+G|Mampu membuka percakapan, memahami pertanyaan sederhana, dan menjawab dengan kalimat pendek.
+V|挨拶|あいさつ|aisatsu|salam
+V|名前|なまえ|namae|nama
+V|今日|きょう|kyō|hari ini
+V|元気|げんき|genki|sehat/baik
+P|～ませんか|Vます-stem + ませんか。|Mengajak seseorang melakukan sesuatu.
+D|A|はじめまして。ルクマンです。インドネシアから来ました。|Hajimemashite. Rukuman desu. Indoneshia kara kimashita.|Salam kenal. Saya Lukman. Saya berasal dari Indonesia.
+D|B|はじめまして。田中です。よろしくお願いします。|Hajimemashite. Tanaka desu. Yoroshiku onegaishimasu.|Salam kenal. Saya Tanaka. Senang berkenalan dengan Anda.
+R|Berperan sebagai diri sendiri. Lawan bicara adalah orang Jepang yang baru Anda temui. Mulai dengan salam, lalu ajukan minimal dua pertanyaan.
+
+@N4|Dasar Lanjutan|Pengalaman, rencana, alasan, saran, dan percakapan sehari-hari.
+E|そうですね。|Sō desu ne.|Begitu ya / benar juga.
+E|もう一度お願いします。|Mō ichido onegaishimasu.|Tolong sekali lagi.
+E|どういう意味ですか。|Dō iu imi desu ka.|Apa maksudnya?
+E|少し考えさせてください。|Sukoshi kangaesasete kudasai.|Izinkan saya berpikir sebentar.
+
+#021|Menceritakan hari kemarin
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たことがあります|Vた-form + ことがあります。|Menceritakan pengalaman yang pernah dialami.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#022|Rencana akhir pekan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～つもりです|V辞書形 + つもりです。|Menyatakan niat atau rencana.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#023|Pengalaman perjalanan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～ので|Klausa + ので。|Menjelaskan alasan dengan nada lebih lembut.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#024|Membuat janji
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たほうがいい|Vた-form + ほうがいい。|Memberikan saran.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#025|Mengundang teman
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たことがあります|Vた-form + ことがあります。|Menceritakan pengalaman yang pernah dialami.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#026|Menerima dan menolak ajakan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～つもりです|V辞書形 + つもりです。|Menyatakan niat atau rencana.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#027|Menyampaikan keinginan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～ので|Klausa + ので。|Menjelaskan alasan dengan nada lebih lembut.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#028|Membandingkan pilihan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たほうがいい|Vた-form + ほうがいい。|Memberikan saran.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#029|Memberi saran
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たことがあります|Vた-form + ことがあります。|Menceritakan pengalaman yang pernah dialami.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#030|Menjelaskan alasan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～つもりです|V辞書形 + つもりです。|Menyatakan niat atau rencana.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#031|Menceritakan pengalaman kerja
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～ので|Klausa + ので。|Menjelaskan alasan dengan nada lebih lembut.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#032|Kesehatan dan konsultasi
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たほうがいい|Vた-form + ほうがいい。|Memberikan saran.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#033|Belanja dan komplain
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たことがあります|Vた-form + ことがあります。|Menceritakan pengalaman yang pernah dialami.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#034|Pindah rumah
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～つもりです|V辞書形 + つもりです。|Menyatakan niat atau rencana.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#035|Telepon dan pesan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～ので|Klausa + ので。|Menjelaskan alasan dengan nada lebih lembut.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#036|Meminta maaf
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たほうがいい|Vた-form + ほうがいい。|Memberikan saran.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#037|Membicarakan perasaan
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たことがあります|Vた-form + ことがあります。|Menceritakan pengalaman yang pernah dialami.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#038|Menceritakan kejadian tak terduga
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～つもりです|V辞書形 + つもりです。|Menyatakan niat atau rencana.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#039|Menjelaskan cara melakukan sesuatu
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～ので|Klausa + ので。|Menjelaskan alasan dengan nada lebih lembut.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+#040|Percakapan panjang sehari-hari
+G|Mampu menjelaskan pengalaman, rencana, alasan, serta merespons ajakan atau saran.
+V|予定|よてい|yotei|rencana
+V|経験|けいけん|keiken|pengalaman
+V|理由|りゆう|riyū|alasan
+V|相談|そうだん|sōdan|konsultasi
+P|～たほうがいい|Vた-form + ほうがいい。|Memberikan saran.
+D|A|週末は何をする予定ですか。|Shūmatsu wa nani o suru yotei desu ka.|Apa rencanamu akhir pekan?
+D|B|友達と出かけるつもりです。|Tomodachi to dekakeru tsumori desu.|Saya berniat pergi bersama teman.
+R|Ceritakan pengalaman atau rencana yang berkaitan dengan tema unit. Tambahkan alasan dan satu pertanyaan balik.
+
+@N3|Menengah|Percakapan natural, opini, masalah, hubungan sosial, dan diskusi.
+E|そうですね。|Sō desu ne.|Begitu ya / benar juga.
+E|もう一度お願いします。|Mō ichido onegaishimasu.|Tolong sekali lagi.
+E|どういう意味ですか。|Dō iu imi desu ka.|Apa maksudnya?
+E|少し考えさせてください。|Sukoshi kangaesasete kudasai.|Izinkan saya berpikir sebentar.
+
+#041|Membuka dan menjaga percakapan
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～わけではありません|普通形 + わけではありません。|Menjelaskan bahwa sesuatu tidak sepenuhnya demikian.
+D|A|最近どう？|Saikin dō?|Akhir-akhir ini bagaimana?
+D|B|元気だよ。そっちは？|Genki da yo. Socchi wa?|Aku baik. Kamu?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#042|Bertukar pengalaman
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～ようにしています|V辞書形/ない形 + ようにしています。|Menyatakan kebiasaan atau usaha yang dijaga.
+D|A|それについて、どう思いますか。|Sore ni tsuite, dō omoimasu ka.|Bagaimana pendapat Anda tentang itu?
+D|B|私は、もう少し話し合う必要があると思います。|Watashi wa, mō sukoshi hanashiau hitsuyō ga aru to omoimasu.|Menurut saya, kita perlu membicarakannya sedikit lagi.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#043|Menyampaikan pendapat
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～に違いありません|普通形 + に違いありません。|Menyampaikan dugaan kuat.
+D|A|すみません、少し相談してもよろしいでしょうか。|Sumimasen, sukoshi sōdan shite mo yoroshii deshō ka.|Maaf, bolehkah saya berkonsultasi sebentar?
+D|B|もちろんです。どうしましたか。|Mochiron desu. Dō shimashita ka.|Tentu. Ada apa?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#044|Setuju dan tidak setuju
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～一方で|普通形 + 一方で。|Membandingkan dua sisi.
+D|A|なるほど。そういう考え方もありますね。|Naruhodo. Sō iu kangaekata mo arimasu ne.|Oh begitu. Ada juga cara pandang seperti itu, ya.
+D|B|はい。ただ、別の見方もできると思います。|Hai. Tada, betsu no mikata mo dekiru to omoimasu.|Ya. Namun, saya rasa ada sudut pandang lain juga.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#045|Membahas masalah kerja
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～わけではありません|普通形 + わけではありません。|Menjelaskan bahwa sesuatu tidak sepenuhnya demikian.
+D|A|最近どう？|Saikin dō?|Akhir-akhir ini bagaimana?
+D|B|元気だよ。そっちは？|Genki da yo. Socchi wa?|Aku baik. Kamu?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#046|Melaporkan perkembangan
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～ようにしています|V辞書形/ない形 + ようにしています。|Menyatakan kebiasaan atau usaha yang dijaga.
+D|A|それについて、どう思いますか。|Sore ni tsuite, dō omoimasu ka.|Bagaimana pendapat Anda tentang itu?
+D|B|私は、もう少し話し合う必要があると思います。|Watashi wa, mō sukoshi hanashiau hitsuyō ga aru to omoimasu.|Menurut saya, kita perlu membicarakannya sedikit lagi.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#047|Meminta dan memberi solusi
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～に違いありません|普通形 + に違いありません。|Menyampaikan dugaan kuat.
+D|A|すみません、少し相談してもよろしいでしょうか。|Sumimasen, sukoshi sōdan shite mo yoroshii deshō ka.|Maaf, bolehkah saya berkonsultasi sebentar?
+D|B|もちろんです。どうしましたか。|Mochiron desu. Dō shimashita ka.|Tentu. Ada apa?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#048|Membicarakan hubungan sosial
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～一方で|普通形 + 一方で。|Membandingkan dua sisi.
+D|A|なるほど。そういう考え方もありますね。|Naruhodo. Sō iu kangaekata mo arimasu ne.|Oh begitu. Ada juga cara pandang seperti itu, ya.
+D|B|はい。ただ、別の見方もできると思います。|Hai. Tada, betsu no mikata mo dekiru to omoimasu.|Ya. Namun, saya rasa ada sudut pandang lain juga.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#049|Menyampaikan kekhawatiran
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～わけではありません|普通形 + わけではありません。|Menjelaskan bahwa sesuatu tidak sepenuhnya demikian.
+D|A|最近どう？|Saikin dō?|Akhir-akhir ini bagaimana?
+D|B|元気だよ。そっちは？|Genki da yo. Socchi wa?|Aku baik. Kamu?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#050|Menjelaskan situasi rumit
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～ようにしています|V辞書形/ない形 + ようにしています。|Menyatakan kebiasaan atau usaha yang dijaga.
+D|A|それについて、どう思いますか。|Sore ni tsuite, dō omoimasu ka.|Bagaimana pendapat Anda tentang itu?
+D|B|私は、もう少し話し合う必要があると思います。|Watashi wa, mō sukoshi hanashiau hitsuyō ga aru to omoimasu.|Menurut saya, kita perlu membicarakannya sedikit lagi.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#051|Mengubah topik dengan halus
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～に違いありません|普通形 + に違いありません。|Menyampaikan dugaan kuat.
+D|A|すみません、少し相談してもよろしいでしょうか。|Sumimasen, sukoshi sōdan shite mo yoroshii deshō ka.|Maaf, bolehkah saya berkonsultasi sebentar?
+D|B|もちろんです。どうしましたか。|Mochiron desu. Dō shimashita ka.|Tentu. Ada apa?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#052|Menggali informasi lebih dalam
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～一方で|普通形 + 一方で。|Membandingkan dua sisi.
+D|A|なるほど。そういう考え方もありますね。|Naruhodo. Sō iu kangaekata mo arimasu ne.|Oh begitu. Ada juga cara pandang seperti itu, ya.
+D|B|はい。ただ、別の見方もできると思います。|Hai. Tada, betsu no mikata mo dekiru to omoimasu.|Ya. Namun, saya rasa ada sudut pandang lain juga.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#053|Menyampaikan kritik secara halus
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～わけではありません|普通形 + わけではありません。|Menjelaskan bahwa sesuatu tidak sepenuhnya demikian.
+D|A|最近どう？|Saikin dō?|Akhir-akhir ini bagaimana?
+D|B|元気だよ。そっちは？|Genki da yo. Socchi wa?|Aku baik. Kamu?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#054|Membahas budaya
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～ようにしています|V辞書形/ない形 + ようにしています。|Menyatakan kebiasaan atau usaha yang dijaga.
+D|A|それについて、どう思いますか。|Sore ni tsuite, dō omoimasu ka.|Bagaimana pendapat Anda tentang itu?
+D|B|私は、もう少し話し合う必要があると思います。|Watashi wa, mō sukoshi hanashiau hitsuyō ga aru to omoimasu.|Menurut saya, kita perlu membicarakannya sedikit lagi.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#055|Menyampaikan keputusan
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～に違いありません|普通形 + に違いありません。|Menyampaikan dugaan kuat.
+D|A|すみません、少し相談してもよろしいでしょうか。|Sumimasen, sukoshi sōdan shite mo yoroshii deshō ka.|Maaf, bolehkah saya berkonsultasi sebentar?
+D|B|もちろんです。どうしましたか。|Mochiron desu. Dō shimashita ka.|Tentu. Ada apa?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#056|Menceritakan kejadian berurutan
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～一方で|普通形 + 一方で。|Membandingkan dua sisi.
+D|A|なるほど。そういう考え方もありますね。|Naruhodo. Sō iu kangaekata mo arimasu ne.|Oh begitu. Ada juga cara pandang seperti itu, ya.
+D|B|はい。ただ、別の見方もできると思います。|Hai. Tada, betsu no mikata mo dekiru to omoimasu.|Ya. Namun, saya rasa ada sudut pandang lain juga.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#057|Menyampaikan dugaan
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～わけではありません|普通形 + わけではありません。|Menjelaskan bahwa sesuatu tidak sepenuhnya demikian.
+D|A|最近どう？|Saikin dō?|Akhir-akhir ini bagaimana?
+D|B|元気だよ。そっちは？|Genki da yo. Socchi wa?|Aku baik. Kamu?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#058|Menanggapi kabar mengejutkan
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～ようにしています|V辞書形/ない形 + ようにしています。|Menyatakan kebiasaan atau usaha yang dijaga.
+D|A|それについて、どう思いますか。|Sore ni tsuite, dō omoimasu ka.|Bagaimana pendapat Anda tentang itu?
+D|B|私は、もう少し話し合う必要があると思います。|Watashi wa, mō sukoshi hanashiau hitsuyō ga aru to omoimasu.|Menurut saya, kita perlu membicarakannya sedikit lagi.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#059|Percakapan spontan dengan teman
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～に違いありません|普通形 + に違いありません。|Menyampaikan dugaan kuat.
+D|A|すみません、少し相談してもよろしいでしょうか。|Sumimasen, sukoshi sōdan shite mo yoroshii deshō ka.|Maaf, bolehkah saya berkonsultasi sebentar?
+D|B|もちろんです。どうしましたか。|Mochiron desu. Dō shimashita ka.|Tentu. Ada apa?
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+#060|Diskusi kelompok
+G|Mampu menjaga alur percakapan, menjelaskan sudut pandang, dan menanggapi lawan bicara.
+V|意見|いけん|iken|pendapat
+V|状況|じょうきょう|jōkyō|situasi
+V|解決|かいけつ|kaiketsu|penyelesaian
+V|関係|かんけい|kankei|hubungan
+P|～一方で|普通形 + 一方で。|Membandingkan dua sisi.
+D|A|なるほど。そういう考え方もありますね。|Naruhodo. Sō iu kangaekata mo arimasu ne.|Oh begitu. Ada juga cara pandang seperti itu, ya.
+D|B|はい。ただ、別の見方もできると思います。|Hai. Tada, betsu no mikata mo dekiru to omoimasu.|Ya. Namun, saya rasa ada sudut pandang lain juga.
+R|Lakukan percakapan selama dua menit. Tanggapi jawaban lawan bicara dan ajukan pertanyaan lanjutan.
+
+@N2|Menengah Atas|Komunikasi profesional, rapat, negosiasi, dan keigo.
+E|承知いたしました。|Shōchi itashimashita.|Baik, saya mengerti (sangat sopan).
+E|確認のうえ、ご連絡いたします。|Kakunin no ue, go-renraku itashimasu.|Saya akan mengonfirmasi lalu menghubungi Anda.
+E|恐れ入りますが、|Osoreirimasu ga,|Mohon maaf, tetapi...
+E|差し支えなければ、|Sashitsukae nakereba,|Jika tidak keberatan...
+
+#061|Perkenalan profesional
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～にあたり|N/V辞書形 + にあたり。|Ungkapan formal untuk kesempatan atau tahap penting.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#062|Salam dan etika kantor
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～かねます|Vます-stem + かねます。|Menolak atau menyatakan sulit melakukan sesuatu secara formal.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#063|Melapor dan berkonsultasi
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～次第|Vます-stem + 次第。|Menyatakan segera setelah sesuatu selesai.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#064|Memulai rapat
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～を踏まえて|N + を踏まえて。|Mengambil keputusan berdasarkan fakta atau pertimbangan.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#065|Menyampaikan progres
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～にあたり|N/V辞書形 + にあたり。|Ungkapan formal untuk kesempatan atau tahap penting.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#066|Menjelaskan masalah dan dampak
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～かねます|Vます-stem + かねます。|Menolak atau menyatakan sulit melakukan sesuatu secara formal.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#067|Mengusulkan perbaikan
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～次第|Vます-stem + 次第。|Menyatakan segera setelah sesuatu selesai.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#068|Menyelaraskan pendapat
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～を踏まえて|N + を踏まえて。|Mengambil keputusan berdasarkan fakta atau pertimbangan.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#069|Negosiasi jadwal
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～にあたり|N/V辞書形 + にあたり。|Ungkapan formal untuk kesempatan atau tahap penting.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#070|Menangani keluhan pelanggan
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～かねます|Vます-stem + かねます。|Menolak atau menyatakan sulit melakukan sesuatu secara formal.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#071|Meminta maaf secara profesional
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～次第|Vます-stem + 次第。|Menyatakan segera setelah sesuatu selesai.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#072|Menolak permintaan dengan sopan
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～を踏まえて|N + を踏まえて。|Mengambil keputusan berdasarkan fakta atau pertimbangan.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#073|Menyampaikan instruksi
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～にあたり|N/V辞書形 + にあたり。|Ungkapan formal untuk kesempatan atau tahap penting.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#074|Telepon bisnis
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～かねます|Vます-stem + かねます。|Menolak atau menyatakan sulit melakukan sesuatu secara formal.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#075|Presentasi singkat
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～次第|Vます-stem + 次第。|Menyatakan segera setelah sesuatu selesai.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#076|Wawancara kerja
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～を踏まえて|N + を踏まえて。|Mengambil keputusan berdasarkan fakta atau pertimbangan.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#077|Evaluasi kinerja
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～にあたり|N/V辞書形 + にあたり。|Ungkapan formal untuk kesempatan atau tahap penting.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#078|Mengelola konflik
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～かねます|Vます-stem + かねます。|Menolak atau menyatakan sulit melakukan sesuatu secara formal.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#079|Menyimpulkan rapat
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～次第|Vます-stem + 次第。|Menyatakan segera setelah sesuatu selesai.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+#080|Simulasi komunikasi bisnis
+G|Mampu berkomunikasi secara profesional dengan pilihan ungkapan yang sopan dan tepat.
+V|報告|ほうこく|hōkoku|laporan
+V|確認|かくにん|kakunin|konfirmasi
+V|対応|たいおう|taiō|penanganan
+V|改善|かいぜん|kaizen|perbaikan
+P|～を踏まえて|N + を踏まえて。|Mengambil keputusan berdasarkan fakta atau pertimbangan.
+D|A|進捗についてご報告いたします。|Shinchoku ni tsuite go-hōkoku itashimasu.|Saya akan melaporkan perkembangan.
+D|B|ありがとうございます。課題と今後の対応も説明してください。|Arigatō gozaimasu. Kadai to kongo no taiō mo setsumei shite kudasai.|Terima kasih. Tolong jelaskan juga kendala dan tindak lanjutnya.
+R|Simulasikan situasi kerja. Gunakan ungkapan sopan, sampaikan informasi secara runtut, dan pastikan lawan bicara memahami.
+
+@N1|Mahir|Nuansa, argumentasi, humor, isu sosial, dan diskusi kompleks.
+E|承知いたしました。|Shōchi itashimashita.|Baik, saya mengerti (sangat sopan).
+E|確認のうえ、ご連絡いたします。|Kakunin no ue, go-renraku itashimasu.|Saya akan mengonfirmasi lalu menghubungi Anda.
+E|恐れ入りますが、|Osoreirimasu ga,|Mohon maaf, tetapi...
+E|差し支えなければ、|Sashitsukae nakereba,|Jika tidak keberatan...
+
+#081|Membahas isu sosial
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を余儀なくされる|N + を余儀なくされる。|Menyatakan terpaksa melakukan sesuatu karena keadaan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#082|Menyusun argumentasi
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～にほかならない|N + にほかならない。|Menegaskan bahwa sesuatu tidak lain adalah...
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#083|Menyanggah dengan santun
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を禁じ得ない|N + を禁じ得ない。|Menyatakan emosi yang sulit ditahan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#084|Membahas perubahan masyarakat
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～といったところだ|普通形 + といったところだ。|Memberi penilaian atau perkiraan dengan nuansa terbatas.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#085|Membicarakan nilai dan prinsip
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を余儀なくされる|N + を余儀なくされる。|Menyatakan terpaksa melakukan sesuatu karena keadaan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#086|Menafsirkan maksud tersirat
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～にほかならない|N + にほかならない。|Menegaskan bahwa sesuatu tidak lain adalah...
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#087|Nuansa dan ambiguitas
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を禁じ得ない|N + を禁じ得ない。|Menyatakan emosi yang sulit ditahan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#088|Humor dan ironi
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～といったところだ|普通形 + といったところだ。|Memberi penilaian atau perkiraan dengan nuansa terbatas.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#089|Ungkapan idiomatik dalam dialog
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を余儀なくされる|N + を余儀なくされる。|Menyatakan terpaksa melakukan sesuatu karena keadaan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#090|Membahas budaya lintas negara
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～にほかならない|N + にほかならない。|Menegaskan bahwa sesuatu tidak lain adalah...
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#091|Menyampaikan kritik kompleks
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を禁じ得ない|N + を禁じ得ない。|Menyatakan emosi yang sulit ditahan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#092|Meyakinkan lawan bicara
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～といったところだ|普通形 + といったところだ。|Memberi penilaian atau perkiraan dengan nuansa terbatas.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#093|Diskusi akademis
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を余儀なくされる|N + を余儀なくされる。|Menyatakan terpaksa melakukan sesuatu karena keadaan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#094|Membahas ekonomi dan pekerjaan
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～にほかならない|N + にほかならない。|Menegaskan bahwa sesuatu tidak lain adalah...
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#095|Membicarakan teknologi dan etika
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を禁じ得ない|N + を禁じ得ない。|Menyatakan emosi yang sulit ditahan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#096|Menyampaikan pandangan berbeda
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～といったところだ|普通形 + といったところだ。|Memberi penilaian atau perkiraan dengan nuansa terbatas.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#097|Diskusi tentang lingkungan
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を余儀なくされる|N + を余儀なくされる。|Menyatakan terpaksa melakukan sesuatu karena keadaan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#098|Menyampaikan pidato persuasif
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～にほかならない|N + にほかならない。|Menegaskan bahwa sesuatu tidak lain adalah...
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#099|Debat terstruktur
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～を禁じ得ない|N + を禁じ得ない。|Menyatakan emosi yang sulit ditahan.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.
+
+#100|Percakapan mahir tanpa naskah
+G|Mampu menyampaikan gagasan kompleks, menangkap maksud tersirat, dan membangun argumentasi.
+V|観点|かんてん|kanten|sudut pandang
+V|傾向|けいこう|keikō|kecenderungan
+V|根拠|こんきょ|konkyo|dasar/bukti
+V|妥当|だとう|datō|wajar/tepat
+P|～といったところだ|普通形 + といったところだ。|Memberi penilaian atau perkiraan dengan nuansa terbatas.
+D|A|この問題をどのように捉えていますか。|Kono mondai o dono yō ni toraete imasu ka.|Bagaimana Anda memandang masalah ini?
+D|B|一つの側面だけで判断せず、背景も含めて考えるべきだと思います。|Hitotsu no sokumen dake de handan sezu, haikei mo fukumete kangaeru beki da to omoimasu.|Menurut saya, kita tidak boleh menilainya dari satu sisi saja, tetapi perlu mempertimbangkan latar belakangnya.
+R|Diskusikan tema secara kritis. Sampaikan pendapat, alasan, contoh, lalu tanggapi pandangan yang berbeda dengan santun.

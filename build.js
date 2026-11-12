@@ -143,10 +143,12 @@ function kvgParts(svg, total) {
   return parts.length > 1 ? parts : [];
 }
 
+// kanji.txt + kanji-n*.txt (tambahan per level), digabung berurutan
+const kanjiSrc = () => fs.readdirSync(path.join(ROOT, 'src')).filter(f => /^kanji(-n\d\w*)?\.txt$/.test(f)).sort((a, b) => a === 'kanji.txt' ? -1 : b === 'kanji.txt' ? 1 : a.localeCompare(b)).map(f => fs.readFileSync(path.join(ROOT, 'src', f), 'utf8')).join('\n');
 async function buildKanji() {
   const cats = [], klv = [], list = [], seenK = new Set();
   let cat = 'Lain-lain';
-  fs.readFileSync(path.join(ROOT, 'src', 'kanji.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+  kanjiSrc().split(/\r?\n/).forEach((line, ln) => {
     line = line.trim();
     if (!line || line.startsWith('//')) return;
     if (line[0] === '@') { cat = line.slice(1).trim(); return; }
@@ -231,6 +233,23 @@ function buildBun() {
   return out;
 }
 
+// ===== KANA-KATA (src/kana-kata.txt) → {hira:[[kata, romaji, arti],...], kata:[...]} =====
+function buildKanaKata() {
+  const out = { hira: [], kata: [] }, seen = new Set(); let cur = null;
+  fs.readFileSync(path.join(ROOT, 'src', 'kana-kata.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    if (line[0] === '@') { cur = line.slice(1).trim() === 'Katakana' ? 'kata' : 'hira'; return; }
+    const p = line.split('|').map(x => x.trim());
+    const re = cur === 'kata' ? /^[ァ-ヺーぁ-ゖ]+$/ : /^[ぁ-ゖー]+$/;
+    if (!cur || p.length !== 3 || p.some(x => !x)) { bad.push(`kana-kata.txt:${ln + 1} format salah: ${line}`); return; }
+    if (!re.test(p[0])) { bad.push(`kana-kata.txt:${ln + 1} bukan ${cur === 'kata' ? 'katakana' : 'hiragana'}: ${p[0]}`); return; }
+    if (seen.has(p[0])) { bad.push(`kana-kata.txt:${ln + 1} kata ganda: ${p[0]}`); return; }
+    seen.add(p[0]); out[cur].push(p);
+  });
+  return out;
+}
+
 // ===== Goresan kana (untuk kuis menulis hiragana/katakana/kotoba) =====
 async function buildKana() {
   const chars = [];
@@ -300,6 +319,48 @@ function buildKalimatDasar() {
   });
   return out;
 }
+
+// ===== KAIWA UNIT (src/kaiwa-unit.txt) → {lv:[{l,n,t,e:[[jp,rom,arti]]}], u:[{no,t,l,g,v,p,d,r}]} =====
+function buildKaiwaUnit() {
+  const lv = [], u = []; let L = null, cur = null;
+  fs.readFileSync(path.join(ROOT, 'src', 'kaiwa-unit.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    const p = line.split('|').map(x => x.trim());
+    if (line[0] === '@') { L = { l: p[0].slice(1), n: p[1], t: p[2], e: [] }; lv.push(L); cur = null; return; }
+    if (line[0] === '#') { cur = { no: p[0].slice(1), t: p[1], l: L && L.l, g: '', v: [], p: null, d: [], r: '' }; u.push(cur); return; }
+    const k = p[0], a = p.slice(1);
+    if (k === 'E' && L && !cur) { L.e.push(a); return; }
+    if (!cur) { bad.push('kaiwa-unit.txt:' + (ln + 1) + ' di luar unit: ' + line); return; }
+    if (k === 'G') cur.g = a.join('|');
+    else if (k === 'V' && a.length === 4) cur.v.push(a);
+    else if (k === 'P' && a.length === 3) cur.p = a;
+    else if (k === 'D' && a.length === 4) cur.d.push(a);
+    else if (k === 'R') cur.r = a.join('|');
+    else bad.push('kaiwa-unit.txt:' + (ln + 1) + ' format salah: ' + line);
+  });
+  u.forEach(x => { if (x.d.length < 2 || x.v.length < 1 || !x.p) bad.push('kaiwa-unit: unit ' + x.no + ' tidak lengkap'); });
+  return { lv, u };
+}
+// ===== KANJI FAMILY (src/kanji-family.txt) → [{j,jt,jd,fam:[{t,d,i,k:[[kanji,arti,on,kun,asal]],w:[[kata,romaji,arti]],s:[[jp,rom,arti]],n}]}] =====
+function buildKanjiFamily() {
+  const out = []; let J = null, F = null;
+  fs.readFileSync(path.join(ROOT, 'src', 'kanji-family.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
+    line = line.trim();
+    if (!line || line.startsWith('//')) return;
+    const p = line.split('|').map(x => x.trim());
+    if (line[0] === '@') { J = { j: p[0].slice(1), t: p[1], d: p[2] || '', fam: [] }; out.push(J); F = null; return; }
+    if (line[0] === '#') { if (!J) { bad.push('kanji-family.txt:' + (ln + 1) + ' di luar jilid'); return; } F = { t: p[0].slice(1), d: p[1] || '', i: p[2] || '', k: [], w: [], s: [], n: '' }; J.fam.push(F); return; }
+    if (!F) { bad.push('kanji-family.txt:' + (ln + 1) + ' di luar keluarga: ' + line); return; }
+    const k = p[0], a = p.slice(1);
+    if (k === 'K' && a.length === 5) F.k.push(a);
+    else if (k === 'W' && a.length === 3) F.w.push(a);
+    else if (k === 'S' && a.length === 3) F.s.push(a);
+    else if (k === 'N') F.n = a.join('|');
+    else bad.push('kanji-family.txt:' + (ln + 1) + ' format salah: ' + line);
+  });
+  return out;
+}
 // ikon aplikasi dimasukkan sebagai data URI supaya index.html tetap bisa dipakai sebagai satu file
 const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 'assets', f)).toString('base64');
 
@@ -312,10 +373,12 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   const BT = buildBunpoTopik();
   const KD = buildKalimatDasar();
   const BN = buildBun();
+  const KK = buildKanaKata();
+  const KU = buildKaiwaUnit(), KF = buildKanjiFamily();
   const data = JSON.stringify({ t: types, l: levels, d: rows.join('\n') });
   const kdata = JSON.stringify({ c: K.cats, l: K.klv, d: K.list.map(x => [x.k, x.kun.join(','), x.on.join(','), x.a, x.c, x.l, x.s, x.n, x.p]) });
   let tpl = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
-  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*KPLUS*/null': JSON.stringify(KP), '/*BTOPIK*/null': JSON.stringify(BT), '/*KDASAR*/null': JSON.stringify(KD),
+  const inject = { '/*VOCAB*/null': data, '/*KANJI*/null': kdata, '/*KAIWA*/null': JSON.stringify(KW), '/*KANA*/null': JSON.stringify(KN.out), '/*BUNPO*/null': JSON.stringify(BP), '/*BUN*/null': JSON.stringify(BN), '/*KANAKATA*/null': JSON.stringify(KK), '/*KAIWAUNIT*/null': JSON.stringify(KU), '/*KFAMILY*/null': JSON.stringify(KF), '/*KPLUS*/null': JSON.stringify(KP), '/*BTOPIK*/null': JSON.stringify(BT), '/*KDASAR*/null': JSON.stringify(KD),
     '__FAVICON__': dataUri('favicon-64.png'), '__LOGO__': dataUri('apple-touch-icon.png') };
   for (const [m, v] of Object.entries(inject)) {
     if (!tpl.includes(m)) throw new Error(`Penanda ${m} tidak ditemukan di template`);
@@ -330,6 +393,7 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   console.log(`Kotoba plus: ${KP.map(m => `${m.t}=${m.cats.reduce((s, c) => s + c.rows.length, 0)}`).join(', ')}`);
   console.log(`Kalimat dasar: ${KD.length} kalimat`);
   console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')}`);
+  console.log(`Kana-kata: hiragana=${KK.hira.length}, katakana=${KK.kata.length}`);
   console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
   console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
   console.log(`Kana dengan data goresan: ${Object.keys(KN.out).length}` + (KN.fetched ? ` (${KN.fetched} baru diunduh)` : '') + (KN.missing.length ? ` · tidak tersedia: ${KN.missing.join('')}` : ''));

@@ -1,0 +1,338 @@
+// Kanji tingkat N1 (perkiraan; JLPT tidak menerbitkan daftar resmi). Format sama dengan kanji.txt.
+@Masyarakat & Negara
+憲|-|ケン|konstitusi|N1
+閣|-|カク|kabinet / menara|N1
+弊|-|ヘイ|buruk / rendah hati|N1
+圏|-|ケン|wilayah|N1
+併|あわ.せる|ヘイ|menggabungkan|N1
+庁|-|チョウ|kantor pemerintah|N1
+署|-|ショ|kantor / stasiun|N1
+承|うけたまわ.る|ショウ|menerima / setuju|N1
+擁|-|ヨウ|memeluk / mendukung|N1
+抗|-|コウ|melawan|N1
+抵|-|テイ|menolak|N1
+是|ぜ|ゼ|benar|N1
+弾|ひ.く,たま|ダン|peluru / memetik|N1
+圧|お.す|アツ|menekan|N1
+陣|-|ジン|barisan / posisi|N1
+兵|-|ヘイ,ヒョウ|prajurit|N1
+隊|-|タイ|pasukan|N1
+侵|おか.す|シン|menyerbu|N1
+盟|-|メイ|persekutuan|N1
+奴|やつ|ド|budak|N1
+隷|-|レイ|hamba|N1
+朕|-|チン|kami (kaisar)|N1
+皇|-|コウ,オウ|kaisar|N1
+帝|みかど|テイ|kaisar|N1
+妃|-|ヒ|permaisuri|N1
+諮|はか.る|シ|berkonsultasi|N1
+@Kerja & Pabrik
+釈|-|シャク|menjelaskan|N1
+削|けず.る|サク|memangkas|N1
+漏|も.れる|ロウ|bocor|N1
+粋|いき|スイ|elegan / murni|N1
+需|-|ジュ|permintaan|N1
+訂|-|テイ|merevisi|N1
+概|おおむ.ね|ガイ|garis besar|N1
+把|-|ハ|menggenggam|N1
+握|にぎ.る|アク|menggenggam|N1
+措|-|ソ|menempatkan|N1
+稼|かせ.ぐ|カ|mencari nafkah|N1
+酬|むく.いる|シュウ|membalas|N1
+貢|みつ.ぐ|コウ|menyumbang|N1
+献|-|ケン,コン|mempersembahkan|N1
+奉|たてまつ.る|ホウ,ブ|mempersembahkan|N1
+雇|やと.う|コ|mempekerjakan|N1
+徴|-|チョウ|memungut / tanda|N1
+促|うなが.す|ソク|mendorong|N1
+紡|つむ.ぐ|ボウ|memintal|N1
+@Perasaan & Pikiran
+憂|うれ.える,う.い|ユウ|cemas|N1
+懸|か.ける,か.かる|ケン,ケ|menggantung / mempertaruhkan|N1
+慮|おもんぱか.る|リョ|mempertimbangkan|N1
+戒|いまし.める|カイ|memperingatkan|N1
+恥|は.じる,はじ|チ|malu|N1
+辱|はずかし.める|ジョク|menghina|N1
+憤|いきどお.る|フン|geram|N1
+憾|-|カン|penyesalan|N1
+嘆|なげ.く|タン|meratap|N1
+哀|あわ.れ|アイ|iba|N1
+慈|いつく.しむ|ジ|kasih sayang|N1
+慕|した.う|ボ|merindukan|N1
+慰|なぐさ.める|イ|menghibur|N1
+慢|-|マン|sombong|N1
+懐|なつ.かしい,ふところ|カイ|rindu / saku|N1
+怠|おこた.る,なま.ける|タイ|malas|N1
+惑|まど.う|ワク|bingung|N1
+悟|さと.る|ゴ|menyadari|N1
+悔|く.いる,くや.しい|カイ|menyesal|N1
+愚|おろ.か|グ|bodoh|N1
+憩|いこ.う|ケイ|beristirahat|N1
+忍|しの.ぶ|ニン|menahan|N1
+耐|た.える|タイ|bertahan|N1
+勇|いさ.ましい|ユウ|berani|N1
+敢|あ.えて|カン|berani|N1
+謙|-|ケン|rendah hati|N1
+虚|-|キョ,コ|kosong|N1
+偽|いつわ.る,にせ|ギ|palsu|N1
+@Sekolah & Bahasa
+諭|さと.す|ユ|menasihati|N1
+謡|うた.う|ヨウ|lagu noh|N1
+詠|よ.む|エイ|menggubah puisi|N1
+詩|-|シ|puisi|N1
+吟|-|ギン|bersenandung|N1
+詞|-|シ|kata / lirik|N1
+註|-|チュウ|catatan|N1
+訓|-|クン|ajaran / bacaan kun|N1
+謎|なぞ|メイ|teka-teki|N1
+誌|-|シ|majalah / catatan|N1
+誓|ちか.う|セイ|bersumpah|N1
+諾|-|ダク|menyetujui|N1
+誘|さそ.う|ユウ|mengajak|N1
+該|-|ガイ|yang bersangkutan|N1
+裕|-|ユウ|lapang|N1
+綱|つな|コウ|tali / garis besar|N1
+網|あみ|モウ|jaring|N1
+典|-|テン|aturan / kamus|N1
+彙|-|イ|kumpulan|N1
+括|くく.る|カツ|mengikat|N1
+@Alam & Cuaca
+嵐|あらし|ラン|badai|N1
+霧|きり|ム|kabut|N1
+霜|しも|ソウ|embun beku|N1
+雷|かみなり|ライ|petir|N1
+滝|たき|ロウ|air terjun|N1
+渓|-|ケイ|lembah|N1
+峡|-|キョウ|ngarai|N1
+崖|がけ|ガイ|tebing|N1
+岳|たけ|ガク|gunung tinggi|N1
+峰|みね|ホウ|puncak|N1
+丘|おか|キュウ|bukit|N1
+陵|みささぎ|リョウ|bukit / makam|N1
+沼|ぬま|ショウ|rawa|N1
+潟|かた|セキ|laguna|N1
+浜|はま|ヒン|pantai|N1
+沖|おき|チュウ|lepas pantai|N1
+潮|しお|チョウ|pasang surut|N1
+澄|す.む|チョウ|jernih|N1
+濁|にご.る|ダク|keruh|N1
+泡|あわ|ホウ|busa|N1
+滴|しずく|テキ|tetesan|N1
+渦|うず|カ|pusaran|N1
+炎|ほのお|エン|nyala api|N1
+煙|けむり|エン|asap|N1
+灰|はい|カイ|abu|N1
+焦|こ.げる,あせ.る|ショウ|hangus / gelisah|N1
+焼|や.く,や.ける|ショウ|membakar|N1
+爆|-|バク|meledak|N1
+炭|すみ|タン|arang|N1
+鉱|-|コウ|tambang|N1
+鋼|はがね|コウ|baja|N1
+銅|-|ドウ|tembaga|N1
+錆|さび|セイ|karat|N1
+磁|-|ジ|magnet|N1
+@Hewan & Tumbuhan
+鯨|くじら|ゲイ|paus|N1
+鮮|あざ.やか|セン|segar / cerah|N1
+鶏|にわとり|ケイ|ayam|N1
+鷹|たか|ヨウ|elang|N1
+蛇|へび|ジャ,ダ|ular|N1
+蛙|かえる|ア|katak|N1
+蚊|か|ブン|nyamuk|N1
+蜂|はち|ホウ|lebah|N1
+蝶|ちょう|チョウ|kupu-kupu|N1
+猿|さる|エン|monyet|N1
+狼|おおかみ|ロウ|serigala|N1
+獣|けもの|ジュウ|binatang buas|N1
+狩|か.る|シュ|berburu|N1
+猟|-|リョウ|berburu|N1
+漁|-|ギョ,リョウ|menangkap ikan|N1
+牧|まき|ボク|peternakan|N1
+畜|-|チク|ternak|N1
+膝|ひざ|シツ|lutut|N1
+桜|さくら|オウ|sakura|N1
+梅|うめ|バイ|ume|N1
+菊|きく|キク|krisan|N1
+蘭|-|ラン|anggrek|N1
+杉|すぎ|サン|sugi|N1
+柿|かき|シ|kesemek|N1
+栗|くり|リツ|kastanye|N1
+薪|たきぎ|シン|kayu bakar|N1
+苗|なえ|ビョウ|bibit|N1
+芋|いも|ウ|ubi|N1
+茎|くき|ケイ|batang|N1
+蕾|つぼみ|ライ|kuncup|N1
+穂|ほ|スイ|bulir padi|N1
+@Tubuh
+胃|-|イ|lambung|N1
+腸|-|チョウ|usus|N1
+肺|-|ハイ|paru-paru|N1
+肝|きも|カン|hati (organ)|N1
+臓|-|ゾウ|organ dalam|N1
+膚|-|フ|kulit|N1
+腰|こし|ヨウ|pinggang|N1
+臀|しり|デン|bokong|N1
+尻|しり|コウ|pantat|N1
+爪|つめ|ソウ|kuku|N1
+瞳|ひとみ|ドウ|pupil mata|N1
+眉|まゆ|ビ|alis|N1
+唇|くちびる|シン|bibir|N1
+舌|した|ゼツ|lidah|N1
+喉|のど|コウ|tenggorokan|N1
+頬|ほお|キョウ|pipi|N1
+顎|あご|ガク|dagu|N1
+@Kesehatan
+疾|-|シツ|penyakit|N1
+患|わずら.う|カン|menderita sakit|N1
+痢|-|リ|diare|N1
+癒|い.える|ユ|sembuh|N1
+腫|は.れる|シュ|bengkak|N1
+膿|うみ|ノウ|nanah|N1
+麻|あさ|マ|mati rasa / rami|N1
+酔|よ.う|スイ|mabuk|N1
+眠|ねむ.る|ミン|tidur|N1
+睡|-|スイ|tidur|N1
+痩|や.せる|ソウ|kurus|N1
+肥|こ.える|ヒ|gemuk / subur|N1
+@Rumah & Benda
+邸|-|テイ|rumah besar|N1
+殿|との,どの|デン,テン|istana|N1
+塔|-|トウ|menara|N1
+廊|-|ロウ|lorong|N1
+柱|はしら|チュウ|tiang|N1
+梁|はり|リョウ|balok|N1
+棚|たな|-|rak|N1
+鍵|かぎ|ケン|kunci|N1
+錠|じょう|ジョウ|gembok|N1
+釘|くぎ|テイ|paku|N1
+斧|おの|フ|kapak|N1
+鎌|かま|レン|sabit|N1
+刃|は|ジン|mata pisau|N1
+刀|かたな|トウ|pedang|N1
+剣|つるぎ|ケン|pedang|N1
+弓|ゆみ|キュウ|busur|N1
+矢|や|シ|anak panah|N1
+盾|たて|ジュン|perisai|N1
+帽|-|ボウ|topi|N1
+襟|えり|キン|kerah|N1
+袖|そで|シュウ|lengan baju|N1
+裾|すそ|キョ|ujung baju|N1
+繊|-|セン|serat halus|N1
+維|-|イ|serat / mengikat|N1
+綿|わた|メン|kapas|N1
+絹|きぬ|ケン|sutra|N1
+編|あ.む|ヘン|merajut / menyunting|N1
+織|お.る|ショク,シキ|menenun|N1
+染|そ.める,し.みる|セン|mewarnai|N1
+@Makanan & Minuman
+酢|す|サク|cuka|N1
+醤|-|ショウ|kecap|N1
+胡|-|コ|lada / asing|N1
+椒|-|ショウ|lada|N1
+蜜|-|ミツ|madu|N1
+飴|あめ|イ|permen|N1
+餅|もち|ヘイ|mochi|N1
+饅|-|マン|bakpao|N1
+麺|-|メン|mi|N1
+粉|こな,こ|フン|tepung|N1
+粒|つぶ|リュウ|butir|N1
+酎|-|チュウ|minuman keras|N1
+醸|かも.す|ジョウ|menyeduh / meragikan|N1
+盃|さかずき|ハイ|cawan sake|N1
+@Gerak & Aktivitas
+撮|と.る|サツ|memotret|N1
+擦|こす.る,す.る|サツ|menggosok|N1
+撲|-|ボク|memukul|N1
+挑|いど.む|チョウ|menantang|N1
+挟|はさ.む|キョウ|menjepit|N1
+揺|ゆ.れる,ゆ.する|ヨウ|bergoyang|N1
+撃|う.つ|ゲキ|menembak|N1
+殴|なぐ.る|オウ|memukul|N1
+蹴|け.る|シュウ|menendang|N1
+跳|は.ねる,と.ぶ|チョウ|melompat|N1
+踊|おど.る|ヨウ|menari|N1
+踏|ふ.む|トウ|menginjak|N1
+跡|あと|セキ|jejak|N1
+践|-|セン|melaksanakan|N1
+這|は.う|シャ|merayap|N1
+潜|もぐ.る,ひそ.む|セン|menyelam|N1
+浮|う.く,う.かぶ|フ|mengapung|N1
+沈|しず.む|チン|tenggelam|N1
+漂|ただよ.う|ヒョウ|terombang-ambing|N1
+溶|と.ける,と.かす|ヨウ|melarut|N1
+濡|ぬ.れる|ジュ|basah|N1
+絞|しぼ.る|コウ|memeras|N1
+締|し.める,し.まる|テイ|mengencangkan|N1
+縛|しば.る|バク|mengikat|N1
+繰|く.る|ソウ|menggulung / mengulang|N1
+貫|つらぬ.く|カン|menembus|N1
+挿|さ.す|ソウ|menyisipkan|N1
+摘|つ.む|テキ|memetik|N1
+拭|ふ.く,ぬぐ.う|ショク|mengelap|N1
+磨|みが.く|マ|menggosok / mengasah|N1
+奏|かな.でる|ソウ|memainkan musik|N1
+滅|ほろ.びる|メツ|binasa|N1
+撤|-|テツ|menarik mundur|N1
+繁|しげ.る|ハン|subur / ramai|N1
+@Ukuran & Sifat
+曖|-|アイ|samar|N1
+昧|-|マイ|kabur|N1
+朗|ほが.らか|ロウ|ceria|N1
+艶|つや|エン|kilau|N1
+著|いちじる.しい|チョ|nyata / mengarang|N1
+顕|-|ケン|jelas|N1
+淡|あわ.い|タン|tipis / pucat|N1
+粗|あら.い|ソ|kasar|N1
+巧|たく.み|コウ|mahir|N1
+拙|つたな.い|セツ|kurang cakap|N1
+緩|ゆる.い,ゆる.む|カン|longgar|N1
+厳|きび.しい|ゲン,ゴン|ketat|N1
+峻|けわ.しい|シュン|terjal|N1
+荒|あら.い,あ.れる|コウ|liar / kasar|N1
+穏|おだ.やか|オン|tenang|N1
+華|はな|カ,ゲ|megah / bunga|N1
+麗|うるわ.しい|レイ|indah|N1
+絢|-|ケン|gemerlap|N1
+爽|さわ.やか|ソウ|segar|N1
+妙|たえ|ミョウ|aneh / ajaib|N1
+奇|-|キ|aneh|N1
+珍|めずら.しい|チン|langka|N1
+稀|まれ|キ|jarang|N1
+頻|しき.りに|ヒン|sering|N1
+僅|わず.か|キン|sedikit sekali|N1
+些|いささ.か|サ|sedikit|N1
+甚|はなは.だ|ジン|sangat|N1
+頗|すこぶ.る|ハ|sangat|N1
+@Lain-lain
+但|ただ.し|タン|namun|N1
+且|か.つ|ショ|lagi pula|N1
+又|また|ユウ|lagi|N1
+况|-|キョウ|keadaan|N1
+既|すで.に|キ|sudah|N1
+尚|なお|ショウ|masih / lagi|N1
+稍|やや|ショウ|agak|N1
+殆|ほとん.ど|タイ|hampir|N1
+恰|あたか.も|コウ|seolah-olah|N1
+挙|あ.げる,あ.がる|キョ|mengangkat|N1
+冒|おか.す|ボウ|menempuh|N1
+陥|おちい.る|カン|terjerumus|N1
+抽|-|チュウ|menarik keluar|N1
+縁|ふち,えん|エン|tepi / jodoh|N1
+偏|かたよ.る|ヘン|condong|N1
+偶|-|グウ|kebetulan|N1
+遇|-|グウ|bertemu|N1
+逸|-|イツ|menyimpang|N1
+奥|おく|オウ|bagian dalam|N1
+架|か.ける|カ|membentangkan|N1
+薦|すす.める|セン|merekomendasikan|N1
+惰|-|ダ|malas|N1
+堕|-|ダ|jatuh|N1
+墜|-|ツイ|jatuh|N1
+崩|くず.れる|ホウ|runtuh|N1
+壊|こわ.す,こわ.れる|カイ|merusak|N1
+裂|さ.く,さ.ける|レツ|robek|N1
+截|-|セツ|memotong|N1
+紛|まぎ.れる|フン|kacau / tersamar|N1
+乱|みだ.れる|ラン|kacau|N1
+騒|さわ.ぐ|ソウ|ribut|N1
+騰|-|トウ|naik|N1
