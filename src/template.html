@@ -66,7 +66,7 @@ input[type=search],select{width:100%;padding:10px;border-radius:10px;border:1px 
 #pad.off{pointer-events:none;opacity:.85}
 .kset{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 0}.kset .tg{margin:0}
 .kg.yo{grid-template-columns:repeat(auto-fill,minmax(78px,1fr))}
-.exw{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--bd)}.exw:last-child{border:0}.exw .j{font-size:20px;min-width:64px}.exw .m{flex:1;min-width:0}
+.exw{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--bd)}.exw:last-child{border:0}.exw .j{font-size:20px;min-width:64px;flex:0 1 auto;max-width:58%}.exw .j small{display:block;font-size:13px;color:var(--mut)}.exw .m{flex:1;min-width:0}
 .wtop{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}.wtop .tg{margin:0}
 #pad.wfree{max-width:100%;aspect-ratio:auto;height:auto}
 .wref{text-align:center}.wans{font-size:34px;line-height:1.3;margin-bottom:8px}.wans .rj,.wans .ro{font-size:16px}
@@ -75,7 +75,7 @@ input[type=search],select{width:100%;padding:10px;border-radius:10px;border:1px 
 .tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px;scrollbar-width:none}.tabs .tg{margin:0;white-space:nowrap}
 .gp{display:grid;grid-template-columns:minmax(120px,42%) 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--bd)}.gp:last-child{border:0}.gp b{display:block;font-size:17px;color:var(--ac);font-weight:600}.gp .ro{display:block;font-size:13px}
 details.card summary{cursor:pointer}
-.gp .gx b{display:inline;font-size:inherit}.gp .gx{grid-column:1/-1;background:var(--bg);border-radius:10px;padding:8px 10px;margin-top:2px}.gx>span{font-size:16px}.hl{color:var(--ac);font-weight:700}
+.gp .gx b{display:inline;font-size:inherit}.gp .gx{grid-column:1/-1;background:var(--bg);border-radius:10px;padding:8px 10px;margin-top:2px;color:var(--fg)}.gx>span{font-size:16px}.hl{color:var(--ac);font-weight:700}
 .blank{color:var(--ac);font-weight:700;letter-spacing:2px}
 .kvr{display:grid;grid-template-columns:1fr auto;gap:2px 10px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--bd);padding:9px 2px;color:var(--fg);font:inherit;cursor:pointer}.kvr:last-child{border:0}.kvr b{font-size:19px;font-weight:600}.kvr small{color:var(--mut)}
 .kfr{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--bd)}.kfr:last-child{border:0}.kfr>div{flex:1;min-width:0}
@@ -355,6 +355,18 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 /* topik bunpō */
 .btul{margin:6px 0 0;padding-left:20px}.btul li{margin:4px 0}
 .btc .gp{border:0;padding:0 0 6px}.btc .bub{margin-top:4px}
+.gp .gx+.gx{margin-top:-4px}
+.chat{display:flex;flex-direction:column;gap:9px;margin:8px 0 10px}
+.cl{display:flex;align-items:flex-end;gap:7px;max-width:90%}
+.cl .av{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;background:var(--navy)}
+.cl .bub{margin:0;min-width:0;border-bottom-left-radius:4px;transition:box-shadow .2s}
+.cl.me{align-self:flex-end;flex-direction:row-reverse}
+.cl.me .av{background:var(--ac)}
+.cl.me .bub{border-radius:14px 14px 4px 14px;background:color-mix(in srgb,var(--ac) 9%,var(--card));border-color:color-mix(in srgb,var(--ac) 30%,var(--bd))}
+.cl.c2 .av{background:var(--orange)}
+.cl .who{display:block;font-size:11.5px;font-weight:700;color:var(--mut);margin-bottom:2px}
+.cl.now .bub{box-shadow:0 0 0 2px var(--ac)}
+.dlg .pb{margin-top:4px}
 .mtc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}.mtcol{display:grid;gap:8px;align-content:start}
 .mtb{font:inherit;font-size:16px;min-height:54px;padding:8px 10px;border:2px solid var(--bd);border-bottom-width:4px;border-radius:14px;background:var(--card);color:var(--fg);cursor:pointer;line-height:1.3;transition:transform .08s,border-color .15s,background .15s,opacity .3s}
 .mtb small{display:block;font-size:12px;color:var(--mut)}.mtj{font-size:19px}
@@ -417,6 +429,12 @@ const ST={get(k,d){try{const v=localStorage.getItem('nh_'+k);return v==null?d:JS
 const day=o=>new Date(Date.now()+o*864e5).toLocaleDateString('sv');
 let showR=ST.get('showR',true),auto=ST.get('auto',false);
 const speak=t=>{try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='ja-JP';speechSynthesis.speak(u)}catch(e){}};
+// dialog bergaya chat: L = [[pembicara, jepang, romaji, arti]]; pembicara pertama di kiri, berikutnya di kanan
+const chatSp=L=>[...new Set(L.map(l=>l[0]))];
+const chat=L=>{const sp=chatSp(L);return`<div class="chat">${L.map(l=>{const i=sp.indexOf(l[0]);return`<div class="cl${i%2?' me':''}${i>1?' c2':''}"><span class="av">${[...l[0]][0]}</span><div class="bub">${[...l[0]].length>1?`<small class="who">${l[0]}</small>`:''}${l[1]} <button class="sp" data-s="${l[1]}" aria-label="Putar suara">🔊</button><div class="rj ro">${l[2]}</div>${l[3]}</div></div>`}).join('')}</div>`};
+// putar seluruh dialog; nada suara dibedakan per pembicara dan kalimat yang sedang diucapkan ditandai
+function sayAll(L,box){try{speechSynthesis.cancel();const sp=chatSp(L),cl=box?[...box.querySelectorAll('.cl')]:[],mark=i=>cl.forEach((e,j)=>e.classList.toggle('now',j==i));
+ L.forEach((l,i)=>{const u=new SpeechSynthesisUtterance(l[1]);u.lang='ja-JP';u.pitch=[1,1.3,.8][sp.indexOf(l[0])%3];u.onstart=()=>mark(i);if(i==L.length-1)u.onend=()=>mark(-1);speechSynthesis.speak(u)})}catch(e){}}
 const shuf=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
 /* ===== ROMAJI: tombol ON/OFF di setiap halaman (elemen .ro disembunyikan saat OFF) ===== */
 const rtBtn=()=>`<button class="rt${showR?' on':''}" aria-pressed="${showR}">Romaji ${showR?'ON':'OFF'}</button>`;
@@ -1288,6 +1306,9 @@ const BP_CMP=[['～そうです vs ～ようです vs ～らしい',[['おいし
  ['～はず vs ～わけ',[['彼は来るはずです。','Kare wa kuru hazu desu.','Seharusnya dia datang — berdasarkan harapan atau informasi.'],['だから遅れたわけですね。','Dakara okureta wake desu ne.','Jadi, itulah sebabnya terlambat — menarik kesimpulan dari informasi.']]]];
 const BP_STEP=[['N5','Kuasai partikel は・が・を・に・で, bentuk ます, ない, て, た, kata sifat, dan kalimat tanya.'],['N4','Latih perubahan kata kerja, pengalaman, syarat ～たら・～ば・～と・～なら, dan kewajiban.'],['N3','Belajar menyampaikan dugaan, pendapat, perubahan, pertentangan, dan hubungan sebab-akibat.'],['N2','Latih bacaan formal, argumen, kesimpulan, dan pola seperti ～ざるを得ない serta ～とは限らない.'],['N1','Pelajari ekspresi formal, tulisan abstrak, idiom, serta nuansa pola seperti ～を余儀なくされる dan ～ずにはいられない.']];
 const bpEx=p=>`<div class="gx"><span>${p[3].replace(/\{(.+?)\}/g,'<b class="hl">$1</b>')}</span> <button class="sp" data-s="${p[3].replace(/[{}]/g,'')}">🔊</button><div class="ro" style="font-size:13px">${p[4]}</div><div class="rj">${p[5]}</div></div>`;
+// semua contoh kalimat sebuah pola: utama + tambahan (r[6]), masing-masing sebagai baris [pola, romaji, arti, contoh, romaji, arti]
+const exAll=r=>r[3]?[r.slice(0,6),...(r[6]||[]).map(e=>[r[0],r[1],r[2],...e])]:[r];
+const exPick=r=>{const a=exAll(r);return a[Math.floor(Math.random()*a.length)]};
 const bpFill=p=>[...p[3].matchAll(/\{(.+?)\}/g)].map(m=>m[1]).join(' … ');
 const bub=e=>`<div class="bub">${e[0]} <button class="sp" data-s="${e[0]}">🔊</button><div class="rj ro">${e[1]}</div>${e[2]}</div>`;
 // tab Pola JLPT: semua pola bunpō pada level terpilih
@@ -1296,7 +1317,7 @@ function bunpo(){
  if(lv){
   const rows=bpRows(lv);
   body=`<div class="card"><b>${lv.l} · ${lv.t}</b> <span class="rj">(${rows.length} pola)</span><p class="rj" style="margin:4px 0 0">Fokus: ${lv.f}</p></div>
-  ${lv.s.map(([t,r])=>`<h3>${t}</h3><div class="card">${r.map(p=>`<div class="gp"><div><b>${p[0]}</b><span class="ro">${p[1]}</span></div><div>${p[2]}</div>${p[3]?bpEx(p):''}</div>`).join('')}</div>`).join('')}
+  ${lv.s.map(([t,r])=>`<h3>${t}</h3><div class="card">${r.map(p=>`<div class="gp"><div><b>${p[0]}</b><span class="ro">${p[1]}</span></div><div>${p[2]}</div>${p[3]?exAll(p).map(bpEx).join(''):''}</div>`).join('')}</div>`).join('')}
   ${lv.ex.length?`<h3>Contoh ${lv.l}</h3><div class="card">${lv.ex.map(bub).join('')}</div>`:''}
   ${lv.l=='N5'?`<details class="card"><summary><b>Contoh kalimat tiap partikel</b></summary>${PT.map(p=>`<div class="bub"><b>${p[0]}</b> <span class="ro">(${p[5]})</span> ${p[1]}<br>${p[2]} <button class="sp" data-s="${p[2]}">🔊</button><div class="rj ro">${p[4]}</div>${p[3]}</div>`).join('')}</details>`:''}`;
   bar=startBar();
@@ -1321,12 +1342,14 @@ function bunpo(){
   over:{
    susun:r=>{if(!r[3])return null;const it=sentItems([{j:plainEx(r),r:r[4],a:r[5],sub:'Pola: '+r[0]}],exR.map(x=>({j:plainEx(x),r:x[4]})))[0];return it?{kind:'susun',lbl:'Susun contoh kalimat',...it}:null},
    bicara:r=>SRok&&r[3]?{kind:'speak',lbl:'Ucapkan contoh kalimat ini',q:`<span style="font-size:20px">${plainEx(r)}</span>`,qr:r[4],say:plainEx(r),target:[plainEx(r)],ans:`${plainEx(r)} <span class="ro">(${r[4]})</span>`,mean:r[5]}:null,
-   dengar:r=>r[3]?{kind:'choice',lbl:'Dengarkan, lalu pilih artinya',listen:true,q:'',qr:'',say:plainEx(r),a:r[5],d:shuf(exR.filter(x=>x!==r)).slice(0,6).map(x=>x[5]),e:exInfo(r)}:null,
+   dengar:r=>r[3]?{kind:'choice',lbl:'Dengarkan, lalu pilih artinya',listen:true,q:'',qr:'',say:plainEx(r),a:r[5],d:shuf(exR.filter(x=>x[0]!=r[0])).slice(0,6).map(x=>x[5]),e:exInfo(r)}:null,
    // ketik Jepang: isi bagian kosong contoh kalimat (kana atau romaji)
    ketikJ:r=>{if(!r[3])return null;const pieces=[...r[3].matchAll(/\{(.+?)\}/g)].map(m=>m[1]),sp=blRom(r);if(pieces.length!=1||!sp)return null;
     return{kind:'type',mode:'jp',lbl:'Ketik bagian yang kosong',q:blankQ(r),qr:r[4].slice(0,sp[0].start)+'＿＿'+r[4].slice(sp[0].end),accept:[pieces[0]],roms:[sp[0].disp],ans:`${pieces[0]} <span class="ro">(${sp[0].disp})</span>`,mean:r[5],sayAfter:plainEx(r),e:exInfo(r),ph:'Ketik dengan kana atau romaji…'}}}};
+ // soal berbasis contoh kalimat memakai salah satu contoh pola secara acak (utama atau tambahan)
+ for(const k in BC.over){const f=BC.over[k];BC.over[k]=r=>f(exPick(r))}
  const M=stdModes(BC);
- M.isi={lab:'Isi kalimat',icon:'📝',gen:r=>r[3]?fillQ(r):null};
+ M.isi={lab:'Isi kalimat',icon:'📝',gen:r=>r[3]?fillQ(exPick(r)):null};
  if(lv.l=='N5')M.partikel={lab:'Isi partikel',icon:'は',gen:()=>{const p=PQ[Math.floor(Math.random()*PQ.length)];return{kind:'choice',lbl:'Pilih partikel yang tepat',q:p[0],qr:p[2],a:p[1],d:PQ.map(x=>x[1])}}};
  wireStart({key:'bunpo',title:`Bunpo ${lv.l}`,modes:M,pool:()=>rows,back:bunpo})}
 
@@ -1473,7 +1496,7 @@ let kwC=ST.get('kwC','');
 function kaiwa(){
  const KL=QCAP?'':mLv,KA=KW.filter(d=>!KL||d[3]==KL),cats=KWC.filter(c=>KA.some(d=>d[0]==c)),cc=cats.includes(kwC)?kwC:'';
  const D=KA.filter(d=>!cc||d[0]==cc),nLine=D.reduce((s,d)=>s+d[2].length,0);
- const dlg=d=>`<details class="card dlg"><summary><b>${d[1]}</b> <span class="rj">· ${d[2].length} kalimat${cc?'':' · '+d[0]}</span></summary>${d[2].map(l=>`<div class="bub"><b>${l[0]}</b>: ${l[1]} <button class="sp" data-s="${l[1]}">🔊</button><div class="rj ro">${l[2]}</div>${l[3]}</div>`).join('')}</details>`;
+ const dlg=(d,i)=>`<details class="card dlg"><summary><b>${d[1]}</b> <span class="rj">· ${d[2].length} kalimat${cc?'':' · '+d[0]}</span></summary>${chat(d[2])}<button class="pb alt" data-pa="${i}">🔊 Putar seluruh dialog</button></details>`;
  const body=!KA.length?lvEmpty('dialog','Dialog per situasi umumnya berlevel N5–N4. Untuk level ini, buka tab <b>Unit</b>.'):cc?`<button class="tg" id="kwall" style="margin:0 0 10px">← Semua kategori</button><h3 style="margin-top:0">${cc}</h3><p class="lvnote">${D.length} dialog ${KL} · ${nLine} kalimat. Ketuk judul untuk membuka dialog.</p>${D.map(dlg).join('')}`
   :`<p class="lvnote">${KA.length} dialog ${KL} · ${nLine} kalimat dalam ${cats.length} kategori. Pilih kategori untuk membaca dialog.</p><div class="grid">${cats.map(c=>`<button class="mc" data-kwc="${c}"><b style="margin-top:0">${c}</b><small>${KA.filter(d=>d[0]==c).length} dialog</small></button>`).join('')}</div>`;
  view(`${modHead('w','dialog')}${body}
@@ -1482,6 +1505,7 @@ function kaiwa(){
  onSpeak(app);
  if(cc)$('#kwall').onclick=()=>{kwC='';ST.set('kwC','');kaiwa()};
  app.querySelectorAll('[data-kwc]').forEach(b=>b.onclick=()=>{kwC=b.dataset.kwc;ST.set('kwC',kwC);kaiwa()});
+ app.querySelectorAll('[data-pa]').forEach(b=>b.onclick=()=>sayAll(D[+b.dataset.pa][2],b.closest('details')));
  const ln=D.flatMap((d,di)=>d[2].map((l,li)=>({di,li,t:d[1],sp:l[0],j:l[1],r:l[2],a:l[3]})));
  const all=KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3]})));
  const opt=l=>`${l.j}<small class="ro">${l.r}</small>`;
@@ -1597,7 +1621,7 @@ function pzStart(m){
  if(m=='kotoba')return susun(`Susun Kotoba${L}`,()=>shuf(V.filter(v=>lvOk(v)&&okLen(v)&&v.j!=v.k)).slice(0,N()).map(v=>({...word(v,HIRA),q:`<span style="font-size:30px">${v.j}</span>`,sub:`${v.a} · susun cara bacanya`})),puzzle);
  if(m=='katsu')return susun(`Susun Katsuyō${L}`,()=>shuf(KV.filter(lvOk)).slice(0,N()).map(v=>{const F=vForms(v).filter(x=>x.id!='kamus'),f=F[Math.floor(Math.random()*F.length)],tk=kanaTok(f.kana);
    return{q:`${f.lab} dari <b>${v.j}</b>`,sub:`${v.a} → ${f.arti}`,tokens:tk,extra:kanaExtra(tk,[...new Set(F.flatMap(x=>kanaTok(x.kana)))]),ans:`${f.jj}${f.jj!=f.kana?` <span class="rj">${f.kana}</span>`:''} <span class="ro">(${rom(f.kana)})</span>`,say:f.kana,kana:true}}),puzzle);
- if(m=='bunpo'){const ex=BP.filter(l=>!pzL||l.l==pzL).flatMap(l=>l.s.flatMap(s=>s[1]).filter(p=>p[3]).map(p=>({j:p[3].replace(/[{}]/g,''),r:p[4],a:p[5],sub:`Pola: ${p[0]} (${l.l})`})));
+ if(m=='bunpo'){const ex=BP.filter(l=>!pzL||l.l==pzL).flatMap(l=>l.s.flatMap(s=>s[1]).filter(p=>p[3]).flatMap(exAll).map(p=>({j:p[3].replace(/[{}]/g,''),r:p[4],a:p[5],sub:`Pola: ${p[0]} (${l.l})`})));
   return susun(`Susun Bunpo${L}`,()=>sentItems(shuf(ex).slice(0,N()+5),ex),puzzle)}
  if(m=='kaiwa'){const ln=KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3],sub:`${d[1]} · ${l[0]}`})));
   return susun('Susun Kaiwa',()=>sentItems(shuf(ln).slice(0,N()+5),ln),puzzle)}
@@ -1753,7 +1777,7 @@ const mCard=(ic,t,d,key)=>`<button class="mc" data-m="${key}"><span class="ic">$
 /* ===== MATERI: struktur delapan menu mengikuti NIHONESIA_MASTER_CURRICULUM_HIERARCHY.md ===== */
 // halaman penjelasan umum: judul, daftar bagian [judul, html], tombol kembali
 const infoPage=(t,secs,back,sub)=>{view(`${hdr(t)}${sub?`<p class="sub">${sub}</p>`:''}${secs.map(s=>`<h3>${s[0]}</h3><div class="card info">${s[1]}</div>`).join('')}`,back);onSpeak(app);return app};
-const jpS=(j,r,a)=>`<div class="exw"><span class="j">${j}</span><span class="m">${a}<span class="ro"> · ${r}</span></span><button class="sp" data-s="${j.replace(/<[^>]+>/g,'')}">🔊</button></div>`;
+const jpS=(j,r,a)=>`<div class="exw"><span class="j">${j}</span><span class="m">${a}<span class="ro"> · ${r}</span></span><button class="sp" data-s="${j.replace(/<small[^>]*>.*?<\/small>/g,'').replace(/<[^>]+>/g,'').trim()}">🔊</button></div>`;
 // tabel sederhana
 const tbl=(h,rows)=>`<div class="tbw"><table class="tb"><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 
@@ -2047,13 +2071,13 @@ function kuUnit(no){
  <h3>Ungkapan inti</h3><div class="card">${lv.e.map(e=>jpS(e[0],e[1],e[2])).join('')}</div>
  <h3>Kosakata penting</h3><div class="card">${u.v.map(v=>jpS(v[0]==v[1]?v[0]:`${v[0]} <small>${v[1]}</small>`,v[2],v[3])).join('')}</div>
  <h3>Pola kalimat</h3><div class="card"><b style="font-size:19px">${u.p[0]}</b><div style="margin:4px 0">${u.p[1]}</div><div class="rj">${u.p[2]}</div></div>
- <h3>Contoh percakapan</h3><div class="card">${u.d.map(d=>`<div class="bub"><b>${d[0]}</b>: ${d[1]} <button class="sp" data-s="${d[1]}">🔊</button><div class="rj ro">${d[2]}</div>${d[3]}</div>`).join('')}<button class="pb alt" id="kuall">🔊 Putar seluruh dialog</button></div>
+ <h3>Contoh percakapan</h3><div class="card" id="kudlg">${chat(u.d)}<button class="pb alt" id="kuall">🔊 Putar seluruh dialog</button></div>
  <h3>Latihan aktif</h3><div class="card info"><ol><li>Baca dialog dengan suara lantang tiga kali.</li><li>Ganti satu informasi dalam dialog (nama, tempat, waktu, atau alasan) dan ucapkan kembali.</li><li>Jawab dengan kalimat sendiri: このテーマについて、あなたはどう思いますか。</li><li>Rekam suara 30–60 detik. Perhatikan pelafalan, jeda, dan intonasi.</li></ol></div>
  <h3>Tantangan roleplay</h3><div class="card info">${u.r}</div>
  <h3>Checklist penguasaan</h3><div class="card">${CK.map((c,j)=>`<label class="chk"><input type="checkbox" data-c="${j}" ${dn.includes(j)?'checked':''}> ${c}</label>`).join('')}</div>
  <div class="row2"><button class="pb alt" id="kup" ${i>0?'':'disabled'}>← Unit sebelumnya</button><button class="pb alt" id="kun" ${i<KU.u.length-1?'':'disabled'}>Unit berikutnya →</button></div>`,kuList);
  onSpeak(app);
- $('#kuall').onclick=()=>{try{speechSynthesis.cancel();u.d.forEach(d=>{const s=new SpeechSynthesisUtterance(d[1]);s.lang='ja-JP';speechSynthesis.speak(s)})}catch(e){}};
+ $('#kuall').onclick=()=>sayAll(u.d,$('#kudlg'));
  app.querySelectorAll('.chk input').forEach(c=>c.onchange=()=>{const all=ST.get('kuChk',{});const cur=new Set(all[no]||[]);c.checked?cur.add(+c.dataset.c):cur.delete(+c.dataset.c);all[no]=[...cur];ST.set('kuChk',all);const d=kuDone();d[no]=cur.size;ST.set('kuDone',d)});
  if(i>0)$('#kup').onclick=()=>kuUnit(KU.u[i-1].no);if(i<KU.u.length-1)$('#kun').onclick=()=>kuUnit(KU.u[i+1].no)}
 const materiKaiwa=()=>modSub('w');
@@ -2158,18 +2182,20 @@ function btopic(id,mk){mk=mk||'b';
  const T=BT.find(x=>x.id==id),byLv=mk=='b',rows=byLv?btRows(id,mLv):T.rows;
  view(`${modHead(mk,id)}<p class="lvnote">${T.t} · ${T.d}${byLv?` · ${rows.length} pola ${mLv}`:''}</p>${T.ex.length?`<div class="card"><b>Penjelasan</b><ul class="btul">${T.ex.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
  ${rows.length?'':lvEmpty('pola '+T.t.toLowerCase(),'Topik ini berisi pola tingkat dasar. Pilih level lain, atau buka tab <b>Pola JLPT</b> untuk pola level ini.')}
- ${rows.map(r=>`<div class="card btc"><div class="gp"><div><b>${r[0]}</b>${byLv?'':` <span class="lvb">${btLv(T,r)}</span>`}<span class="ro">${r[1]}</span></div><div>${r[2]}</div></div><div class="bub">${r[3]} <button class="sp" data-s="${r[3]}" aria-label="Putar suara">🔊</button><div class="rj ro">${r[4]}</div>${r[5]}</div></div>`).join('')}
+ ${rows.map(r=>`<div class="card btc"><div class="gp"><div><b>${r[0]}</b>${byLv?'':` <span class="lvb">${btLv(T,r)}</span>`}<span class="ro">${r[1]}</span></div><div>${r[2]}</div></div>${exAll(r).map(e=>`<div class="bub">${e[3]} <button class="sp" data-s="${e[3]}" aria-label="Putar suara">🔊</button><div class="rj ro">${e[4]}</div>${e[5]}</div>`).join('')}</div>`).join('')}
  ${id=='partikel'&&rows.length?'<p class="rj">Latihan isi partikel yang kosong ada di mode kuis <b>Isi partikel</b>.</p>':''}${startBar()}`,materi);
  modWire(mk,()=>btopic(id,mk));
  onSpeak(app);
- const oth=(r,i)=>shuf(T.rows.filter(x=>x!==r&&x[i]!=r[i])).slice(0,6),pat=r=>`${r[0]}<small class="ro">${r[1]}</small>`;
- const spool=[...BT.flatMap(t=>t.rows.map(x=>({j:x[3],r:x[4]}))),...BUN.map(x=>({j:x[1],r:x[2]}))];
+ const oth=(r,i)=>shuf(T.rows.filter(x=>x[0]!=r[0]&&x[i]!=r[i])).slice(0,6),pat=r=>`${r[0]}<small class="ro">${r[1]}</small>`;
+ const spool=[...BT.flatMap(t=>t.rows.flatMap(exAll).map(x=>({j:x[3],r:x[4]}))),...BUN.map(x=>({j:x[1],r:x[2]}))];
  const MD={
   p2a:{lab:'Pola → arti',icon:'あ→A',gen:r=>({kind:'choice',lbl:'Apa fungsi pola ini?',q:r[0],qr:r[1],a:r[2],d:oth(r,2).map(x=>x[2])})},
   a2p:{lab:'Arti → pola',icon:'A→あ',gen:r=>({kind:'choice',lbl:'Pilih polanya',q:r[2],qr:'',a:pat(r),d:oth(r,2).map(pat),nr:true})},
   contoh:{lab:'Arti contoh kalimat',icon:'💬',gen:r=>({kind:'choice',lbl:'Apa arti kalimat ini?',q:`<span style="font-size:21px">${r[3]}</span>`,qr:r[4],say:r[3],a:r[5],d:oth(r,5).map(x=>x[5]),mean:`${r[0]} — ${r[2]}`})},
   susun:{lab:'Susun kalimat',gen:r=>{const it=sentItems([{j:r[3],r:r[4],a:r[5],sub:`pola: ${r[0]}`}],spool)[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}},
   dengar:{lab:'Mendengar',gen:r=>({kind:'choice',lbl:'Dengarkan, lalu pilih artinya',q:r[3],listen:true,qr:'',say:r[3],a:r[5],d:oth(r,5).map(x=>x[5]),e:`${r[3]} <span class="ro">(${r[4]})</span>`})}};
+ // soal contoh kalimat memakai salah satu contoh pola secara acak (utama atau tambahan)
+ for(const k of ['contoh','susun','dengar']){const f=MD[k].gen;MD[k].gen=r=>f(exPick(r))}
  if(id=='partikel')MD.isi={lab:'Isi partikel',icon:'は',gen:r=>{const p=PQ[Math.floor(Math.random()*PQ.length)];return{kind:'choice',lbl:'Pilih partikel yang tepat',q:p[0],qr:p[2],a:p[1],d:[...new Set(PQ.map(x=>x[1]))].filter(x=>x!=p[1])}}};
  wireStart({key:'bt_'+id,title:T.t+(byLv?' '+mLv:''),modes:MD,pool:()=>rows,back:()=>btopic(id,mk)})}
 
@@ -2298,9 +2324,9 @@ const memOf=(M,en)=>M[memKey(en)];
 let SIDX=null;
 function sentIdx(){if(SIDX)return SIDX;
  SIDX=[...KD.map(b=>({j:b[1],r:b[2],a:b[3],p:0})),...BUN.map(b=>({j:b[1],r:b[2],a:b[3],p:1})),
-  ...BT.flatMap(t=>t.rows.map(r=>({j:r[3],r:r[4],a:r[5],p:2}))),
+  ...BT.flatMap(t=>t.rows.flatMap(exAll).map(r=>({j:r[3],r:r[4],a:r[5],p:2}))),
   ...KP.flatMap(m=>m.cats.flatMap(c=>c.pair?[]:c.rows.filter(r=>r[4]).map(r=>({j:r[4],r:r[5],a:r[6],p:2})))),
-  ...BP.flatMap(l=>bpRows(l).filter(r=>r[3]).map(r=>({j:r[3].replace(/[{}]/g,''),r:r[4],a:r[5],p:3}))),
+  ...BP.flatMap(l=>bpRows(l).filter(r=>r[3]).flatMap(exAll).map(r=>({j:r[3].replace(/[{}]/g,''),r:r[4],a:r[5],p:3}))),
   ...KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3],p:4})))].filter(s=>s.j&&s.j.length<=34);
  return SIDX}
 // panjang kalimat maksimum per level: pemula memakai kalimat pendek dulu
