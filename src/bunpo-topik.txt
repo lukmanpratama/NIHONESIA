@@ -3,6 +3,7 @@
 //   @id|Judul|ringkasan
 //   - penjelasan singkat (boleh beberapa baris)
 //   pola|romaji|arti / fungsi|contoh kalimat|romaji contoh|arti contoh|level (N5–N1)
+//   + contoh tambahan|romaji|arti   (tepat di bawah pola, boleh beberapa baris)
 // Romaji ditulis manual (partikel は = wa, を = o, へ = e).
 
 @struktur|Struktur kalimat|Cara menyusun kata menjadi kalimat bahasa Jepang.
@@ -12,123 +13,629 @@
 - Subjek sering tidak disebut kalau sudah jelas dari konteks.
 - Kalimat tanya cukup ditambah か di akhir, tanpa mengubah urutan kata.
 S は O を V|S wa O o V|Pola dasar: subjek – objek – kata kerja|私はパンを食べます。|watashi wa pan o tabemasu.|Saya makan roti.|N5
++ 父は新聞を読みます。|chichi wa shinbun o yomimasu.|Ayah membaca koran.
++ 私たちはサッカーをします。|watashitachi wa sakkaa o shimasu.|Kami bermain sepak bola.
 S は N です|S wa N desu|Menyatakan A adalah B|田中さんは先生です。|tanaka-san wa sensei desu.|Pak Tanaka adalah guru.|N5
++ ここは図書館です。|koko wa toshokan desu.|Ini perpustakaan.
++ 私の趣味は料理です。|watashi no shumi wa ryouri desu.|Hobi saya memasak.
 S は Adj です|S wa Adj desu|Menyatakan sifat|この部屋は広いです。|kono heya wa hiroi desu.|Kamar ini luas.|N5
++ 日本の夏は暑いです。|nihon no natsu wa atsui desu.|Musim panas di Jepang panas.
++ この公園はきれいです。|kono kouen wa kirei desu.|Taman ini indah.
 Waktu → tempat → kegiatan|toki → basho → V|Urutan keterangan yang umum: waktu dulu, lalu tempat|明日、駅で友達に会います。|ashita, eki de tomodachi ni aimasu.|Besok saya bertemu teman di stasiun.|N5
++ 毎朝、公園で走ります。|maiasa, kouen de hashirimasu.|Setiap pagi saya berlari di taman.
++ 日曜日に、デパートで靴を買いました。|nichiyoubi ni, depaato de kutsu o kaimashita.|Hari Minggu saya membeli sepatu di department store.
 Penjelas + kata benda|shūshokugo + meishi|Kalimat penjelas diletakkan di depan kata benda|これは母が作ったケーキです。|kore wa haha ga tsukutta keeki desu.|Ini kue yang dibuat ibu saya.|N4
++ 昨日買った本はおもしろいです。|kinou katta hon wa omoshiroi desu.|Buku yang saya beli kemarin menarik.
++ 眼鏡をかけている人が田中さんです。|megane o kakete iru hito ga tanaka-san desu.|Orang yang memakai kacamata itu Pak Tanaka.
 (Subjek) dihilangkan|shugo no shōryaku|Subjek tidak disebut jika sudah jelas|毎日、会社に行きます。|mainichi, kaisha ni ikimasu.|(Saya) pergi ke kantor setiap hari.|N5
++ 昨日、映画を見ました。|kinou, eiga o mimashita.|(Saya) kemarin menonton film.
++ 「どこへ行きますか。」「スーパーへ行きます。」|"doko e ikimasu ka." "suupaa e ikimasu."|"(Kamu) mau ke mana?" "(Saya) mau ke supermarket."
 Kalimat + か|bun + ka|Menjadikan kalimat tanya|これは何ですか。|kore wa nan desu ka.|Ini apa?|N5
++ 日本語が分かりますか。|nihongo ga wakarimasu ka.|Anda mengerti bahasa Jepang?
++ これはいくらですか。|kore wa ikura desu ka.|Ini berapa harganya?
 Kalimat 1 て、kalimat 2|bun 1 te, bun 2|Menyambung kegiatan yang berurutan|朝起きて、顔を洗います。|asa okite, kao o araimasu.|Pagi bangun, lalu cuci muka.|N5
++ 家に帰って、晩ご飯を作ります。|ie ni kaette, bangohan o tsukurimasu.|Pulang ke rumah, lalu memasak makan malam.
++ この部屋は広くて、明るいです。|kono heya wa hirokute, akarui desu.|Kamar ini luas dan terang.
 Kalimat 1 が、kalimat 2|bun 1 ga, bun 2|Menyambung dua kalimat yang bertentangan|日本語は難しいですが、面白いです。|nihongo wa muzukashii desu ga, omoshiroi desu.|Bahasa Jepang sulit, tetapi menarik.|N5
++ この店は高いですが、おいしいです。|kono mise wa takai desu ga, oishii desu.|Toko ini mahal, tetapi enak.
++ 雨が降っていますが、出かけます。|ame ga futte imasu ga, dekakemasu.|Sedang hujan, tetapi saya tetap pergi.
 Kalimat + と思います|bun + to omoimasu|Kalimat di dalam kalimat (menyatakan pendapat)|明日は雨が降ると思います。|ashita wa ame ga furu to omoimasu.|Saya rasa besok akan hujan.|N4
++ この計画はいいと思います。|kono keikaku wa ii to omoimasu.|Saya rasa rencana ini bagus.
++ 田中さんはもう帰ったと思います。|tanaka-san wa mou kaetta to omoimasu.|Saya rasa Pak Tanaka sudah pulang.
+Kalimat + と言いました|bun + to iimashita|Mengutip ucapan orang lain|先生は明日テストがあると言いました。|sensei wa ashita tesuto ga aru to iimashita.|Guru berkata besok ada ujian.|N4
++ 友達は少し遅れると言いました。|tomodachi wa sukoshi okureru to iimashita.|Teman bilang dia akan sedikit terlambat.
++ 店員は「少々お待ちください」と言いました。|ten'in wa "shoushou omachi kudasai" to iimashita.|Pegawai toko berkata, "Mohon tunggu sebentar."
+V の／こと (nominalisasi)|V no / koto|Mengubah kata kerja menjadi kata benda|私は絵をかくのが好きです。|watashi wa e o kaku no ga suki desu.|Saya suka menggambar.|N4
++ 日本語を話すことは難しくないです。|nihongo o hanasu koto wa muzukashikunai desu.|Berbicara bahasa Jepang tidak sulit.
++ 弟は寝るのが早いです。|otouto wa neru no ga hayai desu.|Adik laki-laki saya tidurnya cepat.
+A は B に V られる (pasif)|A wa B ni V rareru|Kalimat pasif: subjek dikenai tindakan|私は先生にほめられました。|watashi wa sensei ni homeraremashita.|Saya dipuji oleh guru.|N3
++ 弟は犬にかまれました。|otouto wa inu ni kamaremashita.|Adik laki-laki saya digigit anjing.
++ 電車で足を踏まれました。|densha de ashi o fumaremashita.|Kaki saya terinjak di kereta.
+A は B に V させる (kausatif)|A wa B ni V saseru|Kalimat kausatif: menyuruh atau membiarkan|母は弟に野菜を食べさせました。|haha wa otouto ni yasai o tabesasemashita.|Ibu menyuruh adik makan sayur.|N3
++ 部長は新人に資料をコピーさせました。|buchou wa shinjin ni shiryou o kopii sasemashita.|Manajer menyuruh karyawan baru memfotokopi materi.
++ 子供を公園で自由に遊ばせます。|kodomo o kouen de jiyuu ni asobasemasu.|Saya membiarkan anak bermain bebas di taman.
+A は B に V させられる (kausatif-pasif)|A wa B ni V saserareru|Dipaksa atau disuruh melakukan sesuatu|子供のころ、毎日野菜を食べさせられました。|kodomo no koro, mainichi yasai o tabesaseraremashita.|Waktu kecil, saya dipaksa makan sayur setiap hari.|N3
++ 部長に夜遅くまで残業させられました。|buchou ni yoru osoku made zangyou saseraremashita.|Saya disuruh lembur sampai larut malam oleh manajer.
++ 先生に作文を書き直させられた。|sensei ni sakubun o kakinaosaserareta.|Saya disuruh menulis ulang karangan oleh guru.
+N というのは～ことだ|N to iu no wa ~ koto da|Menjelaskan arti suatu istilah|「花見」というのは、桜を見て楽しむことです。|"hanami" to iu no wa, sakura o mite tanoshimu koto desu.|"Hanami" artinya menikmati melihat bunga sakura.|N3
++ 「残業」というのは、決まった時間の後も働くことです。|"zangyou" to iu no wa, kimatta jikan no ato mo hataraku koto desu.|"Zangyou" artinya tetap bekerja setelah jam kerja yang ditentukan.
++ 「積ん読」というのは、本を買っても読まずに積んでおくことだ。|"tsundoku" to iu no wa, hon o katte mo yomazu ni tsunde oku koto da.|"Tsundoku" artinya membeli buku tetapi menumpuknya tanpa dibaca.
+～のは～だ (penekanan)|~ no wa ~ da|Menonjolkan bagian kalimat yang penting|私が生まれたのは大阪です。|watashi ga umareta no wa oosaka desu.|Tempat saya lahir adalah Osaka.|N3
++ 一番大切なのは健康です。|ichiban taisetsu na no wa kenkou desu.|Yang paling penting adalah kesehatan.
++ 彼に会ったのは三年前だ。|kare ni atta no wa sannen mae da.|Saya bertemu dia tiga tahun yang lalu.
+Bentuk である (tulisan formal)|de aru|Gaya kalimat tulisan resmi, artikel, dan laporan|日本は島国である。|nihon wa shimaguni de aru.|Jepang adalah negara kepulauan.|N2
++ 水は生命にとって不可欠である。|mizu wa seimei ni totte fukaketsu de aru.|Air sangat penting bagi kehidupan.
++ この調査の目的は、若者の意識を知ることである。|kono chousa no mokuteki wa, wakamono no ishiki o shiru koto de aru.|Tujuan survei ini adalah mengetahui pandangan anak muda.
+～のは～からだ (alasan ditonjolkan)|~ no wa ~ kara da|Menjelaskan alasan dengan menonjolkannya di akhir|遅刻したのは、電車が止まったからだ。|chikoku shita no wa, densha ga tomatta kara da.|Saya terlambat karena kereta berhenti.|N2
++ 彼が日本語を勉強するのは、日本で働きたいからだ。|kare ga nihongo o benkyou suru no wa, nihon de hatarakitai kara da.|Dia belajar bahasa Jepang karena ingin bekerja di Jepang.
++ 野菜が高いのは、天気が悪かったからです。|yasai ga takai no wa, tenki ga warukatta kara desu.|Sayur mahal karena cuacanya buruk.
+～とされている|~ to sarete iru|Dianggap atau dinyatakan secara umum (gaya berita)|この寺は日本で最も古いとされている。|kono tera wa nihon de mottomo furui to sarete iru.|Kuil ini dianggap yang tertua di Jepang.|N2
++ 緑茶は健康にいいとされている。|ryokucha wa kenkou ni ii to sarete iru.|Teh hijau dianggap baik untuk kesehatan.
++ 事故の原因は不明とされています。|jiko no gen'in wa fumei to sarete imasu.|Penyebab kecelakaan dinyatakan belum diketahui.
+Penjelas panjang + kata benda|nagai rentai shuushoku|Kalimat penjelas berlapis di depan kata benda (umum di bacaan)|駅前に新しくできた日本料理の店は、いつも込んでいる。|ekimae ni atarashiku dekita nihon ryouri no mise wa, itsumo konde iru.|Restoran Jepang yang baru dibuka di depan stasiun selalu ramai.|N2
++ 先週の会議で部長が説明した計画は、来月から始まる。|senshuu no kaigi de buchou ga setsumei shita keikaku wa, raigetsu kara hajimaru.|Rencana yang dijelaskan manajer di rapat minggu lalu dimulai bulan depan.
++ 子供のころによく遊んだ公園が、なくなってしまった。|kodomo no koro ni yoku asonda kouen ga, nakunatte shimatta.|Taman tempat saya sering bermain waktu kecil sudah tidak ada.
+Kalimat diakhiri kata benda (体言止め)|taigendome|Mengakhiri kalimat dengan kata benda, umum di judul berita dan sastra|首相、来月アメリカを訪問。|shushou, raigetsu amerika o houmon.|Perdana menteri bulan depan berkunjung ke Amerika.|N1
++ 夏の終わりの、静かな夕暮れ。|natsu no owari no, shizuka na yuugure.|Senja yang tenang di akhir musim panas.
++ 新駅、来春開業へ。|shin'eki, raishun kaigyou e.|Stasiun baru akan dibuka musim semi tahun depan.
+Inversi (倒置)|touchi|Membalik urutan kalimat untuk penekanan atau emosi|忘れられない、あの日のことは。|wasurerarenai, ano hi no koto wa.|Tak terlupakan, hari itu.|N1
++ 私は信じている、彼が必ず戻ってくると。|watashi wa shinjite iru, kare ga kanarazu modotte kuru to.|Aku percaya, dia pasti akan kembali.
++ 美しいなあ、この景色は。|utsukushii naa, kono keshiki wa.|Indahnya, pemandangan ini.
+～ものとする|~ mono to suru|Ketentuan resmi dalam peraturan atau kontrak|会費は毎月末までに支払うものとする。|kaihi wa maitsuki matsu made ni harau mono to suru.|Iuran anggota wajib dibayar paling lambat akhir setiap bulan.|N1
++ 本規約に違反した場合、会員資格を取り消すものとする。|hon kiyaku ni ihan shita baai, kaiin shikaku o torikesu mono to suru.|Jika melanggar ketentuan ini, keanggotaan akan dicabut.
++ 申請書は二部提出するものとする。|shinseisho wa nibu teishutsu suru mono to suru.|Formulir permohonan diserahkan sebanyak dua rangkap.
+～たる者|~ taru mono|Sebagai seorang ...; sikap yang semestinya dari suatu kedudukan|教師たる者、生徒の手本でなければならない。|kyoushi taru mono, seito no tehon de nakereba naranai.|Seorang guru harus menjadi teladan bagi murid.|N1
++ リーダーたる者、責任から逃げてはいけない。|riidaa taru mono, sekinin kara nigete wa ikenai.|Seorang pemimpin tidak boleh lari dari tanggung jawab.
++ 医者たる者、患者の話をよく聞くべきだ。|isha taru mono, kanja no hanashi o yoku kiku beki da.|Seorang dokter seharusnya mendengarkan pasien dengan baik.
 
 @partikel|Partikel|助詞 — kata kecil penanda fungsi kata dalam kalimat.
 - Partikel diletakkan setelah kata yang ditandainya, mis. 私は (saya + penanda topik).
 - は dibaca "wa", を dibaca "o", dan へ dibaca "e" saat menjadi partikel.
 - Satu partikel bisa punya beberapa fungsi, mis. に untuk waktu, tujuan, dan tempat keberadaan.
 は|wa|Topik kalimat|私は学生です。|watashi wa gakusei desu.|Saya pelajar.|N5
++ 今日は日曜日です。|kyou wa nichiyoubi desu.|Hari ini hari Minggu.
++ 兄は東京に住んでいます。|ani wa toukyou ni sunde imasu.|Kakak laki-laki saya tinggal di Tokyo.
 が|ga|Subjek; informasi baru|あそこに猫がいます。|asoko ni neko ga imasu.|Di sana ada kucing.|N5
++ 雨が降っています。|ame ga futte imasu.|Hujan sedang turun.
++ 私は頭が痛いです。|watashi wa atama ga itai desu.|Kepala saya sakit.
 を|o|Objek tindakan|水を飲みます。|mizu o nomimasu.|Minum air.|N5
++ 新聞を読みます。|shinbun o yomimasu.|Membaca koran.
++ 手紙を書きました。|tegami o kakimashita.|Menulis surat.
 を (tempat dilalui)|o|Tempat yang dilewati|公園を散歩します。|kouen o sanpo shimasu.|Berjalan-jalan di taman.|N5
++ この橋を渡ります。|kono hashi o watarimasu.|Menyeberangi jembatan ini.
++ 次の角を右に曲がってください。|tsugi no kado o migi ni magatte kudasai.|Tolong belok kanan di tikungan berikutnya.
 に (waktu)|ni|Waktu tertentu|七時に起きます。|shichiji ni okimasu.|Bangun jam tujuh.|N5
++ 月曜日に会議があります。|getsuyoubi ni kaigi ga arimasu.|Hari Senin ada rapat.
++ 八月に日本へ行きます。|hachigatsu ni nihon e ikimasu.|Bulan Agustus saya pergi ke Jepang.
 に (tujuan / penerima)|ni|Tujuan atau penerima tindakan|友達に手紙を書きます。|tomodachi ni tegami o kakimasu.|Menulis surat kepada teman.|N5
++ 母に電話をかけます。|haha ni denwa o kakemasu.|Menelepon ibu.
++ 毎朝、会社に行きます。|maiasa, kaisha ni ikimasu.|Setiap pagi pergi ke kantor.
 に (keberadaan)|ni|Tempat sesuatu berada|机の上に本があります。|tsukue no ue ni hon ga arimasu.|Ada buku di atas meja.|N5
++ 父は今、家にいます。|chichi wa ima, ie ni imasu.|Ayah sekarang ada di rumah.
++ 冷蔵庫にジュースがあります。|reizouko ni juusu ga arimasu.|Di kulkas ada jus.
 で (tempat kegiatan)|de|Tempat terjadinya kegiatan|工場で働きます。|koujou de hatarakimasu.|Bekerja di pabrik.|N5
++ 公園でサッカーをします。|kouen de sakkaa o shimasu.|Bermain sepak bola di taman.
++ レストランで晩ご飯を食べました。|resutoran de bangohan o tabemashita.|Makan malam di restoran.
 で (alat / cara)|de|Alat atau cara|バスで行きます。|basu de ikimasu.|Pergi naik bus.|N5
++ ペンで名前を書きます。|pen de namae o kakimasu.|Menulis nama dengan pena.
++ 日本語で話しましょう。|nihongo de hanashimashou.|Mari berbicara dalam bahasa Jepang.
 へ|e|Arah tujuan|日本へ行きます。|nihon e ikimasu.|Pergi ke Jepang.|N5
++ 来年、東京へ引っ越します。|rainen, toukyou e hikkoshimasu.|Tahun depan saya pindah ke Tokyo.
++ 週末、海へ行きました。|shuumatsu, umi e ikimashita.|Akhir pekan saya pergi ke laut.
 と|to|Bersama; dan (menyebut lengkap)|友達と映画を見ます。|tomodachi to eiga o mimasu.|Menonton film bersama teman.|N5
++ 先生と話しました。|sensei to hanashimashita.|Saya berbicara dengan guru.
++ 机の上にペンとノートがあります。|tsukue no ue ni pen to nooto ga arimasu.|Di atas meja ada pena dan buku catatan.
 や|ya|Dan (menyebut sebagian contoh)|りんごやバナナを買いました。|ringo ya banana o kaimashita.|Membeli apel, pisang, dan lain-lain.|N5
++ 机の上に本やペンがあります。|tsukue no ue ni hon ya pen ga arimasu.|Di atas meja ada buku, pena, dan lain-lain.
++ 休みの日は掃除や洗濯をします。|yasumi no hi wa souji ya sentaku o shimasu.|Pada hari libur saya bersih-bersih, mencuci, dan lain-lain.
 も|mo|Juga|私も行きます。|watashi mo ikimasu.|Saya juga pergi.|N5
++ 明日も雨です。|ashita mo ame desu.|Besok juga hujan.
++ 私もコーヒーをください。|watashi mo koohii o kudasai.|Saya juga minta kopi.
 の|no|Kepemilikan; penghubung kata benda|これは私の傘です。|kore wa watashi no kasa desu.|Ini payung saya.|N5
++ 日本の車は人気があります。|nihon no kuruma wa ninki ga arimasu.|Mobil Jepang populer.
++ あれは田中さんのかばんです。|are wa tanaka-san no kaban desu.|Itu tas Pak Tanaka.
 から|kara|Dari (titik awal); karena|会社は九時からです。|kaisha wa kuji kara desu.|Kantor mulai dari jam sembilan.|N5
++ 国から手紙が来ました。|kuni kara tegami ga kimashita.|Surat datang dari kampung halaman.
++ 寒いから、窓を閉めてください。|samui kara, mado o shimete kudasai.|Karena dingin, tolong tutup jendela.
 まで|made|Sampai|五時まで働きます。|goji made hatarakimasu.|Bekerja sampai jam lima.|N5
++ 駅まで歩きます。|eki made arukimasu.|Berjalan kaki sampai stasiun.
++ 夏休みは八月三十一日までです。|natsuyasumi wa hachigatsu sanjuuichinichi made desu.|Libur musim panas sampai tanggal 31 Agustus.
 より|yori|Daripada (perbandingan)|電車はバスより速いです。|densha wa basu yori hayai desu.|Kereta lebih cepat daripada bus.|N5
++ 今日は昨日より寒いです。|kyou wa kinou yori samui desu.|Hari ini lebih dingin daripada kemarin.
++ 兄は私より背が高いです。|ani wa watashi yori se ga takai desu.|Kakak laki-laki saya lebih tinggi daripada saya.
 か|ka|Penanda tanya; atau|コーヒーか紅茶はいかがですか。|koohii ka koucha wa ikaga desu ka.|Mau kopi atau teh?|N5
++ 明日か明後日に行きます。|ashita ka asatte ni ikimasu.|Saya pergi besok atau lusa.
++ これは日本の車ですか。|kore wa nihon no kuruma desu ka.|Apakah ini mobil Jepang?
 ね|ne|Meminta persetujuan|いい天気ですね。|ii tenki desu ne.|Cuacanya bagus, ya.|N5
++ この料理、おいしいですね。|kono ryouri, oishii desu ne.|Masakan ini enak, ya.
++ 明日は休みですね。|ashita wa yasumi desu ne.|Besok libur, kan?
 よ|yo|Memberi tahu; menegaskan|この店は安いですよ。|kono mise wa yasui desu yo.|Toko ini murah, lho.|N5
++ 明日はテストがありますよ。|ashita wa tesuto ga arimasu yo.|Besok ada ujian, lho.
++ 気をつけて。道がすべりますよ。|ki o tsukete. michi ga suberimasu yo.|Hati-hati. Jalannya licin, lho.
 だけ|dake|Hanya|一つだけください。|hitotsu dake kudasai.|Tolong satu saja.|N5
++ 私だけ知りませんでした。|watashi dake shirimasen deshita.|Hanya saya yang tidak tahu.
++ 日曜日だけ休みです。|nichiyoubi dake yasumi desu.|Hanya hari Minggu yang libur.
 しか～ない|shika ~ nai|Hanya (bernuansa kurang)|百円しかありません。|hyakuen shika arimasen.|Hanya ada seratus yen.|N4
++ 一時間しか寝ていません。|ichijikan shika nete imasen.|Saya hanya tidur satu jam.
++ 教室には学生が三人しかいません。|kyoushitsu ni wa gakusei ga sannin shika imasen.|Di kelas hanya ada tiga pelajar.
+ばかり|bakari|Terus-menerus; hanya (bernuansa kebanyakan)|弟は肉ばかり食べます。|otouto wa niku bakari tabemasu.|Adik saya makan daging melulu.|N4
++ 毎日雨ばかりです。|mainichi ame bakari desu.|Setiap hari hujan melulu.
++ 彼は遊んでばかりいる。|kare wa asonde bakari iru.|Dia main terus.
+でも (contoh halus)|demo|Memberi contoh atau tawaran secara halus; bahkan|お茶でも飲みませんか。|ocha demo nomimasen ka.|Mau minum teh atau apa?|N4
++ 週末、映画でも見に行こう。|shuumatsu, eiga demo mi ni ikou.|Akhir pekan ayo nonton film atau apa gitu.
++ 子供でも分かる問題です。|kodomo demo wakaru mondai desu.|Ini soal yang bahkan anak-anak pun mengerti.
+ほど～ない|hodo ~ nai|Tidak se... (perbandingan)|バスは電車ほど速くないです。|basu wa densha hodo hayakunai desu.|Bus tidak secepat kereta.|N4
++ この店はあの店ほど高くない。|kono mise wa ano mise hodo takakunai.|Toko ini tidak semahal toko itu.
++ 私の国は日本ほど寒くないです。|watashi no kuni wa nihon hodo samukunai desu.|Negara saya tidak sedingin Jepang.
+とか|toka|Menyebut contoh secara santai|休みの日は映画とか買い物とかに行きます。|yasumi no hi wa eiga toka kaimono toka ni ikimasu.|Saat libur saya pergi nonton film, belanja, dan lain-lain.|N4
++ 果物とか野菜とか、もっと食べたほうがいいよ。|kudamono toka yasai toka, motto tabeta hou ga ii yo.|Sebaiknya lebih banyak makan buah, sayur, dan semacamnya.
++ 寿司とかラーメンとかが好きです。|sushi toka raamen toka ga suki desu.|Saya suka sushi, ramen, dan semacamnya.
+のに (kegunaan)|noni|Untuk (kegunaan atau keperluan)|このはさみは紙を切るのに便利です。|kono hasami wa kami o kiru noni benri desu.|Gunting ini praktis untuk memotong kertas.|N4
++ 駅まで行くのに二十分かかります。|eki made iku noni nijuppun kakarimasu.|Untuk pergi ke stasiun butuh dua puluh menit.
++ この箱は荷物を送るのに使います。|kono hako wa nimotsu o okuru noni tsukaimasu.|Kotak ini dipakai untuk mengirim barang.
+さえ|sae|Bahkan; asalkan|彼は自分の名前さえ書けない。|kare wa jibun no namae sae kakenai.|Dia bahkan tidak bisa menulis namanya sendiri.|N3
++ 薬さえ飲めば、すぐ治ります。|kusuri sae nomeba, sugu naorimasu.|Asalkan minum obat, cepat sembuh.
++ 忙しくて、休む時間さえない。|isogashikute, yasumu jikan sae nai.|Saking sibuknya, waktu istirahat pun tidak ada.
+こそ|koso|Justru; menegaskan|今年こそ日本へ行きたい。|kotoshi koso nihon e ikitai.|Tahun inilah saya ingin pergi ke Jepang.|N3
++ 失敗したからこそ、学べることもある。|shippai shita kara koso, manaberu koto mo aru.|Justru karena gagal, ada hal yang bisa dipelajari.
++ これこそ私が探していた本です。|kore koso watashi ga sagashite ita hon desu.|Inilah buku yang saya cari.
+なんか／など (merendah)|nanka / nado|Hal semacam itu (merendah atau meremehkan)|私なんか、まだまだです。|watashi nanka, madamada desu.|Saya mah masih jauh dari mahir.|N3
++ 宿題なんかしたくない。|shukudai nanka shitakunai.|Ogah mengerjakan PR segala.
++ 彼の言うことなど信じられない。|kare no iu koto nado shinjirarenai.|Ucapan orang macam dia tidak bisa dipercaya.
+について|ni tsuite|Tentang; mengenai|日本の歴史について勉強しています。|nihon no rekishi ni tsuite benkyou shite imasu.|Saya belajar tentang sejarah Jepang.|N3
++ 旅行の計画について話し合いましょう。|ryokou no keikaku ni tsuite hanashiaimashou.|Mari berdiskusi tentang rencana perjalanan.
++ この問題について、どう思いますか。|kono mondai ni tsuite, dou omoimasu ka.|Bagaimana pendapat Anda tentang masalah ini?
+にとって|ni totte|Bagi (dari sudut pandang)|私にとって、この写真は宝物です。|watashi ni totte, kono shashin wa takaramono desu.|Bagi saya, foto ini adalah harta.|N3
++ 外国人にとって、敬語は難しい。|gaikokujin ni totte, keigo wa muzukashii.|Bagi orang asing, bahasa hormat itu sulit.
++ 社会人にとって、時間を守るのは当たり前だ。|shakaijin ni totte, jikan o mamoru no wa atarimae da.|Bagi orang yang sudah bekerja, tepat waktu adalah hal yang wajar.
+によって|ni yotte|Oleh (pelaku dalam kalimat pasif); tergantung|この絵はピカソによって描かれた。|kono e wa pikaso ni yotte egakareta.|Lukisan ini dilukis oleh Picasso.|N3
++ 人によって考え方が違う。|hito ni yotte kangaekata ga chigau.|Cara berpikir berbeda-beda tergantung orangnya.
++ 電話はベルによって発明された。|denwa wa beru ni yotte hatsumei sareta.|Telepon ditemukan oleh Bell.
+において|ni oite|Di; dalam (formal)|会議は本社において行われる。|kaigi wa honsha ni oite okonawareru.|Rapat diadakan di kantor pusat.|N2
++ 日本において、少子化は深刻な問題だ。|nihon ni oite, shoushika wa shinkoku na mondai da.|Di Jepang, penurunan angka kelahiran adalah masalah serius.
++ 仕事において、一番大切なのは信頼だ。|shigoto ni oite, ichiban taisetsu na no wa shinrai da.|Dalam pekerjaan, yang paling penting adalah kepercayaan.
+に関して|ni kanshite|Berkenaan dengan (formal)|新製品に関して、多くの問い合わせがあった。|shinseihin ni kanshite, ooku no toiawase ga atta.|Ada banyak pertanyaan berkenaan dengan produk baru.|N2
++ 環境問題に関する本を読んだ。|kankyou mondai ni kansuru hon o yonda.|Saya membaca buku tentang masalah lingkungan.
++ 事故の原因に関しては、現在調査中です。|jiko no gen'in ni kanshite wa, genzai chousachuu desu.|Mengenai penyebab kecelakaan, saat ini sedang diselidiki.
+をめぐって|o megutte|Seputar persoalan yang diperdebatkan|ダムの建設をめぐって、反対運動が起きた。|damu no kensetsu o megutte, hantai undou ga okita.|Muncul gerakan penolakan seputar pembangunan bendungan.|N2
++ 社長の後継者をめぐって、社内が二つに分かれた。|shachou no koukeisha o megutte, shanai ga futatsu ni wakareta.|Perusahaan terbelah dua seputar siapa pengganti direktur.
++ 一人の女性をめぐって、二人の男が争った。|hitori no josei o megutte, futari no otoko ga arasotta.|Dua pria bertikai memperebutkan seorang wanita.
+にわたって|ni watatte|Selama; meliputi rentang|十年にわたって研究を続けた。|juunen ni watatte kenkyuu o tsuzuketa.|Penelitian berlanjut selama sepuluh tahun.|N2
++ 大雨は九州全域にわたって降った。|ooame wa kyuushuu zen'iki ni watatte futta.|Hujan lebat turun di seluruh wilayah Kyushu.
++ 手術は五時間にわたって行われた。|shujutsu wa gojikan ni watatte okonawareta.|Operasi berlangsung selama lima jam.
+すら|sura|Bahkan (lebih kuat dari さえ)|専門家ですら、その原因は分からない。|senmonka de sura, sono gen'in wa wakaranai.|Bahkan para ahli pun tidak tahu penyebabnya.|N2
++ 当時は電話すらない村だった。|touji wa denwa sura nai mura datta.|Dulu itu desa yang bahkan tidak punya telepon.
++ 彼は挨拶すらしないで帰った。|kare wa aisatsu sura shinaide kaetta.|Dia pulang tanpa mengucapkan salam sekalipun.
+をもって|o motte|Dengan; terhitung (sangat formal)|本日をもって退職いたします。|honjitsu o motte taishoku itashimasu.|Terhitung hari ini saya mengundurkan diri.|N1
++ 誠意をもって対応いたします。|seii o motte taiou itashimasu.|Kami akan menanganinya dengan sepenuh ketulusan.
++ 合否はメールをもってお知らせします。|gouhi wa meeru o motte oshirase shimasu.|Hasil kelulusan akan diberitahukan melalui email.
+たりとも|taritomo|Bahkan satu pun (dengan bentuk negatif)|一分たりとも遅れてはいけない。|ippun taritomo okurete wa ikenai.|Satu menit pun tidak boleh terlambat.|N1
++ 水は一滴たりとも無駄にできない。|mizu wa itteki taritomo muda ni dekinai.|Air setetes pun tidak boleh disia-siakan.
++ 試験まで一日たりとも休まなかった。|shiken made ichinichi taritomo yasumanakatta.|Sampai ujian, satu hari pun saya tidak libur.
+とて|tote|Sekalipun; meskipun (literer)|子供とて、許されることではない。|kodomo tote, yurusareru koto de wa nai.|Sekalipun anak-anak, itu bukan hal yang bisa dimaafkan.|N1
++ 私とて、失敗するのは怖い。|watashi tote, shippai suru no wa kowai.|Saya pun takut gagal.
++ 今から急いだとて、もう間に合わない。|ima kara isoida tote, mou maniawanai.|Sekalipun bergegas sekarang, sudah tidak keburu.
+ならでは|nara de wa|Khas; hanya bisa dari ...|これは京都ならではの景色だ。|kore wa kyouto nara de wa no keshiki da.|Ini pemandangan khas Kyoto.|N1
++ 手作りならではの温かさがある。|tezukuri nara de wa no atatakasa ga aru.|Ada kehangatan yang khas buatan tangan.
++ 地元の人ならではの情報を教えてもらった。|jimoto no hito nara de wa no jouhou o oshiete moratta.|Saya diberi informasi yang hanya diketahui warga setempat.
+なりとも|nari tomo|Setidaknya; walau sedikit|少しなりとも、お役に立てればうれしいです。|sukoshi nari tomo, oyaku ni tatereba ureshii desu.|Saya senang jika bisa membantu walau sedikit.|N1
++ 一目なりとも、会いたい。|hitome nari tomo, aitai.|Saya ingin bertemu, walau hanya sekilas.
++ わずかなりとも、寄付をさせてください。|wazuka nari tomo, kifu o sasete kudasai.|Izinkan saya menyumbang, walau sedikit.
 
 @pola|Pola kalimat dasar|文型 — pola kalimat yang paling sering dipakai sehari-hari.
-- Pola dasar ini adalah fondasi semua pola lanjutan di N4 sampai N1.
+- Pola N5 adalah fondasi semua pola lanjutan. Setiap level punya pola inti sendiri; pilih level untuk melihat pola yang paling sering dipakai di level itu.
 - Akhiran です dan ます membuat kalimat menjadi sopan.
 N は N です|N wa N desu|A adalah B|私はインドネシア人です。|watashi wa indoneshiajin desu.|Saya orang Indonesia.|N5
++ 父は会社員です。|chichi wa kaishain desu.|Ayah saya karyawan perusahaan.
++ あの人は私の友達です。|ano hito wa watashi no tomodachi desu.|Orang itu teman saya.
 N は N じゃありません|N wa N ja arimasen|A bukan B|これは私の本じゃありません。|kore wa watashi no hon ja arimasen.|Ini bukan buku saya.|N5
++ 私は先生じゃありません。|watashi wa sensei ja arimasen.|Saya bukan guru.
++ 明日は休みじゃありません。|ashita wa yasumi ja arimasen.|Besok bukan hari libur.
 N でした|N deshita|Dulu adalah|昨日は休みでした。|kinou wa yasumi deshita.|Kemarin hari libur.|N5
++ 昨日は雨でした。|kinou wa ame deshita.|Kemarin hujan.
++ 父は昔、先生でした。|chichi wa mukashi, sensei deshita.|Dulu ayah saya seorang guru.
 N が あります|N ga arimasu|Ada (benda mati)|近くにコンビニがあります。|chikaku ni konbini ga arimasu.|Di dekat sini ada minimarket.|N5
++ 机の上にパソコンがあります。|tsukue no ue ni pasokon ga arimasu.|Di atas meja ada komputer.
++ 今日は宿題がたくさんあります。|kyou wa shukudai ga takusan arimasu.|Hari ini ada banyak PR.
 N が います|N ga imasu|Ada (orang / hewan)|教室に先生がいます。|kyoushitsu ni sensei ga imasu.|Di kelas ada guru.|N5
++ 公園に犬がいます。|kouen ni inu ga imasu.|Di taman ada anjing.
++ 私には弟が二人います。|watashi ni wa otouto ga futari imasu.|Saya punya dua adik laki-laki.
 N は Adj-i です|N wa Adj-i desu|Sifat dengan kata sifat-i|この料理はおいしいです。|kono ryouri wa oishii desu.|Masakan ini enak.|N5
++ この靴は新しいです。|kono kutsu wa atarashii desu.|Sepatu ini baru.
++ 東京は人が多いです。|toukyou wa hito ga ooi desu.|Tokyo banyak orangnya.
 N は Adj-na です|N wa Adj-na desu|Sifat dengan kata sifat-na|この町は静かです。|kono machi wa shizuka desu.|Kota ini tenang.|N5
++ 田中さんは親切です。|tanaka-san wa shinsetsu desu.|Pak Tanaka baik hati.
++ この駅はとても便利です。|kono eki wa totemo benri desu.|Stasiun ini sangat praktis.
 V ます / V ません|V masu / V masen|Melakukan / tidak melakukan|毎朝コーヒーを飲みます。|maiasa koohii o nomimasu.|Setiap pagi minum kopi.|N5
++ 毎晩、日本語を勉強します。|maiban, nihongo o benkyou shimasu.|Setiap malam saya belajar bahasa Jepang.
++ 私はたばこを吸いません。|watashi wa tabako o suimasen.|Saya tidak merokok.
 V たいです|V tai desu|Ingin melakukan|日本に行きたいです。|nihon ni ikitai desu.|Saya ingin pergi ke Jepang.|N5
++ 寿司が食べたいです。|sushi ga tabetai desu.|Saya ingin makan sushi.
++ 今日は早く帰りたいです。|kyou wa hayaku kaeritai desu.|Hari ini saya ingin pulang cepat.
 N が ほしいです|N ga hoshii desu|Ingin memiliki|新しい靴がほしいです。|atarashii kutsu ga hoshii desu.|Saya ingin sepatu baru.|N5
++ 新しいスマホがほしいです。|atarashii sumaho ga hoshii desu.|Saya ingin ponsel baru.
++ 時間がほしいです。|jikan ga hoshii desu.|Saya ingin punya waktu.
 N が 好きです|N ga suki desu|Suka|私は音楽が好きです。|watashi wa ongaku ga suki desu.|Saya suka musik.|N5
++ 弟はゲームが好きです。|otouto wa geemu ga suki desu.|Adik laki-laki saya suka game.
++ 私は日本の歌が好きです。|watashi wa nihon no uta ga suki desu.|Saya suka lagu Jepang.
 N が できます|N ga dekimasu|Bisa|私は日本語ができます。|watashi wa nihongo ga dekimasu.|Saya bisa bahasa Jepang.|N5
++ 兄は水泳ができます。|ani wa suiei ga dekimasu.|Kakak laki-laki saya bisa berenang.
++ 私は英語が少しできます。|watashi wa eigo ga sukoshi dekimasu.|Saya bisa sedikit bahasa Inggris.
 N を ください|N o kudasai|Minta, tolong berikan|水をください。|mizu o kudasai.|Tolong minta air.|N5
++ コーヒーを二つください。|koohii o futatsu kudasai.|Tolong kopi dua.
++ この赤いシャツをください。|kono akai shatsu o kudasai.|Saya minta kemeja merah ini.
 V てください|V te kudasai|Tolong lakukan|ゆっくり話してください。|yukkuri hanashite kudasai.|Tolong bicara pelan-pelan.|N5
++ ここに座ってください。|koko ni suwatte kudasai.|Silakan duduk di sini.
++ 明日、九時に来てください。|ashita, kuji ni kite kudasai.|Tolong datang besok jam sembilan.
 V てもいいです|V te mo ii desu|Boleh melakukan|ここに座ってもいいです。|koko ni suwatte mo ii desu.|Boleh duduk di sini.|N5
++ この部屋を使ってもいいです。|kono heya o tsukatte mo ii desu.|Boleh memakai ruangan ini.
++ 窓を開けてもいいですか。|mado o akete mo ii desu ka.|Bolehkah saya membuka jendela?
 V てはいけません|V te wa ikemasen|Tidak boleh|ここで写真を撮ってはいけません。|koko de shashin o totte wa ikemasen.|Tidak boleh memotret di sini.|N5
++ ここに車を止めてはいけません。|koko ni kuruma o tomete wa ikemasen.|Tidak boleh parkir mobil di sini.
++ 図書館で大きい声で話してはいけません。|toshokan de ookii koe de hanashite wa ikemasen.|Tidak boleh berbicara keras di perpustakaan.
 N より N のほうが Adj|N yori N no hō ga Adj|Lebih ... daripada|バスより電車のほうが速いです。|basu yori densha no hou ga hayai desu.|Kereta lebih cepat daripada bus.|N5
++ 犬より猫のほうが好きです。|inu yori neko no hou ga suki desu.|Saya lebih suka kucing daripada anjing.
++ 肉より魚のほうが体にいいです。|niku yori sakana no hou ga karada ni ii desu.|Ikan lebih baik untuk tubuh daripada daging.
 N で N がいちばん Adj|N de N ga ichiban Adj|Paling ...|果物でりんごがいちばん好きです。|kudamono de ringo ga ichiban suki desu.|Di antara buah, saya paling suka apel.|N5
++ クラスで田中さんがいちばん背が高いです。|kurasu de tanaka-san ga ichiban se ga takai desu.|Di kelas, Tanaka yang paling tinggi.
++ 一年で八月がいちばん暑いです。|ichinen de hachigatsu ga ichiban atsui desu.|Dalam setahun, Agustus yang paling panas.
+V たことがあります|V ta koto ga arimasu|Pernah melakukan|日本の映画を見たことがあります。|nihon no eiga o mita koto ga arimasu.|Saya pernah menonton film Jepang.|N4
++ 沖縄へ行ったことがありますか。|okinawa e itta koto ga arimasu ka.|Pernah pergi ke Okinawa?
++ 一度も入院したことがありません。|ichido mo nyuuin shita koto ga arimasen.|Saya belum pernah sekali pun dirawat di rumah sakit.
+V なければなりません|V nakereba narimasen|Harus melakukan|毎日薬を飲まなければなりません。|mainichi kusuri o nomanakereba narimasen.|Saya harus minum obat setiap hari.|N4
++ 明日は六時に起きなければなりません。|ashita wa rokuji ni okinakereba narimasen.|Besok saya harus bangun jam enam.
++ パスポートを更新しなければなりません。|pasupooto o koushin shinakereba narimasen.|Saya harus memperpanjang paspor.
+V なくてもいいです|V nakute mo ii desu|Tidak perlu melakukan|名前は書かなくてもいいです。|namae wa kakanakute mo ii desu.|Nama tidak perlu ditulis.|N4
++ 明日は会社に来なくてもいいです。|ashita wa kaisha ni konakute mo ii desu.|Besok tidak perlu datang ke kantor.
++ 急がなくてもいいですよ。|isoganakute mo ii desu yo.|Tidak perlu buru-buru, kok.
+V ことができます|V koto ga dekimasu|Bisa melakukan|私はピアノを弾くことができます。|watashi wa piano o hiku koto ga dekimasu.|Saya bisa bermain piano.|N4
++ この図書館では本を二週間借りることができます。|kono toshokan de wa hon o nishuukan kariru koto ga dekimasu.|Di perpustakaan ini buku bisa dipinjam selama dua minggu.
++ ここからは富士山を見ることができます。|koko kara wa fujisan o miru koto ga dekimasu.|Dari sini Gunung Fuji bisa terlihat.
+V たほうがいいです|V ta hou ga ii desu|Sebaiknya melakukan (saran)|熱があるなら、休んだほうがいいです。|netsu ga aru nara, yasunda hou ga ii desu.|Kalau demam, sebaiknya istirahat.|N4
++ 寝る前に、歯を磨いたほうがいいですよ。|neru mae ni, ha o migaita hou ga ii desu yo.|Sebaiknya sikat gigi sebelum tidur.
++ 夜は一人で歩かないほうがいいです。|yoru wa hitori de arukanai hou ga ii desu.|Sebaiknya jangan berjalan sendirian di malam hari.
+V つもりです|V tsumori desu|Berniat melakukan|来年、日本語能力試験を受けるつもりです。|rainen, nihongo nouryoku shiken o ukeru tsumori desu.|Tahun depan saya berniat ikut ujian JLPT.|N4
++ 今年は貯金するつもりです。|kotoshi wa chokin suru tsumori desu.|Tahun ini saya berniat menabung.
++ 今日はどこへも出かけないつもりです。|kyou wa doko e mo dekakenai tsumori desu.|Hari ini saya berniat tidak pergi ke mana pun.
+～ようにする|you ni suru|Berusaha membiasakan|毎朝、早く起きるようにしています。|maiasa, hayaku okiru you ni shite imasu.|Saya berusaha bangun pagi setiap hari.|N3
++ 甘い物を食べすぎないようにしています。|amai mono o tabesuginai you ni shite imasu.|Saya berusaha tidak terlalu banyak makan makanan manis.
++ 約束の時間を守るようにしてください。|yakusoku no jikan o mamoru you ni shite kudasai.|Usahakan selalu tepat waktu sesuai janji.
+～ことにする|koto ni suru|Memutuskan sendiri|来月から自転車で通うことにしました。|raigetsu kara jitensha de kayou koto ni shimashita.|Saya memutuskan mulai bulan depan berangkat naik sepeda.|N3
++ 今晩は外で食べることにしよう。|konban wa soto de taberu koto ni shiyou.|Malam ini kita putuskan makan di luar, yuk.
++ その話は聞かなかったことにします。|sono hanashi wa kikanakatta koto ni shimasu.|Saya anggap tidak pernah mendengar cerita itu.
+～ことになる|koto ni naru|Diputuskan (bukan oleh diri sendiri)|来週から夜勤をすることになりました。|raishuu kara yakin o suru koto ni narimashita.|Diputuskan mulai minggu depan saya kerja shift malam.|N3
++ 会議は中止することになりました。|kaigi wa chuushi suru koto ni narimashita.|Diputuskan rapatnya dibatalkan.
++ 来年の春、結婚することになりました。|rainen no haru, kekkon suru koto ni narimashita.|Sudah diputuskan saya akan menikah musim semi tahun depan.
+～はずだ|hazu da|Seharusnya (berdasarkan alasan)|彼は日本に十年いたから、日本語が上手なはずだ。|kare wa nihon ni juunen ita kara, nihongo ga jouzu na hazu da.|Dia tinggal di Jepang sepuluh tahun, jadi seharusnya bahasa Jepangnya bagus.|N3
++ 鍵はかばんの中にあるはずです。|kagi wa kaban no naka ni aru hazu desu.|Kuncinya seharusnya ada di dalam tas.
++ 店は十時に開くはずだ。|mise wa juuji ni hiraku hazu da.|Tokonya seharusnya buka jam sepuluh.
+～らしい|rashii|Katanya; tampaknya|あの店のラーメンはおいしいらしい。|ano mise no raamen wa oishii rashii.|Katanya ramen di toko itu enak.|N3
++ 部長は来月、転勤するらしいです。|buchou wa raigetsu, tenkin suru rashii desu.|Katanya manajer akan dipindahtugaskan bulan depan.
++ 外は寒いらしいから、コートを着ていこう。|soto wa samui rashii kara, kooto o kite ikou.|Katanya di luar dingin, ayo pakai mantel.
+～みたいだ|mitai da|Seperti; sepertinya (santai)|あの人は日本人みたいだ。|ano hito wa nihonjin mitai da.|Orang itu sepertinya orang Jepang.|N3
++ 今日は夏みたいに暑いね。|kyou wa natsu mitai ni atsui ne.|Hari ini panas seperti musim panas, ya.
++ 誰かが来たみたいだよ。|dareka ga kita mitai da yo.|Sepertinya ada yang datang.
+～ざるを得ない|zaru o enai|Mau tidak mau harus|人が足りないので、私が行かざるを得ない。|hito ga tarinai node, watashi ga ikazaru o enai.|Karena orangnya kurang, mau tidak mau saya yang harus pergi.|N2
++ この状況では、計画を変更せざるを得ない。|kono joukyou de wa, keikaku o henkou sezaru o enai.|Dalam situasi ini, rencana terpaksa diubah.
++ 彼の熱意には感心せざるを得なかった。|kare no netsui ni wa kanshin sezaru o enakatta.|Mau tidak mau saya kagum pada semangatnya.
+～わけにはいかない|wake ni wa ikanai|Tidak bisa (karena norma atau situasi)|車で来たので、お酒を飲むわけにはいかない。|kuruma de kita node, osake o nomu wake ni wa ikanai.|Karena datang naik mobil, saya tidak bisa minum alkohol.|N2
++ 大切な約束だから、忘れるわけにはいかない。|taisetsu na yakusoku da kara, wasureru wake ni wa ikanai.|Ini janji penting, jadi tidak boleh lupa.
++ 試験前なので、遊んでいるわけにはいかない。|shikenmae na node, asonde iru wake ni wa ikanai.|Karena menjelang ujian, saya tidak bisa bersantai-santai.
+～に違いない|ni chigainai|Pasti (keyakinan kuat)|彼の顔を見れば、何かあったに違いない。|kare no kao o mireba, nanika atta ni chigainai.|Melihat wajahnya, pasti ada sesuatu yang terjadi.|N2
++ 彼女は今ごろ空港に着いているに違いない。|kanojo wa imagoro kuukou ni tsuite iru ni chigainai.|Saat ini dia pasti sudah tiba di bandara.
++ このかばんは高かったに違いない。|kono kaban wa takakatta ni chigainai.|Tas ini pasti mahal.
+～とは限らない|to wa kagiranai|Belum tentu|有名な店がおいしいとは限らない。|yuumei na mise ga oishii to wa kagiranai.|Toko terkenal belum tentu enak.|N2
++ 値段が高いものが長持ちするとは限らない。|nedan ga takai mono ga nagamochi suru to wa kagiranai.|Barang mahal belum tentu awet.
++ 頭がいい人が仕事ができるとは限らない。|atama ga ii hito ga shigoto ga dekiru to wa kagiranai.|Orang pintar belum tentu cakap bekerja.
+～ものだ (hal yang wajar)|mono da|Memang seharusnya; sudah sewajarnya|人に会ったら、あいさつをするものだ。|hito ni attara, aisatsu o suru mono da.|Kalau bertemu orang, sudah sewajarnya memberi salam.|N2
++ 年をとると、時間が早く感じられるものだ。|toshi o toru to, jikan ga hayaku kanjirareru mono da.|Semakin tua, waktu memang terasa cepat berlalu.
++ 子供は外で遊ぶものだ。|kodomo wa soto de asobu mono da.|Anak-anak memang sewajarnya bermain di luar.
+～しかない|shika nai|Tidak ada pilihan selain|バスがないから、歩いて帰るしかない。|basu ga nai kara, aruite kaeru shika nai.|Tidak ada bus, jadi tidak ada pilihan selain pulang jalan kaki.|N2
++ 決まったことだから、やるしかない。|kimatta koto da kara, yaru shika nai.|Sudah diputuskan, jadi tidak ada pilihan selain melakukannya.
++ 自分で調べるしかないね。|jibun de shiraberu shika nai ne.|Tidak ada cara lain selain mencari tahu sendiri, ya.
+～を余儀なくされる|o yoginaku sareru|Terpaksa (karena keadaan)|雨で、試合は延期を余儀なくされた。|ame de, shiai wa enki o yoginaku sareta.|Karena hujan, pertandingan terpaksa ditunda.|N1
++ 不況で、多くの会社が倒産を余儀なくされた。|fukyou de, ooku no kaisha ga tousan o yoginaku sareta.|Akibat resesi, banyak perusahaan terpaksa bangkrut.
++ 地震で住民は避難生活を余儀なくされている。|jishin de juumin wa hinan seikatsu o yoginaku sarete iru.|Akibat gempa, warga terpaksa hidup di pengungsian.
+～ずにはいられない|zu ni wa irarenai|Tidak bisa menahan diri untuk|あの映画を見て、泣かずにはいられなかった。|ano eiga o mite, nakazu ni wa irarenakatta.|Menonton film itu, saya tidak bisa menahan tangis.|N1
++ かわいい子犬を見ると、触らずにはいられない。|kawaii koinu o miru to, sawarazu ni wa irarenai.|Melihat anak anjing yang lucu, saya tidak tahan untuk tidak menyentuhnya.
++ 彼の話はおかしくて、笑わずにはいられない。|kare no hanashi wa okashikute, warawazu ni wa irarenai.|Ceritanya lucu sekali, saya tidak bisa menahan tawa.
+～てやまない|te yamanai|Senantiasa (perasaan kuat)|皆様のご健康を祈ってやみません。|minasama no gokenkou o inotte yamimasen.|Saya senantiasa mendoakan kesehatan Anda semua.|N1
++ 平和な世界を願ってやまない。|heiwa na sekai o negatte yamanai.|Saya senantiasa mendambakan dunia yang damai.
++ 彼女は音楽を愛してやまない。|kanojo wa ongaku o aishite yamanai.|Dia sangat mencintai musik.
+～までもない|made mo nai|Tidak perlu sampai|わざわざ説明するまでもない。|wazawaza setsumei suru made mo nai.|Tidak perlu repot-repot dijelaskan.|N1
++ この程度の傷なら、病院に行くまでもない。|kono teido no kizu nara, byouin ni iku made mo nai.|Luka seringan ini tidak perlu sampai ke rumah sakit.
++ 言うまでもなく、安全が第一だ。|iu made mo naku, anzen ga daiichi da.|Tidak perlu dikatakan lagi, keselamatan yang utama.
+～に越したことはない|ni koshita koto wa nai|Paling baik jika ...|準備は早いに越したことはない。|junbi wa hayai ni koshita koto wa nai.|Persiapan sebaiknya secepat mungkin.|N1
++ お金はあるに越したことはない。|okane wa aru ni koshita koto wa nai.|Punya uang tentu lebih baik.
++ 安全のためには、確認するに越したことはない。|anzen no tame ni wa, kakunin suru ni koshita koto wa nai.|Demi keselamatan, sebaiknya memang dicek.
 
 @waktu|Bentuk waktu dan aspek|時制・アスペクト — kapan tindakan terjadi dan bagaimana keadaannya.
 - Bahasa Jepang hanya membedakan bentuk lampau (～た／～ました) dan bukan lampau (～る／～ます).
 - Bentuk bukan lampau bisa berarti kebiasaan atau masa depan.
 - Aspek (sedang, sudah, baru saja, terlanjur) dinyatakan dengan pola seperti ～ている, ～てしまう, dan ～たところ.
 V ます|V masu|Kebiasaan atau masa depan|毎日日本語を勉強します。|mainichi nihongo o benkyou shimasu.|Setiap hari saya belajar bahasa Jepang.|N5
++ 来週、国へ帰ります。|raishuu, kuni e kaerimasu.|Minggu depan saya pulang ke negara asal.
++ 父は毎朝六時に起きます。|chichi wa maiasa rokuji ni okimasu.|Ayah bangun jam enam setiap pagi.
 V ました|V mashita|Lampau (sopan)|昨日映画を見ました。|kinou eiga o mimashita.|Kemarin saya menonton film.|N5
++ 先週、友達と海へ行きました。|senshuu, tomodachi to umi e ikimashita.|Minggu lalu saya pergi ke laut bersama teman.
++ 今朝、パンを食べました。|kesa, pan o tabemashita.|Tadi pagi saya makan roti.
 V た|V ta|Lampau (biasa)|もう食べた。|mou tabeta.|Sudah makan.|N5
++ 昨日、友達に会った。|kinou, tomodachi ni atta.|Kemarin bertemu teman.
++ 宿題、もう終わった？|shukudai, mou owatta?|PR-nya sudah selesai?
 V ている (sedang)|V te iru|Tindakan sedang berlangsung|今、雨が降っています。|ima, ame ga futte imasu.|Sekarang sedang hujan.|N5
++ 弟は部屋で寝ています。|otouto wa heya de nete imasu.|Adik saya sedang tidur di kamar.
++ 今、晩ご飯を作っています。|ima, bangohan o tsukutte imasu.|Saya sedang memasak makan malam.
 V ている (keadaan)|V te iru|Keadaan hasil suatu tindakan|窓が開いています。|mado ga aite imasu.|Jendelanya terbuka.|N5
++ 電気がついています。|denki ga tsuite imasu.|Lampunya menyala.
++ 店はもう閉まっています。|mise wa mou shimatte imasu.|Tokonya sudah tutup.
 V ている (kebiasaan / status)|V te iru|Kebiasaan, pekerjaan, atau status|兄は工場で働いています。|ani wa koujou de hataraite imasu.|Kakak saya bekerja di pabrik.|N5
++ 姉は結婚しています。|ane wa kekkon shite imasu.|Kakak perempuan saya sudah menikah.
++ 私は大阪に住んでいます。|watashi wa oosaka ni sunde imasu.|Saya tinggal di Osaka.
 V てある|V te aru|Keadaan hasil tindakan yang disengaja|壁に地図が貼ってあります。|kabe ni chizu ga hatte arimasu.|Di dinding tertempel peta.|N4
++ 机の上に花が飾ってあります。|tsukue no ue ni hana ga kazatte arimasu.|Di atas meja terpajang bunga.
++ ドアに名前が書いてあります。|doa ni namae ga kaite arimasu.|Di pintu tertulis nama.
 V てしまう|V te shimau|Selesai tuntas; terlanjur|財布をなくしてしまいました。|saifu o nakushite shimaimashita.|Dompet saya terlanjur hilang.|N4
++ 宿題を忘れてしまいました。|shukudai o wasurete shimaimashita.|Saya terlanjur lupa PR.
++ 一晩で本を全部読んでしまった。|hitoban de hon o zenbu yonde shimatta.|Dalam semalam saya menghabiskan seluruh buku.
 V ておく|V te oku|Melakukan sebagai persiapan|会議の前に資料を読んでおきます。|kaigi no mae ni shiryou o yonde okimasu.|Sebelum rapat saya membaca materinya dulu.|N4
++ 寝る前に、明日の服を準備しておきます。|neru mae ni, ashita no fuku o junbi shite okimasu.|Sebelum tidur, saya menyiapkan baju untuk besok.
++ パーティーの前に、飲み物を買っておきましょう。|paatii no mae ni, nomimono o katte okimashou.|Sebelum pesta, mari beli minuman dulu.
 V たところ|V ta tokoro|Baru saja selesai|今、仕事が終わったところです。|ima, shigoto ga owatta tokoro desu.|Pekerjaan baru saja selesai.|N4
++ 今、家に帰ったところです。|ima, ie ni kaetta tokoro desu.|Saya baru saja pulang ke rumah.
++ 電車がちょうど出たところです。|densha ga choudo deta tokoro desu.|Keretanya baru saja berangkat.
 V ているところ|V te iru tokoro|Sedang melakukan tepat saat itu|今、ご飯を食べているところです。|ima, gohan o tabete iru tokoro desu.|Saya sedang makan sekarang.|N4
++ 今、手紙を書いているところです。|ima, tegami o kaite iru tokoro desu.|Saya sedang menulis surat sekarang.
++ 今、会議の準備をしているところです。|ima, kaigi no junbi o shite iru tokoro desu.|Saya sedang menyiapkan rapat sekarang.
 V るところ|V ru tokoro|Akan segera melakukan|今から出かけるところです。|ima kara dekakeru tokoro desu.|Saya baru akan berangkat.|N4
++ これから晩ご飯を食べるところです。|korekara bangohan o taberu tokoro desu.|Saya baru akan makan malam.
++ 今、電話をかけるところでした。|ima, denwa o kakeru tokoro deshita.|Saya baru saja akan menelepon.
 V たばかり|V ta bakari|Baru saja (terasa belum lama)|日本に来たばかりです。|nihon ni kita bakari desu.|Saya baru saja datang ke Jepang.|N4
++ このパソコンは先週買ったばかりです。|kono pasokon wa senshuu katta bakari desu.|Komputer ini baru saya beli minggu lalu.
++ さっき昼ご飯を食べたばかりです。|sakki hirugohan o tabeta bakari desu.|Saya baru saja makan siang tadi.
 もう V ました|mō V mashita|Sudah melakukan|もう宿題をしました。|mou shukudai o shimashita.|Saya sudah mengerjakan PR.|N5
++ もう昼ご飯を食べました。|mou hirugohan o tabemashita.|Saya sudah makan siang.
++ 荷物はもう届きました。|nimotsu wa mou todokimashita.|Paketnya sudah sampai.
 まだ V ていません|mada V te imasen|Belum melakukan|まだ昼ご飯を食べていません。|mada hirugohan o tabete imasen.|Saya belum makan siang.|N5
++ まだ宿題をしていません。|mada shukudai o shite imasen.|Saya belum mengerjakan PR.
++ 田中さんはまだ来ていません。|tanaka-san wa mada kite imasen.|Pak Tanaka belum datang.
 V てくる|V te kuru|Perubahan yang berlangsung sampai sekarang|だんだん寒くなってきました。|dandan samuku natte kimashita.|Lambat laun mulai dingin.|N3
++ 最近、日本語が分かってきました。|saikin, nihongo ga wakatte kimashita.|Belakangan saya mulai mengerti bahasa Jepang.
++ 雨が強くなってきた。|ame ga tsuyoku natte kita.|Hujan mulai deras.
 V ていく|V te iku|Perubahan yang berlanjut ke depan|これから人口が減っていきます。|korekara jinkou ga hette ikimasu.|Mulai sekarang jumlah penduduk akan terus berkurang.|N3
++ これからも日本語を続けていきたいです。|korekara mo nihongo o tsuzukete ikitai desu.|Ke depannya saya ingin terus belajar bahasa Jepang.
++ 町はこれからも変わっていくだろう。|machi wa korekara mo kawatte iku darou.|Kota ini mungkin akan terus berubah.
+～うちに|uchi ni|Selagi; sebelum keadaan berubah|若いうちに、いろいろな国へ行きたい。|wakai uchi ni, iroiro na kuni e ikitai.|Selagi muda, saya ingin pergi ke berbagai negara.|N3
++ 暗くならないうちに帰りましょう。|kuraku naranai uchi ni kaerimashou.|Mari pulang sebelum gelap.
++ 温かいうちに食べてください。|atatakai uchi ni tabete kudasai.|Silakan dimakan selagi hangat.
+～最中に|saichuu ni|Tepat ketika sedang|授業の最中に、電話が鳴った。|jugyou no saichuu ni, denwa ga natta.|Di tengah pelajaran, telepon berbunyi.|N3
++ 料理をしている最中に、停電した。|ryouri o shite iru saichuu ni, teiden shita.|Saat sedang memasak, listrik padam.
++ 試合の最中に雨が降り出した。|shiai no saichuu ni ame ga furidashita.|Di tengah pertandingan, hujan mulai turun.
+～たとたん（に）|ta totan (ni)|Begitu ... langsung (tak terduga)|家を出たとたん、雨が降り出した。|ie o deta totan, ame ga furidashita.|Begitu keluar rumah, hujan langsung turun.|N3
++ 立ち上がったとたん、めまいがした。|tachiagatta totan, memai ga shita.|Begitu berdiri, saya langsung pusing.
++ 彼は座ったとたんに寝てしまった。|kare wa suwatta totan ni nete shimatta.|Begitu duduk, dia langsung tertidur.
+～て以来|te irai|Sejak (terus sampai sekarang)|日本に来て以来、毎日日本語を使っています。|nihon ni kite irai, mainichi nihongo o tsukatte imasu.|Sejak datang ke Jepang, saya memakai bahasa Jepang setiap hari.|N3
++ 卒業して以来、彼に会っていない。|sotsugyou shite irai, kare ni atte inai.|Sejak lulus, saya belum bertemu dia.
++ 引っ越して以来、体の調子がいい。|hikkoshite irai, karada no choushi ga ii.|Sejak pindah rumah, badan saya terasa sehat.
+～かけ|kake|Setengah jalan; belum selesai|読みかけの本が机の上にある。|yomikake no hon ga tsukue no ue ni aru.|Ada buku yang belum selesai dibaca di atas meja.|N3
++ 食べかけのパンを捨てないでください。|tabekake no pan o sutenaide kudasai.|Tolong jangan buang roti yang belum habis dimakan.
++ 彼は何か言いかけて、やめた。|kare wa nanika iikakete, yameta.|Dia hampir mengatakan sesuatu, lalu berhenti.
+～つつある|tsutsu aru|Sedang dalam proses (bertahap)|景気は回復しつつある。|keiki wa kaifuku shitsutsu aru.|Ekonomi sedang dalam proses pulih.|N2
++ 地球の気温は上がりつつある。|chikyuu no kion wa agaritsutsu aru.|Suhu bumi sedang terus naik.
++ この町の人口は減りつつあります。|kono machi no jinkou wa heritsutsu arimasu.|Penduduk kota ini sedang berkurang.
+～次第|shidai|Segera setelah ...|準備ができ次第、出発します。|junbi ga deki shidai, shuppatsu shimasu.|Segera setelah siap, kami berangkat.|N2
++ 結果が分かり次第、ご連絡します。|kekka ga wakari shidai, gorenraku shimasu.|Segera setelah hasilnya diketahui, kami akan menghubungi Anda.
++ 雨がやみ次第、試合を再開します。|ame ga yami shidai, shiai o saikai shimasu.|Segera setelah hujan reda, pertandingan dilanjutkan.
+～た末（に）|ta sue (ni)|Pada akhirnya, setelah lama ...|悩んだ末に、会社を辞めることにした。|nayanda sue ni, kaisha o yameru koto ni shita.|Setelah lama bimbang, akhirnya saya memutuskan keluar dari perusahaan.|N2
++ 長い話し合いの末、二人は別れた。|nagai hanashiai no sue, futari wa wakareta.|Setelah diskusi panjang, akhirnya keduanya berpisah.
++ 何度も失敗した末に、やっと成功した。|nando mo shippai shita sue ni, yatto seikou shita.|Setelah berkali-kali gagal, akhirnya berhasil.
+～たきり|ta kiri|Sejak itu tidak ... lagi|彼は朝出かけたきり、まだ帰ってこない。|kare wa asa dekaketa kiri, mada kaette konai.|Dia pergi pagi tadi dan sampai sekarang belum pulang.|N2
++ 彼女とは三年前に会ったきりです。|kanojo to wa sannen mae ni atta kiri desu.|Terakhir saya bertemu dia tiga tahun lalu, setelah itu tidak lagi.
++ 父は寝たきりになってしまった。|chichi wa netakiri ni natte shimatta.|Ayah saya jadi terbaring terus di tempat tidur.
+～てはじめて|te hajimete|Baru setelah ... (menyadari)|病気になってはじめて、健康の大切さが分かった。|byouki ni natte hajimete, kenkou no taisetsusa ga wakatta.|Baru setelah sakit, saya mengerti pentingnya kesehatan.|N2
++ 親になってはじめて、親の苦労が分かった。|oya ni natte hajimete, oya no kurou ga wakatta.|Baru setelah menjadi orang tua, saya memahami jerih payah orang tua.
++ 一人暮らしをしてはじめて、料理の大変さを知った。|hitorigurashi o shite hajimete, ryouri no taihensa o shitta.|Baru setelah tinggal sendiri, saya tahu sulitnya memasak.
+～が早いか|ga hayai ka|Begitu ..., seketika|彼は電話を切るが早いか、部屋を飛び出した。|kare wa denwa o kiru ga hayai ka, heya o tobidashita.|Begitu menutup telepon, dia langsung berlari keluar kamar.|N1
++ 店が開くが早いか、客が殺到した。|mise ga hiraku ga hayai ka, kyaku ga sattou shita.|Begitu toko buka, pelanggan langsung menyerbu.
++ 横になるが早いか、いびきをかき始めた。|yoko ni naru ga hayai ka, ibiki o kakihajimeta.|Begitu berbaring, dia langsung mendengkur.
+～や否や|ya ina ya|Begitu ..., segera|試験が終わるや否や、学生たちは騒ぎ出した。|shiken ga owaru ya ina ya, gakuseitachi wa sawagidashita.|Begitu ujian selesai, para pelajar langsung ribut.|N1
++ 新商品は発売されるや否や、売り切れた。|shinshouhin wa hatsubai sareru ya ina ya, urikireta.|Begitu dirilis, produk baru itu langsung habis terjual.
++ 彼は駅に着くや否や、母に電話した。|kare wa eki ni tsuku ya ina ya, haha ni denwa shita.|Begitu tiba di stasiun, dia segera menelepon ibunya.
+～てからというもの|te kara to iu mono|Sejak saat itu (perubahan besar)|子供が生まれてからというもの、生活がすっかり変わった。|kodomo ga umarete kara to iu mono, seikatsu ga sukkari kawatta.|Sejak anak lahir, hidup saya berubah total.|N1
++ 日本に来てからというもの、毎日が新しい発見だ。|nihon ni kite kara to iu mono, mainichi ga atarashii hakken da.|Sejak datang ke Jepang, setiap hari penuh penemuan baru.
++ 彼女に会ってからというもの、彼は明るくなった。|kanojo ni atte kara to iu mono, kare wa akaruku natta.|Sejak bertemu wanita itu, dia menjadi ceria.
+～をもって (batas waktu)|o motte|Terhitung; berakhir pada (resmi)|三月三十一日をもって、この店は閉店します。|sangatsu sanjuuichinichi o motte, kono mise wa heiten shimasu.|Terhitung tanggal 31 Maret, toko ini tutup.|N1
++ 本日の受付は午後五時をもって終了しました。|honjitsu no uketsuke wa gogo goji o motte shuuryou shimashita.|Penerimaan hari ini berakhir pada pukul lima sore.
++ 今月末をもって退職することになりました。|kongetsumatsu o motte taishoku suru koto ni narimashita.|Terhitung akhir bulan ini, saya akan mengundurkan diri.
+～そばから|soba kara|Baru saja ..., sudah ... lagi|聞いたそばから忘れてしまう。|kiita soba kara wasurete shimau.|Baru saja mendengar, sudah lupa lagi.|N1
++ 洗濯したそばから、子供が服を汚す。|sentaku shita soba kara, kodomo ga fuku o yogosu.|Baru saja dicuci, anak-anak sudah mengotori bajunya lagi.
++ 雪かきをするそばから、また雪が積もる。|yukikaki o suru soba kara, mata yuki ga tsumoru.|Baru saja salju disekop, sudah menumpuk lagi.
 
 @tanya|Kalimat tanya, perintah, ajakan|疑問・命令・勧誘 — bertanya, meminta, melarang, dan mengajak.
 - Kalimat tanya cukup ditambah か di akhir. Dalam bahasa santai, か sering diganti intonasi naik.
 - Permintaan sopan memakai ～てください. Bentuk perintah langsung (命令形) terdengar kasar dan biasanya dipakai di rambu atau keadaan darurat.
 - Ajakan sopan memakai ～ませんか atau ～ましょう.
 ～か|ka|Kalimat tanya|お名前は何ですか。|onamae wa nan desu ka.|Siapa nama Anda?|N5
++ 田中さんは学生ですか。|tanaka-san wa gakusei desu ka.|Apakah Tanaka seorang pelajar?
++ コーヒーを飲みますか。|koohii o nomimasu ka.|Mau minum kopi?
 Kata tanya (何・誰・どこ・いつ)|nani / dare / doko / itsu|Pertanyaan terbuka|トイレはどこですか。|toire wa doko desu ka.|Toilet di mana?|N5
++ 誕生日はいつですか。|tanjoubi wa itsu desu ka.|Ulang tahunmu kapan?
++ あの人は誰ですか。|ano hito wa dare desu ka.|Orang itu siapa?
 ～かどうか|ka dō ka|Pertanyaan ya/tidak di dalam kalimat|彼が来るかどうか分かりません。|kare ga kuru ka dou ka wakarimasen.|Saya tidak tahu dia datang atau tidak.|N4
++ 明日晴れるかどうか心配です。|ashita hareru ka dou ka shinpai desu.|Saya khawatir besok cerah atau tidak.
++ この服が似合うかどうか見てください。|kono fuku ga niau ka dou ka mite kudasai.|Tolong lihat apakah baju ini cocok atau tidak.
 ～ませんか|masen ka|Mengajak dengan sopan|一緒に昼ご飯を食べませんか。|issho ni hirugohan o tabemasen ka.|Maukah makan siang bersama?|N5
++ 今度の日曜日、カラオケに行きませんか。|kondo no nichiyoubi, karaoke ni ikimasen ka.|Hari Minggu nanti mau pergi karaoke?
++ コーヒーでも飲みませんか。|koohii demo nomimasen ka.|Mau minum kopi atau apa?
 ～ましょう|mashō|Ayo (ajakan)|休憩しましょう。|kyuukei shimashou.|Ayo istirahat.|N5
++ そろそろ始めましょう。|sorosoro hajimemashou.|Mari kita mulai.
++ 明日また話しましょう。|ashita mata hanashimashou.|Mari kita bicarakan lagi besok.
 ～ましょうか|mashō ka|Menawarkan bantuan|荷物を持ちましょうか。|nimotsu o mochimashou ka.|Mau saya bawakan barangnya?|N5
++ 写真を撮りましょうか。|shashin o torimashou ka.|Mau saya fotokan?
++ タクシーを呼びましょうか。|takushii o yobimashou ka.|Mau saya panggilkan taksi?
 ～（よ）う|(y)ō|Ajakan santai|一緒に行こう。|issho ni ikou.|Ayo pergi bareng.|N4
++ そろそろ帰ろう。|sorosoro kaerou.|Ayo pulang sekarang.
++ 明日、早く起きよう。|ashita, hayaku okiyou.|Besok ayo bangun pagi.
 ～てください|te kudasai|Permintaan sopan|ここに名前を書いてください。|koko ni namae o kaite kudasai.|Tolong tulis nama di sini.|N5
++ もう一度言ってください。|mou ichido itte kudasai.|Tolong ulangi sekali lagi.
++ 窓を閉めてください。|mado o shimete kudasai.|Tolong tutup jendela.
 ～てくださいませんか|te kudasaimasen ka|Permintaan sangat sopan|もう一度説明してくださいませんか。|mou ichido setsumei shite kudasaimasen ka.|Maukah Anda menjelaskan sekali lagi?|N4
++ 駅までの道を教えてくださいませんか。|eki made no michi o oshiete kudasaimasen ka.|Maukah Anda memberi tahu jalan ke stasiun?
++ この書類を見てくださいませんか。|kono shorui o mite kudasaimasen ka.|Maukah Anda melihat dokumen ini?
 ～ないでください|naide kudasai|Larangan sopan|ここでたばこを吸わないでください。|koko de tabako o suwanaide kudasai.|Tolong jangan merokok di sini.|N5
++ 授業中に寝ないでください。|jugyouchuu ni nenaide kudasai.|Tolong jangan tidur saat pelajaran.
++ 心配しないでください。|shinpai shinaide kudasai.|Jangan khawatir.
 ～てもいいですか|te mo ii desu ka|Meminta izin|写真を撮ってもいいですか。|shashin o totte mo ii desu ka.|Bolehkah saya memotret?|N5
++ トイレに行ってもいいですか。|toire ni itte mo ii desu ka.|Bolehkah saya ke toilet?
++ ここに荷物を置いてもいいですか。|koko ni nimotsu o oite mo ii desu ka.|Bolehkah saya menaruh barang di sini?
 ～たらどうですか|tara dō desu ka|Memberi saran|病院に行ったらどうですか。|byouin ni ittara dou desu ka.|Bagaimana kalau pergi ke rumah sakit?|N4
++ 先生に相談したらどうですか。|sensei ni soudan shitara dou desu ka.|Bagaimana kalau berkonsultasi dengan guru?
++ 少し休んだらどうですか。|sukoshi yasundara dou desu ka.|Bagaimana kalau istirahat sebentar?
 ～なさい|nasai|Perintah (orang tua / guru kepada anak)|早く寝なさい。|hayaku nenasai.|Cepat tidur!|N4
++ 早く宿題をしなさい。|hayaku shukudai o shinasai.|Cepat kerjakan PR-mu!
++ 次の文を読みなさい。|tsugi no bun o yominasai.|Bacalah kalimat berikut.
 Bentuk perintah (命令形)|meireikei|Perintah tegas|止まれ！|tomare!|Berhenti!|N4
++ 早く逃げろ！|hayaku nigero!|Cepat lari!
++ がんばれ！|ganbare!|Semangat!
 ～な (larangan)|na|Larangan tegas|触るな！|sawaru na!|Jangan sentuh!|N4
++ ここで泳ぐな。|koko de oyogu na.|Jangan berenang di sini.
++ 心配するな。|shinpai suru na.|Jangan khawatir.
+～てもらえませんか|te moraemasen ka|Meminta tolong dengan sopan|ちょっと手伝ってもらえませんか。|chotto tetsudatte moraemasen ka.|Bisakah Anda membantu sebentar?|N3
++ 写真を撮ってもらえませんか。|shashin o totte moraemasen ka.|Bisakah Anda memotret saya?
++ もう少しゆっくり話してもらえませんか。|mou sukoshi yukkuri hanashite moraemasen ka.|Bisakah Anda bicara sedikit lebih pelan?
+～てほしい|te hoshii|Ingin orang lain melakukan|もっと早く連絡してほしかった。|motto hayaku renraku shite hoshikatta.|Saya ingin kamu menghubungi lebih awal.|N3
++ 子供には元気に育ってほしい。|kodomo ni wa genki ni sodatte hoshii.|Saya ingin anak-anak tumbuh sehat.
++ この仕事を明日までにやってほしいんだけど。|kono shigoto o ashita made ni yatte hoshii n da kedo.|Saya ingin pekerjaan ini selesai paling lambat besok.
+～ように言う|you ni iu|Menyampaikan perintah atau permintaan secara tidak langsung|先生に、もっと練習するように言われました。|sensei ni, motto renshuu suru you ni iwaremashita.|Saya disuruh guru berlatih lebih banyak.|N3
++ 部長に、明日早く来るように言われた。|buchou ni, ashita hayaku kuru you ni iwareta.|Saya disuruh manajer datang lebih awal besok.
++ 子供に、道で遊ばないように言いました。|kodomo ni, michi de asobanai you ni iimashita.|Saya bilang kepada anak agar tidak bermain di jalan.
+～っけ|kke|Bertanya untuk memastikan hal yang terlupa|会議は何時からだっけ。|kaigi wa nanji kara dakke.|Rapatnya mulai jam berapa, ya?|N3
++ あの人の名前、何だっけ。|ano hito no namae, nan dakke.|Nama orang itu siapa, ya?
++ 明日って休みだったっけ？|ashita tte yasumi datta kke?|Besok libur, bukan, ya?
+～べきだ|beki da|Seharusnya (anjuran kuat)|約束は守るべきだ。|yakusoku wa mamoru beki da.|Janji seharusnya ditepati.|N3
++ 分からないことは、すぐに聞くべきです。|wakaranai koto wa, sugu ni kiku beki desu.|Hal yang tidak dimengerti seharusnya segera ditanyakan.
++ 学生は勉強するべきだ。|gakusei wa benkyou suru beki da.|Pelajar seharusnya belajar.
+～ていただけないでしょうか|te itadakenai deshou ka|Permintaan yang sangat sopan|資料を送っていただけないでしょうか。|shiryou o okutte itadakenai deshou ka.|Bisakah Anda berkenan mengirimkan materinya?|N2
++ 会議の日程を変更していただけないでしょうか。|kaigi no nittei o henkou shite itadakenai deshou ka.|Bisakah jadwal rapat diubah?
++ もう少し安くしていただけないでしょうか。|mou sukoshi yasuku shite itadakenai deshou ka.|Bisakah harganya sedikit diturunkan?
+～させていただけませんか|sasete itadakemasen ka|Meminta izin dengan sangat sopan|今日は早めに帰らせていただけませんか。|kyou wa hayame ni kaerasete itadakemasen ka.|Bolehkah saya pulang lebih awal hari ini?|N2
++ その件について、少し考えさせていただけませんか。|sono ken ni tsuite, sukoshi kangaesasete itadakemasen ka.|Bolehkah saya memikirkan hal itu sebentar?
++ 私にも発表させていただけませんか。|watashi ni mo happyou sasete itadakemasen ka.|Bolehkah saya juga menyampaikan presentasi?
+～ものか|mono ka|Tidak akan pernah! (penolakan kuat)|あんな店、二度と行くものか。|anna mise, nido to iku mono ka.|Toko seperti itu, tidak akan pernah saya datangi lagi!|N2
++ こんな所で負けるものか。|konna tokoro de makeru mono ka.|Mana mungkin saya kalah di sini!
++ 彼の言うことなんか、信じるものか。|kare no iu koto nanka, shinjiru mono ka.|Mana mau saya percaya omongannya!
+～ことか|koto ka|Betapa ...! (perasaan kuat)|合格の知らせを聞いて、どんなにうれしかったことか。|goukaku no shirase o kiite, donna ni ureshikatta koto ka.|Betapa senangnya saya mendengar kabar kelulusan!|N2
++ この日をどれほど待っていたことか。|kono hi o dorehodo matte ita koto ka.|Betapa lama saya menunggu hari ini!
++ 一人で過ごす夜は、何と寂しいことか。|hitori de sugosu yoru wa, nan to sabishii koto ka.|Betapa sepinya malam yang dilalui sendirian!
+～ではないか|de wa nai ka|Bukankah ...? (menegaskan atau mengajak)|一緒にがんばろうではないか。|issho ni ganbarou de wa nai ka.|Mari kita berjuang bersama!|N2
++ これは君の責任ではないか。|kore wa kimi no sekinin de wa nai ka.|Bukankah ini tanggung jawabmu?
++ 約束が違うではないか。|yakusoku ga chigau de wa nai ka.|Bukankah ini tidak sesuai janji?
+～ではあるまいか|de wa arumai ka|Bukankah mungkin ... (dugaan formal)|この計画には無理があるのではあるまいか。|kono keikaku ni wa muri ga aru no de wa arumai ka.|Bukankah mungkin rencana ini terlalu dipaksakan?|N1
++ 彼は本当のことを知っているのではあるまいか。|kare wa hontou no koto o shitte iru no de wa arumai ka.|Bukankah mungkin dia mengetahui yang sebenarnya?
++ 問題の原因は別にあるのではあるまいか。|mondai no gen'in wa betsu ni aru no de wa arumai ka.|Bukankah mungkin penyebab masalahnya ada di tempat lain?
+～べからず|bekarazu|Dilarang (rambu, tulisan resmi)|ここにごみを捨てるべからず。|koko ni gomi o suteru bekarazu.|Dilarang membuang sampah di sini.|N1
++ 危険につき、立ち入るべからず。|kiken ni tsuki, tachiiru bekarazu.|Berbahaya, dilarang masuk.
++ 働かざる者、食うべからず。|hatarakazaru mono, kuu bekarazu.|Yang tidak bekerja, jangan makan.
+～たまえ|tamae|Perintah dari atasan kepada bawahan (kaku)|遠慮しないで、座りたまえ。|enryo shinaide, suwaritamae.|Jangan sungkan, duduklah.|N1
++ 君も意見を言いたまえ。|kimi mo iken o iitamae.|Kamu juga, sampaikan pendapatmu.
++ 早くこちらへ来たまえ。|hayaku kochira e kitamae.|Cepat kemari.
+～ことなかれ|koto nakare|Janganlah (larangan bergaya klasik)|失敗を恐れることなかれ。|shippai o osoreru koto nakare.|Janganlah takut gagal.|N1
++ 他人を軽んずることなかれ。|tanin o karonzuru koto nakare.|Janganlah meremehkan orang lain.
++ 過去を嘆くことなかれ。|kako o nageku koto nakare.|Janganlah meratapi masa lalu.
+～まい|mai|Tidak akan (tekad negatif); mungkin tidak|もう二度と遅刻はするまい。|mou nido to chikoku wa surumai.|Saya bertekad tidak akan terlambat lagi.|N1
++ この雨では、彼も来るまい。|kono ame de wa, kare mo kurumai.|Dengan hujan seperti ini, dia mungkin tidak akan datang.
++ あんな店には二度と行くまいと思った。|anna mise ni wa nido to iku mai to omotta.|Saya bertekad tidak akan pergi ke toko itu lagi.
 
 @sebab|Sebab-akibat dan pengandaian|原因・理由・条件 — karena, sehingga, kalau, dan walaupun.
 - ～から dan ～ので sama-sama berarti "karena". ～ので terdengar lebih halus dan objektif, cocok untuk minta izin atau alasan di tempat kerja.
 - Pengandaian punya empat bentuk utama: ～たら, ～ば, ～と, dan ～なら, masing-masing dengan nuansa berbeda.
 - ～おかげで untuk hasil yang baik, sedangkan ～せいで untuk hasil yang buruk.
 ～から|kara|Karena (alasan pribadi)|雨だから、行きません。|ame da kara, ikimasen.|Karena hujan, saya tidak pergi.|N5
++ 時間がないから、急ごう。|jikan ga nai kara, isogou.|Karena tidak ada waktu, ayo bergegas.
++ おいしいから、もう一つ食べます。|oishii kara, mou hitotsu tabemasu.|Karena enak, saya makan satu lagi.
 ～ので|node|Karena (halus, objektif)|熱があるので、休みます。|netsu ga aru node, yasumimasu.|Karena demam, saya izin libur.|N4
++ 電車が遅れたので、遅刻しました。|densha ga okureta node, chikoku shimashita.|Karena keretanya terlambat, saya terlambat.
++ 明日は用事があるので、行けません。|ashita wa youji ga aru node, ikemasen.|Karena besok ada urusan, saya tidak bisa pergi.
 ～て (sebab)|te|Karena (penyebab perasaan / keadaan)|ニュースを聞いて、驚きました。|nyuusu o kiite, odorokimashita.|Saya kaget mendengar berita itu.|N4
++ 試験に合格して、うれしいです。|shiken ni goukaku shite, ureshii desu.|Saya senang karena lulus ujian.
++ 道が分からなくて、困りました。|michi ga wakaranakute, komarimashita.|Saya kebingungan karena tidak tahu jalan.
 ～ために (sebab)|tame ni|Karena (formal, tertulis)|事故のために電車が遅れました。|jiko no tame ni densha ga okuremashita.|Karena ada kecelakaan, kereta terlambat.|N3
++ 病気のために、学校を休みました。|byouki no tame ni, gakkou o yasumimashita.|Karena sakit, saya tidak masuk sekolah.
++ 大雨のために、試合が中止になった。|ooame no tame ni, shiai ga chuushi ni natta.|Karena hujan deras, pertandingan dibatalkan.
 ～ために (tujuan)|tame ni|Untuk; demi|家族のために働いています。|kazoku no tame ni hataraite imasu.|Saya bekerja demi keluarga.|N4
++ 車を買うために、お金をためています。|kuruma o kau tame ni, okane o tamete imasu.|Saya menabung untuk membeli mobil.
++ 日本で働くために、日本語を勉強しています。|nihon de hataraku tame ni, nihongo o benkyou shite imasu.|Saya belajar bahasa Jepang untuk bekerja di Jepang.
 ～おかげで|okage de|Berkat (hasil baik)|先生のおかげで合格しました。|sensei no okage de goukaku shimashita.|Berkat guru, saya lulus.|N3
++ 友達のおかげで、楽しい旅行になった。|tomodachi no okage de, tanoshii ryokou ni natta.|Berkat teman, perjalanan jadi menyenangkan.
++ 毎日練習したおかげで、上手になりました。|mainichi renshuu shita okage de, jouzu ni narimashita.|Berkat berlatih setiap hari, saya jadi mahir.
 ～せいで|sei de|Gara-gara (hasil buruk)|雨のせいで試合が中止になった。|ame no sei de shiai ga chuushi ni natta.|Gara-gara hujan, pertandingan dibatalkan.|N3
++ 風邪のせいで、声が出ない。|kaze no sei de, koe ga denai.|Gara-gara masuk angin, suara saya hilang.
++ 寝坊したせいで、バスに乗り遅れた。|nebou shita sei de, basu ni noriokureta.|Gara-gara kesiangan, saya ketinggalan bus.
 だから|dakara|Oleh karena itu|寝坊しました。だから遅刻しました。|nebou shimashita. dakara chikoku shimashita.|Saya bangun kesiangan. Karena itu saya terlambat.|N5
++ 明日は試験です。だから、今晩は勉強します。|ashita wa shiken desu. dakara, konban wa benkyou shimasu.|Besok ujian. Karena itu, malam ini saya belajar.
++ 雨が降っている。だから、傘を持って行こう。|ame ga futte iru. dakara, kasa o motte ikou.|Sedang hujan. Karena itu, ayo bawa payung.
 ～たら|tara|Kalau; setelah|日本に行ったら、富士山に登りたいです。|nihon ni ittara, fujisan ni noboritai desu.|Kalau ke Jepang, saya ingin mendaki Gunung Fuji.|N4
++ 雨が降ったら、試合は中止です。|ame ga futtara, shiai wa chuushi desu.|Kalau hujan, pertandingan dibatalkan.
++ 家に着いたら、メールしてください。|ie ni tsuitara, meeru shite kudasai.|Kalau sudah sampai rumah, tolong kirim pesan.
 ～ば|ba|Jika (syarat umum)|練習すれば、上手になります。|renshuu sureba, jouzu ni narimasu.|Jika berlatih, kamu akan menjadi pandai.|N4
++ 天気がよければ、富士山が見えます。|tenki ga yokereba, fujisan ga miemasu.|Jika cuaca bagus, Gunung Fuji terlihat.
++ よく寝れば、元気になりますよ。|yoku nereba, genki ni narimasu yo.|Jika tidur cukup, kamu akan segar.
 ～と|to|Jika (hasilnya pasti terjadi)|このボタンを押すと、機械が止まります。|kono botan o osu to, kikai ga tomarimasu.|Jika tombol ini ditekan, mesin berhenti.|N4
++ 冬になると、雪が降ります。|fuyu ni naru to, yuki ga furimasu.|Kalau musim dingin tiba, salju turun.
++ 右に曲がると、銀行があります。|migi ni magaru to, ginkou ga arimasu.|Kalau belok kanan, ada bank.
 ～なら|nara|Kalau memang; kalau mengenai|日本語を勉強するなら、この本がいいです。|nihongo o benkyou suru nara, kono hon ga ii desu.|Kalau mau belajar bahasa Jepang, buku ini bagus.|N4
++ 雨なら、試合は中止です。|ame nara, shiai wa chuushi desu.|Kalau hujan, pertandingan dibatalkan.
++ 京都へ行くなら、秋がいいですよ。|kyouto e iku nara, aki ga ii desu yo.|Kalau mau ke Kyoto, musim gugur bagus, lho.
 もし～たら|moshi ~ tara|Seandainya|もし宝くじが当たったら、家を買います。|moshi takarakuji ga atattara, ie o kaimasu.|Seandainya menang lotre, saya akan membeli rumah.|N4
++ もし時間があったら、手伝ってください。|moshi jikan ga attara, tetsudatte kudasai.|Seandainya ada waktu, tolong bantu saya.
++ もし道に迷ったら、電話してね。|moshi michi ni mayottara, denwa shite ne.|Seandainya tersesat, telepon saya, ya.
 ～ても|temo|Walaupun|雨が降っても、行きます。|ame ga futte mo, ikimasu.|Walaupun hujan, saya tetap pergi.|N4
++ いくら食べても、太りません。|ikura tabete mo, futorimasen.|Sebanyak apa pun makan, saya tidak gemuk.
++ 反対されても、留学します。|hantai sarete mo, ryuugaku shimasu.|Walaupun ditentang, saya tetap akan kuliah ke luar negeri.
 ～のに|noni|Padahal|勉強したのに、試験に落ちた。|benkyou shita noni, shiken ni ochita.|Padahal sudah belajar, tapi gagal ujian.|N4
++ 薬を飲んだのに、まだ頭が痛い。|kusuri o nonda noni, mada atama ga itai.|Padahal sudah minum obat, kepala masih sakit.
++ 安いのに、とてもおいしい。|yasui noni, totemo oishii.|Padahal murah, tapi enak sekali.
+～とすれば／～としたら|to sureba / to shitara|Seandainya; andaikan|一億円あるとしたら、何をしますか。|ichiokuen aru to shitara, nani o shimasu ka.|Seandainya punya seratus juta yen, apa yang akan Anda lakukan?|N3
++ 彼の話が本当だとすれば、大変なことだ。|kare no hanashi ga hontou da to sureba, taihen na koto da.|Andaikan ceritanya benar, ini masalah besar.
++ 留学するとしたら、どこの国がいいですか。|ryuugaku suru to shitara, doko no kuni ga ii desu ka.|Seandainya kuliah ke luar negeri, negara mana yang bagus?
+～さえ～ば|sae ~ ba|Asalkan ... saja|住所さえ分かれば、手紙を送れます。|juusho sae wakareba, tegami o okuremasu.|Asalkan alamatnya diketahui, surat bisa dikirim.|N3
++ 天気さえよければ、明日は山に登ります。|tenki sae yokereba, ashita wa yama ni noborimasu.|Asalkan cuacanya bagus, besok saya mendaki gunung.
++ 君さえいれば、何もいらない。|kimi sae ireba, nani mo iranai.|Asalkan ada kamu, saya tidak butuh apa-apa.
+～ば～ほど|ba ~ hodo|Semakin ..., semakin ...|日本語は勉強すればするほどおもしろくなる。|nihongo wa benkyou sureba suru hodo omoshiroku naru.|Bahasa Jepang semakin dipelajari semakin menarik.|N3
++ 早ければ早いほどいいです。|hayakereba hayai hodo ii desu.|Semakin cepat semakin baik.
++ 話せば話すほど、彼のことが好きになった。|hanaseba hanasu hodo, kare no koto ga suki ni natta.|Semakin sering berbicara, saya semakin suka padanya.
+～としても|to shite mo|Sekalipun; seandainya pun|たとえ反対されたとしても、私は自分の道を行く。|tatoe hantai sareta to shite mo, watashi wa jibun no michi o iku.|Sekalipun ditentang, saya tetap menempuh jalan saya sendiri.|N3
++ 雨が降ったとしても、試合は行います。|ame ga futta to shite mo, shiai wa okonaimasu.|Sekalipun hujan, pertandingan tetap diadakan.
++ 冗談だとしても、それは言いすぎだ。|joudan da to shite mo, sore wa iisugi da.|Sekalipun bercanda, itu keterlaluan.
+～くせに|kuse ni|Padahal (dengan nada mencela)|知らないくせに、知っているふりをする。|shiranai kuse ni, shitte iru furi o suru.|Padahal tidak tahu, dia pura-pura tahu.|N3
++ 自分は遅れてきたくせに、人には時間を守れと言う。|jibun wa okurete kita kuse ni, hito ni wa jikan o mamore to iu.|Padahal sendiri datang terlambat, dia menyuruh orang lain tepat waktu.
++ 下手なくせに、文句ばかり言う。|heta na kuse ni, monku bakari iu.|Padahal tidak becus, dia mengeluh terus.
+～からこそ|kara koso|Justru karena|大切な友達だからこそ、本当のことを言う。|taisetsu na tomodachi da kara koso, hontou no koto o iu.|Justru karena teman penting, saya mengatakan yang sebenarnya.|N2
++ 苦労したからこそ、成功の喜びは大きい。|kurou shita kara koso, seikou no yorokobi wa ookii.|Justru karena sudah bersusah payah, kegembiraan saat berhasil terasa besar.
++ あなたを信じているからこそ、この仕事を任せるのです。|anata o shinjite iru kara koso, kono shigoto o makaseru no desu.|Justru karena saya percaya padamu, pekerjaan ini saya serahkan.
+～ものだから|mono da kara|Soalnya ... (alasan membela diri)|道が込んでいたものですから、遅れてしまいました。|michi ga konde ita mono desu kara, okurete shimaimashita.|Soalnya jalannya macet, jadi saya terlambat.|N2
++ あまりにおいしかったものだから、全部食べてしまった。|amari ni oishikatta mono da kara, zenbu tabete shimatta.|Soalnya enak sekali, jadi saya habiskan semuanya.
++ 急に雨が降ってきたものだから、びしょぬれになった。|kyuu ni ame ga futte kita mono da kara, bishonure ni natta.|Soalnya tiba-tiba hujan, jadi saya basah kuyup.
+～ないことには|nai koto ni wa|Kalau tidak ..., tidak akan ...|実際に会ってみないことには、どんな人か分からない。|jissai ni atte minai koto ni wa, donna hito ka wakaranai.|Kalau tidak bertemu langsung, tidak akan tahu orangnya seperti apa.|N2
++ お金がないことには、何もできない。|okane ga nai koto ni wa, nani mo dekinai.|Kalau tidak ada uang, tidak bisa melakukan apa-apa.
++ 練習しないことには、上手にならない。|renshuu shinai koto ni wa, jouzu ni naranai.|Kalau tidak berlatih, tidak akan mahir.
+～ものなら|mono nara|Kalau bisa ... (hal yang sulit)|できるものなら、もう一度学生に戻りたい。|dekiru mono nara, mou ichido gakusei ni modoritai.|Kalau bisa, saya ingin kembali menjadi pelajar sekali lagi.|N2
++ 行けるものなら、今すぐ国へ帰りたい。|ikeru mono nara, ima sugu kuni e kaeritai.|Kalau bisa pergi, saya ingin pulang kampung sekarang juga.
++ 休めるものなら、休みたいよ。|yasumeru mono nara, yasumitai yo.|Kalau bisa libur, saya ingin libur.
+～をきっかけに|o kikkake ni|Berawal dari; dipicu oleh|留学をきっかけに、日本の文化に興味を持った。|ryuugaku o kikkake ni, nihon no bunka ni kyoumi o motta.|Berawal dari kuliah di luar negeri, saya jadi tertarik pada budaya Jepang.|N2
++ 病気をきっかけに、生活を見直した。|byouki o kikkake ni, seikatsu o minaoshita.|Berawal dari sakit, saya mengubah pola hidup.
++ 一冊の本をきっかけに、作家を目指すようになった。|issatsu no hon o kikkake ni, sakka o mezasu you ni natta.|Berawal dari sebuah buku, saya bercita-cita menjadi penulis.
+～ゆえ（に）|yue (ni)|Karena (gaya tulisan formal)|経験が浅いゆえに、失敗も多い。|keiken ga asai yue ni, shippai mo ooi.|Karena pengalamannya masih sedikit, kesalahannya pun banyak.|N1
++ 若さゆえの過ちだった。|wakasa yue no ayamachi datta.|Itu kesalahan karena masih muda.
++ 貧しさゆえに、学校に行けない子供がいる。|mazushisa yue ni, gakkou ni ikenai kodomo ga iru.|Ada anak-anak yang tidak bisa bersekolah karena kemiskinan.
+～とあって|to atte|Karena (situasi khusus)|連休とあって、観光地はどこも込んでいる。|renkyuu to atte, kankouchi wa doko mo konde iru.|Karena libur panjang, tempat wisata di mana-mana ramai.|N1
++ 人気歌手が来るとあって、会場は若者でいっぱいだ。|ninki kashu ga kuru to atte, kaijou wa wakamono de ippai da.|Karena penyanyi populer akan datang, tempat acara penuh anak muda.
++ 初めての海外旅行とあって、彼女は緊張している。|hajimete no kaigai ryokou to atte, kanojo wa kinchou shite iru.|Karena ini perjalanan pertamanya ke luar negeri, dia gugup.
+～ばこそ|ba koso|Justru karena (penekanan formal)|あなたのことを思えばこそ、厳しく言うのです。|anata no koto o omoeba koso, kibishiku iu no desu.|Justru karena memikirkanmu, saya berbicara tegas.|N1
++ 健康であればこそ、仕事もできる。|kenkou de areba koso, shigoto mo dekiru.|Justru karena sehat, kita bisa bekerja.
++ 信頼していればこそ、何でも話せる。|shinrai shite ireba koso, nandemo hanaseru.|Justru karena percaya, saya bisa menceritakan apa saja.
+～ようものなら|you mono nara|Kalau sampai ... (akibat buruk)|社長に口答えしようものなら、すぐに首になる。|shachou ni kuchigotae shiyou mono nara, sugu ni kubi ni naru.|Kalau sampai membantah direktur, langsung dipecat.|N1
++ 一日でも休もうものなら、仕事がたまってしまう。|ichinichi demo yasumou mono nara, shigoto ga tamatte shimau.|Kalau sampai libur sehari saja, pekerjaan langsung menumpuk.
++ 彼女の前で年齢の話をしようものなら、怒られるよ。|kanojo no mae de nenrei no hanashi o shiyou mono nara, okorareru yo.|Kalau sampai membicarakan umur di depannya, kamu bakal dimarahi.
+～たら最後|tara saigo|Sekali ... maka (tak bisa kembali)|この本は読み始めたら最後、止まらなくなる。|kono hon wa yomihajimetara saigo, tomaranaku naru.|Sekali mulai membaca buku ini, kamu tidak akan bisa berhenti.|N1
++ 彼は寝たら最後、何があっても起きない。|kare wa netara saigo, nani ga atte mo okinai.|Sekali dia tidur, apa pun yang terjadi dia tidak akan bangun.
++ 秘密を話したら最後、みんなに広まってしまう。|himitsu o hanashitara saigo, minna ni hiromatte shimau.|Sekali rahasia diceritakan, langsung tersebar ke semua orang.

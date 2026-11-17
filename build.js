@@ -223,7 +223,7 @@ function buildKaiwa() {
   return cats.flatMap(c => out.filter(d => d[0] === c));
 }
 
-// ===== BUNPO (src/bunpo.txt) → [{l, t, f, s:[[bagian, [[pola, romaji, arti]...]]], ex:[[jp, romaji, arti]]}] =====
+// ===== BUNPO (src/bunpo.txt) → [{l, t, f, s:[[bagian, [[pola, romaji, arti, contoh, romaji, arti, [contoh tambahan]]...]]], ex:[[jp, romaji, arti]]}] =====
 function buildBunpo() {
   const out = []; let lv = null, sec = null;
   fs.readFileSync(path.join(ROOT, 'src', 'bunpo.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
@@ -233,6 +233,12 @@ function buildBunpo() {
     if (line[0] === '@') { lv = { l: p[0].slice(1), t: p[1] || '', f: p[2] || '', s: [], ex: [] }; out.push(lv); sec = null; return; }
     if (!lv) { bad.push(`bunpo.txt:${ln + 1} di luar level: ${line}`); return; }
     if (line[0] === '#') { sec = [line.slice(1).trim(), []]; lv.s.push(sec); return; }
+    if (line[0] === '+') {
+      const r = sec && sec[1][sec[1].length - 1], e = line.slice(1).split('|').map(x => x.trim());
+      if (!r || !r[3]) { bad.push(`bunpo.txt:${ln + 1} contoh tambahan tanpa pola di atasnya`); return; }
+      if (e.length !== 3 || e.some(x => !x) || !/{.+?}/.test(e[0])) { bad.push(`bunpo.txt:${ln + 1} format contoh tambahan salah (perlu bagian {…}): ${line}`); return; }
+      (r[6] = r[6] || []).push(e); return;
+    }
     if (p[0] === '!contoh') { if (p.length !== 4) bad.push(`bunpo.txt:${ln + 1} format contoh salah`); else lv.ex.push(p.slice(1)); return; }
     if (!sec || (p.length !== 3 && p.length !== 6) || p.some(x => !x)) { bad.push(`bunpo.txt:${ln + 1} format salah: ${line}`); return; }
     if (p.length === 6 && !/\{.+?\}/.test(p[3])) { bad.push(`bunpo.txt:${ln + 1} contoh tanpa bagian {…}: ${line}`); return; }
@@ -317,7 +323,7 @@ function buildKotobaPlus() {
   });
   return out;
 }
-// ===== BUNPO TOPIK (src/bunpo-topik.txt) → [{id, t, d, ex:[penjelasan], rows:[[pola, romaji, arti, contoh, romaji contoh, arti contoh]]}] =====
+// ===== BUNPO TOPIK (src/bunpo-topik.txt) → [{id, t, d, ex:[penjelasan], rows:[[pola, romaji, arti, contoh, romaji contoh, arti contoh, [contoh tambahan]]]}] =====
 function buildBunpoTopik() {
   const out = []; let tp = null;
   fs.readFileSync(path.join(ROOT, 'src', 'bunpo-topik.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
@@ -327,6 +333,12 @@ function buildBunpoTopik() {
     if (line[0] === '@') { tp = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', ex: [], rows: [], lv: [] }; out.push(tp); return; }
     if (!tp) { bad.push(`bunpo-topik.txt:${ln + 1} di luar topik`); return; }
     if (line.startsWith('- ')) { tp.ex.push(line.slice(2)); return; }
+    if (line[0] === '+') {
+      const r = tp.rows[tp.rows.length - 1], e = line.slice(1).split('|').map(x => x.trim());
+      if (!r) { bad.push(`bunpo-topik.txt:${ln + 1} contoh tambahan tanpa pola di atasnya`); return; }
+      if (e.length !== 3 || e.some(x => !x)) { bad.push(`bunpo-topik.txt:${ln + 1} format contoh tambahan salah: ${line}`); return; }
+      (r[6] = r[6] || []).push(e); return;
+    }
     const lv = LVRE.test(p[p.length - 1]) ? p.pop() : '';
     if (!lv) { bad.push(`bunpo-topik.txt:${ln + 1} level N5–N1 belum ditulis di akhir baris: ${line}`); return; }
     if (p.length !== 6 || p.some(x => !x)) { bad.push(`bunpo-topik.txt:${ln + 1} format salah: ${line}`); return; }
@@ -421,10 +433,11 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori · level ${per(KW.map(d => d[3]))}`);
   console.log(`Kotoba plus: ${KP.map(m => `${m.t}=${m.cats.reduce((s, c) => s + c.rows.length, 0)}`).join(', ')} · level ${per(KP.flatMap(m => m.cats.flatMap(c => c.lv)))}`);
   console.log(`Kalimat dasar: ${KD.length} kalimat`);
-  console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')} · level ${per(BT.flatMap(x => x.lv))}`);
+  console.log(`Kaiwa unit: ${KU.u.length} unit, ${KU.u.reduce((s, u) => s + u.d.length, 0)} kalimat dialog · level ${per(KU.u.map(u => u.l))}`);
+  console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')} · ${BT.reduce((a, t) => a + t.rows.reduce((b, r) => b + 1 + (r[6] || []).length, 0), 0)} contoh · level ${per(BT.flatMap(x => x.lv))}`);
   console.log(`Kana-kata: hiragana=${KK.hira.length}, katakana=${KK.kata.length}`);
   console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
-  console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
+  console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola · ${BP.reduce((a, l) => a + l.s.reduce((b, s) => b + s[1].reduce((c, r) => c + (r[3] ? 1 : 0) + (r[6] || []).length, 0), 0), 0)} contoh`);
   console.log(`Kana dengan data goresan: ${Object.keys(KN.out).length}` + (KN.fetched ? ` (${KN.fetched} baru diunduh)` : '') + (KN.missing.length ? ` · tidak tersedia: ${KN.missing.join('')}` : ''));
   if (dups.length) console.log(`${dups.length} kata duplikat dilewati` + (process.argv.includes('-v') ? ':\n  ' + dups.join('\n  ') : ' (jalankan dengan -v untuk melihat)'));
   if (bad.length) { console.log(`${bad.length} baris bermasalah:\n  ` + bad.join('\n  ')); process.exitCode = 1; }
