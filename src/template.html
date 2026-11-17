@@ -240,7 +240,6 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 .simp{display:flex;align-items:center;gap:10px}.simp>div{display:flex;flex-direction:column;align-items:center;gap:6px}.neq{font-size:22px;color:var(--mut)}.chk{display:flex;gap:8px;align-items:center;padding:6px 0;cursor:pointer}
 .kscr,.kn2{margin-bottom:8px}.kn2{overflow-x:auto;flex-wrap:nowrap}.kn2 .tg{flex:none;white-space:nowrap}.kmx{display:grid;grid-template-columns:30px repeat(5,1fr);gap:6px 4px;align-items:center}.kmx.y3{grid-template-columns:30px repeat(3,1fr)}.kmx .rl{color:var(--mut);font-size:13px;text-align:center}.kmx .kb{width:100%;min-width:0;padding:3px 0;line-height:1.15;box-shadow:0 2px 0 var(--bd);border-width:1px}.kmx .kb b{font-size:22px}.kmx .kb small{font-size:11px}
 .lvg{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:10px}.lvg .mc{padding:8px 2px;text-align:center}.lvg .mc b{font-size:18px;margin:0}.lvg .mc small{font-size:11px}.kfc1{font-size:18px}.kt.sel{border-color:var(--ac)}
-.kjlv{overflow-x:auto;flex-wrap:nowrap;margin-bottom:8px}.kjlv .tg{flex:none}
 #shd{position:sticky;top:0;z-index:42;margin:0 auto;max-width:720px;width:100%;padding:12px 14px 10px;padding-top:calc(12px + env(safe-area-inset-top,0px))}
 #shd .tlogo{display:block}#shd .bk{display:flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;flex:none}#shd .bk svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}#shd.sub .tlogo{display:none}#shd:not(.sub) .bk{display:none}
 #shM{flex:1;min-width:0;display:flex;align-items:center;gap:8px}#shM h2{flex:1;min-width:0;margin:0;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -373,6 +372,18 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 .itabs .tg{flex:1 0 auto;min-width:68px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:5px;background:none;border:0;border-bottom:3px solid transparent;border-radius:0;box-shadow:none;margin:0;padding:10px 8px 8px;color:var(--mut);font-size:12.5px;font-weight:600;line-height:1.2;text-align:center;white-space:normal}
 .itabs .tg.on{background:none;color:var(--ac);border-bottom-color:var(--ac)}
 .itabs .tg svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.itabs .tg.nil:not(.on){opacity:.45}
+/* navigasi submenu menempel tepat di bawah header saat halaman di-scroll */
+.snav{position:sticky;top:var(--hh,58px);z-index:30;margin:-14px -14px 12px;padding:0 14px;background:color-mix(in srgb,var(--bg) 94%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+.snav .itabs{margin:0 -14px;padding:0 6px}.snav>.itabs:last-child{border-bottom:0}
+.snav .kseg{margin:8px 0 0}
+/* pemilih level N5–N1 (dipakai bersama oleh Kotoba, Bunpō, Kaiwa) */
+.lvseg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:3px;margin:6px 0 8px}
+.lvseg .tg{margin:0;border:0;border-radius:9px;background:none;box-shadow:none;padding:5px 0;text-align:center;font-weight:700;font-size:13.5px;color:var(--mut)}
+.lvseg .tg.on{background:var(--ac);color:#fff}
+.lvnote{color:var(--mut);font-size:13px;margin:0 0 10px}
+.lvb{display:inline-block;font-size:11px;font-weight:700;line-height:1;padding:3px 6px;border-radius:99px;background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--ac);vertical-align:2px;margin-right:4px}
+.lvempty{text-align:center;color:var(--mut);padding:26px 12px}.lvempty>b{display:block;color:var(--fg);font-size:16px;margin-bottom:4px}
 .kseg{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:3px;margin:0 0 4px}
 .kseg .tg{margin:0;border:0;background:none;text-align:center;font-weight:700;color:var(--mut)}
 .kseg .tg.on{background:var(--ac);color:#fff}
@@ -428,7 +439,12 @@ function setShell(top){
  const nk=key+'|'+sub;if(nk!==shKey){shKey=nk;app.classList.remove('pgin');void app.offsetWidth;app.classList.add('pgin')}}
 function view(h,back){window.onkeydown=null;clearTimeout(QT);document.querySelectorAll('.qsov, .ppop, .ppop-ov').forEach(x=>x.remove());
  const t=document.createElement('template');t.innerHTML=h;const top=[...t.content.children].find(e=>e.classList.contains('top'));if(top)top.remove();
- app.replaceChildren(t.content);setShell(top||null);shBk.onclick=back||home;document.querySelectorAll('.rt').forEach(x=>x.onclick=()=>setR(!showR));
+ // posisi geser bilah tab disimpan supaya tidak melompat ke awal saat tab lain dipilih
+ const tabX={};app.querySelectorAll('.itabs[data-k]').forEach(x=>tabX[x.dataset.k]=x.scrollLeft);
+ app.replaceChildren(t.content);setShell(top||null);
+ app.querySelectorAll('.itabs').forEach(x=>{x.scrollLeft=tabX[x.dataset.k]||0;const b=x.querySelector('.tg.on');if(!b)return;
+  const xr=x.getBoundingClientRect(),br=b.getBoundingClientRect();
+  if(br.left<xr.left)x.scrollLeft-=xr.left-br.left+28;else if(br.right>xr.right)x.scrollLeft+=br.right-xr.right+28});shBk.onclick=back||home;document.querySelectorAll('.rt').forEach(x=>x.onclick=()=>setR(!showR));
  document.querySelectorAll('.qn').forEach(s=>s.onchange=()=>{qn=+s.value;ST.set('qn',qn)});document.querySelectorAll('.qd').forEach(s=>s.onchange=()=>{qd=s.value;ST.set('qd',qd)});scrollTo(0,0)}
 const onSpeak=el=>{el.onclick=e=>{const b=e.target.closest('[data-s]');if(b)speak(b.dataset.s)}};
 
@@ -564,9 +580,10 @@ function kjForm(v,f){
  return j.slice(0,-1)+f.slice(ks.length)}
 const vForms=v=>{const f=katsu(v);return KF.filter(x=>f&&f[x[0]]).map(x=>({id:x[0],lab:x[1],ket:x[2],kana:f[x[0]],jj:kjForm(v,f[x[0]]),arti:x[3](v.a)}))};
 // 500 kata kerja: urut dari level termudah
-const KV=(()=>{const LVO=['N5','Kerja','N4','N3','N2'],seen=new Set();
+// kata kerja Katsuyō: paling banyak 150 per level supaya setiap level N5–N1 punya daftar sendiri
+const KV=(()=>{const LVO=['N5','Kerja','N4','N3','N2','N1'],seen=new Set(),per={};
  return V.map((v,i)=>({...v,i})).filter(v=>/^Kata kerja/.test(v.t)&&v.j[0]!='〜'&&!/[ ・]/.test(v.k)&&!seen.has(v.j)&&seen.add(v.j)&&katsu(v))
-  .sort((a,b)=>LVO.indexOf(a.l)-LVO.indexOf(b.l)||a.i-b.i).slice(0,500)})();
+  .sort((a,b)=>LVO.indexOf(a.l)-LVO.indexOf(b.l)||a.i-b.i).filter(v=>(per[v.l]=(per[v.l]||0)+1)<=150)})();
 
 /* ===== SKOR & PROGRES ===== */
 function trackStat(ok){
@@ -996,12 +1013,11 @@ function kanji(){kjLast=0;
  const body=()=>!P.length?'<p class="rj" style="text-align:center;margin:20px 0">Tidak ada kanji yang cocok. Coba kata lain, mis. <b>air</b>, <b>みず</b>, <b>mizu</b>, atau <b>氵</b>.</p>'
   :kC||kQ.trim()||kS?tiles(P):KDATA.c.map(c=>{const L=P.filter(k=>k.c==c);return L.length?`<h3>${c} <span class="rj">(${L.length})</span></h3>${tiles(L)}`:''}).join('');
  const info=()=>`${P.length} kanji${kQ.trim()?` cocok dengan "${esc(kQ.trim())}"`:''} · ketuk untuk detail`;
- view(`${hdr('Kanji · 漢字')}${kjTabs('list')}
+ view(`${hdr('Kanji · 漢字')}${kjTabs('list',lvSeg(kL,true))}
  <div class="ksb"><input type="search" id="ks" placeholder="Cari kanji, arti, bacaan, komponen…" value="${esc(kQ)}" aria-label="Cari kanji" autocomplete="off"><button class="ktb" id="ktree" aria-label="Kanji Family Tree" title="Kanji Family Tree">${icoS('pohon')}</button></div>
- <div class="tabs kjlv">${['','N5','N4','N3','N2','N1'].map(l=>`<button class="tg${l==kL?' on':''}" data-kl="${l}">${l||'Semua'}</button>`).join('')}</div>
  <div class="kfr"><select id="kc" aria-label="Kategori"><option value="">Semua kategori</option>${KDATA.c.map(x=>`<option ${x==kC?'selected':''}>${x}</option>`).join('')}</select><select id="ksort" aria-label="Urutan">${Object.entries(KSORT).map(([v,t])=>`<option value="${v}" ${v==kS?'selected':''}>${t}</option>`).join('')}</select></div>
  <p class="kinfo2" id="kinfo">${info()}</p><div id="klist">${body()}</div>${startBar()}`);
- $('#ktree').onclick=()=>{kjLast=0;kanjiTree()};$('#kc').onchange=e=>{kC=e.target.value;ST.set('kjC',kC);kanji()};$('#ksort').onchange=e=>{kS=e.target.value;ST.set('kjS',kS);kanji()};app.querySelectorAll('[data-kl]').forEach(b=>b.onclick=()=>{kL=b.dataset.kl;ST.set('kjL',kL);kanji()});kjTabWire();
+ $('#ktree').onclick=()=>{kjLast=0;kanjiTree()};$('#kc').onchange=e=>{kC=e.target.value;ST.set('kjC',kC);kanji()};$('#ksort').onchange=e=>{kS=e.target.value;ST.set('kjS',kS);kanji()};app.querySelectorAll('.snav [data-lv]').forEach(b=>b.onclick=()=>{sfx.tap();kL=b.dataset.lv;ST.set('kjL',kL);kanji()});kjTabWire();
  const wire=()=>$('#klist').querySelectorAll('.kt').forEach(b=>b.onclick=()=>kanjiDetail(KJM[b.dataset.k],P));wire();
  // daftar diperbarui saat mengetik tanpa membangun ulang halaman (fokus kotak pencarian tetap)
  $('#ks').oninput=e=>{kQ=e.target.value;P=kjSort(kjSearch(F,kQ),kS);$('#kinfo').textContent=info();$('#klist').innerHTML=body();wire()};
@@ -1235,27 +1251,29 @@ const vA=v=>({q:v.j==v.k?v.k:`${v.j}<br><small>${v.k}</small>`,qr:v.r,a:v.a,d:ot
 const vB=v=>({q:v.a,qr:'',a:jp(v),d:other(v).map(jp),e:v.j!=v.k?v.j:''});
 let dF=ST.get('kTy',''),dL=ST.get('kLv',''),dQ='';
 const wOk=v=>v.j[0]!='〜'&&!/[ ・]/.test(v.k)&&[...v.k].length<=6&&canWrite(v.k);
-function kotoba(){
+// daftar kosakata; lvl='Kerja' untuk tab Kerja pabrik. Dari tab Quiz (QCAP) memakai dL ('' = semua level)
+function kotoba(lvl){
+ const kerja=lvl=='Kerja',LVF=kerja?'Kerja':QCAP?dL:mLv;
  let lim=200,L=[];
- const draw=()=>{L=V.filter(v=>(!dF||v.t==dF)&&(!dL||v.l==dL)&&(!dT||vTheme(v)==dT)&&(!dQ||(v.j+' '+v.k+' '+v.r+' '+v.a).toLowerCase().includes(dQ)));
-  $('#tb').innerHTML=L.slice(0,lim).map(v=>`<tr><td style="font-size:18px">${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}</td><td class="ro">${v.r}</td><td>${v.a}</td><td>${v.t}</td><td>${v.l}</td><td><button class="sp" data-s="${v.k}">🔊</button></td></tr>`).join('');
-  $('#cnt').textContent=`${L.length} kata${L.length>lim?` · menampilkan ${lim} pertama`:''}${L.length?' · kuis memakai kata dari daftar ini':''}`;
+ const draw=()=>{L=V.filter(v=>(!dF||v.t==dF)&&(!LVF||v.l==LVF)&&(!dT||vTheme(v)==dT)&&(!dQ||(v.j+' '+v.k+' '+v.r+' '+v.a).toLowerCase().includes(dQ)));
+  $('#tb').innerHTML=L.slice(0,lim).map(v=>`<tr><td style="font-size:18px">${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}</td><td class="ro">${v.r}</td><td>${v.a}</td><td>${v.t}</td><td><button class="sp" data-s="${v.k}">🔊</button></td></tr>`).join('');
+  $('#cnt').textContent=`${L.length} kata ${kerja?'kerja pabrik':LVF}${L.length>lim?` · menampilkan ${lim} pertama`:''}${L.length?' · kuis memakai kata dari daftar ini':''}`;
   $('#more').style.display=L.length>lim?'':'none'};
- view(`${hdr('Kotoba')}<input type="search" id="s" placeholder="Cari kanji, kana, romaji, atau arti..." value="${dQ.replace(/"/g,'&quot;')}">${dT?`<div class="kset" style="margin:0 0 8px"><span class="rj">Tema:</span><button class="tg on" id="kth" aria-label="Hapus filter tema">${dT} ✕</button></div>`:''}<div class="row2"><select id="fl"><option value="">Semua level</option>${LV.map(x=>`<option ${x==dL?'selected':''}>${x}</option>`).join('')}</select><select id="ft"><option value="">Semua jenis kata</option>${TY.map(x=>`<option ${x==dF?'selected':''}>${x}</option>`).join('')}</select></div><button class="tg ${auto?'on':''}" id="ta">Suara otomatis di kuis: ${auto?'ON':'OFF'}</button><div class="meta" id="cnt"></div><div class="card wrap"><table><tr><th>Jepang</th><th class="ro">Romaji</th><th>Arti</th><th>Jenis</th><th>Level</th><th></th></tr><tbody id="tb"></tbody></table></div><button class="pb alt" id="more">Tampilkan lebih banyak</button>${startBar()}`,kBack||undefined);
- if($('#kth'))$('#kth').onclick=()=>{dT='';ST.set('kTh','');kotoba()};
+ view(`${modHead('k',kerja?'kerja':'daftar')}<input type="search" id="s" placeholder="Cari kanji, kana, romaji, atau arti..." value="${dQ.replace(/"/g,'&quot;')}">${dT?`<div class="kset" style="margin:0 0 8px"><span class="rj">Tema:</span><button class="tg on" id="kth" aria-label="Hapus filter tema">${dT} ✕</button></div>`:''}<div><select id="ft"><option value="">Semua jenis kata</option>${TY.map(x=>`<option ${x==dF?'selected':''}>${x}</option>`).join('')}</select></div><button class="tg ${auto?'on':''}" id="ta">Suara otomatis di kuis: ${auto?'ON':'OFF'}</button><div class="meta" id="cnt"></div><div class="card wrap"><table><tr><th>Jepang</th><th class="ro">Romaji</th><th>Arti</th><th>Jenis</th><th></th></tr><tbody id="tb"></tbody></table></div><button class="pb alt" id="more">Tampilkan lebih banyak</button>${startBar()}`,materi);
+ modWire('k',()=>kotoba(lvl));
+ if($('#kth'))$('#kth').onclick=()=>{dT='';ST.set('kTh','');kotoba(lvl)};
  onSpeak($('#tb'));
- $('#fl').onchange=e=>{dL=e.target.value;ST.set('kLv',dL);lim=200;draw()};$('#ft').onchange=e=>{dF=e.target.value;ST.set('kTy',dF);lim=200;draw()};
+ $('#ft').onchange=e=>{dF=e.target.value;ST.set('kTy',dF);lim=200;draw()};
  $('#ta').onclick=e=>{auto=!auto;ST.set('auto',auto);e.target.classList.toggle('on',auto);e.target.textContent=`Suara otomatis di kuis: ${auto?'ON':'OFF'}`};
  $('#more').onclick=()=>{lim+=300;draw()};
  const KC={jp:v=>v.j==v.k?v.k:`${v.j}<br><small style="font-weight:400">${v.k}</small>`,plain:v=>v.j,kana:v=>v.k,r:v=>v.r,a:v=>v.a,say:v=>v.k,oth:other,jpOpt:jp,
   tiles:v=>{const tk=kanaTok(v.k);return v.j[0]!='〜'&&!/[ ・]/.test(v.k)&&tk.length<=8?tk:null},kanaTiles:true,extra:(v,tk)=>kanaExtra(tk,/[ァ-ヺ]/.test(v.k)?KATA:HIRA),subSusun:v=>v.t};
  const M=stdModes(KC);
  M.tulis={lab:'Menulis',gen:v=>wOk(v)?{kind:'write',q:`${v.a}<br><small class="rj" style="font-weight:400">${v.t}</small>`,qr:v.r,say:v.k,chars:[...v.k],ans:`${v.j}${v.j!=v.k?` <span class="rj">${v.k}</span>`:''} <span class="ro">(${v.r})</span>`}:null};
- wireStart({key:'kotoba',title:`Kotoba${dL?' '+dL:''}${dF?' · '+dF:''}${dT?' · '+dT:''}`,modes:M,pool:()=>L.slice(),back:kotoba});
+ wireStart({key:'kotoba',title:`Kotoba${LVF?' '+LVF:''}${dF?' · '+dF:''}${dT?' · '+dT:''}`,modes:M,pool:()=>L.slice(),back:()=>kotoba(lvl)});
  let tm;$('#s').oninput=e=>{clearTimeout(tm);tm=setTimeout(()=>{dQ=e.target.value.trim().toLowerCase();lim=200;draw()},150)};draw()}
 
 /* ----- BUNPO: materi N5–N1, perbandingan pola, cara belajar ----- */
-let bpL=ST.get('bpL','N5');
 const bpRows=lv=>{const seen=new Set();return lv.s.flatMap(x=>x[1]).filter(r=>!seen.has(r[0])&&seen.add(r[0]))};
 // kunci arti untuk menghindari pengecoh yang artinya mirip (mis. "Harus" vs "Harus (wajib)")
 const bpKey=a=>a.toLowerCase().split(/[;/(]/)[0].replace(/[.…]/g,'').trim();
@@ -1267,10 +1285,9 @@ const BP_STEP=[['N5','Kuasai partikel は・が・を・に・で, bentuk ます
 const bpEx=p=>`<div class="gx"><span>${p[3].replace(/\{(.+?)\}/g,'<b class="hl">$1</b>')}</span> <button class="sp" data-s="${p[3].replace(/[{}]/g,'')}">🔊</button><div class="ro" style="font-size:13px">${p[4]}</div><div class="rj">${p[5]}</div></div>`;
 const bpFill=p=>[...p[3].matchAll(/\{(.+?)\}/g)].map(m=>m[1]).join(' … ');
 const bub=e=>`<div class="bub">${e[0]} <button class="sp" data-s="${e[0]}">🔊</button><div class="rj ro">${e[1]}</div>${e[2]}</div>`;
+// tab Pola JLPT: semua pola bunpō pada level terpilih
 function bunpo(){
- const tabs=[...BP.map(l=>l.l),'Perbandingan','Cara belajar'];
- if(!tabs.includes(bpL))bpL='N5';
- const lv=BP.find(l=>l.l==bpL);let body='',bar='';
+ const lv=BP.find(l=>l.l==mLv);let body=lvEmpty('pola bunpō'),bar='';
  if(lv){
   const rows=bpRows(lv);
   body=`<div class="card"><b>${lv.l} · ${lv.t}</b> <span class="rj">(${rows.length} pola)</span><p class="rj" style="margin:4px 0 0">Fokus: ${lv.f}</p></div>
@@ -1278,15 +1295,10 @@ function bunpo(){
   ${lv.ex.length?`<h3>Contoh ${lv.l}</h3><div class="card">${lv.ex.map(bub).join('')}</div>`:''}
   ${lv.l=='N5'?`<details class="card"><summary><b>Contoh kalimat tiap partikel</b></summary>${PT.map(p=>`<div class="bub"><b>${p[0]}</b> <span class="ro">(${p[5]})</span> ${p[1]}<br>${p[2]} <button class="sp" data-s="${p[2]}">🔊</button><div class="rj ro">${p[4]}</div>${p[3]}</div>`).join('')}</details>`:''}`;
   bar=startBar();
- }else if(bpL=='Perbandingan'){
-  body=`<p class="sub">Ada pola yang tampak mirip, tetapi penggunaannya berbeda. Jangan hanya menghafal terjemahan bahasa Indonesia.</p>${BP_CMP.map(([t,ex])=>`<h3>${t}</h3><div class="card">${ex.map(bub).join('')}</div>`).join('')}`;
- }else{
-  body=`<p class="sub">Jangan menghafal semua pola sekaligus. Urutkan berdasarkan fungsi, karena banyak pola tingkat tinggi memakai bentuk dasar yang dipelajari di N5 dan N4.</p>${BP_STEP.map(([l,t],i)=>`<div class="card"><b>Tahap ${i+1} — ${l}</b><p style="margin:4px 0 0">${t}</p></div>`).join('')}
-  <div class="card"><b>Catatan penting</b><p class="rj" style="margin:4px 0 0">JLPT tidak menerbitkan daftar resmi tunggal yang menjamin setiap pola bunpō masuk ke level tertentu. Daftar di sini adalah peta belajar berdasarkan pengelompokan yang umum dipakai buku persiapan JLPT, jadi ada pola yang bisa dikelompokkan berbeda antarreferensi.</p></div>`;
  }
- view(`${hdr('Bunpo · 文法')}<div class="tabs">${tabs.map(t=>`<button class="tg${t==bpL?' on':''}" data-bt="${t}">${t}</button>`).join('')}</div>${lv?'':'<p class="sub" style="margin:0 0 8px">文法 (bunpō) = tata bahasa. Urutan belajar: N5 → N4 → N3 → N2 → N1.</p>'}${body}${bar}`);
+ view(`${modHead('b','jlpt')}<p class="lvnote">文法 (bunpō) = tata bahasa. Urutan belajar: N5 → N4 → N3 → N2 → N1.</p>${body}${bar}`,materi);
+ modWire('b',bunpo);
  onSpeak(app);
- app.querySelectorAll('[data-bt]').forEach(b=>b.onclick=()=>{bpL=b.dataset.bt;ST.set('bpL',bpL);bunpo()});
  if(!lv)return;
  const rows=bpRows(lv),pat=r=>`${r[0]}<small class="ro">${r[1]}</small>`,exR=rows.filter(r=>r[3]),plainEx=r=>r[3].replace(/[{}]/g,'');
  const othR=r=>shuf(rows.filter(x=>x!==r&&!bpSame(x[2],r[2]))).slice(0,6);
@@ -1313,6 +1325,12 @@ function bunpo(){
  if(lv.l=='N5')M.partikel={lab:'Isi partikel',icon:'は',gen:()=>{const p=PQ[Math.floor(Math.random()*PQ.length)];return{kind:'choice',lbl:'Pilih partikel yang tepat',q:p[0],qr:p[2],a:p[1],d:PQ.map(x=>x[1])}}};
  wireStart({key:'bunpo',title:`Bunpo ${lv.l}`,modes:M,pool:()=>rows,back:bunpo})}
 
+// tab Panduan bunpō: perbandingan pola yang mirip dan urutan belajar
+function bpGuide(){
+ view(`${modHead('b','panduan')}<h3>Perbandingan pola yang mirip</h3><p class="lvnote">Ada pola yang tampak mirip, tetapi penggunaannya berbeda. Jangan hanya menghafal terjemahan bahasa Indonesia.</p>${BP_CMP.map(([t,ex])=>`<div class="card"><b>${t}</b>${ex.map(bub).join('')}</div>`).join('')}<h3>Cara belajar</h3><p class="lvnote">Jangan menghafal semua pola sekaligus. Urutkan berdasarkan fungsi, karena banyak pola tingkat tinggi memakai bentuk dasar yang dipelajari di N5 dan N4.</p>${BP_STEP.map(([l,t],i)=>`<div class="card"><b>Tahap ${i+1} — ${l}</b><p style="margin:4px 0 0">${t}</p></div>`).join('')}
+  <div class="card"><b>Catatan penting</b><p class="rj" style="margin:4px 0 0">JLPT tidak menerbitkan daftar resmi tunggal yang menjamin setiap pola bunpō masuk ke level tertentu. Daftar di sini adalah peta belajar berdasarkan pengelompokan yang umum dipakai buku persiapan JLPT, jadi ada pola yang bisa dikelompokkan berbeda antarreferensi.</p></div>`,materi);
+ modWire('b',bpGuide);onSpeak(app)}
+
 /* ----- BUN: kalimat sehari-hari per kategori + kuis 3 arah ----- */
 let bnC=ST.get('bnC','');
 const BNC=[...new Set(BUN.map(b=>b[0]))];
@@ -1320,8 +1338,9 @@ function bun(){
  const L=BUN.filter(b=>!bnC||b[0]==bnC);
  const card=b=>`<div class="card"><div style="font-size:19px">${b[1]} <button class="sp" data-s="${b[1]}">🔊</button></div><div class="rj ro">${b[2]}</div>${b[3]}</div>`;
  const body=bnC?L.map(card).join(''):BNC.map(c=>`<h3>${c}</h3>${BUN.filter(b=>b[0]==c).map(card).join('')}`).join('');
- view(`${hdr('Bun · Kalimat Sehari-hari')}<select id="bnc"><option value="">Semua kategori (${BUN.length} kalimat)</option>${BNC.map(c=>`<option value="${c}" ${c==bnC?'selected':''}>${c} (${BUN.filter(b=>b[0]==c).length})</option>`).join('')}</select>${body}
- ${startBar()}`);
+ view(`${modHead('n','bun')}<select id="bnc"><option value="">Semua kategori (${BUN.length} kalimat)</option>${BNC.map(c=>`<option value="${c}" ${c==bnC?'selected':''}>${c} (${BUN.filter(b=>b[0]==c).length})</option>`).join('')}</select>${body}
+ ${startBar()}`,materi);
+ modWire('n',bun);
  onSpeak(app);
  $('#bnc').onchange=e=>{bnC=e.target.value;ST.set('bnC',bnC);bun()};
  const jpo=b=>`${b[1]}<small class="ro">${b[2]}</small>`;
@@ -1445,16 +1464,18 @@ function fillItem(l,pool){
 /* ----- KAIWA: dialog per kategori + 6 mode kuis ----- */
 const KWC=[...new Set(KW.map(d=>d[0]))];
 let kwC=ST.get('kwC','');
+// tab Dialog: dialog per situasi pada level terpilih (d[3] = level); dari tab Quiz (QCAP) semua level
 function kaiwa(){
- if(kwC&&!KWC.includes(kwC))kwC='';
- const D=KW.filter(d=>!kwC||d[0]==kwC),nLine=D.reduce((s,d)=>s+d[2].length,0);
- const dlg=d=>`<details class="card dlg"><summary><b>${d[1]}</b> <span class="rj">· ${d[2].length} kalimat${kwC?'':' · '+d[0]}</span></summary>${d[2].map(l=>`<div class="bub"><b>${l[0]}</b>: ${l[1]} <button class="sp" data-s="${l[1]}">🔊</button><div class="rj ro">${l[2]}</div>${l[3]}</div>`).join('')}</details>`;
- const body=kwC?`<button class="tg" id="kwall" style="margin:0 0 10px">← Semua kategori</button><p class="sub">${D.length} dialog · ${nLine} kalimat. Ketuk judul untuk membuka dialog.</p>${D.map(dlg).join('')}`
-  :`<p class="sub">${KW.length} dialog · ${nLine} kalimat dalam ${KWC.length} kategori. Pilih kategori untuk membaca dialog, atau langsung mulai kuis dari semua dialog.</p><div class="grid">${KWC.map(c=>`<button class="mc" data-kwc="${c}"><b style="margin-top:0">${c}</b><small>${KW.filter(d=>d[0]==c).length} dialog</small></button>`).join('')}</div>`;
- view(`${hdr(kwC?`Kaiwa · ${kwC}`:'Kaiwa · Percakapan')}${body}
- ${startBar()}`);
+ const KL=QCAP?'':mLv,KA=KW.filter(d=>!KL||d[3]==KL),cats=KWC.filter(c=>KA.some(d=>d[0]==c)),cc=cats.includes(kwC)?kwC:'';
+ const D=KA.filter(d=>!cc||d[0]==cc),nLine=D.reduce((s,d)=>s+d[2].length,0);
+ const dlg=d=>`<details class="card dlg"><summary><b>${d[1]}</b> <span class="rj">· ${d[2].length} kalimat${cc?'':' · '+d[0]}</span></summary>${d[2].map(l=>`<div class="bub"><b>${l[0]}</b>: ${l[1]} <button class="sp" data-s="${l[1]}">🔊</button><div class="rj ro">${l[2]}</div>${l[3]}</div>`).join('')}</details>`;
+ const body=!KA.length?lvEmpty('dialog','Dialog per situasi umumnya berlevel N5–N4. Untuk level ini, buka tab <b>Unit</b>.'):cc?`<button class="tg" id="kwall" style="margin:0 0 10px">← Semua kategori</button><h3 style="margin-top:0">${cc}</h3><p class="lvnote">${D.length} dialog ${KL} · ${nLine} kalimat. Ketuk judul untuk membuka dialog.</p>${D.map(dlg).join('')}`
+  :`<p class="lvnote">${KA.length} dialog ${KL} · ${nLine} kalimat dalam ${cats.length} kategori. Pilih kategori untuk membaca dialog.</p><div class="grid">${cats.map(c=>`<button class="mc" data-kwc="${c}"><b style="margin-top:0">${c}</b><small>${KA.filter(d=>d[0]==c).length} dialog</small></button>`).join('')}</div>`;
+ view(`${modHead('w','dialog')}${body}
+ ${startBar()}`,materi);
+ modWire('w',kaiwa);
  onSpeak(app);
- if(kwC)$('#kwall').onclick=()=>{kwC='';ST.set('kwC','');kaiwa()};
+ if(cc)$('#kwall').onclick=()=>{kwC='';ST.set('kwC','');kaiwa()};
  app.querySelectorAll('[data-kwc]').forEach(b=>b.onclick=()=>{kwC=b.dataset.kwc;ST.set('kwC',kwC);kaiwa()});
  const ln=D.flatMap((d,di)=>d[2].map((l,li)=>({di,li,t:d[1],sp:l[0],j:l[1],r:l[2],a:l[3]})));
  const all=KW.flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3]})));
@@ -1468,7 +1489,7 @@ function kaiwa(){
  M.next={lab:'Kalimat berikutnya',icon:'💬',gen:l=>{const n=ln.find(x=>x.di==l.di&&x.li==l.li+1);if(!n)return null;const o=oth(n).filter(x=>x.j!=l.j);
   return{kind:'choice',lbl:'Apa kalimat berikutnya?',q:`<small class="rj">${l.t}</small><br><b>${l.sp}:</b> ${l.j}`,qr:l.r,say:l.j,a:opt(n),d:o.map(opt),nr:true,om:omap([n,...o]),qa:l.a,e:`Jawaban diucapkan oleh: ${n.sp}`}}};
  M.lengkapi={lab:'Lengkapi kalimat',icon:'📝',gen:l=>{const it=fillItem(l,all);return it?{kind:'choice',...it}:null}};
- wireStart({key:'kaiwa',title:`Kaiwa${kwC?' '+kwC:''}`,modes:M,pool:()=>ln,back:kaiwa})}
+ wireStart({key:'kaiwa',title:`Kaiwa${KL?' '+KL:''}${cc?' '+cc:''}`,modes:M,pool:()=>ln,back:kaiwa})}
 
 /* ----- BILANGAN: satuan, belasan, puluhan, ratusan, ribuan, puluhan ribu, jutaan ----- */
 const NK=['','一','二','三','四','五','六','七','八','九'],NH=['','いち','に','さん','よん','ご','ろく','なな','はち','きゅう'];
@@ -1555,10 +1576,11 @@ const PZ=[
  ['kaiwa','話','Susun Kaiwa','Susun kalimat percakapan'],
  ['bun','文','Susun Bun','Susun kalimat sehari-hari']];
 function puzzle(){
- view(`${hdr('Teka-teki · Susun')}<p class="sub">Susun ubin menjadi jawaban yang benar, seperti di Duolingo. Ketuk ubin untuk memindahkannya, ketuk lagi untuk mengembalikan.</p>
+ view(`${modHead('n','puzzle')}<p class="lvnote">Susun ubin menjadi jawaban yang benar, seperti di Duolingo. Ketuk ubin untuk memindahkannya, ketuk lagi untuk mengembalikan.</p>
  <div class="row2"><select id="pzl"><option value="">Semua level</option>${['N5','N4','N3','N2','N1','Kerja'].map(x=>`<option ${x==pzL?'selected':''}>${x}</option>`).join('')}</select><div class="qcfg" style="justify-content:flex-end;flex-wrap:wrap">Jumlah soal <select class="qn">${QOPTS.map(x=>`<option ${x==qn?'selected':''}>${x}</option>`).join('')}</select>Tingkat <select class="qd" aria-label="Tingkat kesulitan">${Object.entries(QDIFF).map(([k,v])=>`<option value="${k}" ${k==qd?'selected':''}>${v.lab}</option>`).join('')}</select></div></div>
  <div class="grid">${PZ.map(p=>`<button class="mc" data-pz="${p[0]}"><span class="ic">${p[1]}</span><b>${p[2]}</b><small>${p[3]}</small></button>`).join('')}</div>
- <p class="rj" style="margin-top:12px">Level berlaku untuk Susun Hiragana, Katakana, Kotoba, Katsuyō, dan Bunpo.</p>`);
+ <p class="rj" style="margin-top:12px">Level berlaku untuk Susun Hiragana, Katakana, Kotoba, Katsuyō, dan Bunpo.</p>`,materi);
+ modWire('n',puzzle);
  $('#pzl').onchange=e=>{pzL=e.target.value;ST.set('pzL',pzL)};
  app.querySelectorAll('[data-pz]').forEach(b=>b.onclick=()=>pzStart(b.dataset.pz))}
 function pzStart(m){
@@ -1578,7 +1600,7 @@ function pzStart(m){
 }
 
 /* ----- KATSUYŌ: penjelasan, aturan, daftar 500 kata kerja + kuis ----- */
-let ktTab=ST.get('ktTab','Daftar'),ktG=ST.get('ktG',''),ktL=ST.get('ktL',''),ktQ='',ktF=ST.get('ktF',['masu','nai','te','ta']);
+let ktTab=ST.get('ktTab','Daftar'),ktG=ST.get('ktG',''),ktQ='',ktF=ST.get('ktF',['masu','nai','te','ta']);
 const KT_EXPL=`<div class="card"><b>Katsuyō (活用) vs Bunpō (文法)</b><p style="margin:6px 0 0"><b>Katsuyō</b> membahas <u>perubahan bentuk kata</u>, sedangkan <b>Bunpō</b> membahas <u>aturan menyusun kata menjadi kalimat</u> yang benar.</p></div>
 <h3>1. Perbedaan utama</h3>
 <div class="card"><b>活用 — Katsuyō · perubahan kata</b><p class="rj" style="margin:4px 0">Contoh kata dasar 飲む (nomu) — minum.</p>${[['飲みます','nomimasu','minum (sopan)'],['飲まない','nomanai','tidak minum'],['飲んで','nonde','bentuk -te'],['飲みたい','nomitai','ingin minum']].map(x=>`<div class="gp"><div><b>${x[0]}</b><span class="ro">${x[1]}</span></div><div>${x[2]}</div></div>`).join('')}</div>
@@ -1617,23 +1639,26 @@ const KT_RULE=[
   ['来る','きます · こない · きて · きた · こられる · こよう · くれば · こい · こさせる','来る → 来ます (きます)','kuru','kimasu · konai · kite · kita · korareru · koyou · kureba · koi · kosaseru','kuru → kimasu']]]];
 function katsuyo(){
  const tabs=['Penjelasan','Aturan','Daftar'];if(!tabs.includes(ktTab))ktTab='Daftar';
- const P=KV.filter(v=>(!ktG||kgroup(v)==ktG)&&(!ktL||v.l==ktL)&&(!ktQ||(v.j+' '+v.k+' '+v.r+' '+v.a).toLowerCase().includes(ktQ)));
+ // level dari navigasi modul; dari tab Quiz (QCAP) semua level
+ const KL=QCAP?'':mLv,KN=KL?KV.filter(v=>v.l==KL).length:KV.length;
+ const P=KV.filter(v=>(!ktG||kgroup(v)==ktG)&&(!KL||v.l==KL)&&(!ktQ||(v.j+' '+v.k+' '+v.r+' '+v.a).toLowerCase().includes(ktQ)));
  let body='';
  if(ktTab=='Penjelasan')body=KT_EXPL;
  else if(ktTab=='Aturan'){const ex=['飲む','食べる','する','来る'].map(j=>V.find(v=>v.j==j)).filter(Boolean);
   body=KT_RULE.map(([t,d,r])=>`<h3>${t}</h3><div class="card"><p class="rj" style="margin:0 0 6px">${d}</p>${r.map(x=>`<div class="gp"><div><b>${x[0]}</b><span class="ro">${x[3]}</span></div><div>${x[1]}<div class="ro" style="font-size:13px">${x[4]}</div><div class="rj" style="margin-top:4px">${x[2]}</div><div class="ro" style="font-size:13px">${x[5]}</div></div></div>`).join('')}</div>`).join('')
   +`<h3>Tabel 15 bentuk</h3><div class="card wrap"><table><tr><th>Bentuk</th>${ex.map(v=>`<th>${v.j}</th>`).join('')}</tr>${KF.map(f=>`<tr><td>${f[1]}<small class="ro">${KFR[f[0]]}</small><small>${f[2]}</small></td>${ex.map(v=>{const x=vForms(v).find(y=>y.id==f[0]);return`<td>${x?x.jj:'—'}${x&&x.jj!=x.kana?`<small>${x.kana}</small>`:''}${x?`<small class="ro">${rom(x.kana)}</small>`:''}</td>`}).join('')}</tr>`).join('')}</table></div>`}
- else body=`<input type="search" id="kts" placeholder="Cari kata kerja (kanji, kana, romaji, arti)..." value="${ktQ.replace(/"/g,'&quot;')}"><div class="row2"><select id="ktg"><option value="">Semua kelompok</option>${[1,2,3].map(g=>`<option value="${g}" ${g==ktG?'selected':''}>${GNAME[g]}</option>`).join('')}</select><select id="ktl"><option value="">Semua level</option>${['N5','Kerja','N4','N3','N2'].map(x=>`<option ${x==ktL?'selected':''}>${x}</option>`).join('')}</select></div>
-  <div class="meta">${P.length} dari ${KV.length} kata kerja · ketuk untuk melihat 15 bentuknya</div><div class="card" id="ktlist">${P.slice(0,200).map(v=>`<button class="kvr" data-j="${v.j}"><span><b>${v.j}</b>${v.j!=v.k?` <span class="rj">${v.k}</span>`:''} <span class="ro rj">${v.r}</span><br><small>${v.a}</small></span><span class="rj" style="font-size:12px;text-align:right">${GNAME[kgroup(v)].split(' (')[0]}<br>${v.l}</span></button>`).join('')}${P.length>200?`<p class="rj">Menampilkan 200 pertama. Gunakan pencarian atau filter.</p>`:''}</div>
+ else body=`<input type="search" id="kts" placeholder="Cari kata kerja (kanji, kana, romaji, arti)..." value="${ktQ.replace(/"/g,'&quot;')}"><div><select id="ktg"><option value="">Semua kelompok</option>${[1,2,3].map(g=>`<option value="${g}" ${g==ktG?'selected':''}>${GNAME[g]}</option>`).join('')}</select></div>
+  <div class="meta">${P.length} dari ${KN} kata kerja ${KL} · ketuk untuk melihat 15 bentuknya</div><div class="card" id="ktlist">${P.slice(0,200).map(v=>`<button class="kvr" data-j="${v.j}"><span><b>${v.j}</b>${v.j!=v.k?` <span class="rj">${v.k}</span>`:''} <span class="ro rj">${v.r}</span><br><small>${v.a}</small></span><span class="rj" style="font-size:12px;text-align:right">${GNAME[kgroup(v)].split(' (')[0]}<br>${v.l}</span></button>`).join('')}${P.length>200?`<p class="rj">Menampilkan 200 pertama. Gunakan pencarian atau filter.</p>`:''}${P.length?'':'<p class="rj">Tidak ada kata kerja yang cocok.</p>'}</div>
   <div class="kset"><span class="rj">Bentuk untuk kuis:</span>${KF.slice(1).map(f=>`<button class="tg${ktF.includes(f[0])?' on':''}" data-kf="${f[0]}">${f[1].replace('Bentuk ','')}</button>`).join('')}</div>`;
- view(`${hdr('Katsuyō · 活用')}<div class="tabs">${tabs.map(t=>`<button class="tg${t==ktTab?' on':''}" data-kt="${t}">${t=='Daftar'?`Daftar kata (${KV.length})`:t}</button>`).join('')}</div>${body}
- ${ktTab=='Penjelasan'?'':startBar()}`);
+ view(`${modHead('b','katsuyo')}<div class="tabs">${tabs.map(t=>`<button class="tg${t==ktTab?' on':''}" data-kt="${t}">${t=='Daftar'?`Daftar kata ${KL} (${KN})`:t}</button>`).join('')}</div>${body}
+ ${ktTab=='Penjelasan'?'':startBar()}`,materi);
+ modWire('b',katsuyo);
  onSpeak(app);
  app.querySelectorAll('[data-kt]').forEach(b=>b.onclick=()=>{ktTab=b.dataset.kt;ST.set('ktTab',ktTab);katsuyo()});
  if(ktTab=='Penjelasan')return;
  if(ktTab=='Daftar'){
   let tm;$('#kts').oninput=e=>{clearTimeout(tm);tm=setTimeout(()=>{ktQ=e.target.value.trim().toLowerCase();katsuyo();const s=$('#kts');s.focus();s.setSelectionRange(s.value.length,s.value.length)},250)};
-  $('#ktg').onchange=e=>{ktG=+e.target.value||'';ST.set('ktG',ktG);katsuyo()};$('#ktl').onchange=e=>{ktL=e.target.value;ST.set('ktL',ktL);katsuyo()};
+  $('#ktg').onchange=e=>{ktG=+e.target.value||'';ST.set('ktG',ktG);katsuyo()};
   app.querySelectorAll('.kvr').forEach(b=>b.onclick=()=>katsuDetail(KV.find(v=>v.j==b.dataset.j),P));
   app.querySelectorAll('[data-kf]').forEach(b=>b.onclick=()=>{const id=b.dataset.kf;ktF=ktF.includes(id)?ktF.filter(x=>x!=id):[...ktF,id];if(!ktF.length)ktF=['masu'];ST.set('ktF',ktF);
    app.querySelectorAll('[data-kf]').forEach(x=>x.classList.toggle('on',ktF.includes(x.dataset.kf)))});
@@ -1652,7 +1677,7 @@ function katsuyo(){
  M.ubah={lab:'Ubah bentuk',icon:'🔄',gen:e=>{const{v,f}=e,F=vForms(v),others=shuf(KV.filter(x=>x!==v)).slice(0,3).map(w=>vForms(w).find(x=>x.id==f.id)).filter(Boolean);
   return{kind:'choice',lbl:'Pilih bentuk yang benar',q:`${f.lab}<br><span style="font-size:15px;font-weight:400">dari <b>${v.j}</b>${v.j!=v.k?` (${v.k})`:''} · ${v.a}</span>`,qr:rom(v.k),a:opt(f),d:[...F.filter(x=>x.id!=f.id&&x.kana!=f.kana).map(opt),...others.map(opt)],nr:true,mean:f.arti}}};
  M.kelompok={lab:'Kelompok',icon:'🗂️',gen:e=>{const v=e.v;return{kind:'choice',lbl:'Termasuk kelompok apa?',q:`${v.j}${v.j!=v.k?`<br><small style="font-weight:400">${v.k}</small>`:''}`,qr:v.r,say:v.k,a:GNAME[kgroup(v)],d:Object.values(GNAME),mean:v.a}}};
- wireStart({key:'katsu',title:`Katsuyō${ktL?' '+ktL:''}${ktG?' '+GNAME[ktG].split(' (')[0]:''}`,modes:M,pool:()=>shuf(pool).slice(0,QN()*3).map(ent),back:katsuyo})}
+ wireStart({key:'katsu',title:`Katsuyō${KL?' '+KL:''}${ktG?' '+GNAME[ktG].split(' (')[0]:''}`,modes:M,pool:()=>shuf(pool).slice(0,QN()*3).map(ent),back:katsuyo})}
 function katsuDetail(v,P){
  const F=vForms(v),i=P.indexOf(v);
  view(`${hdr(`${v.j} · ${v.a}`)}<div class="card"><b style="font-size:26px">${v.j}</b> ${v.j!=v.k?`<span class="rj">${v.k}</span>`:''} <span class="ro">${v.r}</span><div class="rj">${GNAME[kgroup(v)]} · ${v.l} · ${v.a}</div></div>
@@ -1714,35 +1739,12 @@ function vTheme(v){
  if(ks.length){const kth=KCAT[ks[ks.length-1]];if(kth&&kth!=='Lain-lain')return v._th=kth}
  return v._th='Lain-lain'}
 let THEMES=null;const themeList=()=>THEMES||(THEMES=Object.entries(V.reduce((m,v)=>(m[vTheme(v)]=(m[vTheme(v)]||0)+1,m),{})).sort((a,b)=>a[0]=='Lain-lain'?1:b[0]=='Lain-lain'?-1:b[1]-a[1]));
-const kpN=id=>{const m=KP.find(x=>x.id==id);return m?m.cats.reduce((s,c)=>s+c.rows.length,0):0};
-const btN=id=>{const t=BT.find(x=>x.id==id);return t?t.rows.length:0};
-const MK0=[
- ['🗂️','Kosakata berdasarkan tema',()=>`${themeList().length} tema · makanan, pekerjaan, tempat…`,()=>kPick('tema')],
- ['🔤','Kosakata berdasarkan jenis kata',()=>`${TY.length} jenis · benda, kerja, sifat…`,()=>kPick('jenis')],
- ['💥','Onomatope',()=>`${kpN('ono')} kata · わくわく, どきどき`,()=>phraseMod('ono')],
- ['🎎','Idiom dan peribahasa',()=>`${kpN('idiom')} ungkapan · 慣用句, ことわざ`,()=>phraseMod('idiom')],
- ['⇄','Sinonim dan antonim',()=>`${kpN('sinonim')} pasangan kata`,()=>phraseMod('sinonim')],
- ['🎩','Kosakata formal dan slang',()=>`${kpN('formal')} kata · keigo & bahasa gaul`,()=>phraseMod('formal')],
- ['🏅','Kosakata JLPT N5–N1',()=>`${V.length} kata per level`,()=>kPick('jlpt')]];
-const MB0=[
- ['🧱','Struktur kalimat',()=>`${btN('struktur')} pola · urutan S–O–P`,()=>btopic('struktur')],
- ['は','Partikel',()=>`${btN('partikel')} partikel · は が を に で`,()=>btopic('partikel')],
- ['活','Katsuyō / perubahan kata',()=>`${KV.length} kata kerja · 15 bentuk`,katsuyo],
- ['📐','Pola kalimat dasar',()=>`${btN('pola')} pola · です, ます, たい`,()=>btopic('pola')],
- ['⏳','Bentuk waktu dan aspek',()=>`${btN('waktu')} pola · ている, てしまう`,()=>btopic('waktu')],
- ['❓','Kalimat tanya, perintah, ajakan',()=>`${btN('tanya')} pola · か, てください, ましょう`,()=>btopic('tanya')],
- ['🔗','Sebab-akibat dan pengandaian',()=>`${btN('sebab')} pola · から, ので, たら, ば`,()=>btopic('sebab')],
- ['🏅','Bunpō JLPT N5–N1',()=>`${BP.reduce((s,l)=>s+bpRows(l).length,0)} pola per level`,bunpo]];
-const MOD_O=[
- ['あ','Hiragana',()=>'Dasar · dakuon · yōon',()=>chart('Hiragana',false)],
- ['ア','Katakana',()=>'Dasar · dakuon · yōon',()=>chart('Katakana',true)],
- ['数','Bilangan',()=>'Belasan · ratusan · jutaan',angka],
- ['文','Bun · ungkapan sehari-hari',()=>`${BUN.length} kalimat`,bun],
- ['話','Kaiwa · percakapan',()=>`${KW.length} dialog`,kaiwa],
- ['🧩','Teka-teki',()=>'Susun ala Duolingo',puzzle]];
+// isi submodul per level (angka di kartu dan tab pudar bila kosong)
+const kpRows=(id,lv)=>{const m=KP.find(x=>x.id==id);return m?m.cats.flatMap(c=>c.rows.map((r,i)=>({c:c.c,pair:c.pair,r,l:(c.lv||[])[i]||'N3'}))).filter(e=>!lv||e.l==lv):[]};
+const btRows=(id,lv)=>{const t=BT.find(x=>x.id==id);return t?t.rows.filter((r,i)=>!lv||((t.lv||[])[i]||'N5')==lv):[]};
+const btLv=(T,r)=>(T.lv||[])[T.rows.indexOf(r)]||'N5';
 // kartu menu (gaya grid): ikon besar, judul, keterangan singkat
 const mCard=(ic,t,d,key)=>`<button class="mc" data-m="${key}"><span class="ic">${ic}</span><b>${t}</b><small>${d}</small></button>`;
-const MOD_K=[MK0[6],MK0[1],MK0[0],MK0[4],MK0[3],MK0[2],MK0[5]],MOD_B=[MB0[0],MB0[3],MB0[1],MB0[2],MB0[4],MB0[5],MB0[6],MB0[7]];
 /* ===== MATERI: struktur delapan menu mengikuti NIHONESIA_MASTER_CURRICULUM_HIERARCHY.md ===== */
 // halaman penjelasan umum: judul, daftar bagian [judul, html], tombol kembali
 const infoPage=(t,secs,back,sub)=>{view(`${hdr(t)}${sub?`<p class="sub">${sub}</p>`:''}${secs.map(s=>`<h3>${s[0]}</h3><div class="card info">${s[1]}</div>`).join('')}`,back);onSpeak(app);return app};
@@ -1776,14 +1778,26 @@ const ICO={tabel:'<rect x="3" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="
  lampu:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.9.7 1.1 1.4 1.1 2.2h5c0-.8.2-1.5 1.1-2.2A6 6 0 0 0 12 3z"/>',
  tautan:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
  label:'<path d="M3 12.5V4h8.5L21 13.5 13.5 21z"/><circle cx="7.6" cy="8.6" r="1.3"/>',
- komponen:'<rect x="3" y="3" width="8" height="8" rx="1.6"/><rect x="13" y="13" width="8" height="8" rx="1.6"/><path d="M15 3.5h5.5V9M3.5 15v5.5H9"/>'};
-const icoS=k=>`<svg viewBox="0 0 24 24" aria-hidden="true">${ICO[k]||ICO.tabel}</svg>`;
-// bilah tab berikon: items [[kunci, ikon, label]]; attr = nama atribut data-*
-const itabs=(items,cur,attr)=>`<div class="tabs itabs" role="tablist">${items.map(t=>`<button class="tg${t[0]==cur?' on':''}" role="tab" aria-selected="${t[0]==cur}" data-${attr}="${t[0]}">${icoS(t[1])}<span>${t[2]}</span></button>`).join('')}</div>`;
+ komponen:'<rect x="3" y="3" width="8" height="8" rx="1.6"/><rect x="13" y="13" width="8" height="8" rx="1.6"/><path d="M15 3.5h5.5V9M3.5 15v5.5H9"/>',
+ pabrik:'<path d="M3 20.5h18M4 20.5V11l5 3v-3l5 3v-3l5 3V4h1.5v16.5"/><path d="M8 17.5h.01M12 17.5h.01M16 17.5h.01"/>',
+ partikel:'<rect x="2.5" y="7.5" width="7" height="9" rx="1.8"/><rect x="14.5" y="7.5" width="7" height="9" rx="1.8"/><path d="M9.5 12h5"/><circle cx="12" cy="12" r="1.5"/>',
+ medali:'<circle cx="12" cy="9" r="5"/><path d="M9 13.3 7.5 21l4.5-2.5 4.5 2.5-1.5-7.7"/>'};
+// ikon: kunci ICO, atau emoji yang punya ikon garis di EI (mis. '🗂', '⏳')
+const icoS=k=>`<svg viewBox="0 0 24 24" aria-hidden="true">${ICO[k]||(typeof EI!='undefined'&&EI[k]?EI[k][0]:ICO.tabel)}</svg>`;
+// bilah tab berikon: items [[kunci, ikon, label, kosong?]]; attr = nama atribut data-*; tab kosong ditampilkan pudar
+const itabs=(items,cur,attr)=>`<div class="tabs itabs" role="tablist" data-k="${attr}${items.length}${items[0][0]}">${items.map(t=>`<button class="tg${t[0]==cur?' on':''}${t[3]?' nil':''}" role="tab" aria-selected="${t[0]==cur}" data-${attr}="${t[0]}">${icoS(t[1])}<span>${t[2]}</span></button>`).join('')}</div>`;
+/* ===== NAVIGASI SUBMENU: tab berikon + level N5–N1, menempel di bawah header saat di-scroll ===== */
+const JL=['N5','N4','N3','N2','N1'];
+let mLv=ST.get('mLv','N5');if(!JL.includes(mLv))mLv='N5';
+const setLv=l=>{mLv=l;ST.set('mLv',l)};
+// segmen level; all = tambah pilihan "Semua" (nilai '')
+const lvSeg=(cur,all)=>`<div class="lvseg" role="tablist" aria-label="Level JLPT">${(all?['',...JL]:JL).map(l=>`<button class="tg${l==cur?' on':''}" role="tab" aria-selected="${l==cur}" data-lv="${l}">${l||'Semua'}</button>`).join('')}</div>`;
+const snav=h=>`<nav class="snav" aria-label="Submenu">${h}</nav>`;
+const lvEmpty=(what,tip)=>`<div class="lvempty"><b>Belum ada ${what} untuk ${mLv}</b>${tip||'Pilih level lain di atas.'}</div>`;
 /* ===== HIRAGANA & KATAKANA ===== */
 /* ===== HIRAGANA & KATAKANA: satu halaman tabel + tab (tabel, pengenalan, sokuon & chōon, partikel/bunyi asing, contoh kata) ===== */
 const kanaTabs=kata=>[['tabel','tabel','Tabel'],['intro','buku','Pengenalan'],['soku','gelombang','Sokuon & Chōon'],kata?['asing','globe','Bunyi asing']:['part','bicara','Partikel'],['kata','daftar',kata?'Kata serapan':'Contoh kata']];
-const kanaNav=(kata,cur)=>`<div class="kseg"><button class="tg${kata?'':' on'}" data-ks="0">あ Hiragana</button><button class="tg${kata?' on':''}" data-ks="1">ア Katakana</button></div>${itabs(kanaTabs(kata),cur,'kn')}`;
+const kanaNav=(kata,cur)=>snav(`<div class="kseg"><button class="tg${kata?'':' on'}" data-ks="0">あ Hiragana</button><button class="tg${kata?' on':''}" data-ks="1">ア Katakana</button></div>${itabs(kanaTabs(kata),cur,'kn')}`);
 const kanaGo=(kata,tab)=>tab=='tabel'?chart(kata?'Katakana':'Hiragana',kata):kanaPage(kata,tab);
 function kanaNavWire(kata,cur){
  app.querySelectorAll('[data-ks]').forEach(b=>b.onclick=()=>kanaGo(b.dataset.ks=='1',kanaTabs(b.dataset.ks=='1').some(t=>t[0]==cur)?cur:'tabel'));
@@ -1866,8 +1880,9 @@ function kjMirip(){
  msLoop(app);kjWireTiles(app,null,kjMirip)}
 /* ===== KANJI: halaman pertama = Kamus Kanji (01); tab Panduan = hub bagian 02–08 ===== */
 let kjLast=0;const materiKanji=()=>kjLast?kjSec(kjLast):kanjiGuide();
-const kjTabs=cur=>itabs([['list','cari','Kamus Kanji'],['guide','buku','Panduan & Referensi']],cur,'kjt');
-const kjTabWire=()=>app.querySelectorAll('[data-kjt]').forEach(b=>b.onclick=()=>b.dataset.kjt=='list'?kanji():kanjiGuide());
+// satu bilah tab: Kamus + bagian panduan 02–08; extra = baris tambahan di dalam navigasi (mis. level)
+const kjTabs=(cur,extra)=>snav(itabs([['list','cari','Kamus'],...KJ_SEC.map(y=>[y.n,y.ic,KJ_SHORT[y.n]])],cur,'kjt')+(extra||''));
+const kjTabWire=()=>app.querySelectorAll('[data-kjt]').forEach(b=>b.onclick=()=>{sfx.tap();b.dataset.kjt=='list'?kanji():kjSec(+b.dataset.kjt)});
 // bagian panduan 02–08: judul, JP, ikon, ringkasan, cakupan, halaman yang sudah tersedia [kunci, judul, keterangan, ikon]
 const KJ_SEC=[
  {n:2,t:'Struktur dan komponen',jp:'漢字の構造',ic:'lapis',d:'Kanji tersusun dari komponen. Satu komponen biasanya menjadi <b>radikal (bushu)</b> yang memberi petunjuk makna, misalnya 氵 untuk air. Posisi komponen dan jumlah goresan membantu mencari kanji di kamus.',
@@ -1896,12 +1911,11 @@ let kjSecN=2;
 function kanjiGuide(){kjLast=0;kjSec(kjSecN)}
 function kjSec(n){kjLast=n;kjSecN=n;
  const x=KJ_SEC.find(y=>y.n==n),F={radikal:kjRadikal,posisi:kjPosisi,jumlah:kjJumlah,goresan:kjGoresan,mirip:kjMirip,baca:kjBaca,okuri:kjOkuri,nanori:kjNanori,jukuji:kjJukuji,rikusho:kjStruktur,makna:kjMakna,jukugo:kjJukugo,antonim:kjAntonim,homofon:kjHomofon,pakai:kjPakai,family:kfList,formal:kjFormal,tree:()=>kanjiTree(),klas:kjKlas};
- view(`${hdr('Kanji · 漢字')}${kjTabs('guide')}${itabs(KJ_SEC.map(y=>[y.n,y.ic,KJ_SHORT[y.n]]),n,'sec')}
+ view(`${hdr('Kanji · 漢字')}${kjTabs(n)}
  <h3>${String(n).padStart(2,'0')}. ${x.t} <span class="rj">${x.jp}</span></h3><div class="card info">${x.d}</div>
  ${x.p.map(q=>`<button class="mc kgc" data-f="${q[0]}"><span class="gi">${icoS(q[3])}</span><span class="gt"><b>${q[1]}</b><small>${q[2]}</small></span><span class="gn">›</span></button>`).join('')}
  <details class="card dlg"><summary><b>Cakupan bagian ini</b></summary><div class="info"><ul>${x.c.map(c=>`<li>${c}</li>`).join('')}</ul></div></details>`,materi);
  kjTabWire();
- app.querySelectorAll('[data-sec]').forEach(b=>b.onclick=()=>{sfx.tap();kjSec(+b.dataset.sec)});
  app.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{sfx.tap();F[b.dataset.f]()})}
 // 08: klasifikasi dihitung dari daftar kanji di aplikasi
 function kjKlas(){
@@ -2023,18 +2037,17 @@ function kfFam(ji,fi){
 
 
 /* ===== KAIWA: 100 unit percakapan (N5–N1) ===== */
-let kuL=ST.get('kuL','N5');
 const kuDone=()=>ST.get('kuDone',{});
+// tab Unit: 20 unit percakapan per level
 function kuList(){
- if(!KU.lv.some(l=>l.l==kuL))kuL=KU.lv[0].l;const lv=KU.lv.find(l=>l.l==kuL),us=KU.u.filter(u=>u.l==kuL),dn=kuDone();
- view(`${hdr('Unit Kaiwa')}<p class="sub">${KU.u.length} unit percakapan bertahap dari N5 sampai N1. Setiap unit berisi tujuan komunikasi, ungkapan inti, kosakata, pola, dialog, latihan, dan roleplay.</p>
- <div class="tabs">${KU.lv.map(l=>`<button class="tg${l.l==kuL?' on':''}" data-l="${l.l}">${l.l}</button>`).join('')}</div>
- <p class="rj" style="margin:0 0 8px"><b>${lv.l} · ${lv.n}</b>: ${lv.t}</p>
- ${us.map(u=>{const d=dn[u.no]||0;return`<button class="card kfl" data-u="${u.no}"><span class="kfn">${u.no.replace(/^0+/,'')}</span><span class="kfm"><b>${u.t}</b><small class="rj">${u.p[0]} · ${u.d.length} kalimat${d?` · ${d}/4 selesai`:''}</small></span>${d==4?'<span class="kfok">✅</span>':''}</button>`}).join('')}`,materiKaiwa);
- app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{kuL=b.dataset.l;ST.set('kuL',kuL);kuList()});
+ const lv=KU.lv.find(l=>l.l==mLv),us=KU.u.filter(u=>u.l==mLv),dn=kuDone();
+ view(`${modHead('w','unit')}<p class="lvnote">${KU.u.length} unit percakapan bertahap dari N5 sampai N1. Setiap unit berisi tujuan komunikasi, ungkapan inti, kosakata, pola, dialog, latihan, dan roleplay.</p>
+ ${lv?`<div class="card"><b>${lv.l} · ${lv.n}</b><p class="rj" style="margin:4px 0 0">${lv.t}</p></div>`:''}
+ ${us.length?us.map(u=>{const d=dn[u.no]||0;return`<button class="card kfl" data-u="${u.no}"><span class="kfn">${u.no.replace(/^0+/,'')}</span><span class="kfm"><b>${u.t}</b><small class="rj">${u.p[0]} · ${u.d.length} kalimat${d?` · ${d}/4 selesai`:''}</small></span>${d==4?'<span class="kfok">✅</span>':''}</button>`}).join(''):lvEmpty('unit percakapan')}`,materi);
+ modWire('w',kuList);
  app.querySelectorAll('[data-u]').forEach(b=>b.onclick=()=>kuUnit(b.dataset.u))}
 function kuUnit(no){
- const u=KU.u.find(x=>x.no==no),i=KU.u.indexOf(u),lv=KU.lv.find(l=>l.l==u.l),CK=['Memahami makna','Bisa mengucapkan','Bisa merespons tanpa membaca','Bisa membuat variasi kalimat'],dn=ST.get('kuChk',{})[no]||[];
+ const u=KU.u.find(x=>x.no==no);if(JL.includes(u.l))setLv(u.l);const i=KU.u.indexOf(u),lv=KU.lv.find(l=>l.l==u.l),CK=['Memahami makna','Bisa mengucapkan','Bisa merespons tanpa membaca','Bisa membuat variasi kalimat'],dn=ST.get('kuChk',{})[no]||[];
  view(`${hdr('Unit '+u.no)}<h2 style="margin:0 0 4px">${u.t}</h2><p class="rj" style="margin:0 0 10px">${lv.l} · ${lv.n} · ${lv.t}</p>
  <h3>Tujuan komunikasi</h3><div class="card info">${u.g}</div>
  <h3>Ungkapan inti</h3><div class="card">${lv.e.map(e=>jpS(e[0],e[1],e[2])).join('')}</div>
@@ -2050,51 +2063,83 @@ function kuUnit(no){
  app.querySelectorAll('.chk input').forEach(c=>c.onchange=()=>{const all=ST.get('kuChk',{});const cur=new Set(all[no]||[]);c.checked?cur.add(+c.dataset.c):cur.delete(+c.dataset.c);all[no]=[...cur];ST.set('kuChk',all);const d=kuDone();d[no]=cur.size;ST.set('kuDone',d)});
  if(i>0)$('#kup').onclick=()=>kuUnit(KU.u[i-1].no);if(i<KU.u.length-1)$('#kun').onclick=()=>kuUnit(KU.u[i+1].no)}
 const materiKaiwa=()=>modSub('w');
-const MOD_W=[['話','Unit percakapan N5–N1',()=>`${KU.u.length} unit · tujuan, pola, dialog`,kuList],
- ['会','Dialog per situasi',()=>`${KW.length} dialog · ${KWC.length} kategori`,kaiwa]];
-const MOD_N=[['文','Bank kalimat sehari-hari',()=>`${BUN.length} kalimat`,bun],
- ['⇄','Teka-teki susun kalimat',()=>'susun ala Duolingo',puzzle],
- ['構','Struktur kalimat',()=>`${btN('struktur')} pola`,()=>btopic('struktur')],
- ['型','Pola kalimat dasar',()=>`${btN('pola')} pola`,()=>btopic('pola')]];
-const MODS={k:['語','Kotoba','言葉 · belajar kosakata',MOD_K],b:['法','Bunpō','文法 · belajar tata bahasa',MOD_B],w:['話','Kaiwa','会話 · percakapan dan interaksi',MOD_W],n:['文','Bun','文 · bank kalimat dan latihan',MOD_N]};
+/* ----- modul Kotoba, Bunpō, Kaiwa, Bun: submenu berupa tab berikon (menempel saat di-scroll) + level N5–N1 -----
+   tab: [kunci, ikon, label, buka(), jumlah(level) atau null jika tidak memakai level] */
+const MODT={
+ k:{t:'Kotoba · 言葉',tabs:[
+  ['daftar','daftar','Kosakata',()=>kotoba(),l=>V.filter(v=>v.l==l).length],
+  ['jenis','label','Jenis kata',()=>kPick('jenis'),l=>V.some(v=>v.l==l)],
+  ['tema','🗂','Tema',()=>kPick('tema'),l=>V.some(v=>v.l==l)],
+  ['sinonim','↔','Sinonim',()=>phraseMod('sinonim'),l=>kpRows('sinonim',l).length],
+  ['idiom','🎎','Idiom',()=>phraseMod('idiom'),l=>kpRows('idiom',l).length],
+  ['ono','💥','Onomatope',()=>phraseMod('ono'),l=>kpRows('ono',l).length],
+  ['formal','🎩','Formal',()=>phraseMod('formal'),l=>kpRows('formal',l).length],
+  ['kerja','pabrik','Kerja',()=>kotoba('Kerja'),null]]},
+ b:{t:'Bunpō · 文法',tabs:[
+  ['jlpt','medali','Pola JLPT',bunpo,l=>BP.some(x=>x.l==l)],
+  ['struktur','🧱','Struktur',()=>btopic('struktur'),l=>btRows('struktur',l).length],
+  ['partikel','partikel','Partikel',()=>btopic('partikel'),l=>btRows('partikel',l).length],
+  ['katsuyo','🔁','Katsuyō',katsuyo,l=>KV.some(v=>v.l==l)],
+  ['pola','📐','Pola dasar',()=>btopic('pola'),l=>btRows('pola',l).length],
+  ['waktu','⏳','Waktu',()=>btopic('waktu'),l=>btRows('waktu',l).length],
+  ['tanya','❓','Tanya',()=>btopic('tanya'),l=>btRows('tanya',l).length],
+  ['sebab','🔗','Sebab',()=>btopic('sebab'),l=>btRows('sebab',l).length],
+  ['panduan','lampu','Panduan',bpGuide,null]]},
+ w:{t:'Kaiwa · 会話',tabs:[
+  ['unit','buku','Unit',kuList,l=>KU.u.some(u=>u.l==l)],
+  ['dialog','bicara','Dialog',kaiwa,l=>KW.some(d=>d[3]==l)]]},
+ n:{t:'Bun · 文',tabs:[
+  ['bun','📝','Kalimat',bun,null],
+  ['puzzle','🧩','Teka-teki',puzzle,null],
+  ['struktur','🧱','Struktur',()=>btopic('struktur','n'),null],
+  ['pola','📐','Pola dasar',()=>btopic('pola','n'),null]]}};
+let mTab=ST.get('mTab',{});
+// header + navigasi modul (tab berikon, lalu level jika tab memakai level)
+function modHead(k,cur){const m=MODT[k],tb=m.tabs.find(t=>t[0]==cur)||m.tabs[0];lastSub=k;mTab[k]=tb[0];ST.set('mTab',mTab);
+ return hdr(m.t)+snav(itabs(m.tabs.map(t=>[t[0],t[1],t[2],t[4]&&!t[4](mLv)]),tb[0],'mt')+(tb[4]?lvSeg(mLv):''))}
+// pasang klik tab & level; redraw = gambar ulang tab yang sama setelah level diganti
+function modWire(k,redraw){
+ app.querySelectorAll('[data-mt]').forEach(b=>b.onclick=()=>{sfx.tap();MODT[k].tabs.find(t=>t[0]==b.dataset.mt)[3]()});
+ app.querySelectorAll('.snav [data-lv]').forEach(b=>b.onclick=()=>{sfx.tap();setLv(b.dataset.lv);redraw()})}
+// buka modul pada tab terakhir yang dipakai
+function modSub(k){if(k=='j')return kanji();const m=MODT[k];(m.tabs.find(t=>t[0]==mTab[k])||m.tabs[0])[3]()}
 let lastSub=null;
 function materi(){lastSub=null;
  const L=[['あア','Hiragana & Katakana','Tabel · sokuon · partikel · contoh kata',()=>chart('Hiragana',false)],
-  ['漢','Kanji',`${KJ.length} kanji · kamus & panduan`,kanji],['語','Kotoba',`${MOD_K.length} sub materi · kosakata`,()=>modSub('k')],
-  ['法','Bunpō',`${MOD_B.length} sub materi · tata bahasa`,()=>modSub('b')],['話','Kaiwa',`${KU.u.length} unit · ${KW.length} dialog`,()=>modSub('w')],
-  ['文','Bun',`${MOD_N.length} sub materi · ${BUN.length} kalimat`,()=>modSub('n')],['数','Bilangan','Belasan · ratusan · jutaan',angka]];
+  ['漢','Kanji',`${KJ.length} kanji · kamus & panduan`,kanji],['語','Kotoba',`${MODT.k.tabs.length} sub materi · N5–N1`,()=>modSub('k')],
+  ['法','Bunpō',`${MODT.b.tabs.length} sub materi · N5–N1`,()=>modSub('b')],['話','Kaiwa',`${KU.u.length} unit · ${KW.length} dialog · N5–N1`,()=>modSub('w')],
+  ['文','Bun',`${MODT.n.tabs.length} sub materi · ${BUN.length} kalimat`,()=>modSub('n')],['数','Bilangan','Belasan · ratusan · jutaan',angka]];
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Materi</h2>${rtBtn()}</div>
  <div class="grid">${L.map((m,i)=>mCard(m[0],m[1],m[2],'x'+i)).join('')}</div>
  ${navHtml('materi')}`);
  app.querySelectorAll('.mc[data-m]').forEach(b=>b.onclick=()=>{sfx.tap();L[+b.dataset.m.slice(1)][3]()})}
-// sub materi: kartu untuk setiap submodul Kotoba / Bunpō
-function modSub(k){if(k=='j')return kanji();lastSub=k;const m=MODS[k];
- view(`${hdr(`${m[1]} · ${m[2].split(' · ')[0]}`)}<p class="sub">${m[2].split(' · ')[1].replace(/^./,c=>c.toUpperCase())}. Pilih sub materi.</p>
- <div class="grid">${m[3].map((s,i)=>mCard(s[0],`${i+1}. ${s[1]}`,s[2](),k+i)).join('')}</div>`,materi);
- app.querySelectorAll('.mc[data-m]').forEach(b=>b.onclick=()=>{sfx.tap();m[3][+b.dataset.m.slice(1)][3]()})}
-
-/* ----- pemilih submodul Kotoba: tema, jenis kata, level JLPT → membuka daftar Kotoba dengan filter ----- */
-let dT=ST.get('kTh',''),kBack=null;
-function kPick(kind,qz){
- const lvO=['N5','N4','N3','N2','N1','Kerja'];
- const G=kind=='tema'?themeList():kind=='jenis'?TY.map(t=>[t,V.filter(v=>v.t==t).length]):lvO.map(l=>[l,V.filter(v=>v.l==l).length]);
- const T={tema:['Kosakata berdasarkan tema','Pilih tema kosakata yang ingin dipelajari.'],jenis:['Kosakata berdasarkan jenis kata','Pilih jenis kata (品詞, hinshi).'],jlpt:['Kosakata JLPT N5–N1','Pilih level. Level JLPT hanya perkiraan karena JLPT tidak menerbitkan daftar resmi.']}[kind];
- view(`${hdr(qz?'Kuis · '+T[0]:T[0])}<p class="sub">${T[1]}</p><div class="grid">${G.map(([g,n])=>`<button class="mc" data-g="${esc(g)}" ${n?'':'disabled'}><b>${g}</b><small>${n?`${n} kata`:'belum tersedia'}</small></button>`).join('')}</div>`);
- app.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>{const g=b.dataset.g;dT=dF=dL='';dQ='';
-  if(kind=='tema')dT=g;else if(kind=='jenis')dF=g;else dL=g;ST.set('kTh',dT);ST.set('kTy',dF);ST.set('kLv',dL);if(qz)return modQuiz(kotoba,'語 Kuis Kotoba');kBack=()=>kPick(kind);kotoba()})}
+/* ----- tab Jenis kata & Tema (modul Kotoba): kartu per kelompok pada level terpilih → tab Kosakata dengan filter ----- */
+let dT=ST.get('kTh','');
+function kPick(kind){
+ const W=V.filter(v=>v.l==mLv),cnt={};W.forEach(v=>{const g=kind=='tema'?vTheme(v):v.t;cnt[g]=(cnt[g]||0)+1});
+ const G=(kind=='tema'?themeList().map(x=>x[0]):TY).map(g=>[g,cnt[g]||0]).filter(x=>x[1]).sort((a,b)=>kind=='tema'?0:b[1]-a[1]);
+ const T={tema:'Pilih tema kosakata yang ingin dipelajari.',jenis:'Pilih jenis kata (品詞, hinshi).'}[kind];
+ view(`${modHead('k',kind)}<p class="lvnote">${T} ${W.length} kata ${mLv} dalam ${G.length} kelompok.</p>
+ ${G.length?`<div class="grid">${G.map(([g,n])=>`<button class="mc" data-g="${esc(g)}"><b style="margin-top:0">${g}</b><small>${n} kata</small></button>`).join('')}</div>`:lvEmpty('kosakata')}`,materi);
+ modWire('k',()=>kPick(kind));
+ app.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>{sfx.tap();const g=b.dataset.g;dQ='';
+  if(kind=='tema'){dT=g;dF=''}else{dF=g;dT=''}ST.set('kTh',dT);ST.set('kTy',dF);kotoba()})}
 
 /* ----- submodul frasa: onomatope, idiom & peribahasa, sinonim & antonim, formal & slang ----- */
 let kpCat={};
 const kpSym=c=>/Sinonim/.test(c)?'＝':/Antonim/.test(c)?'⇔':'→';
 const kpLbl=c=>/Sinonim/.test(c)?'Pilih sinonimnya':/Antonim/.test(c)?'Pilih lawan katanya':'Pilih bentuk sopannya';
 function phraseMod(id){
- const M=KP.find(m=>m.id==id),cur=kpCat[id]||'',C=M.cats.filter(c=>!cur||c.c==cur);
- const ents=C.flatMap(c=>c.rows.map(r=>({c:c.c,pair:c.pair,r}))),all=M.cats.flatMap(c=>c.rows.map(r=>({c:c.c,pair:c.pair,r})));
+ const M=KP.find(m=>m.id==id),lvAll=kpRows(id,mLv),cats=M.cats.map(c=>c.c).filter(c=>lvAll.some(e=>e.c==c));
+ let cur=kpCat[id]||'';if(cur&&!cats.includes(cur))cur='';
+ // pengecoh kuis: kata selevel; jika terlalu sedikit, ambil dari semua level
+ const ents=lvAll.filter(e=>!cur||e.c==cur),all=lvAll.length>=6?lvAll:kpRows(id);
  const w=(jp,kn,ro,ar)=>`<div class="kpw"><b>${jp}</b>${kn!=jp?`<span class="rj">${kn}</span>`:''}<span class="ro">${ro}</span><small>${ar}</small><button class="sp" data-s="${kn}" aria-label="Putar suara">🔊</button></div>`;
  const card=e=>{const r=e.r;return e.pair?`<div class="card kpp">${w(r[0],r[1],r[2],r[3])}<span class="kpa">${kpSym(e.c)}</span>${w(r[4],r[5],r[6],r[7])}</div>`
   :`<div class="card kpe"><div class="kpj"><b>${r[0]}</b>${r[0]!=r[1]?` <span class="rj">${r[1]}</span>`:''} <button class="sp" data-s="${r[1]}" aria-label="Putar suara">🔊</button></div><div class="ro">${r[2]}</div><div>${r[3]}</div>${r[4]?`<div class="bub">${r[4]} <button class="sp" data-s="${r[4]}" aria-label="Putar suara">🔊</button><div class="rj ro">${r[5]}</div>${r[6]}</div>`:''}</div>`};
- view(`${hdr(M.t)}<p class="sub">${M.d}</p><div class="tabs"><button class="tg${cur?'':' on'}" data-c="">Semua</button>${M.cats.map(c=>`<button class="tg${c.c==cur?' on':''}" data-c="${esc(c.c)}">${c.c}</button>`).join('')}</div>
- ${C.map(c=>`<h3>${c.c} <span class="rj">(${c.rows.length})</span></h3>${c.rows.map(r=>card({c:c.c,pair:c.pair,r})).join('')}`).join('')}${startBar()}`);
+ view(`${modHead('k',id)}<p class="lvnote">${M.d} · ${lvAll.length} ${mLv}</p>${lvAll.length?`${cats.length>1?`<div class="tabs"><button class="tg${cur?'':' on'}" data-c="">Semua</button>${cats.map(c=>`<button class="tg${c==cur?' on':''}" data-c="${esc(c)}">${c}</button>`).join('')}</div>`:''}
+ ${(cur?[cur]:cats).map(c=>{const E=ents.filter(e=>e.c==c);return`<h3>${c} <span class="rj">(${E.length})</span></h3>${E.map(card).join('')}`}).join('')}`:lvEmpty(M.t.toLowerCase())}${startBar()}`,materi);
+ modWire('k',()=>phraseMod(id));
  onSpeak(app);
  app.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{kpCat[id]=b.dataset.c;phraseMod(id)});
  const pool=ents.length>=6?ents:all,oth=(e,f)=>shuf(pool.filter(x=>x!==e&&x.pair==e.pair&&(!e.pair||x.c==e.c)&&f(x)!=f(e))).slice(0,6);
@@ -2111,14 +2156,17 @@ function phraseMod(id){
   balik:{lab:'Pasangan (dibalik)',icon:'⇆',off:!all.some(e=>e.pair),gen:e=>e.pair?{kind:'choice',lbl:/Sopan/.test(e.c)?'Pilih bentuk biasanya':kpLbl(e.c),q:`${big(e.r[4],34)}<br><small style="font-weight:400">${e.r[4]!=e.r[5]?e.r[5]+' · ':''}${e.r[7]}</small>`,qr:e.r[6],say:e.r[5],a:p1(e),d:oth(e,p1).map(p1),nr:true,mean:`${e.r[0]} = ${e.r[3]}`}:null},
   artiP:{lab:'Arti kata pasangan',icon:'あ',off:!all.some(e=>e.pair),gen:e=>{if(!e.pair)return null;const s=Math.random()<.5?0:4,fa=x=>x.r[s+3];return{kind:'choice',lbl:'Apa artinya?',q:big(e.r[s],34)+(e.r[s]!=e.r[s+1]?`<br><small style="font-weight:400">${e.r[s+1]}</small>`:''),qr:e.r[s+2],say:e.r[s+1],a:fa(e),d:oth(e,fa).map(fa)}}}};
  for(const k in MD)if(MD[k].off===undefined)MD[k].off=!all.some(e=>!e.pair);
- wireStart({key:'kp_'+id,title:M.t+(cur?' · '+cur:''),modes:MD,pool:()=>ents,back:()=>phraseMod(id)})}
+ wireStart({key:'kp_'+id,title:`${M.t} ${mLv}${cur?' · '+cur:''}`,modes:MD,pool:()=>ents,back:()=>phraseMod(id)})}
 
 /* ----- submodul Bunpō per topik: struktur kalimat, partikel, pola dasar, waktu & aspek, tanya/perintah/ajakan, sebab-akibat ----- */
-function btopic(id){
- const T=BT.find(x=>x.id==id);
- view(`${hdr(T.t)}<p class="sub">${T.d}</p>${T.ex.length?`<div class="card"><b>Penjelasan</b><ul class="btul">${T.ex.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
- ${T.rows.map(r=>`<div class="card btc"><div class="gp"><div><b>${r[0]}</b><span class="ro">${r[1]}</span></div><div>${r[2]}</div></div><div class="bub">${r[3]} <button class="sp" data-s="${r[3]}" aria-label="Putar suara">🔊</button><div class="rj ro">${r[4]}</div>${r[5]}</div></div>`).join('')}
- ${id=='partikel'?'<p class="rj">Latihan isi partikel yang kosong ada di mode kuis <b>Isi partikel</b>.</p>':''}${startBar()}`);
+// mk = modul pemanggil: 'b' (Bunpō, disaring per level) atau 'n' (Bun, semua level dengan label level)
+function btopic(id,mk){mk=mk||'b';
+ const T=BT.find(x=>x.id==id),byLv=mk=='b',rows=byLv?btRows(id,mLv):T.rows;
+ view(`${modHead(mk,id)}<p class="lvnote">${T.t} · ${T.d}${byLv?` · ${rows.length} pola ${mLv}`:''}</p>${T.ex.length?`<div class="card"><b>Penjelasan</b><ul class="btul">${T.ex.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
+ ${rows.length?'':lvEmpty('pola '+T.t.toLowerCase(),'Topik ini berisi pola tingkat dasar. Pilih level lain, atau buka tab <b>Pola JLPT</b> untuk pola level ini.')}
+ ${rows.map(r=>`<div class="card btc"><div class="gp"><div><b>${r[0]}</b>${byLv?'':` <span class="lvb">${btLv(T,r)}</span>`}<span class="ro">${r[1]}</span></div><div>${r[2]}</div></div><div class="bub">${r[3]} <button class="sp" data-s="${r[3]}" aria-label="Putar suara">🔊</button><div class="rj ro">${r[4]}</div>${r[5]}</div></div>`).join('')}
+ ${id=='partikel'&&rows.length?'<p class="rj">Latihan isi partikel yang kosong ada di mode kuis <b>Isi partikel</b>.</p>':''}${startBar()}`,materi);
+ modWire(mk,()=>btopic(id,mk));
  onSpeak(app);
  const oth=(r,i)=>shuf(T.rows.filter(x=>x!==r&&x[i]!=r[i])).slice(0,6),pat=r=>`${r[0]}<small class="ro">${r[1]}</small>`;
  const spool=[...BT.flatMap(t=>t.rows.map(x=>({j:x[3],r:x[4]}))),...BUN.map(x=>({j:x[1],r:x[2]}))];
@@ -2129,7 +2177,7 @@ function btopic(id){
   susun:{lab:'Susun kalimat',gen:r=>{const it=sentItems([{j:r[3],r:r[4],a:r[5],sub:`pola: ${r[0]}`}],spool)[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}},
   dengar:{lab:'Mendengar',gen:r=>({kind:'choice',lbl:'Dengarkan, lalu pilih artinya',q:r[3],listen:true,qr:'',say:r[3],a:r[5],d:oth(r,5).map(x=>x[5]),e:`${r[3]} <span class="ro">(${r[4]})</span>`})}};
  if(id=='partikel')MD.isi={lab:'Isi partikel',icon:'は',gen:r=>{const p=PQ[Math.floor(Math.random()*PQ.length)];return{kind:'choice',lbl:'Pilih partikel yang tepat',q:p[0],qr:p[2],a:p[1],d:[...new Set(PQ.map(x=>x[1]))].filter(x=>x!=p[1])}}};
- wireStart({key:'bt_'+id,title:T.t,modes:MD,pool:()=>T.rows,back:()=>btopic(id)})}
+ wireStart({key:'bt_'+id,title:T.t+(byLv?' '+mLv:''),modes:MD,pool:()=>rows,back:()=>btopic(id,mk)})}
 
 /* ===== KOMPONEN KANJI RINCI (bushu bisa lebih dari 2) =====
    Komponen utama dipecah lagi memakai sub-komponen KanjiVG selama sub-komponennya menutup semua goresan,
@@ -2580,7 +2628,7 @@ function quizHub(){
   ['ア','Katakana','Huruf, menulis, susun',()=>modQuiz(()=>chart('Katakana',true),'ア Kuis Katakana')],
   ['漢','Kanji',`${KJ.length} kanji · arti, bacaan, menulis`,()=>{kQ='';modQuiz(kanji,'漢 Kuis Kanji')}],
   ['語','Kotoba',`${V.length} kata · semua level`,()=>{dT=dF=dL=dQ='';modQuiz(kotoba,'語 Kuis Kotoba')}],
-  ['法','Bunpō',`${BP.reduce((s,l)=>s+bpRows(l).length,0)} pola · pilih level`,()=>{if(!BP.some(l=>l.l==bpL))bpL='N5';modQuiz(bunpo,'法 Kuis Bunpō')}],
+  ['法','Bunpō',`${BP.reduce((s,l)=>s+bpRows(l).length,0)} pola · pilih level`,()=>modQuiz(bunpo,'法 Kuis Bunpō')],
   ['話','Kaiwa',`${KW.length} dialog`,()=>modQuiz(kaiwa,'話 Kuis Kaiwa')],
   ['文','Bun',`${BUN.length} kalimat sehari-hari`,()=>modQuiz(bun,'文 Kuis Bun')],
   ['数','Bilangan','Angka Jepang',()=>modQuiz(angka,'数 Kuis Bilangan')],
@@ -2592,7 +2640,6 @@ function quizHub(){
  <h3>Kuis per materi</h3>${grid(MQ,'m')}`;
 
  const bodyLvl=`<p class="sub">Uji kemampuan per level JLPT N5 sampai N1 sesuai standar kurikulum.</p>
- <div class="tabs">${['N5','N4','N3','N2','N1'].map(l=>`<button class="tg${l==qzL?' on':''}" data-l="${l}" style="font-weight:700;padding:8px 14px">${l}</button>`).join('')}</div>
  <div class="card" style="border-left:4px solid var(--ac)">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
    <b style="font-size:18px">${cur.title}</b>
@@ -2615,15 +2662,12 @@ function quizHub(){
  <div class="opts">${['N5','N4','N3','N2','N1'].filter(l=>l!=qzL).map(l=>{const info=LV_INFO[l];return`<button class="opt" data-l="${l}" style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px"><div><b style="font-size:15px">${info.title}</b><small style="color:var(--mut);margin-top:2px">${info.desc}</small></div><span class="chip" style="font-size:11px;padding:2px 8px;border-radius:99px;white-space:nowrap;margin-left:8px;min-width:0;flex:none">${info.tag}</span></button>`}).join('')}</div>`;
 
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Quiz</h2>${rtBtn()}</div>
- <div class="row2" style="margin-bottom:12px">
-  <button class="tg${qzTab=='materi'?' on':''}" id="qzt-mat" style="margin:0;padding:10px 6px;font-weight:700;text-align:center">📚 Berdasarkan Materi</button>
-  <button class="tg${qzTab=='level'?' on':''}" id="qzt-lvl" style="margin:0;padding:10px 6px;font-weight:700;text-align:center">🏅 Level N5–N1</button>
- </div>
+ ${snav(itabs([['materi','📚','Berdasarkan materi'],['level','medali','Level N5–N1']],qzTab,'qzt')+(qzTab=='level'?lvSeg(qzL):''))}
  ${qzTab=='materi'?bodyMat:bodyLvl}
  ${navHtml('quiz')}`);
 
- $('#qzt-mat').onclick=()=>{qzTab='materi';ST.set('qzTab','materi');quizHub()};
- $('#qzt-lvl').onclick=()=>{qzTab='level';ST.set('qzTab','level');quizHub()};
+ app.querySelectorAll('[data-qzt]').forEach(b=>b.onclick=()=>{sfx.tap();qzTab=b.dataset.qzt;ST.set('qzTab',qzTab);quizHub()});
+ app.querySelectorAll('.snav [data-lv]').forEach(b=>b.onclick=()=>{sfx.tap();qzL=b.dataset.lv;ST.set('qzL',qzL);quizHub()});
  app.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{sfx.tap();MQ[+b.dataset.q.slice(1)][3]()});
  app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{qzL=b.dataset.l;ST.set('qzL',qzL);quizHub()});
  app.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>{qn=+b.dataset.n;ST.set('qn',qn);app.querySelectorAll('[data-n]').forEach(x=>x.classList.toggle('on',+x.dataset.n==qn));sfx.tap()});
