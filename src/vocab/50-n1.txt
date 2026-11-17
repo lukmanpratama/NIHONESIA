@@ -1,32 +1,72 @@
-// ===== JLPT N1 (perkiraan) — kata kerja, sifat, keterangan, kata sambung, kata benda =====
+// ===== JLPT N1 (perkiraan) — kata kerja, sifat, keterangan, benda =====
 // Kata yang sudah ada di level lebih rendah otomatis dilewati oleh build.js.
 @N1
 #Kata kerja (Godan)
-挑む|いどむ|menantang
-営む|いとなむ|menjalankan (usaha)
-潤う|うるおう|menjadi lembap / makmur
-促す|うながす|mendorong / mendesak
-敬う|うやまう|menghormati
+憚る|はばかる|segan / merasa sungkan
+赴く|おもむく|pergi menuju / cenderung
+滞る|とどこおる|tertunda / macet
+培う|つちかう|memupuk / membina
+覆う|おおう|menutupi
+覆る|くつがえる|terbalik / dibatalkan
 覆す|くつがえす|membalikkan / membatalkan
-遮る|さえぎる|menghalangi / memotong (pembicaraan)
+培う|つちかう|membudayakan
+嘆く|なげく|meratapi
+慕う|したう|mengagumi / merindukan
+貫く|つらぬく|menembus / menjalankan sampai akhir
+遮る|さえぎる|menghalangi / memotong
+募る|つのる|merekrut / bertambah kuat
+携わる|たずさわる|terlibat dalam
+阻む|はばむ|menghalangi
+潜む|ひそむ|bersembunyi
+蓄える|たくわえる|menyimpan / menabung
+偏る|かたよる|berat sebelah
+抱える|かかえる|memikul / menanggung
+挑む|いどむ|menantang
+拒む|こばむ|menolak
+促す|うながす|mendorong / mendesak
+妨げる|さまたげる|mengganggu / menghambat
+勧める|すすめる|menganjurkan
+称える|たたえる|memuji
+漂う|ただよう|mengambang / melayang
+滅びる|ほろびる|binasa
+鍛える|きたえる|menempa / melatih
+戒める|いましめる|menegur / mengingatkan
+紛れる|まぎれる|tercampur / tersamar
+紛らす|まぎらす|mengalihkan (perhatian)
+慎む|つつしむ|menahan diri / berhati-hati
+操る|あやつる|mengendalikan
+尽くす|つくす|mengerahkan / berbakti
+費やす|ついやす|menghabiskan (waktu/uang)
+培う|つちかう|memupuk
+司る|つかさどる|mengurus / memimpin
+装う|よそおう|berpakaian / berpura-pura
+悔やむ|くやむ|menyesali
+恨む|うらむ|menaruh dendam
+偲ぶ|しのぶ|mengenang
+忍ぶ|しのぶ|menahan diri / bersembunyi
+和らぐ|やわらぐ|mereda / melunak
+和らげる|やわらげる|meredakan / melunakkan
+疎む|うとむ|menjauhi / tidak menyukai
+潤う|うるおう|menjadi lembap / makmur
+潤す|うるおす|membasahi / memakmurkan
+漲る|みなぎる|meluap / penuh
+募る|つのる|menjadi-jadi
+貶す|けなす|menjelek-jelekkan
+窺う|うかがう|mengintip / menjenguk
+嗜む|たしなむ|menggemari / bermahir
+躊躇う|ためらう|ragu-ragu
+弄ぶ|もてあそぶ|mempermainkan
+営む|いとなむ|menjalankan (usaha)
+敬う|うやまう|menghormati
 囁く|ささやく|berbisik
 悟る|さとる|menyadari / tercerahkan
 諭す|さとす|menasihati
-慕う|したう|merindukan / mengagumi
 退く|しりぞく|mundur
-携わる|たずさわる|terlibat dalam
-漂う|ただよう|melayang / tercium (bau)
-費やす|ついやす|menghabiskan (waktu, biaya)
-貫く|つらぬく|menembus / memegang teguh
 償う|つぐなう|menebus / mengganti rugi
-培う|つちかう|memupuk / membina
-滞る|とどこおる|tertunda / macet
-嘆く|なげく|meratap / mengeluh
 和む|なごむ|menjadi tenang / rileks
 賑わう|にぎわう|ramai
 罵る|ののしる|mencaci maki
 励む|はげむ|bekerja keras / tekun
-阻む|はばむ|menghalangi
 翻す|ひるがえす|membalik / berubah pikiran
 紛らわす|まぎらわす|mengalihkan (perhatian, rasa sedih)
 賄う|まかなう|menanggung (biaya) / menyediakan
@@ -36,18 +76,14 @@
 蘇る|よみがえる|hidup kembali
 患う|わずらう|menderita (sakit)
 誇る|ほこる|membanggakan
-怠る|おこたる|melalaikan
 陥る|おちいる|jatuh ke (keadaan buruk)
 脅かす|おびやかす|mengancam
-赴く|おもむく|pergi menuju
 叶う|かなう|terwujud
 絡む|からむ|terjerat / terkait
 競う|きそう|bersaing
 企む|たくらむ|merencanakan (hal buruk)
-尽くす|つくす|mengabdikan diri / berusaha sekuat tenaga
 繕う|つくろう|menambal / menjaga penampilan
 綴る|つづる|menulis / mengeja
-募る|つのる|merekrut / makin kuat
 担う|になう|memikul (tanggung jawab)
 粘る|ねばる|lengket / bertahan gigih
 臨む|のぞむ|menghadapi / menghadap ke
@@ -58,19 +94,13 @@
 滅ぶ|ほろぶ|musnah
 見計らう|みはからう|memperkirakan waktu yang tepat
 目論む|もくろむ|merencanakan
-弄ぶ|もてあそぶ|mempermainkan
 揉む|もむ|memijat / meremas
-和らぐ|やわらぐ|mereda / melunak
-装う|よそおう|berpura-pura / berdandan
 寄り添う|よりそう|mendampingi
 割り込む|わりこむ|menyela / menyerobot
-潜む|ひそむ|bersembunyi / tersembunyi
 浸る|ひたる|tenggelam dalam (perasaan)
-拒む|こばむ|menolak
 凌ぐ|しのぐ|bertahan / melampaui
 滲む|にじむ|merembes / luntur
 軋む|きしむ|berderit
-司る|つかさどる|mengatur / memimpin
 綻ぶ|ほころぶ|robek; mulai mekar
 仄めかす|ほのめかす|mengisyaratkan / menyindir
 冒す|おかす|menantang (bahaya); menyerang (penyakit)
@@ -86,20 +116,41 @@
 へりくだる|merendahkan diri
 しくじる|gagal / berbuat kesalahan
 #Kata kerja (Ichidan)
+怠る|おこたる|lalai
+欠ける|かける|retak / kurang
+免れる|まぬかれる|terhindar
+逃れる|のがれる|melarikan diri
+晒す|さらす|menjemur / memaparkan
+晒される|さらされる|terpapar
+貫ける|つらぬける|tembus
+遂げる|とげる|menyelesaikan / mencapai
+遂行する|すいこうする|menjalankan sampai tuntas
+惚れる|ほれる|jatuh cinta / terpesona
+疑える|うたがえる|dapat diragukan
+滅ぼす|ほろぼす|memusnahkan
+萎える|なえる|lemas / layu
+冴える|さえる|jernih / cerah
+耐える|たえる|bertahan
+堪える|こたえる|tahan / menanggung
+応える|こたえる|menanggapi / memenuhi
+控える|ひかえる|menahan diri / mencatat
+備える|そなえる|bersiap
+整える|ととのえる|merapikan / menyiapkan
+唱える|となえる|melafalkan / mengusulkan
+訴える|うったえる|menggugat / mengadu
+捉える|とらえる|menangkap / memahami
+添える|そえる|menyertakan / menambahkan
+崩れる|くずれる|runtuh
+崩す|くずす|meruntuhkan
+遮断する|しゃだんする|memutus / memblokir
 顧みる|かえりみる|menengok ke belakang / merenungkan
 掲げる|かかげる|mengibarkan / mengusung
-蓄える|たくわえる|menyimpan / menabung
-遂げる|とげる|mencapai / menyelesaikan
-唱える|となえる|melafalkan / menyuarakan
 報いる|むくいる|membalas (budi)
 踏まえる|ふまえる|berdasarkan / mempertimbangkan
 免れる|まぬがれる|terhindar dari
 委ねる|ゆだねる|menyerahkan (kepada)
 退ける|しりぞける|menolak / mengusir
 秘める|ひめる|menyimpan (rahasia)
-紛れる|まぎれる|berbaur / teralihkan
-戒める|いましめる|memperingatkan
-称える|たたえる|memuji
 懲りる|こりる|kapok / jera
 強いる|しいる|memaksa
 据える|すえる|memasang / menetapkan
@@ -127,6 +178,30 @@
 ぼける|pikun / kabur (gambar)
 とろける|meleleh
 #Kata kerja (Tidak beraturan)
+貢献する|こうけんする|berkontribusi
+抵抗する|ていこうする|melawan
+妥協する|だきょうする|berkompromi
+介入する|かいにゅうする|ikut campur
+却下する|きゃっかする|menolak (permohonan)
+遵守する|じゅんしゅする|mematuhi
+考慮する|こうりょする|mempertimbangkan
+懸念する|けねんする|mengkhawatirkan
+促進する|そくしんする|mempercepat / mendorong
+抑制する|よくせいする|menekan / mengendalikan
+示唆する|しさする|mengisyaratkan
+把握する|はあくする|memahami / menguasai
+遂行する|すいこうする|melaksanakan
+克服する|こくふくする|mengatasi
+阻止する|そしする|mencegah
+駆使する|くしする|memanfaatkan sepenuhnya
+更新する|こうしんする|memperbarui
+模索する|もさくする|mencari-cari
+貫徹する|かんてつする|menuntaskan
+容認する|ようにんする|memperbolehkan
+破棄する|はきする|membatalkan / membuang
+締結する|ていけつする|menyimpulkan (perjanjian)
+着手する|ちゃくしゅする|memulai / mulai mengerjakan
+譲歩する|じょうほする|mengalah
 委託する|いたくする|menitipkan / mempercayakan
 逸脱する|いつだつする|menyimpang
 隠蔽する|いんぺいする|menutup-nutupi
@@ -141,13 +216,11 @@
 起用する|きようする|mengangkat (untuk posisi)
 享受する|きょうじゅする|menikmati
 驚嘆する|きょうたんする|kagum
-駆使する|くしする|memanfaatkan sepenuhnya
 屈服する|くっぷくする|tunduk
 啓発する|けいはつする|mencerahkan / menyadarkan
 軽視する|けいしする|meremehkan
 継承する|けいしょうする|mewarisi / meneruskan
 掲載する|けいさいする|memuat (artikel)
-懸念する|けねんする|mengkhawatirkan
 牽引する|けんいんする|menarik / memimpin
 倹約する|けんやくする|berhemat
 困惑する|こんわくする|bingung
@@ -156,18 +229,12 @@
 察知する|さっちする|mengetahui / merasakan (bahaya)
 刷新する|さっしんする|memperbarui total
 施行する|しこうする|memberlakukan (undang-undang)
-示唆する|しさする|mengisyaratkan
 執着する|しゅうちゃくする|terpaku / terobsesi
 熟知する|じゅくちする|sangat memahami
-遵守する|じゅんしゅする|mematuhi
-譲歩する|じょうほする|mengalah / berkompromi
 奨励する|しょうれいする|menganjurkan
 是正する|ぜせいする|mengoreksi / membenahi
 折衷する|せっちゅうする|memadukan
-促進する|そくしんする|mempercepat / mendorong
-阻止する|そしする|mencegah / menghalangi
 存続する|そんぞくする|bertahan / berlanjut
-妥協する|だきょうする|berkompromi
 打診する|だしんする|menjajaki (pendapat)
 脱退する|だったいする|keluar (dari organisasi)
 仲裁する|ちゅうさいする|menengahi
@@ -179,7 +246,6 @@
 淘汰する|とうたする|menyeleksi / menyingkirkan
 督促する|とくそくする|menagih / mendesak
 抜粋する|ばっすいする|mengutip / mengambil cuplikan
-破棄する|はきする|membatalkan / membuang
 派生する|はせいする|berasal dari / menurunkan
 繁栄する|はんえいする|makmur / berjaya
 披露する|ひろうする|memperlihatkan / mengumumkan
@@ -191,10 +257,8 @@
 放棄する|ほうきする|melepaskan (hak) / meninggalkan
 補填する|ほてんする|menutup (kekurangan)
 没頭する|ぼっとうする|tenggelam (dalam kegiatan)
-模索する|もさくする|mencari-cari (cara)
 誘致する|ゆうちする|menarik (investasi, wisatawan)
 擁護する|ようごする|membela / melindungi
-抑制する|よくせいする|menekan / mengendalikan
 濫用する|らんようする|menyalahgunakan
 履行する|りこうする|melaksanakan (kewajiban)
 両立する|りょうりつする|menjalankan keduanya sekaligus
@@ -227,7 +291,6 @@
 総括する|そうかつする|merangkum / mengevaluasi
 待機する|たいきする|siaga / menunggu
 堕落する|だらくする|merosot moral
-着手する|ちゃくしゅする|memulai (pekerjaan)
 陳列する|ちんれつする|memajang
 提携する|ていけいする|bermitra
 添付する|てんぷする|melampirkan
@@ -248,9 +311,36 @@
 流通する|りゅうつうする|beredar (barang)
 露呈する|ろていする|terungkap / terbongkar
 #Kata sifat-i
-著しい|いちじるしい|mencolok / signifikan
-潔い|いさぎよい|kesatria / tegas mengakui
-卑しい|いやしい|hina / rakus
+著しい|いちじるしい|nyata / mencolok
+甚だしい|はなはだしい|sangat / berlebihan
+慌ただしい|あわただしい|sibuk terburu-buru
+逞しい|たくましい|kekar / tangguh
+労しい|いたわしい|memilukan
+厚かましい|あつかましい|tidak tahu malu
+騒々しい|そうぞうしい|bising
+険しい|けわしい|terjal / garang
+激しい|はげしい|hebat / sengit
+惜しい|おしい|sayang sekali
+卑しい|いやしい|hina / rendah
+著しい|いちじるしい|signifikan
+鋭い|するどい|tajam
+鈍い|にぶい|tumpul / lamban
+脆い|もろい|rapuh
+儚い|はかない|fana
+煩わしい|わずらわしい|merepotkan
+紛らわしい|まぎらわしい|membingungkan
+潔い|いさぎよい|ksatria / lapang dada
+清々しい|すがすがしい|segar / menyegarkan
+華々しい|はなばなしい|gemilang
+目覚ましい|めざましい|luar biasa / pesat
+痛ましい|いたましい|menyedihkan
+恐ろしい|おそろしい|mengerikan
+芳しい|かんばしい|harum / memuaskan
+拙い|つたない|kikuk / kurang terampil
+疑わしい|うたがわしい|meragukan
+忌まわしい|いまわしい|menjijikkan / terkutuk
+慎ましい|つつましい|sederhana / rendah hati
+輝かしい|かがやかしい|gemilang
 うっとうしい|menjengkelkan / suram
 疎い|うとい|tidak paham / asing
 おびただしい|sangat banyak
@@ -262,12 +352,8 @@
 生臭い|なまぐさい|amis
 粘り強い|ねばりづよい|gigih
 はかない|fana / cepat berlalu
-甚だしい|はなはだしい|keterlaluan / sangat
 久しい|ひさしい|lama sekali
-紛らわしい|まぎらわしい|membingungkan / mirip
-目覚ましい|めざましい|mengagumkan / pesat
 物足りない|ものたりない|kurang memuaskan
-煩わしい|わずらわしい|merepotkan
 若々しい|わかわかしい|awet muda
 いたたまれない|tidak tahan (malu, canggung)
 あっけない|terlalu singkat / mengecewakan
@@ -276,19 +362,47 @@
 そっけない|ketus / dingin
 やるせない|sedih tak berdaya
 奥ゆかしい|おくゆかしい|anggun bersahaja
-華々しい|はなばなしい|gemilang
 目まぐるしい|めまぐるしい|serba cepat / memusingkan
-厚かましい|あつかましい|tidak tahu malu
 いじらしい|menyentuh hati (polos)
 #Kata sifat-na
-安易|あんい|gampangan / terlalu mudah
+顕著|けんちょ|nyata / mencolok
+膨大|ぼうだい|sangat besar / melimpah
+莫大|ばくだい|sangat besar
+斬新|ざんしん|sangat baru / orisinal
+過剰|かじょう|berlebihan
+希薄|きはく|tipis / lemah
+貧弱|ひんじゃく|lemah / miskin
+華麗|かれい|megah / indah
+軽率|けいそつ|ceroboh
+慎重|しんちょう|hati-hati
+粗末|そまつ|buruk / sederhana
+露骨|ろこつ|terang-terangan / vulgar
+克明|こくめい|rinci / teliti
+旺盛|おうせい|bersemangat / subur
 円滑|えんかつ|lancar
+緩慢|かんまん|lamban
+強硬|きょうこう|keras / tegas
+険悪|けんあく|tegang / suram
+陰気|いんき|murung
+朗らか|ほがらか|ceria
+穏やか|おだやか|tenang / lembut
+鮮やか|あざやか|cerah / mengesankan
+速やか|すみやか|segera
+緩やか|ゆるやか|landai / longgar
+健やか|すこやか|sehat
+明白|めいはく|jelas
+曖昧|あいまい|samar
+厳密|げんみつ|ketat / tepat
+懸命|けんめい|sungguh-sungguh
+頑固|がんこ|keras kepala
+奇妙|きみょう|aneh
+膨張|ぼうちょう|mengembang
+安易|あんい|gampangan / terlalu mudah
 穏便|おんびん|damai / tanpa ribut
 画期的|かっきてき|terobosan / revolusioner
 寛大|かんだい|murah hati
 気さく|きさく|ramah / supel
 几帳面|きちょうめん|teliti / rapi
-強硬|きょうこう|keras (sikap)
 謙虚|けんきょ|rendah hati
 厳格|げんかく|ketat / keras
 健全|けんぜん|sehat (pikiran, ekonomi)
@@ -303,12 +417,10 @@
 従順|じゅうじゅん|patuh
 淑やか|しとやか|anggun
 迅速|じんそく|cepat / segera
-健やか|すこやか|sehat
 清らか|きよらか|jernih / suci
 切実|せつじつ|mendesak / sangat dirasakan
 繊細|せんさい|halus / sensitif
 壮大|そうだい|megah
-粗末|そまつ|ala kadarnya / sembarangan
 怠慢|たいまん|lalai
 妥当|だとう|wajar / tepat
 淡白|たんぱく|hambar / tidak ngotot
@@ -325,10 +437,7 @@
 不可欠|ふかけつ|mutlak perlu
 無難|ぶなん|aman / tidak berisiko
 不用意|ふようい|ceroboh
-朗らか|ほがらか|ceria
-膨大|ぼうだい|sangat besar (jumlah)
 無頓着|むとんちゃく|tidak peduli
-明白|めいはく|jelas sekali
 綿密|めんみつ|teliti / rinci
 猛烈|もうれつ|dahsyat / hebat
 厄介|やっかい|merepotkan
@@ -336,7 +445,6 @@
 悠長|ゆうちょう|santai / lamban
 優雅|ゆうが|elegan
 冷淡|れいたん|dingin / acuh
-露骨|ろこつ|terang-terangan
 画一的|かくいつてき|seragam
 意図的|いとてき|disengaja
 抜本的|ばっぽんてき|mendasar / radikal
@@ -349,14 +457,43 @@
 まちまち|beragam / tidak seragam
 うやむや|tidak jelas / dibiarkan menggantung
 #Kata keterangan
+著しく|いちじるしく|dengan nyata
+概して|がいして|pada umumnya
+一概に|いちがいに|secara umum / semua sama
+せめて|せめて|setidaknya
+あくまで|あくまで|sampai akhir / bagaimanapun
+いかにも|いかにも|memang / sungguh
+おのずと|おのずと|dengan sendirinya
+かろうじて|かろうじて|nyaris / dengan susah payah
+ことごとく|ことごとく|seluruhnya
+さほど|さほど|tidak begitu
+ひたすら|ひたすら|dengan tekun / semata-mata
+もはや|もはや|sudah tidak
+ようやく|ようやく|akhirnya
+わずかに|わずかに|sedikit sekali
+ひそかに|ひそかに|diam-diam
+あえて|あえて|dengan sengaja / berani
+いまだに|いまだに|hingga kini masih
+つくづく|つくづく|sungguh-sungguh / sedalam-dalamnya
+ひいては|ひいては|bahkan lebih jauh lagi
+もっぱら|もっぱら|terutama / melulu
+ことさら|ことさら|sengaja / secara khusus
+とりわけ|とりわけ|terutama
+およそ|およそ|kira-kira / pada dasarnya
+ほぼ|ほぼ|hampir
+じきに|じきに|segera
+ひとまず|ひとまず|untuk sementara
+とっくに|とっくに|sudah lama
+たちまち|たちまち|seketika
+いっそ|いっそ|lebih baik sekalian
+まして|まして|apalagi
+もしくは|もしくは|atau
+あるいは|あるいは|atau / mungkin
+なおかつ|なおかつ|dan lagi
 未だに|いまだに|sampai sekarang pun
-一概に|いちがいに|secara pukul rata
-おのずと|dengan sendirinya
 かねて|sejak dulu
 極めて|きわめて|sangat / amat
 くまなく|di setiap sudut
-ことごとく|semuanya / seluruhnya
-さほど|tidak begitu
 しいて|dengan memaksakan
 しきりに|terus-menerus / berulang kali
 すかさず|tanpa jeda / segera
@@ -370,14 +507,10 @@
 てっきり|kukira pasti
 とかく|cenderung
 とっさに|refleks / spontan
-とりわけ|terutama
 なおさら|apalagi / terlebih lagi
 何卒|なにとぞ|mohon dengan sangat
-ひたすら|semata-mata / terus-menerus
 甚だ|はなはだ|sangat
-まして|apalagi
 まるっきり|sama sekali
-もっぱら|terutama / sepenuhnya
 やけに|amat / anehnya
 ろくに|(tidak) dengan benar
 あながち|belum tentu
@@ -393,28 +526,126 @@
 依然として|いぜんとして|masih tetap
 断固として|だんことして|dengan tegas
 往々にして|おうおうにして|sering kali
-概して|がいして|pada umumnya
 一向に|いっこうに|sama sekali (tidak)
 一挙に|いっきょに|sekaligus
 極力|きょくりょく|sebisa mungkin
 随時|ずいじ|kapan saja / sewaktu-waktu
-#Kata sambung
-且つ|かつ|dan juga
-ないし|atau / sampai
-並びに|ならびに|serta
-しかるに|namun demikian
-ゆえに|oleh karena itu
-とはいえ|meskipun begitu
-さもないと|kalau tidak
-それゆえ|karena itu
 #Kata benda
+概念|がいねん|konsep
+概要|がいよう|garis besar
+趣旨|しゅし|maksud / tujuan
+手腕|しゅわん|kemampuan / keahlian
+見解|けんかい|pandangan
+見込み|みこみ|prospek / perkiraan
+根拠|こんきょ|dasar / alasan
+枠組み|わくぐみ|kerangka
+側面|そくめん|sisi / aspek
+動向|どうこう|tren / perkembangan
+風潮|ふうちょう|kecenderungan zaman
+弊害|へいがい|dampak buruk
+反響|はんきょう|tanggapan / gema
+余地|よち|ruang / kemungkinan
+所以|ゆえん|alasan / sebab
+経緯|いきさつ|latar belakang kejadian
+是非|ぜひ|benar-salah / harus
+成り行き|なりゆき|perkembangan keadaan
+境遇|きょうぐう|keadaan hidup
+境地|きょうち|alam pikiran / tingkat penguasaan
+素質|そしつ|bakat
+資質|ししつ|watak / kemampuan dasar
+気配|けはい|tanda / suasana
+気質|きしつ|tabiat
+面目|めんもく|muka / harga diri
+体裁|ていさい|penampilan / format
+風格|ふうかく|wibawa
+品格|ひんかく|martabat
+威厳|いげん|kewibawaan
+権威|けんい|otoritas
+権限|けんげん|wewenang
+義務|ぎむ|kewajiban
+責務|せきむ|tugas / tanggung jawab
+使命|しめい|misi
+本分|ほんぶん|kewajiban pokok
+本質|ほんしつ|hakikat
+実態|じったい|keadaan sebenarnya
+実情|じつじょう|situasi nyata
+実績|じっせき|prestasi / rekam jejak
+功績|こうせき|jasa
+成果|せいか|hasil
+過程|かてい|proses
+課程|かてい|kurikulum / program
+手順|てじゅん|prosedur
+段取り|だんどり|pengaturan / persiapan
+目処|めど|target / perkiraan
+目安|めやす|patokan
+基準|きじゅん|standar
+規模|きぼ|skala
+範囲|はんい|cakupan
+領域|りょういき|bidang / wilayah
+局面|きょくめん|situasi / babak
+情勢|じょうせい|situasi
+事態|じたい|keadaan
+状況|じょうきょう|kondisi
+形勢|けいせい|situasi (pertarungan)
+動機|どうき|motif
+意図|いと|maksud
+意欲|いよく|semangat / kemauan
+気迫|きはく|semangat membara
+覚悟|かくご|tekad / kesiapan mental
+決意|けつい|keputusan bulat
+信念|しんねん|keyakinan
+執着|しゅうちゃく|keterikatan / obsesi
+葛藤|かっとう|pergolakan batin
+矛盾|むじゅん|kontradiksi
+対立|たいりつ|pertentangan
+摩擦|まさつ|gesekan
+紛争|ふんそう|sengketa
+抗議|こうぎ|protes
+批判|ひはん|kritik
+批評|ひひょう|ulasan
+評価|ひょうか|penilaian
+検証|けんしょう|verifikasi
+考察|こうさつ|telaah
+洞察|どうさつ|wawasan
+推測|すいそく|dugaan
+推定|すいてい|perkiraan
+予測|よそく|prediksi
+見通し|みとおし|prospek / pandangan ke depan
+展望|てんぼう|pandangan / prospek
+課題|かだい|tugas / masalah yang harus diatasi
+難題|なんだい|masalah sulit
+障害|しょうがい|rintangan
+支障|ししょう|gangguan
+弊社|へいしゃ|perusahaan kami
+貴社|きしゃ|perusahaan Anda
+業績|ぎょうせき|kinerja usaha
+収益|しゅうえき|pendapatan
+赤字|あかじ|defisit
+黒字|くろじ|surplus
+負債|ふさい|utang
+資産|しさん|aset
+融資|ゆうし|pinjaman
+出資|しゅっし|penanaman modal
+需要|じゅよう|permintaan
+供給|きょうきゅう|penawaran / pasokan
+流通|りゅうつう|distribusi
+採算|さいさん|untung rugi
+契約|けいやく|kontrak
+締結|ていけつ|penandatanganan
+条項|じょうこう|pasal / klausul
+規約|きやく|peraturan
+規制|きせい|regulasi / pembatasan
+緩和|かんわ|pelonggaran
+施行|しこう|pemberlakuan
+制定|せいてい|penetapan
+改正|かいせい|revisi
+廃止|はいし|penghapusan
 哀愁|あいしゅう|kesedihan / melankolis
 合間|あいま|sela waktu
 悪循環|あくじゅんかん|lingkaran setan
 斡旋|あっせん|perantaraan / penyaluran (kerja)
 跡地|あとち|bekas lahan
 安堵|あんど|kelegaan
-威厳|いげん|wibawa
 意向|いこう|niat / kehendak
 遺産|いさん|warisan
 異色|いしょく|unik / lain dari yang lain
@@ -444,24 +675,19 @@
 貫禄|かんろく|wibawa
 慣行|かんこう|kebiasaan / praktik
 勘定|かんじょう|tagihan / perhitungan
-規制|きせい|regulasi
 起伏|きふく|naik turun
 救済|きゅうさい|penyelamatan / bantuan
 脅威|きょうい|ancaman
-境遇|きょうぐう|keadaan hidup
-業績|ぎょうせき|kinerja / prestasi
 許容|きょよう|toleransi / izin
 均衡|きんこう|keseimbangan
 金融|きんゆう|keuangan
 屈辱|くつじょく|penghinaan
 経緯|けいい|kronologi / latar belakang
-形勢|けいせい|situasi / posisi
 経費|けいひ|biaya operasional
 契機|けいき|momentum / pemicu
 欠陥|けっかん|cacat (produk)
 懸賞|けんしょう|hadiah sayembara
 見地|けんち|sudut pandang
-権限|けんげん|wewenang
 原点|げんてん|titik awal
 故意|こい|kesengajaan
 後継者|こうけいしゃ|penerus
@@ -476,16 +702,9 @@
 雑踏|ざっとう|keramaian
 座標|ざひょう|koordinat
 産物|さんぶつ|hasil / produk
-資産|しさん|aset / harta
-支障|ししょう|hambatan
-実情|じつじょう|kondisi nyata
-実態|じったい|keadaan sebenarnya
 自負|じふ|kebanggaan diri
 始末|しまつ|penyelesaian / akhir (buruk)
-使命|しめい|misi
-趣旨|しゅし|maksud / tujuan
 樹立|じゅりつ|pendirian / pemecahan (rekor)
-情勢|じょうせい|situasi (politik)
 衝動|しょうどう|dorongan / impuls
 譲渡|じょうと|pengalihan (hak)
 所得|しょとく|pendapatan
@@ -500,7 +719,6 @@
 前提|ぜんてい|premis / prasyarat
 相場|そうば|harga pasar / kurs
 措置|そち|tindakan / langkah
-素質|そしつ|bakat
 損失|そんしつ|kerugian
 対処|たいしょ|penanganan
 怠惰|たいだ|kemalasan
@@ -512,11 +730,9 @@
 中枢|ちゅうすう|pusat / inti
 懲役|ちょうえき|hukuman penjara
 沈黙|ちんもく|keheningan
-体裁|ていさい|penampilan / gengsi
 手際|てぎわ|kecekatan
 手口|てぐち|modus (kejahatan)
 手分け|てわけ|pembagian tugas
-動向|どうこう|tren / pergerakan
 特許|とっきょ|paten
 土壇場|どたんば|saat-saat terakhir
 内需|ないじゅ|permintaan domestik
@@ -526,37 +742,29 @@
 年俸|ねんぽう|gaji tahunan
 破綻|はたん|kebangkrutan / kegagalan
 発足|ほっそく|peresmian / dimulai
-反響|はんきょう|tanggapan / gema
 範疇|はんちゅう|kategori
 煩悩|ぼんのう|nafsu duniawi
 被害者|ひがいしゃ|korban
 悲観|ひかん|pesimisme
 比喩|ひゆ|kiasan / metafora
-風潮|ふうちょう|tren / arus (sosial)
 復興|ふっこう|pembangunan kembali
 不況|ふきょう|resesi
-負債|ふさい|utang
 不祥事|ふしょうじ|skandal
 風土|ふうど|iklim / budaya (setempat)
 文献|ぶんけん|literatur
-弊害|へいがい|dampak buruk
 偏見|へんけん|prasangka
 報酬|ほうしゅう|imbalan / upah
 冒頭|ぼうとう|awal / pembukaan
 本音|ほんね|isi hati sebenarnya
 本場|ほんば|tempat asal (asli)
-摩擦|まさつ|gesekan / friksi
-見込み|みこみ|prospek / perkiraan
 未練|みれん|rasa tidak rela melepaskan
 名誉|めいよ|kehormatan
-目処|めど|perkiraan / prospek
 網羅|もうら|mencakup semua
 模範|もはん|teladan
 役職|やくしょく|jabatan
 野心|やしん|ambisi
 油断|ゆだん|lengah
 要因|よういん|faktor
-余地|よち|ruang / kemungkinan
 世論|よろん|opini publik
 利害|りがい|kepentingan
 理屈|りくつ|logika / dalih
@@ -566,30 +774,23 @@
 劣等感|れっとうかん|rasa rendah diri
 路線|ろせん|jalur / garis kebijakan
 賄賂|わいろ|suap
-枠組み|わくぐみ|kerangka
 和解|わかい|perdamaian
 意地|いじ|keras kepala / harga diri
 異議|いぎ|keberatan
 一貫性|いっかんせい|konsistensi
 栄誉|えいよ|kehormatan
 獲得|かくとく|perolehan
-気配|けはい|tanda-tanda
 兆し|きざし|pertanda
 共存|きょうそん|koeksistensi
 極限|きょくげん|batas maksimal
 吟味|ぎんみ|pemeriksaan cermat
 愚痴|ぐち|keluhan / gerutu
-功績|こうせき|jasa / prestasi
 雇用|こよう|ketenagakerjaan
-採算|さいさん|keuntungan (layak secara bisnis)
 示談|じだん|penyelesaian damai
 指針|ししん|pedoman
-収益|しゅうえき|pendapatan / laba
 主導権|しゅどうけん|inisiatif / kendali
-条項|じょうこう|pasal / klausul
 進展|しんてん|kemajuan / perkembangan
 審査|しんさ|pemeriksaan / penilaian
-責務|せきむ|kewajiban
 総額|そうがく|jumlah total
 即戦力|そくせんりょく|tenaga siap pakai
 存在感|そんざいかん|kehadiran yang terasa
@@ -609,8 +810,6 @@
 不備|ふび|kekurangan / cacat (dokumen)
 変動|へんどう|fluktuasi
 補償|ほしょう|kompensasi
-本質|ほんしつ|esensi / hakikat
-見通し|みとおし|prospek / pandangan ke depan
 無償|むしょう|gratis / tanpa imbalan
 目論見|もくろみ|rencana / niat
 有数|ゆうすう|terkemuka
@@ -646,3 +845,12 @@
 ソリューション|solusi
 デメリット|kerugian / kekurangan
 メリット|keuntungan
+#Kata sambung
+且つ|かつ|dan juga
+ないし|atau / sampai
+並びに|ならびに|serta
+しかるに|namun demikian
+ゆえに|oleh karena itu
+とはいえ|meskipun begitu
+さもないと|kalau tidak
+それゆえ|karena itu

@@ -14,7 +14,7 @@ Aplikasi punya **navigasi bawah** dengan lima tab:
 
 | Tab | Isi |
 |---|---|
-| 🏠 **Beranda** | **Jalur belajar ala Duolingo** dari materi paling mudah sampai sulit, per level **N5 → N4 → N3 → N2 → N1** (plus Kerja pabrik). Total **1.032 pelajaran**: N5 156, N4 163, N3 270, N2 296, N1 131, Kerja 16. Setiap unit berisi 6 pelajaran (kosakata 語, kanji 漢, bunpo 法, kalimat 文), 🎁 peti hadiah (+20 XP), dan 🏆 ulangan unit. Pelajaran terbuka berurutan; lulus jika benar minimal 60% (★ 60%, ★★ 80%, ★★★ 100%). Ada balon **MULAI**, animasi tombol 3D, maskot, dan 📖 panduan unit berisi semua materi unit beserta suaranya. |
+| 🏠 **Beranda** | **Jalur belajar ala Duolingo** dari materi paling mudah sampai sulit, per level **N5 → N4 → N3 → N2 → N1** (plus Kerja pabrik). Total **1.045 pelajaran**: N5 156, N4 163, N3 270, N2 296, N1 144, Kerja 16. Setiap unit berisi 6 pelajaran (kosakata 語, kanji 漢, bunpo 法, kalimat 文), 🎁 peti hadiah (+20 XP), dan 🏆 ulangan unit. Pelajaran terbuka berurutan; lulus jika benar minimal 60% (★ 60%, ★★ 80%, ★★★ 100%). Ada balon **MULAI**, animasi tombol 3D, maskot, dan 📖 panduan unit berisi semua materi unit beserta suaranya. |
 | 📚 **Materi** | **日本語学習 (Nihongo Gakushū)**: kartu Hiragana & Katakana, Kanji, **Kotoba**, **Bunpō**, **Kaiwa**, Bun, dan Bilangan. Di dalam setiap kartu, submenu tampil sebagai **tab berikon** yang menempel di bawah header saat di-scroll; Kotoba, Bunpō, dan Kaiwa juga punya pilihan **level N5–N1** (lihat di bawah). |
 | ⚔️ **Quiz** | Kuis cepat per level: Kosakata, Kanji, Bunpo, Kalimat, atau Campuran, dengan pilihan jumlah soal dan tingkat. |
 | 🔁 **Review** | Ulangi soal yang pernah salah, dan ulas materi dari pelajaran Beranda yang sudah selesai. |
@@ -29,20 +29,19 @@ Kotoba, Bunpō, dan Kaiwa disusun **per level N5–N1**. Di bawah header ada nav
 
 | Kotoba 言葉 | Bunpō 文法 | Kaiwa 会話 |
 |---|---|---|
-| **Kosakata**: daftar kata per level, cari, filter jenis kata dan tema | **Pola JLPT**: semua pola bunpō level itu (N5 59, N4 44, N3 56, N2 55, N1 59) | **Unit**: 20 unit percakapan per level (100 unit) |
-| **Jenis kata**: 15 jenis, jumlah kata per level | **Struktur** kalimat (10 pola) | **Dialog**: 500 dialog per situasi dalam 16 kategori, disaring per level |
-| **Tema**: 24 tema, jumlah kata per level | **Partikel** (22 fungsi + kuis isi partikel) | |
-| **Sinonim** & antonim (55 pasangan) | **Katsuyō**: sampai 150 kata kerja per level, 15 bentuk | |
-| **Idiom** & peribahasa (40) | **Pola dasar** (18) · **Waktu** & aspek (17) | |
-| **Onomatope** (53) | **Tanya**, perintah, ajakan (15) · **Sebab**-akibat & pengandaian (15) | |
+| **Kamus**: daftar kata per level atau **Semua** level, cari, filter tema dan jenis kata | **Pola JLPT**: semua pola bunpō level itu (N5 59, N4 44, N3 56, N2 55, N1 59) | **Unit**: 20 unit percakapan per level (100 unit) |
+| **Tema**: 24 tema, jumlah kata per level | **Struktur** kalimat (10 pola) | **Dialog**: 500 dialog per situasi dalam 16 kategori, disaring per level |
+| **Jenis kata**: 15 jenis, jumlah kata per level | **Partikel** (22 fungsi + kuis isi partikel) | |
+| **Sama bunyi**: 247 kelompok kata dengan bunyi sama, beda arti (同音異義語) | **Katsuyō**: sampai 150 kata kerja per level, 15 bentuk | |
+| **Onomatope** (53) · **Idiom** & peribahasa (40) | **Pola dasar** (18) · **Waktu** & aspek (17) | |
+| **Sinonim** & antonim (55 pasangan) | **Tanya**, perintah, ajakan (15) · **Sebab**-akibat & pengandaian (15) | |
 | **Formal** & slang (47) | **Panduan**: perbandingan pola mirip dan urutan belajar (tanpa level) | |
-| **Kerja**: kosakata kerja pabrik (tanpa level) | | |
 
-Kosakata: N5 724, N4 648, N3 1.614, N2 1.981, **N1 432**, Kerja 124 (total 5.523). Level onomatope, idiom, sinonim, keigo, dan topik bunpō ditulis di file sumber. Level dialog Kaiwa diperkirakan otomatis dari pola tata bahasa dan keigo yang dipakai (sebagian besar N5–N4), dan bisa ditulis manual.
+Kosakata: N5 724, N4 648, N3 1.614, N2 1.981, **N1 536** (total 5.503; kosakata kerja pabrik 124 kata dipakai di jalur Beranda dan tidak ditampilkan di Kotoba). Level onomatope, idiom, sinonim, keigo, dan topik bunpō ditulis di file sumber. Level dialog Kaiwa diperkirakan otomatis dari pola tata bahasa dan keigo yang dipakai (sebagian besar N5–N4), dan bisa ditulis manual.
 
 Setiap submenu punya kuisnya sendiri. Dari tab **Quiz**, kuis Kotoba, Kaiwa, dan Katsuyō memakai semua level; kuis Bunpō memakai level yang sedang dipilih.
 
-**Menu lain:** Hiragana & Katakana (segmen あ/ア + 5 tab), Kanji (satu bilah tab: Kamus + 7 bagian panduan, level Semua/N5–N1 di tab Kamus), Bun (tab Kalimat, Teka-teki, Struktur, Pola dasar), dan Bilangan. Tab Quiz juga memakai tab berikon *Berdasarkan materi* / *Level N5–N1*.
+**Menu lain:** Hiragana & Katakana (segmen あ/ア + 5 tab), Kanji (bilah tab Kamus · Struktur · Membaca yang juga tampil di sub halaman; level Semua/N5–N1 di tab Kamus), Bun (tab Kalimat, Teka-teki, Struktur, Pola dasar), dan Bilangan. Tab Quiz juga memakai tab berikon *Berdasarkan materi* / *Level N5–N1*.
 
 ## Fitur utama per menu
 
@@ -51,7 +50,7 @@ Setiap submenu punya kuisnya sendiri. Dari tab **Quiz**, kuis Kotoba, Kaiwa, dan
 | **あ Hiragana** | Tabel dasar (46), dakuon ゛ (20), handakuon ゜ (5), dan yōon (33). Ketuk huruf untuk melihat **cara menulis** (animasi urutan goresan), mendengar suaranya, latihan menulis, dan contoh kata. | Huruf → romaji, romaji → huruf, ✍️ menulis |
 | **ア Katakana** | Sama seperti Hiragana (termasuk cara menulis), untuk kata serapan. | Huruf → romaji, romaji → huruf, ✍️ menulis |
 | **漢 Kanji** | **🌳 Kanji Family Tree**: pohon hubungan antar kanji (komponen penyusun → kanji → kanji turunan → generasi berikutnya); ketuk lingkaran untuk menjelajah. **554 kanji** dalam 21 kategori, level N5–N2. Bisa **dicari** dengan huruf kanji, arti, bacaan (kana atau romaji), komponen (mis. 氵), atau jumlah goresan. Setiap kanji punya tiga animasi: **✍️ Goresan** (urutan goresan dengan tombol putar/jeda, maju/mundur per goresan, kecepatan 0.5×–2×, nomor goresan, warna per komponen), **🧩 Komponen** (komponen datang dari arah posisinya lalu menyatu seperti LEGO, mis. 氵 + 青 = 清; bisa lebih dari 2 komponen dengan pilihan **Utama/Rinci**, mis. 働 = 亻 + 重 + 力, 漢 = 氵 + 艹 + 口 + 夫, lengkap dengan bushu, petunjuk makna, dan petunjuk bunyi), **🌳 Family Tree**, dan **🖼️ Ilustrasi** (gambar berubah menjadi kanji, untuk 13 kanji piktogram seperti 木 山 川 日 月). Ada juga kun'yomi dan on'yomi (kana + romaji), bushu, jenis kanji (keisei, piktogram, gabungan), **keluarga kanji** (kanji lain dengan komponen atau bunyi yang sama), kotak latihan menulis, dan contoh kata. | Kanji → arti, arti → kanji, bacaan, ✍️ menulis |
-| **語 Kotoba** | **5.523 kosakata** (N5, N4, N3, N2, N1, dan kosakata kerja pabrik) dengan jenis kata. Ditampilkan per level, bisa dicari dan difilter per jenis dan tema. | Jepang → arti, arti → Jepang, campuran, ✍️ menulis |
+| **語 Kotoba** | **5.503 kosakata** N5–N1 dengan jenis kata. Kamus bisa ditampilkan per level atau semua level, dicari, dan difilter per tema dan jenis. Ada tab **Sama bunyi** untuk kata dengan bunyi sama tetapi arti berbeda. | Jepang → arti, arti → Jepang, campuran, ✍️ menulis |
 | **活 Katsuyō** | **752 kata kerja** (sampai 150 per level, N5–N1 + kerja) dengan **15 bentuk perubahan** (ます, ません, ました, ない, た, なかった, て, たい, potensial, ajakan, ば, perintah, pasif, kausatif), masing-masing lengkap dengan kanji, kana, romaji, dan **arti**. Ada juga penjelasan Katsuyō vs Bunpō dan aturan per kelompok (Godan, Ichidan, tidak beraturan). | Ubah bentuk, arti bentuk, kelompok kata kerja |
 | **法 Bunpo** | **273 pola tata bahasa N5–N1**, masing-masing dengan **contoh kalimat** (kanji, romaji, arti). Ada juga perbandingan pola yang mirip dan panduan urutan belajar. | Pola → arti, arti → pola, **isi kalimat** (isi bagian yang kosong ala Duolingo), isi partikel |
 | **文 Bun** | **274 kalimat sehari-hari** dalam 15 kategori: salam, perkenalan, tempat kerja, belanja, makan, transportasi, kesehatan, telepon, darurat, dan lain-lain. | Jepang → arti, **arti → Jepang**, 🧩 susun kalimat (ada romaji di setiap ubin) |
