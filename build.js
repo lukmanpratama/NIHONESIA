@@ -174,7 +174,28 @@ async function buildKanji() {
   return { cats, klv, list, fetched };
 }
 
-// ===== KAIWA (src/kaiwa/*.txt) =====
+// ===== KAIWA (src/kaiwa/*.txt) → [[kategori, judul, [[pembicara, jp, romaji, arti]], level]] =====
+// Level dialog: tulis manual di judul (#Judul|N4); jika tidak ada, diperkirakan dari penanda tata bahasa & keigo.
+// Regex sengaja ketat supaya tidak salah tangkap (とても ≠ ても, さようなら ≠ なら, 駅の前に ≠ る前に).
+const LVRE = /^N[1-5]$/;
+const KWM = {
+  N1: /におかれまして|かたがた|をもちまして|所存|ご査収|ならでは|を禁じ得|に足る|をよそに|いかんによらず|ご高配|ご愛顧/g,
+  N2: /させていただ|いたしかね|かねます|申し上げ|存じ|恐れ入|差し支え|ざるを得|わけにはいか|にもかかわらず|に際し|次第|ものの|かねない|に違いな|とは限ら|ばかりか|[たる]上で|[たる]うえで|につき|おそれがあ|に沿|をもとに|に基づ|ご遠慮|ご了承|お手数/g,
+  N3: /いらっしゃ(?!いませ)|おっしゃ|召し上が|拝見|伺|参りま|申します|おります|いたしま|ございま|かしこまりました|ようにし|ようにな|ことにな|ことにし|ばかりで|たばかり|はずで|はずだ|らしい|によって|として|に対して|(?<!う)ずに|っけ|わけで|わけじゃ|ところで(?!す)|ているところ|たところ|させて|させられ|られました|(?<![もそ])のに|おかげで|せいで|ように言|ように頼|ために/g,
+  N4: /(?<!と)ても|[いきしちにひみりぎじびえけせてねめれげべ]そうで|[いきしちにひみりぎじびえけせてねめれげべ]そうだ|ので|たら|れば|(?<![たそ]う?い)えば|けば|げば|せば|てば|めば|べば|と思|たことが|てもいい|ても大丈夫|てはいけ|なければ|なきゃ|なくても|ことができ|られます|られる|すぎ|やすい|にくい|かもしれ|つもり|てしま|ちゃっ|ちゃい|ておき|ておい|てみ|てあげ|てくれ|てもら|てから|ながら|[うくぐすつぬぶむる]前に|た後で|(?<![あぴっふ])たり|(?<!よう)なら|ほうがいい|方がいい|かどうか|ように|(?<!と)とき(?!どき)|時に|(?<![見聞])みたい/g
+};
+// ungkapan baku yang dihafal sejak awal tidak dihitung sebagai keigo/tata bahasa lanjut
+const KW_EXCL = /いらっしゃいませ|申し訳|よろしくお願い|お願いします|お疲れ様|ありがとうございま|おはようございま|おめでとうございま|失礼します|失礼しました/g;
+function kwLevel(lines) {
+  const txt = lines.map(l => l[1]).join(' ').replace(KW_EXCL, '');
+  const n = L => new Set(txt.match(KWM[L]) || []).size;
+  const n1 = n('N1'), n2 = n('N2'), n3 = n('N3'), n4 = n('N4');
+  if (n1) return 'N1';
+  if (n2 >= 2 || (n2 && n3 >= 2)) return 'N2';
+  if (n2 + n3 >= 2) return 'N3';
+  if (n4 || n3 || n2) return 'N4';
+  return 'N5';
+}
 function buildKaiwa() {
   const out = [], dir = path.join(ROOT, 'src', 'kaiwa'), titles = new Set();
   for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.txt')).sort()) {
@@ -184,9 +205,10 @@ function buildKaiwa() {
       if (!line || line.startsWith('//')) return;
       if (line[0] === '@') { cat = line.slice(1).trim(); return; }
       if (line[0] === '#') {
-        const t = line.slice(1).trim();
+        const h = line.slice(1).split('|').map(x => x.trim()), t = h[0], lv = h[1] || '';
+        if (lv && !LVRE.test(lv)) bad.push(`kaiwa/${f}:${ln + 1} level harus N5–N1: ${line}`);
         if (titles.has(cat + '|' + t)) bad.push(`kaiwa/${f}:${ln + 1} judul dialog ganda di ${cat}: ${t}`);
-        titles.add(cat + '|' + t); cur = [cat, t, []]; out.push(cur); return;
+        titles.add(cat + '|' + t); cur = [cat, t, [], LVRE.test(lv) ? lv : '']; out.push(cur); return;
       }
       const p = line.split('|').map(x => x.trim());
       if (!cur || p.length !== 4 || p.some(x => !x)) { bad.push(`kaiwa/${f}:${ln + 1} format salah: ${line}`); return; }
@@ -195,6 +217,7 @@ function buildKaiwa() {
     });
   }
   out.filter(d => d[2].length < 2).forEach(d => bad.push(`kaiwa: dialog "${d[1]}" kurang dari 2 kalimat`));
+  out.forEach(d => { if (!d[3]) d[3] = kwLevel(d[2]); });
   // dialog dikelompokkan per kategori (urutan kategori = kemunculan pertama)
   const cats = [...new Set(out.map(d => d[0]))];
   return cats.flatMap(c => out.filter(d => d[0] === c));
@@ -278,15 +301,18 @@ function buildKotobaPlus() {
     const p = line.split('|').map(x => x.trim()), at = `kotoba-plus.txt:${ln + 1}`;
     if (line[0] === '@') { mod = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', cats: [] }; out.push(mod); cat = null; return; }
     if (!mod) { bad.push(`${at} di luar submodul`); return; }
-    if (line[0] === '#') { const pair = /⇔$/.test(line); cat = { c: line.slice(1).replace(/⇔$/, '').trim(), pair, rows: [] }; mod.cats.push(cat); return; }
+    if (line[0] === '#') { const pair = /⇔$/.test(line); cat = { c: line.slice(1).replace(/⇔$/, '').trim(), pair, rows: [], lv: [] }; mod.cats.push(cat); return; }
     if (!cat) { bad.push(`${at} di luar kategori`); return; }
+    // level N5–N1 di akhir baris, mis. ...|N3
+    const lv = LVRE.test(p[p.length - 1]) ? p.pop() : '';
+    if (!lv) { bad.push(`${at} level N5–N1 belum ditulis di akhir baris: ${line}`); return; }
     if (cat.pair) {
       if (p.length !== 6 || p.some(x => !x) || !KANA.test(p[1]) || !KANA.test(p[4])) { bad.push(`${at} format pasangan salah: ${line}`); return; }
-      cat.rows.push([p[0], p[1], romWord(p[1]), p[2], p[3], p[4], romWord(p[4]), p[5]]);
+      cat.rows.push([p[0], p[1], romWord(p[1]), p[2], p[3], p[4], romWord(p[4]), p[5]]); cat.lv.push(lv);
     } else {
       if ((p.length !== 4 && p.length !== 7) || p.some(x => !x) || !KANA.test(p[1])) { bad.push(`${at} format entri salah: ${line}`); return; }
       if (p[2] === '-') p[2] = romWord(p[1]);
-      cat.rows.push(p);
+      cat.rows.push(p); cat.lv.push(lv);
     }
   });
   return out;
@@ -298,11 +324,13 @@ function buildBunpoTopik() {
     line = line.trim();
     if (!line || line.startsWith('//')) return;
     const p = line.split('|').map(x => x.trim());
-    if (line[0] === '@') { tp = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', ex: [], rows: [] }; out.push(tp); return; }
+    if (line[0] === '@') { tp = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', ex: [], rows: [], lv: [] }; out.push(tp); return; }
     if (!tp) { bad.push(`bunpo-topik.txt:${ln + 1} di luar topik`); return; }
     if (line.startsWith('- ')) { tp.ex.push(line.slice(2)); return; }
+    const lv = LVRE.test(p[p.length - 1]) ? p.pop() : '';
+    if (!lv) { bad.push(`bunpo-topik.txt:${ln + 1} level N5–N1 belum ditulis di akhir baris: ${line}`); return; }
     if (p.length !== 6 || p.some(x => !x)) { bad.push(`bunpo-topik.txt:${ln + 1} format salah: ${line}`); return; }
-    tp.rows.push(p);
+    tp.rows.push(p); tp.lv.push(lv);
   });
   return out;
 }
@@ -389,10 +417,11 @@ const dataUri = f => 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 
   const byLv = {}; rows.forEach(r => { const l = levels[+r.split('|')[5]]; byLv[l] = (byLv[l] || 0) + 1; });
   console.log(`index.html dibuat: ${rows.length} kata`, byLv);
   console.log(`Kanji: ${K.list.length} dalam ${K.cats.length} kategori` + (K.fetched ? ` (${K.fetched} data goresan baru diunduh)` : ''));
-  console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori`);
-  console.log(`Kotoba plus: ${KP.map(m => `${m.t}=${m.cats.reduce((s, c) => s + c.rows.length, 0)}`).join(', ')}`);
+  const per = a => ['N5', 'N4', 'N3', 'N2', 'N1'].map(l => `${l}=${a.filter(x => x === l).length}`).join(' ');
+  console.log(`Kaiwa: ${KW.length} dialog, ${KW.reduce((s, d) => s + d[2].length, 0)} kalimat, ${new Set(KW.map(d => d[0])).size} kategori · level ${per(KW.map(d => d[3]))}`);
+  console.log(`Kotoba plus: ${KP.map(m => `${m.t}=${m.cats.reduce((s, c) => s + c.rows.length, 0)}`).join(', ')} · level ${per(KP.flatMap(m => m.cats.flatMap(c => c.lv)))}`);
   console.log(`Kalimat dasar: ${KD.length} kalimat`);
-  console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')}`);
+  console.log(`Bunpo topik: ${BT.map(x => `${x.t}=${x.rows.length}`).join(', ')} · level ${per(BT.flatMap(x => x.lv))}`);
   console.log(`Kana-kata: hiragana=${KK.hira.length}, katakana=${KK.kata.length}`);
   console.log(`Bun: ${BN.length} kalimat, ${new Set(BN.map(b => b[0])).size} kategori`);
   console.log(`Bunpo: ${BP.map(l => `${l.l}=${l.s.reduce((a, s) => a + s[1].length, 0)}`).join(', ')} pola`);
