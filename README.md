@@ -44,7 +44,7 @@ Kosakata: N5 724, N4 648, N3 1.614, N2 1.981, **N1 536** (total 5.503; kosakata 
 
 Setiap submenu punya kuisnya sendiri. Dari tab **Quiz**, kuis Kotoba, Kaiwa, dan Katsuyō memakai semua level; kuis Bunpō memakai level yang sedang dipilih (termasuk **Semua**).
 
-**Menu lain:** Hiragana & Katakana (segmen あ/ア + 5 tab), Kanji (bilah tab Kamus · Struktur · Membaca yang juga tampil di sub halaman; level Semua/N5–N1 di tab Kamus), Bun (tab Kalimat, Teka-teki, Struktur, Pola dasar), dan Bilangan. Tab Quiz juga memakai tab berikon *Berdasarkan materi* / *Level N5–N1*.
+**Menu lain:** Hiragana & Katakana (segmen あ/ア + 5 tab), Kanji (bilah tab Kamus · Struktur · Membaca yang juga tampil di sub halaman; level Semua/N5–N1 di tab Kamus), Bun (daftar kalimat per kategori, tanpa submenu), dan Bilangan. Tab Quiz juga memakai tab berikon *Berdasarkan materi* / *Level N5–N1*.
 
 ## Fitur utama per menu
 
@@ -59,7 +59,7 @@ Setiap submenu punya kuisnya sendiri. Dari tab **Quiz**, kuis Kotoba, Kaiwa, dan
 | **文 Bun** | **274 kalimat sehari-hari** dalam 15 kategori: salam, perkenalan, tempat kerja, belanja, makan, transportasi, kesehatan, telepon, darurat, dan lain-lain. | Jepang → arti, **arti → Jepang**, 🧩 susun kalimat (ada romaji di setiap ubin) |
 | **話 Kaiwa** | **100 unit** percakapan (20 per level N5–N1, 799 kalimat dialog) dan **500 dialog** (1.801 kalimat, level N5–N3) dalam 16 kategori: perkenalan, hubungan & perasaan, telepon, pekerjaan, sekolah, wawancara & administrasi, liburan & wisata, transportasi, makan & minum, belanja, tempat umum, kesehatan, sehari-hari, cuaca & musim, hobi, dan darurat. | Arti kalimat, arti → Jepang, kalimat berikutnya (arti soal & jawaban ditampilkan), lengkapi kalimat, 🎧 dengarkan, 🧩 susun |
 | **数 Bilangan** | Angka Jepang dari 0 sampai jutaan: dasar 0–10, **belasan**, **puluhan**, **ratusan**, **ribuan**, puluhan & ratusan ribu (satuan 万), dan **jutaan** (百万, 千万, 億). Bunyi khusus (さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん) ditandai. Ada **pengubah angka**: ketik angka apa saja untuk melihat kanji, kana, romaji, dan uraiannya. | Jepang → angka, angka → Jepang, susun bacaan, ketik angka, ketik bacaan, bicara, mendengar, ✍️ menulis kanji angka |
-| **🧩 Teka-teki** | **Susun ala Duolingo**: susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. | Semua mode susun |
+| **🧩 Teka-teki** | **Susun ala Duolingo** (dibuka dari Quiz → Berdasarkan materi): susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. | Semua mode susun |
 
 ### Fitur di semua menu
 
