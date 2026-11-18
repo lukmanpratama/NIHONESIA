@@ -1687,12 +1687,12 @@ const PZ=[
  ['bunpo','法','Susun Bunpo','Susun contoh kalimat tata bahasa'],
  ['kaiwa','話','Susun Kaiwa','Susun kalimat percakapan'],
  ['bun','文','Susun Bun','Susun kalimat sehari-hari']];
+// Teka-teki dibuka dari Quiz → Berdasarkan materi (bukan lagi tab di Bun)
 function puzzle(){
- view(`${modHead('n','puzzle')}<p class="lvnote">Susun ubin menjadi jawaban yang benar, seperti di Duolingo. Ketuk ubin untuk memindahkannya, ketuk lagi untuk mengembalikan.</p>
+ view(`${hdr('🧩 Teka-teki')}<p class="lvnote">Susun ubin menjadi jawaban yang benar, seperti di Duolingo. Ketuk ubin untuk memindahkannya, ketuk lagi untuk mengembalikan.</p>
  <div class="row2"><select id="pzl"><option value="">Semua level</option>${['N5','N4','N3','N2','N1','Kerja'].map(x=>`<option ${x==pzL?'selected':''}>${x}</option>`).join('')}</select><div class="qcfg" style="justify-content:flex-end;flex-wrap:wrap">Jumlah soal <select class="qn">${QOPTS.map(x=>`<option ${x==qn?'selected':''}>${x}</option>`).join('')}</select>Tingkat <select class="qd" aria-label="Tingkat kesulitan">${Object.entries(QDIFF).map(([k,v])=>`<option value="${k}" ${k==qd?'selected':''}>${v.lab}</option>`).join('')}</select></div></div>
  <div class="grid">${PZ.map(p=>`<button class="mc" data-pz="${p[0]}"><span class="ic">${p[1]}</span><b>${p[2]}</b><small>${p[3]}</small></button>`).join('')}</div>
- <p class="rj" style="margin-top:12px">Level berlaku untuk Susun Hiragana, Katakana, Kotoba, Katsuyō, dan Bunpo.</p>`,materi);
- modWire('n',puzzle);
+ <p class="rj" style="margin-top:12px">Level berlaku untuk Susun Hiragana, Katakana, Kotoba, Katsuyō, dan Bunpo.</p>`,quizHub);
  $('#pzl').onchange=e=>{pzL=e.target.value;ST.set('pzL',pzL)};
  app.querySelectorAll('[data-pz]').forEach(b=>b.onclick=()=>pzStart(b.dataset.pz))}
 function pzStart(m){
@@ -2235,15 +2235,13 @@ const MODT={
   ['unit','buku','Unit',kuList,l=>KU.u.some(u=>u.l==l)],
   ['dialog','bicara','Dialog',kaiwa,l=>KW.some(d=>d[3]==l)]]},
  n:{t:'Bun · 文',tabs:[
-  ['bun','📝','Kalimat',bun,null],
-  ['puzzle','🧩','Teka-teki',puzzle,null],
-  ['struktur','🧱','Struktur',()=>btopic('struktur','n'),null],
-  ['pola','📐','Pola dasar',()=>btopic('pola','n'),null]]}};
+  ['bun','📝','Kalimat',bun,null]]}};
 let mTab=ST.get('mTab',{});
 // header + navigasi modul (tab berikon, lalu level Semua/N5–N1 jika tab memakai level), lalu keterangan tab
 // tab pudar bila tidak ada isi pada level terpilih (pada "Semua": bila tidak ada isi di level mana pun)
 function modHead(k,cur){const m=MODT[k],tb=m.tabs.find(t=>t[0]==cur)||m.tabs[0],L=curLv();lastSub=k;mTab[k]=tb[0];ST.set('mTab',mTab);
- return hdr(m.t)+snav(itabs(m.tabs.map(t=>[t[0],t[1],t[2],t[4]&&!(L?t[4](L):JL.some(l=>t[4](l)))]),tb[0],'mt')+(tb[4]?lvSeg(L,true):''))+(tb[5]?`<p class="lvnote tabd">${tb[5]}</p>`:'')}
+ // modul dengan satu tab tanpa level (Bun) tidak perlu bilah navigasi
+ return hdr(m.t)+(m.tabs.length<2&&!tb[4]?'':snav(itabs(m.tabs.map(t=>[t[0],t[1],t[2],t[4]&&!(L?t[4](L):JL.some(l=>t[4](l)))]),tb[0],'mt')+(tb[4]?lvSeg(L,true):'')))+(tb[5]?`<p class="lvnote tabd">${tb[5]}</p>`:'')}
 // pasang klik tab & level; redraw = gambar ulang tab yang sama setelah level diganti
 function modWire(k,redraw){
  app.querySelectorAll('[data-mt]').forEach(b=>b.onclick=()=>{sfx.tap();MODT[k].tabs.find(t=>t[0]==b.dataset.mt)[3]()});
@@ -2256,7 +2254,7 @@ function materi(){lastSub=null;
  const L=[['あア','Hiragana & Katakana','Tabel · sokuon · partikel · contoh kata',()=>chart('Hiragana',false)],
   ['漢','Kanji',`${KJ.length} kanji · kamus & panduan`,kanji],['語','Kotoba',`${V.filter(v=>v.l!='Kerja').length} kata · ${MODT.k.tabs.length} sub materi · N5–N1`,()=>modSub('k')],
   ['法','Bunpō',`${MODT.b.tabs.length} sub materi · N5–N1`,()=>modSub('b')],['話','Kaiwa',`${KU.u.length} unit · ${KW.length} dialog · N5–N1`,()=>modSub('w')],
-  ['文','Bun',`${MODT.n.tabs.length} sub materi · ${BUN.length} kalimat`,()=>modSub('n')],['数','Bilangan','Belasan · ratusan · jutaan',angka]];
+  ['文','Bun',`${BUN.length} kalimat · ${BNC.length} kategori`,()=>modSub('n')],['数','Bilangan','Belasan · ratusan · jutaan',angka]];
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Materi</h2>${rtBtn()}</div>
  <div class="grid">${L.map((m,i)=>mCard(m[0],m[1],m[2],'x'+i)).join('')}</div>
  ${navHtml('materi')}`);
@@ -2846,9 +2844,7 @@ function quizHub(){
  <h3>Kuis ${qzL}</h3>
  <div class="qhub">${C.map(([t,ic,lab,E,u])=>`<button class="mc qhc" data-t="${t}" ${E.length<4?'disabled':''}><span class="ic">${ic}</span><b>${lab}</b><small>${E.length?`${E.length} ${u}`:'belum ada untuk level ini'}</small></button>`).join('')}</div>
  <div class="card"><div class="qs-l" style="margin-top:0">Jumlah soal</div><div class="chips">${QOPTS.map(x=>`<button class="chip2 n${x==qn?' on':''}" data-n="${x}">${x}</button>`).join('')}</div>
- <div class="qs-l">Tingkat kesulitan</div><div class="chips">${Object.entries(QDIFF).map(([k,v])=>`<button class="chip2${k==qd?' on':''}" data-d="${k}">${v.lab}</button>`).join('')}</div></div>
- <h3>Jelajahi level lainnya</h3>
- <div class="opts">${['N5','N4','N3','N2','N1'].filter(l=>l!=qzL).map(l=>{const info=LV_INFO[l];return`<button class="opt" data-l="${l}" style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px"><div><b style="font-size:15px">${info.title}</b><small style="color:var(--mut);margin-top:2px">${info.desc}</small></div><span class="chip" style="font-size:11px;padding:2px 8px;border-radius:99px;white-space:nowrap;margin-left:8px;min-width:0;flex:none">${info.tag}</span></button>`}).join('')}</div>`;
+ <div class="qs-l">Tingkat kesulitan</div><div class="chips">${Object.entries(QDIFF).map(([k,v])=>`<button class="chip2${k==qd?' on':''}" data-d="${k}">${v.lab}</button>`).join('')}</div></div>`;
 
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Quiz</h2>${rtBtn()}</div>
  ${snav(itabs([['materi','📚','Berdasarkan materi'],['level','medali','Level N5–N1']],qzTab,'qzt')+(qzTab=='level'?lvSeg(qzL):''))}
@@ -2858,7 +2854,6 @@ function quizHub(){
  app.querySelectorAll('[data-qzt]').forEach(b=>b.onclick=()=>{sfx.tap();qzTab=b.dataset.qzt;ST.set('qzTab',qzTab);quizHub()});
  app.querySelectorAll('.snav [data-lv]').forEach(b=>b.onclick=()=>{sfx.tap();qzL=b.dataset.lv;ST.set('qzL',qzL);quizHub()});
  app.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{sfx.tap();MQ[+b.dataset.q.slice(1)][3]()});
- app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{qzL=b.dataset.l;ST.set('qzL',qzL);quizHub()});
  app.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>{qn=+b.dataset.n;ST.set('qn',qn);app.querySelectorAll('[data-n]').forEach(x=>x.classList.toggle('on',+x.dataset.n==qn));sfx.tap()});
  app.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{qd=b.dataset.d;ST.set('qd',qd);app.querySelectorAll('[data-d]').forEach(x=>x.classList.toggle('on',x.dataset.d==qd));sfx.tap()});
  app.querySelectorAll('.qhc').forEach(b=>b.onclick=()=>{const c=C.find(x=>x[0]==b.dataset.t);runQuiz(`Quiz ${qzL} ${c[2]}`,()=>mixItems(c[3],QN()),quizHub)})}
