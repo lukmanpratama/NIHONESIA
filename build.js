@@ -325,13 +325,14 @@ function buildKotobaPlus() {
 }
 // ===== BUNPO TOPIK (src/bunpo-topik.txt) → [{id, t, d, ex:[penjelasan], rows:[[pola, romaji, arti, contoh, romaji contoh, arti contoh, [contoh tambahan]]]}] =====
 function buildBunpoTopik() {
-  const out = []; let tp = null;
+  const out = []; let tp = null, cat = '';
   fs.readFileSync(path.join(ROOT, 'src', 'bunpo-topik.txt'), 'utf8').split(/\r?\n/).forEach((line, ln) => {
     line = line.trim();
     if (!line || line.startsWith('//')) return;
     const p = line.split('|').map(x => x.trim());
-    if (line[0] === '@') { tp = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', ex: [], rows: [], lv: [] }; out.push(tp); return; }
+    if (line[0] === '@') { tp = { id: p[0].slice(1), t: p[1] || '', d: p[2] || '', ex: [], rows: [], lv: [], c: [] }; cat = ''; out.push(tp); return; }
     if (!tp) { bad.push(`bunpo-topik.txt:${ln + 1} di luar topik`); return; }
+    if (line[0] === '#') { cat = line.slice(1).trim(); return; }
     if (line.startsWith('- ')) { tp.ex.push(line.slice(2)); return; }
     if (line[0] === '+') {
       const r = tp.rows[tp.rows.length - 1], e = line.slice(1).split('|').map(x => x.trim());
@@ -342,8 +343,10 @@ function buildBunpoTopik() {
     const lv = LVRE.test(p[p.length - 1]) ? p.pop() : '';
     if (!lv) { bad.push(`bunpo-topik.txt:${ln + 1} level N5–N1 belum ditulis di akhir baris: ${line}`); return; }
     if (p.length !== 6 || p.some(x => !x)) { bad.push(`bunpo-topik.txt:${ln + 1} format salah: ${line}`); return; }
-    tp.rows.push(p); tp.lv.push(lv);
+    tp.rows.push(p); tp.lv.push(lv); tp.c.push(cat);
   });
+  // kategori hanya disimpan bila topik memakainya
+  out.forEach(t => { if (!t.c.some(Boolean)) delete t.c; });
   return out;
 }
 // ===== KALIMAT DASAR (src/kalimat-dasar.txt) → [[kategori, jepang, romaji, arti], ...] =====
