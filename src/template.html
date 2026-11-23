@@ -317,12 +317,6 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 :root[data-theme="dark"] .ppop-close:hover{background:rgba(255,255,255,.08)}
 
 /* ===== Jalur N5 (Learning Path 156 pelajaran) ===== */
-.j5sum{background:var(--card);border:2px solid var(--bd);border-radius:18px;padding:14px;margin:4px 0 2px;display:grid;gap:10px}
-.j5h{display:flex;justify-content:space-between;align-items:center;gap:10px}.j5h b{display:block;font-size:19px;color:var(--navy)}.j5h small{font-size:12px;font-weight:700;color:var(--mut)}
-.j5h .tg{margin:0;flex:none}
-.j5stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.j5stats div{background:var(--bg);border-radius:12px;padding:8px 4px;text-align:center}
-.j5stats b{display:block;font-size:24px;line-height:1.1;color:var(--ac)}.j5stats small{font-size:11px;font-weight:700;color:var(--mut)}
-.j5note{font-size:11px;color:var(--mut);margin:0;line-height:1.4}
 .uban .j5us{display:block;font-size:12px;color:rgba(255,255,255,.78);font-weight:600;margin-top:2px}
 .unit.ulock .uban{background:linear-gradient(135deg,#475569 0%,#334155 100%)}
 .j5p .trail-card{white-space:normal;max-width:150px}.j5p .trail-card-title{white-space:normal;max-width:136px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -2840,7 +2834,6 @@ function j5State(){const P=PG(),st={};let blocked=false,cur=null;
   if((P[n.id]||0)>=J5PASS)st[n.id]='done';else if(!blocked){st[n.id]='cur';cur=cur||n.id;blocked=true}else st[n.id]='lock'}
  return{st,cur,P}}
 const j5Done=P=>J5L.filter(l=>(P[l.id]||0)>=J5PASS).length;
-const j5Badges=P=>J5U.filter(u=>P[`J5:u${u.u}r`]).length;
 
 /* ----- materi: entri dari file kurikulum dan data lain ----- */
 const J5RO={ぢ:'ji',づ:'zu',を:'o',ヂ:'ji',ヅ:'zu',ヲ:'o'};
@@ -3269,15 +3262,8 @@ function j5Guide(ui){const U=JN[ui],{st,P}=j5State();
  document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};
  ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.qx').onclick=close;
  ov.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{ov.remove();j5Learn(J5L[+b.dataset.l-1])})}
-function j5Map(){const{st,P}=j5State();const ov=document.createElement('div');ov.className='qsov';
- ov.innerHTML=`<div class="qset" role="dialog" aria-modal="true" aria-label="Peta pelajaran N5"><div class="qsh"><b>🗂️ Peta 156 pelajaran N5</b><button class="qx" aria-label="Tutup">✕</button></div>
- <div class="card j5tbl">${J5U.map(U=>{const d=U.ls.filter(l=>st[l.id]=='done').length,got=P[`J5:u${U.u}r`];return`<button class="j5gr" data-u="${U.ui}"><span class="j5bdg${got?' on':''}">${J5BADGE[U.ui]}</span><span><b>${U.u} · ${U.t}</b><small>Pelajaran ${U.ls[0].no}–${U.ls[12].no} · ${d}/13 selesai</small></span><span class="j5gs">${got?'🏅':d?`${Math.round(d/13*100)}%`:''}</span></button>`}).join('')}</div></div>`;
- document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};
- ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.qx').onclick=close;
- ov.querySelectorAll('[data-u]').forEach(b=>b.onclick=()=>{ov.remove();const s=$('#j5u'+b.dataset.u);if(s)scrollTo({top:scrollY+s.getBoundingClientRect().top-70,behavior:'smooth'})})}
 function j5Beranda(){
- const{st,P}=j5State(),s=ST.get('stats',{ans:0,ok:0,last:'',streak:0}),done=j5Done(P),jd=ST.get('justDone','');
- const mast=J5L.filter(l=>(P[l.id]||0)>=.9).length,perf=J5L.filter(l=>(P[l.id]||0)>=1).length,bdg=j5Badges(P);
+ const{st,P}=j5State(),s=ST.get('stats',{ans:0,ok:0,last:'',streak:0}),jd=ST.get('justDone','');
  const icon=(n,S)=>{if(n.k=='C')return'<span class="pico-emoji">★</span>';if(n.k=='R')return`<span class="pico-emoji">${S=='done'?'📭':'🎁'}</span>`;if(n.k=='T')return'<span class="pico-emoji">🏆</span>';
   if(S=='done')return`<svg viewBox="0 0 24 24" class="pico"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   if(S=='cur')return`<svg viewBox="0 0 24 24" class="pico"><polygon points="9,6 19,12 9,18" fill="#fff"/></svg>`;return`<span class="j5no">${nn2(n.l.no)}</span>`};
@@ -3295,13 +3281,9 @@ function j5Beranda(){
    <div class="plandmark" style="left:73.5%;top:65px"><div class="plandmark-box" style="background:${lm.bg};color:${lm.fg}">${lm.ic}</div><div class="plandmark-name">${lm.name}</div></div>
    <div class="pmasc-slot" style="left:26.5%;top:${65+5*stepY}px"><div class="masc">${MASCOT}</div></div>${nodes}</div></section>`}).join('');
  view(`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nihonesia"><select id="plv" class="plv" aria-label="Pilih level">${PLV.filter(([l])=>l=='N5'||pathLevel(l).count).map(([l,t])=>`<option value="${l}" ${l==pLv?'selected':''}>${l} · ${t}</option>`).join('')}</select><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>
- <div class="j5sum"><div class="j5h"><div><b>N5 · Pemula</b><small>156 Pelajaran · Learning Path</small></div><button class="tg" id="j5map">🗂️ Peta</button></div>
-  <div class="j5stats"><div><b>12</b><small>Unit</small></div><div><b>156</b><small>Pelajaran</small></div><div><b>12</b><small>Unit Challenge</small></div></div>
-  <div class="pbar"><i style="width:${done/156*100}%"></i></div><small class="rj">${done} / 156 pelajaran lulus · 🏅 ${mast} Mastery · 💎 ${perf} Perfect · lencana ${bdg}/12</small>
-  <p class="j5note">Rancangan kurikulum Nihonesia. Jumlah dan pembagian ini merupakan desain aplikasi, bukan struktur resmi JLPT.</p></div>
  <div id="path">${units}</div>${navHtml('beranda')}`);
  ST.del('justDone');
- $('#plv').onchange=e=>{pLv=e.target.value;ST.set('pLv',pLv);beranda()};$('#j5map').onclick=j5Map;
+ $('#plv').onchange=e=>{pLv=e.target.value;ST.set('pLv',pLv);beranda()};
  app.querySelectorAll('.trail-node, .trail-card').forEach(b=>b.onclick=()=>j5Pop(b,st));
  app.querySelectorAll('.uguide').forEach(b=>b.onclick=()=>j5Guide(+b.dataset.u));
  const c=app.querySelector('.trail-node.just')||app.querySelector('.trail-node.cur')||app.querySelector('.trail-node.open');
