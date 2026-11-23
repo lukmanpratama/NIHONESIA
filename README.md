@@ -40,7 +40,7 @@ Rancangan kurikulum Nihonesia; jumlah dan pembagiannya desain aplikasi, bukan st
 | 12 | Kaiwa & N5 Final Challenge | 144–156 |
 
 - **Pola setiap unit:** pelajaran 1–5 → ★ Checkpoint 1 (evaluasi 01–05) → pelajaran 6–10 → ★ Checkpoint 2 → pelajaran 11–13. Pelajaran ke-13 adalah **Unit Challenge**; setelah lulus, unit berikutnya terbuka dan 🎁 **Unit Reward** (+50 XP + lencana) bisa diambil.
-- **Satu node = satu pelajaran:** materi singkat (huruf, kata, kalimat, dialog, atau bacaan, lengkap dengan suara) lalu rangkaian ±15 soal: Recognition → format utama pelajaran (kolom *Jenis quiz*) → Recall → Construction → Writing → Listening → Final (mengulang materi lama yang paling lemah).
+- **Satu node = satu pelajaran:** mengetuk node langsung membuka kuis ±15 soal (tanpa layar materi): Recognition → format utama pelajaran (kolom *Jenis quiz*) → Recall → Construction → Writing → Listening → Final (mengulang materi lama yang paling lemah).
 - **Aturan:** node terkunci sampai node sebelumnya lulus; semua soal wajib dijawab (tidak ada tombol Lewati, kecuali soal bicara yang bisa diganti soal ketik); akurasi di bawah 80% harus diulang; 80–89% **Selesai**, 90–99% **Mastery**, 100% **Perfect** (bonus XP). Jawaban yang salah masuk Review.
 - **Jenis soal:** pilih huruf/arti, dengar, susun huruf/kalimat, lengkapi, cocokkan pasangan, tulis di kanvas, **Text Input** (romaji langsung berubah menjadi Hiragana/Katakana), dikte, gambar → kata, pilih ungkapan/respons, angka & jam (ketik angka), konjugasi ～ます/～ません/～ました, bacaan (pengumuman, pesan, jadwal, paragraf), dialog dengar, roleplay, dan bicara.
 - 📖 di setiap banner unit membuka daftar 13 pelajarannya beserta statusnya.
