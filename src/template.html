@@ -333,15 +333,6 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 .j5chip.on{background:#fee2e2;border-color:#fecaca;color:#b91c1c}.j5chip.pass{background:#dcfce7;border-color:#bbf7d0;color:#15803d}.j5chip.mastery{background:#e0f2fe;border-color:#bae6fd;color:#0369a1}.j5chip.perfect{background:#f3e8ff;border-color:#e9d5ff;color:#7e22ce}
 :root[data-theme="dark"] .j5chip.on,:root[data-theme="dark"] .j5chip.pass,:root[data-theme="dark"] .j5chip.mastery,:root[data-theme="dark"] .j5chip.perfect{background:var(--bg);color:var(--fg)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .j5chip.on,:root:not([data-theme="light"]) .j5chip.pass,:root:not([data-theme="light"]) .j5chip.mastery,:root:not([data-theme="light"]) .j5chip.perfect{background:var(--bg);color:var(--fg)}}
-.j5lh{display:grid;gap:4px;margin:4px 0 10px}.j5lh small{font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--ac)}.j5lh b{font-size:22px;color:var(--navy);line-height:1.25}
-.j5ex{border-left:4px solid var(--gold);font-size:15px;line-height:1.5}
-.j5kg{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px}
-.j5k{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px;border-radius:14px;border:2px solid var(--bd);border-bottom-width:4px;background:var(--card);color:var(--fg);cursor:pointer}
-.j5k b{font-size:34px;line-height:1.1;font-weight:500}.j5k:active{transform:translateY(2px);border-bottom-width:2px}
-.j5ri{font-size:26px;flex:none}.j5kr{flex-wrap:wrap}.j5kr .sgrow{flex-basis:100%}
-.j5hr{border:0;border-top:1px dashed var(--bd);margin:8px 0}
-.j5cov{display:flex;flex-wrap:wrap;gap:2px;margin-bottom:8px}
-.j5flow b{display:block;margin-bottom:6px}.j5steps{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}.j5steps span{font-size:12px;font-weight:700;background:var(--bg);border-radius:8px;padding:4px 8px}
 .j5pic{font-size:72px;line-height:1.15}.j5pic.s{font-size:42px}.j5cnt{letter-spacing:2px;word-break:break-all}.j5ic{font-size:22px}
 .opt .j5pic.s{font-size:38px}
 .qq .chat{font-size:16px;font-weight:400;text-align:left;margin:0}.qq .chat .bub{font-size:17px}
@@ -3190,51 +3181,21 @@ function j5Exam(L){const B=j5Bag(),n=L.f=='final'?25:20,own=L.W.length+L.S.lengt
  for(let k=0;B.out.length<n&&k<src.length*2;k++)j5From(B,src[k%src.length],1);
  return shuf(B.out).slice(0,n)}
 
-/* ----- layar materi singkat (LESSON_MATERIAL) sebelum latihan ----- */
-const j5Sp=s=>`<button class="sp" data-s="${esc(s)}" aria-label="Putar suara">🔊</button>`;
-function j5Row(e){
- if(e.t=='W'||e.t=='N')return`<div class="exw">${e.ic?`<span class="j5ri">${e.ic}</span>`:''}<span class="j">${e.j}</span><span class="m">${e.k!=e.j?e.k:''}<span class="ro">${e.k!=e.j?' · ':''}${e.r}</span><br><small class="rj">${e.a}${e.n?` — ${e.n}`:''}</small></span>${j5Sp(e.say)}</div>`;
- if(e.t=='K')return`<div class="exw j5kr"><span class="j">${e.j}</span><span class="m">${kjRead(e.x)}<br><small class="rj">${e.a}${e.n?` — ${e.n}`:''}</small></span>${e.ic?`<span class="j5ri">${e.ic}</span>`:''}${STK[e.j]?`<div class="sgrow">${strokeSvg(e.j)}</div>`:''}</div>`;
- if(e.t=='V')return`<div class="exw"><span class="j">${e.j}</span><span class="m">${e.k} → <b>${e.f.masu}</b> · ${e.f.masen} · ${e.f.mashita}<span class="ro"><br>${rom(e.f.masu)}</span><br><small class="rj">${e.a} · ${GNAME[kgroup(e.x)]}</small></span>${j5Sp(e.f.masu)}</div>`;
- if(e.t=='G'){const r=e.x;return`<div class="exw"><span class="m"><b style="font-size:17px">${r[0]}</b> <span class="ro">${r[1]}</span><br><small class="rj">${r[2]}</small>${r[3]?`<div class="gx"><span>${r[3].replace(/\{(.+?)\}/g,'<b class="hl">$1</b>')}</span> ${j5Sp(r[3].replace(/[{}]/g,''))}<div class="rj ro">${r[4]}</div><small class="rj">${r[5]}</small></div>`:''}</span></div>`}
- if(e.t=='S')return`<div class="exw"><span class="m">${e.alt?e.raw.replace(/\{(.+?)\}/,`<b class="hl">${e.alt}</b>`):e.raw.replace(/\{(.+?)\}/g,'<b class="hl">$1</b>')}<span class="ro"><br>${e.r}</span><br><small class="rj">${e.a}</small></span>${j5Sp(e.say)}</div>`;
- if(e.t=='I')return`<div class="exw"><span class="m">${e.j}<span class="ro"><br>${e.r}</span><br><small class="rj">${e.a}</small></span>${j5Sp(e.say)}</div>`;
- return''}
-function j5MatHtml(L){const E=j5Static(L).filter(e=>e.L===L),G=j5Gen(L),words=j5Words(L),out=[];
- const H=E.filter(e=>e.t=='H');if(H.length)out.push(`<div class="j5kg">${H.map(e=>`<button class="j5k" data-s="${e.say}"><b>${e.j}</b><small class="ro">${e.r}</small></button>`).join('')}</div><p class="rj" style="margin:6px 0 0">Ketuk huruf untuk mendengar bunyinya.</p>`);
- if(words.length)out.push(`<h3>Contoh kata</h3><div class="card">${words.slice(0,6).map(j5Row).join('')}</div>`);
- const rows=[...E,...G.slice(0,6)].filter(e=>'WNKVGSI'.includes(e.t)).map(j5Row).join('');if(rows)out.push(`<div class="card">${rows}</div>`);
- const Q=E.filter(e=>e.t=='Q');if(Q.length)out.push(`<h3>Tanya & jawab</h3><div class="card">${Q.map(q=>chat([['A',q.j,q.r,q.a],['B',q.res.j,q.res.r,q.res.a]])).join('<hr class="j5hr">')}</div>`);
- E.filter(e=>e.t=='D').forEach((d,i)=>out.push(`<div class="card j5dlg"><b>💬 ${d.meta.t}</b>${d.meta.g?`<p class="rj">🎯 ${d.meta.g}</p>`:''}${d.meta.p?`<p style="margin:4px 0">Pola: <b>${d.meta.p[0]}</b> <span class="rj">${d.meta.p[1]}</span><br><small class="rj">${d.meta.p[2]}</small></p>`:''}<button class="tg j5play" data-d="${i}">▶ Putar seluruh dialog</button>${chat(d.lines)}${d.meta.rp?`<p class="rj">🎭 Roleplay: ${d.meta.rp}</p>`:''}</div>`));
- E.filter(e=>e.t=='T').forEach(t=>out.push(`<div class="card"><b>${t.tt}</b> ${j5Sp(t.say)}${j5Txt(t)}<details><summary>Lihat arti</summary><div class="j5tx2">${t.a.split(' / ').join('<br>')}</div></details></div>`));
- return out.join('')}
-// pelajaran ulangan / challenge: tampilkan cakupan materinya
-function j5Cover(ls){return`<div class="j5cov">${ls.map(x=>`<span class="j5chip">${nn2(x.no)} · ${x.n}</span>`).join('')}</div>`}
-function j5Learn(L){const U=JN[L.u],P=PG(),best=P[L.id]||0,md=j5Medal(best),ex=L.li==12,refs=/ulang:/.test(L.s);
- const cov=ex?J5L.filter(x=>x.no<L.no&&x.li!=12&&(L.f=='final'||x.u==L.u)):refs?(()=>{const out=[];L.s.match(/ulang:(\S+)/)[1].split(',').forEach(rg=>{const[a,b]=rg.split('-').map(Number);out.push(...J5L.filter(x=>x.no>=a&&x.no<=(b||a)))});return out})():[];
- view(`${hdr(`${nn2(L.no)} · ${L.n}`)}
- <div class="j5lh"><small>N5 · UNIT ${U.u} · PELAJARAN ${nn2(L.li+1)}/13${ex?' · UNIT CHALLENGE':''}</small><b>${nn2(L.no)} · ${L.n}</b><div><span class="j5chip on">Jenis quiz: ${L.j}</span>${md?`<span class="j5chip ${md.c}">${md.i} ${md.t} · ${Math.round(best*100)}%</span>`:best?`<span class="j5chip">Terbaik ${Math.round(best*100)}% · belum lulus</span>`:''}</div></div>
- ${L.x?`<div class="card j5ex">💡 ${L.x}</div>`:''}
- <div id="j5m">${cov.length?`<h3>${ex?'🏆 Cakupan Unit Challenge':'🔁 Materi yang diulang'}</h3>${L.f=='final'?`<p class="sub">Soal diambil dari seluruh ${cov.length} pelajaran N5 (12 unit).</p>`:j5Cover(cov)}`:''}${j5MatHtml(L)}</div>
- <div class="card j5flow"><b>Alur pelajaran</b><div class="j5steps">${['Learn','Recognition','Recall','Construction','Writing','Listening','Final Quiz'].map((s,i)=>`<span>${i+1}. ${s}</span>`).join('')}</div>
- <small class="rj">Lulus jika akurasi minimal 80% · semua soal wajib dijawab · jawaban salah masuk Review · XP setelah selesai</small></div>
- <button class="pb" id="j5go">▶ Mulai ${ex?'Unit Challenge':'latihan'}</button>`,beranda);
- const m=$('#j5m');onSpeak(m);m.querySelectorAll('.j5play').forEach(b=>b.onclick=ev=>{ev.stopPropagation();const d=j5Static(L).filter(e=>e.L===L&&e.t=='D')[+b.dataset.d];sayAll(d.lines,b.parentNode)});
- $('#j5go').onclick=()=>j5Run(L)}
-function j5Run(L){runQuiz(`N5 · ${nn2(L.no)} ${L.n}`,()=>j5Items(L),beranda,null,{noSkip:true,result:o=>j5Result(o,L.id,L)})}
-function j5RunCP(n){runQuiz(`N5 · Unit ${JN[n.u].u} · Checkpoint ${n.cp}`,()=>j5Check(n),beranda,null,{noSkip:true,result:o=>j5Result(o,n.id,null)})}
+// node di Beranda langsung membuka kuis (tanpa layar materi)
+function j5Run(L){runQuiz(`N5 · ${nn2(L.no)} ${L.n}`,()=>j5Items(L),beranda,null,{noSkip:true,result:o=>j5Result(o,L.id)})}
+function j5RunCP(n){runQuiz(`N5 · Unit ${JN[n.u].u} · Checkpoint ${n.cp}`,()=>j5Check(n),beranda,null,{noSkip:true,result:o=>j5Result(o,n.id)})}
 // layar hasil: akurasi, status (Selesai/Mastery/Perfect), XP; di bawah 80% harus mengulang
-function j5Result(o,id,L){const acc=o.s/o.n,P=PG(),prev=P[id]||0,md=j5Medal(acc),pv=j5Medal(prev),pass=!!md;
+function j5Result(o,id){const acc=o.s/o.n,P=PG(),prev=P[id]||0,md=j5Medal(acc),pv=j5Medal(prev),pass=!!md;
  saveScore(o.title,o.s,o.n);if(acc>prev){P[id]=acc;ST.set('path',P)}
  const bonus=md&&(!pv||(acc>prev&&md.c!=pv.c))?{pass:10,mastery:15,perfect:25}[md.c]:0,xp=o.xp+bonus;addXp(xp);if(pass)ST.set('justDone',id);
  const sec=Math.round((Date.now()-o.t0)/1000),tm=`${Math.floor(sec/60)}:${nn2(sec%60)}`,miss=o.n-o.s;
  view(`<div class="done j5res ${pass?'ok':'no'}"><div class="tro">${pass?md.i:'💪'}</div><h2>${!pass?'Belum lulus':md.c=='perfect'?'Perfect! 完璧！':md.c=='mastery'?'Mastery! すごい！':'Lulus! よくできました'}</h2><p class="rj">${o.title}</p>
  <div class="dstats"><div class="dstat ac"><b>Akurasi</b><span>${Math.round(acc*100)}%</span></div><div class="dstat xp"><b>XP</b><span id="cxp">0</span></div><div class="dstat tm"><b>Waktu</b><span>${tm}</span></div></div>
  <div class="j5bar" aria-hidden="true"><i style="width:${acc*100}%"></i><b></b></div><small class="rj">Garis = batas lulus 80% · 90% Mastery · 100% Perfect</small>
- <p>${pass?`Status: <b>${md.t}</b>${bonus?` · bonus +${bonus} XP`:''}. ${miss?`${miss} soal yang salah masuk Review.`:'Tidak ada kesalahan!'}`:`Butuh akurasi minimal <b>80%</b> untuk lulus (kamu ${o.s} dari ${o.n} benar). ${miss} soal yang salah masuk Review. Pelajari lagi materinya, lalu ulangi.`}</p>
- <button class="pb" id="fin">${pass?'Lanjut':'Ulangi'}</button><button class="pb alt" id="alt">${pass?'Ulangi':'Kembali ke jalur'}</button>${L?'<button class="pb alt" id="mat">Lihat materi</button>':''}</div>`);
+ <p>${pass?`Status: <b>${md.t}</b>${bonus?` · bonus +${bonus} XP`:''}. ${miss?`${miss} soal yang salah masuk Review.`:'Tidak ada kesalahan!'}`:`Butuh akurasi minimal <b>80%</b> untuk lulus (kamu ${o.s} dari ${o.n} benar). ${miss} soal yang salah masuk Review. Coba lagi.`}</p>
+ <button class="pb" id="fin">${pass?'Lanjut':'Ulangi'}</button><button class="pb alt" id="alt">${pass?'Ulangi':'Kembali ke jalur'}</button></div>`);
  countUp($('#cxp'),xp);sfx.done();if(pass)confetti();
- $('#fin').onclick=pass?beranda:o.again;$('#alt').onclick=pass?o.again:beranda;if(L)$('#mat').onclick=()=>j5Learn(L)}
+ $('#fin').onclick=pass?beranda:o.again;$('#alt').onclick=pass?o.again:beranda}
 
 /* ----- tampilan jalur di Beranda ----- */
 function j5Pop(btn,st){const old=document.querySelector('.ppop-ov');const same=old&&old.dataset.id==btn.dataset.id;if(old)old.remove();if(same)return;
@@ -3243,7 +3204,7 @@ function j5Pop(btn,st){const old=document.querySelector('.ppop-ov');const same=o
   const prev=E.slice(0,8).map(e=>e.t=='D'?e.meta.t:e.t=='T'?e.tt:e.t=='Q'?e.j:e.t=='S'?cut(e.j,12):e.j).join('・')||(/gen:/.test(L.s)?'materi dibuat acak setiap latihan':/ulang:/.test(L.s)?'ulangan pelajaran sebelumnya':'');
   h=`<small class="j5pk">UNIT ${U.u} · PELAJARAN ${nn2(L.li+1)}/13${n.k=='T'?' · UNIT CHALLENGE':''}</small><b>${nn2(L.no)} · ${L.n}</b><p><span class="j5chip on">${L.j}</span></p>${prev?`<p class="rj">Materi: ${prev}</p>`:''}
   ${md?`<p class="rj">${md.i} ${md.t} · akurasi terbaik ${Math.round(best*100)}%</p>`:best?`<p class="rj">Terbaik ${Math.round(best*100)}% · butuh 80% untuk lulus</p>`:''}
-  ${S=='lock'?'<p class="rj">🔒 Selesaikan node sebelumnya dengan akurasi minimal 80% untuk membuka pelajaran ini.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI PELAJARAN':best?'ULANGI · BUTUH 80%':n.k=='T'?'MULAI UNIT CHALLENGE':'MULAI PELAJARAN'}</button>`}`}
+  ${S=='lock'?'<p class="rj">🔒 Selesaikan node sebelumnya dengan akurasi minimal 80% untuk membuka pelajaran ini.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI KUIS':best?'ULANGI · BUTUH 80%':n.k=='T'?'MULAI UNIT CHALLENGE':'MULAI KUIS'}</button>`}`}
  else if(n.k=='C'){const best=P[id]||0,a=n.ls[0].no,b=n.ls[4].no;h=`<small class="j5pk">UNIT ${U.u} · CHECKPOINT ${n.cp}</small><b>★ Checkpoint ${n.cp}</b><p>Evaluasi pelajaran ${nn2(a)}–${nn2(b)} · 15 soal dari ${n.ls.map(x=>x.n).join(', ')}.</p>${best?`<p class="rj">Akurasi terbaik ${Math.round(best*100)}%</p>`:''}
   ${S=='lock'?'<p class="rj">🔒 Selesaikan pelajaran sebelumnya dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI CHECKPOINT':'MULAI CHECKPOINT'}</button>`}`}
  else h=S=='lock'?`<small class="j5pk">UNIT ${U.u}</small><b>🎁 Unit Reward</b><p>XP + Lencana ${J5BADGE[n.u]} + unit berikutnya terbuka.</p><p class="rj">🔒 Lulus Unit Challenge (pelajaran ${nn2(U.ls[12].no)}) untuk membuka hadiah ini.</p>`
@@ -3253,7 +3214,7 @@ function j5Pop(btn,st){const old=document.querySelector('.ppop-ov');const same=o
  ov.innerHTML=`<div class="ppop-box ${S}" role="dialog" aria-modal="true"><button class="ppop-close" aria-label="Tutup">✕</button>${h}</div>`;document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),15);
  const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),200)};ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.ppop-close').onclick=close;
  const g=ov.querySelector('#pgo');if(!g)return;
- g.onclick=()=>{ov.remove();if(n.k=='R'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(50);confetti();sfx.done();ST.set('justDone',id);beranda();return}if(n.k=='C')return j5RunCP(n);j5Learn(n.l)}}
+ g.onclick=()=>{ov.remove();if(n.k=='R'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(50);confetti();sfx.done();ST.set('justDone',id);beranda();return}if(n.k=='C')return j5RunCP(n);j5Run(n.l)}}
 function j5Guide(ui){const U=JN[ui],{st,P}=j5State();
  const ov=document.createElement('div');ov.className='qsov';
  ov.innerHTML=`<div class="qset" role="dialog" aria-modal="true" aria-label="Panduan unit"><div class="qsh"><b>📖 Unit ${U.u} · ${U.t}</b><button class="qx" aria-label="Tutup">✕</button></div>
@@ -3261,7 +3222,7 @@ function j5Guide(ui){const U=JN[ui],{st,P}=j5State();
  <p class="rj">★ Checkpoint setelah pelajaran ${nn2(U.ls[4].no)} dan ${nn2(U.ls[9].no)} · 🏆 Unit Challenge = pelajaran ${nn2(U.ls[12].no)} · 🎁 hadiah XP + lencana.</p></div>`;
  document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};
  ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.qx').onclick=close;
- ov.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{ov.remove();j5Learn(J5L[+b.dataset.l-1])})}
+ ov.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{ov.remove();j5Run(J5L[+b.dataset.l-1])})}
 function j5Beranda(){
  const{st,P}=j5State(),s=ST.get('stats',{ans:0,ok:0,last:'',streak:0}),jd=ST.get('justDone','');
  const icon=(n,S)=>{if(n.k=='C')return'<span class="pico-emoji">★</span>';if(n.k=='R')return`<span class="pico-emoji">${S=='done'?'📭':'🎁'}</span>`;if(n.k=='T')return'<span class="pico-emoji">🏆</span>';
