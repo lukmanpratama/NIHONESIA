@@ -14,11 +14,36 @@ Aplikasi punya **navigasi bawah** dengan lima tab:
 
 | Tab | Isi |
 |---|---|
-| 🏠 **Beranda** | **Jalur belajar ala Duolingo** dari materi paling mudah sampai sulit, per level **N5 → N4 → N3 → N2 → N1** (plus Kerja pabrik). Total **1.045 pelajaran**: N5 156, N4 163, N3 270, N2 296, N1 144, Kerja 16. Setiap unit berisi 6 pelajaran (kosakata 語, kanji 漢, bunpo 法, kalimat 文), 🎁 peti hadiah (+20 XP), dan 🏆 ulangan unit. Pelajaran terbuka berurutan; lulus jika benar minimal 60% (★ 60%, ★★ 80%, ★★★ 100%). Ada balon **MULAI**, animasi tombol 3D, maskot, dan 📖 panduan unit berisi semua materi unit beserta suaranya. |
+| 🏠 **Beranda** | **Learning Path** per level **N5 → N4 → N3 → N2 → N1** (plus Kerja pabrik). **N5 · Pemula** memakai kurikulum Nihonesia: **12 unit × 13 pelajaran = 156 pelajaran**, dari huruf sampai Kaiwa (lihat *Jalur N5* di bawah). Level N4–N1 dan Kerja memakai jalur otomatis: setiap unit berisi 6 pelajaran (kosakata 語, kanji 漢, bunpo 法, kalimat 文), 🎁 peti hadiah (+20 XP), dan 🏆 ulangan unit; lulus jika benar minimal 60%. Ada animasi tombol 3D, maskot, dan 📖 panduan unit. |
 | 📚 **Materi** | **日本語学習 (Nihongo Gakushū)**: kartu Hiragana & Katakana, Kanji, **Kotoba**, **Bunpō**, **Kaiwa**, Bun, dan Bilangan. Di dalam setiap kartu, submenu tampil sebagai **tab berikon** yang menempel di bawah header saat di-scroll; Kotoba, Bunpō, dan Kaiwa juga punya pilihan **level N5–N1** (lihat di bawah). |
 | ⚔️ **Quiz** | Kuis cepat per level: Kosakata, Kanji, Bunpo, Kalimat, atau Campuran, dengan pilihan jumlah soal dan tingkat. |
-| 🔁 **Review** | Ulangi soal yang pernah salah, dan ulas materi dari pelajaran Beranda yang sudah selesai. |
-| 📈 **Progres** | Streak, XP, akurasi, kemajuan jalur per level, riwayat kuis, pengaturan suara, dan hapus progres. |
+| 🔁 **Review** | Ulangi soal yang pernah salah, dan ulas materi dari pelajaran Beranda yang sudah selesai (materi yang paling lemah lebih dulu). |
+| 📈 **Progres** | Streak, XP, akurasi, kemajuan jalur per level, **lencana unit N5**, riwayat kuis, pengaturan suara, dan hapus progres. |
+
+## Jalur N5 (Learning Path 156 pelajaran)
+
+Rancangan kurikulum Nihonesia; jumlah dan pembagiannya desain aplikasi, bukan struktur resmi JLPT. Isinya ditulis di `src/jalur-n5.txt`.
+
+| Unit | Materi | Pelajaran |
+|---|---|---|
+| 01 | Hiragana dasar | 1–13 |
+| 02 | Hiragana lanjutan | 14–26 |
+| 03 | Katakana dasar | 27–39 |
+| 04 | Katakana lanjutan & Writing | 40–52 |
+| 05 | Salam, Aisatsu & perkenalan | 53–65 |
+| 06 | Angka, waktu & hitungan | 66–78 |
+| 07 | Kata tunjuk & kata tanya | 79–91 |
+| 08 | Kosakata sehari-hari | 92–104 |
+| 09 | Kanji N5 dasar | 105–117 |
+| 10 | Bunpō N5 dasar | 118–130 |
+| 11 | Dokkai & Chōkai | 131–143 |
+| 12 | Kaiwa & N5 Final Challenge | 144–156 |
+
+- **Pola setiap unit:** pelajaran 1–5 → ★ Checkpoint 1 (evaluasi 01–05) → pelajaran 6–10 → ★ Checkpoint 2 → pelajaran 11–13. Pelajaran ke-13 adalah **Unit Challenge**; setelah lulus, unit berikutnya terbuka dan 🎁 **Unit Reward** (+50 XP + lencana) bisa diambil.
+- **Satu node = satu pelajaran:** materi singkat (huruf, kata, kalimat, dialog, atau bacaan, lengkap dengan suara) lalu rangkaian ±15 soal: Recognition → format utama pelajaran (kolom *Jenis quiz*) → Recall → Construction → Writing → Listening → Final (mengulang materi lama yang paling lemah).
+- **Aturan:** node terkunci sampai node sebelumnya lulus; semua soal wajib dijawab (tidak ada tombol Lewati, kecuali soal bicara yang bisa diganti soal ketik); akurasi di bawah 80% harus diulang; 80–89% **Selesai**, 90–99% **Mastery**, 100% **Perfect** (bonus XP). Jawaban yang salah masuk Review.
+- **Jenis soal:** pilih huruf/arti, dengar, susun huruf/kalimat, lengkapi, cocokkan pasangan, tulis di kanvas, **Text Input** (romaji langsung berubah menjadi Hiragana/Katakana), dikte, gambar → kata, pilih ungkapan/respons, angka & jam (ketik angka), konjugasi ～ます/～ません/～ました, bacaan (pengumuman, pesan, jadwal, paragraf), dialog dengar, roleplay, dan bicara.
+- Tombol 🗂️ **Peta** menampilkan ke-12 unit dan kemajuannya; 📖 di setiap banner unit membuka daftar 13 pelajarannya.
 
 ## Struktur materi: 日本語学習
 
@@ -106,6 +131,7 @@ node build.js
 | `src/kanji.txt` | Kanji. `@Kategori` = kategori. Urutan goresan dan komponen diambil otomatis dari KanjiVG. | `漢\|kun.yomi\|ON,YOMI\|arti\|N5` |
 | `src/bunpo.txt` | Pola tata bahasa. `@N5\|judul\|fokus`, `#Bagian`. Bagian pola dalam contoh ditandai `{…}`. Contoh tambahan ditulis tepat di bawah pola dengan awalan `+`. | `pola\|romaji\|arti\|contoh {pola}。\|romaji\|arti` lalu `+ contoh {pola}。\|romaji\|arti` |
 | `src/bun.txt` | Kalimat sehari-hari. `@Kategori`. | `日本語。\|romaji\|arti` |
+| `src/jalur-n5.txt` | Learning Path N5. `@NN\|judul unit\|target`, lalu `#NNN\|nama\|jenis quiz\|format\|sumber` per pelajaran (harus 12 × 13). Sumber mengambil materi lain (`kana:`, `kj:`, `bp:`, `ku:`, `verb:`, `kd`, `gen:`, `ulang:1-10`). Materi tambahan ditulis di bawah pelajaran; format lengkapnya ada di kepala file. | `W\|jepang\|kana\|romaji\|arti\|ikon\|keterangan`, `S\|kalimat {bagian}\|romaji\|arti\|pengecoh`, `Q\|tanya…\|jawab…`, `C\|A\|dialog…`, `T\|judul\|teks\|romaji\|arti` + `?\|soal\|jawaban\|pengecoh` |
 | `src/kotoba-plus.txt` | Tab Sinonim, Idiom, Onomatope, Formal. `@id\|judul\|keterangan`, `#Kategori` (akhiri dengan ⇔ untuk pasangan kata). Setiap baris diakhiri level. | entri `jepang\|kana\|romaji\|arti\|N3` (boleh ditambah contoh sebelum level), pasangan `jp1\|kana1\|arti1\|jp2\|kana2\|arti2\|N4` |
 | `src/bunpo-topik.txt` | Tab Bunpō Struktur Kalimat, Partikel, Pola dasar (di Pola JLPT), dan topik tab Ekspresi (waktu, sebab, tujuan, kondisi, banding, lawan, tanya). `@id\|judul\|ringkasan`, baris `- penjelasan`, `#Kategori` opsional (tampil sebagai chip). Contoh tambahan dengan awalan `+` di bawah pola. | `pola\|romaji\|arti\|contoh\|romaji contoh\|arti contoh\|N5` lalu `+ contoh\|romaji\|arti` |
 | `src/kaiwa/*.txt` | Dialog, dibagi per file. `@Kategori`, `#Judul dialog` (opsional `#Judul dialog\|N3` untuk menetapkan level; tanpa itu level diperkirakan otomatis). | `Pembicara\|日本語。\|romaji\|arti` |
@@ -146,6 +172,7 @@ src/
   kotoba-plus.txt   ← onomatope, idiom & peribahasa, sinonim & antonim, formal & slang
   bunpo-topik.txt   ← topik bunpō: struktur, partikel, pola dasar, dan ekspresi (waktu, sebab, tujuan, kondisi, banding, lawan, tanya)
   kaiwa/*.txt       ← 500 dialog percakapan per kategori
+  jalur-n5.txt      ← kurikulum Learning Path N5 (12 unit × 13 pelajaran, materi & jenis soal)
   kanjivg/          ← cache data urutan goresan (KanjiVG)
 ```
 
