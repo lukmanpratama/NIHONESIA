@@ -77,6 +77,7 @@
 @Alam & Cuaca
 山|やま|サン|gunung|N5
 川|かわ|セン|sungai|N5
+田|た|デン|sawah|N5
 天|あめ,あま|テン|langit|N5
 気|-|キ,ケ|semangat / udara|N5
 雨|あめ|ウ|hujan|N5
