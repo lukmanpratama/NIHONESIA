@@ -16,7 +16,7 @@ Aplikasi punya **navigasi bawah** dengan lima tab:
 |---|---|
 | 🏠 **Beranda** | **Learning Path** per level **N5 → N4 → N3 → N2 → N1** (plus Kerja pabrik). **N5 · Pemula** memakai kurikulum Nihonesia: **12 unit × 13 pelajaran = 156 pelajaran**, dari huruf sampai Kaiwa (lihat *Jalur N5* di bawah). Level N4–N1 dan Kerja memakai jalur otomatis: setiap unit berisi 6 pelajaran (kosakata 語, kanji 漢, bunpo 法, kalimat 文), 🎁 peti hadiah (+20 XP), dan 🏆 ulangan unit; lulus jika benar minimal 60%. Ada animasi tombol 3D, maskot, dan 📖 panduan unit. |
 | 📚 **Materi** | **日本語学習 (Nihongo Gakushū)**: kartu Hiragana & Katakana, Kanji, **Kotoba**, **Bunpō**, **Kaiwa**, Bun, dan Bilangan. Di dalam setiap kartu, submenu tampil sebagai **tab berikon** yang menempel di bawah header saat di-scroll; Kotoba, Bunpō, dan Kaiwa juga punya pilihan **level N5–N1** (lihat di bawah). |
-| ⚔️ **Quiz** | Kuis cepat per level: Kosakata, Kanji, Bunpo, Kalimat, atau Campuran, dengan pilihan jumlah soal dan tingkat. |
+| ⚔️ **Quiz** | Dua tab. **Berdasarkan materi**: Hiragana & Katakana (pilih Hiragana, Katakana, atau keduanya), Kanji, Kotoba, Bunpō, dan Kaiwa; mode, tingkat, dan jumlah soal diatur sebelum mulai. **Level N5–N1**: daftar level urut N5 → N4 → N3 → N2 → N1; ketuk level untuk **langsung** mulai kuis campuran Kanji, Kotoba, Bunpō, dan Kaiwa level itu (N5 juga Hiragana & Katakana), soal dibagi rata per materi. Skor terbaik tiap level tampil di kartunya. |
 | 🔁 **Review** | Ulangi soal yang pernah salah, dan ulas materi dari pelajaran Beranda yang sudah selesai (materi yang paling lemah lebih dulu). |
 | 📈 **Progres** | Streak, XP, akurasi, kemajuan jalur per level, **lencana unit N5**, riwayat kuis, pengaturan suara, dan hapus progres. |
 
@@ -67,7 +67,7 @@ Bunpō terdiri dari 5 tab: Pola JLPT, Struktur Kalimat, Partikel, Katsuyō, dan 
 
 Kosakata: N5 724, N4 648, N3 1.614, N2 1.981, **N1 536** (total 5.503; kosakata kerja pabrik 124 kata dipakai di jalur Beranda dan tidak ditampilkan di Kotoba). Level onomatope, idiom, sinonim, keigo, dan topik bunpō ditulis di file sumber. Level dialog Kaiwa diperkirakan otomatis dari pola tata bahasa dan keigo yang dipakai (sebagian besar N5–N4), dan bisa ditulis manual.
 
-Setiap submenu punya kuisnya sendiri. Dari tab **Quiz**, kuis Kotoba, Kaiwa, dan Katsuyō memakai semua level; kuis Bunpō memakai level yang sedang dipilih (termasuk **Semua**).
+Setiap submenu punya kuisnya sendiri. Dari tab **Quiz → Berdasarkan materi**, kuis Kotoba dan Kaiwa memakai semua level; kuis Kanji dan Bunpō memakai level yang sedang dipilih di Materi. Kuis Bun, Bilangan, Katsuyō, dan Teka-teki tidak ditampilkan di tab Quiz.
 
 **Menu lain:** Hiragana & Katakana (segmen あ/ア + 5 tab), Kanji (bilah tab Kamus · Struktur · Membaca yang juga tampil di sub halaman; level Semua/N5–N1 di tab Kamus), Bun (daftar kalimat per kategori, tanpa submenu), dan Bilangan. Tab Quiz juga memakai tab berikon *Berdasarkan materi* / *Level N5–N1*.
 
@@ -84,7 +84,7 @@ Setiap submenu punya kuisnya sendiri. Dari tab **Quiz**, kuis Kotoba, Kaiwa, dan
 | **文 Bun** | **274 kalimat sehari-hari** dalam 15 kategori: salam, perkenalan, tempat kerja, belanja, makan, transportasi, kesehatan, telepon, darurat, dan lain-lain. | Jepang → arti, **arti → Jepang**, 🧩 susun kalimat (ada romaji di setiap ubin) |
 | **話 Kaiwa** | **100 unit** percakapan (20 per level N5–N1, 799 kalimat dialog) dan **500 dialog** (1.801 kalimat, level N5–N3) dalam 16 kategori: perkenalan, hubungan & perasaan, telepon, pekerjaan, sekolah, wawancara & administrasi, liburan & wisata, transportasi, makan & minum, belanja, tempat umum, kesehatan, sehari-hari, cuaca & musim, hobi, dan darurat. | Arti kalimat, arti → Jepang, kalimat berikutnya (arti soal & jawaban ditampilkan), lengkapi kalimat, 🎧 dengarkan, 🧩 susun |
 | **数 Bilangan** | Angka Jepang dari 0 sampai jutaan: dasar 0–10, **belasan**, **puluhan**, **ratusan**, **ribuan**, puluhan & ratusan ribu (satuan 万), dan **jutaan** (百万, 千万, 億). Bunyi khusus (さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん) ditandai. Ada **pengubah angka**: ketik angka apa saja untuk melihat kanji, kana, romaji, dan uraiannya. | Jepang → angka, angka → Jepang, susun bacaan, ketik angka, ketik bacaan, bicara, mendengar, ✍️ menulis kanji angka |
-| **🧩 Teka-teki** | **Susun ala Duolingo** (dibuka dari Quiz → Berdasarkan materi): susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. | Semua mode susun |
+| **🧩 Teka-teki** | **Susun ala Duolingo** (saat ini tidak ditautkan dari menu): susun ubin menjadi jawaban untuk Hiragana, Katakana, Kotoba (cara baca kanji), Katsuyō, Bunpo, Kaiwa, dan Bun. | Semua mode susun |
 
 ### Fitur di semua menu
 
