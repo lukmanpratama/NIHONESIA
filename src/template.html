@@ -356,8 +356,9 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 .j5bw .j5bdg{width:52px;height:52px;font-size:24px}
 
 /* ===== Quiz & Review ===== */
-.qhub{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0}
-.qhc:disabled{opacity:.5;cursor:not-allowed;box-shadow:none}
+.lvq .kfn{width:48px;height:48px;border-radius:14px;font-size:16px}.lvq .kfm small{line-height:1.35}
+.lvqm{display:flex;flex-wrap:wrap;gap:2px 10px;margin-top:2px;font-size:12px;color:var(--mut)}
+.lvqr{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:6px;color:var(--ac)}.lvqr small{font-size:12px;font-weight:700;white-space:nowrap}
 .rvc{display:flex;gap:14px;align-items:center;margin-bottom:8px}.rvc b{display:block}.rvc small{color:var(--mut)}.rvi{font-size:34px}
 .lvp{display:grid;grid-template-columns:42px 1fr auto;gap:10px;align-items:center;padding:6px 0}.lvp b{color:var(--ac)}
 
@@ -977,7 +978,8 @@ function modQuiz(fn,label){
  QCAP=o=>queueMicrotask(()=>{quizHub();quizSheet(o,quizHub,label)});
  fn();
  queueMicrotask(()=>{if(QCAP){QCAP=null;quizHub()}})}
-// lembar pengaturan kuis: mode, tingkat, jumlah soal, lalu mulai
+// lembar pengaturan kuis: (pilihan tambahan o.pick) mode, tingkat, jumlah soal, lalu mulai
+// o.pick: {lab, items:[[id, label]], cur, set(id)} — mis. jenis huruf di kuis Hiragana & Katakana; o.title boleh getter
 function quizSheet(o,back,label){
  const ids=Object.keys(o.modes),ok=id=>o.modes[id]&&!o.modes[id].off;
  let sel=(ST.get('qm_'+o.key,null)||[]).filter(ok);if(!sel.length)sel=[ids.find(ok)];
@@ -986,7 +988,8 @@ function quizSheet(o,back,label){
  document.querySelectorAll('.qsov').forEach(x=>x.remove());
  const ov=document.createElement('div');ov.className='qsov';
  ov.innerHTML=`<div class="qset" role="dialog" aria-modal="true" aria-label="Pengaturan kuis"><div class="qsh"><b>${label||'⚙️ Pengaturan kuis'}</b><button class="qx" id="qsx" aria-label="Tutup">✕</button></div>
- <p class="rj" style="margin:0">Materi: <b>${o.title}</b></p>
+ <p class="rj" style="margin:0">Materi: <b id="qstl">${o.title}</b></p>
+ ${o.pick?`<div class="qs-l">${o.pick.lab}</div><div class="chips" id="csp">${o.pick.items.map(([id,lab])=>`<button class="chip2${id==o.pick.cur?' on':''}" data-p="${id}">${lab}</button>`).join('')}</div>`:''}
  <div class="qs-l">Mode kuis <small>· pilih satu atau lebih; jika lebih dari satu, soalnya campuran</small></div>
  <div class="chips" id="csm">${ids.map(id=>{const m=o.modes[id];return`<button class="chip2${sel.includes(id)?' on':''}" data-m="${id}" ${m.off?'disabled':''}><span class="mi">${m.icon||MICON[id]||'⭐'}</span>${m.lab}</button>`}).join('')}</div>
  ${o.modes.bicara&&o.modes.bicara.off?'<p class="rj" style="margin:6px 0 0">🎤 Mode Bicara butuh browser yang mendukung pengenalan suara (mis. Chrome/Edge) dan izin mikrofon.</p>':''}
@@ -996,6 +999,8 @@ function quizSheet(o,back,label){
  document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);
  const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};
  ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('#qsx').onclick=close;
+ ov.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{const id=b.dataset.p;o.pick.cur=id;o.pick.set(id);
+  ov.querySelectorAll('[data-p]').forEach(x=>x.classList.toggle('on',x.dataset.p==id));ov.querySelector('#qstl').textContent=o.title;sfx.tap()});
  ov.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{const id=b.dataset.m;sel=sel.includes(id)?sel.filter(x=>x!=id):[...sel,id];if(!sel.length)sel=[id];ST.set('qm_'+o.key,sel);
   ov.querySelectorAll('[data-m]').forEach(x=>x.classList.toggle('on',sel.includes(x.dataset.m)));sfx.tap()});
  ov.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{qd=b.dataset.d;ST.set('qd',qd);ov.querySelectorAll('[data-d]').forEach(x=>x.classList.toggle('on',x.dataset.d==qd));sfx.tap()});
@@ -1134,13 +1139,18 @@ function chart(name,kata){
  app.querySelectorAll('.kb').forEach(b=>b.onclick=()=>kanaDetail(b.dataset.c,all,name,kata));
  app.querySelectorAll('[data-set]').forEach(b=>b.onclick=()=>{const id=b.dataset.set;ksel=ksel.includes(id)?ksel.filter(x=>x!=id):[...ksel,id];if(!ksel.length)ksel=['dasar'];ST.set('ksel',ksel);
   app.querySelectorAll('[data-set]').forEach(x=>x.classList.toggle('on',ksel.includes(x.dataset.set)))});
- const L=()=>KSETS.filter(x=>ksel.includes(x[0])).flatMap(x=>x[2]).map(c=>({c:cv(c),r:kanaR(c)}));
+ wireStart({key:'kana',title:name,modes:kanaModes(()=>kata),pool:kanaPool(()=>kata),back})}
+// huruf kuis kana dari set terpilih (ksel); sc() = false (Hiragana), true (Katakana), atau 'both' (keduanya)
+const kanaPool=sc=>()=>(sc()=='both'?[false,true]:[sc()]).flatMap(kt=>KSETS.filter(x=>ksel.includes(x[0])).flatMap(x=>x[2]).map(c=>({c:kt?toKata(c):c,r:kanaR(c),kt})));
+function kanaModes(sc){const L=kanaPool(sc),both=()=>sc()=='both',nm=x=>x.kt?'katakana':'hiragana';
+ // pengecoh dari jenis huruf yang sama supaya jawaban tidak ketahuan dari bentuk hurufnya
  const KC={jp:x=>`<span class="big1">${x.c}</span>`,plain:x=>x.c,kana:x=>x.c,r:x=>x.r,a:x=>x.r,say:x=>x.c,hideR:true,roms:false,
-  oth:x=>shuf(L().filter(y=>y.r!=x.r)).slice(0,6),jpOpt:x=>`<span style="font-size:26px">${x.c}</span>`,
+  oth:x=>shuf(L().filter(y=>y.r!=x.r&&y.kt==x.kt)).slice(0,6),jpOpt:x=>`<span style="font-size:26px">${x.c}</span>`,
   lab:{j2a:'Huruf → romaji',a2j:'Romaji → huruf',ketikA:'Ketik romaji'},lblJ2a:'Bagaimana cara bacanya?',lblA2j:'Pilih hurufnya',lblKetikA:'Ketik romajinya',phA:'Ketik romaji, mis. ka'};
- const M=stdModes(KC);
- M.tulis={lab:'Menulis',gen:x=>canWrite(x.c)?{kind:'write',q:x.r,qr:'',say:x.c,chars:[...x.c],ans:`${x.c} <span class="ro">(${x.r})</span>`}:null};
- wireStart({key:'kana',title:name,modes:M,pool:L,back})}
+ const M=stdModes(KC),a2j=M.a2j.gen;
+ M.a2j.gen=x=>({...a2j(x),...(both()?{lbl:`Pilih huruf ${nm(x)}nya`}:{})});
+ M.tulis={lab:'Menulis',gen:x=>canWrite(x.c)?{kind:'write',q:x.r+(both()?` <small class="rj">${nm(x)}</small>`:''),qr:'',say:x.c,chars:[...x.c],ans:`${x.c} <span class="ro">(${x.r})</span>`}:null};
+ return M}
 
 /* ----- KANJI: daftar per kategori, detail + urutan goresan, latihan menulis ----- */
 const kjOpt=k=>`<b style="font-size:24px">${k.k}</b><small>${kjY(k)}</small><small class="ro">${kjYR(k)}</small>`;
@@ -1736,7 +1746,7 @@ const PZ=[
  ['bunpo','法','Susun Bunpo','Susun contoh kalimat tata bahasa'],
  ['kaiwa','話','Susun Kaiwa','Susun kalimat percakapan'],
  ['bun','文','Susun Bun','Susun kalimat sehari-hari']];
-// Teka-teki dibuka dari Quiz → Berdasarkan materi (bukan lagi tab di Bun)
+// Teka-teki: saat ini tidak ditautkan dari menu mana pun (tab Quiz → Berdasarkan materi hanya berisi 5 materi utama)
 function puzzle(){
  view(`${hdr('🧩 Teka-teki')}<p class="lvnote">Susun ubin menjadi jawaban yang benar, seperti di Duolingo. Ketuk ubin untuk memindahkannya, ketuk lagi untuk mengembalikan.</p>
  <div class="row2"><select id="pzl"><option value="">Semua level</option>${['N5','N4','N3','N2','N1','Kerja'].map(x=>`<option ${x==pzL?'selected':''}>${x}</option>`).join('')}</select><div class="qcfg" style="justify-content:flex-end;flex-wrap:wrap">Jumlah soal <select class="qn">${QOPTS.map(x=>`<option ${x==qn?'selected':''}>${x}</option>`).join('')}</select>Tingkat <select class="qd" aria-label="Tingkat kesulitan">${Object.entries(QDIFF).map(([k,v])=>`<option value="${k}" ${k==qd?'selected':''}>${v.lab}</option>`).join('')}</select></div></div>
@@ -2481,7 +2491,7 @@ function kbHomo(){
  if($('#hmore'))$('#hmore').onclick=()=>{hmLim+=60;kbHomo()}}
 
 /* ===== GENERATOR SOAL BERSAMA (Beranda, Quiz, Review) =====
-   Entri: {t:'W'|'K'|'G'|'S', x:data, l:level} */
+   Entri: {t:'W'|'K'|'G'|'S'|'A'|'C', x:data, l:level} — A = huruf kana {c,r,kt}, C = kalimat Kaiwa {j,r,a,t,sp} */
 const big=(s,n)=>`<span class="big1" style="font-size:${n||([...s].length>3?34:[...s].length>2?42:52)}px">${s}</span>`;
 const wOpt=v=>`${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}<small class="ro">${v.r}</small>`;
 const oW=v=>{let o=V.filter(y=>y.l==v.l&&y.t==v.t&&y.a!=v.a&&y.k!=v.k);if(o.length<6)o=V.filter(y=>y.t==v.t&&y.a!=v.a&&y.k!=v.k);return shuf(o).slice(0,6)};
@@ -2489,6 +2499,14 @@ const oK=k=>{let o=KJ.filter(y=>y.l==k.l&&y!==k&&y.a!=k.a);if(o.length<6)o=KJ.fi
 const bpLvRows=L=>{const b=BP.find(x=>x.l==L);return b?bpRows(b):[]};
 const oG=(r,L)=>shuf(bpLvRows(L).filter(y=>y!==r&&!bpSame(y[2],r[2]))).slice(0,6);
 const oS=b=>shuf(BUN.filter(y=>y!==b&&y[3]!=b[3])).slice(0,6);
+// kana (semua set, hiragana + katakana) dan kalimat Kaiwa per level (unit + dialog), untuk kuis Level N5–N1
+let KANAQ=null;const kanaAll=()=>KANAQ||(KANAQ=KSETS.flatMap(x=>x[2]).flatMap(c=>[{c,r:kanaR(c),kt:false},{c:toKata(c),r:kanaR(c),kt:true}]));
+const oA=x=>shuf(kanaAll().filter(y=>y.kt==x.kt&&y.r!=x.r)).slice(0,6);
+const KWLV={};
+const kwLines=L=>KWLV[L]||(KWLV[L]=(()=>{const seen=new Set();
+ return[...KU.u.filter(u=>u.l==L).flatMap(u=>u.d.map(d=>({j:d[1],r:d[2],a:d[3],t:u.t,sp:d[0]}))),...KW.filter(d=>d[3]==L).flatMap(d=>d[2].map(l=>({j:l[1],r:l[2],a:l[3],t:d[1],sp:l[0]})))]
+  .filter(l=>!seen.has(l.j)&&seen.add(l.j))})());
+const oC=(l,L)=>shuf(kwLines(L).filter(x=>x.a!=l.a&&x.j!=l.j)).slice(0,6);
 const GEN={
  W:[v=>({kind:'choice',lbl:'Apa artinya?',q:big(v.j)+(v.j!=v.k?`<br><small style="font-weight:400">${v.k}</small>`:''),qr:v.r,say:v.k,a:v.a,d:oW(v).map(x=>x.a)}),
   v=>{const o=oW(v);return{kind:'choice',lbl:'Pilih bahasa Jepangnya',q:v.a,qr:'',a:wOpt(v),d:o.map(wOpt),nr:true,om:Object.fromEntries([v,...o].map(x=>[wOpt(x),x.a])),say:v.k,sayAfter:v.k}},
@@ -2500,7 +2518,15 @@ const GEN={
  G:[(r,L)=>({kind:'choice',lbl:'Apa arti pola ini?',q:r[0],qr:r[1],a:r[2],d:oG(r,L).map(x=>x[2])}),
   (r,L)=>{const p=x=>`${x[0]}<small class="ro">${x[1]}</small>`;return{kind:'choice',lbl:'Pilih polanya',q:r[2],qr:'',a:p(r),d:oG(r,L).map(p),nr:true}}],
  S:[b=>({kind:'choice',lbl:'Apa arti kalimat ini?',q:`<span style="font-size:21px">${b[1]}</span>`,qr:b[2],say:b[1],a:b[3],d:oS(b).map(x=>x[3])}),
-  b=>{const it=sentItems([{j:b[1],r:b[2],a:b[3]}],BUN.map(x=>({j:x[1],r:x[2]})))[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}]};
+  b=>{const it=sentItems([{j:b[1],r:b[2],a:b[3]}],BUN.map(x=>({j:x[1],r:x[2]})))[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}],
+ A:[x=>({kind:'choice',lbl:'Bagaimana cara bacanya?',q:big(x.c),qr:'',sayAfter:x.c,a:x.r,d:oA(x).map(y=>y.r),e:x.kt?'Katakana':'Hiragana'}),
+  x=>{const op=y=>`<span style="font-size:26px">${y.c}</span>`;return{kind:'choice',lbl:`Pilih huruf ${x.kt?'katakana':'hiragana'}nya`,q:x.r,qr:'',a:op(x),d:oA(x).map(op),nr:true,sayAfter:x.c}},
+  x=>{const op=y=>`<span style="font-size:26px">${y.c}</span>`;return{kind:'choice',lbl:`Dengarkan, lalu pilih huruf ${x.kt?'katakana':'hiragana'}nya`,listen:true,q:'',qr:'',say:x.c,a:op(x),d:oA(x).map(op),nr:true,e:`${x.c} <span class="ro">(${x.r})</span>`}}],
+ C:[(l,L)=>({kind:'choice',lbl:'Apa arti kalimat ini?',q:`<span style="font-size:21px">${l.j}</span>`,qr:l.r,say:l.j,a:l.a,d:oC(l,L).map(x=>x.a),e:`${l.t} · ${l.sp}`}),
+  (l,L)=>{const o=oC(l,L),op=x=>`${x.j}<small class="ro">${x.r}</small>`;return{kind:'choice',lbl:'Pilih kalimat Jepangnya',q:l.a,qr:'',a:op(l),d:o.map(op),nr:true,om:Object.fromEntries([l,...o].map(x=>[op(x),x.a])),sayAfter:l.j}},
+  (l,L)=>({kind:'choice',lbl:'Dengarkan, lalu pilih artinya',listen:true,q:l.j,qr:'',say:l.j,a:l.a,d:oC(l,L).map(x=>x.a),e:`${l.j} <span class="ro">(${l.r})</span>`}),
+  (l,L)=>{const it=sentItems([l],kwLines(L))[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null},
+  (l,L)=>{const it=fillItem(l,kwLines(L));return it?{kind:'choice',...it}:null}]};
 // satu soal dari satu entri: mode pertama (mengenali) atau mode acak lain
 function genItem(en,first){const g=GEN[en.t];if(first)return g[0](en.x,en.l);for(const f of shuf(g)){const it=f(en.x,en.l);if(it)return it}return g[0](en.x,en.l)}
 function mixItems(ents,n){const E=shuf(ents),out=[];for(let i=0;out.length<n&&i<E.length*3;i++){const it=genItem(E[i%E.length],i<Math.min(4,E.length));if(it)out.push(it)}return out}
@@ -3255,108 +3281,55 @@ function j5DoneEnts(){const P=PG(),M=MEM();return J5L.filter(l=>(P[l.id]||0)>=J5
 function j5ReviewItems(n){const E=j5DoneEnts(),B=j5Bag(),top=shuf(E.slice(0,Math.max(n*2,12)));
  for(const e of top){if(B.out.length>=n)break;const c=j5Ctx(e.L);for(const g of shuf(st5(e,'fin')))if(B.push(j5Make(g,e,c)))break}return B.out}
 
-/* ===== QUIZ: semua kuis materi + kuis per level N5–N1 ===== */
-let qzL=ST.get('qzL','N5'),qzTab=ST.get('qzTab','materi');
-const LV_INFO={
- N5:{
-  title:'N5 — Fondasi',tag:'Level awal',
-  desc:'Karakter dasar, kosakata sehari-hari, dan kalimat sederhana.',
-  tahap:[
-   {n:'Tahap 1 — Fondasi tulisan',m:'Hiragana · Katakana · Kanji',d:'Mengenali karakter, membaca kata, memahami arti dan bacaan kanji dasar.'},
-   {n:'Tahap 2 — Pengetahuan bahasa',m:'Kotoba/Goi · Bunpō · Katsuyō',d:'Menguasai kosakata, membentuk kalimat, dan mengubah kata sesuai fungsi.'},
-   {n:'Tahap 3 — Pemakaian bahasa',m:'Kaiwa · Chōkai · Dokkai · Sakubun',d:'Menggunakan bahasa dalam percakapan, audio, bacaan, dan tulisan sederhana.'}
-  ]
- },
- N4:{
-  title:'N4 — Dasar Lanjutan',tag:'Berikutnya',
-  desc:'Pola kalimat yang lebih beragam dan teks pendek.',
-  tahap:[
-   {n:'Tahap 1 — Penguatan tulisan dan kosakata',m:'Hiragana · Katakana · Kanji · Kotoba/Goi',d:'Membaca lebih lancar, memperluas kosakata, dan memahami kanji dalam kata majemuk.'},
-   {n:'Tahap 2 — Pengembangan tata bahasa',m:'Bunpō · Katsuyō',d:'Memahami bentuk て, bentuk biasa, alasan, pengalaman, kewajiban, kemungkinan, dan hubungan antarkalimat.'},
-   {n:'Tahap 3 — Pemahaman dan komunikasi',m:'Kaiwa · Chōkai · Dokkai · Sakubun',d:'Mengikuti percakapan yang lebih panjang, memahami teks praktis, dan menyampaikan pengalaman atau pendapat sederhana.'}
-  ]
- },
- N3:{
-  title:'N3 — Menengah',tag:'Tahap menengah',
-  desc:'Memahami konteks, paragraf, dan percakapan sehari-hari.',
-  tahap:[
-   {n:'Tahap 1 — Kosakata & Kanji Menengah',m:'Kanji N3 · Goi · Kata Majemuk',d:'Memperkaya kosakata abstrak dan membaca kanji dalam berbagai konteks umum.'},
-   {n:'Tahap 2 — Tata Bahasa & Kalimat Kompleks',m:'Bunpō menengah · Pola pengandaian',d:'Menguasai ragam pola kalimat majemuk, nuansa sebab-akibat, dan konjugasi lanjutan.'},
-   {n:'Tahap 3 — Pemahaman Konteks & Wacana',m:'Dokkai · Chōkai · Percakapan alami',d:'Memahami artikel opini, pengumuman, dan percakapan sehari-hari berkecepatan normal.'}
-  ]
- },
- N2:{
-  title:'N2 — Menengah Atas',tag:'Tahap lanjutan',
-  desc:'Bacaan kompleks, bahasa formal, dan nuansa makna.',
-  tahap:[
-   {n:'Tahap 1 — Kosakata Tingkat Lanjut & Kanji',m:'Goi tingkat lanjut · Kanji N2',d:'Memahami istilah bisnis, berita, dan idiom serta kanji bacaan khusus.'},
-   {n:'Tahap 2 — Bahasa Formal & Keigo',m:'Keigo (Sonkeigo, Kenjōgo) · Tata bahasa formal',d:'Menerapkan tata bahasa formal, pola penegasan, serta ekspresi sopan profesional.'},
-   {n:'Tahap 3 — Teks Panjang & Analisis Berita',m:'Teks panjang · Dokkai kritis · Chōkai berita',d:'Menganalisis artikel surat kabar, editorial, dan dialog kerja yang kompleks.'}
-  ]
- },
- N1:{
-  title:'N1 — Lanjutan',tag:'Tahap mahir',
-  desc:'Memahami teks kompleks, argumen, dan ekspresi bernuansa.',
-  tahap:[
-   {n:'Tahap 1 — Ekspresi Bernuansa & Sastra',m:'Kanji N1 · Nuansa bahasa · Ungkapan klasik',d:'Memahami kanji langka, ungkapan sastra, dan diksi bernuansa halus.'},
-   {n:'Tahap 2 — Argumen & Pola Tingkat Mahir',m:'Bunpō N1 · Retorika & Debat',d:'Menguasai pola kalimat abstrak, wacana argumentatif, dan ragam bahasa resmi.'},
-   {n:'Tahap 3 — Dokkai & Chōkai Mahir',m:'Dokkai lanjutan · Chōkai komprehensif',d:'Mencerna kuliah ilmiah, debat abstrak, kritik, dan teks sastra/opini berbobot tinggi.'}
-  ]
- }
-};
+/* ===== QUIZ: kuis per materi (Hiragana & Katakana, Kanji, Kotoba, Bunpō, Kaiwa) + kuis per level, urut N5 → N1 ===== */
+let qzTab=ST.get('qzTab','materi'),kqs=ST.get('kqs','both');
+const KQS={hira:'Hiragana',kata:'Katakana',both:'Hiragana & Katakana'};
+const LV_INFO={N5:['Fondasi','Karakter dasar, kosakata sehari-hari, dan kalimat sederhana.'],
+ N4:['Dasar lanjutan','Pola kalimat yang lebih beragam dan teks pendek.'],
+ N3:['Menengah','Memahami konteks, paragraf, dan percakapan sehari-hari.'],
+ N2:['Menengah atas','Bacaan kompleks, bahasa formal, dan nuansa makna.'],
+ N1:['Lanjutan','Teks kompleks, argumen, dan ekspresi bernuansa.']};
+const lvTitle=L=>`Quiz Level ${L}`;
+// materi kuis level: kana (hanya N5), kanji, kotoba, bunpō, kaiwa; materi dengan kurang dari 4 entri dilewati
+const lvCats=L=>[['A','あア','Kana',L=='N5'?kanaAll():[]],['K','漢','kanji',KJ.filter(k=>k.l==L)],['W','語','kata',V.filter(v=>v.l==L&&v.j[0]!='〜')],
+ ['G','法','pola',bpLvRows(L)],['C','話','kalimat',kwLines(L)]].filter(c=>c[3].length>=4);
+// soal dibagi rata ke setiap materi lalu diacak; soal pertama tiap materi memakai jenis soal mengenali
+function lvItems(L,n){const C=shuf(lvCats(L)),out=[];
+ C.forEach(([t,,,E],i)=>{const k=Math.floor(n/C.length)+(i<n%C.length?1:0),S=shuf(E);
+  for(let j=0,m=0;m<k&&j<S.length*2;j++){const it=genItem({t,x:S[j%S.length],l:L},j==0);if(it){out.push(it);m++}}});
+ return shuf(out)}
+// kuis Hiragana & Katakana: jenis huruf dipilih di lembar pengaturan (Hiragana, Katakana, atau keduanya)
+function kanaQuiz(){const sc=()=>({hira:false,kata:true}[kqs]??'both');
+ quizSheet({key:'kana',get title(){return KQS[kqs]},modes:kanaModes(sc),pool:kanaPool(sc),
+  pick:{lab:'Huruf',items:Object.entries(KQS).map(([k,v])=>[k,k=='both'?'Keduanya':v]),cur:kqs,set:k=>{kqs=k;ST.set('kqs',k)}}},quizHub,'あア Kuis Hiragana & Katakana')}
 function quizHub(){
- if(!LV_INFO[qzL])qzL='N5';
- const cur=LV_INFO[qzL];
- const W=V.filter(v=>v.l==qzL&&v.j[0]!='〜').map(x=>({t:'W',x,l:qzL})),K=KJ.filter(k=>k.l==qzL).map(x=>({t:'K',x,l:qzL})),G=bpLvRows(qzL).map(x=>({t:'G',x,l:qzL}));
- const S=['N5','N4'].includes(qzL)?pathLevel(qzL).seq.filter(l=>l.t=='S').flatMap(l=>l.e):[];
- const C=[['W','語','Kosakata',W,'kata'],['K','漢','Kanji',K,'kanji'],['G','法','Bunpō',G,'pola'],['S','文','Kalimat',S,'kalimat'],['M','⭐','Campuran',[...W,...K,...G,...S],'materi']];
  const MQ=[
-  ['あ','Hiragana','Huruf, menulis, susun',()=>modQuiz(()=>chart('Hiragana',false),'あ Kuis Hiragana')],
-  ['ア','Katakana','Huruf, menulis, susun',()=>modQuiz(()=>chart('Katakana',true),'ア Kuis Katakana')],
+  ['あア','Hiragana & Katakana','Huruf, menulis, susun',kanaQuiz],
   ['漢','Kanji',`${KJ.length} kanji · arti, bacaan, menulis`,()=>{kQ='';modQuiz(kanji,'漢 Kuis Kanji')}],
-  ['語','Kotoba',`${V.length} kata · semua level`,()=>{dT=dF=dL=dQ='';modQuiz(kotoba,'語 Kuis Kotoba')}],
+  ['語','Kotoba',`${V.filter(v=>v.l!='Kerja').length} kata · semua level`,()=>{dT=dF=dL=dQ='';modQuiz(kotoba,'語 Kuis Kotoba')}],
   ['法','Bunpō',`${BP.reduce((s,l)=>s+bpRows(l).length,0)} pola · pilih level`,()=>modQuiz(bunpo,'法 Kuis Bunpō')],
-  ['話','Kaiwa',`${KW.length} dialog`,()=>modQuiz(kaiwa,'話 Kuis Kaiwa')],
-  ['文','Bun',`${BUN.length} kalimat sehari-hari`,()=>modQuiz(bun,'文 Kuis Bun')],
-  ['数','Bilangan','Angka Jepang',()=>modQuiz(angka,'数 Kuis Bilangan')],
-  ['活','Katsuyō',`${KJN.reduce((n,k)=>n+KWL[k[0]].length,0)} kata · kerja, sifat, benda`,()=>modQuiz(katsuyo,'活 Kuis Katsuyō')],
-  ['🧩','Teka-teki','Susun ala Duolingo',puzzle]];
- const grid=(L,k)=>`<div class="grid">${L.map((m,i)=>`<button class="mc" data-q="${k}${i}"><span class="ic">${m[0]}</span><b>${m[1]}</b><small>${m[2]}</small></button>`).join('')}</div>`;
-
+  ['話','Kaiwa',`${KW.length} dialog`,()=>modQuiz(kaiwa,'話 Kuis Kaiwa')]];
  const bodyMat=`<p class="sub">Pilih materi kuis. Mode, tingkat kesulitan, dan jumlah soal dapat diatur sebelum mulai.</p>
- <h3>Kuis per materi</h3>${grid(MQ,'m')}`;
+ <div class="grid">${MQ.map((m,i)=>`<button class="mc" data-q="${i}"${i?'':' style="grid-column:1/-1"'}><span class="ic">${m[0]}</span><b>${m[1]}</b><small>${m[2]}</small></button>`).join('')}</div>`;
 
- const bodyLvl=`<p class="sub">Uji kemampuan per level JLPT N5 sampai N1 sesuai standar kurikulum.</p>
- <div class="card" style="border-left:4px solid var(--ac)">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-   <b style="font-size:18px">${cur.title}</b>
-   <span class="chip" style="font-size:12px;padding:3px 9px;border-radius:99px;background:var(--bg);font-weight:700;color:var(--ac);min-width:0">${cur.tag}</span>
-  </div>
-  <p style="margin:4px 0 10px;font-size:14px;color:var(--fg);line-height:1.4">${cur.desc}</p>
-  <div style="display:grid;gap:8px">
-   ${cur.tahap.map(th=>`<div style="background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px 12px">
-    <div style="font-size:12px;font-weight:800;color:var(--ac);margin-bottom:2px">${th.n}</div>
-    <div style="font-size:13px;font-weight:700;color:var(--fg);margin-bottom:3px">${th.m}</div>
-    <div style="font-size:12px;color:var(--mut);line-height:1.4">${th.d}</div>
-   </div>`).join('')}
-  </div>
- </div>
- <h3>Kuis ${qzL}</h3>
- <div class="qhub">${C.map(([t,ic,lab,E,u])=>`<button class="mc qhc" data-t="${t}" ${E.length<4?'disabled':''}><span class="ic">${ic}</span><b>${lab}</b><small>${E.length?`${E.length} ${u}`:'belum ada untuk level ini'}</small></button>`).join('')}</div>
+ const S=ST.get('scores',{});
+ const bodyLvl=`<p class="sub">Ketuk level untuk langsung mulai kuis. Soal campuran Kanji, Kotoba, Bunpō, dan Kaiwa level itu; N5 juga Hiragana & Katakana.</p>
+ ${JL.map(L=>{const r=S[lvTitle(L)];return`<button class="card kfl lvq" data-lq="${L}"><span class="kfn">${L}</span><span class="kfm"><b>${LV_INFO[L][0]}</b><small class="rj">${LV_INFO[L][1]}</small>
+  <small class="lvqm">${lvCats(L).map(c=>`<span>${c[1]} ${c[0]=='A'?c[2]:c[3].length+' '+c[2]}</span>`).join('')}</small></span>
+  <span class="lvqr">${r?`<small title="Skor terbaik">🏆 ${r.best}%</small>`:''}<span class="lvqp">▶</span></span></button>`}).join('')}
  <div class="card"><div class="qs-l" style="margin-top:0">Jumlah soal</div><div class="chips">${QOPTS.map(x=>`<button class="chip2 n${x==qn?' on':''}" data-n="${x}">${x}</button>`).join('')}</div>
  <div class="qs-l">Tingkat kesulitan</div><div class="chips">${Object.entries(QDIFF).map(([k,v])=>`<button class="chip2${k==qd?' on':''}" data-d="${k}">${v.lab}</button>`).join('')}</div></div>`;
 
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Quiz</h2>${rtBtn()}</div>
- ${snav(itabs([['materi','📚','Berdasarkan materi'],['level','medali','Level N5–N1']],qzTab,'qzt')+(qzTab=='level'?lvSeg(qzL):''))}
+ ${snav(itabs([['materi','📚','Berdasarkan materi'],['level','medali','Level N5–N1']],qzTab,'qzt'))}
  ${qzTab=='materi'?bodyMat:bodyLvl}
  ${navHtml('quiz')}`);
 
  app.querySelectorAll('[data-qzt]').forEach(b=>b.onclick=()=>{sfx.tap();qzTab=b.dataset.qzt;ST.set('qzTab',qzTab);quizHub()});
- app.querySelectorAll('.snav [data-lv]').forEach(b=>b.onclick=()=>{sfx.tap();qzL=b.dataset.lv;ST.set('qzL',qzL);quizHub()});
- app.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{sfx.tap();MQ[+b.dataset.q.slice(1)][3]()});
+ app.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{sfx.tap();MQ[+b.dataset.q][3]()});
  app.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>{qn=+b.dataset.n;ST.set('qn',qn);app.querySelectorAll('[data-n]').forEach(x=>x.classList.toggle('on',+x.dataset.n==qn));sfx.tap()});
  app.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{qd=b.dataset.d;ST.set('qd',qd);app.querySelectorAll('[data-d]').forEach(x=>x.classList.toggle('on',x.dataset.d==qd));sfx.tap()});
- app.querySelectorAll('.qhc').forEach(b=>b.onclick=()=>{const c=C.find(x=>x[0]==b.dataset.t);runQuiz(`Quiz ${qzL} ${c[2]}`,()=>mixItems(c[3],QN()),quizHub)})}
+ app.querySelectorAll('[data-lq]').forEach(b=>b.onclick=()=>{sfx.tap();const L=b.dataset.lq;runQuiz(lvTitle(L),()=>lvItems(L,QN()),quizHub)})}
 
 /* ===== REVIEW: ulangi yang salah + ulas materi yang sudah selesai ===== */
 function review(){
