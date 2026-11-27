@@ -44,7 +44,7 @@ input[type=search],select{width:100%;padding:10px;border-radius:10px;border:1px 
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.stats b{display:block;font-size:24px;color:var(--ac)}.stats small{color:var(--mut);font-size:12px}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .top h1,.top h2{flex:1;min-width:0}
-.rt{flex:none;font:inherit;font-size:13px;border:1px solid var(--bd);background:var(--card);color:var(--mut);border-radius:999px;padding:5px 11px;cursor:pointer;white-space:nowrap}.rt.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.rt{flex:none;font:inherit;font-size:13px;border:1px solid var(--bd);background:var(--card);color:var(--mut);border-radius:999px;padding:5px 11px;cursor:pointer;white-space:nowrap}.rt.on{background:var(--ac);color:#fff;border-color:var(--ac)}.rt:disabled{opacity:.55;cursor:not-allowed}
 .ro{color:var(--mut);font-weight:400}body.noro .ro{display:none}
 .qr{text-align:center;font-size:15px;margin-top:-6px}
 .opt small,.chip small{display:block;font-size:12px;color:var(--mut);font-weight:400}
@@ -188,7 +188,9 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 .big1{font-size:56px;line-height:1.2}
 .tin{width:100%;font:inherit;font-size:18px;padding:12px 14px;border:2px solid var(--bd);border-radius:16px;background:var(--card);color:var(--fg);resize:none;margin-top:4px}
 .tin:focus{outline:none;border-color:var(--blue)}.tin.okt{border-color:var(--ok)}.tin.not{border-color:var(--no);animation:shake .4s}
-.sp2.big{width:96px;height:96px;font-size:44px;margin:10px 0}
+.sp2.big{width:96px;height:96px;font-size:44px;margin:10px 0}.sp2.big:not(.played){animation:sppulse 1.6s ease-in-out infinite}
+@keyframes sppulse{0%,100%{box-shadow:0 4px 0 color-mix(in srgb,var(--blue) 60%,#000),0 0 0 0 color-mix(in srgb,var(--blue) 45%,transparent)}50%{box-shadow:0 4px 0 color-mix(in srgb,var(--blue) 60%,#000),0 0 0 12px transparent}}
+.sph{margin-top:2px}
 .micb{width:96px;height:96px;border-radius:50%;border:0;background:var(--blue);color:#fff;font-size:42px;cursor:pointer;box-shadow:0 5px 0 color-mix(in srgb,var(--blue) 60%,#000);transition:transform .08s}
 .micb:active{transform:translateY(3px);box-shadow:0 2px 0 color-mix(in srgb,var(--blue) 60%,#000)}
 .micb.rec{background:var(--no);box-shadow:0 0 0 0 color-mix(in srgb,var(--no) 60%,transparent);animation:pulse 1.2s infinite}
@@ -248,6 +250,23 @@ details.dlg summary{cursor:pointer;padding:2px 0}details.dlg[open] summary{margi
 
 /* ===== Beranda: jalur belajar ===== */
 .ptop{gap:8px}.plv{width:auto;flex:1;min-width:0;margin:0;padding:7px 10px;font-weight:700;border-width:2px;border-radius:12px}
+.ptitle{font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* kartu level N5 → N1 (langkah bergembok) */
+.lvcard{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:12px 14px 14px;margin:0 0 16px;box-shadow:0 2px 0 var(--bd)}
+.lvsteps{display:flex;align-items:center;gap:3px}
+.lvs{display:flex;align-items:center;gap:5px;flex:none;border:0;background:none;color:var(--fg);font:inherit;font-size:14px;font-weight:700;padding:6px 1px;cursor:pointer;border-radius:8px}
+.lvs:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.lvd{width:20px;height:20px;flex:none;border-radius:50%;border:2px solid var(--mut);display:grid;place-items:center;font-size:11px;line-height:1;color:#fff;background:var(--card)}
+.lvs.cur .lvd{background:var(--fg);border-color:var(--fg)}
+.lvs.done .lvd{background:var(--ok);border-color:var(--ok)}
+.lvs.open{color:var(--mut);font-weight:600}
+.lvs.lock{color:var(--mut);font-weight:500}.lvs.lock .lvd{border-color:var(--bd);background:var(--bg)}
+.lvd svg{width:11px;height:11px;fill:none;stroke:var(--mut);stroke-width:1.8;stroke-linecap:round}.lvd svg rect{fill:var(--mut);stroke:none}
+.lvln{flex:1;min-width:10px;height:2px;border-radius:2px;background:var(--bd)}.lvln.on{background:color-mix(in srgb,var(--mut) 55%,var(--bd))}
+.lvinfo{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:10px 0 6px}.lvinfo b{font-size:15px}
+/* romaji sebagai isi soal (tetap tampil walau romaji OFF) */
+.knr{font-size:30px;font-weight:800;letter-spacing:.5px;color:var(--fg)}.kno{font-size:26px}
+.qbody .qq u{text-decoration-thickness:2px;text-underline-offset:4px}
 .pst{font-weight:800;font-size:15px;color:var(--orange);white-space:nowrap}.pst.xp{color:var(--blue)}
 .pprog{display:grid;gap:6px;margin-bottom:6px}.pprog>div:first-child{display:flex;justify-content:space-between;align-items:baseline}
 .pbar{height:12px;background:var(--bd);border-radius:99px;overflow:hidden}.pbar i{display:block;height:100%;background:var(--ok);border-radius:99px;transition:width .8s cubic-bezier(.3,1.4,.6,1)}
@@ -478,8 +497,11 @@ function sayAll(L,box){try{speechSynthesis.cancel();const sp=chatSp(L),cl=box?[.
 const shuf=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
 /* ===== ROMAJI: tombol ON/OFF di setiap halaman (elemen .ro disembunyikan saat OFF) ===== */
 const rtBtn=()=>`<button class="rt${showR?' on':''}" aria-pressed="${showR}">Romaji ${showR?'ON':'OFF'}</button>`;
-function setR(v){showR=v;ST.set('showR',v);document.body.classList.toggle('noro',!v);
- document.querySelectorAll('.rt').forEach(b=>{b.classList.toggle('on',v);b.setAttribute('aria-pressed',v);b.textContent='Romaji '+(v?'ON':'OFF')})}
+// RO_LOCK: kuis Beranda mematikan romaji (tombol Romaji dinonaktifkan selama kuis); pengaturan pengguna tidak diubah
+let RO_LOCK=false;
+function rtSync(){const lk=RO_LOCK,v=showR&&!lk;document.body.classList.toggle('noro',!v);document.body.classList.toggle('rolock',lk);
+ document.querySelectorAll('.rt').forEach(b=>{b.classList.toggle('on',v);b.setAttribute('aria-pressed',v);b.textContent='Romaji '+(v?'ON':'OFF');b.disabled=lk;b.title=lk?'Romaji dimatikan di kuis Beranda':''})}
+function setR(v){if(RO_LOCK)return;showR=v;ST.set('showR',v);rtSync()}
 document.body.classList.toggle('noro',!showR);
 const hdr=t=>`<div class="top"><button class="bk">←</button><h2>${t}</h2>${rtBtn()}</div>`;
 /* ===== JUMLAH SOAL (berlaku untuk semua kuis, disimpan) ===== */
@@ -510,7 +532,7 @@ function view(h,back){window.onkeydown=null;clearTimeout(QT);document.querySelec
   const xr=x.getBoundingClientRect(),br=b.getBoundingClientRect();
   if(br.left<xr.left)x.scrollLeft-=xr.left-br.left+28;else if(br.right>xr.right)x.scrollLeft+=br.right-xr.right+28});
  // baris chip (.tabs) digeser supaya chip aktif terlihat
- app.querySelectorAll('.tabs:not(.itabs)').forEach(x=>{const b=x.querySelector('.tg.on');if(!b)return;const xr=x.getBoundingClientRect(),br=b.getBoundingClientRect();if(br.right>xr.right)x.scrollLeft+=br.right-xr.right+24});shBk.onclick=back||home;document.querySelectorAll('.rt').forEach(x=>x.onclick=()=>setR(!showR));
+ app.querySelectorAll('.tabs:not(.itabs)').forEach(x=>{const b=x.querySelector('.tg.on');if(!b)return;const xr=x.getBoundingClientRect(),br=b.getBoundingClientRect();if(br.right>xr.right)x.scrollLeft+=br.right-xr.right+24});shBk.onclick=back||home;rtSync();document.querySelectorAll('.rt').forEach(x=>x.onclick=()=>setR(!showR));
  document.querySelectorAll('.qn').forEach(s=>s.onchange=()=>{qn=+s.value;ST.set('qn',qn)});document.querySelectorAll('.qd').forEach(s=>s.onchange=()=>{qd=s.value;ST.set('qd',qd)});scrollTo(0,0)}
 const onSpeak=el=>{el.onclick=e=>{const b=e.target.closest('[data-s]');if(b)speak(b.dataset.s)}};
 
@@ -751,7 +773,7 @@ function prog(){
  view(`<div class="top"><img class="tlogo" src="__LOGO__" alt=""><h2>Progres</h2>${rtBtn()}</div><div class="card stats"><div><b>🔥 ${streakNow(s)}</b><small>hari berturut-turut</small></div><div><b>⚡ ${s.xp||0}</b><small>total XP</small></div><div><b>${s.ans}</b><small>soal dijawab</small></div><div><b>${s.ans?Math.round(s.ok/s.ans*100):0}%</b><small>jawaban benar</small></div></div>
  ${mk.length?`<button class="pb" id="rv">Ulangi soal yang salah (${mk.length})</button>`:'<p class="sub">Belum ada soal yang salah untuk diulang.</p>'}
  <h3>Riwayat kuis</h3>${rows.length?`<div class="card wrap"><table><tr><th>Kuis</th><th>Terbaik</th><th>Terakhir</th><th>Main</th><th>Tanggal</th></tr>${rows.map(([t,r])=>`<tr><td>${t}</td><td>${r.best}%</td><td>${r.last}%</td><td>${r.n}×</td><td>${r.date}</td></tr>`).join('')}</table></div>`:'<p class="sub">Belum ada kuis yang dimainkan.</p>'}
- <h3>Jalur belajar (Beranda)</h3><div class="card">${PLV.map(([L,lab])=>{const PL=L=='N5'?{count:156}:pathLevel(L);if(!PL.count)return'';const d=L=='N5'?j5Done(PG()):PL.seq.filter(l=>pDone(PG(),l.id)).length;return`<div class="lvp"><b>${L}</b><div><div class="pbar"><i style="width:${d/PL.count*100}%"></i></div><small class="rj">${lab}</small></div><span class="rj">${d}/${PL.count}</span></div>`}).join('')}</div>
+ <h3>Jalur belajar (Beranda)</h3><div class="card">${LVS.map(L=>{const{d,n}=lvProg(L);if(!n)return'';return`<div class="lvp"><b>${L}</b><div><div class="pbar"><i style="width:${d/n*100}%"></i></div><small class="rj">${lvName(L)}</small></div><span class="rj">${d}/${n}</span></div>`}).join('')}</div>
  <h3>Lencana Unit N5</h3><div class="card j5bdgs">${J5U.map(U=>{const got=PG()[`J5:u${U.u}r`];return`<div class="j5bw${got?' on':''}"><span class="j5bdg${got?' on':''}">${J5BADGE[U.ui]}</span><small>${U.u} · ${U.t}</small></div>`}).join('')}</div>
  <h3>Pengaturan</h3><div class="card"><button class="tg${sfxOn?' on':''}" id="psfx">Suara efek: ${sfxOn?'ON':'OFF'}</button><button class="tg${auto?' on':''}" id="pauto">Suara otomatis di kuis: ${auto?'ON':'OFF'}</button></div>
  <p class="rj">Progres disimpan di browser perangkat ini.</p><button class="pb alt" id="rs">Hapus semua progres</button>${navHtml('progres')}`);
@@ -834,10 +856,11 @@ function runQuiz(title,makeItems,back,onDone,opt={}){
  const show=()=>{
   if(i>=q.length){if(onDone)onDone({s,n:q.length});return(opt.result||quizDone)({title,s,n:q.length,bs,xp,t0,again:()=>runQuiz(title,makeItems,back,onDone,opt),back})}
   const it=q[i],R=RENDER[it.kind];it._redo=show;
-  view(qShell({title,i,n:q.length,st},R.body(it),it.kind!='write'),back);
+  RO_LOCK=!!opt.noRo;view(qShell({title,i,n:q.length,st},R.body(it),it.kind!='write'),back);RO_LOCK=false;
   if(opt.noSkip&&it.kind!='speak'&&$('#qpass'))$('#qpass').style.display='none';
   const qb=$('.qbody');if(qb&&qb.querySelector('[data-s]'))onSpeak(qb);
-  if(it.say&&$('#sp')){$('#sp').onclick=()=>speak(it.say);if((auto||it.listen||it.autoSay)&&it.kind!='speak')speak(it.say)}
+  // suara hanya diputar saat pengguna mengetuk 🔊 (soal dengar & bicara tidak diputar otomatis)
+  if(it.say&&$('#sp')){$('#sp').onclick=()=>{speak(it.say);$('#sp').classList.add('played')};if(auto&&!it.listen&&!it.autoSay&&it.kind!='speak')speak(it.say)}
   const fin=(ok,head,det,opt={})=>{qStop();if(it.onRes)it.onRes(ok);
    if(ok){s++;st++;bs=Math.max(bs,st);xp+=D.xp;sfx.ok()}else{st=0;sfx.no()}
    if(!opt.tracked)trackStat(ok);
@@ -854,7 +877,7 @@ function runQuiz(title,makeItems,back,onDone,opt={}){
 const sayBtn=it=>(it.sayAfter||it.say)?' <button class="sp" id="sp3" aria-label="Putar suara">🔊</button>':'';
 const detail=(it,ok,ansHtml,extra='')=>(ok?'':qLine('Jawaban benar',`<b class="ans">${ansHtml}</b>${sayBtn(it)}`))+(ok&&ansHtml&&it.kind!='choice'?qLine('Jawaban',`<b class="ans">${ansHtml}</b>${sayBtn(it)}`):'')
  +extra+qLine('Arti',it.mean)+qLine('Arti kalimat soal',it.qa)+(it.e?`<div class="dl">${it.e}</div>`:'');
-const qCard=(it,showQ=true)=>`<div class="qlbl">${it.lbl||'Pilih jawaban yang benar'}</div><div class="card qcard">${showQ&&it.q?`<div class="qq">${it.q}</div>`:''}${showQ&&qRom(it)?`<div class="ro qr">${qRom(it)}</div>`:''}${it.say?`<div style="text-align:center"><button class="sp sp2${it.listen?' big':''}" id="sp" aria-label="Putar suara">🔊</button></div>`:''}</div>`;
+const qCard=(it,showQ=true)=>`<div class="qlbl">${it.lbl||'Pilih jawaban yang benar'}</div><div class="card qcard">${showQ&&it.q?`<div class="qq">${it.q}</div>`:''}${showQ&&qRom(it)?`<div class="ro qr">${qRom(it)}</div>`:''}${it.say?`<div style="text-align:center"><button class="sp sp2${it.listen?' big':''}" id="sp" aria-label="Putar suara">🔊</button>${it.listen||it.autoSay?'<div class="rj sph">Ketuk 🔊 untuk memutar suara (boleh diulang)</div>':''}</div>`:''}</div>`;
 
 const RENDER={
  // ----- pilihan ganda -----
@@ -880,7 +903,7 @@ const RENDER={
     $('#sl').querySelectorAll('.stk').forEach(b=>b.onclick=()=>{sfx.tap();pick=pick.filter(o=>o.x!=b.dataset.x);draw()});
     $('#sb').querySelectorAll('.stk:not(.used)').forEach(b=>b.onclick=()=>{sfx.tap();last=bank.find(o=>o.x==b.dataset.x);pick.push(last);draw()})};
    const answer=pass=>{if(done)return;done=true;const ok=!pass&&pick.map(o=>o.t).join('')===it.tokens.join('');draw();$('#sl').classList.add(ok?'okl':'nol');
-    fin(ok,ok?null:pass?'Dilewati':'Kurang tepat',detail(it,ok,it.ans));if(it.say)speak(it.say)};
+    fin(ok,ok?null:pass?'Dilewati':'Kurang tepat',detail(it,ok,it.ans))};
    $('#qchk').onclick=()=>answer(false);$('#qpass').onclick=()=>answer(true);it._to=()=>answer(true);
    window.onkeydown=e=>{if(e.key=='Enter'&&pick.length){e.preventDefault();answer(false)}else if(e.key=='Backspace'&&pick.length){pick.pop();draw()}};draw()}},
  // ----- ketik jawaban -----
@@ -891,8 +914,7 @@ const RENDER={
    ta.oninput=()=>{$('#qchk').disabled=!ta.value.trim();if(it.mode=='kana')$('#kpvt').textContent=kv()};
    const answer=pass=>{if(done)return;done=true;ta.disabled=true;const v=it.mode=='kana'?kv():ta.value.trim(),r=pass?{ok:false}:it.mode=='num'?{ok:v.replace(/\D/g,'')===String(it.num)}:it.mode=='kana'?{ok:v===it.target}:(it.mode=='jp'?checkJp(v,it):checkArti(v,it.ans));
     ta.classList.add(r.ok?'okt':'not');
-    fin(r.ok,r.ok?(r.near?'Hampir benar!':null):pass?'Dilewati':'Kurang tepat',detail(it,r.ok,it.mode=='jp'?it.ans:esc(it.ans),(r.ok&&r.near?qLine('Perhatikan ejaannya',`<b class="ans">${it.mode=='jp'?it.ans:esc(it.ans)}</b>`):'')+(v&&!r.ok?qLine('Jawabanmu',esc(v),'bad'):'')));
-    if(it.sayAfter)speak(it.sayAfter)};
+    fin(r.ok,r.ok?(r.near?'Hampir benar!':null):pass?'Dilewati':'Kurang tepat',detail(it,r.ok,it.mode=='jp'?it.ans:esc(it.ans),(r.ok&&r.near?qLine('Perhatikan ejaannya',`<b class="ans">${it.mode=='jp'?it.ans:esc(it.ans)}</b>`):'')+(v&&!r.ok?qLine('Jawabanmu',esc(v),'bad'):'')))};
    $('#qchk').onclick=()=>answer(false);$('#qpass').onclick=()=>answer(true);it._to=()=>answer(false);
    ta.onkeydown=e=>{if(e.key=='Enter'&&!e.shiftKey){e.preventDefault();if(ta.value.trim())answer(false)}}}},
  // ----- bicara (pengenalan suara) -----
@@ -1080,7 +1102,7 @@ function writeFree(it,box,done){
  $('#wp').onclick=()=>done(false);
  if($('#wt'))$('#wt').onclick=e=>{trace=e.target.classList.toggle('on');draw()};
  if($('#wg'))$('#wg').onclick=e=>{const on=e.target.classList.toggle('on');$('#wref').hidden=!on&&!$('#wact').dataset.shown};
- $('#wshow').onclick=()=>{$('#wref').hidden=false;$('#wact').dataset.shown=1;if(it.say)speak(it.say);
+ $('#wshow').onclick=()=>{$('#wref').hidden=false;$('#wact').dataset.shown=1;
   $('#wact').innerHTML=`<p class="rj" style="text-align:center;margin:12px 0 6px">Apakah tulisanmu benar?</p><div class="grade"><button class="gx" id="gno" aria-label="Salah">✗</button><button class="gv" id="gyes" aria-label="Benar">✓</button></div>`;
   $('#gno').onclick=()=>done(false);$('#gyes').onclick=()=>done(true)};
  draw()}
@@ -1106,9 +1128,9 @@ function writeStrict(it,box,done){
  const finish=gave=>{fin=true;cv.classList.add('off');
   const ok=!gave&&!hints&&miss<=Math.max(2,Math.round(total*.25));
   if(gave)ci=Math.min(ci,ch.length-1);draw();
-  $('#fb').innerHTML=`<p>${ok?'✅ Benar':gave?'❌ Jawaban':'⚠️ Selesai'}${!gave&&!ok?` (salah ${miss} goresan${hints?', pakai petunjuk':''})`:''}: <b style="font-size:20px">${it.ans}</b></p><button class="pb" id="nx">Lanjut</button>`;
+  $('#fb').innerHTML=`<p>${ok?'✅ Benar':gave?'❌ Jawaban':'⚠️ Selesai'}${!gave&&!ok?` (salah ${miss} goresan${hints?', pakai petunjuk':''})`:''}: <b style="font-size:20px">${it.ans}</b>${it.say?' <button class="sp" id="wsp" aria-label="Putar suara">🔊</button>':''}</p><button class="pb" id="nx">Lanjut</button>`;
   document.querySelectorAll('#wh,#wr,#wg').forEach(b=>b.disabled=true);
-  if(it.say)speak(it.say);$('#nx').onclick=()=>done(ok)};
+  if($('#wsp'))$('#wsp').onclick=()=>speak(it.say);$('#nx').onclick=()=>done(ok)};
  const skipEmpty=()=>{while(ci<ch.length&&!E[ci].length)ci++;if(ci>=ch.length){finish(false);return true}return false};
  const pt=e=>{const r=cv.getBoundingClientRect();return[(e.clientX-r.left)/r.width*109,(e.clientY-r.top)/r.height*109]};
  cv.onpointerdown=e=>{if(fin)return;cv.setPointerCapture(e.pointerId);user=[pt(e)];draw()};
@@ -2580,7 +2602,9 @@ const LGEN={
    v=>{const f=findSent(v);if(!f)return null;const o=oW(v);return{kind:'choice',lbl:'Lengkapi kalimatnya',q:blankQ(f.s.j,f.nd,f.s.a),qr:romBlank(f.s.r,f.nd==v.j||f.nd==v.k?v.r:rom(f.nd)),a:wOpt(v),d:o.map(wOpt),nr:true,sayAfter:f.s.j,e:`${f.s.j} <span class="ro">(${f.s.r})</span>`}},
    v=>{const f=findSent(v);if(!f)return null;const it=sentItems([{j:f.s.j,r:f.s.r,a:f.s.a,sub:`memakai kata: ${v.j}`}],sentIdx().filter(s=>s.p==0))[0];return it?{kind:'susun',lbl:'Susun kalimatnya',...it}:null}],
   pair:v=>({l:`${v.j}${v.j!=v.k?`<small>${v.k}</small>`:''}<small class="ro">${v.r}</small>`,r:v.a,say:v.k})},
- K:{rec:k=>GEN.K[0](k),prod:[k=>GEN.K[1](k),k=>GEN.K[2](k)],pair:k=>({l:`<span style="font-size:24px">${k.k}</span><small class="ro">${kjYR(k)}</small>`,r:k.a,say:k.kun.length?k.kun[0].replace('.',''):k.on[0]})},
+ K:{rec:k=>GEN.K[0](k),prod:[k=>GEN.K[1](k),k=>GEN.K[2](k),
+   k=>{const o=oK(k).filter(x=>kjYR(x)!=kjYR(k));return o.length<2?null:{kind:'choice',lbl:'Bagaimana cara baca kanji ini? (romaji)',q:big(k.k,56),qr:'',a:kjYR(k),d:o.map(kjYR),nr:true,mean:k.a,e:kjRead(k)}},
+   k=>lWrite({t:'K',x:k})],pair:k=>({l:`<span style="font-size:24px">${k.k}</span><small class="ro">${kjYR(k)}</small>`,r:k.a,say:k.kun.length?k.kun[0].replace('.',''):k.on[0]})},
  G:{rec:(r,L)=>GEN.G[0](r,L),
   prod:[(r,L)=>GEN.G[1](r,L),
    (r,L)=>{const m=r[3]&&r[3].match(/\{(.+?)\}/);if(!m)return null;const o=oG(r,L).filter(x=>x[3]&&/\{.+?\}/.test(x[3])).map(x=>x[3].match(/\{(.+?)\}/)[1]).filter(x=>x!=m[1]);if(o.length<2)return null;
@@ -2588,6 +2612,11 @@ const LGEN={
   pair:r=>({l:`${r[0]}<small class="ro">${r[1]}</small>`,r:r[2]})},
  S:{rec:b=>GEN.S[0](b),prod:[b=>GEN.S[1](b)],pair:null}};
 const tag=(it,en)=>{if(!it)return null;it.onRes=ok=>memUpd(memKey(en),ok);return it};
+// soal menulis di kanvas: kanji (petunjuk: arti + bacaan romaji) atau kata kana sampai 5 huruf (petunjuk: arti + romaji)
+function lWrite(en){const x=en.x;
+ if(en.t=='K'){if(!canWrite(x.k))return null;return{kind:'write',q:`${x.a}<br><span class="knr">${kjYR(x)}</span>`,qr:'',say:kjSay(x),chars:[x.k],ans:`${x.k} · ${kjYR(x)}`}}
+ if(en.t=='W'){const k=x.k.replace(/^〜/,'');if([...k].length>5||!canWrite(k))return null;return{kind:'write',q:`${x.a}<br><span class="knr">${x.r}</span>`,qr:'',say:k,chars:[...k],ans:`${k} · ${x.r}`}}
+ return null}
 const genRec=en=>tag(LGEN[en.t].rec(en.x,en.l),en);
 const genProd=en=>{for(const f of shuf(LGEN[en.t].prod)){const it=f(en.x,en.l);if(it)return tag(it,en)}return genRec(en)};
 // soal cocokkan arti dari 3–5 materi sejenis
@@ -2600,21 +2629,28 @@ function reviewEnts(PL,beforeIdx,n){const M=MEM();
   .sort((a,b)=>memOf(M,a)-memOf(M,b)).slice(0,n)}
 // susunan soal satu pelajaran: kenali materi baru → cocokkan → pakai materi baru + ulang materi lama
 function lessonItems(node,PL){
- if(node.k=='T'){const ents=node.ents,out=[];const m=genMatch(shuf(ents));if(m)out.push(m);shuf(ents).slice(0,12).forEach(e=>{const it=genProd(e);if(it)out.push(it)});
-  const m2=genMatch(shuf(ents));if(m2)out.push(m2);return shuf(out).slice(0,15)}
- const news=shuf(node.ls.e),idx=PL.seq.indexOf(node.ls),rev=reviewEnts(PL,idx,6),M=MEM();
+ // Ulasan Unit: 40 soal, bergiliran per pelajaran mulai dari pelajaran pertama unit
+ if(node.k=='T'){const out=[],used=new Set(),m=genMatch(shuf(node.ents));if(m)out.push(m);
+  for(let r=0;out.length<40&&r<8;r++){const b=out.length;for(const l of node.ls){if(out.length>=40)break;const e=shuf(l.e).find(x=>!used.has(x));if(!e)continue;used.add(e);
+    const it=r%3==2?(tag(lWrite(e),e)||genRec(e)):genProd(e);if(it)out.push(it)}if(out.length==b)break}
+  return out}
+ const news=shuf(node.ls.e),idx=PL.seq.indexOf(node.ls),rev=reviewEnts(PL,idx,4),M=MEM();
+ // pemanasan: ulangi soal pelajaran sebelumnya
+ const prev=idx>0?shuf(PL.seq[idx-1].e).slice(0,2).map(genProd).filter(Boolean):[];
  const rec=news.map(genRec).filter(Boolean);
  const mt=genMatch(news),prod=news.slice(0,Math.max(3,Math.ceil(news.length*.6))).map(genProd).filter(Boolean);
+ // menulis diperbanyak: 2 soal tulis kanji / kata per pelajaran
+ const wr=news.map(e=>tag(lWrite(e),e)).filter(Boolean).slice(0,2);
  const recR=e=>e.t=='W'&&Math.random()<.5?tag(GEN.W[2](e.x),e):genRec(e);
  const rv=rev.map(e=>memOf(M,e)<=1?recR(e):genProd(e)).filter(Boolean),rm=rev.length>=3?genMatch(rev):null;
- return[...rec,...(mt?[mt]:[]),...shuf([...prod,...rv,...(rm?[rm]:[])])].slice(0,20)}
+ return[...prev,...rec,...(mt?[mt]:[]),...shuf([...prod,...wr,...rv,...(rm?[rm]:[])])].slice(0,22)}
 const starTxt=v=>{const n=Math.floor(v||0);return n?'★'.repeat(n):'✓ selesai'};
 
 /* ===== BERANDA: JALUR BELAJAR ala Duolingo, N5 → N1 =====
-   Setiap level dibagi menjadi unit berisi 6 pelajaran (kosakata, kanji, bunpo, kalimat) + peti hadiah + trofi ulangan unit.
-   Pelajaran terbuka berurutan dalam satu level; level lain bisa dipilih kapan saja. */
+   N4–N1: setiap unit berisi 20 pelajaran: 19 pelajaran (kosakata, kanji, bunpo, kalimat) + Ulasan Unit (40 soal).
+   Pelajaran terbuka berurutan dalam satu level. Level berikutnya terbuka setelah level sebelumnya selesai. */
 const PLV=[['N5','Pemula'],['N4','Dasar lanjutan'],['N3','Menengah'],['N2','Menengah atas'],['N1','Mahir'],['Kerja','Kerja pabrik']];
-const PT_LAB={W:'Kosakata',K:'Kanji',G:'Bunpo',S:'Kalimat'},PT_IC={W:'語',K:'漢',G:'法',S:'文'};
+const PT_LAB={W:'Kosakata',K:'Kanji',G:'Bunpo',S:'Kalimat',U:'Ulasan'},PT_IC={W:'語',K:'漢',G:'法',S:'文',U:'復'};
 const UCOL=['#58cc02','#ce82ff','#1cb0f6','#ff9600','#ff4b4b','#2bb5a0','#e0a800'];
 const EASYT=['Ungkapan','Kata ganti','Kata tunjuk','Kata tanya','Bilangan','Keterangan waktu'];
 const PATHC={};
@@ -2627,11 +2663,12 @@ function pathLevel(L){if(PATHC[L])return PATHC[L];
  const ch=(a,n,t)=>{const o=[];for(let i=0;i<a.length;i+=n)o.push({t,e:a.slice(i,i+n)});return o};
  const Q={W:ch(W,8,'W'),K:ch(K,5,'K'),G:ch(G,5,'G'),S:ch(S,6,'S')},seq=[];
  while(Object.values(Q).some(a=>a.length))for(const t of['W','W','K','W','G','S'])if(Q[t].length)seq.push(Q[t].shift());
+ // unit terakhir dilengkapi pelajaran "Ulasan campuran" (materi acak dari seluruh level) supaya setiap unit tetap 20 pelajaran
+ const rem=seq.length%19,all=seq.flatMap(l=>l.e);if(rem&&all.length)for(let k=rem;k<19;k++)seq.push({t:'U',e:shuf(all).slice(0,8)});
  seq.forEach((ls,i)=>{ls.id=`${L}:${i}`;ls.no=Object.values(seq.slice(0,i+1)).filter(x=>x.t==ls.t).length});
  const units=[];
- for(let i=0,u=0;i<seq.length;i+=6,u++){const ls=seq.slice(i,i+6),nodes=[];
-  ls.forEach((l,j)=>{nodes.push({k:'L',ls:l,id:l.id});if(j==2&&ls.length>3)nodes.push({k:'C',id:`${L}:c${u}`})});
-  nodes.push({k:'T',id:`${L}:t${u}`,ents:ls.flatMap(l=>l.e)});
+ for(let i=0,u=0;i<seq.length;i+=19,u++){const ls=seq.slice(i,i+19),nodes=ls.map(l=>({k:'L',ls:l,id:l.id}));
+  nodes.push({k:'T',id:`${L}:u${u}`,ents:ls.flatMap(l=>l.e),ls});
   units.push({u,ls,nodes,title:unitTitle(ls),col:UCOL[u%UCOL.length]})}
  return PATHC[L]={L,seq,units,count:seq.length}}
 function unitTitle(ls){const out=[],cnt={};
@@ -2652,6 +2689,21 @@ function pathState(PL){const P=PG(),st={};let blocked=false,cur=null;
  return{st,cur}}
 const lessonEnts=ls=>ls.e;
 let pLv=ST.get('pLv','N5');
+/* ----- kartu level N5 → N1 di atas jalur: level berikutnya terbuka setelah semua pelajaran level sebelumnya selesai ----- */
+const LVS=['N5','N4','N3','N2','N1'];
+const lvName=L=>(PLV.find(x=>x[0]==L)||[])[1]||'';
+function lvProg(L){const P=PG();if(L=='N5')return{d:j5Done(P),n:J5L.length};const ids=pathLevel(L).units.flatMap(u=>u.nodes.map(n=>n.id));return{d:ids.filter(id=>pDone(P,id)).length,n:ids.length}}
+// status semua level: {L:{open,done,p}}; level hanya dihitung jika level sebelumnya terbuka
+function lvStates(){const S={};let open=true;for(const L of LVS){const p=open?lvProg(L):null,done=!!p&&p.n>0&&p.d>=p.n;S[L]={open,done,p};open=open&&done}return S}
+const LOCKSVG='<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="7" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg>';
+function lvStepper(){let S=lvStates();if(!LVS.includes(pLv)||!S[pLv].open){pLv='N5';ST.set('pLv',pLv)}const p=S[pLv].p||lvProg(pLv);
+ return`<section class="lvcard" aria-label="Level belajar N5 sampai N1"><div class="lvsteps">${LVS.map((L,i)=>{const x=S[L],st=L==pLv?'cur':x.done?'done':x.open?'open':'lock';
+  return`${i?`<span class="lvln${x.open?' on':''}"></span>`:''}<button class="lvs ${st}" data-l="${L}" aria-label="${L} ${lvName(L)}${st=='lock'?' (terkunci)':st=='done'?' (selesai)':''}"${L==pLv?' aria-current="step"':''}><span class="lvd">${st=='lock'?LOCKSVG:x.done&&st!='cur'?'✓':''}</span><span class="lvt">${L}</span></button>`}).join('')}</div>
+ <div class="lvinfo"><b>${pLv} · ${lvName(pLv)}</b><span class="rj">${p.d} / ${p.n} pelajaran</span></div><div class="pbar"><i style="width:${p.n?p.d/p.n*100:0}%"></i></div></section>`}
+function lvWire(){app.querySelectorAll('.lvs').forEach(b=>b.onclick=()=>{const L=b.dataset.l,S=lvStates();sfx.tap();
+ if(!S[L].open){const pv=LVS[LVS.indexOf(L)-1];ask(`🔒 Level ${L} masih terkunci. Selesaikan semua pelajaran ${pv} dulu untuk membukanya.`);return}
+ if(L!=pLv){pLv=L;ST.set('pLv',pLv);beranda()}})}
+const homeTop=s=>`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nihonesia"><h2 class="ptitle">Jalur Belajar</h2><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>`;
 // maskot orisinal Nihonesia: matahari (hinomaru) merah duduk di atas buku terbuka navy
 const MASCOT=`<svg class="masc" viewBox="0 0 120 124" aria-hidden="true"><ellipse cx="60" cy="118" rx="36" ry="5" fill="rgba(0,0,0,.14)"/>
 <g class="mb"><circle cx="60" cy="50" r="31" fill="#e20613"/><ellipse cx="49" cy="46" rx="6" ry="7.5" fill="#fff"/><ellipse cx="71" cy="46" rx="6" ry="7.5" fill="#fff"/>
@@ -2673,8 +2725,6 @@ const LANDMARKS=[
 function lessonLabel(ls, seqIndex) {
  const num = String(seqIndex + 1).padStart(2, '0');
  if (ls.t === 'W') {
-  if (seqIndex === 0) return `${num}. Vokal Hiragana`;
-  if (seqIndex === 1) return `${num}. Salam & Aisatsu`;
   const types = ls.e.map(e => e.x.t);
   const t = types.find(x => x) || '';
   if (t.includes('ganti')) return `${num}. Kata Ganti`;
@@ -2691,6 +2741,7 @@ function lessonLabel(ls, seqIndex) {
   return `${num}. Kanji ${c ? c.split(' & ')[0] : 'Dasar'}`;
  }
  if (ls.t === 'G') return `${num}. Pola Kalimat`;
+ if (ls.t === 'U') return `${num}. Ulasan Campuran`;
  if (ls.t === 'S') {
   const c = ls.e[0]?.x[0];
   return `${num}. Kalimat ${c ? c.split(' ')[0] : 'Dasar'}`;
@@ -2699,13 +2750,13 @@ function lessonLabel(ls, seqIndex) {
 }
 
 function beranda(){
- if(pLv=='N5')return j5Beranda();
+ const lvh=lvStepper();if(pLv=='N5')return j5Beranda(lvh);
  const PL=pathLevel(pLv),P=PG(),{st,cur}=pathState(PL),s=ST.get('stats',{ans:0,ok:0,last:'',streak:0});
  const done=PL.seq.filter(l=>pDone(P,l.id)).length,jd=ST.get('justDone','');
  let gi=0;
 
  const units=PL.units.map((u,ui)=>{
-  const nodes=u.nodes,N=nodes.length,stepY=160,lm=LANDMARKS[ui%LANDMARKS.length];
+  const nodes=u.nodes,N=nodes.length,stepY=138,lm=LANDMARKS[ui%LANDMARKS.length];
   const totalH=(N-1)*stepY+130;
   
   const pts=nodes.map((n,j)=>{
@@ -2725,7 +2776,7 @@ function beranda(){
    <div class="plandmark-name">${lm.name}</div>
   </div>`;
 
-  const masHtml=N>3?`<div class="pmasc-slot" style="left:26.5%;top:${65+3*stepY}px"><div class="masc">${MASCOT}</div></div>`:'';
+  const masHtml=N>5?`<div class="pmasc-slot" style="left:26.5%;top:${65+5*stepY}px"><div class="masc">${MASCOT}</div></div>`:'';
 
   const nodesHtml=pts.map(({n,j,x,y})=>{
    const S=st[n.id];
@@ -2742,8 +2793,9 @@ function beranda(){
     title='Peti Hadiah';
     status=isDone?'Dibuka':isCur?'Buka Peti':'Terkunci';
    }else{
-    title=`Ulangan Unit ${ui+1}`;
-    status=isDone?'Selesai':isCur?'Mulai Ulangan':'Terkunci';
+    title=`${String(gi+1).padStart(2,'0')}. Ulasan Unit ${ui+1}`;
+    status=isDone?'Selesai':isCur?'Mulai Ulasan · 40 soal':'Ulasan · 40 soal';
+    gi++;
    }
 
    let icHtml='';
@@ -2771,7 +2823,7 @@ function beranda(){
   return `<section class="unit">
    <div class="uban">
     <div>
-     <small>${pLv} · UNIT ${ui+1}</small>
+     <small>${pLv} · UNIT ${ui+1} · ${u.nodes.length} PELAJARAN</small>
      <b>${u.title}</b>
     </div>
     <button class="uguide" data-u="${ui}" aria-label="Panduan unit">📖</button>
@@ -2787,11 +2839,9 @@ function beranda(){
   </section>`;
  }).join('');
 
- view(`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nihonesia"><select id="plv" class="plv" aria-label="Pilih level">${PLV.filter(([l])=>pathLevel(l).count).map(([l,t])=>`<option value="${l}" ${l==pLv?'selected':''}>${l} · ${t}</option>`).join('')}</select><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>
- <div class="pprog"><div><b>${pLv} · ${PLV.find(x=>x[0]==pLv)[1]}</b><span class="rj">${done} / ${PL.count} pelajaran · 🧠 ${(()=>{const M=MEM();return PL.seq.flatMap(l=>l.e).filter(e=>(memOf(M,e)||0)>=HAFAL).length})()} hafal</span></div><div class="pbar"><i style="width:${PL.count?done/PL.count*100:0}%"></i></div></div>
+ view(`${homeTop(s)}${lvh}
  <div id="path">${units}</div>${navHtml('beranda')}`);
- ST.del('justDone');
- $('#plv').onchange=e=>{pLv=e.target.value;ST.set('pLv',pLv);beranda()};
+ ST.del('justDone');lvWire();
  app.querySelectorAll('.trail-node, .trail-card').forEach(b=>b.onclick=()=>nodePop(b,PL,st));
  app.querySelectorAll('.uguide').forEach(b=>b.onclick=()=>unitGuide(PL.units[+b.dataset.u]));
  const c=app.querySelector('.trail-node.just')||app.querySelector('.trail-node.cur');
@@ -2805,10 +2855,10 @@ function nodePop(btn,PL,st){
  const ov=document.createElement('div');ov.className='qsov ppop-ov';ov.dataset.id=id;
  const preview=es=>es.slice(0,6).map(e=>e.t=='W'?e.x.j:e.t=='K'?e.x.k:e.t=='G'?e.x[0]:e.t=='S'?cut(e.x[1],10):e.x[1]).join('、 ');
  let h='';
- if(node.k=='L'){const ls=node.ls;h=`<b>${lessonLabel(ls,ls.no-1)}</b><p>${ls.e.length} ${ls.t=='W'?'kosakata':ls.t=='K'?'kanji':ls.t=='G'?'pola kalimat':'kalimat'}: ${preview(ls.e)}${ls.e.length>6?'…':''}</p>
+ if(node.k=='L'){const ls=node.ls;h=`<b>${lessonLabel(ls,ls.no-1)}</b><p>${ls.e.length} ${ls.t=='W'?'kosakata':ls.t=='K'?'kanji':ls.t=='G'?'pola kalimat':ls.t=='U'?'materi ulasan':'kalimat'}: ${preview(ls.e)}${ls.e.length>6?'…':''}</p>
   ${S!='lock'?(()=>{const M=MEM(),rv=reviewEnts(PL,PL.seq.indexOf(ls),6).length,hf=ls.e.filter(e=>(memOf(M,e)||0)>=HAFAL).length;return`<p class="rj">✨ ${ls.e.length} materi baru${rv?` · 🔁 ${rv} materi lama diulang`:''}${hf?` · 🧠 ${hf} sudah hafal`:''}</p>`})():''}${S=='lock'?'<p class="rj">🔒 Kerjakan kuis sebelumnya untuk membuka. Nilainya tidak harus sempurna.</p>':`<button class="pb" id="pgo">${S=='done'?`ULANGI KUIS · ${starTxt(P[id])}`:`MULAI KUIS +${QDf().xp*Math.min(12,Math.max(8,ls.e.length+4))} XP`}</button>`}`}
  else if(node.k=='C')h=S=='lock'?'<b>Peti Hadiah</b><p class="rj">🔒 Selesaikan pelajaran sebelumnya untuk membuka peti ini.</p>':S=='done'?'<b>Peti sudah dibuka</b><p class="rj">Kamu sudah mendapat +20 XP dari peti ini.</p>':'<b>Peti hadiah siap!</b><button class="pb" id="pgo">BUKA PETI +20 XP</button>';
- else h=`<b>Ulangan Unit ${node.u.u+1}</b><p>${node.ents.length} materi dari seluruh unit ini.</p>${S=='lock'?'<p class="rj">🔒 Selesaikan semua pelajaran di unit ini dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI ULANGAN':'MULAI ULANGAN'}</button>`}`;
+ else h=`<b>Ulasan Unit ${node.u.u+1}</b><p>40 soal dari ${node.ls.length} pelajaran unit ini, urut dari pelajaran pertama (${node.ents.length} materi).</p>${S=='lock'?'<p class="rj">🔒 Selesaikan semua pelajaran di unit ini dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI ULASAN':'MULAI ULASAN · 40 SOAL'}</button>`}`;
  ov.innerHTML=`<div class="ppop-box ${S}" role="dialog" aria-modal="true"><button class="ppop-close" aria-label="Tutup">✕</button>${h}</div>`;
  document.body.appendChild(ov);
  setTimeout(()=>ov.classList.add('show'),15);
@@ -2818,8 +2868,8 @@ function nodePop(btn,PL,st){
  const g=ov.querySelector('#pgo');if(!g)return;
  g.onclick=()=>{ov.remove();if(node.k=='C'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(20);confetti();sfx.done();ST.set('justDone',id);beranda();return}
   const ents=node.k=='L'?node.ls.e:node.ents,n=node.k=='L'?Math.min(12,Math.max(8,ents.length+4)):15;
-  const title=`${PL.L} · ${node.k=='L'?lessonLabel(node.ls,node.ls.no-1):'Ulangan unit '+(node.u.u+1)}`;
-  runQuiz(title,()=>lessonItems(node,PL),beranda,r=>{const acc=r.s/r.n,P2=PG(),stars=acc==1?3:acc>=.8?2:acc>=.6?1:.1;P2[id]=Math.max(P2[id]||0,stars);ST.set('path',P2);ST.set('justDone',id)})}}
+  const title=`${PL.L} · ${node.k=='L'?lessonLabel(node.ls,node.ls.no-1):'Ulasan unit '+(node.u.u+1)}`;
+  runQuiz(title,()=>lessonItems(node,PL),beranda,r=>{const acc=r.s/r.n,P2=PG(),stars=acc==1?3:acc>=.8?2:acc>=.6?1:.1;P2[id]=Math.max(P2[id]||0,stars);ST.set('path',P2);ST.set('justDone',id)},{noRo:true})}}
 // panduan unit: daftar materi yang dipelajari
 function unitGuide(u){
  const row=e=>e.t=='W'?`<div class="exw"><span class="j">${e.x.j}</span><span class="m">${e.x.k}<span class="ro"> · ${e.x.r}</span><br><small class="rj">${e.x.a}</small></span><button class="sp" data-s="${e.x.k}">🔊</button></div>`
@@ -2831,17 +2881,25 @@ function unitGuide(u){
  document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);onSpeak(ov);
  const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.qx').onclick=close}
 
-/* ===== JALUR N5 (Learning Path): 12 unit × 13 pelajaran dari src/jalur-n5.txt =====
-   Satu node = satu pelajaran (materi singkat + rangkaian soal). Setiap unit: pelajaran 1–5 → ★ Checkpoint 1 →
-   pelajaran 6–10 → ★ Checkpoint 2 → pelajaran 11–13 (13 = Unit Challenge) → 🎁 Unit Reward (XP + lencana).
+/* ===== JALUR N5 (Learning Path): 12 unit × 20 pelajaran dari src/jalur-n5.txt =====
+   Satu node = satu pelajaran (rangkaian soal). Setiap unit: pelajaran 1–19 (di tengahnya ada pelajaran Ulasan dan Menulis)
+   → pelajaran 20 = Ulasan Unit (40 soal dari pelajaran pertama unit) → 🎁 Unit Reward (XP + lencana).
+   Setiap kuis pelajaran mengulang soal pelajaran sebelumnya dan materi lama yang paling lemah.
+   Unit huruf (Hiragana, Katakana) dan Kanji memakai soal huruf ⇄ romaji (tanpa arti di soal): 1 huruf → 2 → 3 → 4 huruf → kata.
    Lulus jika akurasi ≥ 80% (80–89% Selesai, 90–99% Mastery, 100% Perfect); node berikutnya baru terbuka setelah lulus.
    Semua node memakai satu Quiz Engine; jenis soalnya diatur oleh "format" di file kurikulum. */
 const J5PASS=.8,J5BADGE=['あ','ぱ','ア','パ','挨','数','何','語','漢','法','読','話'];
-const J5L=JN.flatMap((u,ui)=>u.ls.map((l,li)=>Object.assign(l,{u:ui,li,id:'J5:'+String(l.no).padStart(3,'0'),fokus:(l.s.match(/fokus:(\S+)/)||[])[1]||''})));
-const J5U=JN.map((u,ui)=>{const nodes=[];
- u.ls.forEach((l,li)=>{nodes.push({k:li==12?'T':'L',l,id:l.id,u:ui});
-  if(li==4||li==9){const cp=li==4?1:2;nodes.push({k:'C',id:`J5:u${u.u}c${cp}`,cp,u:ui,ls:u.ls.slice(li-4,li+1)})}});
- nodes.push({k:'R',id:`J5:u${u.u}r`,u:ui});return{...u,ui,nodes}});
+const J5L=JN.flatMap((u,ui)=>u.ls.map((l,li)=>Object.assign(l,{u:ui,li,last:li==u.ls.length-1,id:'J5:'+String(l.no).padStart(3,'0'),fokus:(l.s.match(/fokus:(\S+)/)||[])[1]||''})));
+// pelajaran ulasan: Ulasan Unit (pelajaran terakhir), ulasan di tengah unit (format ujian), dan ujian akhir
+const j5IsRev=L=>L.last||L.f=='ujian'||L.f=='final';
+// unit fokus huruf ⇄ romaji: Hiragana, Katakana, Kanji
+const J5KNU=new Set(JN.map((u,i)=>/^(Hiragana|Katakana|Kanji)/.test(u.t)?i:-1).filter(i=>i>=0));
+const J5U=JN.map((u,ui)=>({...u,ui,nodes:[...u.ls.map(l=>({k:l.last?'T':'L',l,id:l.id,u:ui})),{k:'R',id:`J5:u${u.u}r`,u:ui}]}));
+// progres jalur lama (12 unit × 13 pelajaran + checkpoint) dipindah ke nomor pelajaran yang baru (sekali saja)
+(()=>{if(ST.get('pathV',1)>=2)return;const P=ST.get('path',{}),M=Object.fromEntries('1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9,10:10,12:11,13:20,14:21,15:22,16:23,17:24,18:25,19:26,20:27,21:28,22:29,23:30,24:33,25:34,26:40,27:41,28:42,29:43,30:44,31:45,32:46,33:47,34:48,35:49,36:50,38:51,39:60,40:61,41:63,42:64,43:66,44:67,45:68,47:74,48:75,49:76,50:77,51:78,52:80,53:81,54:82,55:83,56:84,57:86,58:87,59:88,60:89,61:92,62:93,63:94,64:95,65:100,66:101,67:102,68:103,69:104,70:106,71:107,72:108,73:109,74:112,75:113,76:114,77:115,78:120,79:121,80:122,81:123,82:124,83:126,84:127,85:128,86:129,87:132,88:133,89:134,90:135,91:140,92:141,93:142,94:143,95:144,96:146,97:147,98:148,99:149,100:152,101:153,102:154,103:155,104:160,105:161,106:163,107:164,108:165,109:166,110:168,111:169,112:170,113:171,114:172,115:173,116:178,117:180,118:181,119:182,120:183,121:184,122:186,123:187,124:188,125:189,126:192,127:193,128:194,129:195,130:200,131:201,132:202,133:203,134:204,135:206,136:207,137:208,138:209,139:212,140:213,141:214,142:215,143:220,144:221,145:222,146:223,147:224,148:226,149:227,150:228,151:229,152:232,153:233,154:234,155:235,156:240'.split(',').map(x=>x.split(':').map(Number))),out={};
+ for(const[k,v]of Object.entries(P)){const m=/^J5:(\d{3})$/.exec(k);
+  if(m){const n=M[+m[1]];if(n){const id='J5:'+String(n).padStart(3,'0');out[id]=Math.max(out[id]||0,v)}}else if(!/^J5:u\d+c\d$/.test(k))out[k]=v}
+ ST.set('path',out);ST.set('pathV',2)})();
 const J5N=J5U.flatMap(u=>u.nodes);
 const nn2=n=>String(n).padStart(2,'0');
 const j5Medal=a=>a>=1?{c:'perfect',t:'Perfect',i:'💎'}:a>=.9?{c:'mastery',t:'Mastery',i:'🏅'}:a>=J5PASS?{c:'pass',t:'Selesai',i:'✅'}:null;
@@ -2860,13 +2918,13 @@ const uniq=(a,f)=>{const s=new Set();return a.filter(x=>{const v=f(x);if(v==null
 const jOpt=e=>`${e.j}${e.k&&e.k!=e.j?`<small>${e.k}</small>`:''}${e.r?`<small class="ro">${e.r}</small>`:''}`;
 const J5SAY={円:'えん',日:'ひ',月:'つき',年:'とし',時:'とき',分:'ふん',万:'まん',千:'せん',百:'ひゃく',人:'ひと'};
 const kjSay=k=>J5SAY[k.k]||(KCAT[k.k]=='Angka & Hitungan'&&k.on.length?toHira(k.on[0]):k.kun.length?k.kun[0].replace(/[.\-]/g,''):toHira(k.on[0]||k.k));
-const j5H=(c,L)=>({t:'H',j:c,k:c,r:kRom(c),a:kRom(c),say:c,key:'H:'+c,L});
-const j5W=(w,L)=>({t:'W',j:w[0],k:w[1],r:w[2],a:w[3],ic:w[4]||'',n:w[5]||'',say:w[1].replace(/^〜/,''),key:'W:'+w[0]+'|'+w[1],L,num:/^\d+$/.test(w[3])?+w[3]:null});
+const j5H=(c,L)=>({t:'H',j:c,k:c,r:kRom(c),a:kRom(c),say:c,key:'H:'+c,L,kn:true});
+const j5W=(w,L)=>({t:'W',j:w[0],k:w[1],r:w[2],a:w[3],ic:w[4]||'',n:w[5]||'',say:w[1].replace(/^〜/,''),key:'W:'+w[0]+'|'+w[1],L,num:/^\d+$/.test(w[3])?+w[3]:null,kn:J5KNU.has(L.u)});
 const j5S=(s,L)=>{const m=s[0].match(/\{(.+?)\}/),j=s[0].replace(/[{}]/g,'');return{t:'S',j,raw:s[0],r:s[1],a:s[2],bl:m?m[1]:'',d:s[3]?s[3].split(',').map(x=>x.trim()).filter(Boolean):[],alt:s[4]||'',say:j,key:'S:'+j,L}};
 const j5Q=(q,L)=>({t:'Q',j:q[0],r:q[1],a:q[2],res:{j:q[3],r:q[4],a:q[5]},say:q[0],key:'Q:'+q[0]+'|'+q[3],L});
 const j5D=(lines,meta,L)=>({t:'D',lines,meta,j:meta.t,key:'D:'+L.no+':'+meta.t,L});
 const j5T=(t,L)=>({t:'T',j:t.j,r:t.r,a:t.a,tt:t.t,q:t.q,say:t.j.split(' / ').map(x=>x.replace(/^[A-Z]:\s*/,'')).join('　'),key:'T:'+t.t,L});
-const j5K=(k,L)=>{const x=L.K[k.k]||[];return{t:'K',x:k,j:k.k,k:kjY(k),r:kjYR(k),a:k.a,ic:x[0]||'',n:x[1]||'',say:kjSay(k),key:'K:'+k.k,L}};
+const j5K=(k,L)=>{const x=L.K[k.k]||[];return{t:'K',x:k,j:k.k,k:kjY(k),r:kjYR(k),a:k.a,ic:x[0]||'',n:x[1]||'',say:kjSay(k),key:'K:'+k.k,L,kn:J5KNU.has(L.u)}};
 const j5G=(r,L)=>({t:'G',x:r,j:r[0],r:r[1],a:r[2],key:'G:'+r[0],L});
 const j5V=(v,L)=>({t:'V',x:v,f:katsu(v),j:v.j,k:v.k,r:v.r,a:v.a,say:v.k,key:'V:'+v.j,L});
 // materi tetap satu pelajaran (disimpan); "ulang:" menggabungkan materi pelajaran lain
@@ -2933,7 +2991,30 @@ function j5Near(e){if(e.near)return e.near;const m=/^([一二三四五六七八�
  out.delete(e.k);out.delete('');return e.near=[...out]}
 
 /* ----- konteks soal: materi pelajaran + pool pengecoh (materi unit yang sudah dipelajari) ----- */
-function j5Ctx(L){const E=[...j5Static(L),...j5Gen(L)],words=j5Words(L);
+/* ----- rangkaian huruf untuk unit huruf: gab:2, gab:3, gab:4, gab:2-4, gab:kata -----
+   Dibuat dari huruf yang sudah dipelajari (Hiragana di unit 1–2, Katakana di unit 3–4) dan wajib memuat huruf unit itu.
+   Kata asli diutamakan (artinya tampil setelah menjawab); sisanya rangkaian acak. Berganti setiap latihan. */
+function j5Learned(L){const kt=L.u>=2,all=new Set(),own=new Set();
+ J5L.filter(x=>x.no<=L.no&&(kt?x.u>=2&&x.u<=3:x.u<=1)).forEach(x=>{const ks=((x.s.match(/kana:(\S+)/)||[])[1]||'').split(',').filter(Boolean);if(x.fokus)ks.push(x.fokus);
+  ks.forEach(t=>{all.add(t);if(x.u==L.u)own.add(t)})});
+ return{kt,all,own}}
+const J5NOSTART=['ん','ン','っ','ッ','ー'];
+// aturan rangkaian: tidak diawali ん/っ/ー, っ hanya sebelum konsonan k/s/t/p/c, ー tidak setelah ん/っ/ー
+const j5TokOk=tk=>tk.length>0&&!J5NOSTART.includes(tk[0])&&!/^[っッ]$/.test(tk[tk.length-1])&&tk.every((t,i)=>!(t=='ー'&&J5NOSTART.includes(tk[i-1]))&&!(/^[っッ]$/.test(t)&&!/^[kstpc]/.test(kRom(tk[i+1]||'')))&&!(/^[んン]$/.test(t)&&/^[んン]$/.test(tk[i-1]||'')));
+const J5GABC={};
+function j5Gab(L){const m=L.s.match(/gab:(\S+)/);if(!m)return[];const sp=m[1],kata=sp=='kata',rg=sp.split('-').map(Number),a=kata?2:rg[0],b=kata?6:(rg[1]||rg[0]);
+ const{kt,all,own}=j5Learned(L),okTok=tk=>tk.length>=a&&tk.length<=b&&tk.every(t=>all.has(t))&&(!own.size||tk.some(t=>own.has(t)));
+ if(!J5GABC[L.no]){const cur=J5L.filter(x=>x.u==L.u&&x.no<=L.no).flatMap(x=>x.W).map(w=>[w[1]||w[0],w[2],w[3],'N5']);
+  const src=kt?[...cur,...V.filter(v=>/^[ァ-ヺー]+$/.test(v.j)).map(v=>[v.j,v.r,v.a,v.l]),...KK.kata.map(x=>[x[0],x[1],x[2],'x'])]
+   :[...cur,...V.filter(v=>/^[ぁ-ゖ]+$/.test(v.k)&&v.j[0]!='〜').map(v=>[v.k,v.r,v.a,v.l]),...KK.hira.map(x=>[x[0],x[1],x[2],'x'])];
+  J5GABC[L.no]=uniq(src.filter(x=>isKt(x[0])==kt&&okTok(j5Tok(x[0]))),x=>x[0])}
+ const real=[...shuf(J5GABC[L.no].filter(x=>x[3]=='N5')),...shuf(J5GABC[L.no].filter(x=>x[3]!='N5'))].slice(0,kata?14:7),seen=new Set(real.map(x=>x[0])),out=real.map(x=>[x[0],x[1],x[2]]);
+ // rangkaian acak dari huruf yang sudah dipelajari
+ const T=[...all].filter(t=>!/^[をヲぢづヂヅ]$/.test(t)),ownT=[...own].filter(t=>T.includes(t));
+ for(let k=0;out.length<(kata?8:12)&&k<400&&T.length;k++){const n=kata?rnd(3,4):rnd(a,b),tk=Array.from({length:n},()=>shuf(T)[0]);
+  if(ownT.length&&!tk.some(t=>own.has(t)))tk[rnd(0,n-1)]=shuf(ownT)[0];const s=tk.join('');if(seen.has(s)||!j5TokOk(j5Tok(s)))continue;seen.add(s);out.push([s,rom(s),''])}
+ return out.map(x=>Object.assign(j5W([x[0],x[0],x[1],x[2]],L),{gab:true}))}
+function j5Ctx(L){const E=[...j5Static(L),...j5Gen(L),...j5Gab(L)],words=j5Words(L);
  const pool=uniq([...E,...J5L.filter(x=>x.u==L.u&&x.no<=L.no).flatMap(j5Static),...words],e=>e.key);
  const kp=pool.filter(e=>e.t=='H'&&e.j.length==1).map(e=>e.j);
  return{L,E,pool,words,kanaPool:kp.length>=8?kp:(kp.some(isKt)?KATA:HIRA),used:{}}}
@@ -3038,8 +3119,8 @@ const G5={
   const E=uniq(uniq(shuf(c.E.filter(x=>x.t==e.t&&['H','W','K','V','Q'].includes(x.t))),x=>pr(x).r),x=>pr(x).l).slice(0,5);if(E.length<3)return null;
   return{kind:'match',lbl:e.t=='H'?'Cocokkan huruf dengan bunyinya':e.t=='Q'?'Cocokkan ungkapan dengan jawabannya':'Cocokkan dengan artinya',pairs:E.map(x=>({...pr(x),key:'J:'+x.key}))}},
  // Writing: tulis huruf/kanji di kanvas
- tulis(e,c){let ch;if(e.t=='H')ch=[...e.j];else if(e.t=='K')ch=[e.j];else if(e.t=='W'&&[...e.k].length<=3)ch=[...e.k];else return null;if(!canWrite(ch.join('')))return null;
-  return{kind:'write',q:e.t=='K'?`${e.a}<br><small>${e.k}</small>`:e.t=='H'?big(e.r,40):e.a,qr:e.t=='W'?e.r:'',say:e.say,chars:ch,ans:`${ch.join('')} <span class="ro">(${e.r})</span>`}},
+ tulis(e,c){let ch;const kk=(e.k||'').replace(/^〜/,'');if(e.t=='H')ch=[...e.j];else if(e.t=='K')ch=[e.j];else if((e.t=='W'||e.t=='V')&&[...kk].length<=5)ch=[...kk];else return null;if(!canWrite(ch.join('')))return null;
+  return{kind:'write',q:e.t=='H'?big(e.r,40):`${e.a}<br>${knR(e.r)}`,qr:'',say:e.say,chars:ch,ans:`${ch.join('')} · ${e.r}`}},
  // bedakan seion / dakuon / handakuon
  beda(e,c){if(e.t!='H')return null;const R=['かきくけこ|がぎぐげご','さしすせそ|ざじずぜぞ','たてと|だでど','はひふへほ|ばびぶべぼ|ぱぴぷぺぽ'].map(x=>x.split('|'));
   const row=R.find(r=>r.some(s=>s.includes(e.j)));if(!row)return null;const v=rnd(0,row[0].length-1),set=row.map(s=>s[v]),ans=shuf(set)[0];
@@ -3051,7 +3132,7 @@ const G5={
    return{kind:'choice',lbl:'Huruf apa ini?',q:big(e.j,84),qr:'',a:e.r,d:[...new Set(grp.map(kRom))].filter(x=>x!=e.r),sayAfter:e.say}}
   if(e.t!='W')return null;const sw={シ:'ツ',ツ:'シ',ソ:'ン',ン:'ソ'},ch=[...e.k],vs=new Set();
   ch.forEach((x,i)=>{if(sw[x]){const y=[...ch];y[i]=sw[x];vs.add(y.join(''))}});vs.add(ch.map(x=>sw[x]||x).join(''));vs.delete(e.k);if(!vs.size)return null;
-  return{kind:'choice',lbl:'Pilih tulisan yang benar',q:`<span style="font-size:26px;font-weight:800">${e.r}</span><br><small class="rj" style="font-weight:400">${e.a}</small>`,qr:'',a:e.k,d:[...vs],nr:true,sayAfter:e.say}},
+  return{kind:'choice',lbl:'Pilih tulisan yang benar',q:knR(e.r)+(e.kn?'':`<br><small class="rj" style="font-weight:400">${e.a}</small>`),qr:'',a:e.k,d:[...vs],nr:true,mean:e.kn?knMean(e):'',sayAfter:e.say}},
  // gambar → kata / kanji
  gambar(e,c){if(!e.ic)return e.t=='K'?G5.kPilih(e,c):G5.a2j(e,c);const cap=e.n?`<br><small class="rj" style="font-weight:400">${e.n}</small>`:'';
   if(e.t=='K'){const o=oth5(e,c,x=>x.j);if(o.length<2)return null;const op=x=>`<b style="font-size:30px">${x.j}</b>`;return{kind:'choice',lbl:'Kanji mana yang cocok dengan gambar ini?',q:`<span class="j5pic">${e.ic}</span>${cap}`,qr:'',a:op(e),d:o.map(op),nr:true,mean:e.a,sayAfter:e.say}}
@@ -3152,13 +3233,79 @@ const G5={
   return{kind:'choice',lbl:`Dengarkan, lalu jawab: ${Q[0]}`,q:'',listen:true,qr:'',say:e.say,a:Q[1],d:[...d],e:`${e.j}<br><span class="ro">${e.r}</span><br>${e.a}`}},
  // pola Bunpō
  gArti(e){return e.t=='G'?GEN.G[0](e.x,'N5'):null},gPilih(e){return e.t=='G'?GEN.G[1](e.x,'N5'):null},gIsi(e){return e.t=='G'?LGEN.G.prod[1](e.x,'N5'):null}};
-G5.arti=(e,c)=>G5[Math.random()<.5?'j2a':'a2j'](e,c);G5.r2j=G5.a2j;G5.j2r=G5.j2a;G5.angkaK2=G5.angkaK;
+G5.arti=(e,c)=>G5[Math.random()<.5?'j2a':'a2j'](e,c);G5.r2j=G5.a2j;G5.j2r=G5.j2a;G5.angkaK2=G5.angkaK;G5.kj2r=G5.kBaca;G5.kr2j=G5.j2k;
+
+/* ----- soal fokus huruf ⇄ romaji (unit Hiragana, Katakana, Kanji) -----
+   Soal memakai romaji, bukan arti: romaji → huruf, huruf → romaji, susun & lengkapi dari romaji, tulis dari romaji,
+   dengar → huruf. Arti kata hanya tampil di panel hasil. Romaji soal ditulis dengan .knr supaya tetap tampil saat romaji OFF. */
+const knKj=e=>e.t=='K'||/[一-龯々〇]/.test(e.j);
+const knTok=e=>e.t=='K'?[e.j]:knKj(e)?[...e.j]:j5Tok(e.j);
+const knR=r=>`<span class="knr">${r}</span>`;
+const knOp=s=>`<span class="kno">${s}</span>`;
+const knMean=e=>e.t=='H'||!e.a||e.a==e.r?'':e.a;
+const knAns=e=>`${e.j} · ${e.r}`;
+// huruf untuk ubin & pengecoh: huruf di pool dengan jenis tulisan yang sama, atau tabel dasar
+function knToks(c,kt){const t=uniq(c.pool.filter(x=>x.t=='H'&&isKt(x.j)==kt).map(x=>x.j),x=>x);return t.length>=8?t:(kt?KATA:HIRA)}
+const knKanjiPool=c=>uniq([...c.pool.filter(x=>x.t=='K').map(x=>x.j),...c.pool.filter(x=>x.t=='W'&&knKj(x)).flatMap(x=>[...x.j].filter(ch=>/[一-龯々]/.test(ch)))],x=>x);
+// romaji "hampir benar": vokal panjang / huruf ganda dihilangkan
+const knNear=e=>e.t=='K'?[]:[e.r.replace(/([aiueo])\1/,'$1'),e.r.replace(/([kstpgdbcz])\1/,'$1'),e.r.replace(/ou/,'o'),e.r.replace(/ei/,'e'),e.r.replace(/ii/,'i')].filter(x=>x!=e.r);
+// pengecoh sejenis: materi pool (panjang sama didahulukan) + rangkaian palsu (satu huruf/kanji diganti yang mirip)
+function knOth(e,c,needR){const kj=knKj(e),kt=isKt(e.j),tk=knTok(e),n=tk.length,isK=e.t=='K';
+ // huruf tunggal dibandingkan dengan huruf tunggal, rangkaian dengan rangkaian; panjang yang paling dekat didahulukan
+ const cand=shuf(c.pool.filter(x=>x!==e&&x.kn&&(x.t=='K')==isK&&knKj(x)==kj&&(kj||isKt(x.j)==kt)&&x.j!=e.j&&x.r!=e.r&&(knTok(x).length>1)==(n>1)));
+ const dist=x=>Math.abs(knTok(x).length-n)*10+Math.abs(x.j.length-e.j.length);
+ let out=uniq(cand.map((x,i)=>[dist(x),i,x]).sort((p,q)=>p[0]-q[0]||p[1]-q[1]).map(z=>z[2]),x=>x.j).map(x=>({j:x.j,r:x.r,say:x.say}));
+ if(out.length<5&&!isK){const pool=kj?knKanjiPool(c):knToks(c,kt);
+  for(let t=0;t<60&&out.length<6;t++){const y=[...tk],i=rnd(0,n-1),o=y[i],isKj=/[一-龯々]/.test(o);if(kj&&!isKj)continue;
+   const alt=shuf([...(kj?[]:j5Look(o,c).slice(0,3)),...shuf(pool).slice(0,4)]).find(x=>x!=o&&(!kj||/[一-龯々]/.test(x)));if(!alt)continue;y[i]=alt;
+   const sj=y.join('');if(sj==e.j||out.some(x=>x.j==sj)||(!kj&&!j5TokOk(j5Tok(sj))))continue;
+   const r=kj?'':rom(sj);if(!kj&&(r==e.r||out.some(x=>x.r==r)))continue;out.push({j:sj,r})}}
+ if(needR)out=out.filter(x=>x.r&&x.r!=e.r);
+ return out.slice(0,6)}
+const KN5={
+ // romaji → pilih huruf / kanji
+ r2j(e,c){const o=knOth(e,c);if(o.length<2)return null;const kj=knKj(e);
+  return{kind:'choice',lbl:kj?'Pilih kanji untuk bacaan ini':isKt(e.j)?'Pilih Katakana untuk romaji ini':'Pilih Hiragana untuk romaji ini',q:knR(e.r),qr:'',a:knOp(e.j),d:o.map(x=>knOp(x.j)),nr:true,mean:knMean(e),sayAfter:e.say,e:e.t=='K'?kjRead(e.x):''}},
+ // huruf / kanji → pilih romaji
+ j2r(e,c){const o=knOth(e,c,true),d=[...new Set([...knNear(e).slice(0,2),...o.map(x=>x.r)])].filter(x=>x&&x!=e.r);if(d.length<2)return null;
+  return{kind:'choice',lbl:e.t=='K'?'Bagaimana cara baca kanji ini? (romaji)':'Apa romajinya?',q:big(e.j,e.t=='K'?64:undefined),qr:'',a:e.r,d,nr:true,mean:knMean(e),sayAfter:e.say,e:e.t=='K'?kjRead(e.x):''}},
+ // dengarkan (ketuk 🔊) → pilih huruf / kanji
+ dengar(e,c){const o=knOth(e,c).filter(x=>!x.say||x.say!=e.say);if(o.length<2)return null;
+  return{kind:'choice',lbl:knKj(e)?'Dengarkan, lalu pilih kanjinya':'Dengarkan, lalu pilih hurufnya',q:'',listen:true,qr:'',say:e.say,a:knOp(e.j),d:o.map(x=>knOp(x.j)),nr:true,mean:knMean(e),e:knAns(e)}},
+ // susun huruf / kanji dari romaji (mis. nana → な な)
+ susun(e,c){const tk=knTok(e),kj=knKj(e);if(tk.length<2)return e.t=='H'?(G5.urut(e,c)||KN5.r2j(e,c)):KN5.r2j(e,c);if(tk.length>8)return null;
+  const ex=kj?kanaExtra(tk,knKanjiPool(c),4):kanaExtra(tk,[...tk.flatMap(t=>j5Look(t,c).slice(0,2)),...knToks(c,isKt(e.j))],4);
+  return{kind:'susun',lbl:kj?'Susun kanjinya sesuai romaji':isKt(e.j)?'Susun Katakananya sesuai romaji':'Susun Hiragananya sesuai romaji',q:knR(e.r),sub:'',tokens:tk,extra:ex,ans:knAns(e),mean:knMean(e),say:e.say,kana:!kj}},
+ // lengkapi huruf yang hilang; romaji tampil sebagai petunjuk
+ lengkap(e,c){const tk=knTok(e),kj=knKj(e);
+  if(tk.length<2){if(e.t!='H')return KN5.r2j(e,c);const row=c.E.filter(x=>x.t=='H'&&x.L===e.L);if(row.length<3)return KN5.r2j(e,c);const d=j5Look(e.j,c);if(d.length<2)return null;
+   return{kind:'choice',lbl:'Lengkapi urutan hurufnya',q:`<span style="font-size:30px;letter-spacing:4px">${row.map(x=>x===e?'<span class="blank">＿</span>':x.j).join(' ')}</span><br>${knR(row.map(x=>x===e?`<u>${x.r}</u>`:x.r).join(' · '))}`,qr:'',a:e.j,d,nr:true,sayAfter:e.say}}
+  const foc=c.L.fokus?[c.L.fokus]:[];let idx=tk.map((t,i)=>i).filter(i=>foc.includes(tk[i]));if(!idx.length)idx=tk.map((t,i)=>i).filter(i=>!kj||/[一-龯々]/.test(tk[i]));if(!idx.length)idx=tk.map((t,i)=>i);
+  const i=shuf(idx)[0],ans=tk[i],d=kj?shuf(knKanjiPool(c).filter(x=>x!=ans)).slice(0,5):j5Look(ans,c);if(d.length<2)return null;
+  return{kind:'choice',lbl:'Lengkapi hurufnya sesuai romaji',q:`<span style="font-size:32px">${tk.map((t,k)=>k==i?'<span class="blank">＿</span>':t).join('')}</span><br>${knR(e.r)}`,qr:'',a:ans,d,nr:true,mean:knMean(e),sayAfter:e.say,e:knAns(e)}},
+ // ketik romaji dari huruf / kanji (kana juga diterima)
+ ketik(e,c){const isK=e.t=='K';
+  return{kind:'type',mode:'jp',lbl:knKj(e)?'Ketik cara bacanya (romaji)':'Ketik romajinya',q:big(e.j,isK?64:undefined),qr:'',accept:isK?[...e.x.kun.map(x=>x.replace(/[.\-]/g,'')),...e.x.on.map(toHira)]:[e.k],roms:isK?[...e.x.kun.map(kunR),...e.x.on.map(rom)]:[e.r],exact:true,ans:knAns(e),mean:knMean(e),sayAfter:e.say,ph:'Ketik romaji…'}},
+ // romaji → ketik kana (romaji yang diketik langsung berubah menjadi kana)
+ input(e,c){if(knKj(e))return KN5.ketik(e,c);const kt=isKt(e.k);
+  return{kind:'type',mode:'kana',kt,lbl:kt?'Tulis dengan Katakana':'Tulis dengan Hiragana',q:knR(e.r),qr:'',ans:e.k,target:e.k,mean:knMean(e),sayAfter:e.say,ph:kt?'Ketik romaji, mis. ko-hi- → コーヒー':'Ketik romaji, mis. sakura → さくら'}},
+ dikte(e,c){if(knKj(e))return KN5.dengar(e,c);const it=KN5.input(e,c);return{...it,lbl:it.kt?'Dengarkan, lalu tulis dengan Katakana':'Dengarkan, lalu tulis dengan Hiragana',q:'',listen:true,say:e.say}},
+ // tulis di kanvas dari romaji (kanji: romaji + arti supaya tidak tertukar dengan kanji lain yang bunyinya sama)
+ tulis(e,c){const kj=knKj(e),ch=[...e.j];if(ch.length>(kj?3:5)||!canWrite(e.j))return null;
+  return{kind:'write',q:knR(e.r)+(kj?`<br><small class="rj">${e.a}</small>`:''),qr:'',say:e.say,chars:ch,ans:knAns(e)}},
+ // cocokkan huruf / kanji dengan romajinya
+ cocok(e,c){const kj=knKj(e),isK=e.t=='K',E=uniq(uniq(shuf(c.E.filter(x=>x.kn&&knKj(x)==kj&&(x.t=='K')==isK)),x=>x.r),x=>x.j).slice(0,5);if(E.length<3)return null;
+  return{kind:'match',lbl:kj?'Cocokkan kanji dengan bacaannya':'Cocokkan huruf dengan romajinya',pairs:E.map(x=>({l:`<span style="font-size:${knTok(x).length>2?20:26}px">${x.j}</span>`,r:x.r,say:x.say,key:'J:'+x.key}))}}};
+Object.assign(KN5,{a2j:KN5.r2j,j2a:KN5.j2r,kj2r:KN5.j2r,kr2j:KN5.r2j,kBaca:KN5.j2r,kPilih:KN5.r2j,j2k:KN5.r2j,kosa:KN5.j2r,baca:KN5.j2r,
+ gambar:KN5.r2j,gambarR:KN5.j2r,ungkap:KN5.r2j,dengarA:KN5.dengar,kDengar:KN5.dengar,susunK:KN5.susun,k2h:KN5.ketik,
+ arti:(e,c)=>KN5[Math.random()<.5?'r2j':'j2r'](e,c),pilgan:(e,c)=>KN5[shuf(['r2j','j2r','dengar'])[0]](e,c),kArti:(e,c)=>G5.kArti(e,c)});
 let J5NOMIC=0;
 // format soal utama (kolom "Jenis quiz") → generator; tahap belajar per jenis materi
 const FMT5={r2j:['a2j'],j2r:['j2a'],dengar:['dengar'],susun:['susunK','urut'],lengkap:['lengkap'],baca:['baca'],ketik:['ketik'],cocok:['cocok'],tulis:['tulis'],beda:['beda'],ident:['ident'],
  gambar:['gambar','gambarR'],kalimat:['kalimat'],input:['input'],dikte:['dikte'],ungkap:['ungkap'],arti:['j2a','a2j'],respons:['respons'],susunS:['susunS'],isi:['isi'],angka:['angka'],angkaK:['angkaK'],
  bacaan:['bacaan'],dengarN:['dengarN'],hitung:['hitung'],dengarA:['dengarA'],tanya:['tanya'],dbuild:['dbuild'],kaiwa:['kaiwa'],role:['role'],bicara:['bicara'],kArti:['kArti'],kBaca:['kBaca'],
- j2k:['j2k'],k2h:['k2h'],kosa:['kosa'],konjug:['konjug'],ubah:['ubah'],teks:['teks'],teksDengar:['teksDengar'],respDengar:['respDengar'],info:['info'],pilgan:['pilgan'],ujian:[],final:[]};
+ j2k:['j2k'],k2h:['k2h'],kosa:['kosa'],konjug:['konjug'],ubah:['ubah'],teks:['teks'],teksDengar:['teksDengar'],respDengar:['respDengar'],info:['info'],pilgan:['pilgan'],ujian:[],final:[],
+ kj2r:['kj2r'],kr2j:['kr2j']};
 const ST5={
  H:{rec:['a2j'],recall:['j2a'],cons:['susunK','lengkap'],prod:['tulis','ketik'],listen:['dengar'],fin:['j2a','a2j','dengar','ketik']},
  W:{rec:['j2a'],recall:['a2j'],cons:['susunK'],prod:['ketik'],listen:['dengarA'],fin:['j2a','a2j','dengarA','gambarR']},
@@ -3170,46 +3317,65 @@ const ST5={
  G:{rec:['gArti'],recall:['gPilih'],cons:['gIsi'],prod:['gIsi'],listen:['gArti'],fin:['gArti','gPilih','gIsi']},
  V:{rec:['vArti'],recall:['konjug'],cons:['susunK'],prod:['ketik'],listen:['dengarA'],fin:['konjug','vArti','ubah']},
  N:{rec:['bacaan'],recall:['angka'],cons:['susunK'],prod:['angka'],listen:['dengarN'],fin:['bacaan','angka','dengarN']},
- I:{rec:['info'],recall:['info'],cons:['info'],prod:['info'],listen:['info'],fin:['info']}};
-const st5=(e,k)=>(ST5[e.t]||ST5.W)[k];
+ I:{rec:['info'],recall:['info'],cons:['info'],prod:['info'],listen:['info'],fin:['info']},
+ // fokus huruf ⇄ romaji: kana (KN) dan kanji (KJ); kalimat di unit huruf hanya ditanya cara baca kata Katakananya (SK)
+ KN:{rec:['j2r','r2j'],recall:['r2j','j2r'],cons:['susun','lengkap'],prod:['tulis','ketik'],listen:['dengar'],fin:['j2r','r2j','dengar','susun','tulis','ketik']},
+ KJ:{rec:['j2r','r2j'],recall:['r2j','j2r'],cons:['susun','lengkap','kArti'],prod:['tulis','ketik'],listen:['dengar'],fin:['j2r','r2j','tulis','susun','dengar','kArti']},
+ SK:{rec:['kalimat'],recall:['kalimat'],cons:['kalimat'],prod:['kalimat'],listen:['kalimat'],fin:['kalimat']}};
+const st5=(e,k)=>(e.kn?(knKj(e)?ST5.KJ:ST5.KN):e.t=='S'&&J5KNU.has(e.L.u)?ST5.SK:ST5[e.t]||ST5.W)[k];
 // kesalahan → ingatan materi (nh_mem) + daftar Review; soal non-pilihan disimpan sebagai soal pilihan
 function j5Tag(it,e,c){const key='J:'+e.key;it.onRes=ok=>{memUpd(key,ok);if(!ok&&it.kind!='choice')j5Miss(e,c)};if(it.kind=='match')it.onPair=(p,ok)=>memUpd(p.key,ok);return it}
-function j5Miss(e,c){let it=null;for(const g of['j2a','kArti','respons','teks','bacaan']){if(it)break;try{it=G5[g](e,c)}catch(x){}}
+function j5Miss(e,c){let it=null;for(const g of(e.kn?['j2r','r2j']:['j2a','kArti','respons','teks','bacaan'])){if(it)break;try{it=((e.kn&&KN5[g])||G5[g])(e,c)}catch(x){}}
  if(!it||it.kind!='choice'||!it.q)return;const m=ST.get('miss',{}),k=it.q+'¦'+it.a;
  m[k]={it:{q:it.q,a:it.a,d:(it.d||[]).filter(x=>x!==it.a),e:it.e||'',say:it.say||null,qr:qRom(it),nr:!!it.nr},c:Math.min(3,(m[k]?m[k].c:0)+1)};ST.set('miss',m)}
-function j5Make(g,e,c){const f=G5[g];if(!f)return null;let it=null;try{it=f(e,c)}catch(x){console.warn('j5',g,x)}return it?j5Tag(it,e,c):null}
+function j5Make(g,e,c){const f=(e.kn&&KN5[g])||G5[g];if(!f)return null;let it=null;try{it=f(e,c)}catch(x){console.warn('j5',g,x)}return it?j5Tag(it,e,c):null}
 function j5Bag(){const out=[],seen=new Set();return{out,push(it){if(!it)return false;const k=it.kind+'|'+strip(String(it.q||it.lbl||''))+'|'+strip(String(it.a||it.ans||(it.pairs||[]).map(p=>p.r).join()));if(seen.has(k))return false;seen.add(k);out.push(it);return true}}}
 // n soal dari daftar materi; gs = daftar generator (atau fungsi per materi), dicoba berurutan
 function j5Fill(B,gs,ents,n,c,rounds=3){let got=0;const es=shuf(ents);if(!es.length)return 0;
  for(let r=0;r<rounds&&got<n;r++)for(const e of es){if(got>=n)break;for(const g of(typeof gs=='function'?gs(e):gs))if(B.push(j5Make(g,e,c))){got++;break}}return got}
-// materi lama di unit yang paling lemah (pengulangan adaptif)
-function j5Weak(L,n){const M=MEM(),E=J5L.filter(x=>x.u==L.u&&x.no<L.no).flatMap(j5Static).filter(e=>!['T','D','G'].includes(e.t));
- const w=E.filter(e=>M['J:'+e.key]!==undefined&&M['J:'+e.key]<HAFAL).sort((a,b)=>M['J:'+a.key]-M['J:'+b.key]);return(w.length?w:shuf(E)).slice(0,n)}
-/* Rangkaian satu pelajaran: Recognition → format utama → Recall → Construction → Writing → Listening → Final (ulang materi lemah) */
-function j5Items(L){if(L.li==12)return j5Exam(L);const c=j5Ctx(L),E=c.E.length?c.E:c.words,B=j5Bag(),main=FMT5[L.f]||[];
- if(E.every(e=>e.t=='T')){j5Fill(B,[L.f=='teksDengar'?'teksDengar':'teks'],E,12,c);return shuf(B.out)}
- j5Fill(B,e=>st5(e,'rec'),E,3,c);
+// pelajaran biasa terakhir sebelum L (pelajaran ulasan dilewati)
+function j5PrevL(L){for(let n=L.no-1;n>=1;n--){const x=J5L[n-1];if(!j5IsRev(x))return x}return null}
+// ulangi soal pelajaran sebelumnya (pemanasan) supaya materinya terus diingat
+function j5Again(B,L,n){const P=j5PrevL(L);if(!P)return 0;const c=j5Ctx(P),E=(c.E.length?c.E:c.words).filter(e=>!['T','I'].includes(e.t));let got=0;
+ for(const e of shuf(E)){if(got>=n)break;for(const g of shuf(st5(e,'fin')))if(B.push(j5Make(g,e,c))){got++;break}}return got}
+// materi lama dari SEMUA pelajaran sebelumnya: yang paling lemah dulu, sisanya acak supaya seluruh materi terus diulang
+function j5Weak(L,n){const M=MEM(),E=uniq(J5L.filter(x=>x.no<L.no&&!j5IsRev(x)).flatMap(j5Static).filter(e=>!['T','D','I'].includes(e.t)),e=>e.key);
+ const w=E.filter(e=>M['J:'+e.key]!==undefined&&M['J:'+e.key]<HAFAL).sort((a,b)=>M['J:'+a.key]-M['J:'+b.key]);
+ return uniq([...w.slice(0,Math.ceil(n/2)),...shuf(E)],e=>e.key).slice(0,n)}
+/* Rangkaian satu pelajaran: ulangi pelajaran sebelumnya → mengenali → format utama → mengingat → menyusun → MENULIS →
+   mendengar → ulangi materi lama (paling lemah dulu) */
+function j5Items(L){if(j5IsRev(L))return j5Exam(L);const c=j5Ctx(L),E=c.E.length?c.E:c.words,B=j5Bag(),main=FMT5[L.f]||[];
+ if(E.every(e=>e.t=='T')){j5Again(B,L,2);j5Fill(B,[L.f=='teksDengar'?'teksDengar':'teks'],E,12,c);return B.out}
+ j5Again(B,L,2);
+ j5Fill(B,e=>st5(e,'rec'),E,2,c);
  // format utama: generatornya saja dulu (satu dialog/bacaan boleh memberi beberapa soal), lalu ditambal dengan Recall
  const gm=main.length?j5Fill(B,main,E,5,c,8):0;if(gm<5)j5Fill(B,e=>st5(e,'recall'),E,5-gm,c);
  j5Fill(B,e=>st5(e,'recall'),E,2,c);
  j5Fill(B,e=>st5(e,'cons'),E,1,c);
- j5Fill(B,e=>st5(e,'prod'),E,1,c);
+ // menulis diperbanyak: 3 soal tulis di unit huruf & kanji, 2 di unit lain
+ if(!j5Fill(B,['tulis'],E,E.some(e=>e.kn)?3:2,c))j5Fill(B,e=>st5(e,'prod'),E,1,c);
  j5Fill(B,e=>st5(e,'listen'),E,1,c);
- j5Weak(L,2).forEach(e=>{const cc=j5Ctx(e.L);for(const g of shuf(st5(e,'fin')))if(B.push(j5Make(g,e,cc)))break});
- if(B.out.length<12)j5Fill(B,e=>[...main,...shuf(st5(e,'fin'))],E,12-B.out.length,c);
+ j5Weak(L,3).forEach(e=>{const cc=j5Ctx(e.L);for(const g of shuf(st5(e,'fin')))if(B.push(j5Make(g,e,cc)))break});
+ if(B.out.length<14)j5Fill(B,e=>[...main,...shuf(st5(e,'fin'))],E,14-B.out.length,c);
  return B.out}
-// k soal dari pelajaran x memakai format utamanya (untuk Checkpoint & Unit Challenge)
+// k soal dari pelajaran x memakai format utamanya (untuk ulasan)
 function j5From(B,x,k){const c=j5Ctx(x),E=c.E.length?c.E:c.words;return j5Fill(B,e=>[...(FMT5[x.f]||[]),...shuf(st5(e,'fin'))],E,k,c)}
-function j5Check(node){const B=j5Bag();node.ls.forEach(x=>j5From(B,x,3));return shuf(B.out)}
-function j5Exam(L){const B=j5Bag(),n=L.f=='final'?25:20,own=L.W.length+L.S.length+L.Q.length+L.C.length+L.T.length;
- if(own){const c=j5Ctx(L);j5Fill(B,e=>[...(FMT5[L.f]||[]),...st5(e,'fin')],c.E.filter(e=>e.L===L),6,c)}
- const src=shuf(J5L.filter(x=>x.no<L.no&&x.li!=12&&(L.f=='final'||x.u==L.u)));
- for(let k=0;B.out.length<n&&k<src.length*2;k++)j5From(B,src[k%src.length],1);
- return shuf(B.out).slice(0,n)}
+// pelajaran di rentang ulang: (tanpa pelajaran ulasan)
+function j5Range(L){const out=[];((L.s.match(/ulang:(\S+)/)||[])[1]||'').split(',').filter(Boolean).forEach(rg=>{const[a,b]=rg.split('-').map(Number);
+ J5L.forEach(x=>{if(x.no>=a&&x.no<=(b||a)&&x.no<L.no&&!j5IsRev(x)&&!out.includes(x))out.push(x)})});return out}
+/* Ulasan: 15 soal (ulasan di tengah unit), 40 soal (Ulasan Unit: bergiliran dari pelajaran pertama unit, ditambah beberapa
+   soal unit sebelumnya), 50 soal (ujian akhir N5, acak dari semua pelajaran) */
+function j5Exam(L){const B=j5Bag(),fin=L.f=='final',n=fin?50:L.last?40:15,own=L.W.length+L.S.length+L.Q.length+L.C.length+L.T.length;
+ if(own){const c=j5Ctx(L);j5Fill(B,e=>[...(FMT5[L.f]||[]),...st5(e,'fin')],c.E.filter(e=>e.L===L),L.last?6:4,c)}
+ let src=j5Range(L);if(!src.length)src=J5L.filter(x=>x.u==L.u&&x.no<L.no&&!j5IsRev(x));if(fin)src=shuf(src);
+ const old=L.last&&!fin?shuf(J5L.filter(x=>x.u<L.u&&!j5IsRev(x))).slice(0,4):[],m=n-old.length;
+ for(let r=0;B.out.length<m&&r<8;r++){const b=B.out.length;for(const x of src){if(B.out.length>=m)break;j5From(B,x,1)}if(B.out.length==b)break}
+ old.forEach(x=>{if(B.out.length<n)j5From(B,x,1)});
+ if(B.out.length<n)for(const x of shuf(src)){if(B.out.length>=n)break;j5From(B,x,1)}
+ return fin?shuf(B.out).slice(0,n):B.out.slice(0,n)}
 
 // node di Beranda langsung membuka kuis (tanpa layar materi)
-function j5Run(L){runQuiz(`N5 · ${nn2(L.no)} ${L.n}`,()=>j5Items(L),beranda,null,{noSkip:true,result:o=>j5Result(o,L.id)})}
-function j5RunCP(n){runQuiz(`N5 · Unit ${JN[n.u].u} · Checkpoint ${n.cp}`,()=>j5Check(n),beranda,null,{noSkip:true,result:o=>j5Result(o,n.id)})}
+function j5Run(L){runQuiz(`N5 · ${nn2(L.no)} ${L.n}`,()=>j5Items(L),beranda,null,{noSkip:true,noRo:true,result:o=>j5Result(o,L.id)})}
 // layar hasil: akurasi, status (Selesai/Mastery/Perfect), XP; di bawah 80% harus mengulang
 function j5Result(o,id){const acc=o.s/o.n,P=PG(),prev=P[id]||0,md=j5Medal(acc),pv=j5Medal(prev),pass=!!md;
  saveScore(o.title,o.s,o.n);if(acc>prev){P[id]=acc;ST.set('path',P)}
@@ -3227,29 +3393,28 @@ function j5Result(o,id){const acc=o.s/o.n,P=PG(),prev=P[id]||0,md=j5Medal(acc),p
 function j5Pop(btn,st){const old=document.querySelector('.ppop-ov');const same=old&&old.dataset.id==btn.dataset.id;if(old)old.remove();if(same)return;
  const id=btn.dataset.id,S=st[id],n=J5N.find(x=>x.id==id),P=PG(),U=JN[n.u];sfx.tap();let h='';
  if(n.k=='L'||n.k=='T'){const L=n.l,best=P[id]||0,md=j5Medal(best),E=j5Static(L).filter(e=>e.L===L);
-  const prev=E.slice(0,8).map(e=>e.t=='D'?e.meta.t:e.t=='T'?e.tt:e.t=='Q'?e.j:e.t=='S'?cut(e.j,12):e.j).join('・')||(/gen:/.test(L.s)?'materi dibuat acak setiap latihan':/ulang:/.test(L.s)?'ulangan pelajaran sebelumnya':'');
-  h=`<small class="j5pk">UNIT ${U.u} · PELAJARAN ${nn2(L.li+1)}/13${n.k=='T'?' · UNIT CHALLENGE':''}</small><b>${nn2(L.no)} · ${L.n}</b><p><span class="j5chip on">${L.j}</span></p>${prev?`<p class="rj">Materi: ${prev}</p>`:''}
+  const gb=(L.s.match(/gab:(\S+)/)||[])[1],prev=E.slice(0,8).map(e=>e.t=='D'?e.meta.t:e.t=='T'?e.tt:e.t=='Q'?e.j:e.t=='S'?cut(e.j,12):e.j).join('・')||(gb?(gb=='kata'?'kata dari huruf yang sudah dipelajari':`rangkaian ${gb} huruf dari huruf yang sudah dipelajari`)+' (berganti setiap latihan)':/gen:/.test(L.s)?'materi dibuat acak setiap latihan':/ulang:/.test(L.s)?'ulangan pelajaran sebelumnya':'');
+  const rv=j5IsRev(L)?(L.f=='final'?'📝 50 soal dari semua pelajaran N5.':L.last?`📝 40 soal dari pelajaran ${nn2(U.ls[0].no)}–${nn2(L.no-1)}, urut dari awal, plus beberapa soal unit sebelumnya.`:'📝 15 soal ulasan.'):j5PrevL(L)?'🔁 Kuis ini juga mengulang soal pelajaran sebelumnya dan materi lama yang paling lemah.':'';
+  h=`<small class="j5pk">UNIT ${U.u} · PELAJARAN ${nn2(L.li+1)}/${U.ls.length}${n.k=='T'?' · ULASAN UNIT':''}</small><b>${nn2(L.no)} · ${L.n}</b><p><span class="j5chip on">${L.j}</span></p>${prev?`<p class="rj">Materi: ${prev}</p>`:''}${rv?`<p class="rj">${rv}</p>`:''}
   ${md?`<p class="rj">${md.i} ${md.t} · akurasi terbaik ${Math.round(best*100)}%</p>`:best?`<p class="rj">Terbaik ${Math.round(best*100)}% · butuh 80% untuk lulus</p>`:''}
-  ${S=='lock'?'<p class="rj">🔒 Selesaikan node sebelumnya dengan akurasi minimal 80% untuk membuka pelajaran ini.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI KUIS':best?'ULANGI · BUTUH 80%':n.k=='T'?'MULAI UNIT CHALLENGE':'MULAI KUIS'}</button>`}`}
- else if(n.k=='C'){const best=P[id]||0,a=n.ls[0].no,b=n.ls[4].no;h=`<small class="j5pk">UNIT ${U.u} · CHECKPOINT ${n.cp}</small><b>★ Checkpoint ${n.cp}</b><p>Evaluasi pelajaran ${nn2(a)}–${nn2(b)} · 15 soal dari ${n.ls.map(x=>x.n).join(', ')}.</p>${best?`<p class="rj">Akurasi terbaik ${Math.round(best*100)}%</p>`:''}
-  ${S=='lock'?'<p class="rj">🔒 Selesaikan pelajaran sebelumnya dulu.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI CHECKPOINT':'MULAI CHECKPOINT'}</button>`}`}
- else h=S=='lock'?`<small class="j5pk">UNIT ${U.u}</small><b>🎁 Unit Reward</b><p>XP + Lencana ${J5BADGE[n.u]} + unit berikutnya terbuka.</p><p class="rj">🔒 Lulus Unit Challenge (pelajaran ${nn2(U.ls[12].no)}) untuk membuka hadiah ini.</p>`
+  ${S=='lock'?'<p class="rj">🔒 Selesaikan node sebelumnya dengan akurasi minimal 80% untuk membuka pelajaran ini.</p>':`<button class="pb" id="pgo">${S=='done'?'ULANGI KUIS':best?'ULANGI · BUTUH 80%':n.k=='T'?'MULAI ULASAN UNIT':'MULAI KUIS'}</button>`}`}
+ else h=S=='lock'?`<small class="j5pk">UNIT ${U.u}</small><b>🎁 Unit Reward</b><p>XP + Lencana ${J5BADGE[n.u]} + unit berikutnya terbuka.</p><p class="rj">🔒 Lulus Ulasan Unit (pelajaran ${nn2(U.ls[U.ls.length-1].no)}) untuk membuka hadiah ini.</p>`
   :S=='done'?`<b>🎁 Hadiah Unit ${U.u} sudah diambil</b><p>Lencana <b class="j5bdg on">${J5BADGE[n.u]}</b> ${U.t} sudah kamu miliki.</p>`
   :`<small class="j5pk">UNIT ${U.u} · ${U.t}</small><b>🎁 Unit Reward siap!</b><p>+50 XP dan lencana <b class="j5bdg on">${J5BADGE[n.u]}</b> untuk menuntaskan ${U.t}.</p><button class="pb" id="pgo">AMBIL HADIAH</button>`;
  const ov=document.createElement('div');ov.className='qsov ppop-ov';ov.dataset.id=id;
  ov.innerHTML=`<div class="ppop-box ${S}" role="dialog" aria-modal="true"><button class="ppop-close" aria-label="Tutup">✕</button>${h}</div>`;document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),15);
  const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),200)};ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.ppop-close').onclick=close;
  const g=ov.querySelector('#pgo');if(!g)return;
- g.onclick=()=>{ov.remove();if(n.k=='R'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(50);confetti();sfx.done();ST.set('justDone',id);beranda();return}if(n.k=='C')return j5RunCP(n);j5Run(n.l)}}
+ g.onclick=()=>{ov.remove();if(n.k=='R'){const P2=PG();P2[id]=1;ST.set('path',P2);addXp(50);confetti();sfx.done();ST.set('justDone',id);beranda();return}j5Run(n.l)}}
 function j5Guide(ui){const U=JN[ui],{st,P}=j5State();
  const ov=document.createElement('div');ov.className='qsov';
  ov.innerHTML=`<div class="qset" role="dialog" aria-modal="true" aria-label="Panduan unit"><div class="qsh"><b>📖 Unit ${U.u} · ${U.t}</b><button class="qx" aria-label="Tutup">✕</button></div>
  <p class="rj" style="margin:0">🎯 ${U.g}</p><div class="card j5tbl">${U.ls.map(L=>{const S=st[L.id],md=j5Medal(P[L.id]||0);return`<button class="j5gr ${S}" data-l="${L.no}" ${S=='lock'?'disabled':''}><span class="j5no">${nn2(L.no)}</span><span><b>${L.n}</b><small>${L.j}</small></span><span class="j5gs">${md?md.i:S=='lock'?'🔒':S=='cur'?'▶':''}</span></button>`}).join('')}</div>
- <p class="rj">★ Checkpoint setelah pelajaran ${nn2(U.ls[4].no)} dan ${nn2(U.ls[9].no)} · 🏆 Unit Challenge = pelajaran ${nn2(U.ls[12].no)} · 🎁 hadiah XP + lencana.</p></div>`;
+ <p class="rj">🏆 Ulasan Unit = pelajaran ${nn2(U.ls[U.ls.length-1].no)} (40 soal dari awal unit) · 🔁 setiap kuis mengulang soal pelajaran sebelumnya · 🎁 hadiah XP + lencana.</p></div>`;
  document.body.appendChild(ov);setTimeout(()=>ov.classList.add('show'),20);const close=()=>{ov.classList.remove('show');setTimeout(()=>ov.remove(),250)};
  ov.onclick=e=>{if(e.target===ov)close()};ov.querySelector('.qx').onclick=close;
  ov.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{ov.remove();j5Run(J5L[+b.dataset.l-1])})}
-function j5Beranda(){
+function j5Beranda(lvh){
  const{st,P}=j5State(),s=ST.get('stats',{ans:0,ok:0,last:'',streak:0}),jd=ST.get('justDone','');
  const icon=(n,S)=>{if(n.k=='C')return'<span class="pico-emoji">★</span>';if(n.k=='R')return`<span class="pico-emoji">${S=='done'?'📭':'🎁'}</span>`;if(n.k=='T')return'<span class="pico-emoji">🏆</span>';
   if(S=='done')return`<svg viewBox="0 0 24 24" class="pico"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -3258,26 +3423,24 @@ function j5Beranda(){
   const pts=U.nodes.map((n,j)=>({n,j,x:j===N-1?160:(j%2===0?85:235),y:65+j*stepY}));
   let d=`M ${pts[0].x} ${pts[0].y}`;for(let j=1;j<N;j++){const a=pts[j-1],b=pts[j],m=(a.y+b.y)/2;d+=` C ${a.x} ${m}, ${b.x} ${m}, ${b.x} ${b.y}`}
   const nodes=pts.map(({n,x,y})=>{const S=st[n.id],best=P[n.id]||0,md=j5Medal(best);let t='',s2='';
-   if(n.k=='L'||n.k=='T'){t=`${nn2(n.l.no)} · ${n.l.n}`;s2=S=='done'?`${md.t} · ${Math.round(best*100)}%`:S=='cur'?(best?`Belum lulus · ${Math.round(best*100)}%`:n.k=='T'?'Unit Challenge':'Mulai'):n.k=='T'?'Unit Challenge':'Terkunci'}
-   else if(n.k=='C'){t=`★ Checkpoint ${n.cp}`;s2=S=='done'?`Lulus · ${Math.round(best*100)}%`:`Evaluasi ${nn2(n.ls[0].no)}–${nn2(n.ls[4].no)}`}
+   if(n.k=='L'||n.k=='T'){t=`${nn2(n.l.no)} · ${n.l.n}`;s2=S=='done'?`${md.t} · ${Math.round(best*100)}%`:S=='cur'?(best?`Belum lulus · ${Math.round(best*100)}%`:n.k=='T'?'Ulasan Unit · 40 soal':'Mulai'):n.k=='T'?'Ulasan Unit · 40 soal':'Terkunci'}
    else{t='Unit Reward';s2=S=='done'?'Diambil':S=='open'?'Ambil hadiah!':'XP + Lencana'}
    return`<div class="trail-node-wrap ${S}" style="left:${(x/320*100).toFixed(1)}%;top:${y}px"><button class="trail-node ${n.k} ${S}${n.id==jd?' just':''}${md&&md.c!='pass'?' '+md.c:''}" data-id="${n.id}" aria-label="${esc(t)} (${s2})">${icon(n,S)}${md&&md.c!='pass'&&n.k!='C'?`<span class="j5md">${md.i}</span>`:''}</button>
     <div class="trail-card ${S}" data-id="${n.id}"><span class="trail-card-title">${t}</span><span class="trail-card-status">${s2}</span></div></div>`}).join('');
-  return`<section class="unit${st[U.nodes[0].id]=='lock'?' ulock':''}" id="j5u${U.ui}"><div class="uban"><div><small>N5 · UNIT ${U.u} · PELAJARAN ${U.ls[0].no}–${U.ls[12].no}</small><b>${U.t}</b><span class="j5us">13 pelajaran · 1 Unit Challenge · ${ud}/13 selesai</span></div><button class="uguide" data-u="${U.ui}" aria-label="Panduan unit">📖</button></div>
+  return`<section class="unit${st[U.nodes[0].id]=='lock'?' ulock':''}" id="j5u${U.ui}"><div class="uban"><div><small>N5 · UNIT ${U.u} · PELAJARAN ${U.ls[0].no}–${U.ls[U.ls.length-1].no}</small><b>${U.t}</b><span class="j5us">${U.ls.length} pelajaran · Ulasan Unit di akhir · ${ud}/${U.ls.length} selesai</span></div><button class="uguide" data-u="${U.ui}" aria-label="Panduan unit">📖</button></div>
    <div class="ppath j5p" style="height:${H}px"><svg class="trail-svg" viewBox="0 0 320 ${H}" preserveAspectRatio="none"><path d="${d}" class="trail-path"/></svg>
    <div class="plandmark" style="left:73.5%;top:65px"><div class="plandmark-box" style="background:${lm.bg};color:${lm.fg}">${lm.ic}</div><div class="plandmark-name">${lm.name}</div></div>
    <div class="pmasc-slot" style="left:26.5%;top:${65+5*stepY}px"><div class="masc">${MASCOT}</div></div>${nodes}</div></section>`}).join('');
- view(`<div class="top ptop"><img class="tlogo" src="__LOGO__" alt="Nihonesia"><select id="plv" class="plv" aria-label="Pilih level">${PLV.filter(([l])=>l=='N5'||pathLevel(l).count).map(([l,t])=>`<option value="${l}" ${l==pLv?'selected':''}>${l} · ${t}</option>`).join('')}</select><span class="pst" title="Hari berturut-turut">🔥 ${streakNow(s)}</span><span class="pst xp" title="Total XP">⚡ ${s.xp||0}</span></div>
+ view(`${homeTop(s)}${lvh||lvStepper()}
  <div id="path">${units}</div>${navHtml('beranda')}`);
- ST.del('justDone');
- $('#plv').onchange=e=>{pLv=e.target.value;ST.set('pLv',pLv);beranda()};
+ ST.del('justDone');lvWire();
  app.querySelectorAll('.trail-node, .trail-card').forEach(b=>b.onclick=()=>j5Pop(b,st));
  app.querySelectorAll('.uguide').forEach(b=>b.onclick=()=>j5Guide(+b.dataset.u));
  const c=app.querySelector('.trail-node.just')||app.querySelector('.trail-node.cur')||app.querySelector('.trail-node.open');
  if(c)setTimeout(()=>{const r=c.getBoundingClientRect();if(r.top>innerHeight*.55)scrollTo({top:scrollY+r.top-innerHeight*.45,behavior:'smooth'})},450);
  if(app.querySelector('.trail-node.just'))sfx.ok()}
 // materi Jalur N5 yang sudah lulus, untuk tab Review (yang paling lemah lebih dulu)
-function j5DoneEnts(){const P=PG(),M=MEM();return J5L.filter(l=>(P[l.id]||0)>=J5PASS&&l.li!=12&&!/ulang:/.test(l.s)).flatMap(j5Static).filter(e=>!['T','D'].includes(e.t)).sort((a,b)=>(M['J:'+a.key]??HAFAL)-(M['J:'+b.key]??HAFAL))}
+function j5DoneEnts(){const P=PG(),M=MEM();return J5L.filter(l=>(P[l.id]||0)>=J5PASS&&!j5IsRev(l)&&!/ulang:/.test(l.s)).flatMap(j5Static).filter(e=>!['T','D'].includes(e.t)).sort((a,b)=>(M['J:'+a.key]??HAFAL)-(M['J:'+b.key]??HAFAL))}
 function j5ReviewItems(n){const E=j5DoneEnts(),B=j5Bag(),top=shuf(E.slice(0,Math.max(n*2,12)));
  for(const e of top){if(B.out.length>=n)break;const c=j5Ctx(e.L);for(const g of shuf(st5(e,'fin')))if(B.push(j5Make(g,e,c)))break}return B.out}
 
