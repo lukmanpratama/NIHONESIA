@@ -405,10 +405,10 @@ function buildKanjiFamily() {
   return out;
 }
 // ===== JALUR N5 (src/jalur-n5.txt) → [{u, t, g, ls:[{no, n, j, f, s, x, W, S, Q, C, T, K}]}] =====
-// Kurikulum Learning Path N5 di Beranda: 12 unit × 13 pelajaran. Lihat format di kepala file.
+// Kurikulum Learning Path N5 di Beranda: 12 unit × 20 pelajaran. Lihat format di kepala file.
 const JALUR_FMT = new Set(('r2j j2r dengar susun lengkap baca ketik cocok tulis ujian beda ident gambar kalimat input dikte ungkap arti '
   + 'respons susunS isi angka angkaK bacaan dengarN hitung dengarA tanya dbuild kaiwa kArti kBaca j2k k2h kosa konjug ubah teks teksDengar '
-  + 'respDengar info role bicara pilgan final').split(' '));
+  + 'respDengar info role bicara pilgan final kj2r kr2j').split(' '));
 function buildJalur() {
   const out = []; let U = null, L = null, T = null;
   const err = (ln, m) => bad.push(`jalur-n5.txt:${ln + 1} ${m}`);
@@ -439,7 +439,9 @@ function buildJalur() {
     else err(ln, 'format salah: ' + line);
   });
   const nos = out.flatMap(u => u.ls.map(l => l.no));
-  if (out.length !== 12 || out.some(u => u.ls.length !== 13)) bad.push(`jalur-n5: harus 12 unit × 13 pelajaran (sekarang ${out.map(u => u.ls.length).join(',')})`);
+  if (out.length !== 12 || out.some(u => u.ls.length !== 20)) bad.push(`jalur-n5: harus 12 unit × 20 pelajaran (sekarang ${out.map(u => u.ls.length).join(',')})`);
+  // sumber gab: (rangkaian huruf) hanya di unit huruf 01–04
+  out.forEach((u, ui) => u.ls.forEach(l => { if (/gab:/.test(l.s) && ui > 3) bad.push(`jalur-n5: #${l.no} memakai gab: di luar unit huruf`); if (/gab:/.test(l.s) && !/gab:(\d|kata)/.test(l.s)) bad.push(`jalur-n5: #${l.no} sumber gab tidak dikenal`); }));
   nos.forEach((n, i) => { if (n !== i + 1) bad.push(`jalur-n5: nomor pelajaran ${n} seharusnya ${i + 1}`); });
   return out;
 }
